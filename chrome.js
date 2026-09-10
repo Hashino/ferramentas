@@ -35,7 +35,6 @@
   if (document.body.hasAttribute("data-footer")) {
     var f = document.createElement("footer");
     f.innerHTML =
-      '<a href="' + P + '">Todas as ferramentas</a> · ' +
       '<a href="' + P + 'sobre.html">Sobre</a> · ' +
       '<a href="' + P + 'privacidade.html">Privacidade</a> · ' +
       '<a href="https://github.com/Hashino/ferramentas">GitHub</a>';
