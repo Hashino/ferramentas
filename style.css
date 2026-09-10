@@ -1,76 +1,227 @@
+/* ferramentas — visual herdado do learnive / hashino.github.io:
+   paleta Nord, fonte monoespaçada, cards translúcidos com blur e starfield.
+   Tema claro é o default; data-theme="dark" troca os tokens (toggle na barra). */
+
 :root {
-  --bg: #f7f6f3;
-  --card: #ffffff;
-  --ink: #1c1c1a;
-  --muted: #6b6a66;
-  --accent: #0b6b3a;
-  --border: #e4e2dc;
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --roundness: 3px;
+  --mono: "Ubuntu Mono", "JetBrains Mono", "Fira Code", Consolas,
+    "Liberation Mono", Menlo, Courier, monospace;
 }
+
+/* Tema claro (default): Snow Storm de fundo, Polar Night no texto. */
+:root,
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg: linear-gradient(135deg, var(--nord6) 0%, var(--nord5) 50%, var(--nord4) 100%);
+  --fg: var(--nord1);
+  --heading: var(--nord0);
+  --chrome-bg: rgba(236, 239, 244, 0.9);
+  --chrome-fg: var(--nord0);
+  --card-bg: rgba(255, 255, 255, 0.72);
+  --card-border: var(--nord4);
+  --card-shadow: rgba(76, 86, 106, 0.15);
+  --link: var(--nord10);
+  --link-hover: var(--nord9);
+  --muted: var(--nord3);
+  --accent: var(--nord10);
+  --field-bg: rgba(255, 255, 255, 0.85);
+  --field-fg: var(--nord0);
+  --field-border: var(--nord4);
+  --btn-bg: var(--nord10);
+  --btn-hover: var(--nord9);
+  --btn-fg: var(--nord6);
+  --result-bg: rgba(163, 190, 140, 0.18);
+  --callout-bg: rgba(216, 222, 233, 0.55);
+  --star-opacity: 0.35;
+}
+
+/* Tema escuro: Polar Night de fundo, Snow Storm no texto (papéis invertidos). */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: linear-gradient(135deg, var(--nord0) 0%, var(--nord1) 50%, var(--nord2) 100%);
+  --fg: var(--nord4);
+  --heading: var(--nord6);
+  --chrome-bg: rgba(46, 52, 64, 0.95);
+  --chrome-fg: var(--nord6);
+  --card-bg: rgba(59, 66, 82, 0.6);
+  --card-border: var(--nord3);
+  --card-shadow: rgba(46, 52, 64, 0.4);
+  --link: var(--nord8);
+  --link-hover: var(--nord7);
+  --muted: var(--nord9);
+  --accent: var(--nord8);
+  --field-bg: rgba(76, 86, 106, 0.6);
+  --field-fg: var(--nord6);
+  --field-border: var(--nord3);
+  --btn-bg: var(--nord10);
+  --btn-hover: var(--nord9);
+  --btn-fg: var(--nord6);
+  --result-bg: rgba(163, 190, 140, 0.14);
+  --callout-bg: rgba(76, 86, 106, 0.4);
+  --star-opacity: 1;
+}
+
 * { box-sizing: border-box; }
+
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  min-height: 100vh;
+  font-family: var(--mono);
+  line-height: 1.5;
+  color: var(--fg);
   background: var(--bg);
-  color: var(--ink);
-  line-height: 1.6;
+  background-attachment: fixed;
 }
-main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
-h1 { font-size: 1.7rem; margin: 0.4rem 0 1rem; }
-h2 { font-size: 1.15rem; margin-top: 2rem; }
-a { color: var(--accent); }
+
+/* Starfield discreto (assinatura do blog), fixo sob o conteúdo. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: var(--star-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cg fill='%23d8dee9'%3E%3Ccircle cx='18' cy='32' r='1'/%3E%3Ccircle cx='95' cy='11' r='1.4'/%3E%3Ccircle cx='167' cy='54' r='1'/%3E%3Ccircle cx='221' cy='19' r='1.2'/%3E%3Ccircle cx='54' cy='120' r='1.3'/%3E%3Ccircle cx='132' cy='150' r='1'/%3E%3Ccircle cx='198' cy='122' r='1.4'/%3E%3Ccircle cx='37' cy='198' r='1'/%3E%3Ccircle cx='105' cy='218' r='1.2'/%3E%3Ccircle cx='180' cy='194' r='1'/%3E%3Ccircle cx='228' cy='76' r='1'/%3E%3Ccircle cx='73' cy='70' r='0.8'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Barra superior (padrão hashino.github.io): fixa, vidro fosco. */
+.top-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--chrome-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--card-border);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.nav-title {
+  color: var(--chrome-fg);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+.nav-title:hover { color: var(--accent); }
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--card-border);
+  border-radius: var(--roundness);
+  color: var(--chrome-fg);
+  font: inherit;
+  font-size: 1.05rem;
+  line-height: 1;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+
+main {
+  position: relative;
+  z-index: 1;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 5rem 1.25rem 4rem;
+}
+
+h1 { font-size: 1.6rem; margin: 0.4rem 0 1.25rem; color: var(--heading); }
+a { color: var(--link); }
+a:hover { color: var(--link-hover); }
 .lead { color: var(--muted); margin-top: -0.5rem; }
-.crumb { font-size: 0.9rem; margin: 0; }
+
 .card {
   display: block;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 10px;
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--roundness);
+  box-shadow: 0 2px 8px var(--card-shadow);
   padding: 1rem 1.25rem;
-  margin: 0.75rem 0;
+  margin: 0.9rem 0;
   text-decoration: none;
   color: inherit;
+  transition: border-color 0.2s ease, transform 0.15s ease;
 }
-.card:hover { border-color: var(--accent); }
+.card:hover { border-color: var(--accent); transform: translateY(-1px); }
 .card h2 { margin: 0 0 0.25rem; font-size: 1.05rem; color: var(--accent); }
 .card p { margin: 0; font-size: 0.92rem; color: var(--muted); }
-.grid { display: grid; gap: 0.25rem; }
+.grid { display: grid; }
+
+/* A ferramenta em si. */
 .app {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 1.25rem;
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--roundness);
+  box-shadow: 0 2px 8px var(--card-shadow);
+  padding: 1.5rem;
 }
-.app label { display: block; font-size: 0.9rem; font-weight: 600; margin: 0.75rem 0 0.25rem; }
+.app label { display: block; font-size: 0.9rem; font-weight: 600; margin: 0.85rem 0 0.3rem; }
 .app input, .app select, .app textarea {
   width: 100%;
-  padding: 0.6rem 0.7rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--field-border);
+  border-radius: var(--roundness);
+  font: inherit;
   font-size: 1rem;
-  background: #fff;
+  background: var(--field-bg);
+  color: var(--field-fg);
+}
+.app input:focus, .app select:focus, .app textarea:focus {
+  outline: none;
+  border-color: var(--accent);
 }
 .app button {
-  margin-top: 1rem;
-  padding: 0.65rem 1.4rem;
+  margin-top: 1.25rem;
+  padding: 0.6rem 1.4rem;
   border: 0;
-  border-radius: 8px;
-  background: var(--accent);
-  color: #fff;
+  border-radius: var(--roundness);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font: inherit;
   font-size: 1rem;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
-.app button:hover { filter: brightness(1.08); }
+.app button:hover { background: var(--btn-hover); }
 .resultado {
-  margin-top: 1rem;
-  padding: 0.9rem 1rem;
-  background: #eef6f1;
-  border-radius: 8px;
-  font-size: 1.15rem;
+  margin-top: 1.1rem;
+  padding: 0.85rem 1rem;
+  background: var(--result-bg);
+  border-radius: var(--roundness);
+  font-size: 1.1rem;
   font-weight: 600;
 }
-.texto p { margin: 0.6rem 0; }
 .ad-slot { margin: 1.5rem 0; min-height: 0; }
+
 footer {
+  position: relative;
+  z-index: 1;
   max-width: 42rem;
   margin: 0 auto;
   padding: 1rem 1.25rem 3rem;

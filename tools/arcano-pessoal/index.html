@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Calculadora de Arcano Pessoal — Descubra o Seu no Tarô</title>
-<meta name="description" content="Descubra seu Arcano Pessoal do Tarô a partir da data de nascimento. Calculadora grátis, resultado na hora, com o significado resumido dos 22 arcanos.">
+<meta name="description" content="Descubra seu Arcano Pessoal do Tarô a partir da data de nascimento. Calculadora grátis, resultado na hora.">
 <link rel="canonical" href="https://hashino.github.io/ferramentas/tools/arcano-pessoal/">
 <meta property="og:title" content="Calculadora de Arcano Pessoal — Descubra o Seu no Tarô">
 <meta property="og:description" content="Descubra seu Arcano Pessoal do Tarô a partir da data de nascimento. Grátis e sem cadastro.">
@@ -12,18 +12,15 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Arcano Pessoal","url":"https://hashino.github.io/ferramentas/tools/arcano-pessoal/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora grátis de Arcano Pessoal do Tarô a partir da data de nascimento."}
 </script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Como calcular o arcano pessoal?","acceptedAnswer":{"@type":"Answer","text":"Some o dia, o mês e o ano de nascimento como números. Se o resultado for maior que 22, some os algarismos do resultado até chegar a um número entre 1 e 22. Esse número é seu Arcano Pessoal."}},
-{"@type":"Question","name":"O que é o arcano pessoal no tarô?","acceptedAnswer":{"@type":"Answer","text":"O Arcano Pessoal é um dos 22 arcanos maiores do Tarô associado à sua data de nascimento. Ele indica tendências, lições e a energia que acompanha a sua trajetória pessoal."}},
-{"@type":"Question","name":"O arcano pessoal pode ser 22?","acceptedAnswer":{"@type":"Answer","text":"Sim. Se a soma do dia, mês e ano der exatamente 22, o arcano é O Louco (arcano 22). Só se reduz o número quando ele passa de 22."}}
-]}
-</script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
 <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
+<nav class="top-nav"><div class="nav-container">
+  <a class="nav-title" href="../../">Ferramentas</a>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema"></button>
+</div></nav>
 <main>
-  <p class="crumb"><a href="../../">← Todas as ferramentas</a></p>
   <h1>Calculadora de Arcano Pessoal</h1>
   <section class="app">
     <label for="dia">Dia de nascimento</label>
@@ -36,35 +33,16 @@
     <div class="resultado" id="resultado" hidden></div>
   </section>
   <div class="ad-slot"></div>
-  <section class="texto">
-    <h2>Como funciona</h2>
-    <p>A calculadora aplica o método tradicional do arcano pessoal: soma o dia, o mês e o
-    ano de nascimento como números inteiros. Por exemplo, quem nasceu em 25/12/1990 soma
-    25 + 12 + 1990 = 2027.</p>
-    <p>Como os arcanos maiores são 22, qualquer resultado acima disso é reduzido somando-se
-    os próprios algarismos — 2027 vira 2 + 0 + 2 + 7 = 11. O processo se repete, se necessário,
-    até o número cair na faixa de 1 a 22.</p>
-    <p>O número final corresponde a uma carta dos arcanos maiores: 1 é O Mago, 2 é A Papisa
-    e assim por diante, até 22, O Louco. O resultado mostra o nome da carta para você pesquisar
-    o significado completo.</p>
-  </section>
-  <section class="texto">
-    <h2>Perguntas frequentes</h2>
-    <p><strong>Como calcular o arcano pessoal?</strong> Some dia + mês + ano de nascimento.
-    Se passar de 22, some os algarismos do resultado até cair entre 1 e 22.</p>
-    <p><strong>O que é o arcano pessoal no tarô?</strong> É a carta dos arcanos maiores ligada
-    à sua data de nascimento, que indica a energia e as lições da sua trajetória.</p>
-    <p><strong>O arcano pessoal pode ser 22?</strong> Sim — 22 é O Louco. A redução só acontece
-    quando a soma ultrapassa 22.</p>
-  </section>
 </main>
 <footer>
   <a href="../../">Todas as ferramentas</a> ·
+  <a href="../../sobre.html">Sobre</a> ·
   <a href="../../privacidade.html">Privacidade</a> ·
-  <a href="../../sobre.html">Sobre</a>
+  <a href="https://github.com/Hashino/ferramentas">GitHub</a>
 </footer>
 <script src="../../config.js"></script>
 <script src="../../ads.js"></script>
+<script src="../../theme.js"></script>
 <script>
 var ARCANOS = {1:"O Mago",2:"A Papisa",3:"A Imperatriz",4:"O Imperador",5:"O Hierofante",6:"Os Namorados",7:"O Carro",8:"A Justiça",9:"O Eremita",10:"A Roda da Fortuna",11:"A Força",12:"O Pendurado",13:"A Morte",14:"A Temperança",15:"O Diabo",16:"A Torre",17:"A Estrela",18:"A Lua",19:"O Sol",20:"O Julgamento",21:"O Mundo",22:"O Louco"};
 

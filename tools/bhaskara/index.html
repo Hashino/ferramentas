@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Calculadora de Bhaskara — Passo a Passo Online Grátis</title>
-<meta name="description" content="Resolva a equação do 2º grau com a fórmula de Bhaskara: delta, raízes e o passo a passo completo do cálculo. Grátis, sem cadastro.">
+<meta name="description" content="Resolva a equação do 2º grau com a fórmula de Bhaskara: delta, raízes e o passo a passo do cálculo. Grátis, sem cadastro.">
 <link rel="canonical" href="https://hashino.github.io/ferramentas/tools/bhaskara/">
 <meta property="og:title" content="Calculadora de Bhaskara — Passo a Passo">
 <meta property="og:description" content="Resolva ax² + bx + c = 0 com a fórmula de Bhaskara: delta, raízes e passo a passo. Grátis.">
@@ -12,18 +12,15 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Bhaskara","url":"https://hashino.github.io/ferramentas/tools/bhaskara/","applicationCategory":"EducationalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora da fórmula de Bhaskara com delta, raízes e passo a passo."}
 </script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Qual é a fórmula de Bhaskara?","acceptedAnswer":{"@type":"Answer","text":"Para a equação ax² + bx + c = 0, as raízes são x = (−b ± √Δ) / 2a, onde Δ = b² − 4ac."}},
-{"@type":"Question","name":"O que significa o delta negativo em Bhaskara?","acceptedAnswer":{"@type":"Answer","text":"Delta negativo significa que a equação não tem raízes reais — a parábola não cruza o eixo x. As raízes existem apenas no conjunto dos números complexos."}},
-{"@type":"Question","name":"Quando a equação do 2º grau tem uma única raiz?","acceptedAnswer":{"@type":"Answer","text":"Quando delta é igual a zero. Nesse caso as duas raízes coincidem: x = −b / 2a."}}
-]}
-</script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
 <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
+<nav class="top-nav"><div class="nav-container">
+  <a class="nav-title" href="../../">Ferramentas</a>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema"></button>
+</div></nav>
 <main>
-  <p class="crumb"><a href="../../">← Todas as ferramentas</a></p>
   <h1>Calculadora de Bhaskara</h1>
   <section class="app">
     <p style="margin:.2rem 0 1rem;color:var(--muted)">Equação: <strong>ax² + bx + c = 0</strong></p>
@@ -38,34 +35,16 @@
     <div id="passos" style="margin-top:1rem;font-size:.95rem;white-space:pre-line"></div>
   </section>
   <div class="ad-slot"></div>
-  <section class="texto">
-    <h2>Como funciona</h2>
-    <p>A ferramenta resolve equações do segundo grau no formato ax² + bx + c = 0 usando a
-    fórmula de Bhaskara, e mostra cada etapa do cálculo — não só o resultado final.</p>
-    <p>Primeiro é calculado o delta (Δ = b² − 4ac), que indica quantas raízes reais a equação
-    tem: Δ &gt; 0 significa duas raízes diferentes, Δ = 0 significa uma raiz única e
-    Δ &lt; 0 significa nenhuma raiz real.</p>
-    <p>Depois, as raízes saem de x = (−b ± √Δ) / 2a. A calculadora exibe os valores
-    substituídos em cada fórmula, então dá para conferir o exercício passo a passo ou
-    copiar a resolução para o caderno.</p>
-  </section>
-  <section class="texto">
-    <h2>Perguntas frequentes</h2>
-    <p><strong>Qual é a fórmula de Bhaskara?</strong> x = (−b ± √Δ) / 2a, com Δ = b² − 4ac,
-    para equações do tipo ax² + bx + c = 0.</p>
-    <p><strong>O que significa delta negativo?</strong> A equação não tem raízes reais: a
-    parábola não toca o eixo x. As raízes só existem nos números complexos.</p>
-    <p><strong>Quando existe uma única raiz?</strong> Quando Δ = 0 — as duas raízes coincidem
-    em x = −b / 2a.</p>
-  </section>
 </main>
 <footer>
   <a href="../../">Todas as ferramentas</a> ·
+  <a href="../../sobre.html">Sobre</a> ·
   <a href="../../privacidade.html">Privacidade</a> ·
-  <a href="../../sobre.html">Sobre</a>
+  <a href="https://github.com/Hashino/ferramentas">GitHub</a>
 </footer>
 <script src="../../config.js"></script>
 <script src="../../ads.js"></script>
+<script src="../../theme.js"></script>
 <script>
 function fmt(n) {
   var r = Math.round(n * 10000) / 10000;

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Calculadora de Boost PXG — Stones do Boost Atual ao Desejado</title>
-<meta name="description" content="Calcule quantas boost stones você precisa para subir o boost do seu Pokémon no PokéXGames (PXG), do nível atual ao desejado. Grátis, sem instalar nada.">
+<meta name="description" content="Calcule quantas boost stones faltam para subir o boost do seu Pokémon no PokéXGames (PXG). Grátis, sem instalar nada.">
 <link rel="canonical" href="https://hashino.github.io/ferramentas/tools/boost-pxg/">
 <meta property="og:title" content="Calculadora de Boost PXG">
 <meta property="og:description" content="Quantas boost stones faltam para o boost alvo no PokéXGames? Calcule do nível atual ao desejado. Grátis.">
@@ -12,18 +12,15 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Boost PXG","url":"https://hashino.github.io/ferramentas/tools/boost-pxg/","applicationCategory":"GameApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcula as boost stones necessárias para subir o boost de um Pokémon no PokéXGames (PXG)."}
 </script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Quantas stones preciso para o boost 50 no PXG?","acceptedAnswer":{"@type":"Answer","text":"Do boost 0 ao 50 são 1.275 stones, porque cada nível de boost custa o próximo número da sequência (1+2+3+…+50 = 1275). Use a calculadora para intervalos específicos."}},
-{"@type":"Question","name":"Como é calculado o custo de boost no PXG?","acceptedAnswer":{"@type":"Answer","text":"Cada ponto de boost consome uma quantidade de stones igual ao próximo nível: ir do nível 0 para o 1 custa 1 stone, do 1 para o 2 custa 2 stones, e assim por diante. O custo de um intervalo é a soma dessa progressão."}},
-{"@type":"Question","name":"A calculadora serve para qualquer Pokémon?","acceptedAnswer":{"@type":"Answer","text":"Sim. A progressão de stones por nível de boost é a mesma para os Pokémon; o que muda entre eles é o tier e o efeito do boost, não a quantidade de stones por nível."}}
-]}
-</script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
 <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
+<nav class="top-nav"><div class="nav-container">
+  <a class="nav-title" href="../../">Ferramentas</a>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema"></button>
+</div></nav>
 <main>
-  <p class="crumb"><a href="../../">← Todas as ferramentas</a></p>
   <h1>Calculadora de Boost PXG</h1>
   <section class="app">
     <label for="atual">Boost atual (0–50)</label>
@@ -35,35 +32,16 @@
     <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem"></div>
   </section>
   <div class="ad-slot"></div>
-  <section class="texto">
-    <h2>Como funciona</h2>
-    <p>No PokéXGames, subir o boost de um Pokémon segue uma progressão: ir do nível 0 para o 1
-    custa 1 stone, do 1 para o 2 custa 2 stones, do 2 para o 3 custa 3, e assim por diante
-    até o nível 50.</p>
-    <p>Para saber quantas stones você gasta de um nível A até um nível B, a calculadora soma
-    a progressão desse intervalo usando a fórmula (B·(B+1) − A·(A+1)) ÷ 2 — o mesmo resultado
-    de somar nível por nível, mas instantâneo.</p>
-    <p>Do zero ao 50, por exemplo, são 1.275 stones no total. Se você já está no boost 20 e
-    quer chegar ao 35, a calculadora mostra exatamente o que falta para o trecho, sem precisar
-    consultar a tabela de boost nível por nível.</p>
-  </section>
-  <section class="texto">
-    <h2>Perguntas frequentes</h2>
-    <p><strong>Quantas stones preciso para o boost 50?</strong> Do 0 ao 50 são 1.275 stones
-    (1+2+…+50). Para intervalos menores, use a calculadora acima.</p>
-    <p><strong>Como o custo de boost é calculado?</strong> Cada nível custa o próximo número
-    da sequência: 1 stone para o primeiro ponto, 2 para o segundo, e assim por diante.</p>
-    <p><strong>Serve para qualquer Pokémon?</strong> Sim — a quantidade de stones por nível
-    de boost é igual para todos; o que varia é o efeito do boost em cada Pokémon.</p>
-  </section>
 </main>
 <footer>
   <a href="../../">Todas as ferramentas</a> ·
+  <a href="../../sobre.html">Sobre</a> ·
   <a href="../../privacidade.html">Privacidade</a> ·
-  <a href="../../sobre.html">Sobre</a>
+  <a href="https://github.com/Hashino/ferramentas">GitHub</a>
 </footer>
 <script src="../../config.js"></script>
 <script src="../../ads.js"></script>
+<script src="../../theme.js"></script>
 <script>
 document.getElementById("calcular").addEventListener("click", function () {
   var a = Number(document.getElementById("atual").value);

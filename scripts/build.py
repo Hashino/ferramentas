@@ -70,9 +70,14 @@ def hub(tools: list[dict]) -> None:
 <title>{CFG['site_name']} — calculadoras, geradores e conversores grátis</title>
 <meta name="description" content="{CFG['site_description']}">
 <link rel="canonical" href="{BASE}/">
+<script>document.documentElement.setAttribute("data-theme",function(){{try{{return localStorage.getItem("theme")||"light"}}catch(e){{return"light"}}}}());</script>
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<nav class="top-nav"><div class="nav-container">
+  <a class="nav-title" href="./">Ferramentas</a>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema"></button>
+</div></nav>
 <main>
   <h1>{CFG['site_name']}</h1>
   <p class="lead">{CFG['site_description']}</p>
@@ -80,9 +85,10 @@ def hub(tools: list[dict]) -> None:
 {cards}
   </div>
 </main>
-<footer><a href="./privacidade.html">Privacidade</a> · <a href="./sobre.html">Sobre</a></footer>
+<footer><a href="./sobre.html">Sobre</a> · <a href="./privacidade.html">Privacidade</a> · <a href="https://github.com/Hashino/ferramentas">GitHub</a></footer>
 <script src="./config.js"></script>
 <script src="./ads.js"></script>
+<script src="./theme.js"></script>
 </body>
 </html>
 """,

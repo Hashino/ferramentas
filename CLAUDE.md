@@ -13,6 +13,7 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
 - `scripts/build.py` — regenera `index.html` (hub), `sitemap.xml`, `robots.txt`, `llms.txt`, `config.js`, `ads.txt`. SEMPRE rodar antes de commitar.
 - `scripts/ping_indexnow.py` — roda no CI a cada push; não rodar manualmente
 - `templates/tool/index.html` — molde com tokens `{{...}}`; copiar e preencher
+- Visual: Nord + monoespaçada + cards de vidro + starfield (herdado do learnive/hashino.github.io). Tema CLARO é o default; toggle claro/escuro na barra superior (`theme.js`, persiste em localStorage).
 - `.env` — `SERPER_API_KEY` (NUNCA comitar; está no .gitignore)
 
 ## Comando: "faça as próximas N aplicações"
@@ -28,8 +29,8 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
    - slug: kebab-case curto, derivado da keyword
    - `<title>`: keyword primeiro, ≤60 chars · meta description ≤155 chars
    - H1 = título humano; `{{APP_HTML}}` + `{{APP_JS}}` = a ferramenta (funciona offline, sem CDN, sem biblioteca)
-   - `{{HOW_HTML}}` = 3 parágrafos explicando o cálculo/uso (texto para crawler/LLM)
-   - FAQ = 3 perguntas com variantes da keyword, em HTML e no JSON-LD `FAQPage`
+   - A página da ferramenta é SÓ a ferramenta: barra superior + H1 + app + rodapé.
+   NADA de seção "Como funciona", FAQ visível ou qualquer texto explicativo (decisão do dono).
    - marca a keyword como `feita` em `backlog/keywords.csv`
 4. **Build + deploy**: `python3 scripts/build.py` → commit (`tool: <slug>`) → `git push`.
 5. **Reportar**: URLs criadas; o workflow `indexnow` no GitHub Actions cuida de avisar Bing/Yandex.
@@ -37,6 +38,8 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
 ## Regras
 
 - NUNCA editar `tools/<slug>/` já publicado sem pedido explícito do usuário.
+- Página de ferramenta = topnav (link "Ferramentas" à esquerda, toggle de tema à direita) + H1 + `.app` + `.ad-slot` + footer (Todas as ferramentas · Sobre · Privacidade · GitHub). Sem texto explicativo.
+- Home (gerada por build.py): lista de cards com H1 + descrição; sobre/privacidade mantêm texto.
 - 1 ferramenta = 1 página = 1 keyword. Zero dependências externas (sem CDN, sem fontes remotas, sem analytics pesado).
 - Sempre `scripts/build.py` antes de commit.
 - Ferramentas em PT-BR por padrão; versão EN só sob pedido.

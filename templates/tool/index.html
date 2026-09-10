@@ -1,9 +1,9 @@
 <!doctype html>
 <!--
   MOLDE DE FERRAMENTA — copie para tools/<slug>/index.html e preencha os tokens {{...}}.
-  Regras: vanilla JS sem dependências; a ferramenta funciona offline; SEO preenchido com a keyword.
-  Tokens: {{SLUG}} {{TOOL_NAME}} {{TITLE}} {{DESCRIPTION}} {{KEYWORD}} {{H1}} {{APP_HTML}}
-          {{APP_JS}} {{HOW_HTML}} {{FAQ_HTML}} {{FAQ_JSONLD}} {{YEAR}}
+  Regras: vanilla JS sem dependências; funciona offline; a página contém APENAS a
+  barra superior, o título e a ferramenta — sem texto explicativo nem FAQ visíveis.
+  Tokens: {{SLUG}} {{TOOL_NAME}} {{TITLE}} {{DESCRIPTION}} {{H1}} {{APP_HTML}} {{APP_JS}}
 -->
 <html lang="pt-BR">
 <head>
@@ -18,35 +18,30 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"{{TOOL_NAME}}","url":"https://hashino.github.io/ferramentas/tools/{{SLUG}}/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"{{DESCRIPTION}}"}
 </script>
-<script type="application/ld+json">
-{{FAQ_JSONLD}}
-</script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
 <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
+<nav class="top-nav"><div class="nav-container">
+  <a class="nav-title" href="../../">Ferramentas</a>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema"></button>
+</div></nav>
 <main>
-  <p class="crumb"><a href="../../">← Todas as ferramentas</a></p>
   <h1>{{H1}}</h1>
   <section class="app">
 {{APP_HTML}}
   </section>
   <div class="ad-slot"></div>
-  <section class="texto">
-    <h2>Como funciona</h2>
-{{HOW_HTML}}
-  </section>
-  <section class="texto">
-    <h2>Perguntas frequentes</h2>
-{{FAQ_HTML}}
-  </section>
 </main>
 <footer>
   <a href="../../">Todas as ferramentas</a> ·
+  <a href="../../sobre.html">Sobre</a> ·
   <a href="../../privacidade.html">Privacidade</a> ·
-  <a href="../../sobre.html">Sobre</a>
+  <a href="https://github.com/Hashino/ferramentas">GitHub</a>
 </footer>
 <script src="../../config.js"></script>
 <script src="../../ads.js"></script>
+<script src="../../theme.js"></script>
 <script>
 {{APP_JS}}
 </script>
