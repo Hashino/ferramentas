@@ -57,8 +57,9 @@ def config_js() -> None:
 
 def hub(tools: list[dict]) -> None:
     cards = "\n".join(
-        f'      <a class="card" href="./tools/{t["slug"]}/"><h2>{t["h1"] or t["slug"]}</h2>'
-        f"<p>{t['desc']}</p></a>"
+        f'      <a class="card" href="./tools/{t["slug"]}/" '
+        f'data-nome="{t["h1"] or t["slug"]} {t["slug"]} {t["desc"]}">'
+        f"<h2>{t['h1'] or t['slug']}</h2></a>"
         for t in tools
     )
     (ROOT / "index.html").write_text(
@@ -74,14 +75,15 @@ def hub(tools: list[dict]) -> None:
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<div id="stars"></div><div id="stars2"></div><div id="stars3"></div>
 <nav class="top-nav"><div class="nav-container">
   <a class="nav-title" href="./">Ferramentas</a>
   <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema"></button>
 </div></nav>
 <main>
-  <h1>{CFG['site_name']}</h1>
-  <p class="lead">{CFG['site_description']}</p>
-  <div class="grid">
+  <input id="tool-search" class="search-box" type="search"
+         placeholder="buscar ferramenta…" autocomplete="off">
+  <div class="grid" id="tool-list">
 {cards}
   </div>
 </main>
@@ -89,6 +91,7 @@ def hub(tools: list[dict]) -> None:
 <script src="./config.js"></script>
 <script src="./ads.js"></script>
 <script src="./theme.js"></script>
+<script src="./search.js"></script>
 </body>
 </html>
 """,

@@ -1,6 +1,6 @@
-# Ferramentas Grátis
+# Ferramentas
 
-> Ferramentas online gratuitas: calculadoras, geradores e conversores que funcionam direto no navegador, sem cadastro.
+> Calculadoras, geradores e conversores que funcionam direto no navegador, sem cadastro.
 
 ## Ferramentas
 
