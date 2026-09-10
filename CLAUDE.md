@@ -12,8 +12,10 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
 - `scripts/mine.py` — mineração: `python3 scripts/mine.py [limite]` (harvest de autocomplete) e `python3 scripts/mine.py --check [N]` (SERP das candidatas)
 - `scripts/build.py` — regenera `index.html` (hub), `sitemap.xml`, `robots.txt`, `llms.txt`, `config.js`, `ads.txt`. SEMPRE rodar antes de commitar.
 - `scripts/ping_indexnow.py` — roda no CI a cada push; não rodar manualmente
-- `templates/tool/index.html` — molde com tokens `{{...}}`; copiar e preencher
-- Visual: Nord + monoespaçada + cards de vidro + starfield (herdado do learnive/hashino.github.io). Tema CLARO é o default; toggle claro/escuro na barra superior (`theme.js`, persiste em localStorage).
+- `search.js` — busca fuzzy da home (filtra/reordena os cards conforme digitação)
+- `chrome.js` — UI compartilhada de TODAS as páginas, injetada em runtime: starfield (3 camadas), topnav ("Ferramentas" + toggle de tema), AdSense (se config.js tiver client) e rodapé (só nas páginas com `<body data-footer>`). Alterar UI do site = editar `chrome.js`/`style.css` UMA vez; propaga para todas as páginas sem rebuild. Página de ferramenta NUNCA contém topnav/stars/footer no HTML.
+- `templates/tool/index.html` — molde com tokens `{{...}}`; copiar e preencher. A página da ferramenta contém apenas: head com meta/SEO + `<main>` (H1 + `.app` + `.ad-slot`) + `config.js`, `chrome.js` e o JS da ferramenta.
+- Visual: Nord + monoespaçada + cards de vidro + starfield (herdado do learnive/hashino.github.io). Tema CLARO é o default; toggle claro/escuro na barra superior (persiste em localStorage; o tema inicial vem do snippet inline no `<head>` para evitar flash).
 - `.env` — `SERPER_API_KEY` (NUNCA comitar; está no .gitignore)
 
 ## Comando: "faça as próximas N aplicações"
@@ -38,7 +40,7 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
 ## Regras
 
 - NUNCA editar `tools/<slug>/` já publicado sem pedido explícito do usuário.
-- Página de ferramenta = topnav (link "Ferramentas" à esquerda, toggle de tema à direita) + H1 + `.app` + `.ad-slot`. SEM footer, SEM texto explicativo. Único link interno: o da topnav.
+- Página de ferramenta = head (meta/SEO) + `<main>` (H1 + `.app` + `.ad-slot`) + scripts `config.js`, `chrome.js` e o JS da ferramenta. SEM footer, SEM texto explicativo, SEM markup de UI comum (chrome.js injeta).
 - Home (gerada por build.py): lista de cards com H1 + descrição; sobre/privacidade mantêm texto.
 - 1 ferramenta = 1 página = 1 keyword. Zero dependências externas (sem CDN, sem fontes remotas, sem analytics pesado).
 - Sempre `scripts/build.py` antes de commit.

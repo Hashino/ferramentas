@@ -1,8 +1,10 @@
 <!doctype html>
 <!--
   MOLDE DE FERRAMENTA — copie para tools/<slug>/index.html e preencha os tokens {{...}}.
-  Regras: vanilla JS sem dependências; funciona offline; a página contém APENAS a
-  barra superior, o título e a ferramenta — sem texto explicativo nem FAQ visíveis.
+  A página contém APENAS o que é único dela: meta/SEO no head e a ferramenta no body.
+  A UI comum (starfield, barra superior, toggle de tema, anúncio) é injetada em runtime
+  por chrome.js — nunca escreva topnav/stars/footer no HTML da ferramenta.
+  Regras: vanilla JS sem dependências; funciona offline; sem texto explicativo.
   Tokens: {{SLUG}} {{TOOL_NAME}} {{TITLE}} {{DESCRIPTION}} {{H1}} {{APP_HTML}} {{APP_JS}}
 -->
 <html lang="pt-BR">
@@ -22,11 +24,6 @@
 <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
-<div id="stars"></div><div id="stars2"></div><div id="stars3"></div>
-<nav class="top-nav"><div class="nav-container">
-  <a class="nav-title" href="../../">Ferramentas</a>
-  <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema"></button>
-</div></nav>
 <main>
   <h1>{{H1}}</h1>
   <section class="app">
@@ -35,8 +32,7 @@
   <div class="ad-slot"></div>
 </main>
 <script src="../../config.js"></script>
-<script src="../../ads.js"></script>
-<script src="../../theme.js"></script>
+<script src="../../chrome.js"></script>
 <script>
 {{APP_JS}}
 </script>

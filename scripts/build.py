@@ -74,12 +74,7 @@ def hub(tools: list[dict]) -> None:
 <script>document.documentElement.setAttribute("data-theme",function(){{try{{return localStorage.getItem("theme")||"light"}}catch(e){{return"light"}}}}());</script>
 <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-<div id="stars"></div><div id="stars2"></div><div id="stars3"></div>
-<nav class="top-nav"><div class="nav-container">
-  <a class="nav-title" href="./">Ferramentas</a>
-  <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema"></button>
-</div></nav>
+<body data-footer>
 <main>
   <input id="tool-search" class="search-box" type="search"
          placeholder="buscar ferramenta…" autocomplete="off">
@@ -87,10 +82,8 @@ def hub(tools: list[dict]) -> None:
 {cards}
   </div>
 </main>
-<footer><a href="./sobre.html">Sobre</a> · <a href="./privacidade.html">Privacidade</a> · <a href="https://github.com/Hashino/ferramentas">GitHub</a></footer>
 <script src="./config.js"></script>
-<script src="./ads.js"></script>
-<script src="./theme.js"></script>
+<script src="./chrome.js"></script>
 <script src="./search.js"></script>
 </body>
 </html>
