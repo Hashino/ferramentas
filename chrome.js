@@ -61,15 +61,11 @@
   });
   pintaToggle();
 
-  // ── AdSense: injeta somente se configurado em site.json (via config.js) ───
-  if (window.SITE && window.SITE.adClient) {
-    var s = document.createElement("script");
-    s.async = true;
-    s.src =
-      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" +
-      window.SITE.adClient;
-    s.crossOrigin = "anonymous";
-    document.head.appendChild(s);
+  // ── AdSense: o <script> do client já está estático no <head> de cada página
+  // (exigência da verificação do AdSense). Aqui só preenchemos o bloco de anúncio
+  // (.ad-slot) quando houver slot ID em site.json — sem slot, quem coloca anúncio
+  // é o Auto Ads do painel do AdSense. ─────────────────────────────────────────
+  if (window.SITE && window.SITE.adClient && window.SITE.adSlot) {
     var slot = document.querySelector(".ad-slot");
     if (slot) {
       var ins = document.createElement("ins");

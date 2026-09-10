@@ -71,6 +71,7 @@ def hub(tools: list[dict]) -> None:
 <title>{CFG['site_name']} — calculadoras, geradores e conversores grátis</title>
 <meta name="description" content="{CFG['site_description']}">
 <link rel="canonical" href="{BASE}/">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
 <script>document.documentElement.setAttribute("data-theme",function(){{try{{return localStorage.getItem("theme")||"light"}}catch(e){{return"light"}}}}());</script>
 <link rel="stylesheet" href="./style.css">
 </head>
