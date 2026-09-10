@@ -38,7 +38,7 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
 ## Regras
 
 - NUNCA editar `tools/<slug>/` já publicado sem pedido explícito do usuário.
-- Página de ferramenta = topnav (link "Ferramentas" à esquerda, toggle de tema à direita) + H1 + `.app` + `.ad-slot` + footer (Todas as ferramentas · Sobre · Privacidade · GitHub). Sem texto explicativo.
+- Página de ferramenta = topnav (link "Ferramentas" à esquerda, toggle de tema à direita) + H1 + `.app` + `.ad-slot` + footer (Sobre · Privacidade · GitHub — sem link "Todas as ferramentas"; a volta à home é o link da topnav). Sem texto explicativo.
 - Home (gerada por build.py): lista de cards com H1 + descrição; sobre/privacidade mantêm texto.
 - 1 ferramenta = 1 página = 1 keyword. Zero dependências externas (sem CDN, sem fontes remotas, sem analytics pesado).
 - Sempre `scripts/build.py` antes de commit.
