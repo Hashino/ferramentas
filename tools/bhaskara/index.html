@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de Bhaskara — Passo a Passo Online Grátis</title>
+<meta name="description" content="Resolva a equação do 2º grau com a fórmula de Bhaskara: delta, raízes e o passo a passo completo do cálculo. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/bhaskara/">
+<meta property="og:title" content="Calculadora de Bhaskara — Passo a Passo">
+<meta property="og:description" content="Resolva ax² + bx + c = 0 com a fórmula de Bhaskara: delta, raízes e passo a passo. Grátis.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Bhaskara","url":"https://hashino.github.io/ferramentas/tools/bhaskara/","applicationCategory":"EducationalApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora da fórmula de Bhaskara com delta, raízes e passo a passo."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Qual é a fórmula de Bhaskara?","acceptedAnswer":{"@type":"Answer","text":"Para a equação ax² + bx + c = 0, as raízes são x = (−b ± √Δ) / 2a, onde Δ = b² − 4ac."}},
+{"@type":"Question","name":"O que significa o delta negativo em Bhaskara?","acceptedAnswer":{"@type":"Answer","text":"Delta negativo significa que a equação não tem raízes reais — a parábola não cruza o eixo x. As raízes existem apenas no conjunto dos números complexos."}},
+{"@type":"Question","name":"Quando a equação do 2º grau tem uma única raiz?","acceptedAnswer":{"@type":"Answer","text":"Quando delta é igual a zero. Nesse caso as duas raízes coincidem: x = −b / 2a."}}
+]}
+</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <p class="crumb"><a href="../../">← Todas as ferramentas</a></p>
+  <h1>Calculadora de Bhaskara</h1>
+  <section class="app">
+    <p style="margin:.2rem 0 1rem;color:var(--muted)">Equação: <strong>ax² + bx + c = 0</strong></p>
+    <label for="a">a</label>
+    <input type="number" id="a" step="any" placeholder="ex.: 1">
+    <label for="b">b</label>
+    <input type="number" id="b" step="any" placeholder="ex.: -3">
+    <label for="c">c</label>
+    <input type="number" id="c" step="any" placeholder="ex.: 2">
+    <button id="calcular">Resolver</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="passos" style="margin-top:1rem;font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+  <section class="texto">
+    <h2>Como funciona</h2>
+    <p>A ferramenta resolve equações do segundo grau no formato ax² + bx + c = 0 usando a
+    fórmula de Bhaskara, e mostra cada etapa do cálculo — não só o resultado final.</p>
+    <p>Primeiro é calculado o delta (Δ = b² − 4ac), que indica quantas raízes reais a equação
+    tem: Δ &gt; 0 significa duas raízes diferentes, Δ = 0 significa uma raiz única e
+    Δ &lt; 0 significa nenhuma raiz real.</p>
+    <p>Depois, as raízes saem de x = (−b ± √Δ) / 2a. A calculadora exibe os valores
+    substituídos em cada fórmula, então dá para conferir o exercício passo a passo ou
+    copiar a resolução para o caderno.</p>
+  </section>
+  <section class="texto">
+    <h2>Perguntas frequentes</h2>
+    <p><strong>Qual é a fórmula de Bhaskara?</strong> x = (−b ± √Δ) / 2a, com Δ = b² − 4ac,
+    para equações do tipo ax² + bx + c = 0.</p>
+    <p><strong>O que significa delta negativo?</strong> A equação não tem raízes reais: a
+    parábola não toca o eixo x. As raízes só existem nos números complexos.</p>
+    <p><strong>Quando existe uma única raiz?</strong> Quando Δ = 0 — as duas raízes coincidem
+    em x = −b / 2a.</p>
+  </section>
+</main>
+<footer>
+  <a href="../../">Todas as ferramentas</a> ·
+  <a href="../../privacidade.html">Privacidade</a> ·
+  <a href="../../sobre.html">Sobre</a>
+</footer>
+<script src="../../config.js"></script>
+<script src="../../ads.js"></script>
+<script>
+function fmt(n) {
+  var r = Math.round(n * 10000) / 10000;
+  return String(r);
+}
+
+document.getElementById("calcular").addEventListener("click", function () {
+  var a = Number(document.getElementById("a").value);
+  var b = Number(document.getElementById("b").value);
+  var c = Number(document.getElementById("c").value);
+  var saida = document.getElementById("resultado");
+  var passos = document.getElementById("passos");
+  if (!a) {
+    saida.hidden = false;
+    saida.textContent = "O coeficiente 'a' não pode ser zero (senão não é equação do 2º grau).";
+    passos.textContent = "";
+    return;
+  }
+  var delta = b * b - 4 * a * c;
+  var txt = "Δ = b² − 4ac = " + fmt(b) + "² − 4·" + fmt(a) + "·" + fmt(c) + " = " + fmt(delta);
+  saida.hidden = false;
+  if (delta < 0) {
+    saida.textContent = "Δ = " + fmt(delta) + " → sem raízes reais";
+    txt += "\n\nComo Δ < 0, a equação não tem raízes reais.";
+  } else if (delta === 0) {
+    var x = -b / (2 * a);
+    saida.textContent = "x = " + fmt(x) + " (raiz única, Δ = 0)";
+    txt += "\n\nx = −b / 2a = " + fmt(-b) + " / " + fmt(2 * a) + " = " + fmt(x);
+  } else {
+    var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+    var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+    saida.textContent = "x₁ = " + fmt(x1) + "   e   x₂ = " + fmt(x2);
+    txt += "\n\nx₁ = (−b + √Δ) / 2a = (" + fmt(-b) + " + " + fmt(Math.sqrt(delta)) + ") / " + fmt(2 * a) + " = " + fmt(x1);
+    txt += "\nx₂ = (−b − √Δ) / 2a = (" + fmt(-b) + " − " + fmt(Math.sqrt(delta)) + ") / " + fmt(2 * a) + " = " + fmt(x2);
+  }
+  passos.textContent = txt;
+});
+</script>
+</body>
+</html>

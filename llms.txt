@@ -1,0 +1,9 @@
+# Ferramentas Grátis
+
+> Ferramentas online gratuitas: calculadoras, geradores e conversores que funcionam direto no navegador, sem cadastro.
+
+## Ferramentas
+
+- [Calculadora de Arcano Pessoal — Descubra o Seu no Tarô](https://hashino.github.io/ferramentas/tools/arcano-pessoal/): Descubra seu Arcano Pessoal do Tarô a partir da data de nascimento. Calculadora grátis, resultado na hora, com o significado resumido dos 22 arcanos.
+- [Calculadora de Bhaskara — Passo a Passo Online Grátis](https://hashino.github.io/ferramentas/tools/bhaskara/): Resolva a equação do 2º grau com a fórmula de Bhaskara: delta, raízes e o passo a passo completo do cálculo. Grátis, sem cadastro.
+- [Calculadora de Boost PXG — Stones do Boost Atual ao Desejado](https://hashino.github.io/ferramentas/tools/boost-pxg/): Calcule quantas boost stones você precisa para subir o boost do seu Pokémon no PokéXGames (PXG), do nível atual ao desejado. Grátis, sem instalar nada.

@@ -1,0 +1,54 @@
+<!doctype html>
+<!--
+  MOLDE DE FERRAMENTA — copie para tools/<slug>/index.html e preencha os tokens {{...}}.
+  Regras: vanilla JS sem dependências; a ferramenta funciona offline; SEO preenchido com a keyword.
+  Tokens: {{SLUG}} {{TOOL_NAME}} {{TITLE}} {{DESCRIPTION}} {{KEYWORD}} {{H1}} {{APP_HTML}}
+          {{APP_JS}} {{HOW_HTML}} {{FAQ_HTML}} {{FAQ_JSONLD}} {{YEAR}}
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/{{SLUG}}/">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESCRIPTION}}">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"{{TOOL_NAME}}","url":"https://hashino.github.io/ferramentas/tools/{{SLUG}}/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"{{DESCRIPTION}}"}
+</script>
+<script type="application/ld+json">
+{{FAQ_JSONLD}}
+</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <p class="crumb"><a href="../../">← Todas as ferramentas</a></p>
+  <h1>{{H1}}</h1>
+  <section class="app">
+{{APP_HTML}}
+  </section>
+  <div class="ad-slot"></div>
+  <section class="texto">
+    <h2>Como funciona</h2>
+{{HOW_HTML}}
+  </section>
+  <section class="texto">
+    <h2>Perguntas frequentes</h2>
+{{FAQ_HTML}}
+  </section>
+</main>
+<footer>
+  <a href="../../">Todas as ferramentas</a> ·
+  <a href="../../privacidade.html">Privacidade</a> ·
+  <a href="../../sobre.html">Sobre</a>
+</footer>
+<script src="../../config.js"></script>
+<script src="../../ads.js"></script>
+<script>
+{{APP_JS}}
+</script>
+</body>
+</html>
