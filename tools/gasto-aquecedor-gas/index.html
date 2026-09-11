@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Gasta um Aquecedor a Gás — Calculadora</title>
+<meta name="description" content="Calcule o gasto mensal do aquecedor a gás: consumo em kg/h, banhos por dia e o preço do kg do gás. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/gasto-aquecedor-gas/">
+<meta property="og:title" content="Quanto Gasta um Aquecedor a Gás — Calculadora">
+<meta property="og:description" content="kg/h × banhos × preço do gás: o custo mensal do banho quente a gás.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de gasto de aquecedor a gás","url":"https://hashino.github.io/ferramentas/tools/gasto-aquecedor-gas/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quanto gasta um aquecedor a gás por mês."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Gasta um Aquecedor a Gás</h1>
+  <section class="app">
+<label for="consumo">Consumo do aquecedor</label>
+    <select id="consumo">
+      <option value="1.1">1,1 kg/h — pequeno (9 L/min)</option>
+      <option value="1.7" selected>1,7 kg/h — médio (12 L/min)</option>
+      <option value="2.6">2,6 kg/h — grande (18 L/min)</option>
+    </select>
+    <label for="minutos">Minutos de banho</label>
+    <input type="number" id="minutos" step="1" min="1" value="12">
+    <label for="banhos">Banhos por dia na casa</label>
+    <input type="number" id="banhos" step="1" min="1" value="3">
+
+    <label for="tarifa">Preço do kg do gás (R$)</label>
+    <input type="number" id="tarifa" step="0.1" min="1" value="6.5">
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var kgH = Number(document.getElementById("consumo").value);
+  var min = Number(document.getElementById("minutos").value);
+  var banhos = Math.floor(Number(document.getElementById("banhos").value));
+  var precoKg = Number(document.getElementById("tarifa").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (min <= 0 || banhos < 1 || precoKg <= 0) { saida.textContent = "Preencha banhos, minutos e o preço do gás."; return; }
+  var brl = function (n) { return n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+  var kgBanho = kgH * min / 60;
+  var kgMes = kgBanho * banhos * 30;
+  var mes = kgMes * precoKg;
+  saida.textContent = "Gasto por mês: R$ " + brl(mes) + " (" + kgMes.toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + " kg de gás)";
+  detalhe.textContent = kgH.toLocaleString("pt-BR") + " kg/h × " + min + " min = " + kgBanho.toLocaleString("pt-BR", { maximumFractionDigits: 2 }) + " kg por banho\n" +
+    "mês: " + kgMes.toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + " kg × R$ " + brl(precoKg) + "/kg = R$ " + brl(mes) + "\n" +
+    "botijão de 13 kg ≈ R$ 120; encanado costuma custar menos por kg";
+});
+</script>
+</body>
+</html>

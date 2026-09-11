@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantos Litros Gasta Lavar Louça — Mão × Lava-louças</title>
+<meta name="description" content="Compare a água de lavar louça na mão e na lava-louças: minutos, vazão e ciclos. O resultado surpreende. Grátis, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/agua-lavar-louca/">
+<meta property="og:title" content="Quantos Litros Gasta Lavar Louça — Mão × Lava-louças">
+<meta property="og:description" content="Mão com torneira aberta × lava-louças: a comparação real de água.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de água para lavar louça","url":"https://hashino.github.io/ferramentas/tools/agua-lavar-louca/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quantos litros gasta lavar louça."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quantos Litros Gasta Lavar Louça</h1>
+  <section class="app">
+    <label for="minutos">Minutos lavando na mão por dia</label>
+    <input type="number" id="minutos" step="5" min="5" value="30">
+<label for="vazao">Torneira</label>
+    <select id="vazao">
+      <option value="12">Aberta de verdade — ~12 L/min</option>
+      <option value="6" selected>Com aerador/fechando ao enxaguar — ~6 L/min</option>
+    </select>
+    <label for="ciclos">Ciclos de lava-louças por dia</label>
+    <input type="number" id="ciclos" step="1" min="0" value="1">
+
+    <label for="tarifa">Tarifa de água (R$/m³)</label>
+    <input type="number" id="tarifa" step="0.5" min="1" value="7">
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var min = Number(document.getElementById("minutos").value);
+  var v = Number(document.getElementById("vazao").value);
+  var ciclos = Number(document.getElementById("ciclos").value) || 0;
+  var tarifa = Number(document.getElementById("tarifa").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (min <= 0) { saida.textContent = "Informe os minutos por dia."; return; }
+  var br = function (x, d) { return x.toLocaleString("pt-BR", { maximumFractionDigits: d || 0 }); };
+  var litrosMao = min * v;
+  var litrosMaquina = ciclos * 15;
+  var dif = litrosMao - litrosMaquina;
+  var custoMao = litrosMao * 30 / 1000 * tarifa;
+  saida.textContent = "Na mão: " + br(litrosMao) + " L/dia — máquina (" + ciclos + " ciclo/s): " + br(litrosMaquina) + " L/dia";
+  detalhe.textContent = "mão: " + min + " min × " + v + " L/min = " + br(litrosMao) + " L/dia = " + br(litrosMao * 30) + " L/mês\n" +
+    "lava-louças: ≈ 15 L por ciclo × " + ciclos + " = " + br(litrosMaquina) + " L/dia = " + br(litrosMaquina * 30) + " L/mês\n" +
+    (dif > 0 ? "a máquina economiza " + br(dif) + " L/dia (≈ R$ " + br(dif * 30 / 1000 * tarifa, 2) + "/mês)" : "torneira fechada é o que salva a conta") + "\n" +
+    "custo da água na mão: ≈ R$ " + br(custoMao, 2) + "/mês";
+});
+</script>
+</body>
+</html>
