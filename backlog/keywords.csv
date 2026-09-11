@@ -2914,3 +2914,14 @@ quanto custa manter uma moto,feita,custo-moto,leva12
 quantas latas de tinta para pintar um quarto,descartada,"4 calculadoras de marca (suvinil, leroy, coral, joli)",leva12
 quanto gasto de gasolina por mes,descartada,"5 calculadoras (mobills, serasa, zapay, cpfabbri, omni)",leva12
 quanto gasta ar condicionado por mes,retida,"2 calculadoras (clarke, poloar) — revisitar depois",leva12
+quanto custa colocar aparelho no dente,feita,aparelho-dente,leva13
+quanto custa uma tatuagem,feita,tatuagem-preco,leva13
+quantas doses tem uma garrafa de vodka,feita,doses-vodka,leva13
+quanto custa clareamento dental,feita,clareamento-dental,leva13
+quanto custa academia por mes,feita,custo-academia,leva13
+quanto custa uma laje,feita,custo-laje,leva13
+quanto custa instalacao eletrica de uma casa,feita,custo-eletrica-casa,leva13
+quanto custa construir um galpao,feita,custo-galpao,leva13
+quanto custa montar um aquario,feita,custo-montar-aquario,leva13
+quanto custa creche particular,feita,custo-creche,leva13
+quanto custa uma mudanca,retida,"2 simuladores fracos (calculadorabrasil DF, garantiamudancas) — revisitar",leva13

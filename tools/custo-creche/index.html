@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Creche Particular por Mês — Preços</title>
+<meta name="description" content="Estime a mensalidade da creche particular: interior, capital ou bairro nobre, meio período ou integral. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/custo-creche/">
+<meta property="og:title" content="Quanto Custa Creche Particular por Mês — Preços">
+<meta property="og:description" content="Interior × capital: faixa da mensalidade da creche particular.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Estimativa de mensalidade de creche particular","url":"https://hashino.github.io/ferramentas/tools/custo-creche/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa creche particular por mês."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Creche Particular por Mes</h1>
+  <section class="app">
+<label for="cidade">Onde você mora</label>
+    <select id="cidade">
+      <option value="650">Interior / cidade média</option>
+      <option value="1300" selected>Capital grande (SP, Rio, BH)</option>
+      <option value="3000">Bairros nobres de capital</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("cidade").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("cidade").selectedOptions[0].textContent.split("(")[0].trim();
+  saida.textContent = "R$ " + br(med * 0.7) + " a R$ " + br(med * 1.5) + " por mês (integral)";
+  detalhe.textContent = "creche particular em " + nome.trim().toLowerCase() + "\n" +
+    "meio período costuma custar 25% a 35% menos\n" +
+    "berçário (0 a 1 ano) é a faixa mais cara\n" +
+    "material, uniforme e refeição extra entram à parte";
+});
+</script>
+</body>
+</html>
