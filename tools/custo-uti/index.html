@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa a UTI por Dia — Calculadora</title>
+<meta name="description" content="Estime a diária de UTI particular: adulto ou neonatal, com faixa real de hospitais. Grátis, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/custo-uti/">
+<meta property="og:title" content="Quanto Custa a UTI por Dia — Calculadora">
+<meta property="og:description" content="Adulto × neonatal: faixa de preço da diária de UTI.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço da diária de UTI","url":"https://hashino.github.io/ferramentas/tools/custo-uti/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa a UTI por dia."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa a UTI por Dia</h1>
+  <section class="app">
+<label for="tipo">Tipo de UTI</label>
+    <select id="tipo">
+      <option value="3500" selected>UTI adulto (diária)</option>
+      <option value="3000">UTI neonatal (diária)</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tipo").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent.toLowerCase();
+  saida.textContent = "Diária: R$ " + br(med * 0.7) + " a R$ " + br(med * 1.7);
+  detalhe.textContent = nome + "\n" +
+    "medicamentos, hemoderivados e exames somam à diária\n" +
+    "hospitais de alto custo (referência) passam do topo da faixa\n" +
+    "pelo SUS a UTI é de graça, com fila de leitos\n" +
+    "plano de saúde cobre, mas confira a carência para internação";
+});
+</script>
+</body>
+</html>

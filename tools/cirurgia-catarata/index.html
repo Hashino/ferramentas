@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Cirurgia de Catarata — Calculadora</title>
+<meta name="description" content="Estime o preço da cirurgia de catarata por olho: lente monofocal ou multifocal, com faixa real. Grátis, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/cirurgia-catarata/">
+<meta property="og:title" content="Quanto Custa Cirurgia de Catarata — Calculadora">
+<meta property="og:description" content="Monofocal × multifocal: faixa de preço por olho.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço de cirurgia de catarata","url":"https://hashino.github.io/ferramentas/tools/cirurgia-catarata/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa cirurgia de catarata."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Cirurgia de Catarata</h1>
+  <section class="app">
+<label for="tipo">Lente usada (por olho)</label>
+    <select id="tipo">
+      <option value="4000" selected>Monofocal</option>
+      <option value="8000">Multifocal / torica</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tipo").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent.toLowerCase();
+  saida.textContent = "Por olho: R$ " + br(med * 0.6) + " a R$ " + br(med * 1.9);
+  detalhe.textContent = "cirurgia com lente " + nome + "\n" +
+    "os dois olhos são cirurgias separadas, geralmente com 15 dias de intervalo\n" +
+    "pelo SUS a cirurgia de catarata é de graça, com fila\n" +
+    "plano de saúde cobre a lente monofocal padrão\n" +
+    "exames pré-operatórios e consulta entram à parte";
+});
+</script>
+</body>
+</html>
