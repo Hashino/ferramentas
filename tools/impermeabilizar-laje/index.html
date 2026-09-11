@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Impermeabilizar Laje — Calculadora</title>
+<meta name="description" content="Calcule o custo para impermeabilizar a laje: metros quadrados e sistema (manta, argamassa ou membrana). Grátis, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/impermeabilizar-laje/">
+<meta property="og:title" content="Quanto Custa Impermeabilizar Laje — Calculadora">
+<meta property="og:description" content="M² × sistema: faixa de preço da impermeabilização da laje.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de custo de impermeabilização de laje","url":"https://hashino.github.io/ferramentas/tools/impermeabilizar-laje/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa impermeabilizar laje."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Impermeabilizar Laje</h1>
+  <section class="app">
+    <label for="m2">Metros quadrados de laje</label>
+    <input type="number" id="m2" step="5" min="5" value="25">
+<label for="sis">Sistema</label>
+    <select id="sis">
+      <option value="45" selected>Argamassa polimérica — a mais comum</option>
+      <option value="50">Membrana líquida</option>
+      <option value="60">Manta asfáltica — a mais durável</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var m2 = Number(document.getElementById("m2").value);
+  var med = Number(document.getElementById("sis").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (m2 < 5) { saida.textContent = "Informe os metros quadrados."; return; }
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var total = m2 * med;
+  saida.textContent = "Estimativa: R$ " + br(total * 0.75) + " a R$ " + br(total * 1.4);
+  detalhe.textContent = m2 + " m² × R$ " + br(med) + "/m² médio\n" +
+    "inclui material e mão de obra; regularização da laje à parte se precisar\n" +
+    "manta dura 10+ anos, argamassa 3 a 5 anos\n" +
+    "resolva a inclinação antes: água empoçada mata qualquer sistema";
+});
+</script>
+</body>
+</html>

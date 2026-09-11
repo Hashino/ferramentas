@@ -2969,7 +2969,19 @@ quanto custa um jardineiro,feita,jardineiro,leva17
 quanto custa adestrar um cachorro,feita,adestramento-cachorro,leva17
 quanto custa consulta nutricionista,feita,consulta-nutricionista,leva17
 quanto custa aula particular,feita,aula-particular,leva17
-quanto custa um dj para festa,candidata,"PASS fila leva18: PASS fila: djeventosp, montandofesta, casamentos.com.br",leva17
-quanto custa um fotografo para evento,candidata,"PASS fila leva18: PASS fila: tabelas de fotografos, cronoshare",leva17
-quanto custa buffet por pessoa,candidata,"PASS fila leva18: PASS fila: forum, suafestasp, getninjas",leva17
-quanto custa limpeza de pele,candidata,PASS fila leva18: PASS fila: spas/clinicas sem calculadora,leva17
+quanto custa um dj para festa,candidata,"PASS fila leva19: PASS: djeventosp, montandofesta, casamentos.com.br",leva17
+quanto custa um fotografo para evento,candidata,"PASS fila leva19: PASS: tabelas de fotografos, cronoshare",leva17
+quanto custa buffet por pessoa,candidata,"PASS fila leva19: PASS: forum, suafestasp, getninjas",leva17
+quanto custa limpeza de pele,candidata,PASS fila leva19: PASS: spas/clinicas sem calculadora,leva17
+quanto custa castração de cachorro,feita,castracao-cachorro,leva18
+quanto custa vacina cachorro,feita,vacina-cachorro,leva18
+quanto custa hotel para cachorro,feita,hotel-cachorro,leva18
+quanto custa uma consulta medica particular,feita,consulta-medica,leva18
+quanto custa uma higienização interna do carro,feita,higienizacao-carro,leva18
+quanto custa animacao de festa infantil,feita,animacao-festa-infantil,leva18
+quanto custa alugar mesas e cadeiras para festa,feita,alugar-mesas-cadeiras,leva18
+quanto custa alugar som para festa,feita,som-para-festa,leva18
+quanto custa limpar caixa d'agua,feita,limpar-caixa-dagua,leva18
+quanto custa impermeabilizar laje,feita,impermeabilizar-laje,leva18
+quanto custa acupuntura,candidata,"PASS fila leva19: PASS: drconsulta, coegoiania, blancspa",leva18
+quanto custa instalar calha,candidata,"PASS fila leva19: PASS: cronoshare, jcdart, getninjas",leva18
