@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Gasta uma Lava Louças — Calculadora por Mês</title>
+<meta name="description" content="Calcule o custo mensal da lava louças na conta de luz: consumo por ciclo e ciclos por semana. Grátis, sem cadastro, resultado na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/gasto-lava-loucas/">
+<meta property="og:title" content="Quanto Gasta uma Lava Louças — Calculadora por Mês">
+<meta property="og:description" content="kWh por ciclo × ciclos por semana: o custo real da lava louças.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Gasto da Lava Louças","url":"https://hashino.github.io/ferramentas/tools/gasto-lava-loucas/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quanto gasta uma lava louças por mês."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Gasta uma Lava Louças</h1>
+  <section class="app">
+<label for="ciclo">Consumo por ciclo (manual/selo)</label>
+    <select id="ciclo">
+      <option value="0.8">0,8 kWh — ciclo econômico</option>
+      <option value="1.0" selected>1,0 kWh — ciclo normal</option>
+      <option value="1.3">1,3 kWh — ciclo intenso</option>
+      <option value="1.5">1,5 kWh — ciclo com água quente</option>
+    </select>
+    <label for="ciclos">Ciclos por semana</label>
+    <input type="number" id="ciclos" step="1" min="1" value="5">
+    <label for="tarifa">Tarifa da sua região (R$/kWh)</label>
+    <input type="number" id="tarifa" step="0.01" min="0.1" value="0.95">
+    <button id="calcular">Calcular gasto</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var kwhCiclo = Number(document.getElementById("ciclo").value);
+  var ciclos = Number(document.getElementById("ciclos").value);
+  var tarifa = Number(document.getElementById("tarifa").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (ciclos < 1 || tarifa <= 0) { saida.textContent = "Informe os ciclos por semana e a tarifa."; return; }
+  var brl = function (n) { return n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+  var kwhMes = kwhCiclo * ciclos * 4.3;
+  var mes = kwhMes * tarifa;
+  saida.textContent = "Custo por mês: R$ " + brl(mes);
+  detalhe.textContent = kwhCiclo.toLocaleString("pt-BR") + " kWh × " + ciclos + " ciclos/semana × 4,3 semanas = " + kwhMes.toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + " kWh/mês\n" +
+    "custo: " + kwhMes.toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + " kWh × R$ " + brl(tarifa) + " = R$ " + brl(mes) + "/mês";
+});
+</script>
+</body>
+</html>

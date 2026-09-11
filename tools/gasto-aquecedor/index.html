@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Gasta um Aquecedor Elétrico — Calculadora</title>
+<meta name="description" content="Calcule o gasto mensal do aquecedor elétrico de ambiente na conta de luz: potência e horas ligado por dia. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/gasto-aquecedor/">
+<meta property="og:title" content="Quanto Gasta um Aquecedor Elétrico — Calculadora">
+<meta property="og:description" content="Potência × horas por dia × tarifa: quanto custa aquecer o quarto no inverno.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Gasto do Aquecedor Elétrico","url":"https://hashino.github.io/ferramentas/tools/gasto-aquecedor/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quanto gasta um aquecedor elétrico por mês."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Gasta um Aquecedor Elétrico</h1>
+  <section class="app">
+<label for="potencia">Potência do aquecedor</label>
+    <select id="potencia">
+      <option value="750">750 W</option>
+      <option value="1000">1000 W</option>
+      <option value="1500" selected>1500 W (mais comum)</option>
+      <option value="2000">2000 W</option>
+    </select>
+    <label for="horas">Horas ligado por dia</label>
+    <input type="number" id="horas" step="0.5" min="0.5" value="4">
+    <label for="tarifa">Tarifa da sua região (R$/kWh)</label>
+    <input type="number" id="tarifa" step="0.01" min="0.1" value="0.95">
+    <button id="calcular">Calcular gasto</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var w = Number(document.getElementById("potencia").value);
+  var h = Number(document.getElementById("horas").value);
+  var tarifa = Number(document.getElementById("tarifa").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (h <= 0 || tarifa <= 0) { saida.textContent = "Informe as horas por dia e a tarifa."; return; }
+  var brl = function (n) { return n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+  var kwhMes = w * h * 30 / 1000;
+  var mes = kwhMes * tarifa;
+  saida.textContent = "Custo por mês: R$ " + brl(mes);
+  detalhe.textContent = w + " W × " + h + " h/dia × 30 dias = " + kwhMes.toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + " kWh/mês\n" +
+    "custo: " + kwhMes.toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + " kWh × R$ " + brl(tarifa) + " = R$ " + brl(mes) + "/mês";
+});
+</script>
+</body>
+</html>
