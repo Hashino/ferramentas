@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Reformar um Banheiro — Calculadora</title>
+<meta name="description" content="Calcule o custo da reforma do banheiro: metros quadrados e nível (econômica, intermediária ou luxo), com faixa real. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/reformar-banheiro/">
+<meta property="og:title" content="Quanto Custa Reformar um Banheiro — Calculadora">
+<meta property="og:description" content="M² × nível da reforma: faixa de custo do banheiro completo.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de custo de reforma de banheiro","url":"https://hashino.github.io/ferramentas/tools/reformar-banheiro/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quanto custa reformar um banheiro."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Reformar um Banheiro</h1>
+  <section class="app">
+    <label for="m2">Metros quadrados do banheiro</label>
+    <input type="number" id="m2" step="0.5" min="1" value="4">
+<label for="nivel">Nível da reforma</label>
+    <select id="nivel">
+      <option value="500">Econômica — rejunte, pintura, acessórios</option>
+      <option value="1800" selected>Intermediária — azulejo, vaso, cuba</option>
+      <option value="4000">Luxo — porcelanato, metais, box, móvel</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var m2 = Number(document.getElementById("m2").value);
+  var med = Number(document.getElementById("nivel").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (m2 < 1) { saida.textContent = "Informe os metros quadrados."; return; }
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var total = m2 * med;
+  saida.textContent = "Estimativa: R$ " + br(total * 0.75) + " a R$ " + br(total * 1.35);
+  detalhe.textContent = br(m2, 1) + " m² × R$ " + br(med) + "/m² médio\n" +
+    "inclui material e mão de obra de azulejo, hidráulica e elétrica\n" +
+    "trocar pontos de água e esgoto encarece: evite mexer no layout\n" +
+    "louças e metais premium podem dobrar o valor";
+});
+</script>
+</body>
+</html>

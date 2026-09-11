@@ -2842,7 +2842,7 @@ quantos kg de argamassa por metro quadrado,descartada,,manual
 quantos metros de arame para cerca,descartada,,manual
 quanto de gelo por pessoa,descartada,,manual
 quantos passos por km,descartada,,manual
-quanto custa pintar uma casa,descartada,,manual
+quanto custa pintar uma casa,feita,pintar-casa,manual
 quanto gasta um pc gamer,feita,,manual
 quanto custa manter uma piscina,feita,,manual
 quanto de sorvete por pessoa,feita,,manual
@@ -2924,7 +2924,7 @@ quanto custa instalacao eletrica de uma casa,feita,custo-eletrica-casa,leva13
 quanto custa construir um galpao,feita,custo-galpao,leva13
 quanto custa montar um aquario,feita,custo-montar-aquario,leva13
 quanto custa creche particular,feita,custo-creche,leva13
-quanto custa uma mudanca,retida,"2 simuladores fracos (calculadorabrasil DF, garantiamudancas) — revisitar",leva13
+quanto custa uma mudanca,feita,custo-mudanca,leva13
 quanto custa psicologo,feita,custo-psicologo,leva14
 quanto custa consulta dermatologista,feita,consulta-dermatologista,leva14
 quanto custa aquecer uma piscina,feita,aquecer-piscina,leva14
@@ -2936,3 +2936,15 @@ quanto custa casamento simples,feita,custo-casamento,leva14
 quanto dura um toner,feita,dura-toner,leva14
 quanto custa progressiva,feita,custo-progressiva,leva14
 quanto custa alugar um carro por mes,retida,"marcas dominam (localiza, movida, unidas) + calc meoo — revisitar",leva14
+quanto custa trocar a tela do celular,feita,trocar-tela-celular,leva15
+quanto custa consertar notebook,feita,consertar-notebook,leva15
+quanto custa formatar um notebook,feita,formatar-notebook,leva15
+quanto custa reformar um banheiro,feita,reformar-banheiro,leva15
+quanto custa reformar uma cozinha,feita,reformar-cozinha,leva15
+quanto custa cercar um terreno,feita,cercar-terreno,leva15
+quanto custa cnh,feita,tirar-cnh,leva15
+quanto custa unha em gel,feita,unha-em-gel,leva15
+quanto custa depilacao a laser,retida,"5 redes de clínicas (espacolaser, drlaser, orolaser, vialaser, pellomenos)",leva15
+quanto custa curso de ingles,retida,"marcas de idiomas dominam (wizard, ccaa, fisk, senac, puc)",leva15
+quanto custa uma faculdade ead,retida,7 faculdades de marca no top-10,leva15
+quanto custa tirar passaporte,descartada,valor fixo único da PF — sem variável para calculadora,leva15

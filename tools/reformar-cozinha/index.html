@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Reformar uma Cozinha — Calculadora</title>
+<meta name="description" content="Calcule o custo da reforma da cozinha: metros quadrados e nível, do retoque ao projeto completo com armários. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/reformar-cozinha/">
+<meta property="og:title" content="Quanto Custa Reformar uma Cozinha — Calculadora">
+<meta property="og:description" content="M² × nível: faixa de custo da reforma da cozinha.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de custo de reforma de cozinha","url":"https://hashino.github.io/ferramentas/tools/reformar-cozinha/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quanto custa reformar uma cozinha."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Reformar uma Cozinha</h1>
+  <section class="app">
+    <label for="m2">Metros quadrados da cozinha</label>
+    <input type="number" id="m2" step="1" min="2" value="10">
+<label for="nivel">Nível da reforma</label>
+    <select id="nivel">
+      <option value="600">Retoque — pintura, bancada, puxadores</option>
+      <option value="2200" selected>Completa — armários, bancada, elétrica</option>
+      <option value="5500">Alto padrão — projeto, marcenaria sob medida</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var m2 = Number(document.getElementById("m2").value);
+  var med = Number(document.getElementById("nivel").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (m2 < 2) { saida.textContent = "Informe os metros quadrados."; return; }
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var total = m2 * med;
+  saida.textContent = "Estimativa: R$ " + br(total * 0.75) + " a R$ " + br(total * 1.35);
+  detalhe.textContent = br(m2) + " m² × R$ " + br(med) + "/m² médio\n" +
+    "armários e bancada de granita/porcelanato são o maior custo\n" +
+    "coifa com duto novo pede obra de alvenaria\n" +
+    "mexer no gás e na elétrica exige profissional habilitado";
+});
+</script>
+</body>
+</html>
