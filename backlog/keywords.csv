@@ -1,5 +1,6 @@
 keyword,status,adicionada_em,origem
 agente gerador de demanda salário,candidata,2026-09-10,matrix:salário
+calculadora de 13o salário,candidata,2026-09-10,matrix:13º salário
 calculadora de adicional noturno,candidata,2026-09-10,
 calculadora de agua,candidata,2026-09-10,
 calculadora de agua por dia,candidata,2026-09-10,
@@ -11,7 +12,7 @@ calculadora de anos meses e dias,candidata,2026-09-10,
 calculadora de aposentadoria,candidata,2026-09-10,
 calculadora de arcano pessoal,feita,2026-09-10,
 calculadora de arcano pessoal 2026,candidata,2026-09-10,deep:calculadora de arcano pessoal
-calculadora de arcano pessoal anual,candidata,2026-09-10,deep:calculadora de arcano pessoal
+calculadora de arcano pessoal anual,feita,2026-09-10,deep:calculadora de arcano pessoal
 calculadora de arcano pessoal personare,candidata,2026-09-10,deep:calculadora de arcano pessoal
 calculadora de banco de horas,candidata,2026-09-10,
 calculadora de barcelona,candidata,2026-09-10,
@@ -38,6 +39,17 @@ calculadora de correção monetária,candidata,2026-09-10,
 calculadora de datas,candidata,2026-09-10,
 calculadora de dias,candidata,2026-09-10,
 calculadora de ferias,candidata,2026-09-10,
+calculadora de férias,candidata,2026-09-10,matrix:férias
+calculadora de férias 2026,candidata,2026-09-10,matrix:férias
+calculadora de férias calculo exato,candidata,2026-09-10,matrix:férias
+calculadora de férias clt,candidata,2026-09-10,matrix:férias
+calculadora de férias com adicional noturno,candidata,2026-09-10,matrix:férias
+calculadora de férias com insalubridade,candidata,2026-09-10,matrix:férias
+calculadora de férias online,candidata,2026-09-10,matrix:férias
+calculadora de férias proporcionais,candidata,2026-09-10,matrix:férias
+calculadora de férias proporcionais na rescisão,candidata,2026-09-10,matrix:férias
+calculadora de férias vencidas,candidata,2026-09-10,matrix:férias
+calculadora de férias vendendo 10 dias,candidata,2026-09-10,matrix:férias
 calculadora de hora extra,candidata,2026-09-10,matrix:hora extra
 calculadora de hora extra 100,candidata,2026-09-10,matrix:hora extra
 calculadora de hora extra 50,candidata,2026-09-10,matrix:hora extra
@@ -68,13 +80,28 @@ calculadora de salário líquido 2026,candidata,2026-09-10,matrix:salário
 calculadora de salário líquido 2026 idinheiro,candidata,2026-09-10,matrix:salário
 calculadora de salário por hora,candidata,2026-09-10,matrix:salário
 calculadora de salário proporcional,candidata,2026-09-10,matrix:salário
-calculadora de salário proporcional aos dias trabalhados,candidata,2026-09-10,matrix:salário
+calculadora de salário proporcional aos dias trabalhados,feita,2026-09-10,matrix:salário
 calculadora salário,candidata,2026-09-10,reddit:salário
 calculadora salário bruto,candidata,2026-09-10,reddit:salário
 calculadora salário líquido anual,candidata,2026-09-10,reddit:salário
 calculadoras,candidata,2026-09-10,sitemap:querocalcular.com.br
+calcular quanto devo receber de ferias,candidata,2026-09-10,matrix:férias
 calcular quanto devo receber de salario,candidata,2026-09-10,matrix:salário
 como calcular,candidata,2026-09-10,sitemap:querocalcular.com.br
+como calcular 13o salário,candidata,2026-09-10,matrix:13º salário
+como calcular 13o salário proporcional,candidata,2026-09-10,matrix:13º salário
+como calcular 13o salário sobre aviso prévio indenizado,candidata,2026-09-10,matrix:13º salário
+como calcular férias,candidata,2026-09-10,matrix:férias
+como calcular férias + 1/3,candidata,2026-09-10,matrix:férias
+como calcular férias de 15 dias,candidata,2026-09-10,matrix:férias
+como calcular férias de 20 dias,candidata,2026-09-10,matrix:férias
+como calcular férias de 30 dias,candidata,2026-09-10,matrix:férias
+como calcular férias de empregada doméstica proporcional,candidata,2026-09-10,matrix:férias
+como calcular férias proporcionais,candidata,2026-09-10,matrix:férias
+como calcular férias proporcionais na rescisão,candidata,2026-09-10,matrix:férias
+como calcular férias vencidas,candidata,2026-09-10,matrix:férias
+como calcular férias vendidas,candidata,2026-09-10,matrix:férias
+como calcular férias vendidas 10 dias,candidata,2026-09-10,matrix:férias
 como calcular hora extra,candidata,2026-09-10,matrix:hora extra
 como calcular hora extra 100,candidata,2026-09-10,matrix:hora extra
 como calcular hora extra 100 por cento,candidata,2026-09-10,matrix:hora extra
@@ -89,8 +116,8 @@ como calcular hora extra noturna,candidata,2026-09-10,matrix:hora extra
 como calcular salário,candidata,2026-09-10,matrix:salário
 como calcular salário bruto,candidata,2026-09-10,matrix:salário
 como calcular salário familia,candidata,2026-09-10,matrix:salário
-como calcular salário horista,candidata,2026-09-10,matrix:salário
-como calcular salário intermitente,candidata,2026-09-10,matrix:salário
+como calcular salário horista,feita,2026-09-10,matrix:salário
+como calcular salário intermitente,feita,2026-09-10,matrix:salário
 como calcular salário líquido,candidata,2026-09-10,matrix:salário
 como calcular salário maternidade,candidata,2026-09-10,matrix:salário
 como calcular salário por dia,candidata,2026-09-10,matrix:salário
@@ -98,8 +125,17 @@ como calcular salário por hora,candidata,2026-09-10,matrix:salário
 como calcular salário proporcional,candidata,2026-09-10,matrix:salário
 como calcular salário proporcional aos dias trabalhados,candidata,2026-09-10,matrix:salário
 como fazer a conta da hora extra 100 por cento,candidata,2026-09-10,matrix:hora extra
-como fazer a conta da hora extra noturna,candidata,2026-09-10,matrix:hora extra
+como fazer a conta da hora extra noturna,feita,2026-09-10,matrix:hora extra
+como fazer a conta das ferias de 15 dias,candidata,2026-09-10,matrix:férias
+como fazer a conta de 1 3 de férias,candidata,2026-09-10,matrix:férias
 como fazer a conta de 13 salario,candidata,2026-09-10,matrix:salário
+como fazer a conta de ferias,candidata,2026-09-10,matrix:férias
+como fazer a conta de ferias proporcionais,candidata,2026-09-10,matrix:férias
+como fazer a conta de ferias proporcional,candidata,2026-09-10,matrix:férias
+como fazer a conta de ferias vencidas,candidata,2026-09-10,matrix:férias
+como fazer a conta de ferias vendidas,candidata,2026-09-10,matrix:férias
+como fazer a conta de férias,candidata,2026-09-10,matrix:férias
+como fazer a conta de férias proporcionais,candidata,2026-09-10,matrix:férias
 como fazer a conta de hora extra,candidata,2026-09-10,matrix:hora extra
 como fazer a conta de hora extra 100,candidata,2026-09-10,matrix:hora extra
 como fazer a conta de hora extra 50,candidata,2026-09-10,matrix:hora extra
@@ -110,18 +146,24 @@ como fazer a conta de salario por dia,candidata,2026-09-10,matrix:salário
 como fazer a conta de salario por hora,candidata,2026-09-10,matrix:salário
 como fazer a conta de salario proporcional,candidata,2026-09-10,matrix:salário
 como fazer a conta de salário,candidata,2026-09-10,matrix:salário
+como fazer a conta do pagamento de ferias,candidata,2026-09-10,matrix:férias
+como fazer a conta do salário de férias,candidata,2026-09-10,matrix:férias
+como fazer a conta do terço de férias,candidata,2026-09-10,matrix:férias
 como fazer a conta salario itau,candidata,2026-09-10,matrix:salário
 como fazer a conta salário do bradesco,candidata,2026-09-10,matrix:salário
 como fazer a conta salário no banco do brasil,candidata,2026-09-10,matrix:salário
 como fazer a conta salário no santander,candidata,2026-09-10,matrix:salário
 como fazer a portabilidade de conta salário,candidata,2026-09-10,matrix:salário
 como fazer a portabilidade de conta salário para outro banco,candidata,2026-09-10,matrix:salário
+como fazer conta de ferias e decimo terceiro,candidata,2026-09-10,matrix:férias
+como fazer conta de ferias proporcionais e decimo terceiro,candidata,2026-09-10,matrix:férias
 como fazer conta de hora extra no excel,candidata,2026-09-10,matrix:hora extra
 como fazer conta de porcentagem de hora extra,candidata,2026-09-10,matrix:hora extra
 como fazer conta de salario mensal,candidata,2026-09-10,matrix:salário
 como funciona a conta de hora extra,candidata,2026-09-10,matrix:hora extra
 como saber quanto devo receber de hora extra,candidata,2026-09-10,matrix:hora extra
 como é feito a conta de hora extra,candidata,2026-09-10,matrix:hora extra
+conversor de ferias,candidata,2026-09-10,matrix:férias
 conversor de hora extra,candidata,2026-09-10,matrix:hora extra
 conversor de salario,candidata,2026-09-10,matrix:salário
 conversor de salario bruto,candidata,2026-09-10,matrix:salário
@@ -136,12 +178,42 @@ conversor de salario por hora,candidata,2026-09-10,matrix:salário
 conversor de salário,candidata,2026-09-10,matrix:salário
 conversor de salário clt para pj,candidata,2026-09-10,matrix:salário
 conversores,candidata,2026-09-10,sitemap:querocalcular.com.br
+de férias quantos,candidata,2026-09-10,matrix:férias
+de férias quantos dias,candidata,2026-09-10,matrix:férias
+de férias quantos por cento em cima do salario,candidata,2026-09-10,matrix:férias
+ferias quantos dias antes recebe,candidata,2026-09-10,matrix:férias
+ferias quantos dias antes tem que pagar,candidata,2026-09-10,matrix:férias
+ferias quantos dias para receber,candidata,2026-09-10,matrix:férias
+ferias quantos dias pode tirar,candidata,2026-09-10,matrix:férias
+ferias quantos dias pode vender,candidata,2026-09-10,matrix:férias
+férias quantos dias,candidata,2026-09-10,matrix:férias
+férias quantos dias antes tem que pagar,candidata,2026-09-10,matrix:férias
+férias quantos dias para receber,candidata,2026-09-10,matrix:férias
+férias quantos dias posso vender,candidata,2026-09-10,matrix:férias
+férias quantos por cento,candidata,2026-09-10,matrix:férias
 gerador de demanda althaia salario,candidata,2026-09-10,matrix:salário
 gerador de demanda salario,candidata,2026-09-10,matrix:salário
+gerador de ferias,candidata,2026-09-10,matrix:férias
+gerador de férias,candidata,2026-09-10,matrix:férias
 gerador de hora extra,candidata,2026-09-10,matrix:hora extra
+gerador de recibo de ferias,candidata,2026-09-10,matrix:férias
 gerador de recibo de salario,candidata,2026-09-10,matrix:salário
 gerador de salario,candidata,2026-09-10,matrix:salário
+lista de compras férias,candidata,2026-09-10,matrix:férias
+lista de feriados 2025,candidata,2026-09-10,matrix:férias
+lista de ferias del agricultor en costa rica,candidata,2026-09-10,matrix:férias
+lista de ferias dominio,candidata,2026-09-10,matrix:férias
+lista de ferias para crianças,candidata,2026-09-10,matrix:férias
+lista de ferias premio pbh,candidata,2026-09-10,matrix:férias
+lista de ferias.com ex,candidata,2026-09-10,matrix:férias
+lista de férias,candidata,2026-09-10,matrix:férias
+lista de férias 2026,candidata,2026-09-10,matrix:férias
+lista de férias com crianças,candidata,2026-09-10,matrix:férias
+lista de férias com o ex,candidata,2026-09-10,matrix:férias
+lista de férias o que levar,candidata,2026-09-10,matrix:férias
 lista de hora extra,candidata,2026-09-10,matrix:hora extra
+lista de palavras férias,candidata,2026-09-10,matrix:férias
+lista de recreio nas férias,candidata,2026-09-10,matrix:férias
 lista de salario ghc,candidata,2026-09-10,matrix:salário
 lista de salario minimos,candidata,2026-09-10,matrix:salário
 lista de salario real madrid,candidata,2026-09-10,matrix:salário
@@ -159,6 +231,17 @@ lista de salários dos jogadores da seleção brasileira,candidata,2026-09-10,ma
 lista de salários mínimos,candidata,2026-09-10,matrix:salário
 mecanico de gerador salario,candidata,2026-09-10,matrix:salário
 operador de gerador salário,candidata,2026-09-10,matrix:salário
+planilha de férias,candidata,2026-09-10,matrix:férias
+planilha de férias 2026,candidata,2026-09-10,matrix:férias
+planilha de férias de funcionários,candidata,2026-09-10,matrix:férias
+planilha de férias equipe,candidata,2026-09-10,matrix:férias
+planilha de férias excel,candidata,2026-09-10,matrix:férias
+planilha de férias excel grátis,candidata,2026-09-10,matrix:férias
+planilha de férias funcionários excel,candidata,2026-09-10,matrix:férias
+planilha de férias funcionários excel download grátis,candidata,2026-09-10,matrix:férias
+planilha de férias modelo,candidata,2026-09-10,matrix:férias
+planilha de férias proporcionais,candidata,2026-09-10,matrix:férias
+planilha de férias simples,candidata,2026-09-10,matrix:férias
 planilha de hora extra,candidata,2026-09-10,matrix:hora extra
 planilha de hora extra com adicional noturno,candidata,2026-09-10,matrix:hora extra
 planilha de hora extra como fazer,candidata,2026-09-10,matrix:hora extra
@@ -184,6 +267,17 @@ planilha de salário excel,candidata,2026-09-10,matrix:salário
 planilha de salários e encargos,candidata,2026-09-10,matrix:salário
 quantas contas salario posso ter,candidata,2026-09-10,matrix:salário
 quantas contribuicoes salario maternidade,candidata,2026-09-10,matrix:salário
+quantas férias,candidata,2026-09-10,matrix:férias
+quantas férias a empresa pode atrasar,candidata,2026-09-10,matrix:férias
+quantas férias a empresa pode deixar vencer,candidata,2026-09-10,matrix:férias
+quantas férias não pode deixar vencer,candidata,2026-09-10,matrix:férias
+quantas férias o funcionário pode acumular,candidata,2026-09-10,matrix:férias
+quantas férias pode acumular,candidata,2026-09-10,matrix:férias
+quantas férias pode vencer,candidata,2026-09-10,matrix:férias
+quantas férias posso tirar no ano,candidata,2026-09-10,matrix:férias
+quantas férias tem em junho,candidata,2026-09-10,matrix:férias
+quantas férias tem no ano,candidata,2026-09-10,matrix:férias
+quantas férias tem nos estados unidos,candidata,2026-09-10,matrix:férias
 quantas hora extra o funcionário pode fazer por dia,candidata,2026-09-10,matrix:hora extra
 quantas hora extra pode fazer por mes,candidata,2026-09-10,matrix:hora extra
 quantas hora extra posso fazer por dia,candidata,2026-09-10,matrix:hora extra
@@ -204,6 +298,17 @@ quantas parcelas salário maternidade para desempregada,candidata,2026-09-10,mat
 quantas parcelas salário maternidade rural,candidata,2026-09-10,matrix:salário
 quantas parcelas salário maternidade urbano,candidata,2026-09-10,matrix:salário
 quantas salário mínimo,candidata,2026-09-10,matrix:salário
+quanto custa ferias,candidata,2026-09-10,matrix:férias
+quanto custa ferias em dubai,candidata,2026-09-10,matrix:férias
+quanto custa ferias em fernando de noronha,candidata,2026-09-10,matrix:férias
+quanto custa ferias na disney,candidata,2026-09-10,matrix:férias
+quanto custa ferias na tailandia,candidata,2026-09-10,matrix:férias
+quanto custa ferias vencidas,candidata,2026-09-10,matrix:férias
+quanto custa ferias vendidas,candidata,2026-09-10,matrix:férias
+quanto custa férias,candidata,2026-09-10,matrix:férias
+quanto custa férias em bali,candidata,2026-09-10,matrix:férias
+quanto custa férias em cabo verde,candidata,2026-09-10,matrix:férias
+quanto custa férias em zanzibar,candidata,2026-09-10,matrix:férias
 quanto custa hora extra,candidata,2026-09-10,matrix:hora extra
 quanto custa hora extra 100 por cento,candidata,2026-09-10,matrix:hora extra
 quanto custa hora extra clt,candidata,2026-09-10,matrix:hora extra
@@ -230,18 +335,32 @@ quanto custa salário mínimo 2026,candidata,2026-09-10,matrix:salário
 quanto custa salário mínimo em portugal,candidata,2026-09-10,matrix:salário
 quanto custa salário mínimo hoje,candidata,2026-09-10,matrix:salário
 quanto custa salário mínimo no brasil,candidata,2026-09-10,matrix:salário
+quanto devo ganhar de ferias,candidata,2026-09-10,matrix:férias
+quanto devo ganhar de férias,candidata,2026-09-10,matrix:férias
 quanto devo ganhar de hora extra,candidata,2026-09-10,matrix:hora extra
 quanto devo guardar de um salário mínimo,candidata,2026-09-10,matrix:salário
 quanto devo pagar de 13 salario,candidata,2026-09-10,matrix:salário
+quanto devo pagar de ferias,candidata,2026-09-10,matrix:férias
+quanto devo pagar de ferias para empregada domestica,candidata,2026-09-10,matrix:férias
+quanto devo pagar de férias,candidata,2026-09-10,matrix:férias
 quanto devo pagar de hora extra,candidata,2026-09-10,matrix:hora extra
 quanto devo pagar de um salário mínimo,candidata,2026-09-10,matrix:salário
+quanto devo pegar de ferias,candidata,2026-09-10,matrix:férias
+quanto devo pegar de férias,candidata,2026-09-10,matrix:férias
+quanto devo receber ao entrar de férias,candidata,2026-09-10,matrix:férias
+quanto devo receber ao sair de ferias,candidata,2026-09-10,matrix:férias
 quanto devo receber de 13 salario,candidata,2026-09-10,matrix:salário
+quanto devo receber de férias,candidata,2026-09-10,matrix:férias
 quanto devo receber de férias ganhando um salário mínimo,candidata,2026-09-10,matrix:salário
+quanto devo receber de férias ganhando um salário mínimo 2026,candidata,2026-09-10,matrix:férias
 quanto devo receber de hora extra,candidata,2026-09-10,matrix:hora extra
 quanto devo receber de salario,candidata,2026-09-10,matrix:salário
 quanto devo receber de salario maternidade,candidata,2026-09-10,matrix:salário
 quanto devo receber de salário,candidata,2026-09-10,matrix:salário
 quanto devo receber de salário maternidade,candidata,2026-09-10,matrix:salário
+quanto devo receber quando entro de ferias,candidata,2026-09-10,matrix:férias
+quanto devo receber quando saio de férias,candidata,2026-09-10,matrix:férias
+quanto devo receber quando sair de férias,candidata,2026-09-10,matrix:férias
 quanto devo tirar de salario da minha empresa,candidata,2026-09-10,matrix:salário
 quanto hora extra paga,candidata,2026-09-10,matrix:hora extra
 quanto rende 1 salario minimo,candidata,2026-09-10,matrix:salário
@@ -253,6 +372,19 @@ quanto rende um salário mínimo no mercado pago,candidata,2026-09-10,matrix:sal
 quanto tempo demora para ser aprovado o salário maternidade,candidata,2026-09-10,matrix:salário
 quanto tempo dura a analise do salario maternidade,candidata,2026-09-10,matrix:salário
 quanto tempo dura a análise do salário maternidade,candidata,2026-09-10,matrix:salário
+quanto tempo dura ferias clt,candidata,2026-09-10,matrix:férias
+quanto tempo dura ferias de julho,candidata,2026-09-10,matrix:férias
+quanto tempo dura ferias de trabalho,candidata,2026-09-10,matrix:férias
+quanto tempo dura ferias de verao,candidata,2026-09-10,matrix:férias
+quanto tempo dura ferias escolares,candidata,2026-09-10,matrix:férias
+quanto tempo dura ferias premio,candidata,2026-09-10,matrix:férias
+quanto tempo dura férias,candidata,2026-09-10,matrix:férias
+quanto tempo dura férias de faculdade,candidata,2026-09-10,matrix:férias
+quanto tempo dura férias de julho,candidata,2026-09-10,matrix:férias
+quanto tempo dura férias de trabalho,candidata,2026-09-10,matrix:férias
+quanto tempo dura férias de verão,candidata,2026-09-10,matrix:férias
+quanto tempo dura férias de verão no brasil,candidata,2026-09-10,matrix:férias
+quanto tempo dura férias de verão nos estados unidos,candidata,2026-09-10,matrix:férias
 quanto tempo dura o salario familia,candidata,2026-09-10,matrix:salário
 quanto tempo dura o salário desemprego,candidata,2026-09-10,matrix:salário
 quanto tempo dura o salário maternidade para desempregada,candidata,2026-09-10,matrix:salário
@@ -267,6 +399,20 @@ quanto vale hora extra,candidata,2026-09-10,matrix:hora extra
 quanto é 1 hora extra,candidata,2026-09-10,matrix:hora extra
 quanto é a hora extra de quem ganha 2000,candidata,2026-09-10,matrix:hora extra
 quanto é a hora extra de quem ganha um salário mínimo,candidata,2026-09-10,matrix:hora extra
+quanto é as ferias de quem recebe 2000,candidata,2026-09-10,matrix:férias
+quanto é as ferias de um salario minimo 2026,candidata,2026-09-10,matrix:férias
+quanto é as férias de quem ganha um salário mínimo,candidata,2026-09-10,matrix:férias
+quanto é as férias de quem recebe um salário mínimo,candidata,2026-09-10,matrix:férias
+quanto é as férias de um trabalhador,candidata,2026-09-10,matrix:férias
+quanto é ferias,candidata,2026-09-10,matrix:férias
+quanto é ferias clt,candidata,2026-09-10,matrix:férias
+quanto é ferias mais 1 3,candidata,2026-09-10,matrix:férias
+quanto é ferias proporcionais,candidata,2026-09-10,matrix:férias
+quanto é ferias remuneradas,candidata,2026-09-10,matrix:férias
+quanto é ferias vencidas,candidata,2026-09-10,matrix:férias
+quanto é férias de um salário mínimo,candidata,2026-09-10,matrix:férias
+quanto é férias mais 1 3,candidata,2026-09-10,matrix:férias
+quanto é férias proporcionais,candidata,2026-09-10,matrix:férias
 quanto é hora extra,candidata,2026-09-10,matrix:hora extra
 quanto é hora extra 100,candidata,2026-09-10,matrix:hora extra
 quanto é hora extra clt,candidata,2026-09-10,matrix:hora extra
@@ -285,6 +431,9 @@ quanto é salário mínimo 2026,candidata,2026-09-10,matrix:salário
 quanto é salário mínimo hoje,candidata,2026-09-10,matrix:salário
 quanto é salário mínimo no estados unidos,candidata,2026-09-10,matrix:salário
 quanto é uma hora extra de trabalho,candidata,2026-09-10,matrix:hora extra
+quantos dias férias clt,candidata,2026-09-10,matrix:férias
+quantos dias férias de julho,candidata,2026-09-10,matrix:férias
+quantos férias frustradas tem,candidata,2026-09-10,matrix:férias
 quantos salário maternidade,candidata,2026-09-10,matrix:salário
 quantos salário maternidade recebe,candidata,2026-09-10,matrix:salário
 quantos salário mínimo,candidata,2026-09-10,matrix:salário
@@ -306,7 +455,18 @@ salario gerador de demanda farmax,candidata,2026-09-10,matrix:salário
 salario gerador de demanda kimberly clark,candidata,2026-09-10,matrix:salário
 salario quantas silabas,candidata,2026-09-10,matrix:salário
 simulador de calculo de hora extra,candidata,2026-09-10,matrix:hora extra
+simulador de ferias,candidata,2026-09-10,matrix:férias
 simulador de folha de pagamento com hora extra,candidata,2026-09-10,matrix:hora extra
+simulador de férias,candidata,2026-09-10,matrix:férias
+simulador de férias 20 dias,candidata,2026-09-10,matrix:férias
+simulador de férias 2026,candidata,2026-09-10,matrix:férias
+simulador de férias a receber,candidata,2026-09-10,matrix:férias
+simulador de férias act,candidata,2026-09-10,matrix:férias
+simulador de férias clt,candidata,2026-09-10,matrix:férias
+simulador de férias cálculo exato,candidata,2026-09-10,matrix:férias
+simulador de férias online,candidata,2026-09-10,matrix:férias
+simulador de férias proporcionais,candidata,2026-09-10,matrix:férias
+simulador de férias valor,candidata,2026-09-10,matrix:férias
 simulador de hora extra,candidata,2026-09-10,matrix:hora extra
 simulador de hora extra com dsr,candidata,2026-09-10,matrix:hora extra
 simulador de hora extra noturna,candidata,2026-09-10,matrix:hora extra
@@ -326,6 +486,17 @@ simulador de salário taes,candidata,2026-09-10,matrix:salário
 simulador de valor de hora extra,candidata,2026-09-10,matrix:hora extra
 simulador hora extra chile,candidata,2026-09-10,matrix:hora extra
 sobre nos,candidata,2026-09-10,sitemap:querocalcular.com.br
+tabela de férias,candidata,2026-09-10,matrix:férias
+tabela de férias em função do número de faltas não justificadas,candidata,2026-09-10,matrix:férias
+tabela de férias faltas,candidata,2026-09-10,matrix:férias
+tabela de férias fracionadas,candidata,2026-09-10,matrix:férias
+tabela de férias para horista,candidata,2026-09-10,matrix:férias
+tabela de férias proporcionais,candidata,2026-09-10,matrix:férias
+tabela de férias proporcionais 2026,candidata,2026-09-10,matrix:férias
+tabela de férias proporcionais em avos,candidata,2026-09-10,matrix:férias
+tabela de férias proporcionais faltas,candidata,2026-09-10,matrix:férias
+tabela de férias proporcionais faltas clt,candidata,2026-09-10,matrix:férias
+tabela de férias x faltas,candidata,2026-09-10,matrix:férias
 tabela de hora extra,candidata,2026-09-10,matrix:hora extra
 tabela de hora extra clt,candidata,2026-09-10,matrix:hora extra
 tabela de hora extra da construção civil,candidata,2026-09-10,matrix:hora extra

@@ -5,5 +5,10 @@
 ## Ferramentas
 
 - [Calculadora de Arcano Pessoal — Descubra o Seu no Tarô](https://hashino.github.io/ferramentas/tools/arcano-pessoal/): Descubra seu Arcano Pessoal do Tarô a partir da data de nascimento. Calculadora grátis, resultado na hora.
+- [Calculadora de Arcano Pessoal Anual — Ano Pessoal do Tarô](https://hashino.github.io/ferramentas/tools/arcano-pessoal-anual/): Descubra seu Arcano Pessoal Anual (ano pessoal do tarô) a partir do dia e mês de nascimento. Calculadora grátis, resultado na hora.
 - [Calculadora de Bhaskara — Passo a Passo Online Grátis](https://hashino.github.io/ferramentas/tools/bhaskara/): Resolva a equação do 2º grau com a fórmula de Bhaskara: delta, raízes e o passo a passo do cálculo. Grátis, sem cadastro.
 - [Calculadora de Boost PXG — Stones do Boost Atual ao Desejado](https://hashino.github.io/ferramentas/tools/boost-pxg/): Calcule quantas boost stones faltam para subir o boost do seu Pokémon no PokéXGames (PXG). Grátis, sem instalar nada.
+- [Como Fazer a Conta da Hora Extra Noturna — Calculadora](https://hashino.github.io/ferramentas/tools/hora-extra-noturna/): Calcule a hora extra noturna: adicional de 50% ou 100%, adicional noturno de 20% e hora reduzida de 52min30s. Grátis, sem cadastro.
+- [Como Calcular Salário Horista — Calculadora Grátis](https://hashino.github.io/ferramentas/tools/salario-horista/): Calcule o salário horista em segundos: valor da hora × horas trabalhadas, ou descubra seu valor-hora a partir do salário mensal. Grátis, sem cadastro.
+- [Como Calcular Salário Intermitente — Calculadora Grátis](https://hashino.github.io/ferramentas/tools/salario-intermitente/): Calcule o pagamento do trabalho intermitente (CLT): horas trabalhadas no mês × valor da hora acordado. Grátis, sem cadastro, direto no navegador.
+- [Calculadora de Salário Proporcional aos Dias Trabalhados](https://hashino.github.io/ferramentas/tools/salario-proporcional/): Salário proporcional aos dias trabalhados: valor por dia e por hora a partir do salário mensal. Grátis, sem cadastro, resultado na hora.
