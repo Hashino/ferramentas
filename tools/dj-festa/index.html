@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa um DJ para Festa — Calculadora</title>
+<meta name="description" content="Estime o preço do DJ para festa: horas de evento e kit com iluminação, com faixa real de mercado. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/dj-festa/">
+<meta property="og:title" content="Quanto Custa um DJ para Festa — Calculadora">
+<meta property="og:description" content="Horas × kit com iluminação: faixa de preço do DJ para festa.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço de DJ para festa","url":"https://hashino.github.io/ferramentas/tools/dj-festa/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa um DJ para festa."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa um DJ para Festa</h1>
+  <section class="app">
+<label for="horas">Duração do evento</label>
+    <select id="horas">
+      <option value="900" selected>Até 4 horas</option>
+      <option value="1300">Até 6 horas</option>
+    </select>
+<label for="extra">Kit</label>
+    <select id="extra">
+      <option value="1.0" selected>Som e mesa — DJ com equipamento básico</option>
+      <option value="1.4">Som + iluminação + pista</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var base = Number(document.getElementById("horas").value);
+  var fator = Number(document.getElementById("extra").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var med = base * fator;
+  saida.textContent = "Estimativa: R$ " + br(med * 0.7) + " a R$ " + br(med * 1.6);
+  detalhe.textContent = document.getElementById("horas").selectedOptions[0].textContent.toLowerCase() +
+    (fator > 1 ? ", com iluminação" : ", equipamento básico") + "\n" +
+    "DJ com próprio equipamento cobra mais que só o serviço\n" +
+    "casamento e 15 anos ficam no topo da faixa\n" +
+    "confirme se montagem, transporte e horas extras estão inclusos";
+});
+</script>
+</body>
+</html>

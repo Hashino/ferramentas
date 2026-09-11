@@ -2969,10 +2969,10 @@ quanto custa um jardineiro,feita,jardineiro,leva17
 quanto custa adestrar um cachorro,feita,adestramento-cachorro,leva17
 quanto custa consulta nutricionista,feita,consulta-nutricionista,leva17
 quanto custa aula particular,feita,aula-particular,leva17
-quanto custa um dj para festa,candidata,"PASS fila leva19: PASS: djeventosp, montandofesta, casamentos.com.br",leva17
-quanto custa um fotografo para evento,candidata,"PASS fila leva19: PASS: tabelas de fotografos, cronoshare",leva17
-quanto custa buffet por pessoa,candidata,"PASS fila leva19: PASS: forum, suafestasp, getninjas",leva17
-quanto custa limpeza de pele,candidata,PASS fila leva19: PASS: spas/clinicas sem calculadora,leva17
+quanto custa um dj para festa,feita,2026-09-10,dj-festa
+quanto custa um fotografo para evento,feita,2026-09-10,fotografo-evento
+quanto custa buffet por pessoa,feita,2026-09-10,buffet-pessoa
+quanto custa limpeza de pele,feita,2026-09-10,limpeza-de-pele
 quanto custa castração de cachorro,feita,castracao-cachorro,leva18
 quanto custa vacina cachorro,feita,vacina-cachorro,leva18
 quanto custa hotel para cachorro,feita,hotel-cachorro,leva18
@@ -2983,8 +2983,8 @@ quanto custa alugar mesas e cadeiras para festa,feita,alugar-mesas-cadeiras,leva
 quanto custa alugar som para festa,feita,som-para-festa,leva18
 quanto custa limpar caixa d'agua,feita,limpar-caixa-dagua,leva18
 quanto custa impermeabilizar laje,feita,impermeabilizar-laje,leva18
-quanto custa acupuntura,candidata,"PASS fila leva19: PASS: drconsulta, coegoiania, blancspa",leva18
-quanto custa instalar calha,candidata,"PASS fila leva19: PASS: cronoshare, jcdart, getninjas",leva18
+quanto custa acupuntura,feita,2026-09-10,acupuntura
+quanto custa instalar calha,feita,2026-09-10,instalar-calha
 quanto custa um implante dentario,feita,implante-dentario,leva19
 quanto custa extrair o siso,feita,extrair-siso,leva19
 quanto custa limpeza dos dentes,feita,limpeza-dental,leva19
@@ -2995,3 +2995,12 @@ quanto custa fazer um deck,feita,deck-madeira,leva19
 quanto custa micropigmentacao de sobrancelha,feita,micropigmentacao-sobrancelha,leva19
 quanto custa maquiagem para festa,feita,maquiagem-festa,leva19
 quanto custa pintar o cabelo no salao,feita,pintar-cabelo,leva19
+quanto custa um pedreiro por dia,feita,2026-09-10,diaria-pedreiro
+quanto custa uma caçamba de entulho,feita,2026-09-10,cacamba-entulho
+quanto custa um ultrassom,feita,2026-09-10,custo-ultrassom
+quanto custa um raio-x,feita,2026-09-10,custo-raio-x
+quanto custa consertar celular,candidata,2026-09-10,PASS fila leva21: PASS: youtube/iefy/scribd/getninjas/terra — sem calculadora
+quanto custa consertar tv,candidata,2026-09-10,PASS fila leva21: PASS: getninjas/uol/tricebrasil/reddit — sem calculadora
+quanto custa lavar um tapete,candidata,2026-09-10,PASS fila leva21: PASS: lavanderias com tabela — sem calculadora
+quanto custa remover uma tatuagem,candidata,2026-09-10,PASS fila leva21: PASS: blogs/clinicas — sem calculadora
+quanto custa alugar brinquedos para festa infantil,candidata,2026-09-10,PASS fila leva21: PASS: locadoras — sem calculadora

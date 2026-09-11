@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa um Raio-X — Calculadora</title>
+<meta name="description" content="Estime o preço do raio-X: tórax, coluna ou panorâmico dental, com faixa real de clínicas de imagem. Grátis, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/custo-raio-x/">
+<meta property="og:title" content="Quanto Custa um Raio-X — Calculadora">
+<meta property="og:description" content="Tórax × coluna × dental: faixa de preço da radiografia.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço de raio-X","url":"https://hashino.github.io/ferramentas/tools/custo-raio-x/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa um raio-X."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa um Raio-X</h1>
+  <section class="app">
+<label for="tipo">Tipo de radiografia</label>
+    <select id="tipo">
+      <option value="80" selected>Tórax ou membros</option>
+      <option value="100">Coluna</option>
+      <option value="120">Panorâmica dental</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tipo").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent;
+  saida.textContent = "Estimativa: R$ " + br(med * 0.5) + " a R$ " + br(med * 1.9);
+  detalhe.textContent = "radiografia " + nome.toLowerCase() + "\n" +
+    "clínicas populares fazem raio-X por R$ 45 a 60\n" +
+    "pelo SUS e nos UPAs é de graça\n" +
+    "o laudo do radiologista deve estar incluso — confirme\n" +
+    "leve exames anteriores para comparação";
+});
+</script>
+</body>
+</html>
