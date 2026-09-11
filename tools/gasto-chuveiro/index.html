@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Gasta um Chuveiro Elétrico — Calculadora</title>
+<meta name="description" content="Calcule quanto o chuveiro elétrico adiciona à sua conta de luz: potência, minutos de banho e banhos por dia. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/gasto-chuveiro/">
+<meta property="og:title" content="Quanto Gasta um Chuveiro Elétrico — Calculadora">
+<meta property="og:description" content="Potência × minutos × banhos por dia: o custo real do banho quente.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Gasto do Chuveiro Elétrico","url":"https://hashino.github.io/ferramentas/tools/gasto-chuveiro/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quanto gasta um chuveiro elétrico por mês."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Gasta um Chuveiro Elétrico</h1>
+  <section class="app">
+    <label for="potencia">Potência do chuveiro (W)</label>
+    <select id="potencia">
+      <option value="3200">3200 W (chuveiro econômico)</option>
+      <option value="4500">4500 W</option>
+      <option value="5500" selected>5500 W (mais comum)</option>
+      <option value="6800">6800 W (banho forte)</option>
+    </select>
+    <label for="minutos">Minutos por banho</label>
+    <input type="number" id="minutos" step="1" min="1" value="12">
+    <label for="banhos">Banhos por dia na casa</label>
+    <input type="number" id="banhos" step="1" min="1" max="20" value="3">
+    <label for="tarifa">Tarifa da sua região (R$/kWh)</label>
+    <input type="number" id="tarifa" step="0.01" min="0.1" value="0.95">
+    <button id="calcular">Calcular gasto</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var w = Number(document.getElementById("potencia").value);
+  var min = Number(document.getElementById("minutos").value);
+  var banhos = Number(document.getElementById("banhos").value);
+  var tarifa = Number(document.getElementById("tarifa").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false;
+  detalhe.textContent = "";
+  if (min <= 0 || banhos < 1 || tarifa <= 0) {
+    saida.textContent = "Preencha minutos, banhos por dia e tarifa.";
+    return;
+  }
+  var brl = function (n) {
+    return n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  };
+  var kwhBanho = w * min / 60 / 1000;
+  var kwhDia = kwhBanho * banhos;
+  var kwhMes = kwhDia * 30;
+  var custoMes = kwhMes * tarifa;
+  var custoBanho = kwhBanho * tarifa;
+  saida.textContent = "Custo por mês: R$ " + brl(custoMes) + " (R$ " + brl(custoBanho) + " por banho)";
+  detalhe.textContent =
+    "energia por banho: " + w + " W × " + min + " min = " + kwhBanho.toLocaleString("pt-BR", { maximumFractionDigits: 3 }) + " kWh\n" +
+    "por mês: " + kwhBanho.toLocaleString("pt-BR", { maximumFractionDigits: 3 }) + " × " + banhos + " banhos × 30 dias = " + kwhMes.toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + " kWh\n" +
+    "custo: " + kwhMes.toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + " kWh × R$ " + brl(tarifa) + " = R$ " + brl(custoMes) + "/mês";
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Gasta uma Máquina de Lavar — Calculadora</title>
+<meta name="description" content="Calcule o custo mensal da máquina de lavar roupas na conta de luz: consumo por ciclo e lavagens por semana. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/gasto-maquina-lavar/">
+<meta property="og:title" content="Quanto Gasta uma Máquina de Lavar — Calculadora">
+<meta property="og:description" content="kWh por ciclo × lavagens por semana: o custo real das lavagens.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Gasto da Máquina de Lavar","url":"https://hashino.github.io/ferramentas/tools/gasto-maquina-lavar/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quanto gasta uma máquina de lavar por mês."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Gasta uma Máquina de Lavar</h1>
+  <section class="app">
+<label for="ciclo">Consumo por ciclo (veja no manual/selo)</label>
+    <select id="ciclo">
+      <option value="0.5">0,5 kWh — ciclo rápido</option>
+      <option value="0.7" selected>0,7 kWh — ciclo normal</option>
+      <option value="1.0">1,0 kWh — ciclo com enxágue extra</option>
+      <option value="2.0">2,0 kWh — ciclo com água quente</option>
+    </select>
+    <label for="lavagens">Lavagens por semana</label>
+    <input type="number" id="lavagens" step="1" min="1" value="4">
+    <label for="tarifa">Tarifa da sua região (R$/kWh)</label>
+    <input type="number" id="tarifa" step="0.01" min="0.1" value="0.95">
+    <button id="calcular">Calcular gasto</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var kwhCiclo = Number(document.getElementById("ciclo").value);
+  var lav = Number(document.getElementById("lavagens").value);
+  var tarifa = Number(document.getElementById("tarifa").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (lav < 1 || tarifa <= 0) { saida.textContent = "Informe as lavagens por semana e a tarifa."; return; }
+  var brl = function (n) { return n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+  var kwhMes = kwhCiclo * lav * 4.3;
+  var mes = kwhMes * tarifa;
+  saida.textContent = "Custo por mês: R$ " + brl(mes);
+  detalhe.textContent = kwhCiclo.toLocaleString("pt-BR") + " kWh × " + lav + " lavagens/semana × 4,3 semanas = " + kwhMes.toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + " kWh/mês\n" +
+    "custo: " + kwhMes.toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + " kWh × R$ " + brl(tarifa) + " = R$ " + brl(mes) + "/mês";
+});
+</script>
+</body>
+</html>
