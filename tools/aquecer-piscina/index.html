@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Aquecer uma Piscina — Calculadora</title>
+<meta name="description" content="Estime o custo para aquecer a piscina: solar, bomba de calor ou a gás, instalação e gasto mensal. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/aquecer-piscina/">
+<meta property="og:title" content="Quanto Custa Aquecer uma Piscina — Calculadora">
+<meta property="og:description" content="Solar × bomba de calor × gás: instalação e custo mensal.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de custo para aquecer piscina","url":"https://hashino.github.io/ferramentas/tools/aquecer-piscina/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa aquecer uma piscina."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Aquecer uma Piscina</h1>
+  <section class="app">
+    <label for="m3">Volume da piscina (m³)</label>
+    <input type="number" id="m3" step="5" min="5" value="30">
+<label for="tipo">Sistema de aquecimento</label>
+    <select id="tipo">
+      <option value="solar">Solar (placas) — quase R$ 0 por mês</option>
+      <option value="bomba" selected>Bomba de calor — elétrica, eficiente</option>
+      <option value="gas">A gás — esquenta rápido, gasto alto</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var m3 = Number(document.getElementById("m3").value);
+  var tipo = document.getElementById("tipo").value;
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (m3 < 5) { saida.textContent = "Informe o volume em m³."; return; }
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var f = m3 / 30;
+  var inst, mes, nome;
+  if (tipo === "solar") { inst = 4500 * f; mes = 60 * f; nome = "solar"; }
+  else if (tipo === "bomba") { inst = 6000 * f; mes = 16 * m3; nome = "bomba de calor"; }
+  else { inst = 5500 * f; mes = 30 * m3; nome = "a gás"; }
+  saida.textContent = "Instalação: R$ " + br(inst * 0.8) + " a R$ " + br(inst * 1.3) +
+    " — uso: R$ " + br(mes * 0.8) + " a R$ " + br(mes * 1.3) + "/mês na temporada";
+  detalhe.textContent = "aquecimento " + nome + " para " + br(m3) + " m³\n" +
+    "solar tem maior instalação e custo mensal mínimo\n" +
+    "capa térmica corta a perda de calor pela metade\n" +
+    "temporada típica: 6 a 8 meses no sul/sudeste";
+});
+</script>
+</body>
+</html>

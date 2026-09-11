@@ -2925,3 +2925,14 @@ quanto custa construir um galpao,feita,custo-galpao,leva13
 quanto custa montar um aquario,feita,custo-montar-aquario,leva13
 quanto custa creche particular,feita,custo-creche,leva13
 quanto custa uma mudanca,retida,"2 simuladores fracos (calculadorabrasil DF, garantiamudancas) — revisitar",leva13
+quanto custa psicologo,feita,custo-psicologo,leva14
+quanto custa consulta dermatologista,feita,consulta-dermatologista,leva14
+quanto custa aquecer uma piscina,feita,aquecer-piscina,leva14
+quanto custa abrir uma empresa,feita,abrir-empresa,leva14
+quanto custa declaracao de imposto de renda,feita,custo-imposto-renda,leva14
+quanto custa fazer um site,feita,custo-fazer-site,leva14
+quanto custa um logo,feita,custo-logo,leva14
+quanto custa casamento simples,feita,custo-casamento,leva14
+quanto dura um toner,feita,dura-toner,leva14
+quanto custa progressiva,feita,custo-progressiva,leva14
+quanto custa alugar um carro por mes,retida,"marcas dominam (localiza, movida, unidas) + calc meoo — revisitar",leva14

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Fazer um Site — Calculadora 2026</title>
+<meta name="description" content="Estime o preço de criar um site: landing page, institucional ou e-commerce, com manutenção mensal. Faixa real. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/custo-fazer-site/">
+<meta property="og:title" content="Quanto Custa Fazer um Site — Calculadora 2026">
+<meta property="og:description" content="Landing × institucional × e-commerce: faixa de preço do site.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço de site","url":"https://hashino.github.io/ferramentas/tools/custo-fazer-site/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa fazer um site."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Fazer um Site</h1>
+  <section class="app">
+<label for="tipo">Tipo de site</label>
+    <select id="tipo">
+      <option value="800">Landing page / one-page</option>
+      <option value="3500" selected>Site institucional — 5 a 10 páginas</option>
+      <option value="10000">E-commerce — catálogo e pagamento</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tipo").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent.split("—")[0].trim();
+  saida.textContent = "R$ " + br(med * 0.4) + " a R$ " + br(med * 2.2);
+  detalhe.textContent = "site " + nome.toLowerCase() + "\n" +
+    "fora do valor: domínio (~R$ 40/ano) e hospedagem (R$ 20 a 150/mês)\n" +
+    "manutenção e atualizações: R$ 100 a 500/mês\n" +
+    "construtor de site self-service sai 10x mais barato, com esforço seu";
+});
+</script>
+</body>
+</html>
