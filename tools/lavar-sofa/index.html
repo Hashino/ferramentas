@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Lavar um Sofá — Estimativa de Preço</title>
+<meta name="description" content="Estime quanto custa a higienização do sofá: tamanho, estado e quantidade de estofados. Faixa de preço na hora. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/lavar-sofa/">
+<meta property="og:title" content="Quanto Custa Lavar um Sofá — Estimativa de Preço">
+<meta property="og:description" content="Tamanho × estado do sofá: faixa de preço da lavagem em casa.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Estimativa de preço de lavagem de sofá","url":"https://hashino.github.io/ferramentas/tools/lavar-sofa/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa lavar um sofá."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Lavar um Sofá</h1>
+  <section class="app">
+<label for="tamanho">Tamanho do sofá</label>
+    <select id="tamanho">
+      <option value="140">2 lugares — R$ 120 a 180</option>
+      <option value="200" selected>3 lugares — R$ 180 a 260</option>
+      <option value="260">4 lugares / retrátil — R$ 240 a 340</option>
+    </select>
+<label for="estado">Estado do tecido</label>
+    <select id="estado">
+      <option value="1.0" selected>Manutenção — sem manchas fortes</option>
+      <option value="1.3">Sujo — manchas de uso</option>
+      <option value="1.6">Pesado — mofo ou encardido</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var base = Number(document.getElementById("tamanho").value);
+  var fator = Number(document.getElementById("estado").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var min = base * fator * 0.85;
+  var max = base * fator * 1.15;
+  var brl = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var tamanho = document.getElementById("tamanho").selectedOptions[0].textContent.split("—")[0].trim();
+  saida.textContent = "Estimativa: R$ " + brl(min) + " a R$ " + brl(max);
+  detalhe.textContent = "sofá de " + tamanho.toLowerCase() + ", " +
+    document.getElementById("estado").selectedOptions[0].textContent.toLowerCase() + "\n" +
+    "preço médio de mercado para higienização em domicílio, 2026\n" +
+    "varia por cidade, acessórios (almofadas, colchão extra) e deslocamento";
+});
+</script>
+</body>
+</html>

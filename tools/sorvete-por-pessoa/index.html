@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto de Sorvete por Pessoa — Calculadora</title>
+<meta name="description" content="Calcule quantos litros de sorvete comprar: convidados, porção por pessoa e sobras. Grátis, sem cadastro, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/sorvete-por-pessoa/">
+<meta property="og:title" content="Quanto de Sorvete por Pessoa — Calculadora">
+<meta property="og:description" content="Convidados → litros de sorvete, potes e baldes. Sem errar na festa.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de sorvete por pessoa","url":"https://hashino.github.io/ferramentas/tools/sorvete-por-pessoa/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quanto de sorvete por pessoa."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto de Sorvete por Pessoa</h1>
+  <section class="app">
+    <label for="pessoas">Convidados</label>
+    <input type="number" id="pessoas" step="1" min="1" value="20">
+<label for="porcao">Porção por pessoa</label>
+    <select id="porcao">
+      <option value="100">100 ml — sobremesa depois do bolo</option>
+      <option value="150" selected>150 ml — porção padrão</option>
+      <option value="200">200 ml — só sorvete na festa</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var n = Math.floor(Number(document.getElementById("pessoas").value));
+  var ml = Number(document.getElementById("porcao").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (n < 1) { saida.textContent = "Informe o número de convidados."; return; }
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 1 }); };
+  var litros = n * ml / 1000;
+  var baldes = litros / 10;
+  saida.textContent = br(litros) + " litros de sorvete";
+  detalhe.textContent = n + " convidados × " + ml + " ml = " + br(litros) + " L\n" +
+    "equivale a ≈ " + br(baldes) + " balde(s) de 10 L ou " + br(litros / 1.5) + " pote(s) de 1,5 L\n" +
+    "no calor, compre 10% extra — sorvete derretido não volta";
+});
+</script>
+</body>
+</html>
