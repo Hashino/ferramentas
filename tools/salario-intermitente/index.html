@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como Calcular Salário Intermitente — Calculadora Grátis</title>
+<meta name="description" content="Calcule o pagamento do trabalho intermitente (CLT): horas trabalhadas no mês × valor da hora acordado. Grátis, sem cadastro, direto no navegador.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/salario-intermitente/">
+<meta property="og:title" content="Como Calcular Salário Intermitente — Calculadora Grátis">
+<meta property="og:description" content="Horas trabalhadas × valor da hora acordado: o pagamento do trabalho intermitente em segundos.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Salário Intermitente","url":"https://hashino.github.io/ferramentas/tools/salario-intermitente/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora do salário do trabalho intermitente: horas trabalhadas vezes valor da hora."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Calculadora de Salário Intermitente</h1>
+  <section class="app">
+    <label for="vh">Valor da hora acordado (R$)</label>
+    <input type="number" id="vh" step="0.01" min="0" placeholder="ex.: 14,00">
+    <label for="ht">Horas trabalhadas no mês</label>
+    <input type="number" id="ht" step="0.5" min="0" placeholder="ex.: 92">
+    <button id="calcular">Calcular pagamento</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var vh = Number(document.getElementById("vh").value);
+  var ht = Number(document.getElementById("ht").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false;
+  if (vh <= 0 || ht <= 0) {
+    saida.textContent = "Preencha o valor da hora e as horas trabalhadas.";
+    detalhe.textContent = "";
+    return;
+  }
+  var total = vh * ht;
+  saida.textContent = "Pagamento do mês: R$ " + total.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  detalhe.textContent = ht.toLocaleString("pt-BR") + " h × R$ " + vh.toLocaleString("pt-BR", { minimumFractionDigits: 2 }) + "/h";
+});
+</script>
+</body>
+</html>
