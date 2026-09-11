@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Trocar uma Fechadura — Estimativa</title>
+<meta name="description" content="Estime o preço da troca de fechadura: simples, de segurança multi-pontos ou eletrônica, com peça e mão de obra. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/troca-fechadura/">
+<meta property="og:title" content="Quanto Custa Trocar uma Fechadura — Estimativa">
+<meta property="og:description" content="Tipo de fechadura: faixa de preço com peça e instalação.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Estimativa de custo de troca de fechadura","url":"https://hashino.github.io/ferramentas/tools/troca-fechadura/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa trocar uma fechadura."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Trocar uma Fechadura</h1>
+  <section class="app">
+<label for="tipo">Tipo de fechadura</label>
+    <select id="tipo">
+      <option value="180">Simples de porta interna — R$ 120 a 280</option>
+      <option value="450" selected>Segurança multi-pontos (porta externa) — R$ 300 a 650</option>
+      <option value="1200">Eletrônica / digital — R$ 800 a 2.000</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tipo").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var brl = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent.split("—")[0].trim();
+  saida.textContent = "Estimativa: R$ " + brl(med * 0.75) + " a R$ " + brl(med * 1.4);
+  detalhe.textContent = "fechadura " + nome.toLowerCase() + "\n" +
+    "inclui fechadura nova + troca de segredo + mão de obra do chaveiro\n" +
+    "atendimento de emergência (porta trancada) costuma dobrar a visita";
+});
+</script>
+</body>
+</html>

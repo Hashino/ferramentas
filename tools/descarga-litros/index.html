@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantos Litros Gasta uma Descarga — Calculadora</title>
+<meta name="description" content="Calcule a água que o vaso sanitário consome por mês: litros por descarga e acionamentos por dia. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/descarga-litros/">
+<meta property="og:title" content="Quantos Litros Gasta uma Descarga — Calculadora">
+<meta property="og:description" content="Litros por descarga × usos por dia: o consumo mensal do vaso.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de água da descarga","url":"https://hashino.github.io/ferramentas/tools/descarga-litros/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quantos litros gasta uma descarga."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quantos Litros Gasta uma Descarga</h1>
+  <section class="app">
+<label for="litros">Tipo de vaso</label>
+    <select id="litros">
+      <option value="6">6 L — dual flush / moderno</option>
+      <option value="10" selected>10 L — caixa acoplada comum</option>
+      <option value="12">12 L — válvula antiga</option>
+    </select>
+    <label for="usos">Descargas por dia na casa</label>
+    <input type="number" id="usos" step="1" min="1" value="10">
+
+    <label for="tarifa">Tarifa de água (R$/m³)</label>
+    <input type="number" id="tarifa" step="0.5" min="1" value="7">
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var l = Number(document.getElementById("litros").value);
+  var usos = Number(document.getElementById("usos").value);
+  var tarifa = Number(document.getElementById("tarifa").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (usos < 1) { saida.textContent = "Informe as descargas por dia."; return; }
+  var br = function (x, d) { return x.toLocaleString("pt-BR", { maximumFractionDigits: d || 0 }); };
+  var litrosDia = l * usos;
+  var litrosMes = litrosDia * 30;
+  var custo = litrosMes / 1000 * tarifa;
+  saida.textContent = br(litrosMes) + " litros por mês (≈ R$ " + br(custo, 2) + ")";
+  detalhe.textContent = l + " L × " + usos + " descargas/dia = " + br(litrosDia) + " L/dia\n" +
+    "mês: " + br(litrosMes) + " L = " + br(litrosMes / 1000, 1) + " m³ × R$ " + br(tarifa, 2) + " = R$ " + br(custo, 2) + "\n" +
+    "o vaso sanitário é o maior consumidor de água da casa";
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantas Doses Tem uma Garrafa de Whisky — Calculadora</title>
+<meta name="description" content="Calcule quantas doses saem de cada garrafa de whisky ou cachaça: 50 ml, 60 ml ou dose de bar. Grátis, sem cadastro, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/doses-whisky/">
+<meta property="og:title" content="Quantas Doses Tem uma Garrafa de Whisky — Calculadora">
+<meta property="og:description" content="Garrafa ÷ dose: quantas doses rende cada tamanho de garrafa.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de doses por garrafa","url":"https://hashino.github.io/ferramentas/tools/doses-whisky/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quantas doses tem uma garrafa de whisky."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quantas Doses Tem uma Garrafa de Whisky</h1>
+  <section class="app">
+<label for="garrafa">Tamanho da garrafa</label>
+    <select id="garrafa">
+      <option value="50">50 ml — miniatura</option>
+      <option value="180">180 ml — pequena</option>
+      <option value="700" selected>700 ml — padrão</option>
+      <option value="1000">1 litro</option>
+      <option value="1750">1,75 L — garrafão</option>
+    </select>
+<label for="dose">Tamanho da dose</label>
+    <select id="dose">
+      <option value="40">40 ml — dose curta</option>
+      <option value="50" selected>50 ml — dose padrão</option>
+      <option value="60">60 ml — dose generosa</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var ml = Number(document.getElementById("garrafa").value);
+  var dose = Number(document.getElementById("dose").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x, d) { return x.toLocaleString("pt-BR", { maximumFractionDigits: d || 0 }); };
+  var doses = ml / dose;
+  saida.textContent = br(doses, 1) + " doses de " + dose + " ml";
+  detalhe.textContent = br(ml) + " ml ÷ " + dose + " ml por dose = " + br(doses, 1) + " doses\n" +
+    "garrafa padrão de 700 ml: " + br(700 / 50, 0) + " doses de 50 ml\n" +
+    "dose de bar costuma ser 50 ml (uma dose medida)";
+});
+</script>
+</body>
+</html>

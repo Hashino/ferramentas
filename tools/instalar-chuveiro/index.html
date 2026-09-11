@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Instalar um Chuveiro Elétrico — Estimativa</title>
+<meta name="description" content="Estime o preço da instalação ou troca de chuveiro elétrico feita por eletricista, com disjuntor e fiação. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/instalar-chuveiro/">
+<meta property="og:title" content="Quanto Custa Instalar um Chuveiro Elétrico — Estimativa">
+<meta property="og:description" content="Troca simples ou instalação nova: a faixa de preço do serviço.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Estimativa de custo de instalação de chuveiro","url":"https://hashino.github.io/ferramentas/tools/instalar-chuveiro/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa instalar um chuveiro elétrico."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Instalar um Chuveiro Elétrico</h1>
+  <section class="app">
+<label for="servico">Tipo de serviço</label>
+    <select id="servico">
+      <option value="140" selected>Troca de chuveiro (mesmo ponto) — R$ 90 a 200</option>
+      <option value="350">Instalação nova (disjuntor + fiação) — R$ 250 a 500</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("servico").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var brl = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("servico").selectedOptions[0].textContent.split("—")[0].trim();
+  saida.textContent = "Estimativa: R$ " + brl(med * 0.75) + " a R$ " + brl(med * 1.4);
+  detalhe.textContent = nome.toLowerCase() + "\n" +
+    "chuveiro novo não incluído — some o preço do aparelho\n" +
+    "fio fino ou disjuntor subdimensionado queimam chuveiro: peça o laudo simples";
+});
+</script>
+</body>
+</html>
