@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa uma Tomografia — Calculadora</title>
+<meta name="description" content="Estime o preço da tomografia computadorizada: crânio, tórax ou abdome, com faixa real de clínicas. Grátis, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/custo-tomografia/">
+<meta property="og:title" content="Quanto Custa uma Tomografia — Calculadora">
+<meta property="og:description" content="Crânio × tórax × abdome: faixa de preço da tomografia.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço de tomografia","url":"https://hashino.github.io/ferramentas/tools/custo-tomografia/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa uma tomografia."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa uma Tomografia</h1>
+  <section class="app">
+<label for="tipo">Região do corpo</label>
+    <select id="tipo">
+      <option value="300">Crânio</option>
+      <option value="400" selected>Tórax ou abdome</option>
+      <option value="450">Coluna</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tipo").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent.toLowerCase();
+  saida.textContent = "Estimativa: R$ " + br(med * 0.6) + " a R$ " + br(med * 1.8);
+  detalhe.textContent = "tomografia computadorizada — " + nome + "\n" +
+    "com contraste soma cerca de 50% ao preço\n" +
+    "clínicas populares fazem a partir de R$ 180\n" +
+    "pelo SUS é de graça, com fila\n" +
+    "gestantes devem avisar antes do exame";
+});
+</script>
+</body>
+</html>

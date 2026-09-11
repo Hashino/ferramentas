@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Remover Tatuagem — Calculadora</title>
+<meta name="description" content="Estime o preço da remoção de tatuagem a laser por tamanho e o total do tratamento, com faixa real. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/remover-tatuagem/">
+<meta property="og:title" content="Quanto Custa Remover Tatuagem — Calculadora">
+<meta property="og:description" content="Tamanho × sessões: faixa de preço da remoção de tatuagem a laser.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço de remoção de tatuagem","url":"https://hashino.github.io/ferramentas/tools/remover-tatuagem/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa remover tatuagem."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Remover Tatuagem</h1>
+  <section class="app">
+<label for="tam">Tamanho da tatuagem</label>
+    <select id="tam">
+      <option value="250">Pequena — até 5 cm</option>
+      <option value="400" selected>Média — até 10 cm</option>
+      <option value="650">Grande — 20 cm ou mais</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tam").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tam").selectedOptions[0].textContent.split("—")[0].trim();
+  saida.textContent = "Por sessão: R$ " + br(med * 0.55) + " a R$ " + br(med * 1.6) +
+    "\nTratamento completo (8 sessões): R$ " + br(med * 8 * 0.6) + " a R$ " + br(med * 8 * 1.5);
+  detalhe.textContent = "tatuagem " + nome.toLowerCase() + ", laser por sessão\n" +
+    "leva 6 a 12 sessões, com 45 dias entre cada uma\n" +
+    "tinta preta sai mais fácil; colorida custa mais\n" +
+    "descanso total entre sessões é obrigatório (pele precisa curar)\n" +
+    "procure dermatologista ou clínica com equipamento homologado";
+});
+</script>
+</body>
+</html>

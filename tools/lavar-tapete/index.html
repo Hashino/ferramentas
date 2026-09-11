@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Lavar um Tapete — Calculadora</title>
+<meta name="description" content="Calcule o preço da lavagem de tapete: metros e material (sintético, lã ou shaggy), com faixa real. Grátis, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/lavar-tapete/">
+<meta property="og:title" content="Quanto Custa Lavar um Tapete — Calculadora">
+<meta property="og:description" content="Metros × material: faixa de preço da lavagem de tapete.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço de lavagem de tapete","url":"https://hashino.github.io/ferramentas/tools/lavar-tapete/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa lavar um tapete."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Lavar um Tapete</h1>
+  <section class="app">
+    <label for="m2">Tamanho do tapete (m²)</label>
+    <input type="number" id="m2" step="0.5" min="1" value="4">
+<label for="mat">Material</label>
+    <select id="mat">
+      <option value="40" selected>Sintético / algodão</option>
+      <option value="70">Lã</option>
+      <option value="55">Shaggy / peludo</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var m2 = Number(document.getElementById("m2").value);
+  var med = Number(document.getElementById("mat").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (m2 < 1) { saida.textContent = "Informe o tamanho em m²."; return; }
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var total = m2 * med;
+  var nome = document.getElementById("mat").selectedOptions[0].textContent.toLowerCase();
+  saida.textContent = "Estimativa: R$ " + br(total * 0.75) + " a R$ " + br(total * 1.4) +
+    " (" + m2 + " m² × R$ " + br(med) + "/m²)";
+  detalhe.textContent = "tapete " + nome + "\n" +
+    "lavanderias com coleta e entrega somam R$ 30 a 80\n" +
+    "tapetes muito grandes (acima de 12 m²) saem da faixa\n" +
+    "mancha de pet ou mofo pode ter taxa extra\n" +
+    "lã e tapete antigo pedem lavagem a seco especializada";
+});
+</script>
+</body>
+</html>

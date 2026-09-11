@@ -2999,8 +2999,18 @@ quanto custa um pedreiro por dia,feita,2026-09-10,diaria-pedreiro
 quanto custa uma caçamba de entulho,feita,2026-09-10,cacamba-entulho
 quanto custa um ultrassom,feita,2026-09-10,custo-ultrassom
 quanto custa um raio-x,feita,2026-09-10,custo-raio-x
-quanto custa consertar celular,candidata,2026-09-10,PASS fila leva21: PASS: youtube/iefy/scribd/getninjas/terra — sem calculadora
-quanto custa consertar tv,candidata,2026-09-10,PASS fila leva21: PASS: getninjas/uol/tricebrasil/reddit — sem calculadora
-quanto custa lavar um tapete,candidata,2026-09-10,PASS fila leva21: PASS: lavanderias com tabela — sem calculadora
-quanto custa remover uma tatuagem,candidata,2026-09-10,PASS fila leva21: PASS: blogs/clinicas — sem calculadora
-quanto custa alugar brinquedos para festa infantil,candidata,2026-09-10,PASS fila leva21: PASS: locadoras — sem calculadora
+quanto custa consertar celular,feita,2026-09-10,consertar-celular
+quanto custa consertar tv,feita,2026-09-10,consertar-tv
+quanto custa lavar um tapete,feita,2026-09-10,lavar-tapete
+quanto custa remover uma tatuagem,feita,2026-09-10,remover-tatuagem
+quanto custa alugar brinquedos para festa infantil,feita,2026-09-10,brinquedos-festa
+quanto custa uma ressonancia magnetica,feita,2026-09-10,custo-ressonancia
+quanto custa uma tomografia,feita,2026-09-10,custo-tomografia
+quanto custa uma endoscopia,feita,2026-09-10,custo-endoscopia
+quanto custa uma colonoscopia,feita,2026-09-10,custo-colonoscopia
+quanto custa instalar portao eletronico,feita,2026-09-10,portao-eletronico
+quanto custa consertar ar condicionado do carro,candidata,2026-09-10,PASS fila leva22: PASS: reddit/blogs especializados — sem calculadora
+quanto custa polimento automotivo,candidata,2026-09-10,PASS fila leva22: PASS: reddit/blogs detailers — sem calculadora
+quanto custa instalar piso,candidata,2026-09-10,PASS fila leva22: PASS: blogs/lojas/1 guia editorial — sem calculadora
+quanto custa consulta ginecologista,candidata,2026-09-10,PASS fila leva22: PASS: clínicas com preço — sem calculadora
+quanto custa escola particular,candidata,2026-09-10,PASS fila leva22: PASS: guias/agregadores/forum — sem calculadora
