@@ -3029,7 +3029,17 @@ quanto custa um eletricista,feita,2026-09-10,custo-eletricista
 quanto custa trocar fechadura,feita,2026-09-10,trocar-fechadura
 quanto custa desentupir vaso sanitario,feita,2026-09-10,desentupir-vaso-sanitario
 quanto custa funilaria e pintura de um carro,feita,2026-09-10,funilaria-e-pintura
-quanto custa alugar vestido de noiva,candidata,2026-09-10,PASS fila leva24: PASS: forum/instagram/lojas-catalogo — sem calculadora
-quanto custa consertar um fogão,candidata,2026-09-10,PASS fila leva24: PASS: assistências/blogs/olx — sem calculadora
-quanto custa exame de dna,candidata,2026-09-10,PASS fila leva24: PASS: laboratórios com preço — sem calculadora
-quanto custa um mecanico,candidata,2026-09-10,PASS fila leva24: PASS: 1 calculadora B2B (dono de oficina) — segue PASS
+quanto custa alugar vestido de noiva,feita,2026-09-10,alugar-vestido-de-noiva
+quanto custa consertar um fogão,feita,2026-09-10,consertar-fogao
+quanto custa exame de dna,feita,2026-09-10,custo-exame-dna
+quanto custa um mecanico,feita,2026-09-10,custo-mecanico
+quanto custa um poco artesiano,feita,2026-09-10,poco-artesiano
+quanto custa limpar fossa,feita,2026-09-10,limpar-fossa
+quanto custa alugar uma retroescavadeira,feita,2026-09-10,alugar-retroescavadeira
+quanto custa exame toxicologico,feita,2026-09-10,exame-toxicologico
+quanto custa um inventario,feita,2026-09-10,custo-inventario
+quanto custa um contador,feita,2026-09-10,custo-contador
+quanto custa alugar andaime,candidata,2026-09-10,PASS fila leva25: PASS: locadoras/blogs + 1 simulador fraco — segue PASS
+quanto custa exame psicotecnico,candidata,2026-09-10,PASS fila leva25: PASS: detran/blogs — sem calculadora
+quanto custa recapagem de pneu,candidata,2026-09-10,PASS fila leva25: PASS: blogs/oficinas — sem calculadora
+quanto custa uma escritura de imovel,retida,2026-09-10,RETIDA: SERP com calculadora oficial IRIB + simulador TJAL + 6 tabelas de cartório — saturado por fonte oficial; possível ângulo: custo total escritura+ITBI+registro
