@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa um Eletricista — Calculadora</title>
+<meta name="description" content="Estime o preço do eletricista: visita, instalação de chuveiro ou diária, com faixa real de mercado. Grátis, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/custo-eletricista/">
+<meta property="og:title" content="Quanto Custa um Eletricista — Calculadora">
+<meta property="og:description" content="Visita × chuveiro × diária: faixa de preço do eletricista.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço de eletricista","url":"https://hashino.github.io/ferramentas/tools/custo-eletricista/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa um eletricista."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa um Eletricista</h1>
+  <section class="app">
+<label for="tipo">Tipo de serviço</label>
+    <select id="tipo">
+      <option value="120">Visita + pequeno reparo</option>
+      <option value="220" selected>Instalação de chuveiro elétrico</option>
+      <option value="450">Diária de obra</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tipo").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent.toLowerCase();
+  saida.textContent = "Estimativa: R$ " + br(med * 0.6) + " a R$ " + br(med * 1.8);
+  detalhe.textContent = "serviço: " + nome + "\n" +
+    "fiação e disjuntores entram à parte\n" +
+    "chuveiro de alta potência (7500 W) exige fiação e disjuntor certos\n" +
+    "emergência noturna custa 30% a 50% mais\n" +
+    "exija nota e verifique se o NR-10 do profissional está em dia";
+});
+</script>
+</body>
+</html>

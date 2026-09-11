@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Extensão de Cílios — Calculadora</title>
+<meta name="description" content="Estime o preço da extensão de cílios: fio a fio, híbrido ou volume russo, com faixa real de salões. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/extensao-de-cilios/">
+<meta property="og:title" content="Quanto Custa Extensão de Cílios — Calculadora">
+<meta property="og:description" content="Fio a fio × híbrido × volume russo: faixa de preço.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço de extensão de cílios","url":"https://hashino.github.io/ferramentas/tools/extensao-de-cilios/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa extensão de cílios."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Extensao de Cilios</h1>
+  <section class="app">
+<label for="tipo">Técnica</label>
+    <select id="tipo">
+      <option value="180">Fio a fio</option>
+      <option value="220" selected>Híbrido / brasileiro</option>
+      <option value="280">Volume russo</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tipo").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent.toLowerCase();
+  saida.textContent = "Estimativa: R$ " + br(med * 0.6) + " a R$ " + br(med * 1.7);
+  detalhe.textContent = "extensão " + nome + "\n" +
+    "manutenção a cada 15 ou 20 dias custa cerca de metade\n" +
+    "evita água e vapor nas primeiras 24 horas\n" +
+    "cola de má qualidade causa alergia — pergunte a marca\n" +
+    "quem usa lente de contato deve avisar a profissional";
+});
+</script>
+</body>
+</html>
