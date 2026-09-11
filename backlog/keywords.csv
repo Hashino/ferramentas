@@ -3009,8 +3009,17 @@ quanto custa uma tomografia,feita,2026-09-10,custo-tomografia
 quanto custa uma endoscopia,feita,2026-09-10,custo-endoscopia
 quanto custa uma colonoscopia,feita,2026-09-10,custo-colonoscopia
 quanto custa instalar portao eletronico,feita,2026-09-10,portao-eletronico
-quanto custa consertar ar condicionado do carro,candidata,2026-09-10,PASS fila leva22: PASS: reddit/blogs especializados — sem calculadora
-quanto custa polimento automotivo,candidata,2026-09-10,PASS fila leva22: PASS: reddit/blogs detailers — sem calculadora
-quanto custa instalar piso,candidata,2026-09-10,PASS fila leva22: PASS: blogs/lojas/1 guia editorial — sem calculadora
-quanto custa consulta ginecologista,candidata,2026-09-10,PASS fila leva22: PASS: clínicas com preço — sem calculadora
-quanto custa escola particular,candidata,2026-09-10,PASS fila leva22: PASS: guias/agregadores/forum — sem calculadora
+quanto custa consertar ar condicionado do carro,feita,2026-09-10,consertar-ar-condicionado-carro
+quanto custa polimento automotivo,feita,2026-09-10,polimento-automotivo
+quanto custa instalar piso,feita,2026-09-10,instalar-piso
+quanto custa consulta ginecologista,feita,2026-09-10,consulta-ginecologista
+quanto custa escola particular,feita,2026-09-10,escola-particular
+quanto custa higienizacao de sofa,feita,2026-09-10,higienizacao-sofa
+quanto custa instalar cerca eletrica,feita,2026-09-10,instalar-cerca-eletrica
+quanto custa consulta endocrinologista,feita,2026-09-10,consulta-endocrinologista
+quanto custa consulta oftalmologista,feita,2026-09-10,consulta-oftalmologista
+quanto custa alugar um salao de festas,feita,2026-09-10,alugar-salao-de-festas
+quanto custa consulta otorrinolaringologista,candidata,2026-09-10,PASS fila leva23: PASS: clínicas com preço — sem calculadora
+quanto custa design de sobrancelha,candidata,2026-09-10,PASS fila leva23: PASS: tabelas de salões/cronoshare — sem calculadora
+quanto custa extensao de cilios,candidata,2026-09-10,PASS fila leva23: PASS: tabelas de salões/ofertas — sem calculadora
+quanto custa instalar interfone,candidata,2026-09-10,PASS fila leva23: PASS: marketplaces/lojas — sem calculadora
