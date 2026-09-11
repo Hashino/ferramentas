@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como Calcular Salário Horista — Calculadora Grátis</title>
+<meta name="description" content="Calcule o salário horista em segundos: valor da hora × horas trabalhadas, ou descubra seu valor-hora a partir do salário mensal. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/salario-horista/">
+<meta property="og:title" content="Como Calcular Salário Horista — Calculadora Grátis">
+<meta property="og:description" content="Calcule o salário horista: valor da hora × horas trabalhadas, ou descubra seu valor-hora. Grátis.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Salário Horista","url":"https://hashino.github.io/ferramentas/tools/salario-horista/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de salário horista: valor da hora vezes horas trabalhadas, e o inverso."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Calculadora de Salário Horista</h1>
+  <section class="app">
+    <label><input type="radio" name="modo" value="hora" checked> Sei quanto vale minha hora</label>
+    <div id="bloco-hora">
+      <label for="vh">Valor da hora (R$)</label>
+      <input type="number" id="vh" step="0.01" min="0" placeholder="ex.: 12,50">
+      <label for="ht">Horas trabalhadas no mês</label>
+      <input type="number" id="ht" step="0.5" min="0" placeholder="ex.: 176">
+    </div>
+    <label><input type="radio" name="modo" value="mensal"> Quero descobrir meu valor-hora</label>
+    <div id="bloco-mensal" hidden>
+      <label for="sm">Salário mensal (R$)</label>
+      <input type="number" id="sm" step="0.01" min="0" placeholder="ex.: 2200">
+      <label for="hc">Horas contratadas por semana</label>
+      <input type="number" id="hc" step="1" min="1" max="44" value="44">
+    </div>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+function modo() {
+  return document.querySelector('input[name="modo"]:checked').value;
+}
+document.querySelectorAll('input[name="modo"]').forEach(function (r) {
+  r.addEventListener("change", function () {
+    document.getElementById("bloco-hora").hidden = modo() !== "hora";
+    document.getElementById("bloco-mensal").hidden = modo() !== "mensal";
+  });
+});
+document.getElementById("calcular").addEventListener("click", function () {
+  var saida = document.getElementById("resultado");
+  saida.hidden = false;
+  if (modo() === "hora") {
+    var vh = Number(document.getElementById("vh").value);
+    var ht = Number(document.getElementById("ht").value);
+    if (vh <= 0 || ht <= 0) {
+      saida.textContent = "Preencha valor da hora e horas trabalhadas.";
+      return;
+    }
+    saida.textContent = "Salário do mês: R$ " + (vh * ht).toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  } else {
+    var sm = Number(document.getElementById("sm").value);
+    var hc = Number(document.getElementById("hc").value);
+    if (sm <= 0 || hc <= 0) {
+      saida.textContent = "Preencha salário mensal e horas semanais.";
+      return;
+    }
+    var horasMes = hc * 5; // ≈ 5 semanas/mês (220 h em 44 h/semana)
+    var vh2 = sm / horasMes;
+    saida.textContent = "Valor da hora: R$ " + vh2.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " (" + horasMes + " h/mês)";
+  }
+});
+</script>
+</body>
+</html>
