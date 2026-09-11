@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Consertar Ar-condicionado — Calculadora</title>
+<meta name="description" content="Estime o preço do conserto do ar-condicionado residencial: gás, placa ou compressor, com faixa real. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/consertar-ar-condicionado/">
+<meta property="og:title" content="Quanto Custa Consertar Ar-condicionado — Calculadora">
+<meta property="og:description" content="Gás × placa × compressor: faixa de preço do conserto residencial.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço de conserto de ar-condicionado","url":"https://hashino.github.io/ferramentas/tools/consertar-ar-condicionado/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa consertar ar-condicionado residencial."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Consertar Ar Condicionado</h1>
+  <section class="app">
+<label for="tipo">Qual o serviço</label>
+    <select id="tipo">
+      <option value="250">Carga de gás refrigerante</option>
+      <option value="350" selected>Placa eletrônica ou sensor</option>
+      <option value="1200">Troca do compressor</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tipo").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent.toLowerCase();
+  saida.textContent = "Estimativa: R$ " + br(med * 0.6) + " a R$ " + br(med * 1.9);
+  detalhe.textContent = "serviço: " + nome + "\n" +
+    "a limpeza do aparelho tem calculadora própria no site\n" +
+    "carga de gás sem achar o vazamento é dinheiro jogado fora\n" +
+    "compressor novo em aparelho antigo às vezes não compensa\n" +
+    "exija nota e garantia mínima de 90 dias no serviço";
+});
+</script>
+</body>
+</html>

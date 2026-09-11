@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa uma Cesárea — Calculadora</title>
+<meta name="description" content="Estime o custo do parto particular: normal ou cesárea, com faixa real de hospitais. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/custo-cesarea/">
+<meta property="og:title" content="Quanto Custa uma Cesárea — Calculadora">
+<meta property="og:description" content="Normal × cesárea: faixa de preço do parto particular.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de custo de cesárea e parto","url":"https://hashino.github.io/ferramentas/tools/custo-cesarea/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa uma cesárea particular."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa uma Cesarea</h1>
+  <section class="app">
+<label for="tipo">Tipo de parto</label>
+    <select id="tipo">
+      <option value="6000">Normal</option>
+      <option value="9000" selected>Cesárea</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tipo").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent.toLowerCase();
+  saida.textContent = "Pacote particular: R$ " + br(med * 0.6) + " a R$ " + br(med * 1.8);
+  detalhe.textContent = "parto " + nome + "\n" +
+    "o pacote junta honorários (médico, anestesista), diárias e berçário\n" +
+    "exames do pré-natal entram à parte\n" +
+    "pelo SUS o parto é de graça, inclusive cesárea indicada\n" +
+    "hospitais de maternidade têm tabela de valores públicas — peça";
+});
+</script>
+</body>
+</html>

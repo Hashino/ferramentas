@@ -3039,7 +3039,17 @@ quanto custa alugar uma retroescavadeira,feita,2026-09-10,alugar-retroescavadeir
 quanto custa exame toxicologico,feita,2026-09-10,exame-toxicologico
 quanto custa um inventario,feita,2026-09-10,custo-inventario
 quanto custa um contador,feita,2026-09-10,custo-contador
-quanto custa alugar andaime,candidata,2026-09-10,PASS fila leva25: PASS: locadoras/blogs + 1 simulador fraco — segue PASS
-quanto custa exame psicotecnico,candidata,2026-09-10,PASS fila leva25: PASS: detran/blogs — sem calculadora
-quanto custa recapagem de pneu,candidata,2026-09-10,PASS fila leva25: PASS: blogs/oficinas — sem calculadora
+quanto custa alugar andaime,feita,2026-09-10,alugar-andaime
+quanto custa exame psicotecnico,feita,2026-09-10,exame-psicotecnico
+quanto custa recapagem de pneu,feita,2026-09-10,recapagem-pneu
 quanto custa uma escritura de imovel,retida,2026-09-10,RETIDA: SERP com calculadora oficial IRIB + simulador TJAL + 6 tabelas de cartório — saturado por fonte oficial; possível ângulo: custo total escritura+ITBI+registro
+quanto custa consulta dentista,feita,2026-09-10,consulta-dentista
+quanto custa protese dentaria,feita,2026-09-10,protese-dentaria
+quanto custa consertar impressora,feita,2026-09-10,consertar-impressora
+quanto custa consertar ar condicionado,feita,2026-09-10,consertar-ar-condicionado
+quanto custa alugar um gerador,feita,2026-09-10,alugar-gerador
+quanto custa construir uma casa,feita,2026-09-10,construir-casa
+quanto custa uma cesarea,feita,2026-09-10,custo-cesarea
+quanto custa alugar um galpao,candidata,2026-09-10,PASS fila leva26: PASS: portais imobiliários + blogs — sem calculadora
+quanto custa fazer um aplicativo,candidata,2026-09-10,PASS fila leva26: PASS: blogs dev + 1 simulador de agência (fraco) — segue PASS
+quanto custa consertar porta de garagem,descartada,2026-09-10,CUT: sem demanda no autocomplete (0 variantes)
