@@ -36,6 +36,9 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
    (a) SERP sem ferramenta dedicada no top-10 (fóruns, Reddit, resultados genéricos = demanda sem oferta);
    (b) tarefa resolvível em 1 página estática de vanilla JS (calcular/gerar/convertar);
    (c) sem overlap com ferramenta já publicada em `tools/`.
+   Publicar só o que passar. Se menos que N passarem, publicar as que passarem e reportar o motivo —
+   NUNCA forçar página em SERP saturada. Keywords checadas e cortadas: marcar `descartada` no CSV
+   (poupa re-checagem de Serper nas próximas levas).
 3. **Criar cada ferramenta**: copiar `templates/tool/index.html` para `tools/<slug>/index.html` e preencher:
    - slug: kebab-case curto, derivado da keyword
    - `<title>`: keyword primeiro, ≤60 chars · meta description ≤155 chars
