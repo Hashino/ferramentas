@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Pintar o Cabelo no Salão — Calculadora</title>
+<meta name="description" content="Estime o preço da coloração no salão: comprimento e só tinta ou com corte, com faixa real de mercado. Grátis, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/pintar-cabelo/">
+<meta property="og:title" content="Quanto Custa Pintar o Cabelo no Salão — Calculadora">
+<meta property="og:description" content="Comprimento × tinta só ou com corte: preço da coloração.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço de coloração no salão","url":"https://hashino.github.io/ferramentas/tools/pintar-cabelo/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa pintar o cabelo no salão."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Pintar o Cabelo no Salao</h1>
+  <section class="app">
+<label for="comp">Comprimento</label>
+    <select id="comp">
+      <option value="150">Curto</option>
+      <option value="220" selected>Médio</option>
+      <option value="300">Longo</option>
+    </select>
+<label for="extra">Serviços</label>
+    <select id="extra">
+      <option value="1.0" selected>Só a coloração</option>
+      <option value="1.3">Coloração + corte</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var base = Number(document.getElementById("comp").value);
+  var fator = Number(document.getElementById("extra").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var med = base * fator;
+  saida.textContent = "Estimativa: R$ " + br(med * 0.7) + " a R$ " + br(med * 1.6);
+  detalhe.textContent = "coloração em cabelo " + document.getElementById("comp").selectedOptions[0].textContent.toLowerCase() + "\n" +
+    "global clara, descoloração e mechas custam bem mais\n" +
+    "retoca de raiz sai pela metade do global\n" +
+    "Cliente que traz o produto próprio costuma pagar só a mão de obra";
+});
+</script>
+</body>
+</html>
