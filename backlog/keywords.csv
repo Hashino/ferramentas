@@ -2948,3 +2948,14 @@ quanto custa depilacao a laser,retida,"5 redes de clínicas (espacolaser, drlase
 quanto custa curso de ingles,retida,"marcas de idiomas dominam (wizard, ccaa, fisk, senac, puc)",leva15
 quanto custa uma faculdade ead,retida,7 faculdades de marca no top-10,leva15
 quanto custa tirar passaporte,descartada,valor fixo único da PF — sem variável para calculadora,leva15
+quanto custa trocar o oleo do carro,feita,troca-oleo,leva16
+quanto custa exame de sangue,feita,exame-de-sangue,leva16
+quanto custa consulta cardiologista,feita,consulta-cardiologista,leva16
+quanto custa consulta pediatra,feita,consulta-pediatra,leva16
+quanto custa fisioterapia,feita,custo-fisioterapia,leva16
+quantas taças tem uma garrafa de vinho,feita,tacas-vinho,leva16
+quanto custa um armario planejado,feita,custo-moveis-planejados,leva16
+quanto custa uma casa pre fabricada,feita,casa-prefabricada,leva16
+quanto custa transferencia de veiculo,feita,transferencia-veiculo,leva16
+quanto tempo dura um saco de racao de 15kg,feita,dura-racao,leva16
+quanto custa uma bateria de carro,descartada,SERP e-commerce (7 lojas),leva16
