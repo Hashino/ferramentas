@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa uma Consulta com Nutricionista — Preço</title>
+<meta name="description" content="Estime o preço da consulta com nutricionista: particular, popular ou online, com faixa real de mercado. Grátis, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/consulta-nutricionista/">
+<meta property="og:title" content="Quanto Custa uma Consulta com Nutricionista — Preço">
+<meta property="og:description" content="Particular × online × popular: faixa de preço da nutrição.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Estimativa de preço de consulta nutricionista","url":"https://hashino.github.io/ferramentas/tools/consulta-nutricionista/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa consulta nutricionista."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa uma Consulta com Nutricionista</h1>
+  <section class="app">
+<label for="tipo">Tipo de consulta</label>
+    <select id="tipo">
+      <option value="250" selected>Particular presencial</option>
+      <option value="160">Online</option>
+      <option value="100">Clínica popular / rede de baixo custo</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tipo").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent.split("(")[0].trim();
+  saida.textContent = "Estimativa: R$ " + br(med * 0.6) + " a R$ " + br(med * 1.6);
+  detalhe.textContent = "consulta " + (nome === "Online" ? "online" : nome.toLowerCase()) + "\n" +
+    "retorno com ajuste do plano costuma custar metade\n" +
+    "pacote de acompanhamento mensal (4 consultas) sai mais barato\n" +
+    "peça o plano alimentar por escrito — é seu direito";
+});
+</script>
+</body>
+</html>

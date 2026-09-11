@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Trocar Amortecedor — Calculadora</title>
+<meta name="description" content="Estime o preço da troca de amortecedores: par dianteiro ou jogo completo, com coxins e mão de obra. Faixa real. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/trocar-amortecedor/">
+<meta property="og:title" content="Quanto Custa Trocar Amortecedor — Calculadora">
+<meta property="og:description" content="Par × jogo completo × coxins: faixa de preço dos amortecedores.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço de troca de amortecedor","url":"https://hashino.github.io/ferramentas/tools/trocar-amortecedor/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa trocar amortecedor."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Trocar Amortecedor</h1>
+  <section class="app">
+<label for="kit">O que trocar</label>
+    <select id="kit">
+      <option value="600">Par dianteiro</option>
+      <option value="1100" selected>Jogo completo — 4 rodas</option>
+    </select>
+<label for="coxim">Trocar coxins e batentes também?</label>
+    <select id="coxim">
+      <option value="1.0" selected>Não — só os amortecedores</option>
+      <option value="1.3">Sim — recomendado quando estão velhos</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var base = Number(document.getElementById("kit").value);
+  var fator = Number(document.getElementById("coxim").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var med = base * fator;
+  saida.textContent = "Estimativa: R$ " + br(med * 0.7) + " a R$ " + br(med * 1.5);
+  detalhe.textContent = document.getElementById("kit").selectedOptions[0].textContent.toLowerCase() + "\n" +
+    "amortecedor novo sempre em par, nunca um só\n" +
+    "carro em pé na garagem pede os 4 de uma vez\n" +
+    "sinal de fim de vida: balanço excessivo e pneu comendo\n" +
+    "marca original custa até 2x a paralela de qualidade";
+});
+</script>
+</body>
+</html>
