@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gerador de Monograma Grátis — Baixe em PNG</title>
+<meta name="description" content="Crie monogramas com as suas iniciais em 6 estilos, escolha a cor e baixe em PNG com fundo transparente. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/gerador-de-monograma/">
+<meta property="og:title" content="Gerador de Monograma Grátis — Baixe em PNG">
+<meta property="og:description" content="Iniciais em 6 estilos, qualquer cor, PNG com fundo transparente.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Gerador de Monograma","url":"https://hashino.github.io/ferramentas/tools/gerador-de-monograma/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Gerador de monograma com iniciais, 6 estilos e download em PNG transparente."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Gerador de Monograma</h1>
+  <section class="app">
+    <label for="iniciais">Iniciais (até 3 letras)</label>
+    <input type="text" id="iniciais" maxlength="3" value="AB" style="text-transform:uppercase">
+    <label for="estilo">Estilo</label>
+    <select id="estilo">
+      <option value="classico">Clássico</option>
+      <option value="script">Script</option>
+      <option value="moderno">Moderno</option>
+      <option value="circulo">Círculo</option>
+      <option value="sombra">Sombra</option>
+      <option value="fino">Fino</option>
+    </select>
+    <label for="cor">Cor</label>
+    <input type="color" id="cor" value="#2e3440">
+    <button id="baixar">Baixar PNG</button>
+    <canvas id="tela" width="800" height="800" style="max-width:100%;margin-top:1rem;border:1px dashed currentColor;border-radius:8px"></canvas>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+var tela = document.getElementById("tela");
+var ctx = tela.getContext("2d");
+var ESTILOS = {
+  classico: { font: "italic 300px Georgia, 'Times New Roman', serif", tracking: 0 },
+  script: { font: "260px 'Brush Script MT', 'Segoe Script', 'Comic Sans MS', cursive", tracking: 0 },
+  moderno: { font: "bold 240px Futura, 'Century Gothic', Arial, sans-serif", tracking: 18 },
+  circulo: { font: "italic 260px Georgia, serif", tracking: 0, ring: true },
+  sombra: { font: "bold 280px Georgia, serif", tracking: 6, shadow: true },
+  fino: { font: "270px 'Palatino Linotype', Palatino, Georgia, serif", tracking: 30 }
+};
+
+function desenhar() {
+  var txt = (document.getElementById("iniciais").value.trim() || "A").toUpperCase();
+  var est = ESTILOS[document.getElementById("estilo").value];
+  var cor = document.getElementById("cor").value;
+  ctx.clearRect(0, 0, 800, 800);
+  if (est.ring) {
+    ctx.strokeStyle = cor;
+    ctx.lineWidth = 8;
+    ctx.beginPath();
+    ctx.arc(400, 400, 330, 0, Math.PI * 2);
+    ctx.stroke();
+  }
+  ctx.font = est.font;
+  ctx.fillStyle = cor;
+  ctx.textBaseline = "middle";
+  ctx.textAlign = "center";
+  if (est.tracking) {
+    var larguras = txt.split("").map(function (c) { return ctx.measureText(c).width; });
+    var total = larguras.reduce(function (a, b) { return a + b; }, 0) + est.tracking * (txt.length - 1);
+    var x = 400 - total / 2;
+    ctx.textAlign = "left";
+    txt.split("").forEach(function (c, i) {
+      if (est.shadow) { ctx.fillStyle = "rgba(0,0,0,.25)"; ctx.fillText(c, x + 10, 410); ctx.fillStyle = cor; }
+      ctx.fillText(c, x, 400);
+      x += larguras[i] + est.tracking;
+    });
+  } else {
+    if (est.shadow) { ctx.fillStyle = "rgba(0,0,0,.25)"; ctx.fillText(txt, 410, 410); ctx.fillStyle = cor; }
+    ctx.fillText(txt, 400, 400);
+  }
+}
+
+document.getElementById("baixar").addEventListener("click", function () {
+  var a = document.createElement("a");
+  a.download = "monograma.png";
+  a.href = tela.toDataURL("image/png");
+  a.click();
+});
+
+document.getElementById("iniciais").addEventListener("input", desenhar);
+document.getElementById("estilo").addEventListener("change", desenhar);
+document.getElementById("cor").addEventListener("input", desenhar);
+desenhar();
+</script>
+</body>
+</html>

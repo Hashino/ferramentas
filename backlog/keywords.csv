@@ -27,7 +27,7 @@ calculadora de boost pxg,feita,2026-09-10,
 calculadora de breeding palworld,candidata,2026-09-10,
 calculadora de btus,candidata,2026-09-10,
 calculadora de calorias,candidata,2026-09-10,
-calculadora de calorias dos alimentos,candidata,2026-09-10,
+calculadora de calorias dos alimentos,feita,2026-09-10,
 calculadora de cdb,candidata,2026-09-10,
 calculadora de cdi,candidata,2026-09-10,
 calculadora de cdi mensal,candidata,2026-09-10,
@@ -117,12 +117,12 @@ como calcular hora extra no sábado,candidata,2026-09-10,matrix:hora extra
 como calcular hora extra noturna,candidata,2026-09-10,matrix:hora extra
 como calcular salário,candidata,2026-09-10,matrix:salário
 como calcular salário bruto,candidata,2026-09-10,matrix:salário
-como calcular salário familia,candidata,2026-09-10,matrix:salário
+como calcular salário familia,feita,2026-09-10,matrix:salário
 como calcular salário horista,feita,2026-09-10,matrix:salário
 como calcular salário intermitente,feita,2026-09-10,matrix:salário
 como calcular salário líquido,candidata,2026-09-10,matrix:salário
 como calcular salário maternidade,candidata,2026-09-10,matrix:salário
-como calcular salário por dia,candidata,2026-09-10,matrix:salário
+como calcular salário por dia,feita,2026-09-10,matrix:salário
 como calcular salário por hora,candidata,2026-09-10,matrix:salário
 como calcular salário proporcional,candidata,2026-09-10,matrix:salário
 como calcular salário proporcional aos dias trabalhados,candidata,2026-09-10,matrix:salário
@@ -199,7 +199,7 @@ gerador de ferias,candidata,2026-09-10,matrix:férias
 gerador de férias,candidata,2026-09-10,matrix:férias
 gerador de hora extra,candidata,2026-09-10,matrix:hora extra
 gerador de recibo de ferias,candidata,2026-09-10,matrix:férias
-gerador de recibo de salario,candidata,2026-09-10,matrix:salário
+gerador de recibo de salario,feita,2026-09-10,matrix:salário
 gerador de salario,candidata,2026-09-10,matrix:salário
 lista de compras férias,candidata,2026-09-10,matrix:férias
 lista de feriados 2025,candidata,2026-09-10,matrix:férias
@@ -522,3 +522,8 @@ tabela de salário sintraconst,candidata,2026-09-10,matrix:salário
 tabela de salários,candidata,2026-09-10,matrix:salário
 tabuadas,candidata,2026-09-10,sitemap:querocalcular.com.br
 tecnico de gerador salario,candidata,2026-09-10,matrix:salário
+conversor de minutos em horas,feita,2026-09-10,manual
+gerador de tabuada,feita,2026-09-10,manual
+quanto tempo dura um botijão de gás,feita,2026-09-10,manual
+gerador de monograma,feita,2026-09-10,manual
+quanto rende 1000 reais na poupança,feita,2026-09-10,manual

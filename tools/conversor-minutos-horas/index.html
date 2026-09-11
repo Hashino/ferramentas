@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conversor de Minutos em Horas — Online e Grátis</title>
+<meta name="description" content="Converta minutos em horas e minutos (ex.: 90 min = 1h30) e horas decimais em minutos. Nos dois sentidos. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/conversor-minutos-horas/">
+<meta property="og:title" content="Conversor de Minutos em Horas — Online e Grátis">
+<meta property="og:description" content="Minutos em horas e minutos (e o contrário), nos dois sentidos, em um clique.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Conversor de Minutos em Horas","url":"https://hashino.github.io/ferramentas/tools/conversor-minutos-horas/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Conversor de minutos em horas e minutos, e de horas decimais em minutos."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Conversor de Minutos em Horas</h1>
+  <section class="app">
+    <label for="min">Minutos</label>
+    <input type="number" id="min" step="1" min="0" placeholder="ex.: 90">
+    <button id="toHoras">Converter em horas</button>
+    <div class="resultado" id="resHoras" hidden></div>
+  </section>
+  <section class="app" style="margin-top:1.25rem">
+    <label for="horas">Horas decimais (ex.: 1,5)</label>
+    <input type="number" id="horas" step="0.01" min="0" placeholder="ex.: 1.5">
+    <button id="toMin">Converter em minutos</button>
+    <div class="resultado" id="resMin" hidden></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("toHoras").addEventListener("click", function () {
+  var m = Number(document.getElementById("min").value);
+  var saida = document.getElementById("resHoras");
+  saida.hidden = false;
+  if (isNaN(m) || m < 0 || document.getElementById("min").value === "") {
+    saida.textContent = "Informe os minutos.";
+    return;
+  }
+  var h = Math.floor(m / 60);
+  var r = m % 60;
+  var decimal = (m / 60).toLocaleString("pt-BR", { maximumFractionDigits: 4 });
+  saida.textContent = m + " min = " + h + " h " + r + " min (" + decimal + " h)";
+});
+
+document.getElementById("toMin").addEventListener("click", function () {
+  var h = Number(document.getElementById("horas").value);
+  var saida = document.getElementById("resMin");
+  saida.hidden = false;
+  if (isNaN(h) || h < 0 || document.getElementById("horas").value === "") {
+    saida.textContent = "Informe as horas.";
+    return;
+  }
+  var total = h * 60;
+  var inteiro = Math.floor(h);
+  var resto = Math.round((h - inteiro) * 60);
+  if (resto === 60) { inteiro += 1; resto = 0; }
+  saida.textContent = h.toLocaleString("pt-BR", { maximumFractionDigits: 4 }) + " h = " + Math.round(total) + " min (" + inteiro + " h " + resto + " min)";
+});
+</script>
+</body>
+</html>

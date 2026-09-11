@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como Calcular Salário por Dia — Calculadora Grátis</title>
+<meta name="description" content="Calcule quanto vale o seu salário por dia trabalhado e o total de dias trabalhados no mês. Grátis, sem cadastro, direto no navegador.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/salario-por-dia/">
+<meta property="og:title" content="Como Calcular Salário por Dia — Calculadora Grátis">
+<meta property="og:description" content="Quanto vale o dia do seu salário e o total por dias trabalhados, em segundos.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Salário por Dia","url":"https://hashino.github.io/ferramentas/tools/salario-por-dia/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de salário por dia trabalhado: valor do dia e total pelos dias trabalhados."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Calculadora de Salário por Dia</h1>
+  <section class="app">
+    <label for="sm">Salário mensal (R$)</label>
+    <input type="number" id="sm" step="0.01" min="0" placeholder="ex.: 2200">
+    <label for="dias">Dias trabalhados no mês (opcional)</label>
+    <input type="number" id="dias" step="1" min="0" max="31" placeholder="ex.: 20">
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var sm = Number(document.getElementById("sm").value);
+  var dias = Number(document.getElementById("dias").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false;
+  detalhe.textContent = "";
+  if (sm <= 0) {
+    saida.textContent = "Informe o salário mensal.";
+    return;
+  }
+  var brl = function (n) {
+    return n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  };
+  var porDia = sm / 30;
+  saida.textContent = "Valor do dia de trabalho: R$ " + brl(porDia);
+  var linhas =
+    "salário mensal ÷ 30 = R$ " + brl(porDia) + "/dia (convenção CLT: mês comercial de 30 dias)";
+  if (dias > 0) {
+    linhas += "\ndias trabalhados: " + dias + " × R$ " + brl(porDia) + " = R$ " + brl(dias * porDia);
+  }
+  detalhe.textContent = linhas;
+});
+</script>
+</body>
+</html>

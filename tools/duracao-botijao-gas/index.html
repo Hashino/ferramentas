@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Tempo Dura um Botijão de Gás 13kg — Calcule</title>
+<meta name="description" content="Calcule a duração do botijão de gás 13 kg pela potência do aparelho e minutos de uso por dia. Fogão, ducha a gás e aquecedor. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/duracao-botijao-gas/">
+<meta property="og:title" content="Quanto Tempo Dura um Botijão de Gás 13kg — Calcule">
+<meta property="og:description" content="Informe o aparelho e o uso diário: veja em quantos dias o botijão de 13 kg acaba.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Duração do Botijão de Gás","url":"https://hashino.github.io/ferramentas/tools/duracao-botijao-gas/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcula quantos dias dura um botijão de gás 13 kg pelo uso diário dos aparelhos."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Duração do Botijão de Gás 13 kg</h1>
+  <section class="app">
+    <label for="aparelho">Aparelho</label>
+    <select id="aparelho">
+      <option value="6000">Fogão (2 a 3 bocas)</option>
+      <option value="7500">Ducha a gás</option>
+      <option value="18000">Aquecedor de passagem</option>
+      <option value="0">Outro (informar potência)</option>
+    </select>
+    <label for="potencia">Potência total (W)</label>
+    <input type="number" id="potencia" step="100" min="1" value="6000">
+    <label for="minutos">Uso por dia (minutos)</label>
+    <input type="number" id="minutos" step="5" min="1" value="60">
+    <button id="calcular">Calcular duração</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+// Botijão P-13: 13 kg de GLP ≈ 13 × 50,4 MJ/kg ≈ 655 MJ ≈ 182 kWh (182.000 Wh)
+var ENERGIA_WH = 182000;
+
+var PRESETS = { "6000": [6000, 60], "7500": [7500, 30], "18000": [18000, 30] };
+
+document.getElementById("aparelho").addEventListener("change", function () {
+  var p = PRESETS[this.value];
+  if (p) {
+    document.getElementById("potencia").value = p[0];
+    document.getElementById("minutos").value = p[1];
+  }
+});
+
+document.getElementById("calcular").addEventListener("click", function () {
+  var w = Number(document.getElementById("potencia").value);
+  var min = Number(document.getElementById("minutos").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false;
+  detalhe.textContent = "";
+  if (w <= 0 || min <= 0) {
+    saida.textContent = "Informe potência e minutos de uso por dia.";
+    return;
+  }
+  var whDia = w * min / 60;
+  var dias = ENERGIA_WH / whDia;
+  var meses = dias / 30;
+  saida.textContent = "O botijão dura cerca de " + Math.floor(dias) + " dias (" +
+    (meses >= 1 ? meses.toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + " meses" : Math.round(dias * 7) + " dias") + ")";
+  detalhe.textContent =
+    "energia do botijão de 13 kg: ≈ 182 kWh\n" +
+    "consumo diário: " + w.toLocaleString("pt-BR") + " W × " + min + " min = " + (whDia / 1000).toLocaleString("pt-BR", { maximumFractionDigits: 2 }) + " kWh/dia\n" +
+    "182.000 Wh ÷ " + Math.round(whDia) + " Wh/dia = " + dias.toLocaleString("pt-BR", { maximumFractionDigits: 0 }) + " dias";
+});
+</script>
+</body>
+</html>

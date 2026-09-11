@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora do Salário-Família 2026 — Quanto Receber</title>
+<meta name="description" content="Calcule o salário-família 2026: cota de R$ 67,54 por filho de até 14 anos para quem ganha até R$ 1.980,38/mês. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/salario-familia/">
+<meta property="og:title" content="Calculadora do Salário-Família 2026 — Quanto Receber">
+<meta property="og:description" content="Cota de R$ 67,54 por filho: veja se você tem direito e quanto vai receber por mês.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora do Salário-Família 2026","url":"https://hashino.github.io/ferramentas/tools/salario-familia/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora do salário-família 2026: cota por filho e limite de renda."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Calculadora do Salário-Família 2026</h1>
+  <section class="app">
+    <label for="sm">Remuneração mensal (R$)</label>
+    <input type="number" id="sm" step="0.01" min="0" placeholder="ex.: 1800">
+    <label for="filhos">Filhos de até 14 anos (ou com deficiência)</label>
+    <input type="number" id="filhos" step="1" min="0" max="20" placeholder="ex.: 2">
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+// Tabela 2026 (Portaria Interministerial MPS/MF nº 13/2026): cota R$ 67,54 por filho,
+// direito para remuneração mensal de até R$ 1.980,38.
+var COTA = 67.54;
+var TETO = 1980.38;
+
+document.getElementById("calcular").addEventListener("click", function () {
+  var sm = Number(document.getElementById("sm").value);
+  var filhos = Number(document.getElementById("filhos").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false;
+  detalhe.textContent = "";
+  if (sm <= 0 || filhos < 0 || document.getElementById("filhos").value === "") {
+    saida.textContent = "Informe a remuneração e o número de filhos.";
+    return;
+  }
+  var brl = function (n) {
+    return n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  };
+  if (sm > TETO) {
+    saida.textContent = "Sem direito: remuneração acima de R$ " + brl(TETO) + "/mês.";
+    detalhe.textContent = "Em 2026, o salário-família é pago a quem ganha até R$ " + brl(TETO) + " por mês (Portaria MPS/MF nº 13/2026).";
+    return;
+  }
+  if (filhos === 0) {
+    saida.textContent = "Total: R$ 0,00";
+    detalhe.textContent = "Sem filhos de até 14 anos (ou com deficiência), não há cota a receber.";
+    return;
+  }
+  var total = COTA * filhos;
+  saida.textContent = "Total por mês: R$ " + brl(total) + " (" + filhos + (filhos === 1 ? " filho" : " filhos") + ")";
+  detalhe.textContent =
+    "cota 2026: R$ " + brl(COTA) + " por filho\n" +
+    filhos + " × R$ " + brl(COTA) + " = R$ " + brl(total) + "/mês\n" +
+    "remuneração de R$ " + brl(sm) + " está dentro do limite de R$ " + brl(TETO);
+});
+</script>
+</body>
+</html>
