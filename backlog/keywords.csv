@@ -2874,5 +2874,17 @@ quanto custa instalar um chuveiro,feita,,manual
 quantos litros de leite produz uma vaca,feita,,manual
 quantos ovos uma galinha põe por mes,feita,,manual
 quanto custa fazer um poco artesiano,feita,,manual
-quanto custa construir um muro,candidata,,manual
+quanto custa construir um muro,feita,construir-muro,manual
 calculadora de media escolar,descartada,,manual
+quantas fatias de pizza por pessoa,feita,pizza-por-pessoa,leva10
+quanto custa uma consulta veterinaria,feita,consulta-veterinaria,leva10
+quanto custa uma troca de pneu,feita,troca-pneu,leva10
+quantos pedacos de frango por pessoa,feita,frango-por-pessoa,leva10
+quanto custa um banho no cachorro,feita,banho-cachorro,leva10
+quanto custa um exame de vista,feita,exame-vista,leva10
+quanto custa pintar um portao,feita,pintar-portao,leva10
+quantos litros de cloro para piscina,feita,cloro-piscina,leva10
+quanto custa alinhar o carro,feita,alinhar-carro,leva10
+calculadora de comissao de vendas,descartada,6 ferramentas dedicadas no top-10,leva10
+quantos litros de agua tem uma piscina,descartada,"4 calculadoras (genco, engiobra, omni, piscinafacil)",leva10
+reparo de parabrisa,descartada,falhou no autocomplete,leva10

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa um Banho no Cachorro — Estimativa</title>
+<meta name="description" content="Estime o preço do banho e tosa no pet shop: porte do cão e tipo de serviço, com faixa de preço real. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/banho-cachorro/">
+<meta property="og:title" content="Quanto Custa um Banho no Cachorro — Estimativa">
+<meta property="og:description" content="Porte × serviço: faixa de preço do banho e tosa no pet shop.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Estimativa de preço de banho de cachorro","url":"https://hashino.github.io/ferramentas/tools/banho-cachorro/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa um banho no cachorro."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa um Banho no Cachorro</h1>
+  <section class="app">
+<label for="porte">Porte do cachorro</label>
+    <select id="porte">
+      <option value="65">Pequeno (até 10 kg) — R$ 45 a 90</option>
+      <option value="90" selected>Médio (10 a 25 kg) — R$ 65 a 130</option>
+      <option value="130">Grande (25 kg ou mais) — R$ 90 a 180</option>
+    </select>
+<label for="servico">Serviço</label>
+    <select id="servico">
+      <option value="1.0" selected>Só banho</option>
+      <option value="1.6">Banho + tosa</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var base = Number(document.getElementById("porte").value);
+  var fator = Number(document.getElementById("servico").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var brl = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var med = base * fator;
+  saida.textContent = "Estimativa: R$ " + brl(med * 0.8) + " a R$ " + brl(med * 1.4);
+  detalhe.textContent = document.getElementById("porte").selectedOptions[0].textContent.split("—")[0].trim() + ", " +
+    document.getElementById("servico").selectedOptions[0].textContent.toLowerCase() + "\n" +
+    "pelo enroldado (poodle, shih-tzu) ou hidratação extra encarecem\n" +
+    "pacote mensal de 4 banhos costuma dar desconto";
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantas Fatias de Pizza por Pessoa — Calculadora</title>
+<meta name="description" content="Calcule quantas pizzas pedir: convidados, fatias por pessoa e tamanho da pizza. Nunca mais falte pizza na festa. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/pizza-por-pessoa/">
+<meta property="og:title" content="Quantas Fatias de Pizza por Pessoa — Calculadora">
+<meta property="og:description" content="Convidados × fome → quantas pizzas de 8 fatias pedir.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de pizza por pessoa","url":"https://hashino.github.io/ferramentas/tools/pizza-por-pessoa/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quantas fatias de pizza por pessoa."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quantas Fatias de Pizza por Pessoa</h1>
+  <section class="app">
+    <label for="pessoas">Quantas pessoas</label>
+    <input type="number" id="pessoas" step="1" min="1" value="6">
+<label for="fome">Fome do grupo</label>
+    <select id="fome">
+      <option value="2">Leve — 2 fatias por pessoa</option>
+      <option value="3" selected>Normal — 3 fatias por pessoa</option>
+      <option value="4">Fominha — 4 fatias por pessoa</option>
+    </select>
+<label for="fatias">Fatias por pizza</label>
+    <select id="fatias">
+      <option value="8" selected>8 fatias — média/grande tradicional</option>
+      <option value="6">6 fatias — grande de borda recheada</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var n = Math.floor(Number(document.getElementById("pessoas").value));
+  var fome = Number(document.getElementById("fome").value);
+  var fatias = Number(document.getElementById("fatias").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (n < 1) { saida.textContent = "Informe o número de pessoas."; return; }
+  var br0 = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var pizzas = n * fome / fatias;
+  var arred = Math.ceil(pizzas);
+  saida.textContent = arred + " pizza" + (arred > 1 ? "s" : "") + " (" + br0(n * fome) + " fatias)";
+  detalhe.textContent = n + " pessoas × " + fome + " fatias = " + br0(n * fome) + " fatias ÷ " + fatias + " por pizza\n" +
+    (arred > pizzas ? "+1 arredondada — sobra fria é melhor que festa sem pizza" : "conta exata") + "\n" +
+    "grupo com crianças: 2 fatias bastam; adolescentes: considere 4";
+});
+</script>
+</body>
+</html>
