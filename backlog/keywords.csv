@@ -3050,6 +3050,16 @@ quanto custa consertar ar condicionado,feita,2026-09-10,consertar-ar-condicionad
 quanto custa alugar um gerador,feita,2026-09-10,alugar-gerador
 quanto custa construir uma casa,feita,2026-09-10,construir-casa
 quanto custa uma cesarea,feita,2026-09-10,custo-cesarea
-quanto custa alugar um galpao,candidata,2026-09-10,PASS fila leva26: PASS: portais imobiliários + blogs — sem calculadora
-quanto custa fazer um aplicativo,candidata,2026-09-10,PASS fila leva26: PASS: blogs dev + 1 simulador de agência (fraco) — segue PASS
+quanto custa alugar um galpao,feita,2026-09-10,alugar-galpao
+quanto custa fazer um aplicativo,feita,2026-09-10,custo-aplicativo
 quanto custa consertar porta de garagem,descartada,2026-09-10,CUT: sem demanda no autocomplete (0 variantes)
+quanto custa um cuidador de idoso,feita,2026-09-10,custo-cuidador-de-idoso
+quanto custa uma baba,feita,2026-09-10,custo-baba
+quanto custa cirurgia de hernia,feita,2026-09-10,cirurgia-hernia
+quanto custa implante capilar,feita,2026-09-10,implante-capilar
+quanto custa harmonizacao facial,feita,2026-09-10,harmonizacao-facial
+quanto custa fazer um testamento,feita,2026-09-10,fazer-testamento
+quanto custa um divorcio,feita,2026-09-10,custo-divorcio
+quanto custa um velorio,feita,2026-09-10,custo-velorio
+quanto custa um pet scan,candidata,2026-09-10,PASS fila leva27: PASS: clínicas de imagem/laboratórios — sem calculadora
+quanto custa desbloquear celular,descartada,2026-09-10,CUT: intenção ambígua (senha vs operadora) e SERP dominada por tutoriais grátis

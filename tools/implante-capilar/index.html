@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Implante Capilar — Calculadora</title>
+<meta name="description" content="Estime o preço do transplante capilar por região e técnica, com faixa real de clínicas. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/implante-capilar/">
+<meta property="og:title" content="Quanto Custa Implante Capilar — Calculadora">
+<meta property="og:description" content="Entrada × coroa × completo: faixa de preço do implante capilar.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço de implante capilar","url":"https://hashino.github.io/ferramentas/tools/implante-capilar/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa implante capilar."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Implante Capilar</h1>
+  <section class="app">
+<label for="tipo">Extensão do transplante</label>
+    <select id="tipo">
+      <option value="10000">Entradas / têmporas</option>
+      <option value="18000" selected>Coroa ou frente completa</option>
+      <option value="30000">Reconstrução extensa</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tipo").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent.toLowerCase();
+  saida.textContent = "Estimativa: R$ " + br(med * 0.65) + " a R$ " + br(med * 1.8);
+  detalhe.textContent = "transplante capilar — " + nome + "\n" +
+    "o preço acompanha as unidades foliculares transplantadas\n" +
+    "FUE e DHI custam mais que a técnica de fita\n" +
+    "procure só clínicas com médico dermatologista ou cirurgião à frente\n" +
+    "pós-operatório e retoque devem estar no contrato";
+});
+</script>
+</body>
+</html>

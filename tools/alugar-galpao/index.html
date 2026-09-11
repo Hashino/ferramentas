@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Alugar um Galpão — Calculadora</title>
+<meta name="description" content="Calcule o aluguel do galpão pelo tamanho e região, com faixa real de mercado por m². Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/alugar-galpao/">
+<meta property="og:title" content="Quanto Custa Alugar um Galpão — Calculadora">
+<meta property="og:description" content="M² × região: aluguel mensal estimado do galpão.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de aluguel de galpão","url":"https://hashino.github.io/ferramentas/tools/alugar-galpao/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa alugar um galpão."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Alugar um Galpao</h1>
+  <section class="app">
+    <label for="m2">Área do galpão (m²)</label>
+    <input type="number" id="m2" step="50" min="50" value="500">
+<label for="reg">Região</label>
+    <select id="reg">
+      <option value="12">Interior / cidade média</option>
+      <option value="20" selected>Capital / região metropolitana</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var m2 = Number(document.getElementById("m2").value);
+  var med = Number(document.getElementById("reg").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (m2 < 50) { saida.textContent = "Informe a área em m²."; return; }
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("reg").selectedOptions[0].textContent.toLowerCase();
+  var total = m2 * med;
+  saida.textContent = "Mensal: R$ " + br(total * 0.7) + " a R$ " + br(total * 1.5) +
+    " (" + m2 + " m² × R$ " + br(med) + "/m²)";
+  detalhe.textContent = "galpão em " + nome + "\n" +
+    "pé-direito alto, doca e piso industrial aumentam o valor\n" +
+    "IPTU, condomínio e seguro entram à parte do aluguel\n" +
+    "fiador ou seguro-fiança é exigido na maioria dos contratos\n" +
+    "galpão sem documento de uso (RCA) não vale para fiscalização";
+});
+</script>
+</body>
+</html>
