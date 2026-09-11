@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantas Cabeças de Gado por Hectare — Calculadora</title>
+<meta name="description" content="Calcule quantas cabeças de gado cabem por hectare: lotação do pasto e peso médio dos animais. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/gado-por-hectare/">
+<meta property="og:title" content="Quantas Cabeças de Gado por Hectare — Calculadora">
+<meta property="og:description" content="Hectares × lotação (UA/ha) × peso médio: a lotação do rebanho.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de gado por hectare","url":"https://hashino.github.io/ferramentas/tools/gado-por-hectare/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quantas cabeças de gado por hectare."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quantas Cabeças de Gado por Hectare</h1>
+  <section class="app">
+    <label for="hectares">Área do pasto (hectares)</label>
+    <input type="number" id="hectares" step="0.5" min="0.5" value="10">
+<label for="lotacao">Lotação do pasto</label>
+    <select id="lotacao">
+      <option value="1.0">Extensivo sem manejo — 1 UA/ha</option>
+      <option value="2.0" selected>Pasto manejado — 2 UA/ha</option>
+      <option value="3.5">Piqueteira / rotacionado — 3,5 UA/ha</option>
+      <option value="6.0">Irrigado / alto desempenho — 6 UA/ha</option>
+    </select>
+    <label for="peso">Peso médio do animal (kg)</label>
+    <input type="number" id="peso" step="10" min="100" value="450">
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var ha = Number(document.getElementById("hectares").value);
+  var ua = Number(document.getElementById("lotacao").value);
+  var peso = Number(document.getElementById("peso").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (ha <= 0 || peso <= 0) { saida.textContent = "Informe a área e o peso médio."; return; }
+  var br0 = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var br1 = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 1 }); };
+  var uaTotal = ha * ua;
+  var cabecas = uaTotal * 450 / peso;
+  saida.textContent = "≈ " + br0(cabecas) + " cabeças";
+  detalhe.textContent = ha.toLocaleString("pt-BR") + " ha × " + br1(ua) + " UA/ha = " + br1(uaTotal) + " UA\n" +
+    "1 UA = 450 kg de peso vivo → " + br1(uaTotal) + " × 450 ÷ " + peso + " kg = " + br0(cabecas) + " cabeças\n" +
+    "lotação real varia com a qualidade da pastagem e a estação do ano";
+});
+</script>
+</body>
+</html>
