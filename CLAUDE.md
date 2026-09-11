@@ -9,7 +9,14 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
 
 - `backlog/keywords.csv` — fila de keywords (`status`: `candidata` | `feita` | `descartada`)
 - `backlog/serp.json` — top-10 do Google por keyword (via Serper), para julgar concorrência
-- `scripts/mine.py` — mineração: `python3 scripts/mine.py [limite]` (harvest de autocomplete) e `python3 scripts/mine.py --check [N]` (SERP das candidatas)
+- `scripts/mine.py` — mineração multi-fonte, um só portão de qualidade (só entra no backlog o que o Google sugere = demanda real):
+  - `mine.py harvest [N]` — cabeças × alfabeto (fonte original)
+  - `mine.py matrix [N]` — varre os próximos N domínios de `seeds.json` × cabeças (fonte principal; guarda progresso em `matrix_state.json`)
+  - `mine.py check [N]` — SERP das candidatas (também ingere relatedSearches/PAA quando a Serper os retorna)
+  - `mine.py deep [N]` — variantes em volta de keywords provadas (`feita`/`boa`) — melhor custo-benefício, rode após cada lote publicado
+  - `mine.py reddit [N]` — caça pedidos de ferramenta em threads BR do Reddit
+  - `mine.py sitemaps [N]` — títulos de sites concorrentes validados no autocomplete
+  - Seeds editáveis em `backlog/seeds.json` (cabeças, domínios, queries de reddit, sitemaps)
 - `scripts/build.py` — regenera `index.html` (hub), `sitemap.xml`, `robots.txt`, `llms.txt`, `config.js`, `ads.txt`. SEMPRE rodar antes de commitar.
 - `scripts/ping_indexnow.py` — roda no CI a cada push; não rodar manualmente
 - `search.js` — busca fuzzy da home (filtra/reordena os cards conforme digitação)
@@ -21,8 +28,10 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
 ## Comando: "faça as próximas N aplicações"
 
 1. **Abastecer o backlog** se houver menos de ~3×N linhas `candidata`:
-   - `python3 scripts/mine.py <N*10>` (harvest; rede)
-   - `python3 scripts/mine.py --check <N*3>` (SERP via Serper)
+   - `python3 scripts/mine.py matrix 4` (rede; ~2 min por domínio)
+   - se já houver ferramentas publicadas: `python3 scripts/mine.py deep 3`
+   - `python3 scripts/mine.py check <N*3>` (SERP via Serper; classifica saturação a partir de `serp.json`)
+   - opcional, para diversificar: `mine.py reddit 3` e `mine.py sitemaps 10`
 2. **Selecionar N candidatas** lendo `backlog/serp.json`. Critérios, em ordem:
    (a) SERP sem ferramenta dedicada no top-10 (fóruns, Reddit, resultados genéricos = demanda sem oferta);
    (b) tarefa resolvível em 1 página estática de vanilla JS (calcular/gerar/convertar);
