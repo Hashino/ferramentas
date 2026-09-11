@@ -3082,7 +3082,17 @@ quanto custa self storage,feita,2026-09-10,self-storage
 quanto custa uti por dia,feita,2026-09-10,custo-uti
 quanto custa vacina da dengue,feita,2026-09-10,vacina-dengue
 quanto custa um despachante,feita,2026-09-10,custo-despachante
-quanto custa alugar um palco,candidata,2026-09-10,PASS fila leva29: PASS: locadoras de eventos — sem calculadora
-quanto custa exame de papanicolau,candidata,2026-09-10,PASS fila leva29: PASS: laboratórios com preço — sem calculadora
+quanto custa alugar um palco,feita,2026-09-10,alugar-palco
+quanto custa exame de papanicolau,feita,2026-09-10,custo-papanicolau
 quanto custa registro de marca,retida,2026-09-10,"RETIDA: 4+ agências de propriedade intelectual dominando o SERP (123marcas, consolide, oficial, moveon) — precedentes laser/idiomas/EAD"
 quanto custa adaptar um carro para pcd,retida,2026-09-10,"RETIDA: montadoras/brands dominando com tópico de isenção (compra), intenção mista compra×adaptação"
+quanto custa alugar um terno,feita,2026-09-11,alugar-terno
+100 doces para festa,feita,2026-09-11,doces-para-festa
+quanto custa um projeto de arquitetura,feita,2026-09-11,projeto-arquitetura
+quanto custa limpeza de terreno,feita,2026-09-11,limpeza-de-terreno
+quanto custa pilates,feita,2026-09-11,custo-pilates
+quanto custa tratamento de canal,feita,2026-09-11,tratamento-de-canal
+quanto custa vasectomia,feita,2026-09-11,custo-vasectomia
+quanto custa bolo de casamento,feita,2026-09-11,bolo-de-casamento
+quanto custa depilacao na cera,candidata,2026-09-11,PASS fila leva30: PASS: tabelas de clínicas de estética — sem calculadora
+quanto custa para consertar um playstation 4,candidata,2026-09-11,PASS fila leva30: PASS: assistências técnicas com preço — sem calculadora

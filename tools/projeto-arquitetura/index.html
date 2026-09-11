@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa um Projeto de Arquitetura — Calculadora</title>
+<meta name="description" content="Calcule o honorário do projeto de arquitetura pelo tamanho da obra, com faixa real de mercado. Grátis, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/projeto-arquitetura/">
+<meta property="og:title" content="Quanto Custa um Projeto de Arquitetura — Calculadora">
+<meta property="og:description" content="M² × projeto: honorário estimado do arquiteto.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de custo de projeto de arquitetura","url":"https://hashino.github.io/ferramentas/tools/projeto-arquitetura/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa um projeto de arquitetura."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa um Projeto de Arquitetura</h1>
+  <section class="app">
+    <label for="m2">Área do projeto (m²)</label>
+    <input type="number" id="m2" step="10" min="20" value="100">
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var m2 = Number(document.getElementById("m2").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (m2 < 20) { saida.textContent = "Informe a área em m²."; return; }
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var med = m2 * 50;
+  saida.textContent = "Honorário: R$ " + br(med * 0.6) + " a R$ " + br(med * 1.8) +
+    " (" + m2 + " m² × R$ 30 a 90/m²)";
+  detalhe.textContent = m2 + " m² de área projetada\n" +
+    "projeto executivo e complementares (elétrica, hidráulica) somam à parte\n" +
+    "a tabela oficial do CAUBR orienta os percentuais sobre o custo da obra\n" +
+    "obras pequenas pagam mais por m² que obras grandes\n" +
+    "acompanhamento de obra costuma ser um contrato separado";
+});
+</script>
+</body>
+</html>
