@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantos Tijolos por Metro Quadrado — Calculadora</title>
+<meta name="description" content="Calcule quantos tijolos você precisa por metro quadrado ou pela área da parede: baiano, 9 furos, bloco ou tijolinho. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/calculadora-tijolos/">
+<meta property="og:title" content="Quantos Tijolos por Metro Quadrado — Calculadora">
+<meta property="og:description" content="Tijolo baiano, 9 furos, bloco ou tijolinho × área da parede: a quantidade certa.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de tijolos por metro quadrado","url":"https://hashino.github.io/ferramentas/tools/calculadora-tijolos/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quantos tijolos por metro quadrado."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quantos Tijolos por Metro Quadrado</h1>
+  <section class="app">
+<label for="tipo">Tipo de tijolo/bloco</label>
+    <select id="tipo">
+      <option value="baiano" selected>Tijolo baiano furado (meia vez) — 76/m²</option>
+      <option value="novefuros">Tijolo cerâmico 9 furos 19×19 — 25/m²</option>
+      <option value="concreto">Bloco de concreto 14×19×39 — 12,5/m²</option>
+      <option value="tijolinho">Tijolinho ecológico — 76/m²</option>
+    </select>
+    <label for="unm2">Unidades por m² (pode ajustar)</label>
+    <input type="number" id="unm2" step="0.5" min="1" value="76">
+    <label for="area">Área da parede (m²)</label>
+    <input type="number" id="area" step="0.5" min="0.5" value="10">
+    <label for="perda">Perda (%)</label>
+    <input type="number" id="perda" step="1" min="0" value="10">
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+var POR_M2 = {"baiano": 76, "novefuros": 25, "concreto": 12.5, "tijolinho": 76};
+document.getElementById("tipo").addEventListener("change", function () {
+  document.getElementById("unm2").value = POR_M2[this.value];
+});
+document.getElementById("calcular").addEventListener("click", function () {
+  var unm2 = Number(document.getElementById("unm2").value);
+  var area = Number(document.getElementById("area").value);
+  var perda = Number(document.getElementById("perda").value) || 0;
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (unm2 <= 0 || area <= 0) { saida.textContent = "Informe as unidades por m² e a área da parede."; return; }
+  var brl = function (n) { return n.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var total = unm2 * area * (1 + perda / 100);
+  saida.textContent = brl(Math.ceil(total)) + " tijolos/blocos" + (perda ? " (com " + perda + "% de perda)" : "");
+  detalhe.textContent = unm2.toLocaleString("pt-BR") + " un/m² × " + area.toLocaleString("pt-BR") + " m²" +
+    (perda ? " × " + (1 + perda / 100).toLocaleString("pt-BR", { maximumFractionDigits: 2 }) : "") +
+    " = " + brl(Math.ceil(total)) + " unidades\n" +
+    "junta de 1 cm já considerada nos valores; ajuste as unidades por m² se o seu tijolo for diferente.";
+});
+</script>
+</body>
+</html>

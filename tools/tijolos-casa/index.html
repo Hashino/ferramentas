@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantos Tijolos para Construir uma Casa — Estimativa</title>
+<meta name="description" content="Estime quantos tijolos são necessários para construir uma casa pelo tamanho em m² e tipo de parede. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/tijolos-casa/">
+<meta property="og:title" content="Quantos Tijolos para Construir uma Casa — Estimativa">
+<meta property="og:description" content="m² da casa × paredes × tijolos por m²: a estimativa total de tijolos.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Estimativa de tijolos para construir uma casa","url":"https://hashino.github.io/ferramentas/tools/tijolos-casa/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quantos tijolos para construir uma casa."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quantos Tijolos para Construir uma Casa</h1>
+  <section class="app">
+    <label for="area">Área construída da casa (m²)</label>
+    <input type="number" id="area" step="1" min="10" value="70">
+<label for="tipo">Tipo de parede</label>
+    <select id="tipo">
+      <option value="baiano" selected>Tijolo baiano furado (meia vez) — 76/m²</option>
+      <option value="novefuros">Tijolo cerâmico 9 furos 19×19 — 25/m²</option>
+      <option value="concreto">Bloco de concreto 14×19×39 — 12,5/m²</option>
+    </select>
+    <label for="fator">Fator de parede (m² de parede por m² de casa)</label>
+    <input type="number" id="fator" step="0.1" min="1.5" value="2.5">
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+var POR_M2 = {"baiano": 76, "novefuros": 25, "concreto": 12.5};
+document.getElementById("calcular").addEventListener("click", function () {
+  var area = Number(document.getElementById("area").value);
+  var fator = Number(document.getElementById("fator").value) || 2.5;
+  var unm2 = POR_M2[document.getElementById("tipo").value];
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (area <= 0) { saida.textContent = "Informe a área construída em m²."; return; }
+  var brl = function (n) { return n.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var paredes = area * fator;
+  var total = paredes * unm2 * 1.1;
+  saida.textContent = "≈ " + brl(Math.ceil(total)) + " tijolos/blocos";
+  detalhe.textContent = area.toLocaleString("pt-BR") + " m² × " + fator.toLocaleString("pt-BR") + " (paredes e aberturas) = " +
+    brl(paredes) + " m² de parede\n" + brl(paredes) + " m² × " + unm2.toLocaleString("pt-BR") + " un/m² + 10% de perda = " +
+    brl(Math.ceil(total)) + "\n" +
+    "estimativa típica; o fator varia com o projeto (pé-direito, quartos e vãos).";
+});
+</script>
+</body>
+</html>

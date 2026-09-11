@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gerador de Atividade de Caligrafia — Para Imprimir</title>
+<meta name="description" content="Gere folhas de caligrafia com o nome ou palavra para treinar a letra. Linhas pautadas prontas para imprimir. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/gerador-caligrafia/">
+<meta property="og:title" content="Gerador de Atividade de Caligrafia — Para Imprimir">
+<meta property="og:description" content="Palavra ou nome na folha pautada: atividade de caligrafia pronta para imprimir.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Gerador de Atividade de Caligrafia","url":"https://hashino.github.io/ferramentas/tools/gerador-caligrafia/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Gerador de folhas de caligrafia para imprimir."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+<style>
+@media print {
+  body * { visibility: hidden; }
+  #folha, #folha * { visibility: visible; }
+  #folha { position: absolute; top: 0; left: 0; width: 100%; }
+}
+#folha { font-family: Georgia, "Times New Roman", serif; }
+#folha .linha-cal { margin: 0 0 1.1rem; }
+#folha .modelo {
+  font-size: 1.6rem; color: #b9b9b9; letter-spacing: .12em;
+  line-height: 1.9; border-bottom: 2px solid #999; padding-bottom: .15rem;
+  min-height: 2.6rem;
+}
+#folha .linha-livre { border-bottom: 1px dashed #aaa; height: 2.2rem; margin: 0 0 .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gerador de Atividade de Caligrafia</h1>
+  <section class="app">
+    <label for="texto">Palavra, nome ou frase</label>
+    <input type="text" id="texto" placeholder="ex.: Maria Eduarda">
+    <label for="linhas">Linhas de treino</label>
+    <input type="number" id="linhas" min="4" max="30" value="12">
+    <label for="estilo">Estilo da linha</label>
+    <select id="estilo">
+      <option value="livre" selected>Modelo + linha livre para copiar</option>
+      <option value="so-modelo">Só o modelo (palavra em cinza)</option>
+      <option value="so-livre">Só linhas livres</option>
+    </select>
+    <button id="gerar">Gerar folha</button>
+    <div id="folha" hidden style="margin-top:1.25rem"></div>
+    <button id="imprimir" hidden style="margin-top:1rem">Imprimir</button>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("gerar").addEventListener("click", function () {
+  var texto = document.getElementById("texto").value.trim();
+  var linhas = Math.min(30, Math.max(4, Math.floor(Number(document.getElementById("linhas").value) || 12)));
+  var estilo = document.getElementById("estilo").value;
+  var folha = document.getElementById("folha");
+  if (!texto) { alert("Informe a palavra ou o nome."); return; }
+  folha.innerHTML = "";
+  for (var i = 0; i < linhas; i++) {
+    if (estilo !== "so-livre") {
+      var m = document.createElement("div");
+      m.className = "linha-cal modelo";
+      m.textContent = texto;
+      folha.appendChild(m);
+    }
+    if (estilo === "livre" || estilo === "so-livre") {
+      var l = document.createElement("div");
+      l.className = "linha-livre";
+      folha.appendChild(l);
+    }
+  }
+  folha.hidden = false;
+  document.getElementById("imprimir").hidden = false;
+});
+
+document.getElementById("imprimir").addEventListener("click", function () {
+  window.print();
+});
+</script>
+</body>
+</html>

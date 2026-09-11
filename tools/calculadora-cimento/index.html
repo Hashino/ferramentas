@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantos Sacos de Cimento por Metro Quadrado — Calculadora</title>
+<meta name="description" content="Calcule os sacos de cimento por m² de alvenaria, contrapiso ou reboco, pela área da obra. Grátis, sem cadastro, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/calculadora-cimento/">
+<meta property="og:title" content="Quantos Sacos de Cimento por Metro Quadrado — Calculadora">
+<meta property="og:description" content="Alvenaria, contrapiso ou reboco × área: os sacos de cimento necessários.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de sacos de cimento por metro quadrado","url":"https://hashino.github.io/ferramentas/tools/calculadora-cimento/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quantos sacos de cimento por metro quadrado."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quantos Sacos de Cimento por Metro Quadrado</h1>
+  <section class="app">
+<label for="uso">Uso</label>
+    <select id="uso">
+      <option value="0.6" selected>Alvenaria (assentar tijolo/bloco) — ~0,6 saco/m²</option>
+      <option value="0.35">Contrapiso 3 cm — ~0,35 saco/m²</option>
+      <option value="0.45">Reboco 2 cm — ~0,45 saco/m²</option>
+      <option value="0.75">Piso em placas cimentícias — ~0,75 saco/m²</option>
+    </select>
+    <label for="area">Área (m²)</label>
+    <input type="number" id="area" step="0.5" min="0.5" value="20">
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var sm2 = Number(document.getElementById("uso").value);
+  var area = Number(document.getElementById("area").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (sm2 <= 0 || area <= 0) { saida.textContent = "Informe a área em m²."; return; }
+  var brl = function (n) { return n.toLocaleString("pt-BR", { maximumFractionDigits: 1 }); };
+  var sacos = sm2 * area;
+  saida.textContent = brl(Math.ceil(sacos)) + " sacos de 50 kg";
+  detalhe.textContent = sm2.toLocaleString("pt-BR") + " saco/m² × " + area.toLocaleString("pt-BR") + " m² = " + brl(sacos) + " sacos\n" +
+    "areia em traço 1:4: cerca de " + brl(sacos * 0.13) + " m³\n" +
+    "consumo médio; varia com traço, espessura e desperdício.";
+});
+</script>
+</body>
+</html>
