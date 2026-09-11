@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de Adicional de Periculosidade 30% CLT</title>
+<meta name="description" content="Calcule o adicional de periculosidade: 30% sobre o salário base, com ou sem reflexos nas horas extras e DSR. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/adicional-periculosidade/">
+<meta property="og:title" content="Calculadora de Adicional de Periculosidade 30% CLT">
+<meta property="og:description" content="30% sobre o salário base, com reflexos opcionais em DSR e horas extras.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Adicional de Periculosidade","url":"https://hashino.github.io/ferramentas/tools/adicional-periculosidade/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora do adicional de periculosidade de 30% da CLT."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Calculadora de Adicional de Periculosidade</h1>
+  <section class="app">
+    <label for="base">Salário base (R$)</label>
+    <input type="number" id="base" step="0.01" min="0" placeholder="ex.: 2500">
+    <label for="he">Horas extras no mês (horas)</label>
+    <input type="number" id="he" step="0.5" min="0" placeholder="ex.: 10 (opcional)">
+    <label><input type="checkbox" id="reflexos" checked> Incluir reflexo em horas extras e DSR</label>
+    <button id="calcular">Calcular adicional</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+// CLT art. 193: adicional de 30% sobre o salário base das atividades em risco.
+// Com reflexos: a hora extra e o DSR incidem sobre o salário já majorado (Súmula 306).
+document.getElementById("calcular").addEventListener("click", function () {
+  var base = Number(document.getElementById("base").value);
+  var he = Number(document.getElementById("he").value) || 0;
+  var comReflexo = document.getElementById("reflexos").checked;
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false;
+  detalhe.textContent = "";
+  if (base <= 0) {
+    saida.textContent = "Informe o salário base.";
+    return;
+  }
+  var brl = function (n) {
+    return n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  };
+  var adicional = base * 0.30;
+  var linhas = [
+    "adicional: 30% × R$ " + brl(base) + " = R$ " + brl(adicional) + "/mês",
+    "salário majorado: R$ " + brl(base + adicional)
+  ];
+  var total = adicional;
+  if (he > 0) {
+    var valorHora = (base + adicional) / 220;
+    var valorHe = valorHora * 1.5 * he;
+    total += valorHe;
+    linhas.push(
+      "hora extra (sobre salário majorado): " + he + " h × R$ " + brl(valorHora * 1.5) + " = R$ " + brl(valorHe) + (comReflexo ? "" : " (sem reflexo: base sem majoração = R$ " + brl((base / 220) * 1.5 * he) + ")")
+    );
+    if (!comReflexo) {
+      total -= valorHe - (base / 220) * 1.5 * he;
+    }
+  }
+  saida.textContent = "Receber de adicional: R$ " + brl(total) + "/mês";
+  detalhe.textContent = linhas.join("\n") + "\nbase legal: CLT art. 193" + (he > 0 ? " · Súmula 306 (reflexo da majoração nas HE)" : "");
+});
+</script>
+</body>
+</html>

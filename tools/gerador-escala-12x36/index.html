@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gerador de Escala 12x36 Grátis — Calendário de Folgas</title>
+<meta name="description" content="Gere seu calendário de trabalho e folgas para escala 12x36, 5x2, 6x1 e 4x3 a partir da data de início. Grátis e imprimível.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/gerador-escala-12x36/">
+<meta property="og:title" content="Gerador de Escala 12x36 Grátis — Calendário de Folgas">
+<meta property="og:description" content="Escala 12x36, 5x2, 6x1 e 4x3: veja dia a dia o que é trabalho e o que é folga.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Gerador de Escala 12x36","url":"https://hashino.github.io/ferramentas/tools/gerador-escala-12x36/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Gerador de calendário de escalas de trabalho: 12x36, 5x2, 6x1 e 4x3."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+<style>
+@media print {
+  body * { visibility: hidden; }
+  #folha, #folha * { visibility: visible; }
+  #folha { position: absolute; top: 0; left: 0; width: 100%; }
+}
+</style>
+</head>
+<body>
+<main>
+  <h1>Gerador de Escala de Trabalho</h1>
+  <section class="app">
+    <label for="escala">Escala</label>
+    <select id="escala">
+      <option value="12x36">12x36 (1 dia de trabalho, 1 de folga)</option>
+      <option value="5x2">5x2 (5 dias de trabalho, 2 de folga)</option>
+      <option value="6x1">6x1 (6 dias de trabalho, 1 de folga)</option>
+      <option value="4x3">4x3 (4 dias de trabalho, 3 de folga)</option>
+    </select>
+    <label for="inicio">Primeiro dia de trabalho</label>
+    <input type="date" id="inicio">
+    <label for="dias">Quantos dias gerar</label>
+    <input type="number" id="dias" min="7" max="120" value="30">
+    <button id="gerar">Gerar calendário</button>
+    <div id="folha" hidden style="margin-top:1rem;line-height:1.8;white-space:pre-line"></div>
+    <button id="imprimir" hidden style="margin-top:1rem">Imprimir</button>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+var PADRAO = { "12x36": [1, 1], "5x2": [5, 2], "6x1": [6, 1], "4x3": [4, 3] };
+var SEM = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"];
+
+document.getElementById("gerar").addEventListener("click", function () {
+  var tipo = document.getElementById("escala").value;
+  var dias = Math.min(120, Math.max(7, Math.floor(Number(document.getElementById("dias").value) || 30)));
+  var valInicio = document.getElementById("inicio").value;
+  var folha = document.getElementById("folha");
+  var imp = document.getElementById("imprimir");
+  if (!valInicio) {
+    folha.hidden = false;
+    folha.textContent = "Escolha a data do primeiro dia de trabalho.";
+    imp.hidden = true;
+    return;
+  }
+  var partes = valInicio.split("-");
+  var d = new Date(Number(partes[0]), Number(partes[1]) - 1, Number(partes[2]));
+  var trabalha = PADRAO[tipo][0];
+  var folga = PADRAO[tipo][1];
+  var ciclo = trabalha + folga;
+  var linhas = ["Escala " + tipo + " — a partir de " + d.toLocaleDateString("pt-BR"), ""];
+  var nTrabalho = 0, nFolga = 0;
+  for (var i = 0; i < dias; i++) {
+    var fase = i % ciclo;
+    var ehTrabalho = fase < trabalha;
+    if (ehTrabalho) nTrabalho++; else nFolga++;
+    var dt = new Date(d.getTime() + i * 86400000);
+    linhas.push(
+      dt.toLocaleDateString("pt-BR") + " (" + SEM[dt.getDay()] + ") — " + (ehTrabalho ? "TRABALHA" : "folga")
+    );
+  }
+  linhas.push("", "Resumo: " + nTrabalho + " dias de trabalho e " + nFolga + " de folga em " + dias + " dias.");
+  folha.hidden = false;
+  folha.textContent = linhas.join("\n");
+  imp.hidden = false;
+});
+
+document.getElementById("imprimir").addEventListener("click", function () {
+  window.print();
+});
+
+(function () {
+  var hoje = new Date();
+  document.getElementById("inicio").value = hoje.toISOString().slice(0, 10);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dividir Conta do Restaurante — Calculadora Grátis</title>
+<meta name="description" content="Divida a conta do restaurante ou do bar: valor total, número de pessoas e taxa de serviço ou gorjeta. Resultado na hora. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/dividir-conta/">
+<meta property="og:title" content="Dividir Conta do Restaurante — Calculadora Grátis">
+<meta property="og:description" content="Total + pessoas + taxa de serviço: quanto cada um paga, na hora.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora para Dividir a Conta","url":"https://hashino.github.io/ferramentas/tools/dividir-conta/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora para dividir a conta do restaurante entre as pessoas."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Dividir Conta do Restaurante</h1>
+  <section class="app">
+    <label for="total">Valor total da conta (R$)</label>
+    <input type="number" id="total" step="0.01" min="0" placeholder="ex.: 250">
+    <label for="pessoas">Pessoas</label>
+    <input type="number" id="pessoas" step="1" min="1" max="50" placeholder="ex.: 6">
+    <label for="taxa">Taxa de serviço / gorjeta (%)</label>
+    <input type="number" id="taxa" step="1" min="0" max="100" value="10">
+    <button id="calcular">Dividir a conta</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var total = Number(document.getElementById("total").value);
+  var pessoas = Math.floor(Number(document.getElementById("pessoas").value));
+  var taxa = Number(document.getElementById("taxa").value) || 0;
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false;
+  detalhe.textContent = "";
+  if (total <= 0 || pessoas < 1) {
+    saida.textContent = "Informe o valor total e o número de pessoas.";
+    return;
+  }
+  var brl = function (n) {
+    return n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  };
+  var comTaxa = total * (1 + taxa / 100);
+  var porPessoa = comTaxa / pessoas;
+  saida.textContent = "Cada um paga: R$ " + brl(porPessoa);
+  detalhe.textContent =
+    "subtotal: R$ " + brl(total) + "\n" +
+    "taxa de " + taxa + "%: R$ " + brl(comTaxa - total) + "\n" +
+    "total: R$ " + brl(comTaxa) + " ÷ " + pessoas + " pessoa" + (pessoas > 1 ? "s" : "") + " = R$ " + brl(porPessoa);
+});
+</script>
+</body>
+</html>

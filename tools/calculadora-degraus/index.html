@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de Degraus de Escada Online — Blondel</title>
+<meta name="description" content="Calcule o número de degraus, espelho e piso da escada pela altura total, com verificação da fórmula de Blondel. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/calculadora-degraus/">
+<meta property="og:title" content="Calculadora de Degraus de Escada Online — Blondel">
+<meta property="og:description" content="Altura total → número de degraus, espelho, piso e conforto de Blondel.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Degraus de Escada","url":"https://hashino.github.io/ferramentas/tools/calculadora-degraus/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de degraus de escada com fórmula de Blondel."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Calculadora de Degraus de Escada</h1>
+  <section class="app">
+    <label for="altura">Altura total a vencer (cm)</label>
+    <input type="number" id="altura" step="1" min="1" placeholder="ex.: 280">
+    <label for="piso">Piso desejado (cm)</label>
+    <input type="number" id="piso" step="0.5" min="20" value="28">
+    <button id="calcular">Calcular degraus</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+// Fórmula de Blondel: 2 × espelho + 1 × piso entre 60 e 64 cm (conforto)
+document.getElementById("calcular").addEventListener("click", function () {
+  var h = Number(document.getElementById("altura").value);
+  var piso = Number(document.getElementById("piso").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false;
+  detalhe.textContent = "";
+  if (h <= 0 || piso < 20) {
+    saida.textContent = "Informe a altura total e um piso de pelo menos 20 cm.";
+    return;
+  }
+  var brl = function (n) {
+    return n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  };
+  // parte do piso: espelho ideal ≈ (63 − piso) / 2, clamp 16–20 cm
+  var espelhoIdeal = (63 - piso) / 2;
+  espelhoIdeal = Math.min(20, Math.max(16, espelhoIdeal));
+  var n = Math.max(2, Math.round(h / espelhoIdeal));
+  var espelho = h / n;
+  var blondel = 2 * espelho + piso;
+  var conforto = blondel >= 60 && blondel <= 64 ? "dentro da faixa de conforto (60–64 cm)" :
+    (blondel < 60 ? "escada confortável, passo mais longo que o usual" : "passo curto: aumente o piso ou reduza o nº de degraus");
+  saida.textContent = n + " degraus de " + brl(espelho) + " cm de espelho";
+  detalhe.textContent =
+    "espelho: " + brl(espelho) + " cm (" + n + " × " + brl(espelho) + " = " + brl(n * espelho) + " cm)\n" +
+    "piso: " + brl(piso) + " cm\n" +
+    "Blondel: 2 × " + brl(espelho) + " + " + brl(piso) + " = " + brl(blondel) + " cm — " + conforto;
+});
+</script>
+</body>
+</html>
