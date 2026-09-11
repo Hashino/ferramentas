@@ -2835,8 +2835,8 @@ quanto de carne por pessoa no churrasco,descartada,,manual
 quantos litros de tinta por metro quadrado,descartada,,manual
 calculadora de salario por hora,descartada,,manual
 quantos ovos por pessoa,descartada,,manual
-quantos doces por pessoa,descartada,,manual
-quantos salgados por pessoa,descartada,,manual
+quantos doces por pessoa,descartada,"3+ calculadoras (guiaaniversario, adorebrigaderia, aquarius)",manual
+quantos salgados por pessoa,descartada,3+ calculadoras de festa,manual
 quantos litros de refrigerante por pessoa,descartada,,manual
 quantos kg de argamassa por metro quadrado,descartada,,manual
 quantos metros de arame para cerca,descartada,,manual
@@ -2888,3 +2888,16 @@ quanto custa alinhar o carro,feita,alinhar-carro,leva10
 calculadora de comissao de vendas,descartada,6 ferramentas dedicadas no top-10,leva10
 quantos litros de agua tem uma piscina,descartada,"4 calculadoras (genco, engiobra, omni, piscinafacil)",leva10
 reparo de parabrisa,descartada,falhou no autocomplete,leva10
+quanto custa fazer um bolo em casa,feita,custo-bolo-caseiro,leva11
+quanto custa revisao do carro,feita,revisao-carro,leva11
+quanto custa trocar a correia dentada,feita,troca-correia-dentada,leva11
+quanto custa limpeza de ar condicionado,feita,limpeza-ar-condicionado,leva11
+quanto custa uma dedetizacao,feita,dedetizacao,leva11
+quanto custa instalar ventilador de teto,feita,instalar-ventilador-teto,leva11
+quanto custa um ponto de luz,feita,ponto-de-luz,leva11
+quanto custa manter um cavalo,feita,custo-cavalo,leva11
+quanto custa personal trainer,feita,personal-trainer,leva11
+quanto gasta com comida por mes,feita,gasto-comida-mes,leva11
+quanto de churrasco por pessoa,descartada,"4 calculadoras (zaffari, pifpaf, perdigao, diskchurrasqueiro)",leva11
+quantas latinhas de cerveja por pessoa,descartada,"3 calculadoras (drinkbartenders, calculadoradecerveja, imigrantes)",leva11
+quanto de refrigerante por pessoa,descartada,4 calculadoras de festa,leva11

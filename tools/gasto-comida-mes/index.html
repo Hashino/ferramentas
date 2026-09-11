@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Gasta com Comida por Mês — Calculadora</title>
+<meta name="description" content="Estime o gasto mensal com alimentação: número de pessoas e perfil de consumo, do básico ao delivery frequente. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/gasto-comida-mes/">
+<meta property="og:title" content="Quanto Gasta com Comida por Mês — Calculadora">
+<meta property="og:description" content="Pessoas × perfil de consumo: faixa do gasto mensal com comida.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de gasto com comida por mês","url":"https://hashino.github.io/ferramentas/tools/gasto-comida-mes/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quanto gasta com comida por mês."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Gasta com Comida por Mes</h1>
+  <section class="app">
+    <label for="pessoas">Pessoas na casa</label>
+    <input type="number" id="pessoas" step="1" min="1" value="2">
+<label for="perfil">Perfil de consumo</label>
+    <select id="perfil">
+      <option value="450">Enxuto — básico da despensa, tudo em casa</option>
+      <option value="700" selected>Médio — carne toda semana, delivery às vezes</option>
+      <option value="1000">Largo — marcas conhecidas, delivery frequente</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var n = Math.floor(Number(document.getElementById("pessoas").value));
+  var per = Number(document.getElementById("perfil").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (n < 1) { saida.textContent = "Informe o número de pessoas."; return; }
+  var brl = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var total = n * per;
+  var nome = document.getElementById("perfil").selectedOptions[0].textContent.split("—")[0].trim();
+  saida.textContent = "R$ " + brl(total * 0.85) + " a R$ " + brl(total * 1.2) + " por mês";
+  detalhe.textContent = n + " pessoa(s), perfil " + nome.toLowerCase() + " (" + brl(per) + "/pessoa)\n" +
+    "crianças gastam menos que adultos: ajuste o número pra baixo\n" +
+    "delivery e restaurantes entram fora dessa conta\n" +
+    "comprar atacado e fazer lista corta de 10% a 20%";
+});
+</script>
+</body>
+</html>

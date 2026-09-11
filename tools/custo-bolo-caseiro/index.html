@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Fazer um Bolo em Casa — Calculadora</title>
+<meta name="description" content="Calcule o custo dos ingredientes do bolo caseiro: simples, chocolate, cenoura ou laranja, e o custo por fatia. Grátis.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/custo-bolo-caseiro/">
+<meta property="og:title" content="Quanto Custa Fazer um Bolo em Casa — Calculadora">
+<meta property="og:description" content="Ingredientes do bolo → custo total e custo por fatia.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de custo do bolo caseiro","url":"https://hashino.github.io/ferramentas/tools/custo-bolo-caseiro/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quanto custa fazer um bolo em casa."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Fazer um Bolo em Casa</h1>
+  <section class="app">
+<label for="tipo">Tipo de bolo</label>
+    <select id="tipo">
+      <option value="12">Bolo simples (baunilha) — ~R$ 12 de ingredientes</option>
+      <option value="15">Bolo de laranja — ~R$ 15 de ingredientes</option>
+      <option value="18" selected>Bolo de chocolate — ~R$ 18 de ingredientes</option>
+      <option value="24">Bolo de cenoura com cobertura — ~R$ 24 de ingredientes</option>
+    </select>
+    <label for="fatias">Rende quantas fatias</label>
+    <input type="number" id="fatias" step="1" min="4" value="20">
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var custo = Number(document.getElementById("tipo").value);
+  var fatias = Number(document.getElementById("fatias").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  if (fatias < 1) { saida.textContent = "Informe as fatias."; return; }
+  var br = function (x) { return x.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent.split("—")[0].trim();
+  saida.textContent = "R$ " + br(custo) + " de ingredientes — R$ " + br(custo / fatias) + " por fatia";
+  detalhe.textContent = nome.toLowerCase() + " (" + fatias + " fatias)\n" +
+    "conta: ovos, farinha, açúcar, leite, óleo/manteiga e fermento\n" +
+    "para vender, o preço costuma ser 3x o custo dos ingredientes\n" +
+    "gás do forno e embalagem entram à parte";
+});
+</script>
+</body>
+</html>
