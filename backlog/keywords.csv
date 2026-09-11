@@ -21,7 +21,7 @@ calculadora de adicional de insalubridade,descartada,2026-09-10,manual
 calculadora de adicional de periculosidade,feita,2026-09-10,manual
 calculadora de adicional noturno,candidata,2026-09-10,
 calculadora de agua,candidata,2026-09-10,
-calculadora de agua por dia,candidata,2026-09-10,
+calculadora de agua por dia,descartada,2026-09-10,manual
 calculadora de alavancagem cripto,candidata,2026-09-10,matrix:cripto
 calculadora de aluguel,candidata,2026-09-10,
 calculadora de amortização,descartada,2026-09-10,
@@ -48,7 +48,7 @@ calculadora de arcano pessoal personare,candidata,2026-09-10,deep:calculadora de
 calculadora de banco de horas,descartada,2026-09-10,
 calculadora de barcelona,candidata,2026-09-10,
 calculadora de bebida,candidata,2026-09-10,
-calculadora de bebidas para festa,candidata,2026-09-10,
+calculadora de bebidas para festa,descartada,2026-09-10,manual
 calculadora de bhaskara,feita,2026-09-10,
 calculadora de bhaskara online,candidata,2026-09-10,deep:calculadora de bhaskara
 calculadora de bhaskara para resolver,candidata,2026-09-10,deep:calculadora de bhaskara
@@ -97,7 +97,7 @@ calculadora de cdb pos fixado,candidata,2026-09-10,matrix:cdb
 calculadora de cdb prefixado,candidata,2026-09-10,matrix:cdb
 calculadora de cdi,candidata,2026-09-10,
 calculadora de cdi mensal,candidata,2026-09-10,
-calculadora de churrasco,candidata,2026-09-10,
+calculadora de churrasco,descartada,2026-09-10,manual
 calculadora de churrasco online,candidata,2026-09-10,
 calculadora de clearance de creatinina,descartada,2026-09-10,
 calculadora de combustível,candidata,2026-09-10,
@@ -152,7 +152,7 @@ calculadora de dólar para real,candidata,2026-09-10,matrix:dólar
 calculadora de dólares para reais,candidata,2026-09-10,matrix:dólar
 calculadora de energia solar,descartada,2026-09-10,manual
 calculadora de faturamento mei,candidata,2026-09-10,matrix:mei
-calculadora de ferias,candidata,2026-09-10,
+calculadora de ferias,descartada,2026-09-10,manual
 calculadora de financiamento,candidata,2026-09-10,matrix:financiamento
 calculadora de financiamento automotivo,candidata,2026-09-10,matrix:financiamento
 calculadora de financiamento banco central,candidata,2026-09-10,matrix:financiamento
@@ -190,7 +190,7 @@ calculadora de hora extra noturna,candidata,2026-09-10,matrix:hora extra
 calculadora de hora extra online,candidata,2026-09-10,matrix:hora extra
 calculadora de horas,candidata,2026-09-10,
 calculadora de horas de sono,descartada,2026-09-10,manual
-calculadora de horas extras,candidata,2026-09-10,matrix:hora extra
+calculadora de horas extras,descartada,2026-09-10,matrix:hora extra
 calculadora de horas extras com minutos,candidata,2026-09-10,matrix:hora extra
 calculadora de idade do cachorro,descartada,2026-09-10,manual
 calculadora de imc,candidata,2026-09-10,
@@ -2782,4 +2782,40 @@ quanto gasta uma cafeteira elétrica,feita,,manual
 quanto gasta um aquecedor elétrico,feita,,manual
 quanto gasta uma chaleira elétrica,feita,,manual
 quanto gasta um freezer,feita,,manual
-quanto gasta um umidificador,candidata,,manual
+quanto gasta um umidificador,feita,,manual
+gerador de atividade de caligrafia,feita,,manual
+quanto custa construir uma piscina,feita,,manual
+quantos tijolos por metro quadrado,feita,,manual
+quantas telhas por metro quadrado,feita,,manual
+quantos blocos por metro quadrado,feita,,manual
+quantos sacos de cimento por metro quadrado,feita,,manual
+quantos tijolos para construir uma casa,feita,,manual
+quanto de arroz por pessoa,feita,,manual
+quanto de feijão por pessoa,feita,,manual
+quanto de macarrão por pessoa,candidata,,manual
+gerador de rifa,descartada,,manual
+gerador de cracha,descartada,,manual
+gerador de nome de loja,descartada,,manual
+gerador de nome de bar,descartada,,manual
+gerador de nome de marca,descartada,,manual
+gerador de nome de equipe,descartada,,manual
+gerador de lista de compras,descartada,,manual
+calculadora de rescisao,descartada,,manual
+gerador de grade de horarios,descartada,,manual
+gerador de ordem de servico,descartada,,manual
+gerador de ata de reuniao,descartada,,manual
+gerador de ficha catalografica,descartada,,manual
+gerador de capa de trabalho,descartada,,manual
+gerador de plano de aula,descartada,,manual
+gerador de boletim escolar,descartada,,manual
+gerador de simulado,descartada,,manual
+gerador de letra cursiva,descartada,,manual
+gerador de etiqueta de preco,descartada,,manual
+gerador de tabela de precos,descartada,,manual
+gerador de apelidos,descartada,,manual
+gerador de nomes brasileiros,descartada,,manual
+calculadora de dias uteis,descartada,,manual
+gerador de cronograma capilar,descartada,,manual
+calculadora de cimento e areia,descartada,,manual
+quantos azulejos por metro quadrado,descartada,,manual
+calculadora de sono,descartada,,manual
