@@ -23,6 +23,8 @@
   <url><loc>https://hashino.github.io/ferramentas/tools/arcano-pessoal/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/arcano-pessoal-anual/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/arroz-por-pessoa/</loc><lastmod>2026-09-10</lastmod></url>
+  <url><loc>https://hashino.github.io/ferramentas/tools/aula-de-natacao/</loc><lastmod>2026-09-11</lastmod></url>
+  <url><loc>https://hashino.github.io/ferramentas/tools/aula-de-violao/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/aula-particular/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/banho-cachorro/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/banho-litros/</loc><lastmod>2026-09-11</lastmod></url>
@@ -48,6 +50,7 @@
   <url><loc>https://hashino.github.io/ferramentas/tools/cercar-terreno/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/cimento-casa/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/cirurgia-hernia/</loc><lastmod>2026-09-11</lastmod></url>
+  <url><loc>https://hashino.github.io/ferramentas/tools/cirurgia-nariz/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/clareamento-dental/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/cloro-piscina/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/consertar-ar-condicionado/</loc><lastmod>2026-09-11</lastmod></url>
@@ -102,13 +105,16 @@
   <url><loc>https://hashino.github.io/ferramentas/tools/custo-imposto-renda/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/custo-inventario/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/custo-laje/</loc><lastmod>2026-09-11</lastmod></url>
+  <url><loc>https://hashino.github.io/ferramentas/tools/custo-lipoaspiracao/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/custo-logo/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/custo-mecanico/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/custo-montar-aquario/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/custo-moto/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/custo-moveis-planejados/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/custo-mudanca/</loc><lastmod>2026-09-11</lastmod></url>
+  <url><loc>https://hashino.github.io/ferramentas/tools/custo-pet-scan/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/custo-piscina/</loc><lastmod>2026-09-10</lastmod></url>
+  <url><loc>https://hashino.github.io/ferramentas/tools/custo-procuracao/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/custo-progressiva/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/custo-psicologo/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/custo-raio-x/</loc><lastmod>2026-09-11</lastmod></url>
@@ -135,12 +141,14 @@
   <url><loc>https://hashino.github.io/ferramentas/tools/duracao-botijao-gas/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/escola-particular/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/etiqueta-escolar/</loc><lastmod>2026-09-10</lastmod></url>
+  <url><loc>https://hashino.github.io/ferramentas/tools/exame-audiometria/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/exame-de-sangue/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/exame-psicotecnico/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/exame-toxicologico/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/exame-vista/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/extensao-de-cilios/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/extrair-siso/</loc><lastmod>2026-09-11</lastmod></url>
+  <url><loc>https://hashino.github.io/ferramentas/tools/fachada-acm/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/fazer-testamento/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/feijao-por-pessoa/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/formatar-notebook/</loc><lastmod>2026-09-11</lastmod></url>
@@ -193,6 +201,7 @@
   <url><loc>https://hashino.github.io/ferramentas/tools/impermeabilizar-laje/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/implante-capilar/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/implante-dentario/</loc><lastmod>2026-09-11</lastmod></url>
+  <url><loc>https://hashino.github.io/ferramentas/tools/inspecao-veicular/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/instalacao-ar-condicionado/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/instalacao-cerca-eletrica/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/instalacao-portao/</loc><lastmod>2026-09-11</lastmod></url>
@@ -221,6 +230,7 @@
   <url><loc>https://hashino.github.io/ferramentas/tools/maquiagem-festa/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/metro-quadrado-construcao/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/micropigmentacao-sobrancelha/</loc><lastmod>2026-09-11</lastmod></url>
+  <url><loc>https://hashino.github.io/ferramentas/tools/mudar-nome/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/ovos-galinha/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/personal-trainer/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://hashino.github.io/ferramentas/tools/pintar-cabelo/</loc><lastmod>2026-09-11</lastmod></url>

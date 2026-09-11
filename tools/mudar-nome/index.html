@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Mudar o Nome — Calculadora</title>
+<meta name="description" content="Estime o custo para mudar o nome: retificação em cartório ou via judicial, com faixa real. Grátis, na hora.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/mudar-nome/">
+<meta property="og:title" content="Quanto Custa Mudar o Nome — Calculadora">
+<meta property="og:description" content="Cartório × judicial: custo estimado para mudar o nome.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de custo para mudar o nome","url":"https://hashino.github.io/ferramentas/tools/mudar-nome/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa mudar o nome."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Mudar o Nome</h1>
+  <section class="app">
+<label for="tipo">Caminho escolhido</label>
+    <select id="tipo">
+      <option value="900" selected>Retificação em cartório (nome evidente)</option>
+      <option value="8000">Via judicial (com advogado)</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tipo").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent.toLowerCase();
+  saida.textContent = "Estimativa: R$ " + br(med * 0.6) + " a R$ " + br(med * 1.8);
+  detalhe.textContent = "mudança de nome — " + nome + "\n" +
+    "desde 2022 o cartório aceita mudar prenome sem processo, com avaliação\n" +
+    "documentos (RG, CNH, passaporte) precisam ser trocados depois\n" +
+    "gratuita pelo judiciário para quem não pode pagar\n" +
+    "nome social em documentos: pode anotar sem trocar o registro";
+});
+</script>
+</body>
+</html>

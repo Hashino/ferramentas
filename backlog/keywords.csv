@@ -3061,5 +3061,15 @@ quanto custa harmonizacao facial,feita,2026-09-10,harmonizacao-facial
 quanto custa fazer um testamento,feita,2026-09-10,fazer-testamento
 quanto custa um divorcio,feita,2026-09-10,custo-divorcio
 quanto custa um velorio,feita,2026-09-10,custo-velorio
-quanto custa um pet scan,candidata,2026-09-10,PASS fila leva27: PASS: clínicas de imagem/laboratórios — sem calculadora
+quanto custa um pet scan,feita,2026-09-10,custo-pet-scan
 quanto custa desbloquear celular,descartada,2026-09-10,CUT: intenção ambígua (senha vs operadora) e SERP dominada por tutoriais grátis
+quanto custa inspecao veicular,feita,2026-09-10,inspecao-veicular
+quanto custa aula de violao,feita,2026-09-10,aula-de-violao
+quanto custa exame de audiometria,feita,2026-09-10,exame-audiometria
+quanto custa aula de natacao,feita,2026-09-10,aula-de-natacao
+quanto custa fachada em acm,feita,2026-09-10,fachada-acm
+quanto custa lipoaspiracao,feita,2026-09-10,custo-lipoaspiracao
+quanto custa cirurgia de nariz,feita,2026-09-10,cirurgia-nariz
+quanto custa mudar o nome,feita,2026-09-10,mudar-nome
+quanto custa uma procuracao,feita,2026-09-10,custo-procuracao
+quanto custa um oculos de grau,candidata,2026-09-10,PASS fila leva28: PASS: 5 lojas (<7) + blogs de preço — sem calculadora

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto Custa Lipoaspiração — Calculadora</title>
+<meta name="description" content="Estime o preço da lipoaspiração por região do corpo, com faixa real de cirurgiões. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.github.io/ferramentas/tools/custo-lipoaspiracao/">
+<meta property="og:title" content="Quanto Custa Lipoaspiração — Calculadora">
+<meta property="og:description" content="Abdômen × completo: faixa de preço da lipoaspiração.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de preço de lipoaspiração","url":"https://hashino.github.io/ferramentas/tools/custo-lipoaspiracao/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quanto custa lipoaspiração."}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <h1>Quanto Custa Lipoaspiracao</h1>
+  <section class="app">
+<label for="tipo">Região do corpo</label>
+    <select id="tipo">
+      <option value="15000" selected>Abdômen</option>
+      <option value="22000">Completa (abdômen, flancos e costas)</option>
+    </select>
+    <button id="calcular">Calcular</button>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+document.getElementById("calcular").addEventListener("click", function () {
+  var med = Number(document.getElementById("tipo").value);
+  var saida = document.getElementById("resultado");
+  var detalhe = document.getElementById("detalhe");
+  saida.hidden = false; detalhe.textContent = "";
+  var br = function (x) { return x.toLocaleString("pt-BR", { maximumFractionDigits: 0 }); };
+  var nome = document.getElementById("tipo").selectedOptions[0].textContent.toLowerCase();
+  saida.textContent = "Particular: R$ " + br(med * 0.6) + " a R$ " + br(med * 1.8);
+  detalhe.textContent = "lipoaspiração — " + nome + "\n" +
+    "o valor junta cirurgião, anestesista, centro cirúrgico e cinta modeladora\n" +
+    "exames pré-operatórios entram à parte\n" +
+    "cirurgia plástica não cobre por plano de saúde\n" +
+    "escolha só membro da SBCP (Sociedade Brasileira de Cirurgia Plástica)";
+});
+</script>
+</body>
+</html>
