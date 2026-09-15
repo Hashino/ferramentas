@@ -38,13 +38,15 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
    (a) SERP sem ferramenta dedicada no top-10 (fóruns, Reddit, resultados genéricos = demanda sem oferta);
    (b) tarefa resolvível em 1 página estática de vanilla JS (calcular/gerar/convertar);
    (c) sem overlap com ferramenta já publicada em `tools/`;
-   (d) **não é pergunta informacional disfarçada** — se a keyword é do tipo "quanto custa/vale/sai X"
-   e a resposta seria só uma faixa de preço médio (sem depender de nenhum dado que só o usuário tem),
-   a AI Overview do Google já responde isso direto na SERP a partir de blogs, e a ferramenta nasce
-   morta em clique. Só aceitar keyword desse tipo se der pra desenhar um cálculo com input numérico/data
-   REAL e específico do usuário (m² da obra, idade, quantidade, datas, medidas) — não um dropdown de
-   2-3 categorias multiplicando uma constante. Na dúvida, rode `scripts/lint_fake_calculator.py` depois
-   de criar (passo 4) — ele pega esse padrão automaticamente.
+   (d) **a pergunta em si não é informacional** — keyword do tipo "quanto custa/vale/sai/é/cobra X",
+   "preço de X", "valor de X": a AI Overview do Google responde pela INTENÇÃO da busca ("me dá uma
+   estimativa"), não pela qualidade da página por trás. Ter input numérico/data real NÃO isenta —
+   lição do cleanup de 212 ferramentas em set/2026, onde até calculadoras com m²/quantidade real
+   perdiam o clique porque a pergunta já tinha sido respondida ali na SERP. REJEITAR keyword desse
+   formato inteiro, mesmo que pareça fácil de construir. Aceitar só o formato onde a pergunta pede um
+   resultado que só existe DEPOIS do cálculo do usuário (bhaskara, boost de jogo, arcano pessoal,
+   rendimento/proporção, gasto de energia a partir de potência+horas) — não uma estimativa de mercado.
+   Rodar `scripts/lint_fake_calculator.py` depois de criar (passo 4) para confirmar.
    Publicar só o que passar. Se menos que N passarem, publicar as que passarem e reportar o motivo —
    NUNCA forçar página em SERP saturada. Keywords checadas e cortadas: marcar `descartada` no CSV
    (poupa re-checagem de Serper nas próximas levas).
@@ -72,7 +74,7 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
 - Sempre `scripts/build.py` antes de commit.
 - Ferramentas em PT-BR por padrão; versão EN só sob pedido.
 - Não inventar dados de volume de busca: o pipeline só mede autocomplete + SERP; volume fica para o Search Console decidir.
-- Regra anti-AI-Overview: nenhuma ferramenta nova pode ser um dropdown de categorias multiplicando uma constante para responder "quanto custa X" — isso é a mesma resposta que o Google já sintetiza na própria busca. Toda ferramenta precisa de pelo menos 1 dado numérico/data real e específico do usuário que mude o resultado de forma não-trivial. Ver `scripts/lint_fake_calculator.py`.
+- Regra anti-AI-Overview: nenhuma ferramenta nova pode responder uma pergunta do tipo "quanto custa/vale/sai/é/cobra X" — isso é a mesma resposta que o Google já sintetiza direto na busca, e input numérico real NÃO isenta (a AI Overview responde pela intenção, não pela qualidade da calculadora). Só entram keywords cujo resultado só existe depois de um cálculo com dado específico do usuário. Ver `scripts/lint_fake_calculator.py`.
 - `indexnow.key` e `<key>.txt` são públicos por design. `.env` nunca sai do git.
 
 ## AdSense (quando o ID existir)

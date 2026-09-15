@@ -1,19 +1,23 @@
 #!/usr/bin/env python3
-"""Lint anti-AI-Overview: flags ferramentas que são, na prática, uma pergunta
-informacional ("quanto custa X") disfarçada de calculadora — dropdown fixo
-multiplicando uma constante, sem nenhum número/data que o usuário digite.
+"""Lint anti-AI-Overview: flags ferramentas cuja PERGUNTA em si é informacional
+("quanto custa/vale/sai/é/cobra X", "preço de X", "valor de X") — mesmo que a
+calculadora por trás seja boa e tenha input real.
 
-Por quê: esse é exatamente o formato que a AI Overview do Google sintetiza
-direto na SERP a partir de blogs (mesma pergunta, mesma resposta de faixa de
-preço, zero necessidade de dado pessoal do usuário) — cliques cortados antes
-de chegar no site. Calculadora com input numérico/data real (idade, m²,
-quantidade, datas) é defensável: a resposta depende de dado que só o usuário
-tem, então a IA não consegue pré-sintetizar um valor único.
+Por quê (lição do cleanup de 212 ferramentas em set/2026): a AI Overview do
+Google responde pela INTENÇÃO da busca, não pela qualidade da página. Uma
+calculadora ótima de "quanto custa construir uma piscina" com m² real como
+input ainda perde o clique, porque a intenção "me dá uma estimativa" já foi
+satisfeita ali mesmo na SERP — o usuário nunca chega a testar o input. Ter
+número/data real no formulário protege quando a pergunta pede um resultado
+que só existe DEPOIS do cálculo (bhaskara, boost de jogo, arcano pessoal) —
+não protege quando a pergunta em si já É a resposta que o Google sintetiza.
 
-Critério: bucket de slug conhecido como "preço de serviço/produto de mercado"
-(custo-, consulta-, cirurgia-, consertar-, alugar-, instalar-, trocar-,
-exame-, aula-, curso-, tratamento- etc.) SEM nenhum <input type="number"> ou
-type="date"> real na página.
+Critério (qualquer um dos dois já reprova, input real não isenta):
+  (a) slug começa com prefixo de bucket conhecido como preço de serviço/produto
+      (custo-, consulta-, cirurgia-, consertar-, alugar-, instalar-, trocar-,
+      exame-, aula-, curso-, tratamento- etc.)
+  (b) title/description contém "quanto custa/é/sai/vale/cobra", "preço de",
+      "valor de" ou "custo de"
 
 Uso:
   python3 scripts/lint_fake_calculator.py                 # varre tools/ inteiro, relatório
@@ -41,9 +45,6 @@ PADRAO_PRECO_MERCADO = re.compile(
     re.I,
 )
 
-INPUT_REAL = re.compile(r'<input[^>]*type="(number|date)"')
-
-
 def parece_preco_de_mercado(slug: str, html: str) -> bool:
     if slug.split("-")[0] in PREFIXOS_RISCO:
         return True
@@ -51,7 +52,8 @@ def parece_preco_de_mercado(slug: str, html: str) -> bool:
 
 
 def eh_fake_calculator(slug: str, html: str) -> bool:
-    return parece_preco_de_mercado(slug, html) and not INPUT_REAL.search(html)
+    # input real não isenta mais: a pergunta em si já é o que a AI Overview responde.
+    return parece_preco_de_mercado(slug, html)
 
 
 def varrer(slugs: list[str] | None) -> list[str]:
