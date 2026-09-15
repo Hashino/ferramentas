@@ -67,6 +67,29 @@ def montar_related_html(slugs: list[str], tools: dict) -> str:
     )
 
 
+REL_RE = re.compile(r'<p class="relacionadas">Veja também: (.*?)</p>')
+
+
+def reparar_relacionadas(nome: str, txt: str, tools: dict, buckets: dict) -> tuple[str, bool]:
+    """Corrige o bloco 'Veja também' se algum link aponta pra ferramenta que
+    não existe mais (ex: deletada num reaudit). Sem isso, apagar uma ferramenta
+    deixa link quebrado em toda ferramenta que citava ela — achado real em
+    15/09/2026: 38 de 45 links 'relacionadas' estavam 404 por causa disso.
+    Roda em TODO run (não só na primeira vez), pra se autocurar sempre que o
+    conjunto de ferramentas mudar."""
+    m = REL_RE.search(txt)
+    if not m:
+        return txt, False
+    slugs_atuais = re.findall(r'href="\.\./([^/]+)/"', m.group(1))
+    if slugs_atuais and all(s in tools for s in slugs_atuais):
+        return txt, False
+    novos_slugs = relacionadas(nome, tools, buckets)
+    novo_html = montar_related_html(novos_slugs, tools)
+    novo_bloco = f'<p class="relacionadas">Veja também: {novo_html}</p>'
+    txt = txt[: m.start()] + novo_bloco + txt[m.end() :]
+    return txt, True
+
+
 def aplicar(nome: str, meta: dict, tools: dict, buckets: dict) -> str | None:
     txt = meta["html"]
     mudou = False
@@ -107,6 +130,9 @@ def aplicar(nome: str, meta: dict, tools: dict, buckets: dict) -> str | None:
             mudou = True
         else:
             print(f"aviso: {nome} sem </main>, pulando bloco de explicação", file=sys.stderr)
+
+    txt, reparou = reparar_relacionadas(nome, txt, tools, buckets)
+    mudou = mudou or reparou
 
     return txt if mudou else None
 
