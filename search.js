@@ -25,7 +25,7 @@
     return score;
   }
 
-  input.addEventListener("input", function () {
+  function aplicar() {
     var q = input.value.trim();
     var visiveis = [];
     cards.forEach(function (c) {
@@ -35,5 +35,16 @@
     });
     visiveis.sort(function (a, b) { return b[0] - a[0]; });
     visiveis.forEach(function (p) { lista.appendChild(p[1]); });
-  });
+  }
+
+  input.addEventListener("input", aplicar);
+
+  // suporta ?q=busca na URL (usado pelo SearchAction do schema.org WebSite,
+  // habilita a caixa de busca do Google nos resultados de pesquisa)
+  var params = new URLSearchParams(location.search);
+  var q0 = params.get("q");
+  if (q0) {
+    input.value = q0;
+    aplicar();
+  }
 })();

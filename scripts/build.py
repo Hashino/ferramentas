@@ -71,6 +71,13 @@ def hub(tools: list[dict]) -> None:
 <title>{CFG['site_name']} — calculadoras, geradores e conversores grátis</title>
 <meta name="description" content="{CFG['site_description']}">
 <link rel="canonical" href="{BASE}/">
+<meta property="og:title" content="{CFG['site_name']} — calculadoras, geradores e conversores grátis">
+<meta property="og:description" content="{CFG['site_description']}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{BASE}/">
+<script type="application/ld+json">
+{{"@context":"https://schema.org","@type":"WebSite","name":"{CFG['site_name']}","url":"{BASE}/","description":"{CFG['site_description']}","potentialAction":{{"@type":"SearchAction","target":"{BASE}/?q={{search_term_string}}","query-input":"required name=search_term_string"}}}}
+</script>
 <meta name="google-adsense-account" content="ca-pub-1801908225638213">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
 <script>document.documentElement.setAttribute("data-theme",function(){{try{{return localStorage.getItem("theme")||"light"}}catch(e){{return"light"}}}}());</script>
