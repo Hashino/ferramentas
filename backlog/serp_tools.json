@@ -1,814 +1,1251 @@
 {
- "Calculadora de Adicional de Periculosidade": [
-  "Calculadora de Periculosidade | 30% CLT e reflexos :: https://www.valordotrabalho.com.br/calculo-periculosidade",
-  "Cálculo de Periculosidade :: https://www.calculadora.com.br/trabalhista/periculosidade/",
-  "Periculosidade: como calcular, direitos e o que diz a CLT :: https://www.metadados.com.br/blog/adicional-de-periculosidade",
-  "Adicional de periculosidade: aprenda como calcular :: https://solides.com.br/blog/adicional-de-periculosidade/",
-  "Cálculo de Adicional Noturno e Periculosidade :: https://ajuda.sankhya.com.br/hc/pt-br/articles/33156081514519-C%C3%A1lculo-de-Adicional-Noturno-e-Periculosidade",
-  "Cálculo do adicional de periculosidade: salário base e ... :: https://anycalc.com.br/blog/calculo-do-adicional-de-periculosidade-salario-base-e-reflexos/",
-  "Adicional de periculosidade: quem tem direito e como ... :: https://www.gupy.io/blog/adicional-periculosidade",
-  "Calculadora Adicional de Risco 2026 | Insalubridade :: https://calculadorabrasil.com.br/adicional-risco/"
- ],
- "Quantos Litros Gasta Lavar Louça": [
-  "O que gasta mais água: lavar louça na mão ou nas ... :: https://www.uol.com.br/tilt/noticias/redacao/2021/08/30/lavar-louca-na-mao-gasta-mais-agua-que-as-maquinas-de-lavar.htm",
-  "Lava-louça economiza água :: https://www.brastemp.com.br/experience/tech/lava-louca-economiza-agua",
-  "Como economizar água com lava louças? :: https://cuida.electrolux.com.br/artigos/como-economizar-agua-com-lava-loucas",
-  "QUANTA ÁGUA você gasta EM UM DIA? E LAVANDO ... :: https://www.tiktok.com/@manualdomundo/video/7349192203392109830?lang=pt",
-  "Como economizar água na cozinha :: https://saemi.com.br/dicas_economia",
-  "Lava-louça gasta muita energia e água? Entenda o ... :: https://www.techtudo.com.br/guia/2024/11/lava-louca-gasta-muita-energia-e-agua-entenda-o-consumo-e-saiba-economizar-lb.ghtml",
-  "How much water do you use in a day? And just washing dishes? :: https://www.youtube.com/shorts/kRDz9IjB2wg"
- ],
  "Quantos Litros Gasta uma Máquina de Lavar": [
-  "Como economizar água na máquina de lavar :: https://www.ype.ind.br/ype-explica/como-economizar-agua-na-maquina-de-lavar",
-  "Quantos litros de água gasta uma máquina de lavar? ... :: https://www.techtudo.com.br/guia/2025/03/quantos-litros-de-agua-gasta-uma-maquina-de-lavar-saiba-como-economizar-lb.ghtml",
-  "Consumo de máquina de lavar: saiba como calcular e ... :: https://lavemcasa.com.br/blog/consumo-de-maquina-de-lavar/",
-  "Você sabe quanta água sua máquina de lavar consome? ... :: https://www.estadao.com.br/einvestidor/radar/quanta-agua-maquina-lavar-consome/?srsltid=AU7gw4WDjT-kT6VkQXFGuUVdEjEHKT91LQ7i5tAmK07fU6U4xM1vcL9t",
-  "Lavar roupa na máquina de lavar gasta tanta água assim? :: https://www.reddit.com/r/VidaAdulta/comments/1p353o1/lavar_roupa_na_m%C3%A1quina_de_lavar_gasta_tanta_%C3%A1gua/",
-  "Você sabia que uma máquina de lavar de 11kg gasta ... :: https://www.instagram.com/p/CvabNVMMdF4/",
-  "Quanto gasta de água máquina de lavar roupa? Consumo e ... :: https://anunciandoprodutos.com.br/quanto-gasta-de-agua-maquina-de-lavar/"
+  {
+   "title": "Como economizar água na máquina de lavar",
+   "link": "https://www.ype.ind.br/ype-explica/como-economizar-agua-na-maquina-de-lavar",
+   "snippet": "Lavadoras com capacidade de 11 kg a 12 kg: gasto médio até 168 litros por ciclo;. Lavadoras de até 17 kg: gasto médio de até 197 litros por ciclo. Hoje em dia, ..."
+  },
+  {
+   "title": "Quantos litros de água gasta uma máquina de lavar? ...",
+   "link": "https://www.techtudo.com.br/guia/2025/03/quantos-litros-de-agua-gasta-uma-maquina-de-lavar-saiba-como-economizar-lb.ghtml",
+   "snippet": "a média de consumo de água das máquinas de lavar está entre 50 e 150 litros por ciclo. gasta aproximadamente 2.400 L de água a cada mês."
+  },
+  {
+   "title": "Consumo de máquina de lavar: saiba como calcular e ...",
+   "link": "https://lavemcasa.com.br/blog/consumo-de-maquina-de-lavar/",
+   "snippet": "Lavadoras de 11 – 12 kg: média de 82 a 168 litros por ciclo;; Lavadoras de até 17 kg: média de 98 a 197 litros. Economia de água e energia: dicas para reduzir o ..."
+  },
+  {
+   "title": "Você sabe quanta água sua máquina de lavar consome? ...",
+   "link": "https://www.estadao.com.br/einvestidor/radar/quanta-agua-maquina-lavar-consome/?srsltid=AU7gw4UiF191qZ8RsN9j6cAcEDv9niFI1s4bDE2pW1BKemWDIKVck0H7",
+   "snippet": "De maneira geral, uma máquina de lavar de até 10 kg pode consumir, em média, 135 litros por ciclo. Se for utilizada quatro vezes por semana, o ..."
+  },
+  {
+   "title": "Lavar roupa na máquina de lavar gasta tanta água assim?",
+   "link": "https://www.reddit.com/r/VidaAdulta/comments/1p353o1/lavar_roupa_na_m%C3%A1quina_de_lavar_gasta_tanta_%C3%A1gua/",
+   "snippet": "Aqui em casa eu prefiro lavar minha própria roupa, porém meu jeito de lavar roupa consiste em simplesmente jogar minha roupa na máquina de lavar, colocar ..."
+  },
+  {
+   "title": "Você sabia que uma máquina de lavar de 11kg gasta ...",
+   "link": "https://www.instagram.com/p/CvabNVMMdF4/",
+   "snippet": "Você sabia que uma máquina de lavar de 11kg gasta, em média, 82 litros d'água por lavagem? Mas calma, toda essa água não precisa ser ..."
+  },
+  {
+   "title": "Quanto gasta de água máquina de lavar roupa? Consumo e ...",
+   "link": "https://anunciandoprodutos.com.br/quanto-gasta-de-agua-maquina-de-lavar/",
+   "snippet": "Uma máquina de 12kg carga superior consome em média 145 litros por ciclo, enquanto uma frontal da mesma capacidade usa apenas 90 litros — ..."
+  }
  ],
- "Calculadora de Arcano Pessoal": [
-  "Descubra seu Arcano Maior pela Data de Nascimento :: https://arcanacalculator.com/pt",
-  "Descubra seu Arcano Pessoal e saiba o que o Tarot revela ... :: https://gshow.globo.com/horoscopo-etc/noticia/descubra-seu-arcano-pessoal-e-saiba-o-que-o-tarot-revela-sobre-voce.ghtml",
-  "Esoterismo, Ocultismo e Misticismo :: https://esoverso.com/tarot/arcano-pessoal",
-  "Arcano Pessoal: como calcular e entender o seu :: https://www.astrocentro.com.br/blog/tarot/arcano-pessoal/?srsltid=AU7gw4XAu0y8qaq4nPCcMP1Mt8DznEnghFO0fZmv8xFIr03mtU-c4tvb",
-  "Como exatamente essas \"Calculadoras de Arcanos ... :: https://www.reddit.com/r/tarot/comments/1ke7i0i/how_exactly_those_personal_arcana_calculator_works/?tl=pt-br",
-  "Você sabia que existem várias formas de descobrir o seu ... :: https://www.instagram.com/p/DcBrDFRlq9-/",
-  "Saiba como descobrir e interpretar seu arcano pessoal - F5 :: https://f5.folha.uol.com.br/astrologia/2025/09/saiba-como-descobrir-e-interpretar-seu-arcano-pessoal.shtml",
-  "Descubra seu Arcano Pessoal e missão de vida com o ... :: https://www.astrolink.com.br/artigo/descubra-seu-arcano-pessoal",
-  "Descubra seu arcano pessoal para 2025! O arcano anual traz ... :: https://www.instagram.com/reel/DCh0kCzxnSa/"
+ "Calculadora de Arcano Pessoal 2026": [
+  {
+   "title": "Cálculo do Arcano Pessoal e Anual",
+   "link": "https://magdachiossi.com.br/o-que-e-taro-para-autoconhecimento/carta-do-ano-pessoal/",
+   "snippet": "Quanto ao cálculo do Arcano Pessoal e do Ano Pessoal, reduzimos todos os números maiores que 22 – número dos Arcanos Maiores. Então se o resultado for maior que ..."
+  },
+  {
+   "title": "Descubra seu Arcano Pessoal e saiba o que o Tarot revela ...",
+   "link": "https://gshow.globo.com/horoscopo-etc/noticia/descubra-seu-arcano-pessoal-e-saiba-o-que-o-tarot-revela-sobre-voce.ghtml",
+   "snippet": "O Arcano Pessoal é uma ferramenta de autoconhecimento e desenvolvimento espiritual. Depois de calcular o seu, aproveite para refletir sobre seus ..."
+  },
+  {
+   "title": "Arcano Pessoal 2026: seu guia do Tarot para o novo ano",
+   "link": "https://www.terra.com.br/vida-e-estilo/horoscopo/arcano-pessoal-2026-seu-guia-do-tarot-para-o-novo-ano,020fa6faf9e94fdc4e7305a8638745528wupd58k.html",
+   "snippet": "Como calcular seu Arcano pessoal 2026. Em primeiro lugar, a conta é muito fácil e envolve somar o seu dia e mês de nascimento com o número ..."
+  },
+  {
+   "title": "Como calcular o arcano regente pessoal de 2026? ...",
+   "link": "https://www.instagram.com/reel/DQahphmDmvv/",
+   "snippet": "Você já descobriu qual é o seu Arcano Pessoal deste ano? A conta é simples: Pegue o dia do seu nascimento + o mês do seu nascimento + 2026. Por ..."
+  },
+  {
+   "title": "Como descobrir o seu Arcano do ano e o que cada um ...",
+   "link": "https://www.nsctotal.com.br/comportamento/como-descobrir-o-seu-arcano-do-ano-e-o-que-cada-um-significa",
+   "snippet": "O ano de 2026 será regido pelo Arcano 10, A Roda da Fortuna. Será um ano em que nada ficará igual: se prepare para mudanças rápidas, ..."
+  },
+  {
+   "title": "Arcano Pessoal: como calcular e entender o seu",
+   "link": "https://www.astrocentro.com.br/blog/tarot/arcano-pessoal/?srsltid=AU7gw4U5YDYoqKYENVL6-v4ehCn54tmSBE6wzJsXtIz44mlQ7mSB8FIa",
+   "snippet": "Arcano Pessoal é a carta dos Arcanos Maiores associada à sua data de nascimento. Ele aponta tendências de comportamento, potenciais e desafios ..."
+  },
+  {
+   "title": "Ano Pessoal em 2026: previsões para Amor, Carreira e ...",
+   "link": "https://www.personare.com.br/conteudo/ano-pessoal-2026-m268483",
+   "snippet": "Descubra qual é o seu número regente do seu Ano Pessoal 2026 e veja o que o novo ano reserva para você no amor, na carreira e na saúde."
+  },
+  {
+   "title": "Como Calcular o Arcano Anual e Pessoal para 2026",
+   "link": "https://www.tiktok.com/@alas_tarott/video/7568941359722220821",
+   "snippet": "Aprenda a calcular seu arcano pessoal e anual para 2026 de forma simples e eficaz! @Anna | Cartomante · som ..."
+  },
+  {
+   "title": "El número que puede marcar tu 2026: cómo saber cuál ... - A24",
+   "link": "https://www.a24.com/deportes/el-numero-que-puede-marcar-tu-2026-como-saber-cual-es-tu-arcano-el-proximo-ano-y-que-significa-cada-uno-n1512863",
+   "snippet": "Cómo calcular tu arcano personal para 2026 · Sumá día + mes de nacimiento + 2026 · Reducí el resultado hasta obtener un número entre 1 y 22 · Si el ..."
+  }
  ],
  "Calculadora de Arcano Pessoal Anual": [
-  "Cálculo do Arcano Pessoal e Anual :: https://magdachiossi.com.br/o-que-e-taro-para-autoconhecimento/carta-do-ano-pessoal/",
-  "Esoterismo, Ocultismo e Misticismo :: https://esoverso.com/tarot/arcano-pessoal",
-  "Descubra seu arcano pessoal para 2025! O arcano anual traz ... :: https://www.instagram.com/reel/DCh0kCzxnSa/",
-  "Descubra seu Arcano Pessoal e saiba o que o Tarot revela ... :: https://gshow.globo.com/horoscopo-etc/noticia/descubra-seu-arcano-pessoal-e-saiba-o-que-o-tarot-revela-sobre-voce.ghtml",
-  "Qual o Arcano Pessoal e Anual de vocês? : r/AstrologiaBrasil :: https://www.reddit.com/r/AstrologiaBrasil/comments/1pa7lz6/qual_o_arcano_pessoal_e_anual_de_voc%C3%AAs/",
-  "Qual a sua? 😜 como calcular sua arcana anual> ... :: https://www.instagram.com/p/DS0r4HKj_pN/?hl=pt",
-  "Arcano Pessoal 2026: seu guia do Tarot para o novo ano :: https://www.terra.com.br/vida-e-estilo/horoscopo/arcano-pessoal-2026-seu-guia-do-tarot-para-o-novo-ano,020fa6faf9e94fdc4e7305a8638745528wupd58k.html",
-  "Descubra seu Arcano Maior pela Data de Nascimento :: https://arcanacalculator.com/pt",
-  "Arcano Pessoal: como calcular e entender o seu :: https://www.astrocentro.com.br/blog/tarot/arcano-pessoal/?srsltid=AU7gw4WV4Q2s3dE1Vk5xvOmqpXIPvpumRNJlhZ12-D327b3k1nE6lEMT"
- ],
- "Quanto de Arroz por Pessoa": [
-  "Como calcular a quantidade certa de arroz para cozinhar :: https://www.tudogostoso.com.br/noticias/como-calcular-a-quantidade-certa-de-arroz-a2961.htm",
-  "QUANTIDADE CERTA DE ARROZ POR PESSOA! :: https://www.youtube.com/watch?v=voiZUFg-mt4",
-  "Qual a quantidade de Arroz por Pessoa :: https://www.receitasnestle.com.br/artigos/qual-a-quantidade-de-arroz-por-pessoa",
-  "1kg de arroz serve quantas pessoas? Dicas para calcular ... :: https://www.cigala.pt/blog/1-kg-arroz-quantas-pessoas/",
-  "Aprenda como calcular a quantidade certa de arroz :: https://www.arrozsepe.com.br/receitas/aprenda-como-calcular-a-quantidade-certa-de-arroz",
-  "Como calcular a quantidade ideal de arroz por pessoa ... :: https://www.chefsouriso.com.br/pagina/como-calcular-a-quantidade-ideal-de-arroz-por-pessoa-para-um-risoto-perfeito.html",
-  "Como calcular a quantidade de arroz nas refeições? :: https://bomgourmet.com/bomgourmet/para-acertar-na-medida-aprenda-a-calcular-a-quantidade-de-arroz-para-suas-refeicoes/"
- ],
- "Quantos Litros Gasta um Banho": [
-  "Você sabe quantos litros de água gasta durante o banho? :: https://www.saneamentosalva.com.br/perguntas-e-resposta/voce-sabe-quantos-litros-de-agua-gasta-durante-o-banho/",
-  "Você sabe o consumo de água em cada ambiente da sua ... :: https://bbifiltracao.com.br/voce-sabe-o-consumo-de-agua-em-cada-ambiente-da-sua-casa",
-  "Quanto você acha que um banho de 15 minutos gasta? Antes ... :: https://www.facebook.com/SabespOficial/videos/quanto-voc%C3%AA-acha-que-um-banho-de-15-minutos-gasta-antes-de-ver-a-resposta-qual-o/2255997355245289/",
-  "Dicas de Economia :: https://www.saaeambientalsantafe.sp.gov.br/meio-ambiente/dicas-de-economia",
-  "Ducha ou Banheira: Saiba qual consome mais água. :: https://prettyjet.com.br/experiencias/ducha-ou-banheira-saiba-qual-consome-mais-agua/",
-  "Dicas de Economia de Água :: https://www.caesb.df.gov.br/dicas-de-economia-de-agua/",
-  "Em média, um banho de 10 minutos gasta cerca de 120 ... :: https://www.instagram.com/p/CyyUQoBAb5J/"
- ],
- "Calculadora de Bhaskara": [
-  "Calculadora de Equação do Segundo Grau :: https://www.matematica.pt/util/calculadora-equacao-2-grau.php",
-  "Calculadora de Bhaskara Online :: https://www.calculadora.app/matematica/bhaskara",
-  "Calculadora de equações de segundo grau usando a ... :: https://play.google.com/store/apps/details?id=com.celesiob.testedecompra&hl=pt_BR",
-  "Calculadora de Equação do Segundo Grau :: https://www.omnicalculator.com/pt/matematica/calculadora-equacao-segundo-grau",
-  "Fórmula de Bhaskara - Brasil Escola - UOL :: https://brasilescola.uol.com.br/matematica/formula-bhaskara.htm",
-  "Calculadora Casio #06 - Fórmula de Bhaskara :: https://www.youtube.com/watch?v=3ReQzcZ8v54",
-  "Calculadora de Equação do 2º grau :: https://www.calculadoraonline.com.br/equacao-2-grau",
-  "Fórmula de Bhaskara: aprenda como calcular ... :: https://www.todamateria.com.br/formula-de-bhaskara/"
+  {
+   "title": "Cálculo do Arcano Pessoal e Anual",
+   "link": "https://magdachiossi.com.br/o-que-e-taro-para-autoconhecimento/carta-do-ano-pessoal/",
+   "snippet": "O cálculo é feito a partir de sua data de nascimento. Faz uma soma do dia, mês e ano. Depois soma o resultado com o ano de seu último aniversário. Por exemplo: ..."
+  },
+  {
+   "title": "Esoterismo, Ocultismo e Misticismo",
+   "link": "https://esoverso.com/tarot/arcano-pessoal",
+   "snippet": "O Arcano Pessoal é uma revelação profunda do Tarot e da Numerologia, um espelho que reflete vários aspectos do nosso ser. Descubra seu propósito de vida, ..."
+  },
+  {
+   "title": "Como calcular seu Arcano Anual do Tarot",
+   "link": "https://www.tiktok.com/@vitor_grasel/video/7478751258707250438",
+   "snippet": "71.5K curtidas,1098 comentários.Vídeo do TikTok de Vitor Grasel | Tarólogo (@vitor_grasel): \"Aprenda a calcular seu arcano anual com este ..."
+  },
+  {
+   "title": "Descubra seu arcano pessoal para 2025! O arcano anual traz ...",
+   "link": "https://www.instagram.com/reel/DCh0kCzxnSa/",
+   "snippet": "O arcano anual traz tendências e direcionamentos poderosos sobre os aprendizados e energias do ano. Quer calcular o seu? É fácil: 1️⃣ ..."
+  },
+  {
+   "title": "Descubra seu Arcano Pessoal e saiba o que o Tarot revela ...",
+   "link": "https://gshow.globo.com/horoscopo-etc/noticia/descubra-seu-arcano-pessoal-e-saiba-o-que-o-tarot-revela-sobre-voce.ghtml",
+   "snippet": "O Arcano Pessoal é uma ferramenta de autoconhecimento e desenvolvimento espiritual. Depois de calcular o seu, aproveite para refletir sobre seus ..."
+  },
+  {
+   "title": "Qual o Arcano Pessoal e Anual de vocês? : r/AstrologiaBrasil",
+   "link": "https://www.reddit.com/r/AstrologiaBrasil/comments/1pa7lz6/qual_o_arcano_pessoal_e_anual_de_voc%C3%AAs/",
+   "snippet": "O que é arcano pessoal? É uma carta do Tarô (dos 22 Arcanos Maiores) que representa as lições que você precisa aprender entre um aniversário e outro. ..."
+  },
+  {
+   "title": "Qual a sua? 😜 como calcular sua arcana anual> ...",
+   "link": "https://www.instagram.com/p/DS0r4HKj_pN/?hl=pt",
+   "snippet": "Você já descobriu qual é o seu Arcano Pessoal deste ano? A conta é simples: Pegue o dia do seu nascimento + o mês do seu nascimento + 2026. Por ..."
+  },
+  {
+   "title": "Arcano Pessoal: como calcular e entender o seu",
+   "link": "https://www.astrocentro.com.br/blog/tarot/arcano-pessoal/?srsltid=AU7gw4XXwGGD6zJbbXCeUgI-z7_vZETj4lg2HYNG4RFzL3Wa6Zdk8SD-",
+   "snippet": "Calcular o arcano pessoal é muito fácil. Primeiro, pegue sua data de nascimento, depois, some todos os algarismos. Por exemplo: 15/07/1990 > 1+5 ..."
+  },
+  {
+   "title": "Descubra seu Arcano Maior pela Data de Nascimento",
+   "link": "https://arcanacalculator.com/pt",
+   "snippet": "Calculadora de Arcanos 100% gratis e sem cadastro. Descubra seu Arcano Maior instantaneamente pela data de nascimento. Interpretacao numerologica completa ..."
+  }
  ],
  "Quantos Blocos para Construir uma Casa": [
-  "Quantos blocos preciso para construir uma casa de 65m2 ... :: https://www.instagram.com/reel/DWCE2i-Eel_/",
-  "Quantos tijolos são necessários para construir uma casa? :: https://www.tiktok.com/@alcimarconstrucaocerta/video/7315150419175525637",
-  "Quantos Blocos Gasta Para Fazer Uma Casa :: https://www.youtube.com/watch?v=i5HACr0_Wfs",
-  "Como calcular quantidade de Blocos. :: https://www.instagram.com/p/DXiP8xjjBax/",
-  "How to calculate the number of blocks for your construction ... :: https://www.youtube.com/watch?v=AWvZgag61lE",
-  "Quantos tijolos são necessários para construir uma casa e ... :: https://gazetamt.com.br/26/9/2025/quantos-tijolos-sao-necessarios-para-construir-uma-casa-e-como-calcular-corretamente/",
-  "QUANTOS TIJOLOS SÃO NECESSÁRIOS PARA ... :: https://blog.telhanorte.com.br/quantos-tijolos-sao-necessarios/"
- ],
- "Quanto de Bolo por Pessoa": [
-  "Como calcular a quantidade de bolo para o número de ... :: https://www.tudogostoso.com.br/noticias/como-calcular-a-quantidade-de-bolo-para-o-numero-de-pessoas-a6216.htm",
-  "Quantidade de bolo por pessoa: como calcular o tamanho ... :: https://www.danimarchiorato.com.br/post/quantidade-de-bolo-por-pessoa-como-calcular-o-tamanho-ideal-para-a-sua-festa",
-  "Afinal, como calcular o tamanho do bolo para convidados? :: https://www.mago.com.br/blog/tamanho-do-bolo/",
-  "Quantidade de bolo para seu casamento: o guia definitivo ... :: https://caseme.com.br/quantidade-de-bolo-para-seu-casamento/",
-  "QUANTOS QUILOS DE BOLO PARA 30 PESSOAS? :: https://www.youtube.com/watch?v=aLw_03kqKR4"
- ],
- "Calculadora de Boost PXG": [
-  "Calculadora de Boost :: https://wiki.pokexgames.com/Calculadora_de_Boost",
-  "Tabela de Boost :: https://wiki.pokexgames.com/Tabela_de_Boost",
-  "PXG Calculator - Ferramentas para PokeXGames ... :: https://www.pokexgamesbrasil.com.br/",
-  "Boost Table :: https://wiki.pokexgames.com/Boost_Table",
-  "Tabela de Boost PXG | PDF :: https://es.scribd.com/document/683176195/Tabela-de-Boost-pxg",
-  "Tabla de Boost :: https://wiki.pokexgames.com/Tabla_de_Boost",
-  "Boost | Wiki PXG :: https://pxg.fandom.com/pt-br/wiki/Boost"
+  {
+   "title": "Quantos blocos preciso para construir uma casa de 65m2 ...",
+   "link": "https://www.instagram.com/reel/DWCE2i-Eel_/",
+   "snippet": "Bloco de concreto → aproximadamente 15 peças/m² Tijolo maciço → aproximadamente 88 peças/m² ⚠️ Atenção: esses números são referências ..."
+  },
+  {
+   "title": "Quantos tijolos são necessários para construir uma casa?",
+   "link": "https://www.tiktok.com/@alcimarconstrucaocerta/video/7315150419175525637",
+   "snippet": "- Rendimento médio: 12 blocos/m² (valor ilustrativo; confirmar com fornecedor). - Total de blocos = 60 m² x 12 = 720 blocos. - Milheiros ..."
+  },
+  {
+   "title": "Quantos Blocos Gasta Para Fazer Uma Casa",
+   "link": "https://www.youtube.com/watch?v=i5HACr0_Wfs",
+   "snippet": "This content isn't available. Quantos Blocos Gasta Para Fazer Uma Casa ... Go to channel Construir e Reformar · QUANTOS SACOS DE CIMENTO E AREIA ..."
+  },
+  {
+   "title": "How to calculate the number of blocks for your construction ...",
+   "link": "https://www.youtube.com/watch?v=AWvZgag61lE",
+   "snippet": "Neste vídeo eu vou te ensinar como é simples calcular a quantidade de blocos que serão necessários para executar a sua construção."
+  },
+  {
+   "title": "Como calcular quantidade de Blocos.",
+   "link": "https://www.instagram.com/p/DXiP8xjjBax/",
+   "snippet": "Para saber quantos blocos usar em uma parede, o cálculo é simples: Basta multiplicar a altura pela largura da parede para encontrar a área total ..."
+  },
+  {
+   "title": "Quantos tijolos são necessários para construir uma casa e ...",
+   "link": "https://gazetamt.com.br/26/9/2025/quantos-tijolos-sao-necessarios-para-construir-uma-casa-e-como-calcular-corretamente/",
+   "snippet": "Tijolo baiano: geralmente, 25 a 30 unidades por metro quadrado. Bloco de concreto: cerca de 12 a 15 unidades por metro quadrado. A fórmula ..."
+  },
+  {
+   "title": "QUANTOS TIJOLOS SÃO NECESSÁRIOS PARA ...",
+   "link": "https://blog.telhanorte.com.br/quantos-tijolos-sao-necessarios/",
+   "snippet": "Vamos a um exemplo prático: se a sua parede tem 10 metros quadrados e você está usando tijolos de 8 furos (19x19x9 cm), o cálculo seria assim: 10 / (0,19*0,19) ..."
+  }
  ],
  "Quanto de Café por Pessoa": [
-  "As medidas para um café perfeito em casa :: https://graocafes.com.br/as-medidas-para-um-cafe-perfeito-em-casa/?srsltid=AU7gw4X9qAZlRkLGwaCel_Ea6nvh1g8OxJOFaEwb20tSDBP1RydXuzPM",
-  "Café : afinal, quantas xícaras posso beber por dia? Como ... - G1 :: https://g1.globo.com/bemestar/viva-voce/noticia/2020/06/09/cafe-afinal-quantas-xicaras-posso-beber-por-dia-como-adocar-de-forma-saudavel-veja-essas-e-outras-duvidas.ghtml",
-  "Qual é a proporção ideal de café + água para um ... :: https://www.reddit.com/r/brasil/comments/13qwxp5/qual_%C3%A9_a_propor%C3%A7%C3%A3o_ideal_de_caf%C3%A9_%C3%A1gua_para_um/",
-  "Café da manhã para muitas pessoas: como calcular a ... :: https://www.cpt.com.br/cursos-gastronomia/artigos/cafe-da-manha-para-muitas-pessoas-como-calcular-a-quantidade",
-  "Descubra o limite de xícaras de café por dia para não viciar :: https://www.apm.org.br/descubra-o-limite-de-xicaras-de-cafe-por-dia-para-nao-viciar/",
-  "Como calcular a quantidade de comida em um coffee break? :: https://dancateringegastronomia.com.br/como-calcular-coffee-break/",
-  "Medida para fazer café: a proporção ideal (1:10, 1:15, 1:16) :: https://www.fazendajotace.com.br/blogs/news/medida-para-fazer-cafe?srsltid=AU7gw4WL4iYh0qhW37aCi6xxipVe_wGbIQO9yR6MK8VJJ-27V5O0-Jqf",
-  "Quantidade de Cafeína no Café: Tabela por Preparo :: https://reidocafe.com.br/blogs/news/quantidade-de-cafeina-no-cafe?srsltid=AU7gw4VISuWqJPuRChWhOz4gdohkNI1FmlzN8t6hmq2MoG7ufeoNWI_q"
- ],
- "Quantos Blocos por Metro Quadrado": [
-  "Calculo Blocos de Concreto :: https://artblocos.com.br/calculo-blocos-de-concreto/",
-  "Dica de Obra: Como calcular a quantidade de blocos? Se ... :: https://www.instagram.com/reel/DJyKQtUNPNW/?hl=pt-br",
-  "Quantos Blocos de Concreto Por M2 :: https://www.lajesitaim.com.br/quantos-blocos-concreto-por-m2",
-  "Quantos blocos usar por m²? Aqui está a conta certa! ... :: https://www.instagram.com/p/DRFXjxQkTBC/",
-  "Quantos blocos por metro quadrado serão necessários na ... :: https://www.hrpremo.com.br/blog-post/quantos-blocos-por-metro-quadrado/",
-  "Como calcular quantos blocos por m² de parede :: https://www.vibracom.com.br/blog/como-calcular-quantos-blocos-por-m2-de-parede"
+  {
+   "title": "As medidas para um café perfeito em casa",
+   "link": "https://graocafes.com.br/as-medidas-para-um-cafe-perfeito-em-casa/?srsltid=AU7gw4XAHWoEx4O5ZpuSpEmWOhO3jFEhaLX_EXQDrceX8g3dCg6PX-jg",
+   "snippet": "Caso você seja fã de um café com menos corpo e amargor, vá de 8g. Caso prefira um café mais encorpado, 10g são suficientes. Ambas medidas ..."
+  },
+  {
+   "title": "Café : afinal, quantas xícaras posso beber por dia? Como ... - G1",
+   "link": "https://g1.globo.com/bemestar/viva-voce/noticia/2020/06/09/cafe-afinal-quantas-xicaras-posso-beber-por-dia-como-adocar-de-forma-saudavel-veja-essas-e-outras-duvidas.ghtml",
+   "snippet": "Adulto saudável com cerca de 70 kg: de 300 a 400 miligramas de cafeína (o equivalente a 4 xícaras de café coado) · Crianças (a partir de 2 anos) ..."
+  },
+  {
+   "title": "Qual é a proporção ideal de café + água para um ...",
+   "link": "https://www.reddit.com/r/brasil/comments/13qwxp5/qual_%C3%A9_a_propor%C3%A7%C3%A3o_ideal_de_caf%C3%A9_%C3%A1gua_para_um/",
+   "snippet": "EU NÃO SEI FAZER CAFÉ (o coado).\n\nEu tento seguir o jeito que minha mãe faz no olhômetro (metade da caneca de água + 2,5 colheres de café ..."
+  },
+  {
+   "title": "Café da manhã para muitas pessoas: como calcular a ...",
+   "link": "https://www.cpt.com.br/cursos-gastronomia/artigos/cafe-da-manha-para-muitas-pessoas-como-calcular-a-quantidade",
+   "snippet": "Ou seja: Quantidade por item = quantidade total / número de itens. No caso em questão, 200 kg divididos por 25 itens resultam em oito quilos por item."
+  },
+  {
+   "title": "Descubra o limite de xícaras de café por dia para não viciar",
+   "link": "https://www.apm.org.br/descubra-o-limite-de-xicaras-de-cafe-por-dia-para-nao-viciar/",
+   "snippet": "O consumo diário de cafeína não deve ultrapassar os 400 miligramas (mg). · Isso representa de 2 a 4 xícaras pequenas de café. · Cafés instantâneos ..."
+  },
+  {
+   "title": "Medida para fazer café: a proporção ideal (1:10, 1:15, 1:16)",
+   "link": "https://www.fazendajotace.com.br/blogs/news/medida-para-fazer-cafe?srsltid=AU7gw4WHtC86_IopiEKMvRKGDqzRoxZlMgkDqLlywoNXnp4dBY0_nzlb",
+   "snippet": "Então, 1:10 equivale a 1 g de café para 10 mL de água. Já 1:15 significa 1 g de café para 15 mL de água, resultando em uma bebida mais diluída, ..."
+  },
+  {
+   "title": "Como calcular a quantidade de comida em um coffee break?",
+   "link": "https://dancateringegastronomia.com.br/como-calcular-coffee-break/",
+   "snippet": "Cada pessoa consome aproximadamente 250 ml de bebida, isso inclui desde água até sucos e café. Doces. Estes são os menos consumidos, geralmente cada pessoa ..."
+  },
+  {
+   "title": "Quantidade de Cafeína no Café: Tabela por Preparo",
+   "link": "https://reidocafe.com.br/blogs/news/quantidade-de-cafeina-no-cafe?srsltid=AU7gw4UvwW8zkdreODdDY7VyEzErMeMc1YtZjZ-GUb_R9syswufWVopK",
+   "snippet": "A quantidade de cafeína no café que você toma todas as manhãs pode variar de 2 mg a mais de 200 mg por porção, dependendo de fatores que ..."
+  }
  ],
  "Quantos Sacos de Cimento por Metro Quadrado": [
-  "Quantos sacos de cimento por m² eu preciso para cada uso? :: https://www.333obra.com.br/blog/post/quantos-sacos-de-cimento-por-metro-quadrado.html?srsltid=AU7gw4XwkwZwu9ZulWOkn6iR483LMHfgtSigoW8fAec4TbhllqdBYgEZ",
-  "como calcular quantos sacos de cimento por metro quadrado :: https://segurancaesaudenasescolas.trabalho.gov.br/storage/store.php/como-calcular-quantos-sacos-de-cimento-por-metro-quadrado",
-  "Como calcular a quantidade de cimento para fazer reboco :: https://www.institutodaconstrucao.com.br/blog/como-calcular-a-quantidade-de-cimento-para-fazer-reboco/",
-  "Calculadora de Concreto: Traço, Cimento, Areia e Brita 2026 :: https://calculadorabrasil.com.br/calculadora-de-concreto/",
-  "Como calcular a quantidade de cimento para sua Obra? :: https://www.obrazul.com.br/blog/2022/06/como-calcular-quantidade-de-cimento-para-obra/",
-  "Calculadora de Sacos de Cimento por m² para Contrapiso :: https://imovelguide.com.br/calculos/calculadora-de-quantos-sacos-de-cimento-por-m2-para-contrapiso",
-  "Calcular Material de Construção 2026: Fórmulas por Insumo :: https://larpontual.com.br/portal/calcular-material-de-construcao"
+  {
+   "title": "Quantos sacos de cimento por m² eu preciso para cada uso?",
+   "link": "https://www.333obra.com.br/blog/post/quantos-sacos-de-cimento-por-metro-quadrado.html?srsltid=AU7gw4V0XKHQCr1ilheoVBGRMK9m-sGbL5wdDwUFDRlj6cj1kuI0rytI",
+   "snippet": "Quantos sacos de cimento usar por m²? · Contrapiso (5 cm): 1 saco de 50 kg para 3 a 4 m² · Reboco (1,5 cm): para 8 a 9m² é necessário 1 saco de 50 kg · Concreto ( ..."
+  },
+  {
+   "title": "como calcular quantos sacos de cimento por metro quadrado",
+   "link": "https://segurancaesaudenasescolas.trabalho.gov.br/storage/store.php/como-calcular-quantos-sacos-de-cimento-por-metro-quadrado",
+   "snippet": "Baixe e abra o app. Na tela inicial, insira a área em m² e a espessura em cm. O app mostra como calcular quantos sacos de cimento por metro quadrado ..."
+  },
+  {
+   "title": "Calculadora de Concreto: Traço, Cimento, Areia e Brita 2026",
+   "link": "https://calculadorabrasil.com.br/calculadora-de-concreto/",
+   "snippet": "Calcule a quantidade exata de cimento, areia e brita para sua obra. Descubra o traço de concreto por m³ ou em latas de 18L. Grátis e online!"
+  },
+  {
+   "title": "Como calcular a quantidade de cimento para fazer reboco",
+   "link": "https://www.institutodaconstrucao.com.br/blog/como-calcular-a-quantidade-de-cimento-para-fazer-reboco/",
+   "snippet": "Para descobrir quantidade de sacos de cimento que serão utilizados a conta é: cada saco (50kg), correspondente a aproximadamente 38 litros, ..."
+  },
+  {
+   "title": "Como calcular a quantidade de cimento para sua Obra?",
+   "link": "https://www.obrazul.com.br/blog/2022/06/como-calcular-quantidade-de-cimento-para-obra/",
+   "snippet": "Para realizar o cálculo, basta dividir, por exemplo, uma medida de cimento para três de areia peneirada. Confira: Pegue 25 kg de areia peneirada e divida por ..."
+  },
+  {
+   "title": "Calculadora de Sacos de Cimento por m² para Contrapiso",
+   "link": "https://imovelguide.com.br/calculos/calculadora-de-quantos-sacos-de-cimento-por-m2-para-contrapiso",
+   "snippet": "Calcule online a quantidade estimada de cimento para contrapiso por metro quadrado em diferentes espessuras."
+  },
+  {
+   "title": "Learn How to Calculate the Material for Your Home Part 2",
+   "link": "https://www.youtube.com/watch?v=FvD1EEm1GLo",
+   "snippet": "... m2 de parede 25,50 x 25 = 637 tijolos + 10% de perda = 701 tijolos Cimento: cada 200 tijolos = 1 saco de cimento= 4 sacos de cimento para ..."
+  }
  ],
  "Calculadora de Degraus de Escada": [
-  "Calculadora de escadas Online :: https://play.google.com/store/apps/details?id=com.simplestairs.stairscalculator&hl=pt_BR",
-  "Calculadora de escada :: https://www.rafaelalmeida.com/escada.html",
-  "Calcular madeiramento de escadas retas :: https://www.zhitov.com/pt/lestnica/",
-  "Calculadora de Escada — NBR 9050 + Blondel :: https://arqpd.com.br/CalculadoraEscada",
-  "Escadômetro :: https://play.google.com/store/apps/details?id=com.pixiefan.staircalculatorlite&hl=pt_BR"
+  {
+   "title": "Calculadora de escadas Online",
+   "link": "https://play.google.com/store/apps/details?id=com.simplestairs.stairscalculator&hl=pt_BR",
+   "snippet": "Aqui você informa a altura aproximada de piso a piso e as medidas que deseja para os degraus, como resultado, você obtém a altura exata que você deve ter de ..."
+  },
+  {
+   "title": "Calculadora de escada",
+   "link": "https://www.rafaelalmeida.com/escada.html",
+   "snippet": "Segundo a NBR 9050. 1. A altura do degrau deve ficar entre 16 e 18 cm. 2. O piso do degrau deve ficar entre 28 e 32 cm."
+  },
+  {
+   "title": "Calcular madeiramento de escadas retas",
+   "link": "https://www.zhitov.com/pt/lestnica/",
+   "snippet": "A inclinação mais conveniente da escada é de 30° a 40°. A profundidade dos degraus da escada deverão atender sapatos tamanho 45 - não devem ser inferiores a 28- ..."
+  },
+  {
+   "title": "Calculadora de Escada — NBR 9050 + Blondel",
+   "link": "https://arqpd.com.br/CalculadoraEscada",
+   "snippet": "Ferramenta gratuita. Calculadora de Escada. Dimensionamento técnico com verificação NBR 9050 e Fórmula de Blondel. ▷Reta ↱Em L ↕Em U. mm cm m. Geometria."
+  },
+  {
+   "title": "Escadômetro",
+   "link": "https://play.google.com/store/apps/details?id=com.pixiefan.staircalculatorlite&hl=pt_BR",
+   "snippet": "O escadômetro serve para calcular escadas. Inserindo nele a altura total que a escada deve vencer (do piso de um pavimento ao piso do outro), ele fornece ..."
+  }
  ],
  "Quantas Telhas por Metro Quadrado": [
-  "Quantas telhas são necessárias por metro quadrado? 🤔 # ... :: https://www.instagram.com/p/DVCfYgflu2Y/",
-  "Como calcular a quantidade de telhas para o telhado :: https://www.mapadaobra.com.br/capacitacao/como-calcular-a-quantidade-de-telhas-para-o-telhado/",
-  "Quantas telhas vão por metro quadrado e como calcular a ... :: https://www.coberture.com.br/blog/2537-quantas-telhas-vao-por-metro-quadrado-e-como-calcular-a-inclinacao-saiba-calcular-aqui",
-  "How many tiles are needed for one square meter of ceramic ... :: https://www.youtube.com/watch?v=eU-GYwbBLLo",
-  "Como calcular telhado: cálculo de telhas :: https://blog.leroymerlin.com.br/como-calcular-telhado/",
-  "Guia prático para calcular a quantidade de telhas sem que ... :: https://www.instagram.com/reel/DUXVIKAjqtJ/?hl=pt-br"
+  {
+   "title": "Quantas telhas são necessárias por metro quadrado? 🤔 # ...",
+   "link": "https://www.instagram.com/p/DVCfYgflu2Y/",
+   "snippet": "O consumo por metro quadrado varia bastante entre modelos como colonial, americana, romana, portuguesa e italiana. Fazer o quantitativo antes ..."
+  },
+  {
+   "title": "Guia prático para calcular a quantidade de telhas sem que ...",
+   "link": "https://www.instagram.com/reel/DUXVIKAjqtJ/?hl=pt-br",
+   "snippet": "2. Cálculo do Número de Telhas: Multiplique a área pelo consumo específico por metro quadrado (m^2) de cada modelo cerâmico ou de concreto:"
+  },
+  {
+   "title": "Como calcular a quantidade de telhas para o telhado",
+   "link": "https://www.mapadaobra.com.br/capacitacao/como-calcular-a-quantidade-de-telhas-para-o-telhado/",
+   "snippet": "Os fabricantes costumam informar a média de telhas por metro quadrado. Por exemplo, se a telha rende 16 telhas/m², basta multiplicar a área ..."
+  },
+  {
+   "title": "Quantas telhas vão por metro quadrado e como calcular a ...",
+   "link": "https://www.coberture.com.br/blog/2537-quantas-telhas-vao-por-metro-quadrado-e-como-calcular-a-inclinacao-saiba-calcular-aqui",
+   "snippet": "1 - Calcule a área inclinada do telhado, multiplicando a área em planta pelo fator de correção. Essa é a área real que será coberta pelas telhas ..."
+  },
+  {
+   "title": "How many tiles are needed for one square meter of ceramic ...",
+   "link": "https://www.youtube.com/watch?v=eU-GYwbBLLo",
+   "snippet": "Como calcular telha por metro quadrado ESPERO TER AJUDADO A TODOS VOCÊS Ferramentas que BOMBAM no Mercado Livre!"
+  },
+  {
+   "title": "Como calcular telhado: cálculo de telhas",
+   "link": "https://blog.leroymerlin.com.br/como-calcular-telhado/",
+   "snippet": "A quantidade de telhas é calculada pela multiplicação da área inclinada pelo consumo de telhas por metro quadrado."
+  }
  ],
  "Quantos Tijolos por Metro Quadrado": [
-  "Quantos tijolos por metro quadrado? Aprenda a calcular :: https://biomassadobrasil.com.br/quantos-tijolos-por-metro-quadrado-aprenda-a-calcular/",
-  "Como calcular Tijolos por metro quadrado :: https://blog.leroymerlin.com.br/tijolos-por-metro-quadrado/",
-  "tijolos por metro quadrado :: https://blocosarcanjo.com.br/saiba-a-quantidade-necessaria-de-blocos-ceramicos-e-tijolos-por-metro-quadrado/",
-  "Quantidade de tijolos por metro quadrado: saiba como ... :: https://www.ferrostore.com.br/quantidade-de-tijolos-por-metro-quadrado-saiba-como-calcular?srsltid=AU7gw4V0avQLGIwWYz2D-lU7vIBLoRJnKlH1jsosd4vzddB3cshMJrbs",
-  "Veja como calcular tijolos por metro quadrado :: https://blog.balaroti.com.br/artigos/veja-como-calcular-tijolos-por-metro-quadrado/",
-  "Como Calcular a Quantidade de Tijolos Para Sua Obra :: https://mestredaobralocacoes.com.br/blog/como-calcular-a-quantidade-de-tijolos-para-sua-obra"
- ],
- "Calculadora de Calorias dos Alimentos": [
-  "Calculadora de Calorias dos Alimentos :: https://www.tabelatacoonline.com.br/calculadoras-nutricionais/calculadora-de-calorias-dos-alimentos",
-  "Calcular Calorias :: https://play.google.com/store/apps/details?id=com.cleancode.kcalcount&hl=pt_BR",
-  "Calculadora de calorias: quantas ingerir por dia? :: https://www.tuasaude.com/como-calcular-o-gasto-calorico/",
-  "COMO CALCULAR AS CALORIAS DOS ALIMENTOS :: https://www.youtube.com/watch?v=L-wAj8w6ZEc",
-  "Saiba como calcular as calorias dos alimentos! - Growth Blog :: https://blog.gsuplementos.com.br/como-calcular-as-calorias-dos-alimentos/",
-  "Saiba como calcular as calorias que você come :: https://engenhariadocorpo.com.br/blog/saiba-como-calcular-as-calorias-que-voce-come/",
-  "Tabela de calorias: calorias de milhares de alimentos :: https://www.tabeladecalorias.net/",
-  "Calculadora da tabela nutricional das receitas :: https://www.myfitnesspal.com/pt/recipe/calculator"
+  {
+   "title": "Quantos tijolos por metro quadrado? Aprenda a calcular",
+   "link": "https://biomassadobrasil.com.br/quantos-tijolos-por-metro-quadrado-aprenda-a-calcular/",
+   "snippet": "Portanto, precisaremos de 39,68 unidades de tijolos cerâmicos de 6 furos de 9 x 14 x 19 cm para cada metro quadrado de parede a ser construída."
+  },
+  {
+   "title": "Como calcular Tijolos por metro quadrado",
+   "link": "https://blog.leroymerlin.com.br/tijolos-por-metro-quadrado/",
+   "snippet": "O primeiro passo é tirar as medidas do tijolo, depois dividida a área das paredes pela área ocupada por cada tijolo. Acesse e aprenda como ..."
+  },
+  {
+   "title": "tijolos por metro quadrado",
+   "link": "https://blocosarcanjo.com.br/saiba-a-quantidade-necessaria-de-blocos-ceramicos-e-tijolos-por-metro-quadrado/",
+   "snippet": "Isso significa que são necessários pelo menos 40 tijolos de 6 furos para cobrir um metro quadrado de construção. Calculando a quantidade de ..."
+  },
+  {
+   "title": "Quantidade de tijolos por metro quadrado: saiba como ...",
+   "link": "https://www.ferrostore.com.br/quantidade-de-tijolos-por-metro-quadrado-saiba-como-calcular?srsltid=AU7gw4Vt1ZLgmeAJ47wBJPdpm8C454jgcIS7hOYI_L6d8zETED2TisRp",
+   "snippet": "Como calcular a quantidade de tijolos por m² · Passo 1: descubra a área do tijolo com junta · Passo 2: calcule a área ocupada por cada tijolo."
+  },
+  {
+   "title": "Veja como calcular tijolos por metro quadrado",
+   "link": "https://blog.balaroti.com.br/artigos/veja-como-calcular-tijolos-por-metro-quadrado/",
+   "snippet": "1 m² / 0,0361 m² = 27,70 unidades de tijolo de 8 furos. Importante notar que este tipo de tijolo, também conhecido como tijolo ..."
+  },
+  {
+   "title": "Como Calcular a Quantidade de Tijolos Para Sua Obra",
+   "link": "https://mestredaobralocacoes.com.br/blog/como-calcular-a-quantidade-de-tijolos-para-sua-obra",
+   "snippet": "Como Calcular Tijolos por Metro Quadrado · Passo 1: Escolha o Tipo de Tijolo · Passo 2: Medir a Área do Tijolo · Passo 3: Calcule o Rendimento do ..."
+  }
  ],
  "Quantos Sacos de Cimento para Construir uma Casa": [
-  "Quanto sacos de cimento preciso para construir minha casa? :: https://wsmateriais.com.br/2020/07/27/quanto-sacos-de-cimento-preciso-para-construir-minha-casa/",
-  "Qual é a quantidade média de sacos de cimento ... :: https://brainly.com.br/tarefa/63966553",
-  "Duvido você acertar quantos sacos de cimento gasta numa ... :: https://www.facebook.com/willian.magri.2025/posts/duvido-voc%C3%AA-acertar-quantos-sacos-de-cimento-gasta-numa-casa-de-50-mts-da-funda%C3%A7/789697950201910/",
-  "Como calcular quantidade de cimento, argamassa, areia e ... :: https://nascimentoconstrucaocotia.com.br/como-calcular-a-quantidade-de-cimento-argamassa-areia-e-pedra-para-sua-obra/",
-  "Como calcular a quantidade de cimento para fazer reboco :: https://www.institutodaconstrucao.com.br/blog/como-calcular-a-quantidade-de-cimento-para-fazer-reboco/",
-  "Calcular Material de Construção 2026: Fórmulas por Insumo :: https://larpontual.com.br/portal/calcular-material-de-construcao",
-  "🏗️ Você sabe quantos sacos de cimento são necessários ... :: https://www.instagram.com/p/DZqUC0mkvTj/"
+  {
+   "title": "Quanto sacos de cimento preciso para construir minha casa?",
+   "link": "https://wsmateriais.com.br/2020/07/27/quanto-sacos-de-cimento-preciso-para-construir-minha-casa/",
+   "snippet": "Considerando todos os fatores acima expostos, seria utilizado aproximadamente 2 sacos para cada metro quadrado de construção. Fonte: https://www ..."
+  },
+  {
+   "title": "Quantos sacos de cimento gastei na construção da casa.",
+   "link": "https://www.instagram.com/reel/DVzNzBAAQTK/",
+   "snippet": "Dividindo o saco de cimento de 50kg para 25 kg. . #construir #obras #cimento · September 2. Accounts you might like. rancho_co2brasil's profile ..."
+  },
+  {
+   "title": "Qual é a quantidade média de sacos de cimento ...",
+   "link": "https://brainly.com.br/tarefa/63966553",
+   "snippet": "Para calcular a quantidade média de sacos de cimento necessária para construir uma casa de 100 metros quadrados, devemos considerar vários ..."
+  },
+  {
+   "title": "Duvido você acertar quantos sacos de cimento gasta numa ...",
+   "link": "https://www.facebook.com/willian.magri.2025/posts/duvido-voc%C3%AA-acertar-quantos-sacos-de-cimento-gasta-numa-casa-de-50-mts-da-funda%C3%A7/789697950201910/",
+   "snippet": "Depende do desnível no alicerce. 25 sacos em média. Vc postou da base até o contra piso , aqui o pessoal faz o contra piso antes do levantamento ..."
+  },
+  {
+   "title": "Como calcular quantidade de cimento, argamassa, areia e ...",
+   "link": "https://nascimentoconstrucaocotia.com.br/como-calcular-a-quantidade-de-cimento-argamassa-areia-e-pedra-para-sua-obra/",
+   "snippet": "6 a 7 sacos de cimento (50 kg) · De 0,5 a 0,6 m³ de areia · De 0,7 a 0,8 m³ de pedra britada."
+  },
+  {
+   "title": "Quantos sacos de cimento se usa para construir uma casa?",
+   "link": "https://www.pinterest.com/pin/315603886371151032/",
+   "snippet": "Veja a análise de tamanho da obra, características, acabamento externo e uso de concreto usinado para determinar a quantidade de cimento para ..."
+  },
+  {
+   "title": "Calcular Material de Construção 2026: Fórmulas por Insumo",
+   "link": "https://larpontual.com.br/portal/calcular-material-de-construcao",
+   "snippet": "Consumo de Cimento (Traço 1:4 - 7 sacos/m³): 1,0 m³ x 7 = 7 sacos de cimento 50kg. Consumo de Areia Média (Índice de 0,9 m³/m³): 1,0 m³ x 0 ..."
+  }
  ],
  "Quantos Litros de Cloro para Piscina": [
-  "Qual a quantidade de cloro na piscina? :: https://blog.hth.com.br/qual-a-quantidade-de-cloro-na-piscina/",
-  "Quanto de Cloro Aplicar na Piscina? Aprenda Como ... :: https://piscinafacil.com.br/blog/como-calcular-o-cloro-corretamente/",
-  "Como aplicar cloro na piscina Maneira certa- Tutorial :: https://www.youtube.com/watch?v=_GQ5XBl1qLQ",
-  "5 CLORO LIQUIDO 1LT - CRIS ÁGUA :: https://www.acqualestepiscinas.com/5-cloro-liquido-1-litro-cris-agua?srsltid=AU7gw4XXeAiKJ9Z3wS9sVpQZbh8vkGEWHpC2UQkU7GSP-03KISC5VO86",
-  "Como Usar o Cloro Líquido Cris Água :: https://www.riobonitopiscinas.com.br/cloro-liquido-cris-agua-5-litros",
-  "Como usar a quantidade certa de cloro para piscina - Nautilus :: https://nautilusbr.com/blog/quantidade-de-cloro-para-piscina/",
-  "Calculadora de Dosagem de Produtos :: https://hidroazul.com.br/calculadora/"
- ],
- "Conversor de Minutos em Horas": [
-  "Conversor de Minutos para Horas :: https://www.omnicalculator.com/pt/conversao/conversor-minutos-para-horas",
-  "Converter Minutos em Horas - Experimente Grátis :: https://www.getharvest.com/pt/calculators/convert-minutes-to-hours",
-  "Como Transformar Minutos em Horas :: https://www.todamateria.com.br/como-transformar-minutos-em-horas/",
-  "Learn how to convert minutes into hours - Micamática :: https://www.youtube.com/watch?v=ekU6b5m3UQ4",
-  "Converter Minutos em Horas - Devtools :: https://devtools.com.br/converter-minutos-em-horas/",
-  "Converter Minutos em Horas (m → h) :: https://convertlive.com/pt/u/converter/minutos/em/horas",
-  "Conversão de minutos em horas! #matematica :: https://www.instagram.com/reel/DNtmAOaQkZW/?hl=pt-br",
-  "Como transformar minutos em horas? - Mundo Educação - UOL :: https://mundoeducacao.uol.com.br/matematica/como-transformar-minutos-em-horas.htm",
-  "How to convert Hours to Minutes and Minutes to Hours? :: https://www.youtube.com/watch?v=IYtlejQfzew",
-  "Como transformar minutos em horas? - Brasil Escola - UOL :: https://brasilescola.uol.com.br/matematica/como-transformar-minutos-em-horas.htm"
- ],
- "Quantos Litros Gasta uma Descarga": [
-  "Como economizar água no vaso sanitário: saiba tudo :: https://www.ype.ind.br/ype-explica/como-economizar-agua-no-vaso-sanitario",
-  "Dicas de Economia de Água :: https://www.caesb.df.gov.br/dicas-de-economia-de-agua/",
-  "Dicas de Economia :: https://www.saaeambientalsantafe.sp.gov.br/meio-ambiente/dicas-de-economia",
-  "Você sabia que uma descarga pode gastar, em média, de ... :: https://www.facebook.com/centertubosgoiania/videos/voc%C3%AA-sabia-que-uma-descarga-pode-gastar-em-m%C3%A9dia-de-10-a-14-litros-de-%C3%A1gua-j%C3%A1-co/2123409161288451/",
-  "Como economizar em até 30% o volume de água usado ... :: https://gauchazh.clicrbs.com.br/economia/dicas-de-economia/noticia/2016/06/como-economizar-em-ate30-o-volume-de-agua-usado-na-descarga-6119702.html",
-  "20 dicas de como economizar água em casa 13 ... - Daes Juína :: https://daes.juina.mt.gov.br/dica/4/20-dicas-de-como-economizar-agua-em-casa-13-02-2015-por-cristiane-nunes",
-  "Você já parou pra pensar quantos litros de água usa por dia ... :: https://www.facebook.com/SabespOficial/videos/-voc%C3%AA-j%C3%A1-parou-pra-pensar-quantos-litros-de-%C3%A1gua-usa-por-diaum-banho-r%C3%A1pido-a-de/975769395313449/"
- ],
- "Dividir Conta do Restaurante": [
-  "Partiu Conta: Dividir a conta :: https://play.google.com/store/apps/details?id=com.geanbrandao.br.billbuddy&hl=pt_BR",
-  "Como Dividir Conta no Restaurante: Guia Rápido :: https://www.sisfood.com.br/saiba-mais/operacao-salao/dividir-conta-restaurante",
-  "Como fazer a divisão da conta entre vários clientes na ... :: https://ajuda.programaconsumer.com.br/como-fazer-a-divisao-da-conta-entre-varios-clientes-na-mesa/",
-  "Dividir a conta em restaurante, dinheiro ou cartão? : r/ibiza :: https://www.reddit.com/r/ibiza/comments/1nnh4pt/splitting_bills_in_restaurants_cash_or_card/?tl=pt-br",
-  "3 apps para dividir a conta do restaurante :: https://canaltech.com.br/apps/adeus-calculadora-3-apps-para-dividir-a-conta-do-restaurante/",
-  "Dúvida eterna: como dividir a conta do bar ou do ... :: https://minhaseconomias.com.br/blog/planejamento-financeiro/duvida-eterna-como-dividir-a-conta-do-bar-ou-do-restaurante",
-  "Como dividir a conta no restaurante: etiqueta para dividir igual ... :: https://www.tiktok.com/@claudiamatarazzoetiqueta/video/7658309348715760916",
-  "Partes iguais, cada um paga o seu ou aceita gentileza :: https://www.tudogostoso.com.br/noticias/partes-iguais-cada-um-paga-o-seu-ou-aceita-gentileza-como-dividir-a-conta-em-um-restaurante-sem-constrangimento-segundo-em-especialista-em-etiqueta-sem-parecer-avarento-a15539.htm"
- ],
- "Quantas Doses Tem uma Garrafa de Vodka": [
-  "Como Calcular? :: https://www.bebidasbhdelivery.com.br/pagina/como-calcular.html",
-  "Quantas doses vocês costumam tirar de uma garrafa de ... :: https://www.reddit.com/r/Scotch/comments/6wzwj8/how_many_servings_to_you_guys_typically_get_from/?tl=pt-br",
-  "Quanto custa (R$) 1 dose?! Como calcular? | #12 de 30 :: https://www.youtube.com/watch?v=hbb8h0exhU0",
-  "Quantos copos saem de uma garrafa? - Monouso Blog :: https://monouso.pt/blog/quantos-copos-saem-de-uma-garrafa/",
-  "Como calcular as bebidas em dose :: https://www.youtube.com/watch?v=WSxDMg17raQ",
-  "Tem mesmo só uma dose nisso? : r/alcohol :: https://www.reddit.com/r/alcohol/comments/1jyg8z4/is_there_really_a_single_shot_in_this/?tl=pt-br",
-  "Quais são os diferentes tamanhos de garrafas de vidro ... :: https://www.roetell.com/pt/a-guide-to-vodka-glass-bottle-sizes/",
-  "Doses e Garrafas - Nosso Bar 26 :: http://nossobar26.com.br/Doses-e-Garrafas/",
-  "Doses Certas - Início :: https://dosescertas.com.br/"
- ],
- "Quantas Doses Tem uma Garrafa de Whisky": [
-  "Quantas doses vocês costumam tirar de uma garrafa de ... :: https://www.reddit.com/r/Scotch/comments/6wzwj8/how_many_servings_to_you_guys_typically_get_from/?tl=pt-br",
-  "Como medir uma dose de whisky sem medidor? - The-Bar :: https://br.thebar.com/artigo/como-medir-uma-dose-de-whisky-sem-medidor?srsltid=AU7gw4XMR5ZfGkGSguVoDJjeOkwY20LA_A8N6TcEuTz6qIZUkcQu25MZ",
-  "Quanto de Whisky por Pessoa no Casamento? A Calculadora ... :: https://escolhawhisky.com.br/quanto-de-whisky-por-pessoa-no-casamento-a-calculadora-sem-erro/",
-  "Como Calcular? :: https://www.bebidasbhdelivery.com.br/pagina/como-calcular.html",
-  "Quantas doses tem 1 litro whisky :: https://www.pontofrio.com.br/quantas-doses-tem-1-litro-whisky/b",
-  "1 garrafa whisky serve quantas doses :: https://www.casasbahia.com.br/1-garrafa-whisky-serve-quantas-doses/b",
-  "Quantos ml é uma dose padrão de whisky? :: https://casadowhisky.com.br/quantos-ml-e-uma-dose-de-whisky/"
+  {
+   "title": "Qual a quantidade de cloro na piscina?",
+   "link": "https://blog.hth.com.br/qual-a-quantidade-de-cloro-na-piscina/",
+   "snippet": "De modo geral, a dosagem indicada de cloro de piscina é de 4 gramas para cada 1.000 litros de água. Essa informação normalmente consta no rótulo ..."
+  },
+  {
+   "title": "Quanto de Cloro Aplicar na Piscina? Aprenda Como ...",
+   "link": "https://piscinafacil.com.br/blog/como-calcular-o-cloro-corretamente/",
+   "snippet": "1. Hipoclorito de Cálcio (65% de Cloro Ativo) – Cloro Granulado · Piscina: 40.000 litros (40 m³) · Necessário aumentar: 3 ppm de cloro livre."
+  },
+  {
+   "title": "Como aplicar cloro na piscina Maneira certa- Tutorial",
+   "link": "https://www.youtube.com/watch?v=_GQ5XBl1qLQ",
+   "snippet": "Como o cloro deve ser aplicado na piscina? O que se deve ou não fazer? Como misturar na água? Tudo isso você vai descobrir nesse vídeo!"
+  },
+  {
+   "title": "5 CLORO LIQUIDO 1LT - CRIS ÁGUA",
+   "link": "https://www.acqualestepiscinas.com/5-cloro-liquido-1-litro-cris-agua?srsltid=AU7gw4Uln40ifD3GetpfnKT0_QMVCH5vPyqCcMaIfc4U1vzpS2lzQP1d",
+   "snippet": "3 – Com o sistema de filtração em funcionamento, aplique 100ml de Cloro Líquido Cris Água para cada 1000 litros de água de preferência ao entardecer; 4 – A ..."
+  },
+  {
+   "title": "Como Usar o Cloro Líquido Cris Água",
+   "link": "https://www.riobonitopiscinas.com.br/cloro-liquido-cris-agua-5-litros",
+   "snippet": "Ajuste se necessário. Ideal manter o pH em 7,2; 3 – Com o sistema de filtração em funcionamento, aplique 100ml de Cloro Líquido CRIS ÁGUA para cada 1000 litros ..."
+  },
+  {
+   "title": "Como usar a quantidade certa de cloro para piscina - Nautilus",
+   "link": "https://nautilusbr.com/blog/quantidade-de-cloro-para-piscina/",
+   "snippet": "A regra geral recomendada pela grande maioria dos fabricantes estabelece a proporção de quatro gramas do produto para cada 1.000 litros ... cloro na piscina para ..."
+  },
+  {
+   "title": "Calculadora de Dosagem de Produtos",
+   "link": "https://hidroazul.com.br/calculadora/",
+   "snippet": "Utilizando os produtos de análise Hidroazul, encontre os valores para Cloro, pH e Alcalinidade Total. Em seguida, selecione os valores encontrados e clique ..."
+  }
  ],
  "Quanto Dura um Botijao de Gas 13kg": [
-  "Quanto tempo dura um botijão de gás 13 kg: tabela 2025 :: https://estrelamoveis.com.br/blog/quanto-tempo-dura-um-botijao-de-gas-13-kg/?srsltid=AU7gw4WqvSVTprYIqvoW-fAqGS7F9rtn0-9vP5kBo9dnGtgLIWv1U-Ov",
-  "Aprenda a calcular a duração de um botijão de gás :: https://rescaroli.com.br/blog/aprenda-calcular-duracao-de-um-botijao-de-gas/",
-  "Você sabia que um botijão de gás de 13kg pode durar, em ... :: https://www.facebook.com/Kemigas/videos/voc%C3%AA-sabia-que-um-botij%C3%A3o-de-g%C3%A1s-de-13kg-pode-durar-em-m%C3%A9dia-at%C3%A9-42-dias-e-sabia/752359952315830/?locale=pt_BR",
-  "Qual é a média de duração de um botijão de gás em uma ... :: https://www.sindigas.org.br/?p=40399",
-  "【 Quanto tempo dura um gas de 13kg 】 :: https://www.precodogas.com.br/quanto-tempo-dura-um-gas-de-13kg.php",
-  "Quanto tempo dura o gás na casa de vocês? Tem truque ... :: https://www.reddit.com/r/VidaAdulta/comments/1qctert/quanto_tempo_dura_o_g%C3%A1s_na_casa_de_voc%C3%AAs_tem/",
-  "Calculadora Duração do Gás 13kg 2026 | Consumo e Custo :: https://calculadorabrasil.com.br/duracao-gas/",
-  "Como Fazer o Gás de Cozinha Durar Mais: Dicas Útil Gás DF :: https://www.utilgas.com.br/blog/como-fazer-gas-cozinha-durar-mais-dicas-praticas-Util-gas-df-economizar",
-  "Botijão de Gás 2026: Quanto Tempo Dura por Família :: https://calculadorabrasil.com.br/lifestyle/botijao-gas/"
- ],
- "Quanto Dura um Saco de Racao": [
-  "Cães e gatos: 1 kg de ração dura quanto tempo? :: https://www.petz.com.br/blog/1-kg-de-racao-dura-quanto-tempo/",
-  "depois de aberto o pacote, quanto tempo dura a ração? ... :: https://www.petlove.com.br/racao-farmina-n-d-pumpkin-frango-abobora-e-roma-para-gatos-adultos-castrados/pergunta/72167",
-  "Como manter a ração fresquinha por mais tempo :: https://minassal.com.br/como-manter-a-racao-fresquinha-por-mais-tempo/",
-  "Conheça como armazenar a ração de cachorro com ... :: https://purina.com.br/purina/cachorros/armazenar-racao-corretamente",
-  "É possível conservar ração por 5 ou 6 meses? :: https://forum.arcadenoe.pt/viewtopic.php?t=105891",
-  "Como armazenar a ração corretamente? Guia completo! :: https://premierpet.com.br/tutor/como-armazenar-a-racao-corretamente-guia-completo/",
-  "Como armazenar corretamente a ração do seu pet :: https://supertrato.pet/blogs/blog/como-armazenar-corretamente-a-racao-do-seu-pet?srsltid=AU7gw4VRrWHarYPiSjjKKtVbLcQz68_Xr2XMA8HAUd48tR59F3w5Qx6L",
-  "[Ajuda] Quanto tempo a ração de cachorro fica fresca? :: https://www.reddit.com/r/dogs/comments/bwby84/help_how_long_does_dog_food_stay_fresh/?tl=pt-br"
- ],
- "Quanto Dura um Toner": [
-  "Quanto tempo dura o toner? Faz sentido pra mim comprar ... :: https://www.reddit.com/r/printers/comments/11140aq/how_long_does_toner_last_does_it_make_sense_for/?tl=pt-br",
-  "Quanto dura um toner: rendimento, validade e como guardar :: https://www.acessoshop.com.br/quanto-dura-um-toner?srsltid=AU7gw4VNBX4KRBM3vkZmTUOT2THPw4vGxQvsnWaUzlKM1ThDOYyQ0ef6",
-  "Toner de impressora a laser: qual é o valor e a durabilidade? :: https://solucoes.brother.com.br/toner-de-impressora-a-laser-qual-o-valor",
-  "Quanto Tempo Dura um Toner de Impressora? - Tienda Ricoh :: https://tienda.ricoh-americalatina.com/br/blog/impressao/quanto-tempo-dura-toner.html",
-  "Quanto tempo dura um cartucho de toner? :: https://www.lenovo.com/br/pt/glossary/toner-cartridges/?srsltid=AU7gw4XLkUIeLpjhLoy3uYO9tOJfYO0AamBLYtYHvfiKnCu9fkLV21F2",
-  "Oi, quanto tempo geralmente dura um toner a laser ... :: https://www.reddit.com/r/printers/comments/1fiaa31/hi_how_long_does_a_laser_toner_usually_last_when/?tl=pt-br",
-  "Quanto tempo dura o toner para impressoras a laser? ... :: https://www.toner-master.com/pt/how-long-does-laser-printer-toner-last/",
-  "Cartucho e Toner tem Data de Validade? :: https://blog.printloja.com.br/cartucho-e-toner-tem-validade/",
-  "🖨️ Cartucho e toner têm validade? SIM! Fique atento! ⏳ ... :: https://www.instagram.com/p/DGdrwHmRM3S/"
- ],
- "Duração do Botijão de Gás 13 kg": [
-  "Quanto tempo dura um botijão de gás 13 kg: tabela 2025 :: https://estrelamoveis.com.br/blog/quanto-tempo-dura-um-botijao-de-gas-13-kg/?srsltid=AU7gw4Vb7n_apNnw9awnxnnqGowmE_K8ZsfZV-RB7UaD-8q-nV0Dw7or",
-  "Aprenda a calcular a duração de um botijão de gás :: https://rescaroli.com.br/blog/aprenda-calcular-duracao-de-um-botijao-de-gas/",
-  "Você sabia que um botijão de gás de 13kg pode durar, em ... :: https://www.facebook.com/Kemigas/videos/voc%C3%AA-sabia-que-um-botij%C3%A3o-de-g%C3%A1s-de-13kg-pode-durar-em-m%C3%A9dia-at%C3%A9-42-dias-e-sabia/752359952315830/?locale=pt_BR",
-  "【 Quanto tempo dura um gas de 13kg 】 :: https://www.precodogas.com.br/quanto-tempo-dura-um-gas-de-13kg.php",
-  "Qual é a média de duração de um botijão de gás em uma ... :: https://www.sindigas.org.br/?p=40399",
-  "Calculadora Duração do Gás 13kg 2026 | Consumo e Custo :: https://calculadorabrasil.com.br/duracao-gas/",
-  "Botijao De Gas 13kg (vazio) R$ 80,00 Frete Gratuito :: https://lista.mercadolivre.com.br/botijao-de-gas-13kg-%28vazio%29-r%24-80%2C00-frete-gratuito",
-  "Como Fazer o Gás de Cozinha Durar Mais: Dicas Útil Gás DF :: https://www.utilgas.com.br/blog/como-fazer-gas-cozinha-durar-mais-dicas-praticas-Util-gas-df-economizar",
-  "Carga de Glp Botijão de 13 Kg – Supergasbras :: https://maisgas.com.br/produto/carga-de-glp-botijao-de-13-kg-supergasbras/"
- ],
- "Gerador de Etiqueta Escolar": [
-  "Modelos gratuitos e personalizáveis de etiqueta escola :: https://www.canva.com/pt_br/modelos/s/etiqueta-escola/",
-  "Etiquetas para imprimir personalizadas online e grátis :: https://www.adobe.com/br/express/create/label",
-  "Etiquetas Escolares Personalizadas para Imprimir :: https://papelariapersonalizadafacil.com/etiquetas-escolares-personalizadas-para-imprimir/",
-  "TagLab | Etiquetas Escolares, Adesivos de Parede e ... :: https://taglab.com.br/?srsltid=AU7gw4WlBVhyrzzyOZ5f1tjHcNklScOtFJq7J9Hfefg8F3Cu3iwzGX9a",
-  "Etiquetas Personalizadas Grátis: Crie Modelos para Eventos :: https://www.canva.com/pt_br/criar/etiqueta-nome/",
-  "GRÁTIS Etiquetas Escolares editáveis no Canva :: https://pandocadesign.com.br/produto/gratis-etiquetas-escolares-editavel-no-canva/",
-  "MeuNominho: Etiquetas Escolares Personalizadas e Etiqueta ... :: https://www.meunominho.com.br/?srsltid=AU7gw4VZx56BA36Sr_Z2E9W29XMgjcDprvWgs0YCzqouirMrPeGrP1Is",
-  "Etiquetas Escolares Personalizadas Grátis para Imprimir :: https://fazendoanossafesta.com.br/2018/12/etiquetas-escolares.html/",
-  "Assistente de Etiquetas online :: https://www.herma.pt/buero-zuhause/vorlagen-software/assistente-de-etiquetas-online/"
- ],
- "Quanto de Feijão por Pessoa": [
-  "QUANTIDADE DE FEIJÃO POR PESSOA: Quantas gramas ... :: https://www.youtube.com/watch?v=gm8JjF_FKec&vl=pt-BR",
-  "Confira como calcular a quantidade certa de feijão :: https://www.tudogostoso.com.br/noticias/como-calcular-quantidade-certa-de-feijao-a3030.htm",
-  "Como Calcular a Quantidade de Feijão por Pessoa :: https://www.tiktok.com/@creiniane_oficial/video/7554008546367655179",
-  "COMO DEVO CALCULAR A QUANTIDADE DE FEIJÃO ... :: https://www.receitaesperta.com.br/2013/09/como-devo-calcular-quantidade-de-feijao.html",
-  "THE PERFECT AMOUNT OF RICE AND BEANS PER ... :: https://www.youtube.com/watch?v=nvQOz0NMHVo",
-  "Para calcular a quantidade de feijão. Por pessoa vai precisar ... :: https://www.facebook.com/creinianeoficial/videos/para-calcular-a-quantidade-de-feij%C3%A3opor-pessoa-vai-precisar-de-13-de-x%C3%ADcara-ch%C3%A1-/2983694361833965/",
-  "Quantidade de comida por pessoa: tabela para arroz, ... :: https://www.sazon.com.br/dica/como-calcular-a-quantidade-de-comida-por-pessoa",
-  "QUANTOS QUILOS DE FEIJÃO PARA 50 PESSOAS? :: https://www.youtube.com/watch?v=lEFSANvbIeM",
-  "Feijão tradicional :: https://panelinha.com.br/receita/feijao-caseiro-tradicional"
- ],
- "Quantos Pecos de Frango por Pessoa": [
-  "Pra quantas pessoas serve um frango de 1,7kg? : r/Cooking :: https://www.reddit.com/r/Cooking/comments/18z8x9o/how_many_people_will_a_17kg_chicken_serve/?tl=pt-br",
-  "QUANTOS QUILOS DE FRANGO PARA 30 PESSOAS? :: https://www.youtube.com/watch?v=5VUnv5weGww&vl=pt-BR",
-  "Quantas pessoas são necessárias para decorarem 15kg de ... :: https://www.instagram.com/reel/DMYjsRFBrSR/",
-  "QUANTOS QUILOS DE FRANGO PARA 20 PESSOAS? :: https://www.youtube.com/watch?v=sKR3E3xj4dc",
-  "Como calcular porção por pessoa? - Blog - Vapza :: https://blog.vapza.com.br/como-calcular-porcao-por-pessoa/",
-  "Sabendo calcular as quantidades de cada alimento! Como ... :: https://www.instagram.com/reel/DGQhr9uy6qb/",
-  "Atenção se você come mais de 300g de frango por ... :: https://www.tudogostoso.com.br/noticias/atencao-se-voce-come-mais-de-300g-de-frango-por-semana-novo-estudo-alerta-sobre-ser-benefico-moderar-o-consumo-de-aves-a20066.htm",
-  "1 KG DE FRANGO PARA STROGONOFF SERVE QUANTAS ... :: https://www.youtube.com/watch?v=uYjFECUxka4",
-  "Quantas refeições você tira de 1 frango? : r/Cooking :: https://www.reddit.com/r/Cooking/comments/1jqbk9n/how_many_meals_does_1_chicken_last_you/?tl=pt-br"
+  {
+   "title": "Quanto tempo dura um botijão de gás 13 kg: tabela 2025",
+   "link": "https://estrelamoveis.com.br/blog/quanto-tempo-dura-um-botijao-de-gas-13-kg/?srsltid=AU7gw4XUaMrIrfG_ZnvCbtlz97nJ_T0Cdnrj6xoCvPZT0ssWqSUQhYnY",
+   "snippet": "Quanto tempo dura um botijão de gás 13 kg: tabela por tamanho de família (2025) · 1 pessoa (uso leve, 30–40 min/dia): 60 a 90 dias. · 2 pessoas ..."
+  },
+  {
+   "title": "Aprenda a calcular a duração de um botijão de gás",
+   "link": "https://rescaroli.com.br/blog/aprenda-calcular-duracao-de-um-botijao-de-gas/",
+   "snippet": "Um botijão de gás de cozinha de 13 kg dura cerca de 50 dias, dependendo da quantidade de uso. Se a medida for em horas, aceso, um botijão de gás ..."
+  },
+  {
+   "title": "Você sabia que um botijão de gás de 13kg pode durar, em ...",
+   "link": "https://www.facebook.com/Kemigas/videos/voc%C3%AA-sabia-que-um-botij%C3%A3o-de-g%C3%A1s-de-13kg-pode-durar-em-m%C3%A9dia-at%C3%A9-42-dias-e-sabia/752359952315830/?locale=pt_BR",
+   "snippet": "Você sabia que um botijão de gás de 13kg pode durar, em média, até 42 dias?! E sabia também que ele sai a aproximadamente R$2,40 por dia?!"
+  },
+  {
+   "title": "Qual é a média de duração de um botijão de gás em uma ...",
+   "link": "https://www.sindigas.org.br/?p=40399",
+   "snippet": "O botijão de gás de 13 kg é o tamanho mais comum e utilizado pelas famílias brasileiras, e tem a média de duração de aproximadamente 50 dias. É ..."
+  },
+  {
+   "title": "【 Quanto tempo dura um gas de 13kg 】",
+   "link": "https://www.precodogas.com.br/quanto-tempo-dura-um-gas-de-13kg.php",
+   "snippet": "Então termos um gasto de 56,5 horas para um botijão de gás de 13kg(16,38m³), com o valor bruto de gás gasto. Levando em conta a equação: 16,38m³ ÷ 0,29m³ a cada ..."
+  },
+  {
+   "title": "Quanto tempo dura o gás na casa de vocês? Tem truque ...",
+   "link": "https://www.reddit.com/r/VidaAdulta/comments/1qctert/quanto_tempo_dura_o_g%C3%A1s_na_casa_de_voc%C3%AAs_tem/",
+   "snippet": "Seguinte: antes morava em um apartamento alugado e o gás era encanado e eu não pagava pelo contrato. Daí mudei pra uma casa no começo de Outubro ..."
+  },
+  {
+   "title": "Calculadora Duração do Gás 13kg 2026 | Consumo e Custo",
+   "link": "https://calculadorabrasil.com.br/duracao-gas/",
+   "snippet": "Duração do botijão: 118 dias (quase 4 meses!) Consumo diário: 110 g (muito pouco); Custo mensal: R$ 24,13; Dica da calculadora: “ Seu uso ..."
+  },
+  {
+   "title": "Como Fazer o Gás de Cozinha Durar Mais: Dicas Útil Gás DF",
+   "link": "https://www.utilgas.com.br/blog/como-fazer-gas-cozinha-durar-mais-dicas-praticas-Util-gas-df-economizar",
+   "snippet": "A duração de um botijão de 13kg varia bastante. Para uma família pequena (1-2 pessoas), pode durar de 45 a 90 dias. Para famílias maiores (3-4 ..."
+  },
+  {
+   "title": "Botijão de Gás 2026: Quanto Tempo Dura por Família",
+   "link": "https://calculadorabrasil.com.br/lifestyle/botijao-gas/",
+   "snippet": "O cálculo é simples: um botijão de 13kg rende ~260 horas de fogão ligado contínuo, ou ~35 horas de forno ligado, ou ~50 horas de aquecedor. Traduzindo para vida ..."
+  }
  ],
  "Quantas Cabeças de Gado por Hectare": [
-  "Quantas cabeças de gado cabem em um hectare? - Giro do Boi :: https://girodoboi.canalrural.com.br/pecuaria/quantas-cabecas-de-gado-cabem-em-um-hectare/",
-  "Tenho 4 Hectares: Quantas Cabeças de Gado Consigo Criar ... :: https://www.youtube.com/shorts/xcU-1y-XE64",
-  "QUAL O NÚMERO IDEAL DE ANIMAIS POR HECTARE? :: https://www.youtube.com/watch?v=vzE0A5NwSYY",
-  "Quantas cabeças de gado cabem por hectare? :: https://tecbov.com.br/quantas-cabecas-de-gado-por-hectare/",
-  "Quantas cabeças cabem em 10 hectares? A maioria ... :: https://www.instagram.com/p/DYAjIX7mBDf/",
-  "Você consegue imaginar 350 cabeças de gado sendo ... :: https://www.facebook.com/girodoboi/videos/voc%C3%AA-consegue-imaginar-350-cabe%C3%A7as-de-gado-sendo-produzidas-em-apenas-50-hectare/1953277052002943/",
-  "Número de bovinos por hectare cresce no Brasil pela ... :: https://www.sistemafaep.org.br/numero-de-bovinos-por-hectare-cresce-no-brasil-pela-primeira-vez/",
-  "How many head of cattle per hectare? :: https://www.youtube.com/watch?v=HBe7CjmjcSY&vl=pt"
+  {
+   "title": "Quantas cabeças de gado cabem em um hectare? - Giro do Boi",
+   "link": "https://girodoboi.canalrural.com.br/pecuaria/quantas-cabecas-de-gado-cabem-em-um-hectare/",
+   "snippet": "A quantidade de cabeças de gado por hectare depende do tipo de manejo de pasto adotado pela fazenda."
+  },
+  {
+   "title": "Tenho 4 Hectares: Quantas Cabeças de Gado Consigo Criar ...",
+   "link": "https://www.youtube.com/shorts/xcU-1y-XE64",
+   "snippet": "Olá, pessoal! Trecho extraído do trabalho talentoso do Victor Darido, pecuarista e consultor que responde muitas dúvidas aos seus seguidores ..."
+  },
+  {
+   "title": "QUAL O NÚMERO IDEAL DE ANIMAIS POR HECTARE?",
+   "link": "https://www.youtube.com/watch?v=vzE0A5NwSYY",
+   "snippet": "... gado: https://bit.ly/48lS1nR Caso não tenha a que você procura, clique no link e confira todas as nossas receitas e e-books exclusivos ..."
+  },
+  {
+   "title": "Quantas cabeças de gado cabem por hectare?",
+   "link": "https://tecbov.com.br/quantas-cabecas-de-gado-por-hectare/",
+   "snippet": "Enfim, quantas cabeças de gado cabem por hectare irá depender do tipo de sistema de produção implantado na produção, a gramínea utilizada, entre ..."
+  },
+  {
+   "title": "Quantas cabeças cabem em 10 hectares? A maioria ...",
+   "link": "https://www.instagram.com/p/DYAjIX7mBDf/",
+   "snippet": "Quantas cabeças cabem em 10 hectares? A maioria ainda responde no automático: 2, 3… no máximo 4 por hectare."
+  },
+  {
+   "title": "Você consegue imaginar 350 cabeças de gado sendo ...",
+   "link": "https://www.facebook.com/girodoboi/videos/voc%C3%AA-consegue-imaginar-350-cabe%C3%A7as-de-gado-sendo-produzidas-em-apenas-50-hectare/1953277052002943/",
+   "snippet": "Você consegue imaginar 350 cabeças de gado sendo produzidas em apenas 50 hectares? Assista ... hectare. Quem investe em manejo e intensificação ..."
+  },
+  {
+   "title": "Número de bovinos por hectare cresce no Brasil pela ...",
+   "link": "https://www.sistemafaep.org.br/numero-de-bovinos-por-hectare-cresce-no-brasil-pela-primeira-vez/",
+   "snippet": "A melhor média de adesão de bovinos no país é da região Sul, com aproximadamente 1,63 cabeças de gado por hectare de pastagem, no Sudeste a ..."
+  },
+  {
+   "title": "How many head of cattle per hectare?",
+   "link": "https://www.youtube.com/watch?v=HBe7CjmjcSY&vl=pt",
+   "snippet": "... cabeças de gado” não é suficiente para tomar decisão na fazenda, e por que trabalhar com unidade animal faz toda a diferença no manejo. Você ..."
+  }
  ],
  "Quantas Galinhas Poedeiras por m²": [
-  "Quantas galinhas por metro quadrado no galpão e na área de ... :: https://www.youtube.com/watch?v=L7JkYPNMcDw",
-  "Quantas galinhas poedeiras eu devo considerar por metro ... :: https://www.tiktok.com/@escoladeavicultores/video/7620461697207225621",
-  "Avicultura on Instagram: \"Quantas galinhas poedeiras eu ... :: https://www.instagram.com/reel/DWOwgyAkcNs/",
-  "Instalações para galinhas poedeiras e bem-estar animal :: https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1133408/1/final9667.pdf",
-  "Avicultura on Instagram: \"Galpão para 1000 galinhas ... :: https://www.instagram.com/reel/C5RcxmJPjAK/",
-  "YouTube :: https://www.youtube.com/watch?v=6_cdQWQ0igQ",
-  "Quantas galinhas por metro quadrado devo trabalhar ... :: https://www.instagram.com/p/CjWKJnvvPJo/",
-  "Projeto de Galinha Poedeira: Estrutura e Espacialidade :: https://www.tiktok.com/@escoladeavicultores/video/7545595461000826168",
-  "How many laying hens should you put per square meter? :: https://www.youtube.com/shorts/yC69XwbbwdQ"
- ],
- "Quanto Gasta um Aquário": [
-  "Consumo de Energia dos Aparelhos de Aquário :: https://gruposarlo.com.br/2025/10/20/consumo-de-energia-no-aquario/",
-  "Oi pessoal, vocês já questionaram qual o impacto na conta de ... :: https://www.facebook.com/aquaticabrazil/videos/quanto-um-aqu%C3%A1rio-gasta-de-energia-el%C3%A9trica-veja-cada-item-separadamente/644228553440990/",
-  "Quanto será que o aquário pesa na sua conta de energia ... :: https://www.instagram.com/reel/DSXkrVyjQgh/",
-  "Quanto custa por mês pra manter seu aquário ligado? ... :: https://www.reddit.com/r/Aquariums/comments/1nlnzkg/how_much_does_it_cost_a_month_to_power_your/?tl=pt-br",
-  "Quanto custa manter um aquário? :: https://detrasdaorelha.weebly.com/aquariofilia/quanto-gasta-um-aquario",
-  "Gente me tira uma dúvida aquário gasta muita energia? :: https://www.facebook.com/groups/amantesdoaquarismo/posts/3071788443159777/",
-  "Saiba quanto custa um aquário e como escolher o melhor :: https://blog.cobasi.com.br/quanto-custa-um-aquario/"
+  {
+   "title": "Quantas galinhas por metro quadrado no galpão e na área de ...",
+   "link": "https://www.youtube.com/watch?v=L7JkYPNMcDw",
+   "snippet": "Quantas galinhas por metro quadrado devo trabalhar dentro do galpão? A escolha correta da quantidade de aves/m² depende de vários fatores, ..."
+  },
+  {
+   "title": "Quantas galinhas poedeiras eu devo considerar por metro ...",
+   "link": "https://www.tiktok.com/@escoladeavicultores/video/7620461697207225621",
+   "snippet": "Quantas galinhas poedeiras eu devo considerar por metro quadrado dentro do galpão? Depende da idade da ave! Pintainhas recém-chegadas por ..."
+  },
+  {
+   "title": "Avicultura on Instagram: \"Quantas galinhas poedeiras eu ...",
+   "link": "https://www.instagram.com/reel/DWOwgyAkcNs/",
+   "snippet": "Depende da idade da ave! Pintainhas recém-chegadas por exemplo, dá pra trabalhar com 21 aves por metro quadrado! Frangas entre 15 a 12 aves por ..."
+  },
+  {
+   "title": "Instalações para galinhas poedeiras e bem-estar animal",
+   "link": "https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1133408/1/final9667.pdf",
+   "snippet": "aves mantidas em galpões com acesso a área externa. (piquete) para pastejo, respeitando as densidades de alojamento de 7 (sete) aves por metro quadrado no ..."
+  },
+  {
+   "title": "Avicultura on Instagram: \"Galpão para 1000 galinhas ...",
+   "link": "https://www.instagram.com/reel/C5RcxmJPjAK/",
+   "snippet": "11K likes, 139 comments - escoladeavicultores on April 2, 2024: \"Galpão para 1000 galinhas poedeiras 18x8 = 144 metros quadrados 35 mourões ..."
+  },
+  {
+   "title": "Quantas galinhas por metro quadrado devo trabalhar ...",
+   "link": "https://www.instagram.com/p/CjWKJnvvPJo/",
+   "snippet": "Conforme a ave vai crescendo, vai demandando mais espaço. Para fase de crescimento (recria) calculamos de 12 a 15 aves/m². E para fase adulta."
+  },
+  {
+   "title": "YouTube",
+   "link": "https://www.youtube.com/watch?v=6_cdQWQ0igQ",
+   "snippet": "Share your videos with friends, family, and the world."
+  },
+  {
+   "title": "Projeto de Galinha Poedeira: Estrutura e Espacialidade",
+   "link": "https://www.tiktok.com/@escoladeavicultores/video/7545595461000826168",
+   "snippet": "Projeto para 100 galinhas poedeiras: Galpão: 4 x 6 m (24 m²). Área externa/pasto: 50 m². Bebedouros: 2 pendulares. Comedouros: 3 a 4 ..."
+  },
+  {
+   "title": "Certificação de galinhas poedeiras: conheça as regras",
+   "link": "https://certifiedhumanebrasil.org/certificacao-de-galinhas-poedeiras-conheca-as-regras/",
+   "snippet": "Exige-se que seja oferecido 1 ninho individual para cada 5 galinhas poedeiras, ou 0,8 m² de área de ninho coletivo para cada 100 aves. É ..."
+  }
  ],
  "Quanto Gasta um Aquecedor a Gás": [
-  "Qual o consumo médio do aquecedor a gás :: https://norteaquecedores.com.br/consumo-medio-aquecedor-a-gas/",
-  "Consumo Médio de Aquecedor a Gás :: https://vipaquecedores.com.br/noticias-e-dicas-aquecedor-gas.php?url=consumo-medio-de-aquecedor-a-gas",
-  "Os aquecedores a gás gastam muita energia? :: https://www.rheem.com.br/os-aquecedores-a-gas-gastam-muita-energia/",
-  "qual a economia de um aquecedor a gás no chuveiro? :: https://www.youtube.com/watch?v=_gP2wfLjUZc",
-  "Aquecedor a gás: qual o consumo médio? Aumenta muito ... :: https://ssmengenharia.com.br/noticias/aquecedor-a-gas-qual-o-consumo-medio-aumenta-muito-no-inverno/",
-  "Aquecedor a gás x chuveiro elétrico: qual é mais econômico? :: https://bigtek.com.br/aquecedor-a-gas/",
-  "O seu aquecedor a gás gasta muita energia elétrica? Aperte o ... :: https://www.tiktok.com/@komecobrasil/video/7203740599860710661",
-  "Simulador de Aquecedor de Água e Gás :: https://www.leveros.com.br/pagina/simulador-aquecedor/?srsltid=AU7gw4WeQt1U8tOSB8f2HhkTMpWglIQBA7TiYMj1Rr_nNbZAOM007o7t",
-  "Quanto vocês gastam por mês com gás encanado? :: https://www.reddit.com/r/saopaulo/comments/1ex36k9/quanto_voc%C3%AAs_gastam_por_m%C3%AAs_com_g%C3%A1s_encanado/"
+  {
+   "title": "Qual o consumo médio do aquecedor a gás",
+   "link": "https://norteaquecedores.com.br/consumo-medio-aquecedor-a-gas/",
+   "snippet": "Contabilizado em metros cúbicos, cada unidade de gás custa R$2,89. Em uma casa com quatro pessoas que costumam tomar um banho diário, o consumo chega em média à ..."
+  },
+  {
+   "title": "Consumo Médio de Aquecedor a Gás",
+   "link": "https://vipaquecedores.com.br/noticias-e-dicas-aquecedor-gas.php?url=consumo-medio-de-aquecedor-a-gas",
+   "snippet": "Aquecedor de 11 a 15 litros: Consome entre 1,30 m³/h e 1,80 m³/h de gás natural, ou entre 0,09 kg/h e 0,13 kg/h de GLP."
+  },
+  {
+   "title": "Os aquecedores a gás gastam muita energia?",
+   "link": "https://www.rheem.com.br/os-aquecedores-a-gas-gastam-muita-energia/",
+   "snippet": "O custo de um aquecedor vai depender, primeiramente, da quantidade de uso na residência. Podemos fazer o seguinte cálculo: em metros cúbicos, a unidade do gás ..."
+  },
+  {
+   "title": "Aquecedor a gás x chuveiro elétrico: qual é mais econômico?",
+   "link": "https://bigtek.com.br/aquecedor-a-gas/",
+   "snippet": "O aquecedor a gás tem consumo em metros cúbicos (GN) ou em quilos (GLP). Para uma família de quatro pessoas, o gasto médio é de 7 a 9 m³ de gás por mês (GN) ou ..."
+  },
+  {
+   "title": "Electric vs. Gas Heating Comparison",
+   "link": "https://www.youtube.com/watch?v=TQcVA_xCRjc",
+   "snippet": "Nossos queridos professores fazem uma demonstração clara, por meio de cálculos, o que é mais vantajoso economicamente e para o ambiente, ..."
+  },
+  {
+   "title": "Aquecedor a gás: qual o consumo médio? Aumenta muito ...",
+   "link": "https://ssmengenharia.com.br/noticias/aquecedor-a-gas-qual-o-consumo-medio-aumenta-muito-no-inverno/",
+   "snippet": "Segundo uma estimativa de fabricantes, uma família de quatro pessoas, que tomam um banho diário cada, faz o aquecedor consumir 0,60 m³ de gás ..."
+  },
+  {
+   "title": "Chuveiro elétrico ou aquecedor a gás: economia ou conforto",
+   "link": "https://www.lojadoaquecedoragas.com.br/chuveiro-eletrico-ou-aquecedor-a-gas-economia-ou-conforto?srsltid=AU7gw4Xn-pzSfG4lwCzY1G0iEW98q04ydmJTtEIDy8asaDpTN8BQj79P",
+   "snippet": "Chuveiro elétrico 7.500 W, 6 L/min, 10 min, R$ 1,14 ; Aquecedor a gás, 6 L/min, 10 min, R$ 1,54."
+  }
  ],
  "Quanto Gasta um Aspirador de Pó": [
-  "Aspiradores de pó gastam muita energia? Veja a conta :: https://origoenergia.com.br/blog/aspiradores-de-po-gastam-muita-energia-veja-a-resposta-aqui/",
-  "O aspirador de pó gasta muita energia? Confira a resposta! :: https://bulbeenergia.com.br/blog/aspiradores-de-po-gastam-muita-energia/",
-  "O aspirador de pó gasta muita energia? Descubra aqui! :: https://esferaenergia.com.br/blog/economizar-em-casa/aspirador-po-gasta-muita-energia/",
-  "Aspirador de pó: um superguia com tudo o que você ... :: https://cuida.electrolux.com.br/artigos/aspirador-de-po-um-superguia-com-tudo-o-que-voce-precisa-saber-para-escolher-o-seu",
-  "Você sabe se o aspirador de pó gasta muita energia elétrica ... :: https://revistacasaejardim.globo.com/Casa-e-Jardim/Dicas/Compras/noticia/2022/04/voce-sabe-se-o-aspirador-de-po-gasta-muita-energia-eletrica-descubra.html",
-  "Aspirador de Pó Gasta Muita Energia? Saiba Como ... :: https://turontecnologia.com.br/blog/aspirador-de-po-gasta-muita-energia/",
-  "robot vacuum cleaner power consumption : r/RobotVacuums :: https://www.reddit.com/r/RobotVacuums/comments/1h0z9kj/robot_vacuum_cleaner_power_consumption/?tl=pt-br",
-  "EE em casa: deixe seu aspirador de pó mais eficiente :: https://monitoree.org.br/ee-em-casa3"
+  {
+   "title": "Aspiradores de pó gastam muita energia? Veja a conta",
+   "link": "https://origoenergia.com.br/blog/aspiradores-de-po-gastam-muita-energia-veja-a-resposta-aqui/",
+   "snippet": "O consumo mensal do aspirador de pó é calculado considerando o tempo de uso e a sua potência. Por exemplo, se você usar um modelo de 1500 watts ..."
+  },
+  {
+   "title": "O aspirador de pó gasta muita energia? Confira a resposta!",
+   "link": "https://bulbeenergia.com.br/blog/aspiradores-de-po-gastam-muita-energia/",
+   "snippet": "O aspirador de pó não é um grande consumidor de energia. De acordo com a Aneel, ele consome entre 1 e 1,5 kWh por dia. Confira o gasto mensal!"
+  },
+  {
+   "title": "O aspirador de pó gasta muita energia? Descubra aqui!",
+   "link": "https://esferaenergia.com.br/blog/economizar-em-casa/aspirador-po-gasta-muita-energia/",
+   "snippet": "Então, o consumo mensal de energia elétrica do aspirador (7,17 kWh) multiplicado pela tarifa (0,63 x 7,17) resulta em R$ 4,51 por hora. Imagine ..."
+  },
+  {
+   "title": "Aspirador de pó: um superguia com tudo o que você ...",
+   "link": "https://cuida.electrolux.com.br/artigos/aspirador-de-po-um-superguia-com-tudo-o-que-voce-precisa-saber-para-escolher-o-seu",
+   "snippet": "Aspirador de pó gasta muita energia? Depende! Os aspiradores de pó, assim como a maioria dos eletrodomésticos modernos, estão sendo pensados e produzidos de ..."
+  },
+  {
+   "title": "Você sabe se o aspirador de pó gasta muita energia elétrica ...",
+   "link": "https://revistacasaejardim.globo.com/Casa-e-Jardim/Dicas/Compras/noticia/2022/04/voce-sabe-se-o-aspirador-de-po-gasta-muita-energia-eletrica-descubra.html",
+   "snippet": "Se usar o equipamento por 30 minutos todos os dias em um mês (R$ 0,48, valor equivalente a 30 minutos de uso X 30 dias), o gasto total será de R ..."
+  },
+  {
+   "title": "Aspirador de Pó Gasta Muita Energia? Saiba Como ...",
+   "link": "https://turontecnologia.com.br/blog/aspirador-de-po-gasta-muita-energia/",
+   "snippet": "Um aspirador de pó convencional pode consumir entre 800 e 2.000 watts durante seu funcionamento, sendo um dos aparelhos domésticos que mais contribuem para o ..."
+  },
+  {
+   "title": "robot vacuum cleaner power consumption : r/RobotVacuums",
+   "link": "https://www.reddit.com/r/RobotVacuums/comments/1h0z9kj/robot_vacuum_cleaner_power_consumption/?tl=pt-br",
+   "snippet": "Os aspiradores de pó americanos são de baixa potência com 120V? ... Melhor aspirador de pó robô por menos de $300? r/RobotVacuums. • 8d ..."
+  },
+  {
+   "title": "EE em casa: deixe seu aspirador de pó mais eficiente",
+   "link": "https://monitoree.org.br/ee-em-casa3",
+   "snippet": "Então, nos custa R$ 1,19 toda vez que usamos o aspirador durante uma hora. Se você usar o aparelho por 15 minutos, todos os dias, em um mês de ..."
+  }
  ],
  "Quanto Gasta uma Cafeteira Elétrica": [
-  "12 vilões da energia elétrica :: https://sunsetenergia.com.br/12-viloes-da-energia-eletrica/",
-  "Cafeteira gasta muita energia? Entenda o consumo e ... :: https://www.techtudo.com.br/guia/2025/04/cafeteira-gasta-muita-energia-entenda-o-consumo-e-saiba-economizar-lb.ghtml",
-  "Cafeteira Elétrica Gasta Muita Energia? :: https://paixaoporcafe.com.br/cafeteira-eletrica-gasta-muita-energia",
-  "Quanto gasta usar cafeteira elétrica diariamente ou ... :: https://revistaoeste.com/oestegeral/2026/03/30/quanto-gasta-usar-cafeteira-eletrica-diariamente-ou-preparar-cafe-no-fogao-no-mesmo-periodo/",
-  "Cafeteira Gasta Muita Energia? Consumo Real por Mês :: https://www.casadoseletrodomesticos.com.br/cafeteira-gasta-muita-energia-consumo",
-  "Cafeteira é a culpada na conta de luz? :: https://www.tiktok.com/@henriquerrangel/video/7116524936809696517",
-  "Se a cafeteira ficar ligada durante 1h por dia, por exemplo, ... :: https://brainly.com.br/tarefa/29786143",
-  "Cafeteira elétrica virou vilã da conta de luz? Entenda por ... :: https://www.estadao.com.br/einvestidor/radar/cafeteira-eletrica-virou-vila-conta-luz-entenda/?srsltid=AU7gw4WImIOf0Qr63qqjtBAyWPmM7H-mlxIZ0Dt_dMtP3AL08GFBxmle"
+  {
+   "title": "12 vilões da energia elétrica",
+   "link": "https://sunsetenergia.com.br/12-viloes-da-energia-eletrica/",
+   "snippet": "Uma cafeteira tradicional possui uma potência média de 500 W. Então se utilizarmos por 1 hora todos os dias, para manter o café aquecido, temos ..."
+  },
+  {
+   "title": "Cafeteira gasta muita energia? Entenda o consumo e ...",
+   "link": "https://www.techtudo.com.br/guia/2025/04/cafeteira-gasta-muita-energia-entenda-o-consumo-e-saiba-economizar-lb.ghtml",
+   "snippet": "Uma cafeteira de tamanho e potência padrão, usada por 1 hora por dia, consome, em média, 15 kWh por mês. Já um modelo maior e com maior potência ..."
+  },
+  {
+   "title": "Cafeteira Elétrica Gasta Muita Energia?",
+   "link": "https://paixaoporcafe.com.br/cafeteira-eletrica-gasta-muita-energia",
+   "snippet": "A cafeteira elétrica não gasta muita energia: a potência de 550 a 1000 W dura só os poucos minutos do preparo, e o consumo mensal é baixo. Ela é ..."
+  },
+  {
+   "title": "Quanto gasta usar cafeteira elétrica diariamente ou ...",
+   "link": "https://revistaoeste.com/oestegeral/2026/03/30/quanto-gasta-usar-cafeteira-eletrica-diariamente-ou-preparar-cafe-no-fogao-no-mesmo-periodo/",
+   "snippet": "Se a tarifa final da casa ficar em torno de R$ 1,00 por kWh, esse uso diário custaria aproximadamente R$ 4,00 por mês. Se a tarifa real da sua ..."
+  },
+  {
+   "title": "Cafeteira Gasta Muita Energia? Consumo Real por Mês",
+   "link": "https://www.casadoseletrodomesticos.com.br/cafeteira-gasta-muita-energia-consumo",
+   "snippet": "A cafeteira elétrica de filtro não gasta muita energia: coar sai por cerca de 0,13–0,17 kWh, o que dá 4 a 5 kWh mensais com um preparo diário. O ..."
+  },
+  {
+   "title": "Cafeteira é a culpada na conta de luz?",
+   "link": "https://www.tiktok.com/@henriquerrangel/video/7116524936809696517",
+   "snippet": "É Normal A Cafeteira Elétricas ... Panela De Pressão Elétrica Gasta Muita Energia · Desmontando Cafeteira Cafeteira Elétrica Electrolux Ecm30."
+  },
+  {
+   "title": "Se a cafeteira ficar ligada durante 1h por dia, por exemplo, ...",
+   "link": "https://brainly.com.br/tarefa/29786143",
+   "snippet": "1h = 300 Wh Portanto, o consumo de energia elétrica da cafeteira é de 300 Wh por dia. a) Qual dos aparelhos consome mais energia elétrica? b) Se ..."
+  },
+  {
+   "title": "Cafeteira elétrica virou vilã da conta de luz? Entenda por ...",
+   "link": "https://www.estadao.com.br/einvestidor/radar/cafeteira-eletrica-virou-vila-conta-luz-entenda/?srsltid=AU7gw4XY9Q0uK-iM0zGMb4X5qg5I9P53iDy08O9gCs6kmsNICR04K9Re",
+   "snippet": "Conforme matéria do E-Investidor, o que muitos não sabem é que a cafeteira elétrica continua consumindo energia mesmo quando não está preparando ..."
+  }
  ],
  "Quanto Gasta uma Câmera de Segurança": [
-  "Do security cameras use as much power as a light bulb? Does ... :: https://www.youtube.com/watch?v=Ocv_K8c2ljc",
-  "Custo Mensal de Câmeras de Segurança Wi-Fi :: https://www.tiktok.com/@maisqueeficiencia/video/7486786850409991479",
-  "Câmeras de segurança gastam muita energia? Descubra :: https://www.divsseguranca.com.br/cameras-de-seguranca-pesam-na-conta-de-luz/",
-  "Does a security camera consume the same amount of energy ... :: https://www.youtube.com/shorts/ej4x9aj3LgI",
-  "Consumo de energia da câmera interna 2k : r/EufyCam :: https://www.reddit.com/r/EufyCam/comments/h8o4c5/indoor_cam_2k_power_consumption/?tl=pt-br",
-  "Melhor internet de Uberlândia on Instagram: \"Câmera de ... :: https://www.instagram.com/reel/DFpvAdOPDP6/",
-  "quantos dados consome uma câmara de vigilância :: https://veesion.io/pt/camaras-conectadas-quantos-dados-consome-uma-camara-de-vigilancia/",
-  "Câmera de segurança aumenta a conta de luz? :: https://secsystem.com.br/blog/camera-de-seguranca-aumenta-conta-de-luz/"
+  {
+   "title": "Do security cameras use as much power as a light bulb? Does ...",
+   "link": "https://www.youtube.com/watch?v=Ocv_K8c2ljc",
+   "snippet": "link do mercado livre CAMERA IP a8pro https://meli.la/1uSAiqs CAMERA IP a8pro https://mercadolivre.com/sec/2Lr88cw NVR WI-FI mercado ..."
+  },
+  {
+   "title": "Custo Mensal de Câmeras de Segurança Wi-Fi",
+   "link": "https://www.tiktok.com/@maisqueeficiencia/video/7486786850409991479",
+   "snippet": "Descubra quanto você gasta por mês com câmeras Wi-Fi. Desde 50 centavos até. @Marco Souto - Economia ⚡️ ."
+  },
+  {
+   "title": "Câmeras de segurança gastam muita energia? Descubra",
+   "link": "https://www.divsseguranca.com.br/cameras-de-seguranca-pesam-na-conta-de-luz/",
+   "snippet": "Em média, uma única câmera ligada 24h custa entre R$1,50 e R$3,00 por mês, dependendo da tarifa de energia da sua região. Um sistema completo ..."
+  },
+  {
+   "title": "Consumo de energia da câmera interna 2k : r/EufyCam",
+   "link": "https://www.reddit.com/r/EufyCam/comments/h8o4c5/indoor_cam_2k_power_consumption/?tl=pt-br",
+   "snippet": "Ninguém pediu, mas eu medi o consumo de energia da minha câmera interna. É 1 watt durante o dia e 2 watts quando a visão noturna está ligada ..."
+  },
+  {
+   "title": "Does a security camera consume the same amount of energy ...",
+   "link": "https://www.youtube.com/shorts/ej4x9aj3LgI",
+   "snippet": "Does a security camera consume the same amount of energy as a light bulb? Does it make a big diff... 61. 0. Share. Video unavailable."
+  },
+  {
+   "title": "Melhor internet de Uberlândia on Instagram: \"Câmera de ...",
+   "link": "https://www.instagram.com/reel/DFpvAdOPDP6/",
+   "snippet": "Para minimizar o impacto no consumo de internet, considere ajustar a resolução da câmera para um nível adequado às suas necessidades, utilizar ..."
+  },
+  {
+   "title": "Câmera de segurança aumenta a conta de luz?",
+   "link": "https://secsystem.com.br/blog/camera-de-seguranca-aumenta-conta-de-luz/",
+   "snippet": "Câmera isolada: consumo baixo, entre 3W e 8W em modelos IP/Wi-Fi comuns. Impacto na conta: poucos centavos por mês, mesmo ligada 24h. Sistema ..."
+  },
+  {
+   "title": "quantos dados consome uma câmara de vigilância",
+   "link": "https://veesion.io/pt/camaras-conectadas-quantos-dados-consome-uma-camara-de-vigilancia/",
+   "snippet": "Se a câmara estiver a filmar continuamente durante 24 h, esta consome, assim, entre 1,5 a 3 GB; · É, assim, necessário um plano mensal de 45 a 90 ..."
+  }
  ],
  "Quanto Gasta uma Chaleira Elétrica": [
-  "Quanto pesa no bolso usar a chaleira elétrica todos os dias :: https://www.uai.com.br/curiosidades/2025/09/07/quanto-pesa-no-bolso-usar-a-chaleira-eletrica-todos-os-dias/",
-  "Quanto gasta uma chaleira elétrica? #maisqueeficiencia ... :: https://www.instagram.com/reel/DVt6HHPjyus/",
-  "Economize Energia :: https://cerej.com.br/economize-energia/",
-  "VEGINI MotorHome on Instagram: \"Muita gente não sabe, mas ... :: https://www.instagram.com/reel/DTyd_OpkrrP/",
-  "Quanto gasta uma chaleira elétrica por mês? :: https://gastodomestico.com.br/quanto-gasta-uma-chaleira-eletrica-por-mes/",
-  "Este aparelho é o verdadeiro culpado pelo aumento da sua ... :: https://tvi.iol.pt/doisas10/chaleira-eletrica/pequeno-eletrodomestico/este-aparelho-e-o-verdadeiro-culpado-pelo-aumento-da-sua-conta-da-luz",
-  "Electric Kettle energy consumption :: https://www.youtube.com/shorts/fNOu5EZwnfA"
+  {
+   "title": "Quanto pesa no bolso usar a chaleira elétrica todos os dias",
+   "link": "https://www.uai.com.br/curiosidades/2025/09/07/quanto-pesa-no-bolso-usar-a-chaleira-eletrica-todos-os-dias/",
+   "snippet": "Veja quanto uma chaleira elétrica realmente consome por mês e aprenda a calcular o impacto na sua conta de luz de forma simples."
+  },
+  {
+   "title": "Quanto gasta uma chaleira elétrica? #maisqueeficiencia ...",
+   "link": "https://www.instagram.com/reel/DVt6HHPjyus/",
+   "snippet": "Chaleira elétrica Britânia: 1,8 litro, inox, desligamento automático. Aquece água em minutos, economiza gás, não deforma e nem amarela."
+  },
+  {
+   "title": "Economize Energia",
+   "link": "https://cerej.com.br/economize-energia/",
+   "snippet": "Cafeteira elétrica, 30, 1h, 6,56. Chaleira elétrica, 30, 1h, 28,23. Chuveiro elétrico – 4500 W, 30, 32 min, 72,00. Chuveiro elétrico – 5500 W, 30, 32 min, 88,00."
+  },
+  {
+   "title": "VEGINI MotorHome on Instagram: \"Muita gente não sabe, mas ...",
+   "link": "https://www.instagram.com/reel/DTyd_OpkrrP/",
+   "snippet": "Muita gente não sabe, mas uma chaleira elétrica pode consumir energia equivalente a DOIS ar-condicionados ou DOIS micro-ondas ligados ao mesmo ..."
+  },
+  {
+   "title": "Quanto gasta uma chaleira elétrica por mês?",
+   "link": "https://gastodomestico.com.br/quanto-gasta-uma-chaleira-eletrica-por-mes/",
+   "snippet": "Consumo médio mensal de uma chaleira elétrica · 1.800 W · 5 a 10 minutos por uso · 10 kWh e 25 kWh, dependendo da frequência diária. Mesmo em cenários de uso ..."
+  },
+  {
+   "title": "Este aparelho é o verdadeiro culpado pelo aumento da sua ...",
+   "link": "https://tvi.iol.pt/doisas10/chaleira-eletrica/pequeno-eletrodomestico/este-aparelho-e-o-verdadeiro-culpado-pelo-aumento-da-sua-conta-da-luz",
+   "snippet": "O que muitos desconhecem é que este pequeno aparelho tem um consumo energético bastante elevado. Segundo o El País, que cita a organização ..."
+  },
+  {
+   "title": "Qual a chaleira elétrica mais eficiente para ferver 1 ou 2 ...",
+   "link": "https://www.reddit.com/r/CampingGear/comments/1iakmkr/most_efficient_electric_kettle_to_boil_1_or_2_cups/?tl=pt-pt",
+   "snippet": "Tou à procura do aparelho mais eficiente para ferver água, que funcione com um sistema de bateria alimentado por energia solar. Que também dê para ..."
+  }
  ],
  "Quanto Gasta um Chuveiro Elétrico": [
-  "Chuveiro elétrico: custo do banho em R$ e consumo ... :: https://dyona.com.br/pt-br/dyonaos.blog/quanto-custa-banho-chuveiro-brasil/",
-  "Chuveiro econômico: reduza a conta de luz com conforto ... - G1 :: https://g1.globo.com/pr/parana/especial-publicitario/balaroti/noticia/2025/10/10/chuveiro-economico-reduza-a-conta-de-luz-com-conforto-e-tecnologia.ghtml",
-  "4 aparelhos que consomem mais energia dentro de casa :: https://yellot.com.br/economia-domestica/4-aparelhos-que-consomem-mais-energia-dentro-de-casa/",
-  "Chuveiro elétrico gasta muita energia? :: https://bulbeenergia.com.br/blog/chuveiro-eletrico-gasta-muita-energia/",
-  "Calculadora de Consumo de Chuveiro Elétrico :: https://anunciandoprodutos.com.br/calculadora-de-consumo-de-chuveiro-eletrico/",
-  "Chuveiro elétrico: consome muita ou pouca energia? Nós ... :: https://www.facebook.com/lightclientes/videos/consumo-de-energia-de-um-chuveiro-el%C3%A9trico/1173431150977361/",
-  "Chuveiro elétrico: como economizar energia? :: https://enerbras.com.br/chuveiro-eletrico/"
+  {
+   "title": "Chuveiro elétrico: custo do banho em R$ e consumo ...",
+   "link": "https://dyona.com.br/pt-br/dyonaos.blog/quanto-custa-banho-chuveiro-brasil/",
+   "snippet": "Exemplo 1 (banho “realista”) · Custo por banho: ~R$ 0,79 · Custo mensal (1 pessoa / 1 banho por dia): ~R$ 23,80 · Custo mensal (4 pessoas / 1 ..."
+  },
+  {
+   "title": "Chuveiro econômico: reduza a conta de luz com conforto ... - G1",
+   "link": "https://g1.globo.com/pr/parana/especial-publicitario/balaroti/noticia/2025/10/10/chuveiro-economico-reduza-a-conta-de-luz-com-conforto-e-tecnologia.ghtml",
+   "snippet": "Em uma residência comum, o chuveiro elétrico pode representar até 25% do consumo total de energia, segundo dados da Agência Nacional de Energia ..."
+  },
+  {
+   "title": "4 aparelhos que consomem mais energia dentro de casa",
+   "link": "https://yellot.com.br/economia-domestica/4-aparelhos-que-consomem-mais-energia-dentro-de-casa/",
+   "snippet": "Campeão no quesito consumo de energia, o chuveiro elétrico representa em média de 25% a 35% no valor da conta. Simulando o uso diário de um ..."
+  },
+  {
+   "title": "Chuveiro elétrico gasta muita energia?",
+   "link": "https://bulbeenergia.com.br/blog/chuveiro-eletrico-gasta-muita-energia/",
+   "snippet": "O chuveiro elétrico consome bastante energia, cerca de 5,5 kWh por dia. Por isso, é importante usá-lo de forma consciente. Confira dicas para economizar!"
+  },
+  {
+   "title": "Chuveiro elétrico: consome muita ou pouca energia? Nós ...",
+   "link": "https://www.facebook.com/lightclientes/videos/consumo-de-energia-de-um-chuveiro-el%C3%A9trico/1173431150977361/",
+   "snippet": "Nós vamos te explicar! Se usado por 40 minutos por dia, ele pode gastar até 89,1 kWh por mês. Assista ao vídeo e confira o quanto isso ..."
+  },
+  {
+   "title": "Calculadora de Consumo de Chuveiro Elétrico",
+   "link": "https://anunciandoprodutos.com.br/calculadora-de-consumo-de-chuveiro-eletrico/",
+   "snippet": "A conta de luz assustou? Use nossa calculadora e veja exatamente quanto seu chuveiro elétrico custa por mês. Simulação grátis e instantânea."
+  },
+  {
+   "title": "Chuveiro elétrico: como economizar energia?",
+   "link": "https://enerbras.com.br/chuveiro-eletrico/",
+   "snippet": "Uma das formas mais simples de calcular o consumo mensal do seu chuveiro é dividindo a potência do aparelho por 1000 e, em seguida, ..."
+  }
  ],
  "Quanto Gasta um Climatizador de Ar": [
-  "Quanto gasta um climatizador ligado 8 horas por dia :: https://www.magazineluiza.com.br/blog-da-lu/c/ar/arcl/quanto-gasta-um-climatizador-ligado-8-horas-por-dia/14020/?srsltid=AU7gw4WcogVr4KidUdtZNtVkl3vtaQnUq05e-AWcFPci9H6pOFPMzzIJ",
-  "Air Conditioner Energy Consumption? :: https://www.youtube.com/watch?v=Lcn9HwMra8U",
-  "Climatizador gasta muita energia? Entenda se o ... :: https://www.techtudo.com.br/guia/2024/08/climatizador-gasta-muita-energia-entenda-se-o-dispositivo-vale-a-pena-edinfoeletro.ghtml",
-  "Qual é o consumo de um climatizador? Descubra agora! :: https://www.tiktok.com/@maisqueeficiencia/video/7508841605407853829",
-  "Climatizador de ar gasta muita energia? Descubra aqui! :: https://bulbeenergia.com.br/blog/climatizador-de-ar-gasta-muita-energia/",
-  "Does the air conditioner consume a lot of energy? :: https://www.youtube.com/watch?v=uoMQ_ts199c",
-  "Climatizador ou ar condicionado: qual o melhor? :: https://blog.leroymerlin.com.br/climatizador-ou-ar-condicionado/",
-  "Quanto o climatizador evaporativo consome de energia? :: https://ventitec.com.br/quanto-o-climatizador-evaporativo-consome-de-energia/",
-  "Climatizador gasta muita energia? Confira a resposta! :: https://origoenergia.com.br/blog/climatizador-gasta-muita-energia/"
- ],
- "Quanto Gasta com Comida por Mes": [
-  "Quanto vocês gastam por mês com alimentação neste país ... :: https://www.reddit.com/r/brasil/comments/17538hv/quanto_voc%C3%AAs_gastam_por_m%C3%AAs_com_alimenta%C3%A7%C3%A3o_neste/?tl=pt-br",
-  "Alimentação minimalista: 6 passos para comer melhor e ... :: https://borainvestir.b3.com.br/objetivos-financeiros/organizar-as-contas/6-passos-para-comer-melhor-e-gastar-menos/",
-  "COMO GASTAR MENOS DE 1.000 REAIS COM COMIDA NO ... :: https://www.youtube.com/watch?v=sS0_LN6aZ-w",
-  "Quanto vcs gastam com alimentação durante 1 mês? :: https://www.reddit.com/r/saopaulo/comments/1hof5jq/quanto_vcs_gastam_com_alimenta%C3%A7%C3%A3o_durante_1_m%C3%AAs/",
-  "Saiba quanto cada classe social gasta com alimentação :: https://amanha.com.br/categoria/economia/classe-media-gasta-um-terco-dos-rendimentos-com-alimentacao",
-  "Quanto custa manter uma alimentação saudável por mês ... :: https://revistaoeste.com/oestegeral/2026/03/07/quanto-custa-manter-uma-alimentacao-saudavel-por-mes-no-brasil-em-2026/",
-  "Quanto você gasta de mercado por aí? Gastos com ... :: https://www.instagram.com/reel/DWojvXykUW_/",
-  "Lista de compras do mês: como planejar e economizar no ... :: https://www.cartaoatacadao.com.br/blog/educacao-financeira/lista-de-compras-do-mes/",
-  "Quanto a Pessoa Média Gasta em Alimentos por Mês? ... :: https://nutrola.app/pt/blog/how-much-does-average-person-spend-on-food-per-month"
+  {
+   "title": "Quanto gasta um climatizador ligado 8 horas por dia",
+   "link": "https://www.magazineluiza.com.br/blog-da-lu/c/ar/arcl/quanto-gasta-um-climatizador-ligado-8-horas-por-dia/14020/?srsltid=AU7gw4Wix7QQCPfKVdX6s03zzizIZkADCu2xKUKqVJDdtfEPv-ji3EvW",
+   "snippet": "Um climatizador ligado 8 horas por dia gasta bem menos do que muita gente imagina. Em média, o custo diário fica entre R$ 0,60 e R$ 1,30, variando conforme a ..."
+  },
+  {
+   "title": "Climatizador gasta muita energia? Entenda se o ...",
+   "link": "https://www.techtudo.com.br/guia/2024/08/climatizador-gasta-muita-energia-entenda-se-o-dispositivo-vale-a-pena-edinfoeletro.ghtml",
+   "snippet": "Vale ressaltar que a maioria dos modelos domésticos tem uma potência que geralmente varia entre 50 e 300 W. Climatizadores mais simples e ..."
+  },
+  {
+   "title": "Quanto o climatizador evaporativo consome de energia?",
+   "link": "https://ventitec.com.br/quanto-o-climatizador-evaporativo-consome-de-energia/",
+   "snippet": "Testes já mostraram que, enquanto um climatizador de 1500 watts de potência gera um consumo de 15 kw por dia (10 horas de uso), o ar condicionado, neste mesmo ..."
+  },
+  {
+   "title": "Climatizador de ar gasta muita energia? Descubra aqui!",
+   "link": "https://bulbeenergia.com.br/blog/climatizador-de-ar-gasta-muita-energia/",
+   "snippet": "Um climatizador de ar possui, em média, uma potência de 50 a 200 watts, e gasta de 0,05 a 0,2 kWh de energia por hora."
+  },
+  {
+   "title": "Climatizador ou Ar condicionado - Qual escolher?",
+   "link": "https://www.compracerta.com.br/blog/guia-de-compras/climatizador-ou-ar-condicionado",
+   "snippet": "Bom, de cara, o climatizador é mais econômico e eles podem consumir até nove vezes menos energia que um ar condicionado. Mas, calma, não precisa ..."
+  },
+  {
+   "title": "Climatizador gasta muita energia? Confira a resposta!",
+   "link": "https://origoenergia.com.br/blog/climatizador-gasta-muita-energia/",
+   "snippet": "Sabe-se que o consumo médio varia entre 50 a 200 Watts por hora, a depender do modelo e da potência do aparelho escolhido. Climatizador gasta ..."
+  },
+  {
+   "title": "Climatizador ou ar condicionado: qual o melhor?",
+   "link": "https://blog.leroymerlin.com.br/climatizador-ou-ar-condicionado/",
+   "snippet": "Em reais, em uma média de uso de 5 horas por dia por 15 dias no mês, o consumo de um climatizador chega a R$ 97, enquanto o uso de um ar- ..."
+  }
  ],
  "Quanto Gasta um Desumidificador": [
-  "Desumidificador gasta muito? : r/TudoCasa :: https://www.reddit.com/r/TudoCasa/comments/1i4k6md/desumidificador_gasta_muito/",
-  "Sabe quanto consome um desumidificador? Temos a ... :: https://goldenergy.pt/blog/poupanca/quanto-consome-desumidificador/",
-  "Desumidificador de Ar Gasta Muita Energia? - Thermomatic :: https://www.thermomatic.com.br/duvidas-frequentes/o-aparelho-consome-muita-energia-eletrica.html",
-  "Quanto gasta um desumidificador de ar por mês? :: https://gastodomestico.com.br/quanto-gasta-um-desumidificador-de-ar-por-mes/",
-  "Desumidificador Gasta Muita Energia? Veja a Verdade :: https://www.casadoseletrodomesticos.com.br/desumidificador-gasta-muita-energia",
-  "Desumidificador: como pode ajudar a poupar luz e ... :: https://www.idealista.pt/news/financas/lar/2023/02/02/56345-desumidificador-como-pode-ajudar-a-poupar-luz-e-a-combater-a-humidade",
-  "Desumidificador consume muita energia? :: https://arsec.com.br/desumidificador-consume-muita-energia/",
-  "É um desperdício de eletricidade usar um desumidificador ... :: https://www.reddit.com/r/hvacadvice/comments/1hmhgvt/is_running_a_dehumidifier_a_waste_of_electricity/?tl=pt-br"
+  {
+   "title": "Desumidificador gasta muito? : r/TudoCasa",
+   "link": "https://www.reddit.com/r/TudoCasa/comments/1i4k6md/desumidificador_gasta_muito/",
+   "snippet": "Boa noite Que dicas tem para usar desumidificador? Nunca tive um e comprei o ambiano da aldi\n\nTenho uma casa pequena mas que no 2 andar ganha ..."
+  },
+  {
+   "title": "Sabe quanto consome um desumidificador? Temos a ...",
+   "link": "https://goldenergy.pt/blog/poupanca/quanto-consome-desumidificador/",
+   "snippet": "Desumidificadores grandes (500W-600W): usados em áreas maiores, como caves ou lofts. Um desumidificador de 600W consumirá cerca de 4,8 kWh por ..."
+  },
+  {
+   "title": "Desumidificador de ar gasta energia? | FAQ",
+   "link": "https://www.youtube.com/watch?v=62wrqhny-rU",
+   "snippet": "Uma das dúvidas mais frequentes que recebemos é se o desumidificador de ar gasta muita energia. Pensando nisso, fizemos mais um FAQ para ..."
+  },
+  {
+   "title": "Quanto gasta um desumidificador de ar por mês?",
+   "link": "https://gastodomestico.com.br/quanto-gasta-um-desumidificador-de-ar-por-mes/",
+   "snippet": "Em termos de números, o consumo médio mensal de um desumidificador residencial costuma variar conforme a potência e o tempo de uso diário. Em um cenário comum, ..."
+  },
+  {
+   "title": "Desumidificador de Ar Gasta Muita Energia? - Thermomatic",
+   "link": "https://www.thermomatic.com.br/duvidas-frequentes/o-aparelho-consome-muita-energia-eletrica.html",
+   "snippet": "O desumidificador tem um consumo de energia quase 10 vezes menor que um ar condicionado. Um gasto relativamente baixo quando comparado com os benefícios que o ..."
+  },
+  {
+   "title": "Desumidificador Gasta Muita Energia? Veja a Verdade",
+   "link": "https://www.casadoseletrodomesticos.com.br/desumidificador-gasta-muita-energia",
+   "snippet": "O desumidificador não gasta muita energia na maioria dos cenários domésticos. O consumo fica entre 20 e 90 W nos Peltier de closet e entre 200 e ..."
+  },
+  {
+   "title": "FAQ - Desumidificador de ar gasta energia? | Thermomatic",
+   "link": "https://www.facebook.com/ThermomaticBR/videos/faq-desumidificador-de-ar-gasta-energia/2652699768382231/",
+   "snippet": "Você já se perguntou qual é o consumo de energia de um #Desidrat? Essa é uma pergunta muito frequente de nossos clientes, por isso, ..."
+  },
+  {
+   "title": "Desumidificador: como pode ajudar a poupar luz e ...",
+   "link": "https://www.idealista.pt/news/financas/lar/2023/02/02/56345-desumidificador-como-pode-ajudar-a-poupar-luz-e-a-combater-a-humidade",
+   "snippet": "Reunimos algumas dicas para escolher o melhor desumidificador para a tua casa e poupar no consumo de energia."
+  },
+  {
+   "title": "Desumidificador consume muita energia?",
+   "link": "https://arsec.com.br/desumidificador-consume-muita-energia/",
+   "snippet": "Desumidificador de ar não consome muita energia, visto que ares-condicionados podem gastar 10 vezes mais que esses equipamentos simples e indispensáveis. Há ..."
+  }
  ],
  "Quanto Gasta um Forno Elétrico": [
-  "Do electric ovens use a lot of power? Electric oven energy ... :: https://www.youtube.com/watch?v=pAoRG1Qu4I8",
-  "Forno elétrico gasta muita energia :: https://descarbonizesolucoes.com.br/blog/forno-eletrico-gasta-muita-energia",
-  "This is the energy consumption of your electric oven. :: https://www.youtube.com/watch?v=NVqZawZwGmo",
-  "Forno elétrico gasta muita energia? Entenda o consumo e ... :: https://www.techtudo.com.br/guia/2024/07/forno-eletrico-gasta-muita-energia-entenda-o-consumo-e-saiba-economizar-lb.ghtml",
-  "Forno Elétrico ou a Gás: comparação e dicas para você? :: https://www.compracerta.com.br/blog/dicas-para-casa/forno-eletrico-ou-a-gas-qual-o-melhor",
-  "Calculadora de Consumo de Forno Elétrico :: https://anunciandoprodutos.com.br/calculadora-de-consumo-de-forno-eletrico/",
-  "Forno elétrico gasta muita energia? Dicas e estratégias de ... :: https://wictory.com.br/blog/forno-eletrico-gasta-muita-energia-dicas-e-estrategias-de-economia",
-  "Quanto custa usar forno elétrico todos os dias? :: https://revistaoeste.com/oestegeral/2026/03/18/quanto-custa-usar-forno-eletrico-todos-os-dias/"
- ],
- "Quanto Gasta um Freezer por Mês": [
-  "Freezer gasta muita energia? Veja o consumo em kWh :: https://origoenergia.com.br/blog/freezer-gasta-muita-energia/",
-  "Freezer gasta muita energia? Descubra agora! :: https://bulbeenergia.com.br/blog/freezer-gasta-muita-energia/",
-  "Quanto gasta um freezer por mês? – Calculadora :: https://gastodomestico.com.br/quanto-gasta-um-freezer-por-mes/",
-  "VALOR DA MINHA LUZ? 3 FREEZERS, MUITO BARATO ... :: https://www.youtube.com/watch?v=5oRcFbUcdog",
-  "Quanto gasta um freezer comercial por mês? :: https://blog.frigelar.com.br/quanto-gasta-um-freezer-horizontal-comercial-por-mes/",
-  "Freezer gasta muita energia? O que fazer para economizar :: https://clicklivre.com.br/blog/freezer-gasta-muita-energia/",
-  "manutencao-e-o-consumo-de-energia-freezer :: https://loja.electrolux.com.br/homepedia/ambientes/cozinha/manutencao-e-o-consumo-de-energia-freezer"
- ],
- "Quanto Gasta uma Geladeira por Mês": [
-  "Geladeira gasta muita energia? Qual o gasto por mês? :: https://solagora.com.br/blog/geladeira-gasta-muita-energia-veja-o-consumo-real-e-como-economizar/",
-  "Calcule o impacto da geladeira na sua conta de luz :: https://idec.org.br/calculadora-gastos-energia",
-  "Geladeira gasta muita energia? Veja quanto e como reduzir :: https://clicklivre.com.br/blog/quanto-geladeira-gasta-de-energia-por-mes/",
-  "Quanto gasta uma geladeira ligada 24 horas? Entenda o ... :: https://www.techtudo.com.br/guia/2025/02/quanto-gasta-uma-geladeira-ligada-24-horas-entenda-o-consumo-lb.ghtml",
-  "Entenda quanto uma geladeira gasta de energia por mês e ... :: https://www.mercadolivre.com.br/blog/quanto-uma-geladeira-gasta-de-energia-por-mes",
-  "How much energy and money a refrigerator costs per month :: https://www.youtube.com/watch?v=vwPmTmvG19E",
-  "Consumo da geladeira: quanto gasta de enregia por mês? :: https://bulbeenergia.com.br/blog/quanto-uma-geladeira-gasta-de-energia-por-mes/",
-  "Saiba Quanto uma Geladeira Gasta de Energia por Mês :: https://consertodegeladeiraembelem.com.br/saiba-quanto-uma-geladeira-gasta-belem/"
+  {
+   "title": "Forno elétrico gasta muita energia",
+   "link": "https://descarbonizesolucoes.com.br/blog/forno-eletrico-gasta-muita-energia",
+   "snippet": "Sim, o forno elétrico é um dos eletrodomésticos que mais consomem energia em uma residência. Com uso de 1 hora por dia e 20 dias no mês, ele ..."
+  },
+  {
+   "title": "This is the energy consumption of your electric oven.",
+   "link": "https://www.youtube.com/watch?v=NVqZawZwGmo",
+   "snippet": "ESTE É O TERCEIRO VÍDEO DE RESPOSTA, NELE EU INFORMO O kilowatt hora (kwh) DO SEU FORNO E TAMBÉM PASSO UMA FORMULA PARA CALCULAR QUANTO ELE ..."
+  },
+  {
+   "title": "Forno elétrico gasta muita energia? Entenda o consumo e ...",
+   "link": "https://www.techtudo.com.br/guia/2024/07/forno-eletrico-gasta-muita-energia-entenda-o-consumo-e-saiba-economizar-lb.ghtml",
+   "snippet": "De maneira geral, os fornos elétricos costumam consumir entre 2.000 e 5.000 W por hora operada, mas existem modelos mais econômicos, com ..."
+  },
+  {
+   "title": "Forno Elétrico ou a Gás: comparação e dicas para você?",
+   "link": "https://www.compracerta.com.br/blog/dicas-para-casa/forno-eletrico-ou-a-gas-qual-o-melhor",
+   "snippet": "Uma pergunta que muita gente se faz é se o forno elétrico gasta muita energia. E a resposta é: depende. Modelos mais modernos são bem mais ..."
+  },
+  {
+   "title": "Calculadora de Consumo de Forno Elétrico",
+   "link": "https://anunciandoprodutos.com.br/calculadora-de-consumo-de-forno-eletrico/",
+   "snippet": "Fornos elétricos combinam dois fatores que aumentam muito o consumo: ... Um forno de 2000W ligado por 1 hora consome 2 kWh - equivalente a 20 horas de ..."
+  },
+  {
+   "title": "Forno elétrico gasta muita energia? Dicas e estratégias de ...",
+   "link": "https://wictory.com.br/blog/forno-eletrico-gasta-muita-energia-dicas-e-estrategias-de-economia",
+   "snippet": "Para calcular o consumo de um forno elétrico, é necessário multiplicar a potência do aparelho pelo tempo de uso e pelo preço do kWh cobrado pela ..."
+  },
+  {
+   "title": "Quanto custa usar forno elétrico todos os dias?",
+   "link": "https://revistaoeste.com/oestegeral/2026/03/18/quanto-custa-usar-forno-eletrico-todos-os-dias/",
+   "snippet": "O consumo por hora do forno elétrico é definido principalmente pela potência do equipamento, medida em watts (W) ou quilowatts (kW). Modelos ..."
+  }
  ],
  "Quanto Gasta uma Lâmpada de LED": [
-  "Lâmpada LED ligada 24h: quanto gasta por mês? :: https://clicklivre.com.br/blog/lampada-led-ligada-24h/",
-  "Quanto uma LAMPADA de LED gasta por mês? - curso NR10 :: https://www.cursonr10.com/quanto-uma-lampada-de-led-gasta-por-mes/",
-  "» Você sabe quanto consome uma lâmpada em um mês? :: https://blog.positivocasainteligente.com.br/voce-sabe-quanto-consome-uma-lampada-em-um-mes/",
-  "Quanto gasta uma lâmpada incandescente comparada a ... :: https://revistaoeste.com/oestegeral/2026/03/14/quanto-gasta-uma-lampada-incandescente-comparada-a-uma-led-no-mesmo-comodo-durante-um-ano/",
-  "QUANTO GASTA UMA LÂMPADA LED? #gasto #dinheiro :: https://www.youtube.com/shorts/Hh-qmhDGCcc",
-  "LED ligada 10h: veja o valor! Você já parou pra pensar no ... :: https://www.instagram.com/reel/DLp28u9MrHC/",
-  "Lâmpadas de LED: conheça os benefícios e economize na ... :: http://procon.pmpf.rs.gov.br/noticias/ver/28/L%C3%A2mpadas+de+LED%3A+conhe%C3%A7a+os+benef%C3%ADcios+e+economize+na+conta+de+luz+"
+  {
+   "title": "Lâmpada LED ligada 24h: quanto gasta por mês?",
+   "link": "https://clicklivre.com.br/blog/lampada-led-ligada-24h/",
+   "snippet": "Quanto gasta uma lâmpada LED ligada o dia todo? Depende da potência. Uma lâmpada de 10W ligada 24 horas consome cerca de 7,2 kWh por mês, o que ..."
+  },
+  {
+   "title": "Quanto uma LAMPADA de LED gasta por mês? - curso NR10",
+   "link": "https://www.cursonr10.com/quanto-uma-lampada-de-led-gasta-por-mes/",
+   "snippet": "Assim, a economia com a lâmpada de LED será bem pequeninha, de R$ 0,55 em um mês, de R$ 6,60 em um ano e de R$ 67,95 no período total de vida útil, de 10,5 anos ..."
+  },
+  {
+   "title": "Quanto gasta uma lâmpada incandescente comparada a ...",
+   "link": "https://revistaoeste.com/oestegeral/2026/03/14/quanto-gasta-uma-lampada-incandescente-comparada-a-uma-led-no-mesmo-comodo-durante-um-ano/",
+   "snippet": "Uma lâmpada LED de 10 W equivalente consome aproximadamente 14,6 kWh por ano. A diferença pode gerar cerca de R$ 58 de economia anual por ponto ..."
+  },
+  {
+   "title": "» Você sabe quanto consome uma lâmpada em um mês?",
+   "link": "https://blog.positivocasainteligente.com.br/voce-sabe-quanto-consome-uma-lampada-em-um-mes/",
+   "snippet": "Supondo que você tenha 10 lâmpadas iguais pela casa, consumindo energia pelas mesmas 6 horas, durante todos os dias, no final do mês elas representaram R$ 15,12 ..."
+  },
+  {
+   "title": "LED ligada 10h: veja o valor! Você já parou pra pensar no ...",
+   "link": "https://www.instagram.com/reel/DLp28u9MrHC/",
+   "snippet": "Segundo os números do carrossel, uma carga completa custa em média R$ 1,20 e pode entregar cerca de 30 a 50 km de autonomia. Em um cenário de ..."
+  },
+  {
+   "title": "How many REAIS does an LED LAMP cost per MONTH on the ...",
+   "link": "https://www.youtube.com/watch?v=h3KWVAGICh0",
+   "snippet": "How many REAIS does an LED LAMP cost per MONTH on the ELECTRICITY BILL? @dicasflash-cortesengehall7488940 likes36K views5 years ago more."
+  },
+  {
+   "title": "Lâmpadas de LED: conheça os benefícios e economize na ...",
+   "link": "http://procon.pmpf.rs.gov.br/noticias/ver/28/L%C3%A2mpadas+de+LED%3A+conhe%C3%A7a+os+benef%C3%ADcios+e+economize+na+conta+de+luz+",
+   "snippet": "Uma luz tubular fluorescente com 40W, por exemplo, proporciona o mesmo consumo de lâmpadas de LED que trabalham com 18W. A troca de um modelo pelo outro é capaz ..."
+  }
  ],
  "Quanto Gasta uma Lava Louças": [
-  "Lava-louça gasta muita energia e água? Entenda o ... :: https://www.techtudo.com.br/guia/2024/11/lava-louca-gasta-muita-energia-e-agua-entenda-o-consumo-e-saiba-economizar-lb.ghtml",
-  "Vale a pena máquina de lavar louça? Alguém tem? ... :: https://www.reddit.com/r/brasil/comments/urb1ir/vale_a_pena_m%C3%A1quina_de_lavar_lou%C3%A7a_algu%C3%A9m_tem/",
-  "Lava louça gasta muita energia? Entenda seu consumo e ... :: https://bulbeenergia.com.br/blog/lava-louca-gasta-muita-energia/",
-  "Como economizar água com lava louças? :: https://cuida.electrolux.com.br/artigos/como-economizar-agua-com-lava-loucas",
-  "Lava-louças gasta muita energia elétrica? :: https://electy.com.br/blog/lava-loucas-gasta-muita-energia/",
-  "Lava louças gasta muito! Era o tipo de coisa que eu escutava ... :: https://www.instagram.com/reel/DQsHVvMEdbw/",
-  "Lava-louça gasta muita energia elétrica: mito ou verdade? :: https://esferaenergia.com.br/blog/economizar-em-casa/lava-loucas-gasta-muita-energia-eletrica/"
+  {
+   "title": "Quanto gasta minha lava-louças? Teste real e resultado",
+   "link": "https://www.tiktok.com/@maisqueeficiencia/video/7639103968441896213",
+   "snippet": "Resultado principal - Consumo registrado: 0,64 kWh por lavagem. - Custo em São Paulo (no teste): R$0,64 por ciclo. - Consumo de água: cerca de ..."
+  },
+  {
+   "title": "Lava-louça gasta muita energia e água? Entenda o ...",
+   "link": "https://www.techtudo.com.br/guia/2024/11/lava-louca-gasta-muita-energia-e-agua-entenda-o-consumo-e-saiba-economizar-lb.ghtml",
+   "snippet": "Se usada diariamente, isso pode resultar em um gasto de 240 a 600 litros por mês. No entanto, modelos mais modernos costumam oferecer ..."
+  },
+  {
+   "title": "Vale a pena máquina de lavar louça? Alguém tem? ...",
+   "link": "https://www.reddit.com/r/brasil/comments/urb1ir/vale_a_pena_m%C3%A1quina_de_lavar_lou%C3%A7a_algu%C3%A9m_tem/",
+   "snippet": "Texto no título"
+  },
+  {
+   "title": "QUANTO QUE A LAVA LOUÇAS GASTA DE ENERGIA ...",
+   "link": "https://www.instagram.com/reel/DaLx-sKvXQV/",
+   "snippet": "As vezes as gente gasta esse valor com coisas insignificantes, cá entre nós. Mesmo com a soma do sabão, que vai pra 77,00 por mês, ainda ..."
+  },
+  {
+   "title": "LAVA LOUÇAS GASTA MUITA ENERGIA? MOSTREI MINHAS ...",
+   "link": "https://www.youtube.com/watch?v=Gain4zrgtzY",
+   "snippet": "LAVA LOUÇAS GASTA MUITA ENERGIA? MOSTREI MINHAS CONTAS + DICA DE COMO ECONOMIZAR ENERGIA Compartilho aqui vlogs da vida real como mãe, ..."
+  },
+  {
+   "title": "Lava louça gasta muita energia? Entenda seu consumo e ...",
+   "link": "https://bulbeenergia.com.br/blog/lava-louca-gasta-muita-energia/",
+   "snippet": "O consumo da lava-louça varia conforme modelo e uso. Um aparelho eficiente (Classe A) consome entre 0,8 e 1,5 kWh por ciclo completo. Isso equivale a manter uma ..."
+  },
+  {
+   "title": "Como economizar água com lava louças?",
+   "link": "https://cuida.electrolux.com.br/artigos/como-economizar-agua-com-lava-loucas",
+   "snippet": "Segundo dados da Sabesp, lavar a louça com a torneira aberta durante 15 minutos consome cerca de 120 litros d'água, já uma lava-louça de 8 serviços gastaria ..."
+  },
+  {
+   "title": "Lava-louças gasta muita energia elétrica?",
+   "link": "https://electy.com.br/blog/lava-loucas-gasta-muita-energia/",
+   "snippet": "Para ilustrar, se você usar a máquina 30 dias por mês, durante 40 minutos, o consumo médio mensal será de cerca de 30,86 kWh. Esse valor é ..."
+  }
  ],
  "Quanto Gasta um Liquidificador": [
-  "Liquidificador é vilão da conta de luz? Veja como usar sem ... :: https://www.estadao.com.br/einvestidor/radar/liquidificador-vilao-conta-luz-veja/?srsltid=AU7gw4UxG7zUoW72vvQ-jsdcZxfT7KW4AwMym9DtOkMeamERHgbQy53X",
-  "Liquidificador gasta muita energia? Saiba calcular :: https://www.techtudo.com.br/guia/2025/06/liquidificador-gasta-muita-energia-saiba-calcular-lb.ghtml",
-  "Liquidificador Gasta Muita Energia? Entenda o Consumo Real :: https://www.casadoseletrodomesticos.com.br/liquidificador-gasta-muita-energia",
-  "Quanto custa usar liquidificador todos os dias por 5 minutos :: https://revistaoeste.com/oestegeral/2026/03/27/quanto-custa-usar-liquidificador-todos-os-dias-por-5-minutos/",
-  "Tabela de consumo :: https://www.cooperluz.com.br/tabela-de-consumo/",
-  "Quanto gasta um liquidificador por mês? :: https://gastodomestico.com.br/quanto-gasta-um-liquidificador-por-mes/",
-  "Consumo de Energia dos Aparelhos Elétricos :: https://www.natureba.com.br/energia-eletrodomesticos.htm"
- ],
- "Quanto Gasta uma Máquina de Lavar": [
-  "Máquina de lavar gasta muita energia? Entenda o ... :: https://www.techtudo.com.br/guia/2024/08/maquina-de-lavar-gasta-muita-energia-entenda-o-consumo-do-seu-aparelho-lb.ghtml",
-  "Consumo de máquina de lavar: saiba como calcular e ... :: https://lavemcasa.com.br/blog/consumo-de-maquina-de-lavar/",
-  "A máquina de lavar gasta mesmo tão pouca eletricidade ... :: https://www.reddit.com/r/diynz/comments/1loi2js/is_washing_machine_really_use_this_small_amount/?tl=pt-br",
-  "Máquina de lavar gasta muita energia? Veja o cálculo :: https://origoenergia.com.br/blog/maquina-de-lavar-gasta-muita-energia/",
-  "Does a 13kg washing machine use a lot of power? Washing ... :: https://www.youtube.com/watch?v=UG01vYLATzU",
-  "saiba quanto consume uma máquina de lavar e secar roupa :: https://www.candy-home.com/pt_PT/blog/quanto-gasta-uma-maquina-de-secar-e-lavar-roupa/",
-  "Você sabe quanta água sua máquina de lavar consome? ... :: https://www.estadao.com.br/einvestidor/radar/quanta-agua-maquina-lavar-consome/?srsltid=AU7gw4UdVCZNleT1qp1hHxnqjJkPo2lSqHPmwroZcZmfQNEZ2avC0Rdr"
+  {
+   "title": "Liquidificador gasta muita energia? Saiba calcular",
+   "link": "https://www.techtudo.com.br/guia/2025/06/liquidificador-gasta-muita-energia-saiba-calcular-lb.ghtml",
+   "snippet": "O liquidificador é um eletrodoméstico com baixo consumo de energia elétrica, dependendo da frequência de uso e outros fatores mencionados ..."
+  },
+  {
+   "title": "Liquidificador é vilão da conta de luz? Veja como usar sem ...",
+   "link": "https://www.estadao.com.br/einvestidor/radar/liquidificador-vilao-conta-luz-veja/?srsltid=AU7gw4XhDw1GClbTTfCq3780PlJAD1hXIrGmEePXR1grxdh2if_R2mTd",
+   "snippet": "Um modelo com potência de 800 watts, usado cerca de 15 minutos por dia, pode gerar um custo mensal estimado de apenas R$ 1,35, segundo o E- ..."
+  },
+  {
+   "title": "Liquidificador Gasta Muita Energia? Entenda o Consumo Real",
+   "link": "https://www.casadoseletrodomesticos.com.br/liquidificador-gasta-muita-energia",
+   "snippet": "Liquidificador não gasta muita energia: mesmo os mais potentes ficam em torno de 1 a 3 kWh por mês, entre os menores consumos da casa. O watt ..."
+  },
+  {
+   "title": "Quanto custa usar liquidificador todos os dias por 5 minutos",
+   "link": "https://revistaoeste.com/oestegeral/2026/03/27/quanto-custa-usar-liquidificador-todos-os-dias-por-5-minutos/",
+   "snippet": "Considerando um liquidificador de 600W, utilizado por 5 minutos por dia, o consumo diário será de aproximadamente 0,05 kWh. Ao longo de um mês, ..."
+  },
+  {
+   "title": "Tabela de consumo",
+   "link": "https://www.cooperluz.com.br/tabela-de-consumo/",
+   "snippet": "Para calcular o consumo de um equipamento elétrico, verifique a potência W (Watts) do mesmo, multiplique esta potência pelo tempo estimado de funcionamento ( ..."
+  },
+  {
+   "title": "Quanto gasta um liquidificador por mês?",
+   "link": "https://gastodomestico.com.br/quanto-gasta-um-liquidificador-por-mes/",
+   "snippet": "Considerando um liquidificador com potência média entre 600 W e 1.000 W, utilizado por alguns minutos ao dia, o consumo mensal costuma ser relativamente baixo."
+  },
+  {
+   "title": "Consumo de Energia dos Aparelhos Elétricos",
+   "link": "https://www.natureba.com.br/energia-eletrodomesticos.htm",
+   "snippet": "O valor exato do consumo dos equipamentos de uma residência está na placa atrás de cada aparelho. ... LIQUIDIFICADOR, 300, 15, 15 min, 1,1. MÁQUINA DE COSTURA ..."
+  }
  ],
  "Quanto Gasta um Micro-ondas": [
-  "Micro-ondas gasta muita energia? Veja o consumo real :: https://origoenergia.com.br/blog/micro-ondas-gasta-muita-energia/",
-  "Quanto gasta usar micro-ondas diariamente ou preparar ... :: https://revistaoeste.com/oestegeral/2026/03/30/quanto-gasta-usar-micro-ondas-diariamente-ou-preparar-refeicoes-no-fogao-no-mesmo-periodo/",
-  "dicas de economia no uso do micro-ondas :: https://clamper.com.br/dicas/ladroes-de-energia-dicas-de-economia-no-uso-do-micro-ondas/",
-  "Micro-ondas gasta muita energia? Entenda o consumo e ... :: https://www.techtudo.com.br/guia/2024/10/micro-ondas-gasta-muita-energia-entenda-o-consumo-e-saiba-economizar-lb.ghtml",
-  "Alerta poupança! Sabe quanto consome um microondas? :: https://goldenergy.pt/blog/poupanca/quanto-consome-um-microondas/",
-  "Micro-ondas gasta muita energia? Entenda o consumo! :: https://bulbeenergia.com.br/blog/micro-ondas-gasta-muita-energia/"
+  {
+   "title": "Micro-ondas gasta muita energia? Veja o consumo real",
+   "link": "https://origoenergia.com.br/blog/micro-ondas-gasta-muita-energia/",
+   "snippet": "De acordo com a Agência Nacional de Energia Elétrica (Aneel), o consumo desse eletrodoméstico varia de 1,00 kWh a 1,50 kWh por hora quando o ..."
+  },
+  {
+   "title": "Quanto gasta usar micro-ondas diariamente ou preparar ...",
+   "link": "https://revistaoeste.com/oestegeral/2026/03/30/quanto-gasta-usar-micro-ondas-diariamente-ou-preparar-refeicoes-no-fogao-no-mesmo-periodo/",
+   "snippet": "Em um exemplo doméstico plausível, um micro-ondas de 1.400 W usado por 10 minutos por dia consumiria cerca de 7 kWh por mês. Com uma tarifa ..."
+  },
+  {
+   "title": "dicas de economia no uso do micro-ondas",
+   "link": "https://clamper.com.br/dicas/ladroes-de-energia-dicas-de-economia-no-uso-do-micro-ondas/",
+   "snippet": "3 – Nunca se esqueça: aparelhos em stand-by consomem até 15% da conta de luz! Desligue o micro-ondas da tomada sempre que não for usá-lo. 4 – Cubra os alimentos ..."
+  },
+  {
+   "title": "Micro-ondas gasta muita energia? Entenda o consumo e ...",
+   "link": "https://www.techtudo.com.br/guia/2024/10/micro-ondas-gasta-muita-energia-entenda-o-consumo-e-saiba-economizar-lb.ghtml",
+   "snippet": "Vale lembrar que, segundo a Agência Nacional de Energia Elétrica (Aneel), o gasto dos micro-ondas varia entre 1,00 kWh e 1,50 kWh por hora. Isso ..."
+  },
+  {
+   "title": "Alerta poupança! Sabe quanto consome um microondas?",
+   "link": "https://goldenergy.pt/blog/poupanca/quanto-consome-um-microondas/",
+   "snippet": "Estima-se que um microondas simples, em média, seja capaz de consumir algo entre 1,00 kWh a 1,50 kWh, por hora, em funcionamento. Modelos mais ..."
+  },
+  {
+   "title": "Micro-ondas gasta muita energia? Entenda o consumo!",
+   "link": "https://bulbeenergia.com.br/blog/micro-ondas-gasta-muita-energia/",
+   "snippet": "O consumo do micro-ondas varia conforme o modelo e o tamanho do aparelho. Em média, ele gasta cerca de 14 kWh por mês. Veja como calcular o seu gasto!"
+  }
  ],
  "Quanto Gasta um PC Gamer": [
-  "Conta de luz alta com um PC gamer/render : r/computadores :: https://www.reddit.com/r/computadores/comments/1cu8kwn/conta_de_luz_alta_com_um_pc_gamerrender/?tl=pt-br",
-  "Quanto eu gasto de energia no meu PC GAMER no mês? :: https://forum.adrenaline.com.br/threads/quanto-eu-gasto-de-energia-no-meu-pc-gamer-no-mes.705029/",
-  "Quanto um PC gasta de energia? Saiba calcular e como ... :: https://www.techtudo.com.br/guia/2024/08/quanto-um-pc-gasta-de-energia-saiba-calcular-e-como-economizar-edinfoeletro.ghtml",
-  "PC de vocês, gamer ou médio, aumenta na conta de luz ... :: https://www.reddit.com/r/PergunteReddit/comments/1mqtrk4/pc_de_voc%C3%AAs_gamer_ou_m%C3%A9dio_aumenta_na_conta_de/",
-  "Calculadora de potência da fonte de alimentação :: https://pc-builds.com/pt/power-supply-calculator/",
-  "Computador gasta muita energia? Descubra como ... :: https://bulbeenergia.com.br/blog/computador-gasta-muita-energia/",
-  "Como calcular o consumo do meu PC Gamer em WATS 2025 :: https://www.4gamers.com.br/como-calcular-o-consumo-do-meu-pc-gamer-em-wats?srsltid=AU7gw4WrtpgdTwVj7KJCfWtGJcS1ujXixiavz6v_iKDsz-dRnWAhb7LJ",
-  "Qual o consumo de energia de um computador sempre ... :: https://www.idealista.pt/news/financas/lar/2022/05/11/52219-consumo-de-energia-quanto-gasta-um-computador-que-fica-sempre-ligado"
+  {
+   "title": "Conta de luz alta com um PC gamer/render : r/computadores",
+   "link": "https://www.reddit.com/r/computadores/comments/1cu8kwn/conta_de_luz_alta_com_um_pc_gamerrender/?tl=pt-br",
+   "snippet": "Levando 300W como referência, rodando sob full load durante 6h por dia, todo dia, o consumo vai dar em média 54KWh, a depender do seu estado, ..."
+  },
+  {
+   "title": "Quanto eu gasto de energia no meu PC GAMER no mês?",
+   "link": "https://forum.adrenaline.com.br/threads/quanto-eu-gasto-de-energia-no-meu-pc-gamer-no-mes.705029/",
+   "snippet": "Um PC desses aí consome por volta dos 75-80w em idle/baixo uso, e jogando não existe um valor fixo pois varia muito dependendo do uso do ..."
+  },
+  {
+   "title": "HOW MUCH POWER DOES A GAMING PC USE PER MONTH?",
+   "link": "https://www.youtube.com/watch?v=08YiN1guXDs",
+   "snippet": "HOW MUCH POWER DOES A GAMING PC USE PER MONTH? @wstechconsumer ... How much does a PC GAMER spend on their ELECTRICITY BILL? Labz. Auto ..."
+  },
+  {
+   "title": "Quanto um PC gasta de energia? Saiba calcular e como ...",
+   "link": "https://www.techtudo.com.br/guia/2024/08/quanto-um-pc-gasta-de-energia-saiba-calcular-e-como-economizar-edinfoeletro.ghtml",
+   "snippet": "Por outro lado, um computador gamer, que consome entre 250 e 500 watts durante jogos intensivos, tem um valor diário de 0,25 a 0,5 kWh. Isso ..."
+  },
+  {
+   "title": "PC de vocês, gamer ou médio, aumenta na conta de luz ...",
+   "link": "https://www.reddit.com/r/PergunteReddit/comments/1mqtrk4/pc_de_voc%C3%AAs_gamer_ou_m%C3%A9dio_aumenta_na_conta_de/",
+   "snippet": "Um PC com fonte de 650 watts acho que deva gastar uns 40 reais por mês mais ou menos ficando metade do dia ligado, tipo: do meio dia as 19 horas ..."
+  },
+  {
+   "title": "Calculadora de potência da fonte de alimentação",
+   "link": "https://pc-builds.com/pt/power-supply-calculator/",
+   "snippet": "Calculadora de PSU para estimar a potência de alimentação em repouso, mínima e recomendada com base nos componentes do seu PC, na demanda de energia e na ..."
+  },
+  {
+   "title": "Computador gasta muita energia? Descubra como ...",
+   "link": "https://bulbeenergia.com.br/blog/computador-gasta-muita-energia/",
+   "snippet": "Considerando o mesmo período de 8 horas diárias, o consumo de um PC gamer pode chegar a 100 a 150 kWh por mês ou até mais, dependendo da configuração e do uso."
+  },
+  {
+   "title": "Como calcular o consumo do meu PC Gamer em WATS 2025",
+   "link": "https://www.4gamers.com.br/como-calcular-o-consumo-do-meu-pc-gamer-em-wats?srsltid=AU7gw4XBOTmG0AW5nRfKjheQaBCpizzQuT6CLfMbEmmLVFDRLRS0EZY_",
+   "snippet": "O consumo real depende do hardware, mas um PC gamer moderno de médio a alto desempenho costuma consumir entre 300 W e 500 W durante jogos. Isso ..."
+  }
  ],
  "Quanto Gasta um Purificador de Água": [
-  "Purificador de água aumenta muito a conta de luz? :: https://www.estadao.com.br/einvestidor/radar/purificador-de-agua-aumenta-a-conta-de-luz/?srsltid=AU7gw4WA3tzgyOc2fkWzTicSu2uPnAjMuIUb1FqFKQpE1O9PDKq_7_6a",
-  "Desligar o purificador de água à noite para economizar? :: https://blog.superfilter.com.br/vale-a-pena-desligar-o-purificador-de-agua-a-noite-para-economizar/",
-  "Custo de Purificadores de Água: Mitos e Verdades :: https://www.tiktok.com/@maisqueeficiencia/video/7294405117867117830",
-  "O que gasta mais energia, um filtro de água com ... :: https://www.reddit.com/r/brasilivre/comments/1qbqjxj/o_que_gasta_mais_energia_um_filtro_de_%C3%A1gua_com/",
-  "Consumo do purificador refrigerado: mitos e fatos :: https://www.europa.com.br/blog/consumo-do-purificador-de-agua-refrigerado?srsltid=AU7gw4XOWTANDVWZnLMjqYtAFpwfUG6K4Jt_ue06rjO7YPAF_iRuBC5P",
-  "Purificador de água gasta muita energia e não gela bem :: https://www.reclameaqui.com.br/electrolux/purificador-de-agua-gasta-muita-energia-e-nao-gela-bem_9tQLgc-FzO_c45yO/",
-  "Calculadora: Quanto o Purificador de Água Gasta de Energia? :: https://anunciandoprodutos.com.br/calculadora-de-consumo-de-purificador-de-agua/"
- ],
- "Quanto Gasta um Secador de Cabelo": [
-  "Secador de cabelo gasta muita energia? Descubra aqui! :: https://origoenergia.com.br/blog/secador-de-cabelo-gasta-muita-energia/",
-  "Secador de cabelo gasta muita energia? Veja como ... :: https://bulbeenergia.com.br/blog/secador-de-cabelo-gasta-muita-energia/",
-  "Quanto custa usar um secador por mês e como reduzir ... :: https://www.em.com.br/emfoco/2026/02/24/quanto-custa-usar-um-secador-por-mes-e-como-reduzir-a-conta-de-luz/",
-  "um secador de cabelo possui a potência 2100 w calcule o ... :: https://brainly.com.br/tarefa/1358608",
-  "Does a hair dryer use a lot of electricity? See the energy ... :: https://www.youtube.com/watch?v=O8jWTm1369U",
-  "Quantos kwh gasta um secador cabelo :: https://www.casasbahia.com.br/quantos-kwh-gasta-um-secador-cabelo/b",
-  "Secador de cabelo gasta muita energia? Descubra :: https://www.estadao.com.br/web-stories/einvestidor/secador-de-cabelo-gasta-energia/?srsltid=AU7gw4VCv5lqfcQBwcp__UaYtDElrHvGlkx_AhAsarP6bUh2PIlByWwa"
+  {
+   "title": "Purificador de água aumenta muito a conta de luz?",
+   "link": "https://www.estadao.com.br/einvestidor/radar/purificador-de-agua-aumenta-a-conta-de-luz/?srsltid=AU7gw4VzVxd0JLhMp8zYMaNZ0PeKjlvGcwfRcCCEosGLFFchrr5M-N8v",
+   "snippet": "Por exemplo, um modelo que utiliza compressor para resfriar a água, apresenta um consumo médio de cerca de 5 kWh mensais ..."
+  },
+  {
+   "title": "Desligar o purificador de água à noite para economizar?",
+   "link": "https://blog.superfilter.com.br/vale-a-pena-desligar-o-purificador-de-agua-a-noite-para-economizar/",
+   "snippet": "Já o purificador de água gelada Colormaq premium com compressor possui um consumo médio mensal de 9,12 kWh. Vale lembrar que ambos são aparelhos ..."
+  },
+  {
+   "title": "O que gasta mais energia, um filtro de água com ...",
+   "link": "https://www.reddit.com/r/brasilivre/comments/1qbqjxj/o_que_gasta_mais_energia_um_filtro_de_%C3%A1gua_com/",
+   "snippet": "Mas aí me surgiu uma dúvida: o que gasta mais energia, o filtro com compressor ou encher uma garrafa com água e gelar ela na geladeira? Eu sei ..."
+  },
+  {
+   "title": "Purificador de água gasta muita energia e não gela bem",
+   "link": "https://www.reclameaqui.com.br/electrolux/purificador-de-agua-gasta-muita-energia-e-nao-gela-bem_9tQLgc-FzO_c45yO/",
+   "snippet": "Comprei um purificador electrolux PE12B e percebi desde o ano passado que o mesmo vem consumindo muita energia. Minha conta de luz aumentou de R$ *******,00 ..."
+  },
+  {
+   "title": "Calculadora: Quanto o Purificador de Água Gasta de Energia?",
+   "link": "https://anunciandoprodutos.com.br/calculadora-de-consumo-de-purificador-de-agua/",
+   "snippet": "O purificador de água fica ligado 24 horas, e modelos com refrigeração consomem muito mais energia. O consumo do purificador varia de 60W (só filtro) a 150W ( ..."
+  },
+  {
+   "title": "Vale a pena desligar o purificador de água à noite para ...",
+   "link": "https://www.estadao.com.br/einvestidor/radar/vale-a-pena-desligar-o-purificador-de-agua-a-noite-para-economizar/?srsltid=AU7gw4U8QDvNHHxoVSXV_rK-MPnE-S-86HKB-snXdfu2v5znD4533tpx",
+   "snippet": "Em média, os aparelhos consomem entre 5 e 9 kWh por mês. Por exemplo, um modelo equipado com refrigerador por compressor, tem um consumo mensal ..."
+  },
+  {
+   "title": "Filtros / Purificadores on Instagram: \"Purificadores de água ...",
+   "link": "https://www.instagram.com/reel/C22gei3rNv5/",
+   "snippet": "... purificadores Top Life possuem eficiência energética aprovada pelo Inmetro, garantindo baixo consumo de energia ... purificador de água ..."
+  }
  ],
  "Quanto Gasta uma Televisão por Mês": [
-  "8 aparelhos que mais consomem energia elétrica :: https://blog.solfacil.com.br/energia-solar/aparelhos-que-mais-consomem-energia/",
-  "Televisão (TV) gasta muito energia? Aprenda como calcular! :: https://origoenergia.com.br/blog/televisao-gasta-muita-energia/",
-  "TV gasta muita energia? Veja consumo e economia :: https://www.tcl.com/br/pt/imprensa/tv-stand-by-consumption",
-  "Quanto uma televisão gasta de energia por mês? Descubra! :: https://bulbeenergia.com.br/blog/quanto-uma-televisao-gasta-de-energia-por-mes/",
-  "Economia na tomada :: https://revistapesquisa.fapesp.br/economia-na-tomada/",
-  "Televisão gasta muita energia elétrica? :: https://electy.com.br/blog/televisao-gasta-muita-energia/",
-  "Quanto gasta deixar a TV ligada por 5 horas todos os dias :: https://revistaoeste.com/oestegeral/2026/03/20/quanto-gasta-deixar-a-tv-ligada-por-5-horas-todos-os-dias/"
- ],
- "Quanto Gasta um Umidificador": [
-  "12 vilões da energia elétrica :: https://sunsetenergia.com.br/12-viloes-da-energia-eletrica/",
-  "Ventilador, ar-condicionado ou umidificador? Saiba o que ... :: https://www.nsctotal.com.br/economia/ventilador-ar-condicionado-ou-umidificador-saiba-o-que-gasta-menos-energia",
-  "Os quatro maiores vilões da conta de luz da sua casa :: https://www.ecycle.com.br/os-quatro-maiores-viloes-da-conta-de-luz-da-sua-casa/",
-  "Quanto gasta um umidificador de ar por mês? :: https://gastodomestico.com.br/quanto-gasta-um-umidificador-de-ar-por-mes/",
-  "O ventilador gasta muita energia? Tire essa e outras dúvidas :: https://esferaenergia.com.br/blog/economizar-em-casa/ventilador-gasta-muita-energia/",
-  "Umidificador de Ar Vale a Pena - Casa dos Eletrodomésticos :: https://www.casadoseletrodomesticos.com.br/umidificador-de-ar-vale-a-pena",
-  "Quanto gasta de energia um umidificador de ar? ... :: https://lingualeo.com/pt/id/jungle/quanto-gasta-de-energia-um-umidificador-de-ar-umidificador-gasta-muito-consumo-umidificador-1683319"
+  {
+   "title": "8 aparelhos que mais consomem energia elétrica",
+   "link": "https://blog.solfacil.com.br/energia-solar/aparelhos-que-mais-consomem-energia/",
+   "snippet": "Com 5 horas de uso diário, uma TV consome mais de 30 kWh ao mês. Com as ... Para uma casa que gasta os 350-400 kWh/mês deste artigo, o investimento ..."
+  },
+  {
+   "title": "Televisão (TV) gasta muito energia? Aprenda como calcular!",
+   "link": "https://origoenergia.com.br/blog/televisao-gasta-muita-energia/",
+   "snippet": "Por exemplo: se a sua TV tem potência de 75 W e você a utiliza por 4 h por dia, o consumo por hora será 75 W × 4 h = 300 Wh por dia. Daí, basta ..."
+  },
+  {
+   "title": "TV gasta muita energia? Veja consumo e economia",
+   "link": "https://www.tcl.com/br/pt/imprensa/tv-stand-by-consumption",
+   "snippet": "TVs grandes gastam mais, mas com eficiência; Modo economia funciona; Stand-by consome pouco; Configurações corretas reduzem gasto."
+  },
+  {
+   "title": "Quanto uma televisão gasta de energia por mês? Descubra!",
+   "link": "https://bulbeenergia.com.br/blog/quanto-uma-televisao-gasta-de-energia-por-mes/",
+   "snippet": "Em média, uma TV LED de 40 polegadas, por exemplo, consome cerca de 13,5 watts por hora. Se considerarmos um uso diário de 5 horas, isso resulta em um consumo ..."
+  },
+  {
+   "title": "Economia na tomada",
+   "link": "https://revistapesquisa.fapesp.br/economia-na-tomada/",
+   "snippet": "Uma TV de LCD gasta mensalmente 26,57 kWh e em stand-by 0,29 kWh, tomando como base uma média de utilização de quatro horas por dia. As TVs mais antigas de tubo ..."
+  },
+  {
+   "title": "Televisão gasta muita energia elétrica?",
+   "link": "https://electy.com.br/blog/televisao-gasta-muita-energia/",
+   "snippet": "Supondo que uma TV de 42” fique ligada por 5 horas por dia, o consumo mensal seria de aproximadamente 15 kWh, o que representa menos de R$ 15 por mês, ..."
+  },
+  {
+   "title": "Quanto gasta deixar a TV ligada por 5 horas todos os dias",
+   "link": "https://revistaoeste.com/oestegeral/2026/03/20/quanto-gasta-deixar-a-tv-ligada-por-5-horas-todos-os-dias/",
+   "snippet": "Deixar a TV ligada por 5 horas por dia gera baixo impacto na conta de luz, geralmente entre R$ 6 e R$ 12 por mês em modelos comuns · TVs modernas ..."
+  }
  ],
  "Quanto Gasta um Ventilador": [
-  "Ventilador gasta muita energia? veja dicas para ... :: https://origoenergia.com.br/blog/ventilador-gasta-muita-energia/",
-  "Ventilador gasta muita energia? Saiba seu gasto mensal :: https://descarbonizesolucoes.com.br/blog/ventilador-gasta-muita-energia",
-  "Ventilador ou Ar-Condicionado: Qual Gasta Mais Energia? :: https://blog.wap.ind.br/ventilador-ou-ar-condicionado-descubra-qual-gasta-mais-energia/",
-  "Quanto gasta um ventilador ligado 8 horas por dia? :: https://www.magazineluiza.com.br/blog-da-lu/c/ar/arvc/quanto-gasta-um-ventilador-ligado-8-horas-por-dia/13487/?srsltid=AU7gw4X1OLq_2V3c63dn0pnn3_MUhj0OUHkkgnXuStNqQ6kG_raqxwhA",
-  "Ventilador gasta mais que ar-condicionado, disso não ... :: https://www.instagram.com/reel/DGTtkJFxRFR/",
-  "Quanto custa usar ventilador ligado todas as noites por 30 ... :: https://revistaoeste.com/oestegeral/2026/03/25/quanto-custa-usar-ventilador-ligado-todas-as-noites-por-30-dias-no-verao-brasileiro/",
-  "Ventilador consome muita energia? Veja o gasto real :: https://clicklivre.com.br/blog/quanto-ventilador-consome-energia-e-como-reduzir/"
- ],
- "Gerador de Caça-Palavras": [
-  "Criador de Caça Palavras :: https://www.geniol.com.br/palavras/caca-palavras/criador/",
-  "Gerador de Caça-Palavras - Gere e Salve em PDF :: https://saladesaberes.com.br/gerador-caca-palavras",
-  "Gerador de caça-palavras :: https://gsantiago.github.io/gerador-caca-palavras/",
-  "Criar Caça Palavras :: https://rachacuca.com.br/palavras/caca-palavras/criar/",
-  "Como Criar um Caça-palavras Utilizando o Canva :: https://www.canva.com/pt_br/criar/caca-palavras/",
-  "Criar Caça-Palavras Online Grátis para Imprimir :: https://criadordecruzadinhas.com.br/criar-caca-palavras",
-  "Gerador de Caça-Palavras :: https://educ.nekoweb.org/geradores%2Fnew/ca%C3%83%C2%A7apalavras.html",
-  "Gerador de Caça-Palavras Grátis - Crie Puzzles ... :: https://www.teachany.com/pt/tools/word-search-generator",
-  "Sala de Saberes on Instagram: \"Gerador de caça-palavras ... :: https://www.instagram.com/reel/DF2sk9aMGh1/"
- ],
- "Gerador de Atividade de Caligrafia": [
-  "Gerador online de folhas de exercícios de caligrafia para ... :: https://www.reddit.com/r/Calligraphy/comments/2r1muy/online_generator_of_printable_calligraphy/?tl=pt-br",
-  "Gerador gratuito de caligrafia cursiva por IA | Adobe Firefly :: https://www.adobe.com/br/products/firefly/features/ai-drawing-generator/cursive-handwriting.html",
-  "Modelos de planilha de caligrafia :: https://www.canva.com/pt_br/folhas-atividades/modelos/caligrafia/",
-  "Atividades de caligrafia com letras de forma (para imprimir ... :: https://www.todamateria.com.br/atividades-de-caligrafia-com-letras-de-forma-para-imprimir-e-praticar/",
-  "Gerador de fonte de caligrafia - Crie, 𝓬𝓸𝓹𝓲𝓮 𝓮 𝓬𝓸𝓵𝓮 ... :: https://www.creativefabrica.com/pt/tools/calligraphy-font-generator/",
-  "Gerador de Caligrafia :: https://conexaoessencial.online/gerador-de-caligrafia/",
-  "Atividades on Instagram: \" Prof, crie atividades de ... :: https://www.instagram.com/reel/Dcgua1ixjKZ/",
-  "️ Prof, crie atividades de caligrafia cursiva personalizadas ... :: https://www.facebook.com/viacarreira/videos/%EF%B8%8F-prof-crie-atividades-de-caligrafia-cursiva-personalizadas-em-poucos-minutoscom/1569691494694531/"
- ],
- "Gerador de Cartela de Bingo": [
-  "Gerador de cartelas de bingo (imprimível) :: https://calcbe.com/pt-br/tools/bingo-generator/",
-  "Gerador de Cartela de Bingo V3 :: https://www.doug.dev.br/geradorcartelabingo/",
-  "Gerador de cartela de bingo - Faça e imprima cartões de ... :: https://www.canva.com/pt_br/criar/cartelas-bingo/",
-  "Imprimir Cartelas de Bingo :: https://geradornv.com.br/imprimir-cartelas-bingo/",
-  "Gerador De Cartelas De Bingo Automático C/ Prêmios E ... :: https://www.mercadolivre.com.br/gerador-de-cartelas-de-bingo-automatico-c-premios-e-sorteio/up/MLBU3781097571",
-  "Gerador de cartela de bingo · GitHub :: https://github.com/douglasfernandesjr/geradorcartelabingo",
-  "Binngo Online - Gerador de Cartelas de Bingo Online :: https://binngo.com.br/",
-  "GERADOR DE BINGO DE PALAVRAS :: https://www.materiaispdg.com.br/2023/07/gerador-de-bingo-de-palavras.html",
-  "gerador de cartela de bingo online - Apps on Google Play :: https://biblioteca.conab.gov.br/store8634/gerador-de-cartela-de-bingo-online"
- ],
- "Gerador de Monograma": [
-  "Fazer monogramas - Criar Monogramas Online :: https://www.canva.com/pt_pt/criar/monogramas/",
-  "Monogram Maker - Crie Monogramas Gratuitamente :: https://wizlogo.com/pt/monogram-maker",
-  "Crie logos de monograma grátis online | Adobe Express :: https://www.adobe.com/br/express/create/logo/monogram",
-  "Criar logo Monograma grátis | Modelos & ideias :: https://turbologo.com/pt/criar-logo/templates/monograma",
-  "Criador de Monogramas Grátis com IA :: https://www.sologo.ai/pt/ai-logo-generator/monogram-logo-maker/",
-  "Criar monograma grátis - Faça monogramas online :: https://www.canva.com/pt_br/criar/monogramas/",
-  "Criador de Logotipos Monogramas: Crie ... :: https://dreamina.capcut.com/pt-br/resource/monogram-logo-maker",
-  "Logotipos de Monograma em | Crie a ... :: https://www.design.com/pt-br/criador/etiqueta/monograma"
- ],
- "Gerador de Tabuada": [
-  "Gerador de Tabuada :: https://fernando32117.github.io/Gerador-de-Tabuada/",
-  "Gerador de tabuadas de multiplicação - Conversor de Medidas :: https://conversor-de-medidas.com/tabuadas/m/",
-  "Gerador de Lista de Exercícios de Matemática - Adição ... :: https://saladesaberes.com.br/gerador-exercicios-matematica",
-  "Gerador On-Line de Tabuadas de Multiplicação :: https://play.google.com/store/apps/details?id=com.mdadil.tablegenerator&hl=pt_BR",
-  "Gerador de Tabuada Grátis - Tabelas para Imprimir, Passo ... :: https://miniwebtool.com/br/gerador-de-tabuada/",
-  "Crie uma tabela de multiplicação, tabuada personalizada :: https://www.canva.com/pt_br/criar/cartaz/tabela-multiplicacao/",
-  "Gerador de Tabuadas :: https://www.vestibulandia.com.br/artigos/gerador-de-tabuadas/"
- ],
- "Gerador de Escala de Trabalho": [
-  "Gerador de Escala de Funcionários :: https://easy-peasy.ai/pt/templates/staff-schedule-generator",
-  "Escala - Otimize a gestão de escalas de trabalho :: https://play.google.com/store/apps/details?id=reitz.apps.projetoescalarevezamento&hl=pt_BR",
-  "Planilha de Escala de Trabalho Grátis :: https://www.coalize.com.br/planilha-escala-trabalho?utm_source=site&utm_medium=cta&utm_campaign=materiais+gratuitos",
-  "Criador de escalas de turnos com IA - Ferramenta gratuita ... :: https://www.iweaver.ai/pt/agents/shift-schedule-maker/",
-  "GPT \"Gerador de escala de trabalho\" by \"w3pd.com.br\" :: https://app.aiprm.com/gpts/g-KJQauLtRb/gerador-de-escala-de-trabalho",
-  "Criar Escala de Revezamento - App Store - Apple :: https://apps.apple.com/br/app/criar-escala-de-revezamento/id6451197630",
-  "StarGrid | App de escalas de trabalho :: https://stargrid.pro/"
- ],
- "Gerador de Nome de Fazenda": [
-  "208 nomes para fazendas (criativos e inspiradores) :: https://www.dicionariodenomesproprios.com.br/nomes-para-fazendas/",
-  "Nomes para Fazenda: + 93 ideias - :: https://nomeenomes.com.br/nomes-para-fazenda/",
-  "Gerador de Nomes de Fazenda :: https://thestoryshack.com/pt/geradores/gerador-de-nomes-de-fazenda/",
-  "Gerador de nomes de fazendas - Grátis com IA :: https://nametastic.com/pt-BR/farm-name-generator",
-  "As melhores ideias de nomes Fazenda, instantaneamente! :: https://www.brandcrowd.com/pt-br/gerador-nomes-empresas/etiqueta/fazenda",
-  "Dê um Nome à Sua Propriedade | Sugestões de ... :: https://picapauentalhes.com.br/de-um-nome-a-sua-propriedade?srsltid=AU7gw4VtKrF29dLZuvwroDza96O0Bx_bRM-PXDhYKHq_orilwUXVzhr3",
-  "Gere nomes únicos instantaneamente Fazenda :: https://www.design.com/pt-br/gerador-nomes-empresas/etiqueta/fazenda",
-  "Nomes De Fazendas :: https://br.pinterest.com/ideas/nomes-de-fazendas/949562084257/",
-  "Gerador de nomes online :: https://www.canva.com/pt_br/gerador-nomes/"
- ],
- "Gerador de Recibo de Salário": [
-  "Recibo Online - Gerador Gratuito :: https://www.cobrefacil.com.br/recibo-online",
-  "Recibo Fácil: Gerador de Recibos e Documentos Online ... :: https://recibofacil.com.br/",
-  "Gerador de Recibo Online e Gratuito :: https://www.jarbas.app/ferramentas/gerador-recibo",
-  "Recibo Online Simples e Gratuito: Gere o seu! :: https://www.neofin.com.br/ferramentas/gerador-de-recibo-online",
-  "Gerador de Recibo de Pagamento :: https://www.hostgator.com.br/ferramentas/gerador-recibo",
-  "Recibo Online: gere PDF profissional em 2 minutos :: https://play.google.com/store/apps/details?id=com.rtmtag.recibo.lite&hl=pt_BR",
-  "Recibo de Salário GRÁTIS em PDF :: https://recibofacil.com.br/recibo-de-salario",
-  "Gerador de Recibo Online Grátis :: https://meutrampo.app/ferramentas/gerador-recibo"
- ],
- "Calculadora de Hora Extra Noturna": [
-  "Calculadora de Hora Extra 2026 :: https://carmelitas.com.br/ferramentas/horas-extras",
-  "Calculadora de Horas Extras Diurnas ou Noturnas :: https://www.contabilidadescalabrini.com.br/calculadora-de-horas-extras/",
-  "Calculadora de Horas Extras Grátis 2026 :: https://www.mobills.com.br/calculadoras/calculadora-hora-extra/",
-  "Calculadora de adicional noturno online [GRÁTIS] :: https://solides.com.br/blog/recursos/calculadora-adicional-noturno/",
-  "Calculadora de Horas Extras 2026 Online Grátis :: https://www.buk.com.br/recursos/calculadoras/calculadora-horas-extras",
-  "Calculadora de adicional noturno :: https://blog.convenia.com.br/calculadora-an/calculadora-an.html",
-  "Hora extra noturna: como calcular e quando começa a valer :: https://escala.app/blog/hora-extra-noturna/",
-  "Calculadora de Horas Extras: Valor Exato com Minutos (CLT) :: https://www.calcule.net/trabalhista/calculo-hora-extra/",
-  "Calculadora de Horas Extras 2026 Grátis | 50% e 100% - junny :: https://www.junny.com.br/calculadoras/trabalhistas-e-carreira/horas-extras"
- ],
- "Gerador de Lista de Presença": [
-  "Lista de presença - Gerencie os participantes de seus eventos :: https://listapresenca.com.br/",
-  "Modelo de Formulário de Frequência Gratuito :: https://forms.app/pt/modelos/formulario-de-presenca",
-  "Crie Lista VIP Online Gratuitamente :: https://www.canva.com/pt_br/criar/checklist/vip/",
-  "Registrar presença de forma digital em eventos (Check-in) :: https://www.gov.br/pt-br/servicos/check-in",
-  "COMO FAZER lista de presença GRATUITA com QR CODE e ... :: https://www.youtube.com/watch?v=nzYFc9nig1I",
-  "Confirmaê! - Saiba quem vai e quem não vai ao seu evento :: https://www.confirmae.com.br/",
-  "Gerador de Formulário de Presença com IA — Gratuito :: https://www.makeform.ai/pt-BR/tools/ai-attendance-form-generator",
-  "Modelos de planilha de presença gratuitos :: https://pt.smartsheet.com/free-attendance-spreadsheet-templates",
-  "Crie Uma Lista De Convidados Personalizada Para Seu ... :: https://www.canva.com/pt_br/criar/checklist/convidados/"
- ],
- "Quanto de Macarrão por Pessoa": [
-  "Saiba como calcular quantidade de espaguete para uma ... :: https://receitas.globo.com/blog/dicas-e-tecnicas/como-calcular-quantidade-de-espaguete-para-uma-pessoa.ghtml",
-  "Qual a quantidade de macarrão que vocês fazem por ... :: https://www.reddit.com/r/cuisine/comments/1ekpkbe/quelle_quantit%C3%A9_de_p%C3%A2tes_faitesvous_par_personne/?tl=pt-br",
-  "Michele Crispim | Receitas on Instagram: \"Já errou na ... :: https://www.instagram.com/reel/C1pnWKQuCzK/?hl=pt-br",
-  "Guia do medidor de massa :: https://www.barilla.com/pt-br/ajuda-com/novidades/guia-medidor-de-massa",
-  "Santa Rita: como cozinhar macarrão e calcular a ... :: https://panelinha.com.br/blog/ritalobo/post/santa-rita-como-calcular-a-quantidade-de-macarrao",
-  "Macarrão: como acertar na quantidade desse delicioso prato :: https://www.tudogostoso.com.br/noticias/macarrao-como-acertar-na-quantidade-desse-delicioso-prato-a1175.htm",
-  "https://hileia.com.br/revista/como-calcular-quanti... :: https://hileia.com.br/revista/como-calcular-quantidade-de-macarrao-por-pessoa/"
- ],
- "Quantos Ovos Uma Galinha Poe por Mes": [
-  "Over 150 eggs a month with just 6 hens :: https://www.youtube.com/watch?v=rVlWM5ihYUE",
-  "HOW MANY EGGS DOES A HEN LAY PER DAY? Did we ... :: https://www.youtube.com/watch?v=saFwPB9429s",
-  "Você come quantos ovos por dia? Agora a pergunta certa ... :: https://www.facebook.com/canalrural/videos/voc%C3%AA-come-quantos-ovos-por-dia-agora-a-pergunta-certaquantos-ovos-uma-galinha-po/1680404690069919/",
-  "Avicultura on Instagram: \"Uma galinha pode produzir em ... :: https://www.instagram.com/reel/DY7xtlWM79N/",
-  "Quantos ovos uma galinha consegue botar por dia? :: https://www.reddit.com/r/chickens/comments/1ksx42i/how_many_eggs_can_one_chicken_lay_a_day/?tl=pt-br",
-  "Quantos ovos uma galinha bota por dia? - Cultivando :: https://www.cultivando.com.br/quantos-ovos-uma-galinha-bota-por-dia/",
-  "Quantos Ovos Uma Galinha Pode Botar Por Dia? :: https://redeglobo.globo.com/rpc/move-parana/noticia/quantos-ovos-uma-galinha-pode-botar-por-dia-curiosidades-e-mitos-esclarecidos.ghtml",
-  "How Many Eggs Am I Collecting from 45 Hens? What About ... :: https://www.youtube.com/watch?v=Bq35YpYDGws",
-  "Quantos ovos uma galinha põe em média por mês e ... :: https://www.comprerural.com/quantos-ovos-uma-galinha-poe-em-media-por-mes-e-por-ano/"
- ],
- "Quantas Fatias de Pizza por Pessoa": [
-  "Pizza - QuantoFalta :: https://www.qtofalta.com.br/pizza/",
-  "Quantas pizzas por pessoa? Guia completo para dimensionar ... :: https://desantipizza.com.br/blog/quantas-pizzas-por-pessoa-guia-completo-para-dimensionar-sua-festa",
-  "(Ep.01) Quantas pizzas são necessárias para alimentar 20 ... :: https://www.youtube.com/shorts/Hy5bo_XQxG4",
-  "Quantas fatias de pizza você come em uma refeição? :: https://www.reddit.com/r/CasualConversation/comments/18edpp2/how_many_slices_of_pizza_do_you_eat_for_a_meal/?tl=pt-br",
-  "Qual o cálculo da quantidade de pizza por convidado? #pizza ... :: https://www.facebook.com/100068121667294/videos/qual-o-c%C3%A1lculo-da-quantidade-de-pizza-por-convidado-pizza-antesdafesta/1510486383930683/",
-  "How many slices of pizza do you need to eat to make an all ... :: https://www.youtube.com/shorts/Kaobs9b3u4k",
-  "Qual é a quantidade ideal de fatias de pizza por pessoa ... :: https://brainly.com.br/tarefa/64323722",
-  "Calculadora de Pizza Grátis | Quantas Pedir? :: https://gerarapido.com.br/calculadora-pizza"
- ],
- "Quantos Litros de Leite Produz uma Vaca": [
-  "Conheça a vaca que produz mais de 100 litros de leite por ... :: https://www.canalrural.com.br/pecuaria/leite/conheca-a-vaca-que-produz-mais-de-100-litros-de-leite-por-dia/",
-  "Como saber a quantidade de leite que sua vaca produz? :: https://www.agropeperi.com.br/blog/como-saber-a-quantidade-de-leite-que-sua-vaca-produz?srsltid=AU7gw4XwI81zQPZ6NdJhIGZfjlHBPZoj-Yqoy50xzoLF1xQNlRtvSNb6",
-  "Quantos litros de leite uma vaca produz por ... :: https://www.facebook.com/ucbvet/posts/quantos-litros-de-leite-uma-vaca-produz-por-diaa-produtividade-leiteira-da-vaca-/5678382402186194/",
-  "Recorde: Vaca brasileira produz 100 mil litros de leite :: https://www.aease.org.br/recorde-vaca-brasileira-produz-100-mil-litros-de-leite/",
-  "Como é o processo de produção de leite por uma vaca? :: https://www.milkpoint.com.br/artigos/producao-de-leite/como-a-vaca-produz-leite-233437/",
-  "Quantos litros de leite uma vaca produz por dia? - Boi Saúde :: http://18.230.224.39/quantos-litros-de-leite-uma-vaca-produz-por-dia/",
-  "NOTÍCIAS DO CAMPO: Vaca bate recorde ao produzir 109 ... :: https://www.youtube.com/watch?v=pScGvufqsOw"
- ],
- "Quanto Rende 1 kg de Carne Cozida": [
-  "Como calcular rendimento de alimentos crus e cozidos :: https://nutridateoriaapratica.com.br/como-calcular-rendimento-de-alimentos-crus-e-cozidos/",
-  "PERFECT POT ROAST, DELICIOUS GRAVY, EASY AND ... :: https://www.youtube.com/watch?v=FFTf6MzJ3V0",
-  "Quanto rende 1kg de carne bovina cozida? - QuantoServe :: https://quantoserve.com.br/quanto-rende/1kg-de-carne-bovina-cozida",
-  "Carne cozida | Receitas - Globo :: https://receitas.globo.com/tipos-de-prato/carnes/carne-cozida-4dfa0d2bd7001a3f88001ed6.ghtml",
-  "1 kg de carne bovina (acém, músculo ou peito ... :: https://www.facebook.com/61556419953054/posts/carne-cozida-com-batatas-ingredientes-1-kg-de-carne-bovina-ac%C3%A9m-m%C3%BAsculo-ou-peito/122223498962213998/",
-  "Special pressure cooker pot roast | Tips to make your pot roast ... :: https://www.youtube.com/watch?v=8zxrR8Pc2Uw",
-  "Como calcular porção por pessoa? - Blog - Vapza :: https://blog.vapza.com.br/como-calcular-porcao-por-pessoa/"
- ],
- "Calculadora de Rendimento da Poupança": [
-  "BCB - Calculadora do cidadão :: https://www3.bcb.gov.br/CALCIDADAO/publico/exibirFormCorrecaoValores.do?aba=3&method=exibirFormCorrecaoValores",
-  "Calculadora de rendimento da poupança :: https://www.serasa.com.br/calculadoras/calcular-rendimento-poupanca/",
-  "Calculadora do Rendimento da Poupança :: https://www.idinheiro.com.br/calculadoras/calculadora-rendimento-da-poupanca/",
-  "Calculadora de Poupança PF :: https://www.abecip.org.br/credito-imobiliario/calculadora-de-poupanca-pf",
-  "Calculadora de investimentos :: https://infograficos.valor.globo.com/calculadoras/calculadora-de-renda-fixa.html",
-  "BCB - Calculadora do cidadão :: https://www3.bcb.gov.br/CALCIDADAO/publico/corrigirPelaPoupanca.do?method=corrigirPelaPoupanca",
-  "Simulador de Investimentos em Renda Fixa (CDB e mais) :: https://investnews.com.br/ferramentas/simuladores/simulador-de-investimento/",
-  "Simulador Poupança: Entenda o cálculo e veja exemplos :: https://www.mercadopago.com.br/blog/simulador-rendimento-poupanca",
-  "[Grátis] Calculadora de correção pelo rendimento da ... :: https://blog.toroinvestimentos.com.br/calculadoras/calculadora-de-rendimento-da-poupanca/"
- ],
- "Calculadora do Salário-Família 2026": [
-  "Como calcular salário-família 2026 (calculadora online) :: https://meutudo.com.br/blog/calculadoras/calcular-salario-familia/",
-  "Tabela para cálculo da quota do Salário-Família de 2026 :: https://www.davanzo.com.br/capa.asp?infoid=6633",
-  "Cálculo do salário-família: veja quanto você pode receber! :: https://www.idinheiro.com.br/calculadoras/calculadora-do-salario-familia/",
-  "Salário Família de 1994 a 2026 :: https://www.contabeis.com.br/tabelas/salario-familia/",
-  "Calculadora Salário Líquido 2026 :: https://www.serasaexperian.com.br/conteudos/ferramenta-calculadora-de-salario-liquido/",
-  "Calcular o Valor do Salário Líquido :: https://paivacontabilidade.com/calcular-valor-salario-liquido/",
-  "Salário Família 2026: Quem Tem Direito e Valor :: https://calculadorabrasil.com.br/direitos-trabalhistas/salario-familia/",
-  "Calculadora de Salário Líquido 2026 :: https://www.buk.com.br/recursos/calculadoras/calculadora-salario-liquido",
-  "Calculadora de Salário Líquido 2026 | INSS, IR, FGTS :: https://www.calculadorasalario.com.br/"
- ],
- "Calculadora de Salário Horista": [
-  "Conversor de salário por hora para mensal Online Grátis :: https://calculojuridico.com.br/converter-salario-hora-mensal/",
-  "Cálculo Horista + DSR - Departamento Pessoal e RH :: https://www.contabeis.com.br/forum/departamento-pessoal-e-rh/271044/calculo-horista-dsr/",
-  "Untitled Document :: https://www.coad.com.br/files/trab/html/dp/em44104.htm",
-  "Cálculo de horista :: https://www.comunidadecontabilbrasil.com/trabalhista/post/calculo-de-horista-wtWyFjHcVgsKwED",
-  "Folha de Pagamento do Empregado Horista: Como Calcular :: https://exittus.com.br/blog/folha-pagamento-horista",
-  "Calculadora para calcular DSR de Horista: online e grátis :: https://calculareconverter.com.br/calculo-dsr-horista/",
-  "Cálculo de horas trabalhadas: diferenças para mensalistas ... :: https://www.noventa.com.br/blog/calculo-de-horas-trabalhadas",
-  "Exemplos | Cálculo Horista Variável :: https://sgd.dominiosistemas.com.br/ctsfiles/pdfexemplos.pdf?id=9429307&ds=centralSolucao&anexosKey",
-  "Calculadora de salário de professores :: https://www.grupokeeper.com.br/calculadora-professores"
- ],
- "Calculadora de Salário Intermitente": [
-  "Calculadora de Salário Intermitente 2026 :: https://www.contabilidadescalabrini.com.br/calculadora-salario-intermitente/",
-  "Cálculo do trabalhador intermitente mensalista e horista :: https://autoatendimento.contmatic.com.br/hc/pt-br/articles/52617702548243-C%C3%A1lculo-do-trabalhador-intermitente-mensalista-e-horista",
-  "[GRÁTIS] Calculadora de Salário Intermitente 2026 :: https://blog.tio.digital/calculadora-de-salario-intermitente/",
-  "Cálculo da Folha do Trabalhador Intermitente :: https://ajuda.sankhya.com.br/hc/pt-br/articles/38988468841623-C%C3%A1lculo-da-Folha-do-Trabalhador-Intermitente",
-  "Contrato intermitente: regras da CLT e como calcular ... :: https://www.buk.com.br/blog/contrato-intermitente",
-  "Como calcular o salário do trabalhador intermitente? :: https://www.youtube.com/watch?v=o45E2-tppAg",
-  "Calculo de Salário de Empregado Intermitente :: https://symee.com.br/blog/posts/calculo-salario-empregado-intermitente",
-  "Trabalhador intermitente: cálculo e direitos no Fortes Pessoal :: https://www.youtube.com/watch?v=-GIjWvi6WDQ",
-  "Como realizar o cálculo para Trabalhador Intermitente no ... :: https://ajuda.calimaerp.com/pt/article/como-realizar-o-calculo-para-trabalhador-intermitente-no-calima-1tq8dad/"
- ],
- "Calculadora de Salário Proporcional": [
-  "Como calcular dias trabalhados - Escala :: https://escala.app/blog/como-calcular-dias-trabalhados/",
-  "Calculadora de Saldo de Salário | Dias trabalhados, FGTS ... :: https://www.valordotrabalho.com.br/calculos/calculo-saldo-de-salario",
-  "Calculadora de Salário Líquido 2026 :: https://carmelitas.com.br/ferramentas/calculadora-salario-liquido",
-  "Calculadora de dias trabalhados e salário proporcional :: https://meutudo.com.br/blog/calculadoras/calcular-dias-trabalhados/",
-  "Calculadora de Salário Líquido - Salário bruto x líquido :: https://valorinveste.globo.com/ferramentas/calculadoras/calculadora-salario-liquido/",
-  "Como calcular salário por dia: fórmula, proporcional e faltas. :: https://www.buk.com.br/blog/como-calcular-salario-por-dia",
-  "Cálculo Exato - Menu :: https://calculoexato.com.br/",
-  "Calculadora de Salário Proporcional (Pró-rata) - FinaryFlix :: https://finaryflix.com.br/ferramentas/pro-rata-salario",
-  "Calculadora de Salário Líquido 2026 :: https://www.idinheiro.com.br/calculadoras/calculadora-de-salario-liquido/"
- ],
- "Quanto de Sorvete por Pessoa": [
-  "1 LITRO DE SORVETE SERVE QUANTAS PESSOAS? Veja a ... :: https://www.youtube.com/watch?v=2RMzFva530I&vl=pt-BR",
-  "Sorvete pra 30 pessoas - qual a quantidade? : r/icecreamery :: https://www.reddit.com/r/icecreamery/comments/94w2db/ice_cream_for_30_people_what_quantity/?tl=pt-br",
-  "1 pote de sorvete dá pra 30 pessoas? A resposta vai te ... :: https://www.instagram.com/reel/DQ-IARVEZ-Q/",
-  "Respondendo a @_mayribeiro :: https://www.tiktok.com/@luanitasu.lu/video/7390418313890991366",
-  "Descubra a Quantidade Ideal :: https://sorvetesrochinha.com.br/descubra-a-quantidade-ideal/",
-  "Um balde de 10 litros de sorvetes serve quantas pessoas ? ... :: https://www.facebook.com/groups/1250851981643832/posts/7809562982439333/",
-  "Porção de sorvete ideal para servir 10 pessoas :: https://www.receitadevovo.com.br/blog/posts/porcao-de-sorvete-ideal-para-servir-10-pessoas",
-  "Como calcular a quantidade de sorvete para uma pessoa que ... :: https://www.tiktok.com/@qhappysorvetes/video/7301057360783478021"
- ],
- "Quantas Tacas Tem uma Garrafa de Vinho": [
-  "Quantas taças de vinho é possível servir com uma garrafa ... :: https://vinicolathera.com.br/blogs/novidades/quantas-tacas-rende-uma-garrafa-de-vinho-de-750ml?srsltid=AU7gw4UY-n7ouwjJ7-dkzT1JpZjTo8kRtpphiwxoh9xPP9-esDGA8MyQ",
-  "Você sabe quantas taças servem uma garrafa tradicional ... :: https://www.instagram.com/reel/DSLMWM2knm0/",
-  "Quantas Taças de Vinho Rende uma Garrafa? :: https://vinsel.com.br/blogs/novidades/quantas-tacas-de-vinho-rende-uma-garrafa?srsltid=AU7gw4XqoX1MhAsPB3P9vHSR-r0iRnY_CLW35QlE1yknkgevimfAxXtW",
-  "Quantas garrafas de vinho comprar por pessoa? Guia ... :: https://www.evino.com.br/blog/quantas-garrafas-de-vinho-por-pessoa-eventos/?srsltid=AU7gw4Vct7ZDnpKiipllLLBh5so-Pei7eIJosZtfmxBl83eaM7JiwG2J",
-  "As garrafas de vinho são de 750ml. Qual a razão? :: https://blog.vinicolaaurora.com.br/as-garrafas-de-vinho-sao-de-750ml-qual-a-razao/",
-  "Quantas taças de vinho há em uma garrafa? :: https://catracalivre.com.br/noticias/quantas-tacas-de-vinho-ha-em-uma-garrafa/",
-  "Com quantas uvas se faz uma garrafa de vinho? :: https://www.portoaporto.com.br/blog/dicas/com-quantas-uvas-se-faz-uma-garrafa-de-vinho/",
-  "Desbloqueando tamanhos de garrafas de vinho: quantas ... :: https://www.roetell.com/pt/how-many-glasses-fit-in-each/"
- ],
- "Calculadora de Tamanho de TV": [
-  "Como medir e entender os tamanhos de TV - LG Electronics :: https://www.lg.com/br/lg-experience/dicas-uteis/como-medir-tamanhos-de-tv/?srsltid=AU7gw4UsTF0BcBmt1UrpmN76DoElsBmdp3GmVXa_KHth5CfSismYN7w1",
-  "Calculadora de Tamanho de Tela :: https://www.omnicalculator.com/pt/outras/tamanho-de-tela",
-  "Calculadora - NARDELLI - Telas de Projeção e Persianas :: https://telasnardelli.com.br/telas-de-projecao-calculo-do-tamanho-da-tela/?srsltid=AU7gw4UgtEdigWuJ5kLBC-QC_fnrxbKV7UJghYE-c03YW08GKW0G6H5U",
-  "Como encontrar o tamanho de TV perfeito? :: https://www.samsung.com/br/tvs/tv-buying-guide/what-size-tv-should-i-get/",
-  "Cálculo do tamanho da tela e da distância da TV. :: https://play.google.com/store/apps/details?id=app.calculatorhub.at.tvscreen&hl=pt_BR",
-  "Saiba como calcular o tamanho ideal de uma TV 4K de ... :: https://www.estadao.com.br/tecmundo/produto-e-review/129526-saiba-calcular-tamanho-ideal-tv-4k-acordo-sala/?srsltid=AU7gw4VwwKgbX7hxmgDFvqcxpzsiV1063ZXWuLdh2k1T_-KYu6eNHQkj",
-  "Como calcular tamanho da TV usando Pitágoras #matemática :: https://www.youtube.com/watch?v=bOf0XN_Q66Y"
- ],
- "Gerador de Tema de Redação ENEM": [
-  "Temas de redação :: https://www.pratiqueredacao.com.br/temas-de-redacao",
-  "Temas de Redação - Descomplica :: https://redacao.descomplica.com.br/temas-de-redacao",
-  "GERADOR DE TEMA PARA REDAÇÃO ENEM :: https://perchance.org/redacaoenem",
-  "Gerador de Temas de Redação - ENEM e Vestibulares :: https://geradorbrasil.com/gerador-de-temas-redacao",
-  "Temas de Redação ENEM 2026 :: https://www.plataformaredigir.com.br/temas-redacao",
-  "Como Gerar Temas Prováveis para a Redação do ENEM com ... :: https://www.youtube.com/watch?v=6xLbA7yTa-o",
-  "Temas de redação para treinar (com textos motivadores e ... :: https://www.todamateria.com.br/temas-de-redacao-para-treinar/",
-  "TEMAS DE REDAÇÃO - ENEM - Roleta aleatória :: https://wordwall.net/pt/resource/19076058/temas-de-reda%C3%A7%C3%A3o-enem",
-  "Gerador de Redações Grátis: IA Online para ENEM e Outros ... :: https://gerador-de-redacao.com/"
+  {
+   "title": "Ventilador gasta muita energia? veja dicas para ...",
+   "link": "https://origoenergia.com.br/blog/ventilador-gasta-muita-energia/",
+   "snippet": "Ventilador industrial · Ventilador de mesa: 12 kWh/mês (R$ 9,60); · Ventilador de torre: 19,2 kWh/mês (R$ 15,36); · Ventilador de teto: 21,6 kWh ..."
+  },
+  {
+   "title": "Ventilador gasta muita energia? Saiba seu gasto mensal",
+   "link": "https://descarbonizesolucoes.com.br/blog/ventilador-gasta-muita-energia",
+   "snippet": "Geralmente consome entre 40 W e 100 W. Por ser menor e mais prático, é ideal para uso pessoal. O gasto energético é um dos menores entre os ..."
+  },
+  {
+   "title": "Ventilador ou Ar-Condicionado: Qual Gasta Mais Energia?",
+   "link": "https://blog.wap.ind.br/ventilador-ou-ar-condicionado-descubra-qual-gasta-mais-energia/",
+   "snippet": "Um ventilador comum consome cerca de 50 a 100 watts por hora. Supondo que você usa um ventilador de 75 watts por 8 horas diárias, o consumo seria de 600 watts ( ..."
+  },
+  {
+   "title": "Quanto gasta um ventilador ligado 8 horas por dia?",
+   "link": "https://www.magazineluiza.com.br/blog-da-lu/c/ar/arvc/quanto-gasta-um-ventilador-ligado-8-horas-por-dia/13487/?srsltid=AU7gw4XmShbGljC74ezCoKO5HIB4O00B1dK5oTthiHaoUmpUJ8JomDex",
+   "snippet": "Por exemplo: um ventilador de 100 W ligado por 8 horas consome cerca de 0,8 kWh por noite. Com a tarifa mais baixa (R$ 0,41), esse consumo dá mais ou menos R$ 0 ..."
+  },
+  {
+   "title": "QUAL GASTA MAIS: ventilador ou ar-condicionado?",
+   "link": "https://www.youtube.com/shorts/AhmaPRACe7A",
+   "snippet": "QUAL GASTA MAIS: ventilador ou ar-condicionado? As temperaturas subiram e não teve como fugir do ventilador ou ar-condicionado."
+  },
+  {
+   "title": "Ventilador gasta mais que ar-condicionado, disso não ...",
+   "link": "https://www.instagram.com/reel/DGTtkJFxRFR/",
+   "snippet": "Não sou eu falando, você viu? O ventilador tá gastando dez, dez centavos por hora de uso. Enquanto o ar condicionado gasta oito centavos por ..."
+  },
+  {
+   "title": "Quanto custa usar ventilador ligado todas as noites por 30 ...",
+   "link": "https://revistaoeste.com/oestegeral/2026/03/25/quanto-custa-usar-ventilador-ligado-todas-as-noites-por-30-dias-no-verao-brasileiro/",
+   "snippet": "Na maioria dos casos, o gasto fica entre R$ 10 e R$ 45 por mês, variando conforme potência, tempo de uso e tarifa. Em termos de conforto o ..."
+  },
+  {
+   "title": "Ventilador consome muita energia? Veja o gasto real",
+   "link": "https://clicklivre.com.br/blog/quanto-ventilador-consome-energia-e-como-reduzir/",
+   "snippet": "Um ventilador pode consumir de 40W a 200W por hora. Veja quanto isso representa em reais na sua conta de luz por mês."
+  }
  ],
  "Quantos Tijolos para Construir uma Casa": [
-  "Quantos tijolos são necessários para construir uma casa? :: https://www.tiktok.com/@alcimarconstrucaocerta/video/7315150419175525637",
-  "HOW MANY BRICKS I USED TO BUILD THIS HOUSE :: https://www.youtube.com/watch?v=BfChSdScWEA",
-  "Com quantos tijolos (por m²) se faz uma casa? Aprenda a ... :: https://biomassadobrasil.com.br/com-quantos-tijolos-por-m%C2%B2-se-faz-uma-casa-aprenda-a-calcular/",
-  "How many bricks do I need to build my house? :: https://www.youtube.com/watch?v=3DPTtTu4-cM",
-  "QUANTOS TIJOLOS SÃO NECESSÁRIOS PARA ... :: https://blog.telhanorte.com.br/quantos-tijolos-sao-necessarios/",
-  "Quantos tijolos gastamos para construir a casa de 100m² ... :: https://www.youtube.com/watch?v=KV_nH8VZB6A",
-  "Como calcular a quantidade de tijolos em qualquer ... :: https://obrafit.com.br/passo-a-passo-para-calcular-a-quantidade-de-tijolos-em-qualquer-construcao-2/"
+  {
+   "title": "Quantos tijolos são necessários para construir uma casa?",
+   "link": "https://www.tiktok.com/@alcimarconstrucaocerta/video/7315150419175525637",
+   "snippet": "Consultar rendimento do bloco: número de blocos necessários por metro quadrado varia conforme o tipo de bloco (comum, baiano, de vedação) e ..."
+  },
+  {
+   "title": "HOW MANY BRICKS I USED TO BUILD THIS HOUSE",
+   "link": "https://www.youtube.com/watch?v=BfChSdScWEA",
+   "snippet": "QUANTOS TIJOLOS USEI PRA FAZER ESSA CASA #konstruktion #construction 工事 #countryliving #vidanocampo #casanaroça #vidanaroça."
+  },
+  {
+   "title": "Com quantos tijolos (por m²) se faz uma casa? Aprenda a ...",
+   "link": "https://biomassadobrasil.com.br/com-quantos-tijolos-por-m%C2%B2-se-faz-uma-casa-aprenda-a-calcular/",
+   "snippet": "Tijolo Maciço Comum – 5x9x19cm com rendimento de 80 peças por metro quadrado; · Tijolo Maciço Rústico – 5,5×9,5x21cm com rendimento de 70 peças ..."
+  },
+  {
+   "title": "How many bricks do I need to build my house?",
+   "link": "https://www.youtube.com/watch?v=3DPTtTu4-cM",
+   "snippet": "Cálculo simples da quantidade de tijolos para fazer uma casa ... ✔️[ATUALIZADO] QUAL o CUSTO de MATERIAL pra CONSTRUIR uma CASA de 40M²."
+  },
+  {
+   "title": "QUANTOS TIJOLOS SÃO NECESSÁRIOS PARA ...",
+   "link": "https://blog.telhanorte.com.br/quantos-tijolos-sao-necessarios/",
+   "snippet": "Vamos a um exemplo prático: se a sua parede tem 10 metros quadrados e você está usando tijolos de 8 furos (19x19x9 cm), o cálculo seria assim: 10 / (0,19*0,19) ..."
+  },
+  {
+   "title": "Quantos tijolos gastamos para construir a casa de 100m² ...",
+   "link": "https://www.youtube.com/watch?v=KV_nH8VZB6A",
+   "snippet": "Neste vídeo vou te ensinar como calcular a quantidade de tijolos necessários para construir uma casa de 100m² (baseado na casa da série ..."
+  },
+  {
+   "title": "Como calcular a quantidade de tijolos em qualquer ...",
+   "link": "https://obrafit.com.br/passo-a-passo-para-calcular-a-quantidade-de-tijolos-em-qualquer-construcao-2/",
+   "snippet": "Primeiro, deve-se medir a área do tijolo em cm² (comprimento x altura) e então dividir 1m² (ou 10.000cm²) pela área de cada tijolo. Dessa forma, o resultado ..."
+  }
  ]
 }

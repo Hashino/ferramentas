@@ -31,6 +31,7 @@ import json
 import pathlib
 import re
 import sys
+import time
 import unicodedata
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -76,9 +77,25 @@ Responda em JSON com estas chaves:
   usuário sabe. Inclui qualquer pergunta cuja resposta é um número fixo, uma
   média, uma regra ou uma tabela: "quanto custa pintar uma casa", "quantos ml
   tem uma xícara", "com quantos anos me aposento", "quanto rende 1kg de
-  carne" -> true. false só quando a resposta útil não existe até o usuário
-  informar dados próprios: "gasto do MEU chuveiro de X kW ligado Y horas a
-  R$Z o kWh", "quantos sacos de cimento pra MINHA laje de X m²" -> false.
+  carne" -> true.
+  ATENÇÃO ao caso que mais engana: "existe uma fórmula/proporção simples" NÃO
+  é o mesmo que "a IA responde sem dado do usuário". Se a fórmula precisa de
+  uma MEDIDA do objeto/imóvel/reservatório do próprio usuário (área em m²,
+  litros de uma piscina/reservatório, altura de pé-direito, metros de parede)
+  — algo que varia livremente de pessoa pra pessoa e a IA não tem como
+  adivinhar — a resposta não existe sem esse número, mesmo que a conta em si
+  seja "multiplique por uma taxa fixa": "quantos sacos de cimento" (varia com
+  a área da obra), "litros de cloro pra piscina" (varia com o volume),
+  "degraus de uma escada" (varia com o pé-direito) -> false, mesmo tendo uma
+  proporção fixa por trás.
+  Já quando a variável que falta tem faixa ESTREITA e conhecida (potência
+  típica de um tipo específico de aparelho: lâmpada LED, chaleira, cafeteira
+  — a faixa real do produto é pequena o bastante pra IA chutar um valor
+  plausível pra maioria) -> true, a IA satisfaz a maioria das buscas com uma
+  estimativa.
+  Regra prática: pergunte "o número que falta pode ser QUALQUER coisa (imóvel
+  do usuário, volume que só ele sabe) ou é um valor de produto que tem faixa
+  estreita conhecida?" — primeiro caso false, segundo true.
 "veredito": "CONSTRUIR" somente se quer_ferramenta == true E
   ferramentas_top3 == 0 E respondida_por_ia == false. Senão "DESCARTAR".
 "motivo": uma frase curta explicando, em português."""
@@ -106,7 +123,7 @@ def avaliar_ia(kw: str, resultados: list[str]) -> dict:
 
 
 # suba quando mudar MOLDE/critérios: invalida vereditos julgados pela regra velha
-VERSAO = 3
+VERSAO = 4
 
 
 def triar(kw: str, resultados: list[str], cache: dict) -> dict:
@@ -207,7 +224,10 @@ def main() -> None:
                 continue
             if so_suspeitas and lint_serp.avaliar(serp_tools[q])["veredito"] != "REPROVA":
                 continue
+            ja_em_cache = q in cache and cache[q].get("v") == VERSAO
             r = triar(q, serp_tools[q], cache)
+            if not ja_em_cache:
+                time.sleep(1.5)  # espaça as chamadas: TPM da Groq estoura em lote
             marca = {"CONSTRUIR": "✓", "DESCARTAR": "✗"}.get(r["veredito"], "?")
             print(f'{marca} {slug}  [{q}]')
             print(f'      top3={r.get("top3")} ia_overview={r.get("ia_overview")} '

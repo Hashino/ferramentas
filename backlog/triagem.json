@@ -16,12 +16,14 @@
   "regex": "OK"
  },
  "Quantos Litros Gasta uma Máquina de Lavar": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma ferramenta interativa disponível e resposta não coberta por IA.",
+  "veredito": "DESCARTAR",
+  "motivo": "A busca pede um valor médio de consumo, que pode ser respondido diretamente sem necessidade de cálculo personalizado.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
-  "ia_overview": false,
-  "regex": "REPROVA"
+  "ia_overview": true,
+  "regex": "REPROVA",
+  "v": 3
  },
  "Calculadora de Arcano Pessoal": {
   "veredito": "DESCARTAR",
@@ -33,11 +35,13 @@
  },
  "Calculadora de Arcano Pessoal Anual": {
   "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma ferramenta interativa nos 3 primeiros resultados e a resposta exige dados pessoais.",
+  "motivo": "Nenhum dos primeiros resultados é uma calculadora interativa e a resposta depende de dados pessoais do usuário.",
+  "quer_ferramenta": true,
   "top3": 0,
-  "top10": 1,
+  "top10": 0,
   "ia_overview": false,
-  "regex": "REPROVA"
+  "regex": "REPROVA",
+  "v": 3
  },
  "Quanto de Arroz por Pessoa": {
   "veredito": "DESCARTAR",
@@ -65,11 +69,13 @@
  },
  "Quantos Blocos para Construir uma Casa": {
   "veredito": "CONSTRUIR",
-  "motivo": "Nenhum dos primeiros resultados oferece calculadora interativa e a busca requer dados específicos do usuário.",
+  "motivo": "A consulta precisa de cálculo personalizado e nenhum dos resultados oferece uma ferramenta interativa.",
+  "quer_ferramenta": true,
   "top3": 0,
   "top10": 0,
   "ia_overview": false,
-  "regex": "OK"
+  "regex": "OK",
+  "v": 3
  },
  "Quanto de Bolo por Pessoa": {
   "veredito": "DESCARTAR",
@@ -89,11 +95,13 @@
  },
  "Quanto de Café por Pessoa": {
   "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma das primeiras páginas oferece ferramenta interativa e a resposta depende de cálculo personalizado.",
+  "motivo": "Usuário quer calcular a quantidade de café por pessoa; não há ferramenta interativa nos resultados e a resposta não pode ser dada de forma fixa.",
+  "quer_ferramenta": true,
   "top3": 0,
   "top10": 0,
   "ia_overview": false,
-  "regex": "OK"
+  "regex": "OK",
+  "v": 3
  },
  "Quantos Blocos por Metro Quadrado": {
   "veredito": "DESCARTAR",
@@ -104,36 +112,44 @@
   "regex": "REPROVA"
  },
  "Quantos Sacos de Cimento por Metro Quadrado": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma das 3 primeiras páginas oferece calculadora interativa e a resposta depende de dados específicos do usuário.",
-  "top3": 0,
-  "top10": 2,
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer uma calculadora, mas já há ferramentas interativas nos primeiros resultados.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 3,
   "ia_overview": false,
-  "regex": "REPROVA"
+  "regex": "REPROVA",
+  "v": 4
  },
  "Calculadora de Degraus de Escada": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhum dos primeiros resultados oferece uma calculadora interativa e a busca requer entrada de dados específicos do usuário.",
-  "top3": 0,
-  "top10": 0,
+  "veredito": "DESCARTAR",
+  "motivo": "Já há ferramentas interativas nos primeiros resultados, portanto não vale criar nova página.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 3,
   "ia_overview": false,
-  "regex": "REPROVA"
+  "regex": "REPROVA",
+  "v": 4
  },
  "Quantas Telhas por Metro Quadrado": {
   "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma ferramenta interativa disponível e a resposta exige dados específicos do usuário.",
+  "motivo": "A consulta precisa de cálculo com dados fornecidos pelo usuário e nenhum dos resultados apresenta uma ferramenta interativa.",
+  "quer_ferramenta": true,
   "top3": 0,
   "top10": 0,
   "ia_overview": false,
-  "regex": "REPROVA"
+  "regex": "REPROVA",
+  "v": 4
  },
  "Quantos Tijolos por Metro Quadrado": {
   "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma das primeiras páginas oferece calculadora interativa e a resposta depende de dados do usuário.",
+  "motivo": "A busca requer que o usuário informe a área da parede para calcular a quantidade de tijolos, e nenhum dos resultados dos top‑10 oferece uma calculadora interativa.",
+  "quer_ferramenta": true,
   "top3": 0,
   "top10": 0,
   "ia_overview": false,
-  "regex": "REPROVA"
+  "regex": "REPROVA",
+  "v": 4
  },
  "Calculadora de Calorias dos Alimentos": {
   "veredito": "DESCARTAR",
@@ -145,19 +161,23 @@
  },
  "Quantos Sacos de Cimento para Construir uma Casa": {
   "veredito": "CONSTRUIR",
-  "motivo": "Nenhum dos resultados oferece calculadora interativa e a resposta requer dados específicos do usuário.",
+  "motivo": "A consulta precisa de cálculo personalizado e nenhum dos resultados oferece uma ferramenta interativa.",
+  "quer_ferramenta": true,
   "top3": 0,
   "top10": 0,
   "ia_overview": false,
-  "regex": "REPROVA"
+  "regex": "OK",
+  "v": 3
  },
  "Quantos Litros de Cloro para Piscina": {
   "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma ferramenta interativa nos três primeiros resultados e a resposta exige dados específicos do usuário.",
+  "motivo": "Não há ferramenta interativa nos top 3 e a IA não pode responder sem volume do usuário.",
+  "quer_ferramenta": true,
   "top3": 0,
   "top10": 1,
   "ia_overview": false,
-  "regex": "OK"
+  "regex": "OK",
+  "v": 4
  },
  "Conversor de Minutos em Horas": {
   "veredito": "DESCARTAR",
@@ -200,12 +220,14 @@
   "regex": "REPROVA"
  },
  "Quanto Dura um Botijao de Gas 13kg": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma das três primeiras páginas oferece calculadora e a IA não pode responder sem dados do usuário.",
+  "veredito": "DESCARTAR",
+  "motivo": "Resposta já disponível no Google; não há necessidade de ferramenta.",
+  "quer_ferramenta": false,
   "top3": 0,
-  "top10": 1,
-  "ia_overview": false,
-  "regex": "REPROVA"
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "REPROVA",
+  "v": 3
  },
  "Quanto Dura um Saco de Racao": {
   "veredito": "DESCARTAR",
@@ -257,19 +279,23 @@
  },
  "Quantas Cabeças de Gado por Hectare": {
   "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma ferramenta interativa disponível e a resposta requer dados específicos do usuário.",
+  "motivo": "Usuário busca calcular quantas cabeças de gado cabem por hectare com base em seus próprios parâmetros, não há ferramenta nos resultados e a IA não fornece resposta definitiva.",
+  "quer_ferramenta": true,
   "top3": 0,
   "top10": 0,
   "ia_overview": false,
-  "regex": "OK"
+  "regex": "OK",
+  "v": 3
  },
  "Quantas Galinhas Poedeiras por m²": {
   "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma das primeiras páginas oferece ferramenta interativa e a resposta depende de cálculo específico do usuário",
+  "motivo": "override manual: mesmo padrão de calculadora-tijolos/cloro-piscina — área disponível é medida do usuário, IA não adivinha; quer_ferramenta=False do modelo foi inconsistente com queries estruturalmente idênticas que passaram.",
+  "quer_ferramenta": true,
   "top3": 0,
   "top10": 0,
   "ia_overview": false,
-  "regex": "OK"
+  "regex": "OK",
+  "v": 4
  },
  "Quanto Gasta um Aquário": {
   "veredito": "DESCARTAR",
@@ -280,60 +306,74 @@
   "regex": "OK"
  },
  "Quanto Gasta um Aquecedor a Gás": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma das três primeiras é ferramenta e a IA não responde sem cálculo específico.",
+  "veredito": "DESCARTAR",
+  "motivo": "A busca busca informação média de consumo, não requer cálculo personalizado; não há ferramentas interativas nos resultados.",
+  "quer_ferramenta": false,
   "top3": 0,
-  "top10": 1,
-  "ia_overview": false,
-  "regex": "OK"
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 3
  },
  "Quanto Gasta um Aspirador de Pó": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Não há ferramenta interativa e a resposta requer dados específicos do usuário.",
+  "veredito": "DESCARTAR",
+  "motivo": "A pergunta pode ser respondida com estimativas gerais de consumo, sem necessidade de dados pessoais, e nenhum dos resultados principais oferece uma calculadora interativa.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
-  "ia_overview": false,
-  "regex": "OK"
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 3
  },
  "Quanto Gasta uma Cafeteira Elétrica": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma das primeiras páginas oferece calculadora e a resposta depende de dados do usuário.",
+  "veredito": "DESCARTAR",
+  "motivo": "A busca procura um valor médio, já fornecido pelo Google; não há necessidade de ferramenta interativa.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
-  "ia_overview": false,
-  "regex": "OK"
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 3
  },
  "Quanto Gasta uma Câmera de Segurança": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma ferramenta interativa disponível e resposta não coberta por IA",
+  "veredito": "DESCARTAR",
+  "motivo": "A busca busca informação de custo médio, não requer cálculo interativo; há artigos que já respondem.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
-  "ia_overview": false,
-  "regex": "OK"
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 3
  },
  "Quanto Gasta uma Chaleira Elétrica": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma das primeiras páginas oferece ferramenta interativa e o cálculo depende de dados específicos do usuário.",
+  "veredito": "DESCARTAR",
+  "motivo": "A busca busca informação de consumo médio, não requer cálculo personalizado; IA pode responder diretamente.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
-  "ia_overview": false,
-  "regex": "OK"
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 3
  },
  "Quanto Gasta um Chuveiro Elétrico": {
   "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma ferramenta interativa disponível e a resposta requer dados específicos do usuário.",
+  "motivo": "O usuário quer usar uma calculadora para estimar seu gasto, mas não há resposta fixa no Google; portanto, construir a ferramenta é a melhor opção.",
+  "quer_ferramenta": true,
   "top3": 0,
-  "top10": 0,
+  "top10": 1,
   "ia_overview": false,
-  "regex": "OK"
+  "regex": "OK",
+  "v": 3
  },
  "Quanto Gasta um Climatizador de Ar": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma das primeiras três páginas oferece calculadora interativa e a resposta depende de dados específicos do usuário.",
+  "veredito": "DESCARTAR",
+  "motivo": "A resposta pode ser fornecida por IA com dados médios, não requer cálculo personalizado.",
+  "quer_ferramenta": true,
   "top3": 0,
   "top10": 0,
-  "ia_overview": false,
-  "regex": "OK"
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 3
  },
  "Quanto Gasta com Comida por Mes": {
   "veredito": "DESCARTAR",
@@ -344,20 +384,24 @@
   "regex": "OK"
  },
  "Quanto Gasta um Desumidificador": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma das primeiras páginas oferece calculadora e a resposta depende de dados específicos do usuário",
+  "veredito": "DESCARTAR",
+  "motivo": "A busca busca informação sobre consumo, não uma calculadora interativa, e a resposta depende de dados específicos do usuário.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
   "ia_overview": false,
-  "regex": "OK"
+  "regex": "OK",
+  "v": 3
  },
  "Quanto Gasta um Forno Elétrico": {
   "veredito": "CONSTRUIR",
-  "motivo": "Existe apenas uma ferramenta interativa no top‑10, mas não há nenhuma nos três primeiros resultados, e a resposta exige dados específicos do usuário.",
+  "motivo": "O usuário quer calcular o gasto do seu forno, não há ferramenta nos 3 primeiros resultados e a IA não pode responder sem dados pessoais.",
+  "quer_ferramenta": true,
   "top3": 0,
   "top10": 1,
   "ia_overview": false,
-  "regex": "OK"
+  "regex": "OK",
+  "v": 3
  },
  "Quanto Gasta um Freezer por Mês": {
   "veredito": "DESCARTAR",
@@ -376,28 +420,34 @@
   "regex": "REPROVA"
  },
  "Quanto Gasta uma Lâmpada de LED": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhum dos primeiros resultados oferece calculadora interativa e a resposta depende de dados específicos do usuário.",
+  "veredito": "DESCARTAR",
+  "motivo": "A resposta já pode ser fornecida por IA sem necessidade de ferramenta interativa.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
-  "ia_overview": false,
-  "regex": "OK"
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 3
  },
  "Quanto Gasta uma Lava Louças": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhum dos resultados oferece uma calculadora interativa e a resposta exige dados específicos do usuário.",
+  "veredito": "DESCARTAR",
+  "motivo": "A busca pode ser respondida com dados médios de consumo e custo, sem necessidade de cálculo personalizado.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
-  "ia_overview": false,
-  "regex": "OK"
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 3
  },
  "Quanto Gasta um Liquidificador": {
   "veredito": "CONSTRUIR",
-  "motivo": "Nenhum dos resultados oferece calculadora interativa e a IA não pode responder sem dados específicos do usuário.",
+  "motivo": "O usuário busca calcular o gasto do seu liquidificador, não há ferramenta nos resultados e a IA não pode responder sem dados específicos.",
+  "quer_ferramenta": true,
   "top3": 0,
   "top10": 0,
   "ia_overview": false,
-  "regex": "REPROVA"
+  "regex": "REPROVA",
+  "v": 3
  },
  "Quanto Gasta uma Máquina de Lavar": {
   "veredito": "DESCARTAR",
@@ -408,28 +458,34 @@
   "regex": "REPROVA"
  },
  "Quanto Gasta um Micro-ondas": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma das páginas apresenta calculadora interativa e o cálculo de gasto depende de dados específicos do usuário.",
+  "veredito": "DESCARTAR",
+  "motivo": "A busca procura um valor médio já fornecido pelo Google; não há necessidade de ferramenta interativa.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
-  "ia_overview": false,
-  "regex": "OK"
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 3
  },
  "Quanto Gasta um PC Gamer": {
   "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma ferramenta interativa disponível e a resposta requer dados específicos do usuário.",
+  "motivo": "Usuário busca uma calculadora de consumo e não há ferramenta nos resultados apresentados",
+  "quer_ferramenta": true,
   "top3": 0,
   "top10": 0,
   "ia_overview": false,
-  "regex": "REPROVA"
+  "regex": "REPROVA",
+  "v": 3
  },
  "Quanto Gasta um Purificador de Água": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma das três primeiras URLs oferece calculadora interativa e a IA não pode responder sem dados específicos do usuário.",
+  "veredito": "DESCARTAR",
+  "motivo": "A busca busca informação média de consumo, que pode ser respondida por IA sem necessidade de cálculo personalizado.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 1,
-  "ia_overview": false,
-  "regex": "OK"
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 3
  },
  "Quanto Gasta um Secador de Cabelo": {
   "veredito": "DESCARTAR",
@@ -440,12 +496,14 @@
   "regex": "OK"
  },
  "Quanto Gasta uma Televisão por Mês": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhum dos primeiros resultados oferece calculadora interativa e a IA não pode responder sem dados específicos do usuário.",
+  "veredito": "DESCARTAR",
+  "motivo": "A busca procura um valor médio já disponível no Google; não há necessidade de calculadora interativa.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
-  "ia_overview": false,
-  "regex": "REPROVA"
+  "ia_overview": true,
+  "regex": "REPROVA",
+  "v": 3
  },
  "Quanto Gasta um Umidificador": {
   "veredito": "DESCARTAR",
@@ -456,12 +514,14 @@
   "regex": "OK"
  },
  "Quanto Gasta um Ventilador": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhum dos primeiros resultados oferece calculadora interativa e o cálculo depende de dados específicos do usuário",
+  "veredito": "DESCARTAR",
+  "motivo": "A busca pode ser respondida com estimativas fixas de consumo, não há necessidade de ferramenta interativa.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
-  "ia_overview": false,
-  "regex": "OK"
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 3
  },
  "Gerador de Caça-Palavras": {
   "veredito": "DESCARTAR",
@@ -657,11 +717,13 @@
  },
  "Quantos Tijolos para Construir uma Casa": {
   "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma das primeiras páginas oferece calculadora interativa e a IA não pode responder sem dados específicos do usuário",
+  "motivo": "O usuário busca uma calculadora para estimar a quantidade de tijolos necessária para sua casa, e nenhum dos top 10 resultados oferece uma ferramenta interativa nem a IA pode responder sem dados específicos.",
+  "quer_ferramenta": true,
   "top3": 0,
   "top10": 0,
   "ia_overview": false,
-  "regex": "OK"
+  "regex": "OK",
+  "v": 4
  },
  "1 dolar quantas liras turcas": {
   "veredito": "DESCARTAR",
@@ -1030,5 +1092,15 @@
   "ia_overview": false,
   "regex": "REPROVA",
   "v": 2
+ },
+ "Calculadora de Arcano Pessoal 2026": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Usuário busca uma calculadora interativa para obter seu Arcano Pessoal, mas nenhum dos resultados top‑10 oferece ferramenta de cálculo; a resposta não pode ser fornecida sem dados pessoais.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 3
  }
 }

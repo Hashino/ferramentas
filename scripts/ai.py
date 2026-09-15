@@ -21,10 +21,19 @@ Uso como teste:   python3 scripts/ai.py
 import json
 import os
 import pathlib
+import re
 import sys
 import time
 import urllib.error
 import urllib.request
+
+# a Groq devolve o tempo de espera dentro da MENSAGEM de erro, não num header
+# Retry-After ("Please try again in 3.08s") — TPM (tokens por minuto) é o
+# limite que estoura em uso em lote (triagem.py roda dezenas de chamadas
+# seguidas), diferente do uso leve original que este cliente foi desenhado
+# para. Sem isso, 4 tentativas alternando entre os 2 modelos saturados
+# esgotam rápido e o chamador recebe SemIA à toa.
+_RETRY_APOS = re.compile(r"try again in ([\d.]+)s", re.I)
 
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
       "Chrome/129.0.0.0 Safari/537.36")
@@ -62,7 +71,7 @@ class SemIA(RuntimeError):
 
 
 def perguntar(prompt: str, *, sistema: str = "", json_mode: bool = False,
-              robusto: bool = False, tentativas: int = 4) -> str:
+              robusto: bool = False, tentativas: int = 6) -> str:
     cfg = _config()
     base = cfg.get("LEARNIVE_API_BASE_URL")
     key = cfg.get("LEARNIVE_API_KEY")
@@ -123,7 +132,9 @@ def perguntar(prompt: str, *, sistema: str = "", json_mode: bool = False,
                 detalhe = ""
             ultimo = f"{e.code} {e.reason} {detalhe}"
             if e.code == 429:
-                time.sleep(2)  # e na volta o `i % len` já troca de modelo
+                m = _RETRY_APOS.search(detalhe)
+                espera = float(m.group(1)) + 0.5 if m else 2.0
+                time.sleep(espera)  # e na volta o `i % len` já troca de modelo
                 continue
             if e.code in (500, 502, 503):
                 time.sleep(1.5)
