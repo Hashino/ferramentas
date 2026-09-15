@@ -5,6 +5,7 @@
 ## Ferramentas
 
 - [Quantos Litros Gasta uma Máquina de Lavar — Calculadora](https://hashino.github.io/ferramentas/tools/agua-maquina-lavar/): Calcule a água que a máquina de lavar consome por mês: litros por ciclo e lavagens por semana. Grátis, sem cadastro.
+- [Calculadora de Arcano Pessoal 2026 — Ano Pessoal no Tarô](https://hashino.github.io/ferramentas/tools/arcano-pessoal-2026/): Descubra seu arcano pessoal de 2026 (o ano pessoal do tarô) pela sua data de nascimento. Grátis, resultado na hora.
 - [Calculadora de Arcano Pessoal Anual — Ano Pessoal do Tarô](https://hashino.github.io/ferramentas/tools/arcano-pessoal-anual/): Descubra seu Arcano Pessoal Anual (ano pessoal do tarô) a partir do dia e mês de nascimento. Calculadora grátis, resultado na hora.
 - [Quantos Blocos para Construir uma Casa — Estimativa](https://hashino.github.io/ferramentas/tools/blocos-casa/): Estime quantos blocos de concreto ou cerâmicos para construir uma casa pelo tamanho em m². Grátis, sem cadastro, na hora.
 - [Quanto de Café por Pessoa — Calculadora](https://hashino.github.io/ferramentas/tools/cafe-por-pessoa/): Calcule o café para o grupo: litros, xícaras e colheres de pó pela quantidade de pessoas e xícaras cada uma. Grátis.

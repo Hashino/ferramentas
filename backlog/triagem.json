@@ -665,67 +665,83 @@
  },
  "1 dolar quantas liras turcas": {
   "veredito": "DESCARTAR",
-  "motivo": "Existem ferramentas interativas nos top 3, então não há necessidade de construir.",
-  "top3": 3,
-  "top10": 3,
+  "motivo": "Já há várias ferramentas de conversão nos primeiros resultados",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 4,
   "ia_overview": false,
-  "regex": "OK"
+  "regex": "OK",
+  "v": 2
  },
  "1 dolar quantas rupias": {
   "veredito": "DESCARTAR",
-  "motivo": "Existem ferramentas interativas nos 3 primeiros resultados e o Google já fornece a resposta instantânea.",
+  "motivo": "Já há várias ferramentas interativas nos primeiros resultados e o Google fornece resposta instantânea, não justificando nova ferramenta.",
+  "quer_ferramenta": true,
   "top3": 3,
-  "top10": 10,
+  "top10": 9,
   "ia_overview": true,
-  "regex": "REPROVA"
+  "regex": "REPROVA",
+  "v": 2
  },
  "adicional noturno": {
   "veredito": "DESCARTAR",
-  "motivo": "Existem ferramentas, mas a busca requer cálculo personalizado.",
+  "motivo": "Já existem ferramentas interativas nos resultados e a IA pode responder com definição e percentual sem necessidade de cálculo personalizado.",
+  "quer_ferramenta": true,
   "top3": 1,
   "top10": 3,
-  "ia_overview": false,
-  "regex": "REPROVA"
+  "ia_overview": true,
+  "regex": "REPROVA",
+  "v": 2
  },
  "agente gerador de demanda salário": {
-  "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma ferramenta interativa e a resposta requer dados específicos do usuário.",
+  "veredito": "DESCARTAR",
+  "motivo": "A busca visa obter informações de salário, não requer cálculo interativo nem ferramenta.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
   "ia_overview": false,
-  "regex": "REPROVA"
+  "regex": "REPROVA",
+  "v": 2
  },
  "aposentadoria demora quanto tempo": {
   "veredito": "DESCARTAR",
-  "motivo": "Existem ferramentas interativas nos resultados, então não há oportunidade de construir uma nova.",
+  "motivo": "A busca busca informação sobre prazo, não cálculo personalizado, e já há conteúdo explicativo suficiente.",
+  "quer_ferramenta": false,
   "top3": 1,
   "top10": 1,
   "ia_overview": false,
-  "regex": "REPROVA"
+  "regex": "REPROVA",
+  "v": 2
  },
  "aposentadoria quantos anos": {
   "veredito": "DESCARTAR",
-  "motivo": "Nenhuma ferramenta interativa nos top 3 e a resposta pode ser dada por IA sem dados específicos.",
+  "motivo": "A busca busca informação fixa sobre idade mínima, não requer cálculo personalizado.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
   "ia_overview": true,
-  "regex": "OK"
+  "regex": "OK",
+  "v": 2
  },
  "aposentadoria quantos anos de carteira assinada": {
   "veredito": "DESCARTAR",
-  "motivo": "Resposta já fornecida por IA, não há necessidade de ferramenta",
+  "motivo": "O usuário quer saber a regra de tempo de contribuição, informação fixa que pode ser respondida sem cálculo personalizado.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
   "ia_overview": true,
-  "regex": "OK"
+  "regex": "OK",
+  "v": 2
  },
  "aposentadoria quantos anos de contribuição": {
   "veredito": "DESCARTAR",
-  "motivo": "Nenhuma ferramenta interativa nos top 3 e a resposta já pode ser fornecida por IA sem dados adicionais.",
+  "motivo": "A busca procura uma regra fixa (anos de contribuição), não requer dados pessoais e já é respondida por IA.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
   "ia_overview": true,
-  "regex": "OK"
+  "regex": "OK",
+  "v": 2
  },
  "aposentadoria quantos anos de trabalho": {
   "veredito": "CONSTRUIR",
@@ -736,11 +752,283 @@
   "regex": "OK"
  },
  "aposentadoria quantos anos homem": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca busca informação fixa sobre idade de aposentadoria, não requer cálculo personalizado.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 2
+ },
+ "aposentadoria quantos anos mulher": {
+  "veredito": "DESCARTAR",
+  "motivo": "A resposta já aparece no snippet do Google, não requer dados pessoais.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 2
+ },
+ "aposentadoria quantos pontos": {
+  "veredito": "DESCARTAR",
+  "motivo": "A resposta é fixa e já aparece no Google; não há necessidade de ferramenta interativa.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 2
+ },
+ "ate quando é mei": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca por informação fixa, já respondida pelo Google.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 2
+ },
+ "babybit simulador de cripto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias ferramentas interativas nos primeiros resultados, não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "bitcoin quantas moedas": {
+  "veredito": "DESCARTAR",
+  "motivo": "A resposta já está disponível como número fixo (supply máximo de 21 milhões)",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora cripto binance": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem calculadoras interativas nos resultados, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de 13o salário": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas já disponíveis nos top 3 resultados.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de adicional noturno": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras nos primeiros resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de agua": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem calculadoras interativas nos 3 primeiros resultados, então a busca já é atendida por ferramentas prontas.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de alavancagem cripto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas já disponíveis; a busca não requer construção de nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de aluguel": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem várias calculadoras de aluguel nos primeiros resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de amortização de financiamento": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de anos": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias ferramentas nos primeiros resultados, não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de anos meses e dias": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não é necessário construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de aposentadoria": {
+  "veredito": "DESCARTAR",
+  "motivo": "A maioria dos resultados são calculadoras interativas, mas a busca indica intenção de usar uma ferramenta, não apenas obter informação fixa; portanto não há necessidade de construir nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de aposentadoria especial": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias ferramentas nos primeiros resultados, não vale criar outra.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de aposentadoria especial insalubridade": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem calculadoras interativas, mas a busca requer dados pessoais para cálculo.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de aposentadoria gratis": {
+  "veredito": "DESCARTAR",
+  "motivo": "Os três primeiros resultados já são calculadoras interativas, não há necessidade de criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de aposentadoria inss": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem calculadoras interativas nos top 3, então não é necessário construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de aposentadoria investimento": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias ferramentas interativas nos primeiros resultados",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de aposentadoria por invalidez": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há ferramentas interativas nos primeiros resultados",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de aposentadoria por tempo de contribuição": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de aposentadoria privada": {
+  "veredito": "DESCARTAR",
+  "motivo": "Os três primeiros resultados já são simuladores interativos, não há necessidade de nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de aposentadoria professor": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem calculadoras interativas nos top 3 resultados, então não há necessidade de construir uma nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de aposentadoria tesouro direto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos resultados, mas a busca requer dados pessoais para cálculo.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de arbitragem cripto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias ferramentas interativas nos primeiros resultados, não vale criar outra.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 2
+ },
+ "calculadora de arcano pessoal 2026": {
   "veredito": "CONSTRUIR",
-  "motivo": "Nenhuma das primeiras páginas oferece calculadora interativa e a resposta depende de dados pessoais do usuário",
+  "motivo": "Usuário procura calculadora interativa, nenhuma disponível nos top 10 e IA não fornece resposta completa sem dados pessoais.",
+  "quer_ferramenta": true,
   "top3": 0,
   "top10": 0,
   "ia_overview": false,
-  "regex": "OK"
+  "regex": "REPROVA",
+  "v": 2
  }
 }
