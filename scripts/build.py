@@ -143,7 +143,14 @@ def ads_txt() -> None:
     client = CFG.get("adsense_client", "")
     destino = ROOT / "ads.txt"
     if client:
-        destino.write_text(f"google.com, {client}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8")
+        # ads.txt exige o publisher ID no formato "pub-XXXX", SEM o prefixo
+        # "ca-" — esse prefixo só existe na tag de anúncio (ca-pub-XXXX no
+        # script/data-ad-client). O parser do Google faz match exato do
+        # token "pub-XXXX"; com "ca-pub-XXXX" ele não reconhece e o painel
+        # do AdSense mostra "Unauthorized: publisher ID wasn't found" mesmo
+        # com o número certo dentro do arquivo (bug real, achado 15/09/2026).
+        pub_id = client[3:] if client.startswith("ca-pub-") else client
+        destino.write_text(f"google.com, {pub_id}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8")
     elif destino.exists():
         destino.unlink()
 
