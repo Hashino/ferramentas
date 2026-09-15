@@ -17,7 +17,7 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
   - `mine.py reddit [N]` — caça pedidos de ferramenta em threads BR do Reddit
   - `mine.py sitemaps [N]` — títulos de sites concorrentes validados no autocomplete
   - Seeds editáveis em `backlog/seeds.json` (cabeças, domínios, queries de reddit, sitemaps)
-- `scripts/lint_fake_calculator.py` — bloqueia ferramenta "preço de mercado" (custo-, consulta-, cirurgia-, consertar-, alugar-, instalar-, trocar-, exame-, aula-, etc.) sem nenhum `<input type="number">`/`type="date"` real: isso é resposta informacional disfarçada de calculadora — exatamente o formato que a AI Overview do Google sintetiza direto na SERP a partir de blogs (mesma faixa de preço, sem precisar de dado pessoal do usuário). Rodar nas N ferramentas da leva ANTES de commitar (`python3 scripts/lint_fake_calculator.py <slug1> <slug2> ...`) — exit 1 se achar alguma; redesenhar com input real (idade, m², quantidade, datas — algo que só o usuário sabe) ou descartar a keyword.
+- `scripts/lint_fake_calculator.py` — rede de segurança automática, só por prefixo de slug (bucket de categorias JÁ CONHECIDAS como "preço de serviço/produto": custo-, consulta-, cirurgia-, consertar-, alugar-, instalar-, trocar-, exame-, aula-, etc.). NÃO tenta mais detectar a frase "preço/valor de X" no texto via regex — foi abandonado porque a mesma frase aparece tanto numa pergunta informacional real quanto describing um input legítimo de calculadora ("valor da hora", "preço do kg do gás"), e regex não distingue intenção. A distinção real é feita pelo AGENTE no passo 2(d) abaixo, ANTES de construir a ferramenta — este script só pega reincidências óbvias de categoria. Rodar nas N ferramentas da leva antes de commitar (`python3 scripts/lint_fake_calculator.py <slug1> <slug2> ...`) — exit 1 se achar alguma.
 - `scripts/backfill_explicacao.py` — insere `<details class="explicacao">` (texto SEO colapsado, reaproveita a própria `{{DESCRIPTION}}` de cada ferramenta + 3 links "relacionadas" por bucket de prefixo do slug), FAQPage JSON-LD e `data-footer` em qualquer `tools/*/index.html` que ainda não tenha. Idempotente. Rodar depois de criar as ferramentas da leva, ANTES do `build.py`.
 - `scripts/build.py` — regenera `index.html` (hub), `sitemap.xml`, `robots.txt`, `llms.txt`, `config.js`, `ads.txt`. SEMPRE rodar antes de commitar.
 - `scripts/ping_indexnow.py` — roda no CI a cada push; não rodar manualmente
@@ -38,15 +38,21 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
    (a) SERP sem ferramenta dedicada no top-10 (fóruns, Reddit, resultados genéricos = demanda sem oferta);
    (b) tarefa resolvível em 1 página estática de vanilla JS (calcular/gerar/convertar);
    (c) sem overlap com ferramenta já publicada em `tools/`;
-   (d) **a pergunta em si não é informacional** — keyword do tipo "quanto custa/vale/sai/é/cobra X",
-   "preço de X", "valor de X": a AI Overview do Google responde pela INTENÇÃO da busca ("me dá uma
-   estimativa"), não pela qualidade da página por trás. Ter input numérico/data real NÃO isenta —
-   lição do cleanup de 212 ferramentas em set/2026, onde até calculadoras com m²/quantidade real
-   perdiam o clique porque a pergunta já tinha sido respondida ali na SERP. REJEITAR keyword desse
-   formato inteiro, mesmo que pareça fácil de construir. Aceitar só o formato onde a pergunta pede um
-   resultado que só existe DEPOIS do cálculo do usuário (bhaskara, boost de jogo, arcano pessoal,
-   rendimento/proporção, gasto de energia a partir de potência+horas) — não uma estimativa de mercado.
-   Rodar `scripts/lint_fake_calculator.py` depois de criar (passo 4) para confirmar.
+   (d) **julgamento anti-AI-Overview — feito pelo agente, caso a caso, ANTES de construir**: para
+   cada candidata, perguntar "um resumo de 2-3 frases de uma IA, sem nenhum dado pessoal do
+   usuário, já responderia completamente essa busca?". Se sim, REJEITAR — mesmo que dê pra construir
+   uma calculadora bonita com input numérico/data real (lição do cleanup de 212 ferramentas em
+   set/2026: até calculadoras com m²/quantidade real perdiam o clique, porque a AI Overview responde
+   pela INTENÇÃO da busca, não pela qualidade da página por trás). Isso NÃO é um regex — é a mesma
+   pergunta que um redator de SEO se faria: "estimativa de mercado" (quanto custa/vale/sai construir,
+   consertar, contratar X; preço médio de Y) é sempre rejeitável, mesmo disfarçada de calculadora.
+   Já "resultado que só existe DEPOIS de um cálculo com dado específico do usuário" é sempre aceitável
+   (bhaskara, boost de jogo, arcano pessoal, rendimento/proporção, conversão de unidade, gasto de
+   energia a partir de potência+horas informadas pelo usuário) — inclusive quando o input É um preço
+   ("quanto vou gastar de luz com meu chuveiro de X kW por Y horas ao preço de R$Z/kWh" é aceitável:
+   o preço ali é uma variável que só o usuário sabe, não uma pergunta de mercado).
+   `scripts/lint_fake_calculator.py` roda depois de criar (passo 4) só como rede de segurança
+   automática por categoria de slug já conhecida — não substitui esse julgamento.
    Publicar só o que passar. Se menos que N passarem, publicar as que passarem e reportar o motivo —
    NUNCA forçar página em SERP saturada. Keywords checadas e cortadas: marcar `descartada` no CSV
    (poupa re-checagem de Serper nas próximas levas).
@@ -74,7 +80,7 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
 - Sempre `scripts/build.py` antes de commit.
 - Ferramentas em PT-BR por padrão; versão EN só sob pedido.
 - Não inventar dados de volume de busca: o pipeline só mede autocomplete + SERP; volume fica para o Search Console decidir.
-- Regra anti-AI-Overview: nenhuma ferramenta nova pode responder uma pergunta do tipo "quanto custa/vale/sai/é/cobra X" — isso é a mesma resposta que o Google já sintetiza direto na busca, e input numérico real NÃO isenta (a AI Overview responde pela intenção, não pela qualidade da calculadora). Só entram keywords cujo resultado só existe depois de um cálculo com dado específico do usuário. Ver `scripts/lint_fake_calculator.py`.
+- Regra anti-AI-Overview: nenhuma ferramenta nova pode responder uma pergunta do tipo "quanto custa/vale/sai/é/cobra X" — isso é a mesma resposta que o Google já sintetiza direto na busca, e input numérico real NÃO isenta (a AI Overview responde pela intenção, não pela qualidade da calculadora). Só entram keywords cujo resultado só existe depois de um cálculo com dado específico do usuário. Esse julgamento é feito pelo AGENTE na seleção (passo 2d), não por regex — `scripts/lint_fake_calculator.py` é só uma rede de segurança por categoria de slug conhecida, não a fonte da verdade.
 - `indexnow.key` e `<key>.txt` são públicos por design. `.env` nunca sai do git.
 
 ## AdSense (quando o ID existir)
