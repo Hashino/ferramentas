@@ -31,6 +31,7 @@ import json
 import pathlib
 import re
 import sys
+import unicodedata
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from ai import SemIA, perguntar_json  # noqa: E402
@@ -136,6 +137,49 @@ def triar(kw: str, resultados: list[str], cache: dict) -> dict:
     }
     cache[kw] = r
     return r
+
+
+# ── corte por família: não gastar crédito de SERP em nicho já condenado ──────
+# Família = primeira palavra de conteúdo da keyword ("calculadora de bitcoin
+# lucro" -> "bitcoin"; "quanto gasta um freezer" -> "gasta"). Grosseiro de
+# propósito: o que protege as famílias boas não é a precisão do agrupamento,
+# é a regra exigir ZERO aprovadas para condenar. Medido em 15/09/2026 sobre
+# os vereditos reais: "gasta" tinha 17 aprovadas em 24 e sobrevive; "gerador"
+# (0 de 11) e "salario" (0 de 4) morrem, que é exatamente o desejado.
+MIN_REJEICOES = 4       # com nenhuma aprovada, isso já basta para condenar
+MIN_AMOSTRA_TAXA = 10   # com amostra grande, uma taxa péssima também condena
+TAXA_MINIMA = 0.15      # "aposentadoria": 1 aprovada em 19 = 19 créditos por ferramenta
+
+PARAR = {"de", "da", "do", "das", "dos", "para", "por", "em", "um", "uma", "o", "a",
+         "e", "com", "quanto", "quantos", "quantas", "calculadora", "calcular",
+         "tem", "que", "no", "na", "meu", "minha", "online", "gratis"}
+
+
+def familia(kw: str) -> str:
+    s = unicodedata.normalize("NFD", kw.lower())
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    tokens = [t for t in re.split(r"[^a-z0-9]+", s) if t and t not in PARAR]
+    return tokens[0] if tokens else ""
+
+
+def familias_condenadas(cache: dict | None = None) -> dict[str, str]:
+    """Famílias que não merecem mais crédito de Serper -> motivo."""
+    if cache is None:
+        cache = json.loads(CACHE_PATH.read_text(encoding="utf-8")) if CACHE_PATH.exists() else {}
+    placar: dict[str, list[int]] = {}
+    for kw, v in cache.items():
+        p = placar.setdefault(familia(kw), [0, 0])
+        p[0 if v.get("veredito") == "CONSTRUIR" else 1] += 1
+
+    mortas = {}
+    for fam, (ok, rej) in placar.items():
+        if not fam:
+            continue
+        if ok == 0 and rej >= MIN_REJEICOES:
+            mortas[fam] = f"{rej} rejeitadas, nenhuma aprovada"
+        elif ok + rej >= MIN_AMOSTRA_TAXA and ok / (ok + rej) < TAXA_MINIMA:
+            mortas[fam] = f"só {ok} aprovada(s) em {ok + rej}"
+    return mortas
 
 
 H1_RE = re.compile(r"<h1[^>]*>(.*?)</h1>", re.S)

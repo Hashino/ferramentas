@@ -311,7 +311,7 @@ calculadora de rescisão,candidata,2026-09-10,
 calculadora de resistor,descartada,,manual
 calculadora de resistor para led,descartada,,manual
 calculadora de salario liquido,candidata,2026-09-10,
-calculadora de salario mei,candidata,2026-09-10,matrix:mei
+calculadora de salario mei,descartada,2026-09-10,matrix:mei
 calculadora de salario por hora,descartada,,manual
 calculadora de salário,candidata,2026-09-10,matrix:salário
 calculadora de salário 2026,candidata,2026-09-10,matrix:salário
@@ -850,66 +850,66 @@ férias quantos dias antes tem que pagar,candidata,2026-09-10,matrix:férias
 férias quantos dias para receber,candidata,2026-09-10,matrix:férias
 férias quantos dias posso vender,candidata,2026-09-10,matrix:férias
 férias quantos por cento,candidata,2026-09-10,matrix:férias
-gerador de 12 palavras bitcoin,candidata,2026-09-10,matrix:bitcoin
+gerador de 12 palavras bitcoin,descartada,2026-09-10,matrix:bitcoin
 gerador de acordes,descartada,,manual
 gerador de anagramas,descartada,2026-09-10,manual
 gerador de apelidos,descartada,,manual
 gerador de ata de reuniao,descartada,,manual
 gerador de atividade de caligrafia,feita,,manual
-gerador de beneficio inss,candidata,2026-09-10,matrix:inss
-gerador de bitcoin,candidata,2026-09-10,matrix:bitcoin
-gerador de bitcoin gratuito,candidata,2026-09-10,matrix:bitcoin
+gerador de beneficio inss,descartada,2026-09-10,matrix:inss
+gerador de bitcoin,descartada,2026-09-10,matrix:bitcoin
+gerador de bitcoin gratuito,descartada,2026-09-10,matrix:bitcoin
 gerador de boletim escolar,descartada,,manual
-gerador de boleto inss,candidata,2026-09-10,matrix:inss
-gerador de boleto mei,candidata,2026-09-10,matrix:mei
+gerador de boleto inss,descartada,2026-09-10,matrix:inss
+gerador de boleto mei,descartada,2026-09-10,matrix:mei
 gerador de capa de trabalho,descartada,,manual
-gerador de carteira bitcoin,candidata,2026-09-10,matrix:bitcoin
+gerador de carteira bitcoin,descartada,2026-09-10,matrix:bitcoin
 gerador de cartela de bingo,feita,2026-09-10,manual
-gerador de cartão de crédito,candidata,2026-09-10,matrix:cartão de crédito
-gerador de cartão de crédito com limite,candidata,2026-09-10,matrix:cartão de crédito
-gerador de cartão de crédito com nome,candidata,2026-09-10,matrix:cartão de crédito
-gerador de cartão de crédito com saldo,candidata,2026-09-10,matrix:cartão de crédito
-gerador de cartão de crédito com saldo e cpf,candidata,2026-09-10,matrix:cartão de crédito
-gerador de cartão de crédito para teste,candidata,2026-09-10,matrix:cartão de crédito
-gerador de cartão de crédito para teste grátis,candidata,2026-09-10,matrix:cartão de crédito
-gerador de cartão de crédito virtual,candidata,2026-09-10,matrix:cartão de crédito
-gerador de cartão de crédito válido,candidata,2026-09-10,matrix:cartão de crédito
-gerador de cartão de crédito válido com limite,candidata,2026-09-10,matrix:cartão de crédito
-gerador de cartão de crédito válido para compras com nome,candidata,2026-09-10,matrix:cartão de crédito
+gerador de cartão de crédito,descartada,2026-09-10,matrix:cartão de crédito
+gerador de cartão de crédito com limite,descartada,2026-09-10,matrix:cartão de crédito
+gerador de cartão de crédito com nome,descartada,2026-09-10,matrix:cartão de crédito
+gerador de cartão de crédito com saldo,descartada,2026-09-10,matrix:cartão de crédito
+gerador de cartão de crédito com saldo e cpf,descartada,2026-09-10,matrix:cartão de crédito
+gerador de cartão de crédito para teste,descartada,2026-09-10,matrix:cartão de crédito
+gerador de cartão de crédito para teste grátis,descartada,2026-09-10,matrix:cartão de crédito
+gerador de cartão de crédito virtual,descartada,2026-09-10,matrix:cartão de crédito
+gerador de cartão de crédito válido,descartada,2026-09-10,matrix:cartão de crédito
+gerador de cartão de crédito válido com limite,descartada,2026-09-10,matrix:cartão de crédito
+gerador de cartão de crédito válido para compras com nome,descartada,2026-09-10,matrix:cartão de crédito
 gerador de caça palavras,feita,2026-09-10,manual
 gerador de certificado,descartada,2026-09-10,manual
-gerador de chave bitcoin,candidata,2026-09-10,matrix:bitcoin
-gerador de chave criptográfica,candidata,2026-09-10,matrix:cripto
-gerador de chave privada bitcoin,candidata,2026-09-10,matrix:bitcoin
+gerador de chave bitcoin,descartada,2026-09-10,matrix:bitcoin
+gerador de chave criptográfica,descartada,2026-09-10,matrix:cripto
+gerador de chave privada bitcoin,descartada,2026-09-10,matrix:bitcoin
 gerador de cracha,descartada,,manual
-gerador de cripto,candidata,2026-09-10,matrix:cripto
-gerador de criptografia,candidata,2026-09-10,matrix:cripto
-gerador de criptografia com simbolos,candidata,2026-09-10,matrix:cripto
-gerador de criptograma,candidata,2026-09-10,matrix:cripto
-gerador de criptograma com símbolos,candidata,2026-09-10,matrix:cripto
-gerador de criptograma online,candidata,2026-09-10,matrix:cripto
-gerador de criptograma para imprimir,candidata,2026-09-10,matrix:cripto
-gerador de criptomoedas,candidata,2026-09-10,matrix:cripto
+gerador de cripto,descartada,2026-09-10,matrix:cripto
+gerador de criptografia,descartada,2026-09-10,matrix:cripto
+gerador de criptografia com simbolos,descartada,2026-09-10,matrix:cripto
+gerador de criptograma,descartada,2026-09-10,matrix:cripto
+gerador de criptograma com símbolos,descartada,2026-09-10,matrix:cripto
+gerador de criptograma online,descartada,2026-09-10,matrix:cripto
+gerador de criptograma para imprimir,descartada,2026-09-10,matrix:cripto
+gerador de criptomoedas,descartada,2026-09-10,matrix:cripto
 gerador de cronograma capilar,descartada,,manual
 gerador de cruzadinha,descartada,2026-09-10,manual
-gerador de código inss,candidata,2026-09-10,matrix:inss
+gerador de código inss,descartada,2026-09-10,matrix:inss
 gerador de dados de rpg,descartada,2026-09-10,manual
-gerador de das mei 2026,candidata,2026-09-10,matrix:mei
-gerador de declaração de imposto de renda 2025,candidata,2026-09-10,matrix:imposto de renda
-gerador de declaração imposto de renda,candidata,2026-09-10,matrix:imposto de renda
+gerador de das mei 2026,descartada,2026-09-10,matrix:mei
+gerador de declaração de imposto de renda 2025,descartada,2026-09-10,matrix:imposto de renda
+gerador de declaração imposto de renda,descartada,2026-09-10,matrix:imposto de renda
 gerador de demanda althaia salario,candidata,2026-09-10,matrix:salário
 gerador de demanda salario,candidata,2026-09-10,matrix:salário
 gerador de diploma,descartada,2026-09-10,manual
-gerador de dolar,candidata,2026-09-10,matrix:dólar
-gerador de email,candidata,2026-09-10,matrix:mei
-gerador de email aleatorio,candidata,2026-09-10,matrix:mei
-gerador de email e senha,candidata,2026-09-10,matrix:mei
-gerador de email gmail,candidata,2026-09-10,matrix:mei
-gerador de email temporário,candidata,2026-09-10,matrix:mei
-gerador de email temporário gmail,candidata,2026-09-10,matrix:mei
-gerador de emojis,candidata,2026-09-10,matrix:mei
-gerador de empresas,candidata,2026-09-10,matrix:mei
-gerador de endereço bitcoin,candidata,2026-09-10,matrix:bitcoin
+gerador de dolar,descartada,2026-09-10,matrix:dólar
+gerador de email,descartada,2026-09-10,matrix:mei
+gerador de email aleatorio,descartada,2026-09-10,matrix:mei
+gerador de email e senha,descartada,2026-09-10,matrix:mei
+gerador de email gmail,descartada,2026-09-10,matrix:mei
+gerador de email temporário,descartada,2026-09-10,matrix:mei
+gerador de email temporário gmail,descartada,2026-09-10,matrix:mei
+gerador de emojis,descartada,2026-09-10,matrix:mei
+gerador de empresas,descartada,2026-09-10,matrix:mei
+gerador de endereço bitcoin,descartada,2026-09-10,matrix:bitcoin
 gerador de escala 12x36,feita,2026-09-10,manual
 gerador de escala musical,descartada,,manual
 gerador de etiqueta de preco,descartada,,manual
@@ -917,32 +917,32 @@ gerador de etiqueta escolar,feita,,manual
 gerador de exercicios de matematica,descartada,2026-09-10,manual
 gerador de ferias,candidata,2026-09-10,matrix:férias
 gerador de ficha catalografica,descartada,,manual
-gerador de financiamento,candidata,2026-09-10,matrix:financiamento
+gerador de financiamento,descartada,2026-09-10,matrix:financiamento
 gerador de férias,candidata,2026-09-10,matrix:férias
-gerador de gps inss,candidata,2026-09-10,matrix:inss
+gerador de gps inss,descartada,2026-09-10,matrix:inss
 gerador de grade de horarios,descartada,,manual
-gerador de guia inss,candidata,2026-09-10,matrix:inss
-gerador de guia mei,candidata,2026-09-10,matrix:mei
+gerador de guia inss,descartada,2026-09-10,matrix:inss
+gerador de guia mei,descartada,2026-09-10,matrix:mei
 gerador de hora extra,candidata,2026-09-10,matrix:hora extra
-gerador de imposto de renda,candidata,2026-09-10,matrix:imposto de renda
-gerador de imposto de renda 2025,candidata,2026-09-10,matrix:imposto de renda
-gerador de imposto de renda 2026,candidata,2026-09-10,matrix:imposto de renda
-gerador de inscrição inss,candidata,2026-09-10,matrix:inss
-gerador de inss,candidata,2026-09-10,matrix:inss
-gerador de juros compostos,candidata,2026-09-10,matrix:juros compostos
-gerador de leads para consorcio,candidata,2026-09-10,matrix:consórcio
+gerador de imposto de renda,descartada,2026-09-10,matrix:imposto de renda
+gerador de imposto de renda 2025,descartada,2026-09-10,matrix:imposto de renda
+gerador de imposto de renda 2026,descartada,2026-09-10,matrix:imposto de renda
+gerador de inscrição inss,descartada,2026-09-10,matrix:inss
+gerador de inss,descartada,2026-09-10,matrix:inss
+gerador de juros compostos,descartada,2026-09-10,matrix:juros compostos
+gerador de leads para consorcio,descartada,2026-09-10,matrix:consórcio
 gerador de letra cursiva,descartada,,manual
 gerador de lista de compras,descartada,,manual
 gerador de lista de presença,feita,2026-09-10,manual
-gerador de lucros em dolar,candidata,2026-09-10,matrix:dólar
-gerador de lucros em dólar,candidata,2026-09-10,matrix:dólar
-gerador de matricula inss,candidata,2026-09-10,matrix:inss
-gerador de mei,candidata,2026-09-10,matrix:mei
-gerador de mei celular,candidata,2026-09-10,matrix:mei
-gerador de mei cnpj,candidata,2026-09-10,matrix:mei
-gerador de mei valido,candidata,2026-09-10,matrix:mei
+gerador de lucros em dolar,descartada,2026-09-10,matrix:dólar
+gerador de lucros em dólar,descartada,2026-09-10,matrix:dólar
+gerador de matricula inss,descartada,2026-09-10,matrix:inss
+gerador de mei,descartada,2026-09-10,matrix:mei
+gerador de mei celular,descartada,2026-09-10,matrix:mei
+gerador de mei cnpj,descartada,2026-09-10,matrix:mei
+gerador de mei valido,descartada,2026-09-10,matrix:mei
 gerador de monograma,feita,2026-09-10,manual
-gerador de nf mei,candidata,2026-09-10,matrix:mei
+gerador de nf mei,descartada,2026-09-10,matrix:mei
 gerador de nome de bar,descartada,,manual
 gerador de nome de barco,descartada,,manual
 gerador de nome de cachorro,descartada,2026-09-10,manual
@@ -952,20 +952,20 @@ gerador de nome de loja,descartada,,manual
 gerador de nome de marca,descartada,,manual
 gerador de nome personagem rpg,descartada,2026-09-10,manual
 gerador de nomes brasileiros,descartada,,manual
-gerador de nota fiscal,candidata,2026-09-10,matrix:nota fiscal
-gerador de nota fiscal eletronica,candidata,2026-09-10,matrix:nota fiscal
-gerador de nota fiscal gov,candidata,2026-09-10,matrix:nota fiscal
-gerador de nota fiscal gratuito,candidata,2026-09-10,matrix:nota fiscal
-gerador de nota fiscal mei,candidata,2026-09-10,matrix:nota fiscal
-gerador de nota fiscal online,candidata,2026-09-10,matrix:nota fiscal
-gerador de nota fiscal online gratuito,candidata,2026-09-10,matrix:nota fiscal
-gerador de nota fiscal para teste,candidata,2026-09-10,matrix:nota fiscal
-gerador de nota fiscal pdf,candidata,2026-09-10,matrix:nota fiscal
-gerador de nota fiscal pela chave,candidata,2026-09-10,matrix:nota fiscal
-gerador de nota fiscal sebrae,candidata,2026-09-10,matrix:nota fiscal
-gerador de numero inss,candidata,2026-09-10,matrix:inss
+gerador de nota fiscal,descartada,2026-09-10,matrix:nota fiscal
+gerador de nota fiscal eletronica,descartada,2026-09-10,matrix:nota fiscal
+gerador de nota fiscal gov,descartada,2026-09-10,matrix:nota fiscal
+gerador de nota fiscal gratuito,descartada,2026-09-10,matrix:nota fiscal
+gerador de nota fiscal mei,descartada,2026-09-10,matrix:nota fiscal
+gerador de nota fiscal online,descartada,2026-09-10,matrix:nota fiscal
+gerador de nota fiscal online gratuito,descartada,2026-09-10,matrix:nota fiscal
+gerador de nota fiscal para teste,descartada,2026-09-10,matrix:nota fiscal
+gerador de nota fiscal pdf,descartada,2026-09-10,matrix:nota fiscal
+gerador de nota fiscal pela chave,descartada,2026-09-10,matrix:nota fiscal
+gerador de nota fiscal sebrae,descartada,2026-09-10,matrix:nota fiscal
+gerador de numero inss,descartada,2026-09-10,matrix:inss
 gerador de ordem de servico,descartada,,manual
-gerador de pagamento mei,candidata,2026-09-10,matrix:mei
+gerador de pagamento mei,descartada,2026-09-10,matrix:mei
 gerador de palavras aleatorias,descartada,2026-09-10,manual
 gerador de plano de aula,descartada,,manual
 gerador de recibo de ferias,candidata,2026-09-10,matrix:férias
@@ -973,9 +973,9 @@ gerador de recibo de salario,feita,2026-09-10,matrix:salário
 gerador de relogio,descartada,,manual
 gerador de rifa,descartada,,manual
 gerador de salario,candidata,2026-09-10,matrix:salário
-gerador de seed bitcoin,candidata,2026-09-10,matrix:bitcoin
-gerador de senha bitcoin,candidata,2026-09-10,matrix:bitcoin
-gerador de senha criptografada,candidata,2026-09-10,matrix:cripto
+gerador de seed bitcoin,descartada,2026-09-10,matrix:bitcoin
+gerador de senha bitcoin,descartada,2026-09-10,matrix:bitcoin
+gerador de senha criptografada,descartada,2026-09-10,matrix:cripto
 gerador de simulado,descartada,,manual
 gerador de tabela de precos,descartada,,manual
 gerador de tabuada,feita,2026-09-10,manual
@@ -1416,13 +1416,13 @@ qual o valor de imposto de renda para declarar 2026,candidata,2026-09-10,matrix:
 qual o valor de imposto de renda que tem que declarar,candidata,2026-09-10,matrix:imposto de renda
 qual o valor mínimo de imposto de renda para declarar,candidata,2026-09-10,matrix:imposto de renda
 quantas administradoras de consórcio tem no brasil,candidata,2026-09-10,matrix:consórcio
-quantas aposentadoria bolsonaro tem,candidata,2026-09-10,matrix:aposentadoria
-quantas aposentadoria o presidente lula tem,candidata,2026-09-10,matrix:aposentadoria
-quantas aposentadoria pode ter,candidata,2026-09-10,matrix:aposentadoria
-quantas aposentadoria pode ter em uma casa,candidata,2026-09-10,matrix:aposentadoria
-quantas aposentadoria tem fernando henrique cardoso,candidata,2026-09-10,matrix:aposentadoria
-quantas aposentadoria tem o sarney,candidata,2026-09-10,matrix:aposentadoria
-quantas aposentadoria uma pessoa pode ter,candidata,2026-09-10,matrix:aposentadoria
+quantas aposentadoria bolsonaro tem,descartada,2026-09-10,matrix:aposentadoria
+quantas aposentadoria o presidente lula tem,descartada,2026-09-10,matrix:aposentadoria
+quantas aposentadoria pode ter,descartada,2026-09-10,matrix:aposentadoria
+quantas aposentadoria pode ter em uma casa,descartada,2026-09-10,matrix:aposentadoria
+quantas aposentadoria tem fernando henrique cardoso,descartada,2026-09-10,matrix:aposentadoria
+quantas aposentadoria tem o sarney,descartada,2026-09-10,matrix:aposentadoria
+quantas aposentadoria uma pessoa pode ter,descartada,2026-09-10,matrix:aposentadoria
 quantas aposentadorias bolsonaro recebe,candidata,2026-09-10,matrix:aposentadoria
 quantas aposentadorias o lula tem,candidata,2026-09-10,matrix:aposentadoria
 quantas aposentadorias tem bolsonaro,candidata,2026-09-10,matrix:aposentadoria
@@ -2337,17 +2337,17 @@ quanto é 500 mil em criptomoedas,candidata,2026-09-10,matrix:cripto
 quanto é 700 dólares em reais,candidata,2026-09-10,matrix:dólar
 quanto é a hora extra de quem ganha 2000,candidata,2026-09-10,matrix:hora extra
 quanto é a hora extra de quem ganha um salário mínimo,candidata,2026-09-10,matrix:hora extra
-quanto é aposentadoria,candidata,2026-09-10,matrix:aposentadoria
-quanto é aposentadoria de um jogador,candidata,2026-09-10,matrix:aposentadoria
-quanto é aposentadoria de um jogador de futebol,candidata,2026-09-10,matrix:aposentadoria
-quanto é aposentadoria de um policial militar,candidata,2026-09-10,matrix:aposentadoria
-quanto é aposentadoria de um professor,candidata,2026-09-10,matrix:aposentadoria
-quanto é aposentadoria do ronaldinho gaúcho,candidata,2026-09-10,matrix:aposentadoria
-quanto é aposentadoria especial,candidata,2026-09-10,matrix:aposentadoria
-quanto é aposentadoria no brasil,candidata,2026-09-10,matrix:aposentadoria
-quanto é aposentadoria pcd,candidata,2026-09-10,matrix:aposentadoria
-quanto é aposentadoria por idade,candidata,2026-09-10,matrix:aposentadoria
-quanto é aposentadoria por invalidez,candidata,2026-09-10,matrix:aposentadoria
+quanto é aposentadoria,descartada,2026-09-10,matrix:aposentadoria
+quanto é aposentadoria de um jogador,descartada,2026-09-10,matrix:aposentadoria
+quanto é aposentadoria de um jogador de futebol,descartada,2026-09-10,matrix:aposentadoria
+quanto é aposentadoria de um policial militar,descartada,2026-09-10,matrix:aposentadoria
+quanto é aposentadoria de um professor,descartada,2026-09-10,matrix:aposentadoria
+quanto é aposentadoria do ronaldinho gaúcho,descartada,2026-09-10,matrix:aposentadoria
+quanto é aposentadoria especial,descartada,2026-09-10,matrix:aposentadoria
+quanto é aposentadoria no brasil,descartada,2026-09-10,matrix:aposentadoria
+quanto é aposentadoria pcd,descartada,2026-09-10,matrix:aposentadoria
+quanto é aposentadoria por idade,descartada,2026-09-10,matrix:aposentadoria
+quanto é aposentadoria por invalidez,descartada,2026-09-10,matrix:aposentadoria
 quanto é as ferias de quem recebe 2000,candidata,2026-09-10,matrix:férias
 quanto é as ferias de um salario minimo 2026,candidata,2026-09-10,matrix:férias
 quanto é as férias de quem ganha um salário mínimo,candidata,2026-09-10,matrix:férias
@@ -2482,9 +2482,9 @@ quanto é um financiamento de um apartamento,candidata,2026-09-10,matrix:financi
 quanto é um financiamento de uma casa pela caixa,candidata,2026-09-10,matrix:financiamento
 quanto é uma criptomoeda hoje,candidata,2026-09-10,matrix:cripto
 quanto é uma hora extra de trabalho,candidata,2026-09-10,matrix:hora extra
-quantos aposentadoria,candidata,2026-09-10,matrix:aposentadoria
-quantos aposentadoria bolsonaro tem,candidata,2026-09-10,matrix:aposentadoria
-quantos aposentadoria uma pessoa pode ter,candidata,2026-09-10,matrix:aposentadoria
+quantos aposentadoria,descartada,2026-09-10,matrix:aposentadoria
+quantos aposentadoria bolsonaro tem,descartada,2026-09-10,matrix:aposentadoria
+quantos aposentadoria uma pessoa pode ter,descartada,2026-09-10,matrix:aposentadoria
 quantos azulejos por metro quadrado,descartada,,manual
 quantos bitcoin a strategy tem,candidata,2026-09-10,matrix:bitcoin
 quantos bitcoin daniel fraga tinha,candidata,2026-09-10,matrix:bitcoin

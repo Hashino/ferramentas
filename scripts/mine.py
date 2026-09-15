@@ -244,11 +244,34 @@ def check(limite: int) -> None:
         sys.exit("erro: SERPER_API_KEY ausente (.env ou ambiente)")
     rows = load_rows()
     serp = json.loads(SERP_PATH.read_text(encoding="utf-8")) if SERP_PATH.exists() else {}
+
+    # Corte por família ANTES de gastar crédito: se um nicho já foi checado
+    # várias vezes e não rendeu nenhuma ferramenta, as variações restantes não
+    # vão render também. Sem isso a conta queimou ~1100 créditos, boa parte em
+    # famílias inteiras condenadas de uma vez pela triagem (7 variações de
+    # "calculadora de bitcoin", 11 de "gerador de ...").
+    from triagem import familia, familias_condenadas  # import tardio: puxa ai.py
+    mortas = familias_condenadas()
+
+    # duas passadas: primeiro condena o backlog TODO (não custa nada e limpa o
+    # CSV de uma vez), só depois escolhe as `limite` que vão gastar crédito.
+    # Fazer numa passada só, cortando até bater o limite, deixaria o resto das
+    # famílias mortas vivo no CSV e adiaria a economia para runs futuros.
+    cortadas = 0
+    for kw, meta in rows.items():
+        if meta["status"] == "candidata" and kw not in serp and familia(kw) in mortas:
+            meta["status"] = "descartada"
+            cortadas += 1
+
     pendentes = [
-        kw
-        for kw, meta in sorted(rows.items())
+        kw for kw, meta in sorted(rows.items())
         if meta["status"] == "candidata" and kw not in serp
     ][:limite]
+
+    if cortadas:
+        save_rows(rows)
+        print(f"corte por família: {cortadas} candidatas descartadas sem gastar SERP "
+              f"({len(mortas)} famílias condenadas: {', '.join(sorted(mortas)[:6])})")
     if not pendentes:
         print("check: nenhuma candidata pendente de SERP")
         return
