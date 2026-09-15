@@ -49,8 +49,13 @@ SISTEMA = (
 
 MOLDE = """Keyword pesquisada no Google (Brasil): "{kw}"
 
-Resultados orgânicos do top-10 (título :: url):
+Resultados orgânicos do top-10 (título :: url, e o resumo que o Google mostra):
 {resultados}
+
+Ao julgar se um resultado é ferramenta, use o resumo: quando ele lista campos
+de formulário ("Data inicial; Valor a ser corrigido; % do CDI") ou convida a
+preencher algo, é ferramenta interativa. Quando ele conta/explica em prosa
+("veja como calcular", "entenda a diferença"), é artigo.
 
 Responda em JSON com estas chaves:
 
@@ -78,8 +83,18 @@ Responda em JSON com estas chaves:
 "motivo": uma frase curta explicando, em português."""
 
 
-def _fmt(resultados: list[str]) -> str:
-    return "\n".join(f"{i+1}. {l}" for i, l in enumerate(resultados[:10]))
+def _fmt(resultados: list) -> str:
+    linhas = []
+    for i, item in enumerate(resultados[:10]):
+        r = lint_serp.normalizar(item)
+        linhas.append(f'{i+1}. {r["title"]} :: {r["link"]}')
+        # o snippet frequentemente lista os próprios campos do formulário
+        # ("Data inicial; Valor a ser corrigido; % do CDI") — é o sinal mais
+        # forte de que a página é ferramenta e não artigo. Vem de graça na
+        # mesma chamada da Serper; entradas antigas do cache não têm.
+        if r["snippet"]:
+            linhas.append(f'   resumo: {r["snippet"]}')
+    return "\n".join(linhas)
 
 
 def avaliar_ia(kw: str, resultados: list[str]) -> dict:
@@ -90,7 +105,7 @@ def avaliar_ia(kw: str, resultados: list[str]) -> dict:
 
 
 # suba quando mudar MOLDE/critérios: invalida vereditos julgados pela regra velha
-VERSAO = 2
+VERSAO = 3
 
 
 def triar(kw: str, resultados: list[str], cache: dict) -> dict:

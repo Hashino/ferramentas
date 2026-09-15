@@ -61,9 +61,20 @@ def _sem_acento(s: str) -> str:
     )
 
 
-def eh_ferramenta_dedicada(linha: str) -> bool:
-    """`linha` vem do serp.json no formato "titulo :: link"."""
-    titulo, _, link = linha.partition(" :: ")
+def normalizar(item) -> dict:
+    """Aceita os dois formatos de resultado que existem em serp.json: o antigo
+    (string "titulo :: link", gravado antes de set/2026) e o atual (dict com
+    title/link/snippet). Entradas antigas simplesmente não têm snippet."""
+    if isinstance(item, dict):
+        return {"title": item.get("title", ""), "link": item.get("link", ""),
+                "snippet": item.get("snippet", "")}
+    titulo, _, link = str(item).partition(" :: ")
+    return {"title": titulo, "link": link, "snippet": ""}
+
+
+def eh_ferramenta_dedicada(item) -> bool:
+    r = normalizar(item)
+    titulo, link = r["title"], r["link"]
     if NOSSO_DOMINIO in link:
         return False  # nós mesmos não contamos como concorrência
     alvo = _sem_acento(titulo)
@@ -87,7 +98,8 @@ def avaliar(resultados: list[str]) -> dict:
         "motivo": motivo,
         "top3": top3,
         "top10": top10,
-        "concorrentes": [l for l, m in zip(resultados, marcas) if m],
+        "concorrentes": [f'{normalizar(l)["title"]} :: {normalizar(l)["link"]}'
+                         for l, m in zip(resultados, marcas) if m],
     }
 
 
@@ -101,7 +113,7 @@ def _api_key() -> str:
     sys.exit("erro: SERPER_API_KEY ausente em .env")
 
 
-def _serp_ao_vivo(query: str, api: str) -> list[str]:
+def _serp_ao_vivo(query: str, api: str) -> list[dict]:
     req = urllib.request.Request(
         "https://google.serper.dev/search",
         data=json.dumps({"q": query, "gl": "br", "hl": "pt-br", "num": 10}).encode(),
@@ -110,7 +122,9 @@ def _serp_ao_vivo(query: str, api: str) -> list[str]:
     with urllib.request.urlopen(req, timeout=20) as r:
         data = json.loads(r.read().decode("utf-8"))
     return [
-        f"{i.get('title','')} :: {i.get('link','')}" for i in data.get("organic", [])
+        {"title": i.get("title", ""), "link": i.get("link", ""),
+         "snippet": i.get("snippet", "")}
+        for i in data.get("organic", [])
     ]
 
 

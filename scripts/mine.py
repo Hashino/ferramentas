@@ -262,8 +262,17 @@ def check(limite: int) -> None:
                     {"X-API-KEY": api},
                 ).decode("utf-8")
             )
+            # o snippet vem de graça na mesma chamada e costuma listar os
+            # CAMPOS do formulário ("Data inicial; Valor a ser corrigido; %
+            # do CDI") — é o sinal mais forte de que o resultado é ferramenta
+            # interativa e não artigo. Formato antigo (string "titulo :: link")
+            # continua sendo lido; ver lint_serp.normalizar.
             serp[kw] = [
-                f"{item.get('title', '')} :: {item.get('link', '')}"
+                {
+                    "title": item.get("title", ""),
+                    "link": item.get("link", ""),
+                    "snippet": item.get("snippet", ""),
+                }
                 for item in data.get("organic", [])
             ]
             print(f"ok: {kw} ({len(serp[kw])} resultados)")
