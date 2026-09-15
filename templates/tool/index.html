@@ -4,12 +4,14 @@
   A página contém APENAS o que é único dela: meta/SEO no head e a ferramenta no body.
   A UI comum (starfield, barra superior, toggle de tema, anúncio, footer) é injetada em
   runtime por chrome.js — nunca escreva topnav/stars/footer no HTML da ferramenta.
-  Regras: vanilla JS sem dependências; funciona offline; design permanece só-a-ferramenta —
-  qualquer texto de SEO/GEO (explicação, relacionadas) entra DENTRO do <details> colapsado,
-  nunca solto no corpo visível.
+  Regras: vanilla JS sem dependências; funciona offline; design permanece só-a-ferramenta.
+
+  NÃO adicione <details>/FAQPage/data-footer aqui manualmente — isso é responsabilidade
+  de scripts/backfill_explicacao.py, que roda como passo obrigatório da pipeline (depois
+  de criar os arquivos da leva, antes do build.py) e insere tudo isso reaproveitando a
+  própria {{DESCRIPTION}} de cada ferramenta. É idempotente: rodar de novo não duplica.
+
   Tokens: {{SLUG}} {{TOOL_NAME}} {{TITLE}} {{DESCRIPTION}} {{H1}} {{APP_HTML}} {{APP_JS}}
-          {{HOW_TEXT}} (1 parágrafo explicando o cálculo/uso — pode reaproveitar {{DESCRIPTION}})
-          {{RELATED_HTML}} (3 <a> para ferramentas relacionadas, geradas por scripts/backfill_explicacao.py)
 -->
 <html lang="pt-BR">
 <head>
@@ -24,25 +26,17 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"{{TOOL_NAME}}","url":"https://hashino.github.io/ferramentas/tools/{{SLUG}}/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"{{DESCRIPTION}}"}
 </script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como funciona {{H1}}?","acceptedAnswer":{"@type":"Answer","text":"{{HOW_TEXT}}"}}]}
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
 <script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
 <link rel="stylesheet" href="../../style.css">
 </head>
-<body data-footer>
+<body>
 <main>
   <h1>{{H1}}</h1>
   <section class="app">
 {{APP_HTML}}
   </section>
   <div class="ad-slot"></div>
-  <details class="explicacao">
-    <summary>Como funciona</summary>
-    <p>{{HOW_TEXT}}</p>
-    <p class="relacionadas">Veja também: {{RELATED_HTML}}</p>
-  </details>
 </main>
 <script src="../../config.js"></script>
 <script src="../../chrome.js"></script>

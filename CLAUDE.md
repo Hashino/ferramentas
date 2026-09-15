@@ -17,11 +17,12 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
   - `mine.py reddit [N]` — caça pedidos de ferramenta em threads BR do Reddit
   - `mine.py sitemaps [N]` — títulos de sites concorrentes validados no autocomplete
   - Seeds editáveis em `backlog/seeds.json` (cabeças, domínios, queries de reddit, sitemaps)
+- `scripts/backfill_explicacao.py` — insere `<details class="explicacao">` (texto SEO colapsado, reaproveita a própria `{{DESCRIPTION}}` de cada ferramenta + 3 links "relacionadas" por bucket de prefixo do slug), FAQPage JSON-LD e `data-footer` em qualquer `tools/*/index.html` que ainda não tenha. Idempotente. Rodar depois de criar as ferramentas da leva, ANTES do `build.py`.
 - `scripts/build.py` — regenera `index.html` (hub), `sitemap.xml`, `robots.txt`, `llms.txt`, `config.js`, `ads.txt`. SEMPRE rodar antes de commitar.
 - `scripts/ping_indexnow.py` — roda no CI a cada push; não rodar manualmente
 - `search.js` — busca fuzzy da home (filtra/reordena os cards conforme digitação)
-- `chrome.js` — UI compartilhada de TODAS as páginas, injetada em runtime: starfield (3 camadas), topnav ("Ferramentas" + toggle de tema), AdSense (se config.js tiver client) e rodapé (só nas páginas com `<body data-footer>`). Alterar UI do site = editar `chrome.js`/`style.css` UMA vez; propaga para todas as páginas sem rebuild. Página de ferramenta NUNCA contém topnav/stars/footer no HTML.
-- `templates/tool/index.html` — molde com tokens `{{...}}`; copiar e preencher. A página da ferramenta contém apenas: head com meta/SEO + `<main>` (H1 + `.app` + `.ad-slot`) + `config.js`, `chrome.js` e o JS da ferramenta.
+- `chrome.js` — UI compartilhada de TODAS as páginas, injetada em runtime: starfield (3 camadas), topnav ("Ferramentas" + toggle de tema), AdSense (se config.js tiver client) e rodapé (só nas páginas com `<body data-footer>` — TODAS as ferramentas têm isso desde o backfill). Alterar UI do site = editar `chrome.js`/`style.css` UMA vez; propaga para todas as páginas sem rebuild. Página de ferramenta NUNCA contém topnav/stars/footer no HTML (isso é injetado; `data-footer` só liga o interruptor).
+- `templates/tool/index.html` — molde com tokens `{{...}}`; copiar e preencher. A página da ferramenta contém apenas: head com meta/SEO + `<main>` (H1 + `.app` + `.ad-slot`) + `config.js`, `chrome.js` e o JS da ferramenta. NÃO copiar `<details>`/FAQPage/`data-footer` manualmente — isso é sempre obra do `backfill_explicacao.py` (ver Layout acima).
 - Visual: Nord + monoespaçada + cards de vidro + starfield (herdado do learnive/hashino.github.io). Tema CLARO é o default; toggle claro/escuro na barra superior (persiste em localStorage; o tema inicial vem do snippet inline no `<head>` para evitar flash).
 - `.env` — `SERPER_API_KEY` (NUNCA comitar; está no .gitignore)
 
@@ -43,16 +44,20 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
    - slug: kebab-case curto, derivado da keyword
    - `<title>`: keyword primeiro, ≤60 chars · meta description ≤155 chars
    - H1 = título humano; `{{APP_HTML}}` + `{{APP_JS}}` = a ferramenta (funciona offline, sem CDN, sem biblioteca)
-   - A página da ferramenta é SÓ a ferramenta: barra superior + H1 + app + rodapé.
-   NADA de seção "Como funciona", FAQ visível ou qualquer texto explicativo (decisão do dono).
+   - A página da ferramenta é visualmente SÓ a ferramenta: barra superior + H1 + app.
+   NÃO escreva `<details>`, FAQ visível, footer ou texto explicativo no arquivo — isso é
+   sempre o passo 4 abaixo, nunca manual (mantém as 295+ ferramentas consistentes).
    - marca a keyword como `feita` em `backlog/keywords.csv`
-4. **Build + deploy**: `python3 scripts/build.py` → commit (`tool: <slug>`) → `git push`.
+4. **Backfill de SEO/GEO + build + deploy**:
+   `python3 scripts/backfill_explicacao.py` (insere explicação colapsada + FAQPage + footer nas ferramentas novas)
+   → `python3 scripts/build.py` (regenera hub/sitemap/robots/llms.txt/ads.txt)
+   → commit (`tool: <slug>`) → `git push`.
 5. **Reportar**: URLs criadas; o workflow `indexnow` no GitHub Actions cuida de avisar Bing/Yandex.
 
 ## Regras
 
-- NUNCA editar `tools/<slug>/` já publicado sem pedido explícito do usuário.
-- Página de ferramenta = head (meta/SEO) + `<main>` (H1 + `.app` + `.ad-slot`) + scripts `config.js`, `chrome.js` e o JS da ferramenta. SEM footer, SEM texto explicativo, SEM markup de UI comum (chrome.js injeta).
+- NUNCA editar `tools/<slug>/` já publicado sem pedido explícito do usuário — EXCETO rodar `backfill_explicacao.py`, que é seguro (idempotente, só adiciona o que falta) e faz parte da pipeline padrão.
+- Página de ferramenta = head (meta/SEO) + `<main>` (H1 + `.app` + `.ad-slot`) + scripts `config.js`, `chrome.js` e o JS da ferramenta, criada assim pelo template. `backfill_explicacao.py` acrescenta depois: `<details class="explicacao">` (texto SEO + 3 links relacionados, colapsado por padrão — invisível até o clique), FAQPage JSON-LD e `data-footer` (liga o footer com Sobre/Privacidade/GitHub). Nenhum desses três é escrito à mão nem varia o design visível da ferramenta.
 - Home (gerada por build.py): lista de cards com H1 + descrição; sobre/privacidade mantêm texto.
 - 1 ferramenta = 1 página = 1 keyword. Zero dependências externas (sem CDN, sem fontes remotas, sem analytics pesado).
 - Sempre `scripts/build.py` antes de commit.
