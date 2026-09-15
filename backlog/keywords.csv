@@ -1,6 +1,7 @@
 keyword,status,adicionada_em,origem
 1 dolar quantas liras turcas,candidata,2026-09-10,matrix:dólar
 1 dolar quantas rupias,candidata,2026-09-10,matrix:dólar
+100 doces para festa,feita,2026-09-11,doces-para-festa
 adicional noturno,candidata,2026-09-10,sitemap:querocalcular.com.br
 agente gerador de demanda salário,candidata,2026-09-10,matrix:salário
 aposentadoria demora quanto tempo,candidata,2026-09-10,matrix:aposentadoria
@@ -40,6 +41,7 @@ calculadora de aposentadoria por tempo de contribuição,candidata,2026-09-10,ma
 calculadora de aposentadoria privada,candidata,2026-09-10,matrix:aposentadoria
 calculadora de aposentadoria professor,candidata,2026-09-10,matrix:aposentadoria
 calculadora de aposentadoria tesouro direto,candidata,2026-09-10,matrix:tesouro direto
+calculadora de aquario,descartada,,manual
 calculadora de arbitragem cripto,candidata,2026-09-10,matrix:cripto
 calculadora de arcano pessoal,feita,2026-09-10,
 calculadora de arcano pessoal 2026,candidata,2026-09-10,deep:calculadora de arcano pessoal
@@ -66,6 +68,7 @@ calculadora de bolso,candidata,2026-09-10,
 calculadora de boost pxg,feita,2026-09-10,
 calculadora de breeding palworld,candidata,2026-09-10,
 calculadora de btus,descartada,2026-09-10,
+calculadora de cafeina,descartada,,manual
 calculadora de calorias,candidata,2026-09-10,
 calculadora de calorias dos alimentos,feita,2026-09-10,
 calculadora de calorias dos alimentos app,candidata,2026-09-10,deep:calculadora de calorias dos alimentos
@@ -99,8 +102,10 @@ calculadora de cdi,candidata,2026-09-10,
 calculadora de cdi mensal,candidata,2026-09-10,
 calculadora de churrasco,descartada,2026-09-10,manual
 calculadora de churrasco online,candidata,2026-09-10,
+calculadora de cimento e areia,descartada,,manual
 calculadora de clearance de creatinina,descartada,2026-09-10,
 calculadora de combustível,candidata,2026-09-10,
+calculadora de comissao de vendas,descartada,6 ferramentas dedicadas no top-10,leva10
 calculadora de comissão,descartada,2026-09-10,manual
 calculadora de consorcio,candidata,2026-09-10,matrix:consórcio
 calculadora de consorcio ademicon,candidata,2026-09-10,matrix:consórcio
@@ -119,6 +124,7 @@ calculadora de consórcio online,candidata,2026-09-10,matrix:consórcio
 calculadora de consórcio porto seguro,candidata,2026-09-10,matrix:consórcio
 calculadora de conta de luz,descartada,2026-09-10,manual
 calculadora de correção monetária,candidata,2026-09-10,
+calculadora de cortina,descartada,,manual
 calculadora de cripto,candidata,2026-09-10,matrix:cripto
 calculadora de cripto a dolares,candidata,2026-09-10,matrix:cripto
 calculadora de criptografia,candidata,2026-09-10,matrix:cripto
@@ -129,6 +135,9 @@ calculadora de criptomoedas online,candidata,2026-09-10,matrix:cripto
 calculadora de criptomoedas para real,candidata,2026-09-10,matrix:cripto
 calculadora de criptomonedas,candidata,2026-09-10,matrix:cripto
 calculadora de criptomonedas a dólar,candidata,2026-09-10,matrix:cripto
+calculadora de croche,descartada,,manual
+calculadora de custo de impressao,descartada,,manual
+calculadora de custo de receita,descartada,,manual
 calculadora de câmbio,candidata,2026-09-10,matrix:câmbio
 calculadora de câmbio euro,candidata,2026-09-10,matrix:câmbio
 calculadora de câmbio online,candidata,2026-09-10,matrix:câmbio
@@ -137,6 +146,8 @@ calculadora de datas,candidata,2026-09-10,
 calculadora de degraus de escada,feita,2026-09-10,manual
 calculadora de desconto mei,candidata,2026-09-10,matrix:mei
 calculadora de dias,candidata,2026-09-10,
+calculadora de dias uteis,descartada,,manual
+calculadora de diluicao,descartada,,manual
 calculadora de dolar,candidata,2026-09-10,matrix:dólar
 calculadora de dolar a peso argentino,candidata,2026-09-10,matrix:dólar
 calculadora de dolar a peso dominicano,candidata,2026-09-10,matrix:dólar
@@ -164,6 +175,7 @@ calculadora de financiamento de veículos,candidata,2026-09-10,matrix:financiame
 calculadora de financiamento imobiliário,candidata,2026-09-10,matrix:financiamento
 calculadora de financiamento move brasil,candidata,2026-09-10,matrix:financiamento
 calculadora de financiamento serasa,candidata,2026-09-10,matrix:financiamento
+calculadora de frequencia cardiaca maxima,descartada,,manual
 calculadora de férias,candidata,2026-09-10,matrix:férias
 calculadora de férias 2026,candidata,2026-09-10,matrix:férias
 calculadora de férias calculo exato,candidata,2026-09-10,matrix:férias
@@ -188,6 +200,7 @@ calculadora de hora extra com dsr e adicional noturno,candidata,2026-09-10,matri
 calculadora de hora extra com periculosidade,candidata,2026-09-10,matrix:hora extra
 calculadora de hora extra noturna,candidata,2026-09-10,matrix:hora extra
 calculadora de hora extra online,candidata,2026-09-10,matrix:hora extra
+calculadora de hora freelancer,descartada,,manual
 calculadora de horas,candidata,2026-09-10,
 calculadora de horas de sono,descartada,2026-09-10,manual
 calculadora de horas extras,descartada,2026-09-10,matrix:hora extra
@@ -240,6 +253,7 @@ calculadora de ipca online,candidata,2026-09-10,matrix:ipca
 calculadora de ir cripto,candidata,2026-09-10,matrix:cripto
 calculadora de ir mei,candidata,2026-09-10,matrix:mei
 calculadora de irpf mei,candidata,2026-09-10,matrix:mei
+calculadora de jardim,descartada,,manual
 calculadora de juros abusivos cartão de crédito,candidata,2026-09-10,matrix:cartão de crédito
 calculadora de juros cartão de credito,candidata,2026-09-10,matrix:cartão de crédito
 calculadora de juros cartão de credito nubank,candidata,2026-09-10,matrix:cartão de crédito
@@ -258,7 +272,9 @@ calculadora de juros compostos sardinha,candidata,2026-09-10,matrix:juros compos
 calculadora de juros nubank cartão de crédito,candidata,2026-09-10,matrix:cartão de crédito
 calculadora de juros simples,descartada,2026-09-10,manual
 calculadora de juros tesouro direto,candidata,2026-09-10,matrix:tesouro direto
+calculadora de litros de aquario,descartada,,manual
 calculadora de lucro crypto,candidata,2026-09-10,matrix:cripto
+calculadora de media escolar,descartada,,manual
 calculadora de mei,candidata,2026-09-10,matrix:mei
 calculadora de mei 2026,candidata,2026-09-10,matrix:mei
 calculadora de mei para clt,candidata,2026-09-10,matrix:mei
@@ -272,6 +288,7 @@ calculadora de nota fiscal avulsa,candidata,2026-09-10,matrix:nota fiscal
 calculadora de nota fiscal de serviço,candidata,2026-09-10,matrix:nota fiscal
 calculadora de nota fiscal mei,candidata,2026-09-10,matrix:nota fiscal
 calculadora de nota fiscal online,candidata,2026-09-10,matrix:nota fiscal
+calculadora de nota minima,descartada,,manual
 calculadora de pace,descartada,2026-09-10,
 calculadora de pace meia maratona,candidata,2026-09-10,matrix:mei
 calculadora de papel de parede,descartada,2026-09-10,manual
@@ -279,14 +296,23 @@ calculadora de parcelas,descartada,2026-09-10,manual
 calculadora de parcelas cartão de crédito,candidata,2026-09-10,matrix:cartão de crédito
 calculadora de passos,descartada,2026-09-10,manual
 calculadora de piso,descartada,2026-09-10,manual
+calculadora de plantas,descartada,,manual
 calculadora de pontos cartão de crédito,candidata,2026-09-10,matrix:cartão de crédito
+calculadora de pontos da cnh,descartada,,manual
+calculadora de preco de bolo,descartada,,manual
+calculadora de preço de venda,descartada,,manual
 calculadora de preço do crypto,candidata,2026-09-10,matrix:cripto
 calculadora de pro labore,descartada,2026-09-10,manual
 calculadora de racao para cachorro,descartada,2026-09-10,manual
+calculadora de reajuste salarial,descartada,,manual
 calculadora de rendimento tesouro direto,candidata,2026-09-10,matrix:tesouro direto
+calculadora de rescisao,descartada,,manual
 calculadora de rescisão,candidata,2026-09-10,
+calculadora de resistor,descartada,,manual
+calculadora de resistor para led,descartada,,manual
 calculadora de salario liquido,candidata,2026-09-10,
 calculadora de salario mei,candidata,2026-09-10,matrix:mei
+calculadora de salario por hora,descartada,,manual
 calculadora de salário,candidata,2026-09-10,matrix:salário
 calculadora de salário 2026,candidata,2026-09-10,matrix:salário
 calculadora de salário bruto,candidata,2026-09-10,matrix:salário
@@ -301,10 +327,13 @@ calculadora de salário proporcional aos dias trabalhados,feita,2026-09-10,matri
 calculadora de salário proporcional aos dias trabalhados ferias,candidata,2026-09-10,deep:calculadora de salário proporcional aos dias trabalhados
 calculadora de salário proporcional aos dias trabalhados online,candidata,2026-09-10,deep:calculadora de salário proporcional aos dias trabalhados
 calculadora de simulação tesouro direto,candidata,2026-09-10,matrix:tesouro direto
+calculadora de sono,descartada,,manual
 calculadora de tamanho de bicicleta,descartada,2026-09-10,manual
 calculadora de tamanho de tv,feita,2026-09-10,manual
 calculadora de taxas cartao de credito,candidata,2026-09-10,matrix:cartão de crédito
 calculadora de taxas cartão de crédito,candidata,2026-09-10,matrix:cartão de crédito
+calculadora de taxas do mercado pago,descartada,,manual
+calculadora de taxas shopee,descartada,,manual
 calculadora de telhado,descartada,2026-09-10,manual
 calculadora de tesouro direto,candidata,2026-09-10,matrix:tesouro direto
 calculadora de tesouro direto ipca,candidata,2026-09-10,matrix:tesouro direto
@@ -763,11 +792,13 @@ conversor de salário,candidata,2026-09-10,matrix:salário
 conversor de salário clt para pj,candidata,2026-09-10,matrix:salário
 conversor de tamanho de meia,descartada,2026-09-10,matrix:mei
 conversor de taxa juros compostos,candidata,2026-09-10,matrix:juros compostos
+conversor de temperatura de forno,descartada,,manual
 conversor de tempo insalubre para aposentadoria,candidata,2026-09-10,matrix:aposentadoria
 conversor de torque cambio al4,candidata,2026-09-10,matrix:câmbio
 conversor de torque cambio automatico,candidata,2026-09-10,matrix:câmbio
 conversor de torque câmbio al4,candidata,2026-09-10,matrix:câmbio
 conversor de torque câmbio automático,candidata,2026-09-10,matrix:câmbio
+conversor de xicaras para gramas,descartada,,manual
 conversor de xml em nota fiscal,candidata,2026-09-10,matrix:nota fiscal
 conversor euro cartao de credito,candidata,2026-09-10,matrix:cartão de crédito
 conversor euro real cartao de credito,candidata,2026-09-10,matrix:cartão de crédito
@@ -820,12 +851,18 @@ férias quantos dias para receber,candidata,2026-09-10,matrix:férias
 férias quantos dias posso vender,candidata,2026-09-10,matrix:férias
 férias quantos por cento,candidata,2026-09-10,matrix:férias
 gerador de 12 palavras bitcoin,candidata,2026-09-10,matrix:bitcoin
+gerador de acordes,descartada,,manual
 gerador de anagramas,descartada,2026-09-10,manual
+gerador de apelidos,descartada,,manual
+gerador de ata de reuniao,descartada,,manual
+gerador de atividade de caligrafia,feita,,manual
 gerador de beneficio inss,candidata,2026-09-10,matrix:inss
 gerador de bitcoin,candidata,2026-09-10,matrix:bitcoin
 gerador de bitcoin gratuito,candidata,2026-09-10,matrix:bitcoin
+gerador de boletim escolar,descartada,,manual
 gerador de boleto inss,candidata,2026-09-10,matrix:inss
 gerador de boleto mei,candidata,2026-09-10,matrix:mei
+gerador de capa de trabalho,descartada,,manual
 gerador de carteira bitcoin,candidata,2026-09-10,matrix:bitcoin
 gerador de cartela de bingo,feita,2026-09-10,manual
 gerador de cartão de crédito,candidata,2026-09-10,matrix:cartão de crédito
@@ -844,6 +881,7 @@ gerador de certificado,descartada,2026-09-10,manual
 gerador de chave bitcoin,candidata,2026-09-10,matrix:bitcoin
 gerador de chave criptográfica,candidata,2026-09-10,matrix:cripto
 gerador de chave privada bitcoin,candidata,2026-09-10,matrix:bitcoin
+gerador de cracha,descartada,,manual
 gerador de cripto,candidata,2026-09-10,matrix:cripto
 gerador de criptografia,candidata,2026-09-10,matrix:cripto
 gerador de criptografia com simbolos,candidata,2026-09-10,matrix:cripto
@@ -852,6 +890,7 @@ gerador de criptograma com símbolos,candidata,2026-09-10,matrix:cripto
 gerador de criptograma online,candidata,2026-09-10,matrix:cripto
 gerador de criptograma para imprimir,candidata,2026-09-10,matrix:cripto
 gerador de criptomoedas,candidata,2026-09-10,matrix:cripto
+gerador de cronograma capilar,descartada,,manual
 gerador de cruzadinha,descartada,2026-09-10,manual
 gerador de código inss,candidata,2026-09-10,matrix:inss
 gerador de dados de rpg,descartada,2026-09-10,manual
@@ -872,11 +911,16 @@ gerador de emojis,candidata,2026-09-10,matrix:mei
 gerador de empresas,candidata,2026-09-10,matrix:mei
 gerador de endereço bitcoin,candidata,2026-09-10,matrix:bitcoin
 gerador de escala 12x36,feita,2026-09-10,manual
+gerador de escala musical,descartada,,manual
+gerador de etiqueta de preco,descartada,,manual
+gerador de etiqueta escolar,feita,,manual
 gerador de exercicios de matematica,descartada,2026-09-10,manual
 gerador de ferias,candidata,2026-09-10,matrix:férias
+gerador de ficha catalografica,descartada,,manual
 gerador de financiamento,candidata,2026-09-10,matrix:financiamento
 gerador de férias,candidata,2026-09-10,matrix:férias
 gerador de gps inss,candidata,2026-09-10,matrix:inss
+gerador de grade de horarios,descartada,,manual
 gerador de guia inss,candidata,2026-09-10,matrix:inss
 gerador de guia mei,candidata,2026-09-10,matrix:mei
 gerador de hora extra,candidata,2026-09-10,matrix:hora extra
@@ -887,6 +931,8 @@ gerador de inscrição inss,candidata,2026-09-10,matrix:inss
 gerador de inss,candidata,2026-09-10,matrix:inss
 gerador de juros compostos,candidata,2026-09-10,matrix:juros compostos
 gerador de leads para consorcio,candidata,2026-09-10,matrix:consórcio
+gerador de letra cursiva,descartada,,manual
+gerador de lista de compras,descartada,,manual
 gerador de lista de presença,feita,2026-09-10,manual
 gerador de lucros em dolar,candidata,2026-09-10,matrix:dólar
 gerador de lucros em dólar,candidata,2026-09-10,matrix:dólar
@@ -897,8 +943,15 @@ gerador de mei cnpj,candidata,2026-09-10,matrix:mei
 gerador de mei valido,candidata,2026-09-10,matrix:mei
 gerador de monograma,feita,2026-09-10,manual
 gerador de nf mei,candidata,2026-09-10,matrix:mei
+gerador de nome de bar,descartada,,manual
+gerador de nome de barco,descartada,,manual
 gerador de nome de cachorro,descartada,2026-09-10,manual
+gerador de nome de equipe,descartada,,manual
+gerador de nome de fazenda,feita,,manual
+gerador de nome de loja,descartada,,manual
+gerador de nome de marca,descartada,,manual
 gerador de nome personagem rpg,descartada,2026-09-10,manual
+gerador de nomes brasileiros,descartada,,manual
 gerador de nota fiscal,candidata,2026-09-10,matrix:nota fiscal
 gerador de nota fiscal eletronica,candidata,2026-09-10,matrix:nota fiscal
 gerador de nota fiscal gov,candidata,2026-09-10,matrix:nota fiscal
@@ -911,16 +964,23 @@ gerador de nota fiscal pdf,candidata,2026-09-10,matrix:nota fiscal
 gerador de nota fiscal pela chave,candidata,2026-09-10,matrix:nota fiscal
 gerador de nota fiscal sebrae,candidata,2026-09-10,matrix:nota fiscal
 gerador de numero inss,candidata,2026-09-10,matrix:inss
+gerador de ordem de servico,descartada,,manual
 gerador de pagamento mei,candidata,2026-09-10,matrix:mei
 gerador de palavras aleatorias,descartada,2026-09-10,manual
+gerador de plano de aula,descartada,,manual
 gerador de recibo de ferias,candidata,2026-09-10,matrix:férias
 gerador de recibo de salario,feita,2026-09-10,matrix:salário
+gerador de relogio,descartada,,manual
+gerador de rifa,descartada,,manual
 gerador de salario,candidata,2026-09-10,matrix:salário
 gerador de seed bitcoin,candidata,2026-09-10,matrix:bitcoin
 gerador de senha bitcoin,candidata,2026-09-10,matrix:bitcoin
 gerador de senha criptografada,candidata,2026-09-10,matrix:cripto
+gerador de simulado,descartada,,manual
+gerador de tabela de precos,descartada,,manual
 gerador de tabuada,feita,2026-09-10,manual
 gerador de tema de redação,feita,2026-09-10,manual
+gerador de verdade ou desafio,descartada,,manual
 hs consórcio quantos anos,candidata,2026-09-10,matrix:consórcio
 inss quantas horas de trabalho,candidata,2026-09-10,matrix:inss
 inss quantas horas semanais,candidata,2026-09-10,matrix:inss
@@ -1385,6 +1445,7 @@ quantas bitcoins existem no mundo,candidata,2026-09-10,matrix:bitcoin
 quantas bitcoins podem existir,candidata,2026-09-10,matrix:bitcoin
 quantas bitcoins tem elon musk,candidata,2026-09-10,matrix:bitcoin
 quantas bitcoins tem satoshi nakamoto,candidata,2026-09-10,matrix:bitcoin
+quantas cabeças de gado por hectare,feita,,manual
 quantas calorias tem meia banana,candidata,2026-09-10,matrix:mei
 quantas calorias tem meia banana da terra,candidata,2026-09-10,matrix:mei
 quantas calorias tem meia maçã,candidata,2026-09-10,matrix:mei
@@ -1423,10 +1484,13 @@ quantas criptomoedas existem no mundo,candidata,2026-09-10,matrix:cripto
 quantas criptomoedas sao criadas por dia,candidata,2026-09-10,matrix:cripto
 quantas criptomoedas ter na carteira,candidata,2026-09-10,matrix:cripto
 quantas criptomoedas xrp existem,candidata,2026-09-10,matrix:cripto
+quantas doses tem uma garrafa de vodka,feita,doses-vodka,leva13
+quantas doses tem uma garrafa de whisky,feita,,manual
 quantas dólar,candidata,2026-09-10,matrix:dólar
 quantas dólares,candidata,2026-09-10,matrix:dólar
 quantas empresas de consórcio existem no brasil,candidata,2026-09-10,matrix:consórcio
 quantas esta o dolar,candidata,2026-09-10,matrix:dólar
+quantas fatias de pizza por pessoa,feita,pizza-por-pessoa,leva10
 quantas férias,candidata,2026-09-10,matrix:férias
 quantas férias a empresa pode atrasar,candidata,2026-09-10,matrix:férias
 quantas férias a empresa pode deixar vencer,candidata,2026-09-10,matrix:férias
@@ -1438,12 +1502,15 @@ quantas férias posso tirar no ano,candidata,2026-09-10,matrix:férias
 quantas férias tem em junho,candidata,2026-09-10,matrix:férias
 quantas férias tem no ano,candidata,2026-09-10,matrix:férias
 quantas férias tem nos estados unidos,candidata,2026-09-10,matrix:férias
+quantas galinhas poedeiras por m2,feita,,manual
 quantas hora extra o funcionário pode fazer por dia,candidata,2026-09-10,matrix:hora extra
 quantas hora extra pode fazer por mes,candidata,2026-09-10,matrix:hora extra
 quantas hora extra posso fazer por dia,candidata,2026-09-10,matrix:hora extra
 quantas horas de hora extra pode fazer,candidata,2026-09-10,matrix:hora extra
 quantas horas salario minimo,candidata,2026-09-10,matrix:salário
 quantas horas salário mínimo,candidata,2026-09-10,matrix:salário
+quantas latas de tinta para pintar um quarto,descartada,"4 calculadoras de marca (suvinil, leroy, coral, joli)",leva12
+quantas latinhas de cerveja por pessoa,descartada,"3 calculadoras (drinkbartenders, calculadoradecerveja, imigrantes)",leva11
 quantas marchas cambio cvt,candidata,2026-09-10,matrix:câmbio
 quantas mei,candidata,2026-09-10,matrix:mei
 quantas mei existem,candidata,2026-09-10,matrix:mei
@@ -1491,8 +1558,12 @@ quantas parcelas salário maternidade para desempregada,candidata,2026-09-10,mat
 quantas parcelas salário maternidade rural,candidata,2026-09-10,matrix:salário
 quantas parcelas salário maternidade urbano,candidata,2026-09-10,matrix:salário
 quantas pessoas tem cripto no brasil,candidata,2026-09-10,matrix:cripto
+quantas plantas por metro quadrado,descartada,,manual
 quantas salário mínimo,candidata,2026-09-10,matrix:salário
 quantas ta o dolar,candidata,2026-09-10,matrix:dólar
+quantas taças tem uma garrafa de vinho,feita,tacas-vinho,leva16
+quantas telhas para cobrir uma casa,descartada,,manual
+quantas telhas por metro quadrado,feita,,manual
 quantas tá o dólar,candidata,2026-09-10,matrix:dólar
 quantas tá o dólar hoje,candidata,2026-09-10,matrix:dólar
 quantas vagas inss 2022,candidata,2026-09-10,matrix:inss
@@ -1511,6 +1582,26 @@ quanto custa a cripto solana hoje,candidata,2026-09-10,matrix:cripto
 quanto custa a cripto xrp hoje,candidata,2026-09-10,matrix:cripto
 quanto custa a criptomoeda ethereum,candidata,2026-09-10,matrix:cripto
 quanto custa a criptomoeda xrp,candidata,2026-09-10,matrix:cripto
+quanto custa abrir uma empresa,feita,abrir-empresa,leva14
+quanto custa academia por mes,feita,custo-academia,leva13
+quanto custa acupuntura,feita,2026-09-10,acupuntura
+quanto custa adaptar um carro para pcd,retida,2026-09-10,"RETIDA: montadoras/brands dominando com tópico de isenção (compra), intenção mista compra×adaptação"
+quanto custa adestrar um cachorro,feita,adestramento-cachorro,leva17
+quanto custa alinhar o carro,feita,alinhar-carro,leva10
+quanto custa alugar andaime,feita,2026-09-10,alugar-andaime
+quanto custa alugar banheiro quimico,feita,2026-09-10,alugar-banheiro-quimico
+quanto custa alugar brinquedos para festa infantil,feita,2026-09-10,brinquedos-festa
+quanto custa alugar mesas e cadeiras para festa,feita,alugar-mesas-cadeiras,leva18
+quanto custa alugar som para festa,feita,som-para-festa,leva18
+quanto custa alugar um carro por mes,retida,"marcas dominam (localiza, movida, unidas) + calc meoo — revisitar",leva14
+quanto custa alugar um galpao,feita,2026-09-10,alugar-galpao
+quanto custa alugar um gerador,feita,2026-09-10,alugar-gerador
+quanto custa alugar um palco,feita,2026-09-10,alugar-palco
+quanto custa alugar um salao de festas,feita,2026-09-10,alugar-salao-de-festas
+quanto custa alugar um terno,feita,2026-09-11,alugar-terno
+quanto custa alugar uma retroescavadeira,feita,2026-09-10,alugar-retroescavadeira
+quanto custa alugar vestido de noiva,feita,2026-09-10,alugar-vestido-de-noiva
+quanto custa animacao de festa infantil,feita,animacao-festa-infantil,leva18
 quanto custa aposentadoria,candidata,2026-09-10,matrix:aposentadoria
 quanto custa aposentadoria de um jogador,candidata,2026-09-10,matrix:aposentadoria
 quanto custa aposentadoria de um jogador de futebol,candidata,2026-09-10,matrix:aposentadoria
@@ -1521,6 +1612,10 @@ quanto custa aposentadoria especial,candidata,2026-09-10,matrix:aposentadoria
 quanto custa aposentadoria no brasil,candidata,2026-09-10,matrix:aposentadoria
 quanto custa aposentadoria por invalidez,candidata,2026-09-10,matrix:aposentadoria
 quanto custa aposentadoria privada,candidata,2026-09-10,matrix:aposentadoria
+quanto custa aquecer uma piscina,feita,aquecer-piscina,leva14
+quanto custa aula de natacao,feita,2026-09-10,aula-de-natacao
+quanto custa aula de violao,feita,2026-09-10,aula-de-violao
+quanto custa aula particular,feita,aula-particular,leva17
 quanto custa bitcoin,candidata,2026-09-10,matrix:bitcoin
 quanto custa bitcoin atualmente,candidata,2026-09-10,matrix:bitcoin
 quanto custa bitcoin em 2010,candidata,2026-09-10,matrix:bitcoin
@@ -1531,6 +1626,9 @@ quanto custa bitcoin em real,candidata,2026-09-10,matrix:bitcoin
 quanto custa bitcoin hoje,candidata,2026-09-10,matrix:bitcoin
 quanto custa bitcoin hoje em dia,candidata,2026-09-10,matrix:bitcoin
 quanto custa bitcoin para comprar,candidata,2026-09-10,matrix:bitcoin
+quanto custa blindar um carro,feita,blindar-carro,leva19
+quanto custa bolo de casamento,feita,2026-09-11,bolo-de-casamento
+quanto custa buffet por pessoa,feita,2026-09-10,buffet-pessoa
 quanto custa cada nota fiscal emitida,candidata,2026-09-10,matrix:nota fiscal
 quanto custa cambio,candidata,2026-09-10,matrix:câmbio
 quanto custa cambio automatico,candidata,2026-09-10,matrix:câmbio
@@ -1541,10 +1639,30 @@ quanto custa cambio de marcha,candidata,2026-09-10,matrix:câmbio
 quanto custa cambio dualogic,candidata,2026-09-10,matrix:câmbio
 quanto custa cambio sequencial,candidata,2026-09-10,matrix:câmbio
 quanto custa cambio shimano,candidata,2026-09-10,matrix:câmbio
+quanto custa casamento simples,feita,custo-casamento,leva14
+quanto custa castração de cachorro,feita,castracao-cachorro,leva18
 quanto custa cbd,candidata,2026-09-10,matrix:cdb
 quanto custa cbd canabidiol,candidata,2026-09-10,matrix:cdb
 quanto custa cbd importado,candidata,2026-09-10,matrix:cdb
 quanto custa cdb hoje,candidata,2026-09-10,matrix:cdb
+quanto custa cercar um terreno,feita,cercar-terreno,leva15
+quanto custa cirurgia bariatrica,feita,2026-09-10,cirurgia-bariatrica
+quanto custa cirurgia de catarata,feita,2026-09-10,cirurgia-catarata
+quanto custa cirurgia de hernia,feita,2026-09-10,cirurgia-hernia
+quanto custa cirurgia de nariz,feita,2026-09-10,cirurgia-nariz
+quanto custa clareamento dental,feita,clareamento-dental,leva13
+quanto custa cnh,feita,tirar-cnh,leva15
+quanto custa colocar aparelho no dente,feita,aparelho-dente,leva13
+quanto custa consertar ar condicionado,feita,2026-09-10,consertar-ar-condicionado
+quanto custa consertar ar condicionado do carro,feita,2026-09-10,consertar-ar-condicionado-carro
+quanto custa consertar celular,feita,2026-09-10,consertar-celular
+quanto custa consertar geladeira,feita,consertar-geladeira,leva12
+quanto custa consertar impressora,feita,2026-09-10,consertar-impressora
+quanto custa consertar maquina de lavar,feita,consertar-maquina-lavar,leva12
+quanto custa consertar notebook,feita,consertar-notebook,leva15
+quanto custa consertar porta de garagem,descartada,2026-09-10,CUT: sem demanda no autocomplete (0 variantes)
+quanto custa consertar tv,feita,2026-09-10,consertar-tv
+quanto custa consertar um fogão,feita,2026-09-10,consertar-fogao
 quanto custa consorcio,candidata,2026-09-10,matrix:consórcio
 quanto custa consorcio byd,candidata,2026-09-10,matrix:consórcio
 quanto custa consorcio de 1 milhao,candidata,2026-09-10,matrix:consórcio
@@ -1552,25 +1670,51 @@ quanto custa consorcio de 100 mil,candidata,2026-09-10,matrix:consórcio
 quanto custa consorcio de carro,candidata,2026-09-10,matrix:consórcio
 quanto custa consorcio de imovel,candidata,2026-09-10,matrix:consórcio
 quanto custa consorcio honda,candidata,2026-09-10,matrix:consórcio
+quanto custa construir um galpao,feita,custo-galpao,leva13
+quanto custa construir um muro,feita,construir-muro,manual
+quanto custa construir uma casa,feita,2026-09-10,construir-casa
+quanto custa construir uma piscina,feita,,manual
+quanto custa consulta cardiologista,feita,consulta-cardiologista,leva16
+quanto custa consulta dentista,feita,2026-09-10,consulta-dentista
+quanto custa consulta dermatologista,feita,consulta-dermatologista,leva14
+quanto custa consulta endocrinologista,feita,2026-09-10,consulta-endocrinologista
+quanto custa consulta ginecologista,feita,2026-09-10,consulta-ginecologista
+quanto custa consulta nutricionista,feita,consulta-nutricionista,leva17
+quanto custa consulta oftalmologista,feita,2026-09-10,consulta-oftalmologista
+quanto custa consulta otorrinolaringologista,feita,2026-09-10,consulta-otorrino
+quanto custa consulta pediatra,feita,consulta-pediatra,leva16
+quanto custa consulta urologista,feita,2026-09-10,consulta-urologista
 quanto custa consórcio de carro,candidata,2026-09-10,matrix:consórcio
 quanto custa consórcio de casa,candidata,2026-09-10,matrix:consórcio
 quanto custa consórcio de moto,candidata,2026-09-10,matrix:consórcio
+quanto custa copiar uma chave,feita,,manual
+quanto custa creche particular,feita,custo-creche,leva13
+quanto custa criar uma galinha,feita,,manual
 quanto custa criptomoeda,candidata,2026-09-10,matrix:cripto
 quanto custa criptomoeda do trump,candidata,2026-09-10,matrix:cripto
 quanto custa criptomoeda hoje,candidata,2026-09-10,matrix:cripto
 quanto custa criptomoeda solana,candidata,2026-09-10,matrix:cripto
 quanto custa criptomoedas,candidata,2026-09-10,matrix:cripto
 quanto custa crypto,candidata,2026-09-10,matrix:cripto
+quanto custa curso de ingles,retida,"marcas de idiomas dominam (wizard, ccaa, fisk, senac, puc)",leva15
 quanto custa câmbio,candidata,2026-09-10,matrix:câmbio
 quanto custa câmbio automático,candidata,2026-09-10,matrix:câmbio
 quanto custa câmbio de bicicleta,candidata,2026-09-10,matrix:câmbio
 quanto custa câmbio powershift,candidata,2026-09-10,matrix:câmbio
+quanto custa declaracao de imposto de renda,feita,custo-imposto-renda,leva14
+quanto custa depilacao a laser,retida,"5 redes de clínicas (espacolaser, drlaser, orolaser, vialaser, pellomenos)",leva15
+quanto custa depilacao na cera,candidata,2026-09-11,PASS fila leva30: PASS: tabelas de clínicas de estética — sem calculadora
+quanto custa desbloquear celular,descartada,2026-09-10,CUT: intenção ambígua (senha vs operadora) e SERP dominada por tutoriais grátis
+quanto custa desentupir um vaso,feita,,manual
+quanto custa desentupir vaso sanitario,feita,2026-09-10,desentupir-vaso-sanitario
+quanto custa design de sobrancelha,feita,2026-09-10,design-sobrancelha
 quanto custa dolar,candidata,2026-09-10,matrix:dólar
 quanto custa dolar australiano,candidata,2026-09-10,matrix:dólar
 quanto custa dolar canadense hoje,candidata,2026-09-10,matrix:dólar
 quanto custa dolar em real,candidata,2026-09-10,matrix:dólar
 quanto custa dolar hoje no brasil,candidata,2026-09-10,matrix:dólar
 quanto custa dolar no brasil,candidata,2026-09-10,matrix:dólar
+quanto custa drenagem linfatica,feita,2026-09-10,drenagem-linfatica
 quanto custa dólar,candidata,2026-09-10,matrix:dólar
 quanto custa dólar americano,candidata,2026-09-10,matrix:dólar
 quanto custa dólar canadense,candidata,2026-09-10,matrix:dólar
@@ -1585,6 +1729,23 @@ quanto custa emitir nota fiscal mei,candidata,2026-09-10,matrix:nota fiscal
 quanto custa emitir nota fiscal pessoa fisica,candidata,2026-09-10,matrix:nota fiscal
 quanto custa emitir nota fiscal simples nacional,candidata,2026-09-10,matrix:nota fiscal
 quanto custa endoscopia no cdb,candidata,2026-09-10,matrix:cdb
+quanto custa escola particular,feita,2026-09-10,escola-particular
+quanto custa exame de audiometria,feita,2026-09-10,exame-audiometria
+quanto custa exame de dna,feita,2026-09-10,custo-exame-dna
+quanto custa exame de papanicolau,feita,2026-09-10,custo-papanicolau
+quanto custa exame de sangue,feita,exame-de-sangue,leva16
+quanto custa exame psicotecnico,feita,2026-09-10,exame-psicotecnico
+quanto custa exame toxicologico,feita,2026-09-10,exame-toxicologico
+quanto custa extensao de cilios,feita,2026-09-10,extensao-de-cilios
+quanto custa extrair o siso,feita,extrair-siso,leva19
+quanto custa fachada em acm,feita,2026-09-10,fachada-acm
+quanto custa fazer um aplicativo,feita,2026-09-10,custo-aplicativo
+quanto custa fazer um bolo em casa,feita,custo-bolo-caseiro,leva11
+quanto custa fazer um deck,feita,deck-madeira,leva19
+quanto custa fazer um poco artesiano,feita,,manual
+quanto custa fazer um site,feita,custo-fazer-site,leva14
+quanto custa fazer um testamento,feita,2026-09-10,fazer-testamento
+quanto custa fazer uma calcada de concreto,feita,,manual
 quanto custa ferias,candidata,2026-09-10,matrix:férias
 quanto custa ferias em dubai,candidata,2026-09-10,matrix:férias
 quanto custa ferias em fernando de noronha,candidata,2026-09-10,matrix:férias
@@ -1602,10 +1763,15 @@ quanto custa financiamento de moto,candidata,2026-09-10,matrix:financiamento
 quanto custa financiamento de um apartamento,candidata,2026-09-10,matrix:financiamento
 quanto custa financiamento imobiliario,candidata,2026-09-10,matrix:financiamento
 quanto custa financiamento imovel,candidata,2026-09-10,matrix:financiamento
+quanto custa fisioterapia,feita,custo-fisioterapia,leva16
+quanto custa formatar um notebook,feita,formatar-notebook,leva15
+quanto custa funilaria e pintura de um carro,feita,2026-09-10,funilaria-e-pintura
 quanto custa férias,candidata,2026-09-10,matrix:férias
 quanto custa férias em bali,candidata,2026-09-10,matrix:férias
 quanto custa férias em cabo verde,candidata,2026-09-10,matrix:férias
 quanto custa férias em zanzibar,candidata,2026-09-10,matrix:férias
+quanto custa harmonizacao facial,feita,2026-09-10,harmonizacao-facial
+quanto custa higienizacao de sofa,feita,2026-09-10,higienizacao-sofa
 quanto custa hora extra,candidata,2026-09-10,matrix:hora extra
 quanto custa hora extra 100 por cento,candidata,2026-09-10,matrix:hora extra
 quanto custa hora extra clt,candidata,2026-09-10,matrix:hora extra
@@ -1616,8 +1782,12 @@ quanto custa hora extra no domingo,candidata,2026-09-10,matrix:hora extra
 quanto custa hora extra no sabado,candidata,2026-09-10,matrix:hora extra
 quanto custa hora extra noturna,candidata,2026-09-10,matrix:hora extra
 quanto custa hora extra salario minimo 2025,candidata,2026-09-10,matrix:hora extra
+quanto custa hotel para cachorro,feita,hotel-cachorro,leva18
+quanto custa impermeabilizar laje,feita,impermeabilizar-laje,leva18
+quanto custa implante capilar,feita,2026-09-10,implante-capilar
 quanto custa imposto de renda,candidata,2026-09-10,matrix:imposto de renda
 quanto custa imposto de renda pessoa fisica,candidata,2026-09-10,matrix:imposto de renda
+quanto custa inspecao veicular,feita,2026-09-10,inspecao-veicular
 quanto custa inss,candidata,2026-09-10,matrix:inss
 quanto custa inss autonomo 2025,candidata,2026-09-10,matrix:inss
 quanto custa inss autônomo,candidata,2026-09-10,matrix:inss
@@ -1628,7 +1798,37 @@ quanto custa inss para autonomo,candidata,2026-09-10,matrix:inss
 quanto custa inss para mei,candidata,2026-09-10,matrix:inss
 quanto custa inss para pj,candidata,2026-09-10,matrix:inss
 quanto custa inss por mes,candidata,2026-09-10,matrix:inss
+quanto custa instalacao eletrica de uma casa,feita,custo-eletrica-casa,leva13
+quanto custa instalar calha,feita,2026-09-10,instalar-calha
+quanto custa instalar camera de seguranca,feita,instalar-camera-seguranca,leva12
+quanto custa instalar cerca eletrica,feita,2026-09-10,instalar-cerca-eletrica
+quanto custa instalar coifa,feita,instalar-coifa,leva12
+quanto custa instalar interfone,feita,2026-09-10,instalar-interfone
+quanto custa instalar piso,feita,2026-09-10,instalar-piso
+quanto custa instalar portao eletronico,feita,2026-09-10,portao-eletronico
+quanto custa instalar suporte de tv,feita,instalar-suporte-tv,leva12
+quanto custa instalar um aquecedor a gas,feita,instalar-aquecedor-gas,leva19
+quanto custa instalar um ar condicionado,feita,,manual
+quanto custa instalar um chuveiro,feita,,manual
+quanto custa instalar um portao eletronico,feita,,manual
+quanto custa instalar uma cerca eletrica,feita,,manual
+quanto custa instalar uma tomada,feita,,manual
+quanto custa instalar ventilador de teto,feita,instalar-ventilador-teto,leva11
 quanto custa ipca,candidata,2026-09-10,matrix:ipca
+quanto custa lavar um sofa,feita,,manual
+quanto custa lavar um tapete,feita,2026-09-10,lavar-tapete
+quanto custa limpar caixa d'agua,feita,limpar-caixa-dagua,leva18
+quanto custa limpar fossa,feita,2026-09-10,limpar-fossa
+quanto custa limpeza de ar condicionado,feita,limpeza-ar-condicionado,leva11
+quanto custa limpeza de bicos injetores,feita,bicos-injetores,leva19
+quanto custa limpeza de pele,feita,2026-09-10,limpeza-de-pele
+quanto custa limpeza de terreno,feita,2026-09-11,limpeza-de-terreno
+quanto custa limpeza dos dentes,feita,limpeza-dental,leva19
+quanto custa lipoaspiracao,feita,2026-09-10,custo-lipoaspiracao
+quanto custa manter um cavalo,feita,custo-cavalo,leva11
+quanto custa manter uma moto,feita,custo-moto,leva12
+quanto custa manter uma piscina,feita,,manual
+quanto custa maquiagem para festa,feita,maquiagem-festa,leva19
 quanto custa mei,candidata,2026-09-10,matrix:mei
 quanto custa mei 2025,candidata,2026-09-10,matrix:mei
 quanto custa mei 2026,candidata,2026-09-10,matrix:mei
@@ -1647,12 +1847,35 @@ quanto custa meio metro de areia grossa,candidata,2026-09-10,matrix:mei
 quanto custa meio metro de brita,candidata,2026-09-10,matrix:mei
 quanto custa meio milheiro de tijolo,candidata,2026-09-10,matrix:mei
 quanto custa meio salário mínimo,candidata,2026-09-10,matrix:mei
+quanto custa micropigmentacao de sobrancelha,feita,micropigmentacao-sobrancelha,leva19
+quanto custa montar um aquario,feita,custo-montar-aquario,leva13
+quanto custa mudar o nome,feita,2026-09-10,mudar-nome
 quanto custa nota fiscal,candidata,2026-09-10,matrix:nota fiscal
 quanto custa nota fiscal avulsa,candidata,2026-09-10,matrix:nota fiscal
 quanto custa nota fiscal de serviço,candidata,2026-09-10,matrix:nota fiscal
 quanto custa nota fiscal mei,candidata,2026-09-10,matrix:nota fiscal
 quanto custa o cdb do banco do brasil,candidata,2026-09-10,matrix:cdb
 quanto custa o ipca hoje,candidata,2026-09-10,matrix:ipca
+quanto custa o metro quadrado de construcao,feita,,manual
+quanto custa para consertar um playstation 4,candidata,2026-09-11,PASS fila leva30: PASS: assistências técnicas com preço — sem calculadora
+quanto custa personal trainer,feita,personal-trainer,leva11
+quanto custa pilates,feita,2026-09-11,custo-pilates
+quanto custa pintar o cabelo no salao,feita,pintar-cabelo,leva19
+quanto custa pintar um portao,feita,pintar-portao,leva10
+quanto custa pintar um quarto,feita,pintar-quarto,leva12
+quanto custa pintar uma casa,feita,pintar-casa,manual
+quanto custa podar uma arvore,feita,poda-arvore,leva17
+quanto custa polimento automotivo,feita,2026-09-10,polimento-automotivo
+quanto custa progressiva,feita,custo-progressiva,leva14
+quanto custa protese dentaria,feita,2026-09-10,protese-dentaria
+quanto custa psicologo,feita,custo-psicologo,leva14
+quanto custa recapagem de pneu,feita,2026-09-10,recapagem-pneu
+quanto custa reforma de piscina,feita,2026-09-10,reforma-piscina
+quanto custa reformar um banheiro,feita,reformar-banheiro,leva15
+quanto custa reformar uma cozinha,feita,reformar-cozinha,leva15
+quanto custa registro de marca,retida,2026-09-10,"RETIDA: 4+ agências de propriedade intelectual dominando o SERP (123marcas, consolide, oficial, moveon) — precedentes laser/idiomas/EAD"
+quanto custa remover uma tatuagem,feita,2026-09-10,remover-tatuagem
+quanto custa revisao do carro,feita,revisao-carro,leva11
 quanto custa salario,candidata,2026-09-10,matrix:salário
 quanto custa salario comercial,candidata,2026-09-10,matrix:salário
 quanto custa salario familia,candidata,2026-09-10,matrix:salário
@@ -1669,22 +1892,100 @@ quanto custa salário mínimo 2026,candidata,2026-09-10,matrix:salário
 quanto custa salário mínimo em portugal,candidata,2026-09-10,matrix:salário
 quanto custa salário mínimo hoje,candidata,2026-09-10,matrix:salário
 quanto custa salário mínimo no brasil,candidata,2026-09-10,matrix:salário
+quanto custa self storage,feita,2026-09-10,self-storage
+quanto custa ter um cachorro,feita,,manual
+quanto custa ter um gato,feita,,manual
+quanto custa tirar passaporte,descartada,valor fixo único da PF — sem variável para calculadora,leva15
+quanto custa transferencia de veiculo,feita,transferencia-veiculo,leva16
 quanto custa tratamento com cbd,candidata,2026-09-10,matrix:cdb
+quanto custa tratamento de canal,feita,2026-09-11,tratamento-de-canal
+quanto custa trocar a correia dentada,feita,troca-correia-dentada,leva11
+quanto custa trocar a embreagem,feita,trocar-embreagem,leva17
+quanto custa trocar a resistencia do chuveiro,feita,trocar-resistencia-chuveiro,leva17
+quanto custa trocar a tela do celular,feita,trocar-tela-celular,leva15
+quanto custa trocar amortecedor,feita,trocar-amortecedor,leva17
+quanto custa trocar fechadura,feita,2026-09-10,trocar-fechadura
+quanto custa trocar o oleo do carro,feita,troca-oleo,leva16
+quanto custa trocar pastilha de freio,feita,trocar-pastilha-freio,leva17
+quanto custa trocar uma fechadura,feita,,manual
+quanto custa um armario planejado,feita,custo-moveis-planejados,leva16
+quanto custa um banho no cachorro,feita,banho-cachorro,leva10
 quanto custa um consorcio de 500 mil,candidata,2026-09-10,matrix:consórcio
 quanto custa um consórcio de 200 mil,candidata,2026-09-10,matrix:consórcio
+quanto custa um contador,feita,2026-09-10,custo-contador
+quanto custa um cuidador de idoso,feita,2026-09-10,custo-cuidador-de-idoso
+quanto custa um despachante,feita,2026-09-10,custo-despachante
+quanto custa um divorcio,feita,2026-09-10,custo-divorcio
+quanto custa um dj para festa,feita,2026-09-10,dj-festa
+quanto custa um eletricista,feita,2026-09-10,custo-eletricista
+quanto custa um encanador,feita,2026-09-10,custo-encanador
+quanto custa um exame de vista,feita,exame-vista,leva10
+quanto custa um fotografo para evento,feita,2026-09-10,fotografo-evento
+quanto custa um guincho,feita,custo-guincho,leva17
+quanto custa um implante dentario,feita,implante-dentario,leva19
+quanto custa um inventario,feita,2026-09-10,custo-inventario
+quanto custa um jardineiro,feita,jardineiro,leva17
+quanto custa um logo,feita,custo-logo,leva14
+quanto custa um mecanico,feita,2026-09-10,custo-mecanico
+quanto custa um oculos de grau,feita,2026-09-10,oculos-de-grau
+quanto custa um pedreiro por dia,feita,2026-09-10,diaria-pedreiro
+quanto custa um pet scan,feita,2026-09-10,custo-pet-scan
+quanto custa um poco artesiano,descartada,2026-09-10,"sobreposição com página já publicada (quanto custa fazer um poco artesiano, slug poco-artesiano) — página original restaurada; não publicar cópia"
+quanto custa um ponto de luz,feita,ponto-de-luz,leva11
+quanto custa um projeto de arquitetura,feita,2026-09-11,projeto-arquitetura
+quanto custa um raio-x,feita,2026-09-10,custo-raio-x
+quanto custa um telhado,feita,custo-telhado,leva12
+quanto custa um ultrassom,feita,2026-09-10,custo-ultrassom
+quanto custa um velorio,feita,2026-09-10,custo-velorio
+quanto custa uma baba,feita,2026-09-10,custo-baba
+quanto custa uma bateria de carro,descartada,SERP e-commerce (7 lojas),leva16
+quanto custa uma casa pre fabricada,feita,casa-prefabricada,leva16
+quanto custa uma caçamba de entulho,feita,2026-09-10,cacamba-entulho
+quanto custa uma cesarea,feita,2026-09-10,custo-cesarea
+quanto custa uma colonoscopia,feita,2026-09-10,custo-colonoscopia
 quanto custa uma colonoscopia no cdb,candidata,2026-09-10,matrix:cdb
+quanto custa uma consulta medica particular,feita,consulta-medica,leva18
+quanto custa uma consulta veterinaria,feita,consulta-veterinaria,leva10
 quanto custa uma cripto ethereum,candidata,2026-09-10,matrix:cripto
 quanto custa uma cripto solana,candidata,2026-09-10,matrix:cripto
 quanto custa uma criptomoeda bitcoin,candidata,2026-09-10,matrix:cripto
 quanto custa uma criptomoeda em real,candidata,2026-09-10,matrix:cripto
+quanto custa uma dedetizacao,feita,dedetizacao,leva11
+quanto custa uma diarista,feita,diarista,leva12
+quanto custa uma endoscopia,feita,2026-09-10,custo-endoscopia
+quanto custa uma escritura de imovel,retida,2026-09-10,RETIDA: SERP com calculadora oficial IRIB + simulador TJAL + 6 tabelas de cartório — saturado por fonte oficial; possível ângulo: custo total escritura+ITBI+registro
+quanto custa uma faculdade ead,retida,7 faculdades de marca no top-10,leva15
+quanto custa uma higienização interna do carro,feita,higienizacao-carro,leva18
+quanto custa uma laje,feita,custo-laje,leva13
 quanto custa uma mamografia no cdb,candidata,2026-09-10,matrix:cdb
 quanto custa uma moeda de cripto,candidata,2026-09-10,matrix:cripto
+quanto custa uma mudanca,feita,custo-mudanca,leva13
+quanto custa uma procuracao,feita,2026-09-10,custo-procuracao
+quanto custa uma ressonancia magnetica,feita,2026-09-10,custo-ressonancia
+quanto custa uma tatuagem,feita,tatuagem-preco,leva13
+quanto custa uma tomografia,feita,2026-09-10,custo-tomografia
+quanto custa uma troca de pneu,feita,troca-pneu,leva10
+quanto custa unha em gel,feita,unha-em-gel,leva15
+quanto custa uti por dia,feita,2026-09-10,custo-uti
+quanto custa vacina cachorro,feita,vacina-cachorro,leva18
+quanto custa vacina da dengue,feita,2026-09-10,vacina-dengue
+quanto custa vasectomia,feita,2026-09-11,custo-vasectomia
 quanto custa vender cripto na crypto.com,candidata,2026-09-10,matrix:cripto
+quanto de arroz por pessoa,feita,,manual
+quanto de bolo por pessoa,feita,,manual
+quanto de cafe por pessoa,feita,,manual
+quanto de carne por pessoa no churrasco,descartada,,manual
+quanto de churrasco por pessoa,descartada,"4 calculadoras (zaffari, pifpaf, perdigao, diskchurrasqueiro)",leva11
+quanto de feijão por pessoa,feita,,manual
+quanto de gelo por pessoa,descartada,,manual
 quanto de imposto de renda paga,candidata,2026-09-10,matrix:imposto de renda
 quanto de imposto de renda paga quem ganha 10 mil,candidata,2026-09-10,matrix:imposto de renda
 quanto de imposto de renda paga quem ganha 5 mil,candidata,2026-09-10,matrix:imposto de renda
 quanto de imposto de renda paga quem ganha 6 mil,candidata,2026-09-10,matrix:imposto de renda
 quanto de imposto de renda paga quem ganha 7 mil,candidata,2026-09-10,matrix:imposto de renda
+quanto de macarrão por pessoa,feita,,manual
+quanto de refrigerante por pessoa,descartada,4 calculadoras de festa,leva11
+quanto de sorvete por pessoa,feita,,manual
 quanto devo cobrar para emitir uma nota fiscal de serviço,candidata,2026-09-10,matrix:nota fiscal
 quanto devo comprar de bitcoin,candidata,2026-09-10,matrix:bitcoin
 quanto devo de imposto de renda,candidata,2026-09-10,matrix:imposto de renda
@@ -1733,7 +2034,40 @@ quanto devo receber quando sair de férias,candidata,2026-09-10,matrix:férias
 quanto devo reter de inss na nota fiscal,candidata,2026-09-10,matrix:nota fiscal
 quanto devo ter de bitcoin,candidata,2026-09-10,matrix:bitcoin
 quanto devo tirar de salario da minha empresa,candidata,2026-09-10,matrix:salário
+quanto dura um botijao de gas,feita,dura-botijao-gas,leva12
+quanto dura um toner,feita,dura-toner,leva14
 quanto eu devo de mei,candidata,2026-09-10,matrix:mei
+quanto gasta ar condicionado por mes,retida,"2 calculadoras (clarke, poloar) — revisitar depois",leva12
+quanto gasta com comida por mes,feita,gasto-comida-mes,leva11
+quanto gasta um aquecedor a gás,feita,,manual
+quanto gasta um aquecedor elétrico,feita,,manual
+quanto gasta um aquário,feita,,manual
+quanto gasta um ar condicionado por mes,descartada,,manual
+quanto gasta um aspirador de pó,feita,,manual
+quanto gasta um carregador de celular,feita,,manual
+quanto gasta um chuveiro eletrico,feita,,manual
+quanto gasta um climatizador de ar,feita,,manual
+quanto gasta um desumidificador,feita,,manual
+quanto gasta um ferro de passar,feita,,manual
+quanto gasta um forno elétrico,feita,,manual
+quanto gasta um freezer,feita,,manual
+quanto gasta um liquidificador,feita,,manual
+quanto gasta um micro-ondas,feita,,manual
+quanto gasta um pc gamer,feita,,manual
+quanto gasta um purificador de agua,feita,,manual
+quanto gasta um secador de cabelo,feita,,manual
+quanto gasta um umidificador,feita,,manual
+quanto gasta um ventilador,feita,,manual
+quanto gasta uma airfryer,feita,,manual
+quanto gasta uma cafeteira elétrica,feita,,manual
+quanto gasta uma camera de seguranca,feita,,manual
+quanto gasta uma chaleira elétrica,feita,,manual
+quanto gasta uma geladeira por mes,feita,,manual
+quanto gasta uma lampada de led,feita,,manual
+quanto gasta uma lava louças,feita,,manual
+quanto gasta uma maquina de lavar,feita,,manual
+quanto gasta uma televisão por mês,feita,,manual
+quanto gasto de gasolina por mes,descartada,"5 calculadoras (mobills, serasa, zapay, cpfabbri, omni)",leva12
 quanto hora extra paga,candidata,2026-09-10,matrix:hora extra
 quanto inss é descontado,candidata,2026-09-10,matrix:inss
 quanto o tesouro direto esta rendendo,candidata,2026-09-10,matrix:tesouro direto
@@ -1742,6 +2076,7 @@ quanto paga de imposto de renda quem ganha 100 mil,candidata,2026-09-10,matrix:i
 quanto paga imposto de renda,candidata,2026-09-10,matrix:imposto de renda
 quanto rende $10 dólares no porquinho inter por mês,candidata,2026-09-10,matrix:dólar
 quanto rende 1 dolar no inter,candidata,2026-09-10,matrix:dólar
+quanto rende 1 kg de carne cozida,feita,,manual
 quanto rende 1 milhao em juros compostos,candidata,2026-09-10,matrix:juros compostos
 quanto rende 1 milhão na poupança livre de imposto de renda,candidata,2026-09-10,matrix:imposto de renda
 quanto rende 1 salario minimo,candidata,2026-09-10,matrix:salário
@@ -1864,6 +2199,7 @@ quanto tempo devo usar meia de compressão,candidata,2026-09-10,matrix:mei
 quanto tempo devo usar meias de compressao após cirurgia,candidata,2026-09-10,matrix:mei
 quanto tempo dura a analise do salario maternidade,candidata,2026-09-10,matrix:salário
 quanto tempo dura a análise do salário maternidade,candidata,2026-09-10,matrix:salário
+quanto tempo dura a bateria do notebook,descartada,,manual
 quanto tempo dura a fatura do cartão de crédito,candidata,2026-09-10,matrix:cartão de crédito
 quanto tempo dura a meia vida da durateston,candidata,2026-09-10,matrix:mei
 quanto tempo dura a meia vida do enantato de testosterona,candidata,2026-09-10,matrix:mei
@@ -1959,6 +2295,7 @@ quanto tempo dura um pedido de aposentadoria,candidata,2026-09-10,matrix:aposent
 quanto tempo dura um processo de aposentadoria,candidata,2026-09-10,matrix:aposentadoria
 quanto tempo dura um processo de aposentadoria na justiça,candidata,2026-09-10,matrix:aposentadoria
 quanto tempo dura um processo de aposentadoria por invalidez,candidata,2026-09-10,matrix:aposentadoria
+quanto tempo dura um saco de racao de 15kg,feita,dura-racao,leva16
 quanto tempo dura uma assembleia de consórcio,candidata,2026-09-10,matrix:consórcio
 quanto tempo dura uma audiência de aposentadoria,candidata,2026-09-10,matrix:aposentadoria
 quanto tempo dura uma bala,candidata,2026-09-10,matrix:mei
@@ -2148,6 +2485,7 @@ quanto é uma hora extra de trabalho,candidata,2026-09-10,matrix:hora extra
 quantos aposentadoria,candidata,2026-09-10,matrix:aposentadoria
 quantos aposentadoria bolsonaro tem,candidata,2026-09-10,matrix:aposentadoria
 quantos aposentadoria uma pessoa pode ter,candidata,2026-09-10,matrix:aposentadoria
+quantos azulejos por metro quadrado,descartada,,manual
 quantos bitcoin a strategy tem,candidata,2026-09-10,matrix:bitcoin
 quantos bitcoin daniel fraga tinha,candidata,2026-09-10,matrix:bitcoin
 quantos bitcoin existem,candidata,2026-09-10,matrix:bitcoin
@@ -2169,6 +2507,8 @@ quantos bitcoins o elon musk tem,candidata,2026-09-10,matrix:bitcoin
 quantos bitcoins tem a strategy,candidata,2026-09-10,matrix:bitcoin
 quantos bitcoins tem michael saylor,candidata,2026-09-10,matrix:bitcoin
 quantos bitcoins tem o satoshi nakamoto,candidata,2026-09-10,matrix:bitcoin
+quantos blocos para construir uma casa,feita,,manual
+quantos blocos por metro quadrado,feita,,manual
 quantos brasileiros tem criptomoedas,candidata,2026-09-10,matrix:cripto
 quantos cartão de crédito uma pessoa pode ter,candidata,2026-09-10,matrix:cartão de crédito
 quantos cdb,candidata,2026-09-10,matrix:cdb
@@ -2198,6 +2538,7 @@ quantos dias férias clt,candidata,2026-09-10,matrix:férias
 quantos dias férias de julho,candidata,2026-09-10,matrix:férias
 quantos dias o consórcio libera o dinheiro,candidata,2026-09-10,matrix:consórcio
 quantos do consorcio para ser contemplado,candidata,2026-09-10,matrix:consórcio
+quantos doces por pessoa,descartada,"3+ calculadoras (guiaaniversario, adorebrigaderia, aquarius)",manual
 quantos dólar custa o ingresso mais barato para o mundial,candidata,2026-09-10,matrix:dólar
 quantos dólar custa o ingresso mais caro do mundial de 2026,candidata,2026-09-10,matrix:dólar
 quantos dólar dá r$ 1.000,candidata,2026-09-10,matrix:dólar
@@ -2248,8 +2589,18 @@ quantos inss tem em ribeirão preto,candidata,2026-09-10,matrix:inss
 quantos inss tem em são bernardo do campo,candidata,2026-09-10,matrix:inss
 quantos ipca,candidata,2026-09-10,matrix:ipca
 quantos ipca existem,candidata,2026-09-10,matrix:ipca
+quantos kg de argamassa por metro quadrado,descartada,,manual
 quantos litros cambio al4,candidata,2026-09-10,matrix:câmbio
 quantos litros cambio automatico corolla,candidata,2026-09-10,matrix:câmbio
+quantos litros de agua tem uma piscina,descartada,"4 calculadoras (genco, engiobra, omni, piscinafacil)",leva10
+quantos litros de cloro para piscina,feita,cloro-piscina,leva10
+quantos litros de leite produz uma vaca,feita,,manual
+quantos litros de refrigerante por pessoa,descartada,,manual
+quantos litros de tinta por metro quadrado,descartada,,manual
+quantos litros gasta lavar louca,feita,,manual
+quantos litros gasta um banho,feita,,manual
+quantos litros gasta uma descarga,feita,,manual
+quantos litros gasta uma maquina de lavar,feita,,manual
 quantos litros oleo cambio g85,candidata,2026-09-10,matrix:câmbio
 quantos litros oleo cambio s10 2.8,candidata,2026-09-10,matrix:câmbio
 quantos litros óleo câmbio automático ecosport 2.0 16v,candidata,2026-09-10,matrix:câmbio
@@ -2269,7 +2620,15 @@ quantos meis existem no brasil,candidata,2026-09-10,matrix:mei
 quantos meis existem no brasil 2026,candidata,2026-09-10,matrix:mei
 quantos meis posso ter no meu cpf,candidata,2026-09-10,matrix:mei
 quantos meis uma pessoa pode ter,candidata,2026-09-10,matrix:mei
+quantos metros de arame para cerca,descartada,,manual
+quantos ovos por pessoa,descartada,,manual
+quantos ovos uma galinha põe por mes,feita,,manual
+quantos passos por km,descartada,,manual
+quantos pedacos de frango por pessoa,feita,frango-por-pessoa,leva10
 quantos rende o ipca,candidata,2026-09-10,matrix:ipca
+quantos sacos de cimento para construir uma casa,feita,,manual
+quantos sacos de cimento por metro quadrado,feita,,manual
+quantos salgados por pessoa,descartada,3+ calculadoras de festa,manual
 quantos salário maternidade,candidata,2026-09-10,matrix:salário
 quantos salário maternidade recebe,candidata,2026-09-10,matrix:salário
 quantos salário mínimo,candidata,2026-09-10,matrix:salário
@@ -2290,6 +2649,8 @@ quantos salários é o salário maternidade,candidata,2026-09-10,matrix:salário
 quantos subiu o ipca,candidata,2026-09-10,matrix:ipca
 quantos ta o cambio do guarani para real,candidata,2026-09-10,matrix:câmbio
 quantos ta o ipca hoje,candidata,2026-09-10,matrix:ipca
+quantos tijolos para construir uma casa,feita,,manual
+quantos tijolos por metro quadrado,feita,,manual
 quantos tipos de cambio automatico existem,candidata,2026-09-10,matrix:câmbio
 quantos tipos de criptografia existem,candidata,2026-09-10,matrix:cripto
 quantos tipos de criptomoedas existem,candidata,2026-09-10,matrix:cripto
@@ -2297,6 +2658,7 @@ quantos tipos de ipca existem,candidata,2026-09-10,matrix:ipca
 quantos vale uma criptomoeda,candidata,2026-09-10,matrix:cripto
 regra de,candidata,2026-09-10,sitemap:querocalcular.com.br
 renda imposto de renda,candidata,2026-09-10,matrix:imposto de renda
+reparo de parabrisa,descartada,falhou no autocomplete,leva10
 salario gerador de demanda farmax,candidata,2026-09-10,matrix:salário
 salario gerador de demanda kimberly clark,candidata,2026-09-10,matrix:salário
 salario quantas silabas,candidata,2026-09-10,matrix:salário
@@ -2734,365 +3096,3 @@ tabela tesouro direto 2025,candidata,2026-09-10,matrix:tesouro direto
 tabuadas,candidata,2026-09-10,sitemap:querocalcular.com.br
 tecnico de gerador salario,candidata,2026-09-10,matrix:salário
 valor hora,candidata,2026-09-10,sitemap:querocalcular.com.br
-gerador de nome de fazenda,feita,,manual
-gerador de etiqueta escolar,feita,,manual
-quanto gasta um chuveiro eletrico,feita,,manual
-quanto gasta uma geladeira por mes,feita,,manual
-quanto gasta um ventilador,feita,,manual
-quanto gasta uma lampada de led,feita,,manual
-quanto gasta um micro-ondas,feita,,manual
-quanto gasta uma maquina de lavar,feita,,manual
-quanto gasta um secador de cabelo,feita,,manual
-quanto gasta uma televisão por mês,feita,,manual
-calculadora de litros de aquario,descartada,,manual
-calculadora de aquario,descartada,,manual
-gerador de escala musical,descartada,,manual
-gerador de acordes,descartada,,manual
-calculadora de croche,descartada,,manual
-calculadora de jardim,descartada,,manual
-gerador de nome de barco,descartada,,manual
-calculadora de plantas,descartada,,manual
-conversor de xicaras para gramas,descartada,,manual
-conversor de temperatura de forno,descartada,,manual
-calculadora de cafeina,descartada,,manual
-calculadora de cortina,descartada,,manual
-calculadora de reajuste salarial,descartada,,manual
-calculadora de diluicao,descartada,,manual
-calculadora de frequencia cardiaca maxima,descartada,,manual
-calculadora de pontos da cnh,descartada,,manual
-calculadora de resistor para led,descartada,,manual
-calculadora de custo de impressao,descartada,,manual
-calculadora de resistor,descartada,,manual
-gerador de verdade ou desafio,descartada,,manual
-calculadora de custo de receita,descartada,,manual
-calculadora de preco de bolo,descartada,,manual
-calculadora de nota minima,descartada,,manual
-calculadora de preço de venda,descartada,,manual
-quanto gasta um ar condicionado por mes,descartada,,manual
-calculadora de taxas do mercado pago,descartada,,manual
-calculadora de taxas shopee,descartada,,manual
-quanto tempo dura a bateria do notebook,descartada,,manual
-quanto gasta um forno elétrico,feita,,manual
-quanto gasta uma airfryer,feita,,manual
-quanto gasta um aspirador de pó,feita,,manual
-quanto gasta um ferro de passar,feita,,manual
-quanto gasta uma lava louças,feita,,manual
-quanto gasta um liquidificador,feita,,manual
-quanto gasta uma cafeteira elétrica,feita,,manual
-quanto gasta um aquecedor elétrico,feita,,manual
-quanto gasta uma chaleira elétrica,feita,,manual
-quanto gasta um freezer,feita,,manual
-quanto gasta um umidificador,feita,,manual
-gerador de atividade de caligrafia,feita,,manual
-quanto custa construir uma piscina,feita,,manual
-quantos tijolos por metro quadrado,feita,,manual
-quantas telhas por metro quadrado,feita,,manual
-quantos blocos por metro quadrado,feita,,manual
-quantos sacos de cimento por metro quadrado,feita,,manual
-quantos tijolos para construir uma casa,feita,,manual
-quanto de arroz por pessoa,feita,,manual
-quanto de feijão por pessoa,feita,,manual
-quanto de macarrão por pessoa,feita,,manual
-gerador de rifa,descartada,,manual
-gerador de cracha,descartada,,manual
-gerador de nome de loja,descartada,,manual
-gerador de nome de bar,descartada,,manual
-gerador de nome de marca,descartada,,manual
-gerador de nome de equipe,descartada,,manual
-gerador de lista de compras,descartada,,manual
-calculadora de rescisao,descartada,,manual
-gerador de grade de horarios,descartada,,manual
-gerador de ordem de servico,descartada,,manual
-gerador de ata de reuniao,descartada,,manual
-gerador de ficha catalografica,descartada,,manual
-gerador de capa de trabalho,descartada,,manual
-gerador de plano de aula,descartada,,manual
-gerador de boletim escolar,descartada,,manual
-gerador de simulado,descartada,,manual
-gerador de letra cursiva,descartada,,manual
-gerador de etiqueta de preco,descartada,,manual
-gerador de tabela de precos,descartada,,manual
-gerador de apelidos,descartada,,manual
-gerador de nomes brasileiros,descartada,,manual
-calculadora de dias uteis,descartada,,manual
-gerador de cronograma capilar,descartada,,manual
-calculadora de cimento e areia,descartada,,manual
-quantos azulejos por metro quadrado,descartada,,manual
-calculadora de sono,descartada,,manual
-quantos blocos para construir uma casa,feita,,manual
-quantos sacos de cimento para construir uma casa,feita,,manual
-quanto de bolo por pessoa,feita,,manual
-quanto de cafe por pessoa,feita,,manual
-quantas cabeças de gado por hectare,feita,,manual
-quanto custa instalar um ar condicionado,feita,,manual
-quanto custa o metro quadrado de construcao,feita,,manual
-quanto gasta um climatizador de ar,feita,,manual
-quanto gasta um desumidificador,feita,,manual
-quanto gasta um purificador de agua,feita,,manual
-quanto custa lavar um sofa,feita,,manual
-quantas telhas para cobrir uma casa,descartada,,manual
-quanto de carne por pessoa no churrasco,descartada,,manual
-quantos litros de tinta por metro quadrado,descartada,,manual
-calculadora de salario por hora,descartada,,manual
-quantos ovos por pessoa,descartada,,manual
-quantos doces por pessoa,descartada,"3+ calculadoras (guiaaniversario, adorebrigaderia, aquarius)",manual
-quantos salgados por pessoa,descartada,3+ calculadoras de festa,manual
-quantos litros de refrigerante por pessoa,descartada,,manual
-quantos kg de argamassa por metro quadrado,descartada,,manual
-quantos metros de arame para cerca,descartada,,manual
-quanto de gelo por pessoa,descartada,,manual
-quantos passos por km,descartada,,manual
-quanto custa pintar uma casa,feita,pintar-casa,manual
-quanto gasta um pc gamer,feita,,manual
-quanto custa manter uma piscina,feita,,manual
-quanto de sorvete por pessoa,feita,,manual
-quanto gasta um carregador de celular,feita,,manual
-quanto gasta uma camera de seguranca,feita,,manual
-quanto custa ter um cachorro,feita,,manual
-quanto gasta um aquário,feita,,manual
-quantas galinhas poedeiras por m2,feita,,manual
-quantas plantas por metro quadrado,descartada,,manual
-quantos litros gasta um banho,feita,,manual
-quanto custa instalar um portao eletronico,feita,,manual
-quanto custa instalar uma cerca eletrica,feita,,manual
-quanto custa ter um gato,feita,,manual
-quanto gasta um aquecedor a gás,feita,,manual
-quanto rende 1 kg de carne cozida,feita,,manual
-quantos litros gasta uma maquina de lavar,feita,,manual
-quanto custa criar uma galinha,feita,,manual
-quanto custa fazer uma calcada de concreto,feita,,manual
-quantos litros gasta lavar louca,feita,,manual
-quantas doses tem uma garrafa de whisky,feita,,manual
-calculadora de hora freelancer,descartada,,manual
-gerador de relogio,descartada,,manual
-quanto custa trocar uma fechadura,feita,,manual
-quanto custa desentupir um vaso,feita,,manual
-quantos litros gasta uma descarga,feita,,manual
-quanto custa copiar uma chave,feita,,manual
-quanto custa instalar uma tomada,feita,,manual
-quanto custa instalar um chuveiro,feita,,manual
-quantos litros de leite produz uma vaca,feita,,manual
-quantos ovos uma galinha põe por mes,feita,,manual
-quanto custa fazer um poco artesiano,feita,,manual
-quanto custa construir um muro,feita,construir-muro,manual
-calculadora de media escolar,descartada,,manual
-quantas fatias de pizza por pessoa,feita,pizza-por-pessoa,leva10
-quanto custa uma consulta veterinaria,feita,consulta-veterinaria,leva10
-quanto custa uma troca de pneu,feita,troca-pneu,leva10
-quantos pedacos de frango por pessoa,feita,frango-por-pessoa,leva10
-quanto custa um banho no cachorro,feita,banho-cachorro,leva10
-quanto custa um exame de vista,feita,exame-vista,leva10
-quanto custa pintar um portao,feita,pintar-portao,leva10
-quantos litros de cloro para piscina,feita,cloro-piscina,leva10
-quanto custa alinhar o carro,feita,alinhar-carro,leva10
-calculadora de comissao de vendas,descartada,6 ferramentas dedicadas no top-10,leva10
-quantos litros de agua tem uma piscina,descartada,"4 calculadoras (genco, engiobra, omni, piscinafacil)",leva10
-reparo de parabrisa,descartada,falhou no autocomplete,leva10
-quanto custa fazer um bolo em casa,feita,custo-bolo-caseiro,leva11
-quanto custa revisao do carro,feita,revisao-carro,leva11
-quanto custa trocar a correia dentada,feita,troca-correia-dentada,leva11
-quanto custa limpeza de ar condicionado,feita,limpeza-ar-condicionado,leva11
-quanto custa uma dedetizacao,feita,dedetizacao,leva11
-quanto custa instalar ventilador de teto,feita,instalar-ventilador-teto,leva11
-quanto custa um ponto de luz,feita,ponto-de-luz,leva11
-quanto custa manter um cavalo,feita,custo-cavalo,leva11
-quanto custa personal trainer,feita,personal-trainer,leva11
-quanto gasta com comida por mes,feita,gasto-comida-mes,leva11
-quanto de churrasco por pessoa,descartada,"4 calculadoras (zaffari, pifpaf, perdigao, diskchurrasqueiro)",leva11
-quantas latinhas de cerveja por pessoa,descartada,"3 calculadoras (drinkbartenders, calculadoradecerveja, imigrantes)",leva11
-quanto de refrigerante por pessoa,descartada,4 calculadoras de festa,leva11
-quanto custa pintar um quarto,feita,pintar-quarto,leva12
-quanto custa instalar camera de seguranca,feita,instalar-camera-seguranca,leva12
-quanto custa consertar geladeira,feita,consertar-geladeira,leva12
-quanto custa consertar maquina de lavar,feita,consertar-maquina-lavar,leva12
-quanto custa uma diarista,feita,diarista,leva12
-quanto custa um telhado,feita,custo-telhado,leva12
-quanto dura um botijao de gas,feita,dura-botijao-gas,leva12
-quanto custa instalar coifa,feita,instalar-coifa,leva12
-quanto custa instalar suporte de tv,feita,instalar-suporte-tv,leva12
-quanto custa manter uma moto,feita,custo-moto,leva12
-quantas latas de tinta para pintar um quarto,descartada,"4 calculadoras de marca (suvinil, leroy, coral, joli)",leva12
-quanto gasto de gasolina por mes,descartada,"5 calculadoras (mobills, serasa, zapay, cpfabbri, omni)",leva12
-quanto gasta ar condicionado por mes,retida,"2 calculadoras (clarke, poloar) — revisitar depois",leva12
-quanto custa colocar aparelho no dente,feita,aparelho-dente,leva13
-quanto custa uma tatuagem,feita,tatuagem-preco,leva13
-quantas doses tem uma garrafa de vodka,feita,doses-vodka,leva13
-quanto custa clareamento dental,feita,clareamento-dental,leva13
-quanto custa academia por mes,feita,custo-academia,leva13
-quanto custa uma laje,feita,custo-laje,leva13
-quanto custa instalacao eletrica de uma casa,feita,custo-eletrica-casa,leva13
-quanto custa construir um galpao,feita,custo-galpao,leva13
-quanto custa montar um aquario,feita,custo-montar-aquario,leva13
-quanto custa creche particular,feita,custo-creche,leva13
-quanto custa uma mudanca,feita,custo-mudanca,leva13
-quanto custa psicologo,feita,custo-psicologo,leva14
-quanto custa consulta dermatologista,feita,consulta-dermatologista,leva14
-quanto custa aquecer uma piscina,feita,aquecer-piscina,leva14
-quanto custa abrir uma empresa,feita,abrir-empresa,leva14
-quanto custa declaracao de imposto de renda,feita,custo-imposto-renda,leva14
-quanto custa fazer um site,feita,custo-fazer-site,leva14
-quanto custa um logo,feita,custo-logo,leva14
-quanto custa casamento simples,feita,custo-casamento,leva14
-quanto dura um toner,feita,dura-toner,leva14
-quanto custa progressiva,feita,custo-progressiva,leva14
-quanto custa alugar um carro por mes,retida,"marcas dominam (localiza, movida, unidas) + calc meoo — revisitar",leva14
-quanto custa trocar a tela do celular,feita,trocar-tela-celular,leva15
-quanto custa consertar notebook,feita,consertar-notebook,leva15
-quanto custa formatar um notebook,feita,formatar-notebook,leva15
-quanto custa reformar um banheiro,feita,reformar-banheiro,leva15
-quanto custa reformar uma cozinha,feita,reformar-cozinha,leva15
-quanto custa cercar um terreno,feita,cercar-terreno,leva15
-quanto custa cnh,feita,tirar-cnh,leva15
-quanto custa unha em gel,feita,unha-em-gel,leva15
-quanto custa depilacao a laser,retida,"5 redes de clínicas (espacolaser, drlaser, orolaser, vialaser, pellomenos)",leva15
-quanto custa curso de ingles,retida,"marcas de idiomas dominam (wizard, ccaa, fisk, senac, puc)",leva15
-quanto custa uma faculdade ead,retida,7 faculdades de marca no top-10,leva15
-quanto custa tirar passaporte,descartada,valor fixo único da PF — sem variável para calculadora,leva15
-quanto custa trocar o oleo do carro,feita,troca-oleo,leva16
-quanto custa exame de sangue,feita,exame-de-sangue,leva16
-quanto custa consulta cardiologista,feita,consulta-cardiologista,leva16
-quanto custa consulta pediatra,feita,consulta-pediatra,leva16
-quanto custa fisioterapia,feita,custo-fisioterapia,leva16
-quantas taças tem uma garrafa de vinho,feita,tacas-vinho,leva16
-quanto custa um armario planejado,feita,custo-moveis-planejados,leva16
-quanto custa uma casa pre fabricada,feita,casa-prefabricada,leva16
-quanto custa transferencia de veiculo,feita,transferencia-veiculo,leva16
-quanto tempo dura um saco de racao de 15kg,feita,dura-racao,leva16
-quanto custa uma bateria de carro,descartada,SERP e-commerce (7 lojas),leva16
-quanto custa trocar a embreagem,feita,trocar-embreagem,leva17
-quanto custa trocar amortecedor,feita,trocar-amortecedor,leva17
-quanto custa trocar pastilha de freio,feita,trocar-pastilha-freio,leva17
-quanto custa um guincho,feita,custo-guincho,leva17
-quanto custa trocar a resistencia do chuveiro,feita,trocar-resistencia-chuveiro,leva17
-quanto custa podar uma arvore,feita,poda-arvore,leva17
-quanto custa um jardineiro,feita,jardineiro,leva17
-quanto custa adestrar um cachorro,feita,adestramento-cachorro,leva17
-quanto custa consulta nutricionista,feita,consulta-nutricionista,leva17
-quanto custa aula particular,feita,aula-particular,leva17
-quanto custa um dj para festa,feita,2026-09-10,dj-festa
-quanto custa um fotografo para evento,feita,2026-09-10,fotografo-evento
-quanto custa buffet por pessoa,feita,2026-09-10,buffet-pessoa
-quanto custa limpeza de pele,feita,2026-09-10,limpeza-de-pele
-quanto custa castração de cachorro,feita,castracao-cachorro,leva18
-quanto custa vacina cachorro,feita,vacina-cachorro,leva18
-quanto custa hotel para cachorro,feita,hotel-cachorro,leva18
-quanto custa uma consulta medica particular,feita,consulta-medica,leva18
-quanto custa uma higienização interna do carro,feita,higienizacao-carro,leva18
-quanto custa animacao de festa infantil,feita,animacao-festa-infantil,leva18
-quanto custa alugar mesas e cadeiras para festa,feita,alugar-mesas-cadeiras,leva18
-quanto custa alugar som para festa,feita,som-para-festa,leva18
-quanto custa limpar caixa d'agua,feita,limpar-caixa-dagua,leva18
-quanto custa impermeabilizar laje,feita,impermeabilizar-laje,leva18
-quanto custa acupuntura,feita,2026-09-10,acupuntura
-quanto custa instalar calha,feita,2026-09-10,instalar-calha
-quanto custa um implante dentario,feita,implante-dentario,leva19
-quanto custa extrair o siso,feita,extrair-siso,leva19
-quanto custa limpeza dos dentes,feita,limpeza-dental,leva19
-quanto custa blindar um carro,feita,blindar-carro,leva19
-quanto custa limpeza de bicos injetores,feita,bicos-injetores,leva19
-quanto custa instalar um aquecedor a gas,feita,instalar-aquecedor-gas,leva19
-quanto custa fazer um deck,feita,deck-madeira,leva19
-quanto custa micropigmentacao de sobrancelha,feita,micropigmentacao-sobrancelha,leva19
-quanto custa maquiagem para festa,feita,maquiagem-festa,leva19
-quanto custa pintar o cabelo no salao,feita,pintar-cabelo,leva19
-quanto custa um pedreiro por dia,feita,2026-09-10,diaria-pedreiro
-quanto custa uma caçamba de entulho,feita,2026-09-10,cacamba-entulho
-quanto custa um ultrassom,feita,2026-09-10,custo-ultrassom
-quanto custa um raio-x,feita,2026-09-10,custo-raio-x
-quanto custa consertar celular,feita,2026-09-10,consertar-celular
-quanto custa consertar tv,feita,2026-09-10,consertar-tv
-quanto custa lavar um tapete,feita,2026-09-10,lavar-tapete
-quanto custa remover uma tatuagem,feita,2026-09-10,remover-tatuagem
-quanto custa alugar brinquedos para festa infantil,feita,2026-09-10,brinquedos-festa
-quanto custa uma ressonancia magnetica,feita,2026-09-10,custo-ressonancia
-quanto custa uma tomografia,feita,2026-09-10,custo-tomografia
-quanto custa uma endoscopia,feita,2026-09-10,custo-endoscopia
-quanto custa uma colonoscopia,feita,2026-09-10,custo-colonoscopia
-quanto custa instalar portao eletronico,feita,2026-09-10,portao-eletronico
-quanto custa consertar ar condicionado do carro,feita,2026-09-10,consertar-ar-condicionado-carro
-quanto custa polimento automotivo,feita,2026-09-10,polimento-automotivo
-quanto custa instalar piso,feita,2026-09-10,instalar-piso
-quanto custa consulta ginecologista,feita,2026-09-10,consulta-ginecologista
-quanto custa escola particular,feita,2026-09-10,escola-particular
-quanto custa higienizacao de sofa,feita,2026-09-10,higienizacao-sofa
-quanto custa instalar cerca eletrica,feita,2026-09-10,instalar-cerca-eletrica
-quanto custa consulta endocrinologista,feita,2026-09-10,consulta-endocrinologista
-quanto custa consulta oftalmologista,feita,2026-09-10,consulta-oftalmologista
-quanto custa alugar um salao de festas,feita,2026-09-10,alugar-salao-de-festas
-quanto custa consulta otorrinolaringologista,feita,2026-09-10,consulta-otorrino
-quanto custa design de sobrancelha,feita,2026-09-10,design-sobrancelha
-quanto custa extensao de cilios,feita,2026-09-10,extensao-de-cilios
-quanto custa instalar interfone,feita,2026-09-10,instalar-interfone
-quanto custa consulta urologista,feita,2026-09-10,consulta-urologista
-quanto custa um encanador,feita,2026-09-10,custo-encanador
-quanto custa um eletricista,feita,2026-09-10,custo-eletricista
-quanto custa trocar fechadura,feita,2026-09-10,trocar-fechadura
-quanto custa desentupir vaso sanitario,feita,2026-09-10,desentupir-vaso-sanitario
-quanto custa funilaria e pintura de um carro,feita,2026-09-10,funilaria-e-pintura
-quanto custa alugar vestido de noiva,feita,2026-09-10,alugar-vestido-de-noiva
-quanto custa consertar um fogão,feita,2026-09-10,consertar-fogao
-quanto custa exame de dna,feita,2026-09-10,custo-exame-dna
-quanto custa um mecanico,feita,2026-09-10,custo-mecanico
-quanto custa um poco artesiano,descartada,2026-09-10,"sobreposição com página já publicada (quanto custa fazer um poco artesiano, slug poco-artesiano) — página original restaurada; não publicar cópia"
-quanto custa limpar fossa,feita,2026-09-10,limpar-fossa
-quanto custa alugar uma retroescavadeira,feita,2026-09-10,alugar-retroescavadeira
-quanto custa exame toxicologico,feita,2026-09-10,exame-toxicologico
-quanto custa um inventario,feita,2026-09-10,custo-inventario
-quanto custa um contador,feita,2026-09-10,custo-contador
-quanto custa alugar andaime,feita,2026-09-10,alugar-andaime
-quanto custa exame psicotecnico,feita,2026-09-10,exame-psicotecnico
-quanto custa recapagem de pneu,feita,2026-09-10,recapagem-pneu
-quanto custa uma escritura de imovel,retida,2026-09-10,RETIDA: SERP com calculadora oficial IRIB + simulador TJAL + 6 tabelas de cartório — saturado por fonte oficial; possível ângulo: custo total escritura+ITBI+registro
-quanto custa consulta dentista,feita,2026-09-10,consulta-dentista
-quanto custa protese dentaria,feita,2026-09-10,protese-dentaria
-quanto custa consertar impressora,feita,2026-09-10,consertar-impressora
-quanto custa consertar ar condicionado,feita,2026-09-10,consertar-ar-condicionado
-quanto custa alugar um gerador,feita,2026-09-10,alugar-gerador
-quanto custa construir uma casa,feita,2026-09-10,construir-casa
-quanto custa uma cesarea,feita,2026-09-10,custo-cesarea
-quanto custa alugar um galpao,feita,2026-09-10,alugar-galpao
-quanto custa fazer um aplicativo,feita,2026-09-10,custo-aplicativo
-quanto custa consertar porta de garagem,descartada,2026-09-10,CUT: sem demanda no autocomplete (0 variantes)
-quanto custa um cuidador de idoso,feita,2026-09-10,custo-cuidador-de-idoso
-quanto custa uma baba,feita,2026-09-10,custo-baba
-quanto custa cirurgia de hernia,feita,2026-09-10,cirurgia-hernia
-quanto custa implante capilar,feita,2026-09-10,implante-capilar
-quanto custa harmonizacao facial,feita,2026-09-10,harmonizacao-facial
-quanto custa fazer um testamento,feita,2026-09-10,fazer-testamento
-quanto custa um divorcio,feita,2026-09-10,custo-divorcio
-quanto custa um velorio,feita,2026-09-10,custo-velorio
-quanto custa um pet scan,feita,2026-09-10,custo-pet-scan
-quanto custa desbloquear celular,descartada,2026-09-10,CUT: intenção ambígua (senha vs operadora) e SERP dominada por tutoriais grátis
-quanto custa inspecao veicular,feita,2026-09-10,inspecao-veicular
-quanto custa aula de violao,feita,2026-09-10,aula-de-violao
-quanto custa exame de audiometria,feita,2026-09-10,exame-audiometria
-quanto custa aula de natacao,feita,2026-09-10,aula-de-natacao
-quanto custa fachada em acm,feita,2026-09-10,fachada-acm
-quanto custa lipoaspiracao,feita,2026-09-10,custo-lipoaspiracao
-quanto custa cirurgia de nariz,feita,2026-09-10,cirurgia-nariz
-quanto custa mudar o nome,feita,2026-09-10,mudar-nome
-quanto custa uma procuracao,feita,2026-09-10,custo-procuracao
-quanto custa um oculos de grau,feita,2026-09-10,oculos-de-grau
-quanto custa reforma de piscina,feita,2026-09-10,reforma-piscina
-quanto custa alugar banheiro quimico,feita,2026-09-10,alugar-banheiro-quimico
-quanto custa cirurgia de catarata,feita,2026-09-10,cirurgia-catarata
-quanto custa cirurgia bariatrica,feita,2026-09-10,cirurgia-bariatrica
-quanto custa drenagem linfatica,feita,2026-09-10,drenagem-linfatica
-quanto custa self storage,feita,2026-09-10,self-storage
-quanto custa uti por dia,feita,2026-09-10,custo-uti
-quanto custa vacina da dengue,feita,2026-09-10,vacina-dengue
-quanto custa um despachante,feita,2026-09-10,custo-despachante
-quanto custa alugar um palco,feita,2026-09-10,alugar-palco
-quanto custa exame de papanicolau,feita,2026-09-10,custo-papanicolau
-quanto custa registro de marca,retida,2026-09-10,"RETIDA: 4+ agências de propriedade intelectual dominando o SERP (123marcas, consolide, oficial, moveon) — precedentes laser/idiomas/EAD"
-quanto custa adaptar um carro para pcd,retida,2026-09-10,"RETIDA: montadoras/brands dominando com tópico de isenção (compra), intenção mista compra×adaptação"
-quanto custa alugar um terno,feita,2026-09-11,alugar-terno
-100 doces para festa,feita,2026-09-11,doces-para-festa
-quanto custa um projeto de arquitetura,feita,2026-09-11,projeto-arquitetura
-quanto custa limpeza de terreno,feita,2026-09-11,limpeza-de-terreno
-quanto custa pilates,feita,2026-09-11,custo-pilates
-quanto custa tratamento de canal,feita,2026-09-11,tratamento-de-canal
-quanto custa vasectomia,feita,2026-09-11,custo-vasectomia
-quanto custa bolo de casamento,feita,2026-09-11,bolo-de-casamento
-quanto custa depilacao na cera,candidata,2026-09-11,PASS fila leva30: PASS: tabelas de clínicas de estética — sem calculadora
-quanto custa para consertar um playstation 4,candidata,2026-09-11,PASS fila leva30: PASS: assistências técnicas com preço — sem calculadora
