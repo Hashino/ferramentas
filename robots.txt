@@ -11,4 +11,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://hashino.github.io/ferramentas/sitemap.xml
+Sitemap: https://hashino.xyz/sitemap.xml

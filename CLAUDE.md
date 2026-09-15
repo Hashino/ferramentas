@@ -1,7 +1,9 @@
 # Ferramentas — fábrica de micro-ferramentas (SEO + GEO)
 
-Site estático em PT-BR hospedado em https://hashino.github.io/ferramentas/
-(GitHub Pages, branch `main`, raiz do repo — sem build step, sem Jekyll: `.nojekyll` presente).
+Site estático em PT-BR hospedado em https://hashino.xyz/
+(GitHub Pages com domínio customizado via `CNAME`, branch `main`, raiz do repo — sem build
+step, sem Jekyll: `.nojekyll` presente. DNS do domínio fica no Cloudflare, proxied, na frente
+do GitHub Pages — dá controle de headers/redirects/Workers que o GitHub Pages sozinho não tem).
 Cada ferramenta é uma página `tools/<slug>/index.html` que mira UMA keyword de cauda longa.
 Monetização: Google AdSense, configurado em `site.json` e injetado via `config.js` (gerado por `scripts/build.py`) + `ads.js`.
 

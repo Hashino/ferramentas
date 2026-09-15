@@ -35,7 +35,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SERP_PATH = ROOT / "backlog" / "serp.json"
 TOOLS_DIR = ROOT / "tools"
 
-NOSSO_DOMINIO = "hashino.github.io"
+NOSSO_DOMINIO = "hashino.xyz"
 
 # Palavras que, no título, denunciam que o resultado É a ferramenta.
 TITULO_FERRAMENTA = re.compile(
