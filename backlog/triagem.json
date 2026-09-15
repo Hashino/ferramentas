@@ -662,5 +662,85 @@
   "top10": 0,
   "ia_overview": false,
   "regex": "OK"
+ },
+ "1 dolar quantas liras turcas": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não há necessidade de construir.",
+  "top3": 3,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "OK"
+ },
+ "1 dolar quantas rupias": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos 3 primeiros resultados e o Google já fornece a resposta instantânea.",
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": true,
+  "regex": "REPROVA"
+ },
+ "adicional noturno": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas, mas a busca requer cálculo personalizado.",
+  "top3": 1,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "REPROVA"
+ },
+ "agente gerador de demanda salário": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Nenhuma ferramenta interativa e a resposta requer dados específicos do usuário.",
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA"
+ },
+ "aposentadoria demora quanto tempo": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos resultados, então não há oportunidade de construir uma nova.",
+  "top3": 1,
+  "top10": 1,
+  "ia_overview": false,
+  "regex": "REPROVA"
+ },
+ "aposentadoria quantos anos": {
+  "veredito": "DESCARTAR",
+  "motivo": "Nenhuma ferramenta interativa nos top 3 e a resposta pode ser dada por IA sem dados específicos.",
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK"
+ },
+ "aposentadoria quantos anos de carteira assinada": {
+  "veredito": "DESCARTAR",
+  "motivo": "Resposta já fornecida por IA, não há necessidade de ferramenta",
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK"
+ },
+ "aposentadoria quantos anos de contribuição": {
+  "veredito": "DESCARTAR",
+  "motivo": "Nenhuma ferramenta interativa nos top 3 e a resposta já pode ser fornecida por IA sem dados adicionais.",
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK"
+ },
+ "aposentadoria quantos anos de trabalho": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Nenhum dos resultados oferece calculadora interativa e a resposta depende de dados pessoais do usuário.",
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "OK"
+ },
+ "aposentadoria quantos anos homem": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Nenhuma das primeiras páginas oferece calculadora interativa e a resposta depende de dados pessoais do usuário",
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "OK"
  }
 }

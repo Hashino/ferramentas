@@ -54,6 +54,12 @@ Resultados orgânicos do top-10 (título :: url):
 
 Responda em JSON com estas chaves:
 
+"quer_ferramenta": true se quem digitou isso quer USAR uma calculadora e
+  receber um número calculado a partir de dados DELE. false se quer outra
+  coisa: saber um valor de mercado ou média ("salário de programador",
+  "preço do m² em SP"), comprar um produto, achar uma vaga de emprego, uma
+  notícia, uma definição, ou uma cotação que muda sozinha (dólar, bitcoin —
+  o Google já mostra no topo). Na dúvida, false.
 "ferramentas_top3": quantos dos 3 PRIMEIROS resultados são uma FERRAMENTA
   INTERATIVA de verdade — página onde o usuário digita valores e recebe um
   resultado calculado. Um artigo/post/vídeo que só EXPLICA como calcular NÃO
@@ -61,12 +67,14 @@ Responda em JSON com estas chaves:
 "ferramentas_top10": o mesmo, considerando os 10.
 "respondida_por_ia": true se um resumo de IA de 2-3 frases no topo do Google
   já responderia essa busca por completo SEM precisar de nenhum dado que só o
-  usuário sabe (ex.: "quanto custa pintar uma casa", "quantos ml tem uma
-  xícara" -> true). false se a resposta útil só existe DEPOIS de um cálculo
-  com dados específicos do usuário (ex.: "calcular bhaskara com meus
-  coeficientes", "gasto de energia do MEU chuveiro em kW por X horas") -> false.
-"veredito": "CONSTRUIR" se ferramentas_top3 == 0 e respondida_por_ia == false;
-  senão "DESCARTAR".
+  usuário sabe. Inclui qualquer pergunta cuja resposta é um número fixo, uma
+  média, uma regra ou uma tabela: "quanto custa pintar uma casa", "quantos ml
+  tem uma xícara", "com quantos anos me aposento", "quanto rende 1kg de
+  carne" -> true. false só quando a resposta útil não existe até o usuário
+  informar dados próprios: "gasto do MEU chuveiro de X kW ligado Y horas a
+  R$Z o kWh", "quantos sacos de cimento pra MINHA laje de X m²" -> false.
+"veredito": "CONSTRUIR" somente se quer_ferramenta == true E
+  ferramentas_top3 == 0 E respondida_por_ia == false. Senão "DESCARTAR".
 "motivo": uma frase curta explicando, em português."""
 
 
@@ -75,27 +83,41 @@ def _fmt(resultados: list[str]) -> str:
 
 
 def avaliar_ia(kw: str, resultados: list[str]) -> dict:
-    return perguntar_json(MOLDE.format(kw=kw, resultados=_fmt(resultados)), sistema=SISTEMA)
+    # modelo robusto: o volume é baixo (dezenas por leva) e um erro aqui custa
+    # uma página publicada que nunca vai ranquear
+    return perguntar_json(MOLDE.format(kw=kw, resultados=_fmt(resultados)),
+                          sistema=SISTEMA, robusto=True)
+
+
+# suba quando mudar MOLDE/critérios: invalida vereditos julgados pela regra velha
+VERSAO = 2
 
 
 def triar(kw: str, resultados: list[str], cache: dict) -> dict:
-    if kw in cache:
-        return cache[kw]
+    anterior = cache.get(kw)
+    if anterior and anterior.get("v") == VERSAO:
+        return anterior
     regex = lint_serp.avaliar(resultados)
     try:
         ia = avaliar_ia(kw, resultados)
     except (SemIA, ValueError, KeyError) as e:
         return {"veredito": "SEM_IA", "motivo": f"IA indisponível ({e}); regex diz {regex['veredito']}",
                 "regex": regex["veredito"]}
+    # o veredito é recalculado aqui, não confiado ao modelo: modelo free erra
+    # a conjunção ("existem ferramentas, mas..." e ainda assim aprova)
     r = {
         "veredito": "CONSTRUIR" if (
-            ia.get("ferramentas_top3", 9) == 0 and not ia.get("respondida_por_ia", True)
+            ia.get("quer_ferramenta", False)
+            and ia.get("ferramentas_top3", 9) == 0
+            and not ia.get("respondida_por_ia", True)
         ) else "DESCARTAR",
         "motivo": ia.get("motivo", ""),
+        "quer_ferramenta": ia.get("quer_ferramenta"),
         "top3": ia.get("ferramentas_top3"),
         "top10": ia.get("ferramentas_top10"),
         "ia_overview": ia.get("respondida_por_ia"),
         "regex": regex["veredito"],
+        "v": VERSAO,
     }
     cache[kw] = r
     return r

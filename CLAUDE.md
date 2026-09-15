@@ -17,6 +17,10 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
   - `mine.py reddit [N]` — caça pedidos de ferramenta em threads BR do Reddit
   - `mine.py sitemaps [N]` — títulos de sites concorrentes validados no autocomplete
   - Seeds editáveis em `backlog/seeds.json` (cabeças, domínios, queries de reddit, sitemaps)
+- `scripts/proxima.py` — **o comando do passo 1**: decide qual ferramenta construir agora. Minera se o backlog estiver seco, busca SERP, roda a triagem e imprime `KEYWORD:`/`SLUG:`/`MOTIVO:`. Existe para que ninguém escolha keyword "no olho" — foi assim que 264 páginas viraram lixo.
+- `scripts/triagem.py` — o julgamento que regex não faz, via IA grátis: lê a SERP e responde (1) o buscador quer mesmo uma ferramenta, ou quer salário de mercado/cotação/vaga? (2) cada resultado do top-3 é ferramenta interativa ou só artigo explicando? (3) um AI Overview responderia a busca inteira sem dado do usuário? Só aprova quando as três dão certo. Cache em `backlog/triagem.json`, versionado por `VERSAO` (suba ao mudar critério e os vereditos velhos são refeitos).
+- `scripts/lint_serp.py` — detector de ferramenta na SERP por título/URL, sem API e sem IA. Generoso de propósito (confunde artigo com ferramenta); serve de sinal cru para a `triagem.py` e de auditoria offline (`--tools` audita o que já está publicado).
+- `scripts/ai.py` — cliente de LLM grátis (endpoint OpenAI-compatible). A chave é lida em runtime do `.env` do learnive e **nunca** entra neste repo. Trata as pegadinhas do free tier: 429 é por pool do modelo (troca de modelo em vez de esperar), Cloudflare da Groq exige User-Agent de browser, e `response_format: json_object` exige a palavra "json" na mensagem.
 - `scripts/lint_fake_calculator.py` — rede de segurança automática, só por prefixo de slug (bucket de categorias JÁ CONHECIDAS como "preço de serviço/produto": custo-, consulta-, cirurgia-, consertar-, alugar-, instalar-, trocar-, exame-, aula-, etc.). NÃO tenta mais detectar a frase "preço/valor de X" no texto via regex — foi abandonado porque a mesma frase aparece tanto numa pergunta informacional real quanto describing um input legítimo de calculadora ("valor da hora", "preço do kg do gás"), e regex não distingue intenção. A distinção real é feita pelo AGENTE no passo 2(d) abaixo, ANTES de construir a ferramenta — este script só pega reincidências óbvias de categoria. Rodar nas N ferramentas da leva antes de commitar (`python3 scripts/lint_fake_calculator.py <slug1> <slug2> ...`) — exit 1 se achar alguma.
 - `scripts/backfill_explicacao.py` — insere `<details class="explicacao">` (texto SEO colapsado, reaproveita a própria `{{DESCRIPTION}}` de cada ferramenta + 3 links "relacionadas" por bucket de prefixo do slug), FAQPage JSON-LD e `data-footer` em qualquer `tools/*/index.html` que ainda não tenha. Idempotente. Rodar depois de criar as ferramentas da leva, ANTES do `build.py`.
 - `scripts/build.py` — regenera `index.html` (hub), `sitemap.xml`, `robots.txt`, `llms.txt`, `config.js`, `ads.txt`. SEMPRE rodar antes de commitar.
@@ -27,49 +31,79 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
 - Visual: Nord + monoespaçada + cards de vidro + starfield (herdado do learnive/hashino.github.io). Tema CLARO é o default; toggle claro/escuro na barra superior (persiste em localStorage; o tema inicial vem do snippet inline no `<head>` para evitar flash).
 - `.env` — `SERPER_API_KEY` (NUNCA comitar; está no .gitignore)
 
-## Comando: "faça as próximas N aplicações"
+## Comando: "construa as próximas N ferramentas"
 
-1. **Abastecer o backlog** se houver menos de ~3×N linhas `candidata`:
-   - `python3 scripts/mine.py matrix 4` (rede; ~2 min por domínio)
-   - se já houver ferramentas publicadas: `python3 scripts/mine.py deep 3`
-   - `python3 scripts/mine.py check <N*3>` (SERP via Serper; classifica saturação a partir de `serp.json`)
-   - opcional, para diversificar: `mine.py reddit 3` e `mine.py sitemaps 10`
-2. **Selecionar N candidatas** lendo `backlog/serp.json`. Critérios, em ordem:
-   (a) SERP sem ferramenta dedicada no top-10 (fóruns, Reddit, resultados genéricos = demanda sem oferta);
-   (b) tarefa resolvível em 1 página estática de vanilla JS (calcular/gerar/convertar);
-   (c) sem overlap com ferramenta já publicada em `tools/`;
-   (d) **julgamento anti-AI-Overview — feito pelo agente, caso a caso, ANTES de construir**: para
-   cada candidata, perguntar "um resumo de 2-3 frases de uma IA, sem nenhum dado pessoal do
-   usuário, já responderia completamente essa busca?". Se sim, REJEITAR — mesmo que dê pra construir
-   uma calculadora bonita com input numérico/data real (lição do cleanup de 212 ferramentas em
-   set/2026: até calculadoras com m²/quantidade real perdiam o clique, porque a AI Overview responde
-   pela INTENÇÃO da busca, não pela qualidade da página por trás). Isso NÃO é um regex — é a mesma
-   pergunta que um redator de SEO se faria: "estimativa de mercado" (quanto custa/vale/sai construir,
-   consertar, contratar X; preço médio de Y) é sempre rejeitável, mesmo disfarçada de calculadora.
-   Já "resultado que só existe DEPOIS de um cálculo com dado específico do usuário" é sempre aceitável
-   (bhaskara, boost de jogo, arcano pessoal, rendimento/proporção, conversão de unidade, gasto de
-   energia a partir de potência+horas informadas pelo usuário) — inclusive quando o input É um preço
-   ("quanto vou gastar de luz com meu chuveiro de X kW por Y horas ao preço de R$Z/kWh" é aceitável:
-   o preço ali é uma variável que só o usuário sabe, não uma pergunta de mercado).
-   `scripts/lint_fake_calculator.py` roda depois de criar (passo 4) só como rede de segurança
-   automática por categoria de slug já conhecida — não substitui esse julgamento.
-   Publicar só o que passar. Se menos que N passarem, publicar as que passarem e reportar o motivo —
-   NUNCA forçar página em SERP saturada. Keywords checadas e cortadas: marcar `descartada` no CSV
-   (poupa re-checagem de Serper nas próximas levas).
-3. **Criar cada ferramenta**: copiar `templates/tool/index.html` para `tools/<slug>/index.html` e preencher:
-   - slug: kebab-case curto, derivado da keyword
-   - `<title>`: keyword primeiro, ≤60 chars · meta description ≤155 chars
-   - H1 = título humano; `{{APP_HTML}}` + `{{APP_JS}}` = a ferramenta (funciona offline, sem CDN, sem biblioteca)
-   - A página da ferramenta é visualmente SÓ a ferramenta: barra superior + H1 + app.
-   NÃO escreva `<details>`, FAQ visível, footer ou texto explicativo no arquivo — isso é
-   sempre o passo 4 abaixo, nunca manual (mantém as 295+ ferramentas consistentes).
-   - marca a keyword como `feita` em `backlog/keywords.csv`
-4. **Lint + backfill de SEO/GEO + build + deploy**:
-   `python3 scripts/lint_fake_calculator.py <slugs da leva>` (se falhar, redesenhar com input real ou descartar a keyword — voltar ao passo 3)
-   → `python3 scripts/backfill_explicacao.py` (insere explicação colapsada + FAQPage + footer nas ferramentas novas)
-   → `python3 scripts/build.py` (regenera hub/sitemap/robots/llms.txt/ads.txt)
-   → commit (`tool: <slug>`) → `git push`.
-5. **Reportar**: URLs criadas; o workflow `indexnow` no GitHub Actions cuida de avisar Bing/Yandex.
+Repita o ciclo abaixo N vezes. **Uma ferramenta por ciclo, um commit por ciclo.**
+Não escolha keyword por conta própria e não pule o passo 1 — escolher "no olho"
+é o que fez o site acumular 264 páginas inúteis, todas deletadas depois.
+
+### Ciclo
+
+**1. Pedir a keyword.** Rode:
+
+```
+python3 scripts/proxima.py
+```
+
+Ele minera, busca a SERP e julga sozinho (leva alguns minutos na primeira vez).
+Imprime exatamente isto:
+
+```
+KEYWORD: <a busca do usuário no Google>
+SLUG: <nome-da-pasta>
+MOTIVO: <por que vale construir>
+```
+
+Se imprimir `NENHUMA: ...`, siga a instrução da própria mensagem e pare o ciclo.
+Use o SLUG que ele deu, sem alterar.
+
+**2. Criar `tools/<SLUG>/index.html`.** Leia `templates/tool/index.html` e
+substitua os tokens `{{...}}`. Não invente estrutura: o template já tem tudo.
+
+| token | o que colocar |
+|---|---|
+| `{{SLUG}}` | o SLUG do passo 1 |
+| `{{TOOL_NAME}}` | nome curto da ferramenta |
+| `{{TITLE}}` | título SEO, a keyword no começo, até 60 caracteres |
+| `{{DESCRIPTION}}` | meta description, até 155 caracteres, sem aspas duplas |
+| `{{H1}}` | título visível, em linguagem humana |
+| `{{APP_HTML}}` | os campos do formulário e a área de resultado |
+| `{{APP_JS}}` | o JavaScript que calcula |
+
+Regras do código (todas obrigatórias):
+
+- JavaScript puro. Sem biblioteca, sem CDN, sem `fetch`. Funciona offline.
+- **Não** escreva `<html>`, `<head>`, `<body>`, `<style>`, barra de navegação,
+  rodapé, `<details>` nem texto explicativo. O template já cuida do head, e
+  `chrome.js` injeta o resto em runtime. Escrever isso à mão quebra a
+  consistência das páginas.
+- Cada entrada é `<label for="x">Texto</label>` + `<input id="x" type="number">`.
+  O resultado vai em `<div id="resultado" class="resultado"></div>`.
+- Pelo menos um input numérico cujo valor **só o usuário sabe**. Se a ferramenta
+  funciona sem o usuário digitar nada, ela é uma tabela de médias disfarçada —
+  refaça.
+- Recalcule a cada tecla (`addEventListener("input", ...)`), sem exigir botão.
+  Campo vazio ou inválido mostra vazio, nunca `NaN`.
+- PT-BR, números com `toLocaleString("pt-BR")`.
+
+**3. Marcar a keyword** como `feita` em `backlog/keywords.csv` (troque
+`candidata` por `feita` na linha dessa keyword).
+
+**4. Publicar.** Nesta ordem, sem pular nenhum:
+
+```
+python3 scripts/lint_fake_calculator.py <SLUG>
+python3 scripts/backfill_explicacao.py
+python3 scripts/build.py
+git add -A && git commit -m "tool: <SLUG>" && git push
+```
+
+Se o lint falhar, conserte a ferramenta e rode de novo — não commite.
+`backfill_explicacao.py` é quem insere explicação/FAQ/rodapé; por isso o passo 2
+proíbe escrever isso à mão.
+
+**5. Conferir** que `tools/<SLUG>/index.html` não tem mais nenhum `{{` sobrando,
+e voltar ao passo 1 para a próxima ferramenta.
 
 ## Regras
 
