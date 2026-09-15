@@ -17,6 +17,7 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
   - `mine.py reddit [N]` — caça pedidos de ferramenta em threads BR do Reddit
   - `mine.py sitemaps [N]` — títulos de sites concorrentes validados no autocomplete
   - Seeds editáveis em `backlog/seeds.json` (cabeças, domínios, queries de reddit, sitemaps)
+- `scripts/lint_fake_calculator.py` — bloqueia ferramenta "preço de mercado" (custo-, consulta-, cirurgia-, consertar-, alugar-, instalar-, trocar-, exame-, aula-, etc.) sem nenhum `<input type="number">`/`type="date"` real: isso é resposta informacional disfarçada de calculadora — exatamente o formato que a AI Overview do Google sintetiza direto na SERP a partir de blogs (mesma faixa de preço, sem precisar de dado pessoal do usuário). Rodar nas N ferramentas da leva ANTES de commitar (`python3 scripts/lint_fake_calculator.py <slug1> <slug2> ...`) — exit 1 se achar alguma; redesenhar com input real (idade, m², quantidade, datas — algo que só o usuário sabe) ou descartar a keyword.
 - `scripts/backfill_explicacao.py` — insere `<details class="explicacao">` (texto SEO colapsado, reaproveita a própria `{{DESCRIPTION}}` de cada ferramenta + 3 links "relacionadas" por bucket de prefixo do slug), FAQPage JSON-LD e `data-footer` em qualquer `tools/*/index.html` que ainda não tenha. Idempotente. Rodar depois de criar as ferramentas da leva, ANTES do `build.py`.
 - `scripts/build.py` — regenera `index.html` (hub), `sitemap.xml`, `robots.txt`, `llms.txt`, `config.js`, `ads.txt`. SEMPRE rodar antes de commitar.
 - `scripts/ping_indexnow.py` — roda no CI a cada push; não rodar manualmente
@@ -36,7 +37,14 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
 2. **Selecionar N candidatas** lendo `backlog/serp.json`. Critérios, em ordem:
    (a) SERP sem ferramenta dedicada no top-10 (fóruns, Reddit, resultados genéricos = demanda sem oferta);
    (b) tarefa resolvível em 1 página estática de vanilla JS (calcular/gerar/convertar);
-   (c) sem overlap com ferramenta já publicada em `tools/`.
+   (c) sem overlap com ferramenta já publicada em `tools/`;
+   (d) **não é pergunta informacional disfarçada** — se a keyword é do tipo "quanto custa/vale/sai X"
+   e a resposta seria só uma faixa de preço médio (sem depender de nenhum dado que só o usuário tem),
+   a AI Overview do Google já responde isso direto na SERP a partir de blogs, e a ferramenta nasce
+   morta em clique. Só aceitar keyword desse tipo se der pra desenhar um cálculo com input numérico/data
+   REAL e específico do usuário (m² da obra, idade, quantidade, datas, medidas) — não um dropdown de
+   2-3 categorias multiplicando uma constante. Na dúvida, rode `scripts/lint_fake_calculator.py` depois
+   de criar (passo 4) — ele pega esse padrão automaticamente.
    Publicar só o que passar. Se menos que N passarem, publicar as que passarem e reportar o motivo —
    NUNCA forçar página em SERP saturada. Keywords checadas e cortadas: marcar `descartada` no CSV
    (poupa re-checagem de Serper nas próximas levas).
@@ -48,8 +56,9 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
    NÃO escreva `<details>`, FAQ visível, footer ou texto explicativo no arquivo — isso é
    sempre o passo 4 abaixo, nunca manual (mantém as 295+ ferramentas consistentes).
    - marca a keyword como `feita` em `backlog/keywords.csv`
-4. **Backfill de SEO/GEO + build + deploy**:
-   `python3 scripts/backfill_explicacao.py` (insere explicação colapsada + FAQPage + footer nas ferramentas novas)
+4. **Lint + backfill de SEO/GEO + build + deploy**:
+   `python3 scripts/lint_fake_calculator.py <slugs da leva>` (se falhar, redesenhar com input real ou descartar a keyword — voltar ao passo 3)
+   → `python3 scripts/backfill_explicacao.py` (insere explicação colapsada + FAQPage + footer nas ferramentas novas)
    → `python3 scripts/build.py` (regenera hub/sitemap/robots/llms.txt/ads.txt)
    → commit (`tool: <slug>`) → `git push`.
 5. **Reportar**: URLs criadas; o workflow `indexnow` no GitHub Actions cuida de avisar Bing/Yandex.
@@ -63,6 +72,7 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
 - Sempre `scripts/build.py` antes de commit.
 - Ferramentas em PT-BR por padrão; versão EN só sob pedido.
 - Não inventar dados de volume de busca: o pipeline só mede autocomplete + SERP; volume fica para o Search Console decidir.
+- Regra anti-AI-Overview: nenhuma ferramenta nova pode ser um dropdown de categorias multiplicando uma constante para responder "quanto custa X" — isso é a mesma resposta que o Google já sintetiza na própria busca. Toda ferramenta precisa de pelo menos 1 dado numérico/data real e específico do usuário que mude o resultado de forma não-trivial. Ver `scripts/lint_fake_calculator.py`.
 - `indexnow.key` e `<key>.txt` são públicos por design. `.env` nunca sai do git.
 
 ## AdSense (quando o ID existir)
