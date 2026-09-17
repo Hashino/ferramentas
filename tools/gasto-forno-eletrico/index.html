@@ -19,6 +19,9 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quanto gasto se uso o forno só nos fins de semana?", "acceptedAnswer": {"@type": "Answer", "text": "Basta inserir a média de minutos por dia considerando apenas os dias em que o forno é usado; por exemplo, 90 min em 2 dias da semana equivale a 30 min/dia no cálculo."}}, {"@type": "Question", "name": "A tarifa da conta inclui impostos e encargos?", "acceptedAnswer": {"@type": "Answer", "text": "A tarifa inserida deve ser o valor total que aparece na sua conta (R$/kWh), já com impostos e encargos. Caso use apenas a tarifa base, o resultado ficará subestimado."}}, {"@type": "Question", "name": "Como considerar o consumo de outros aparelhos?", "acceptedAnswer": {"@type": "Answer", "text": "A ferramenta calcula apenas o forno. Para obter o consumo total da residência, some os resultados de cada aparelho ou use um medidor de energia para medir o consumo conjunto."}}, {"@type": "Question", "name": "O cálculo funciona para fornos a gás?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O cálculo usa potência elétrica (W) e tarifa de energia elétrica; fornos a gás dependem de consumo de gás e preço do combustível, que são calculados de forma diferente."}}]}
 </script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quanto gasto se uso o forno só nos fins de semana?", "acceptedAnswer": {"@type": "Answer", "text": "Basta inserir a média de minutos por dia considerando apenas os dias em que o forno é usado; por exemplo, 90 min em 2 dias da semana equivale a 30 min/dia no cálculo."}}, {"@type": "Question", "name": "A tarifa da conta inclui impostos e encargos?", "acceptedAnswer": {"@type": "Answer", "text": "A tarifa inserida deve ser o valor total que aparece na sua conta (R$/kWh), já com impostos e encargos. Caso use apenas a tarifa base, o resultado ficará subestimado."}}, {"@type": "Question", "name": "Como considerar o consumo de outros aparelhos?", "acceptedAnswer": {"@type": "Answer", "text": "A ferramenta calcula apenas o forno. Para obter o consumo total da residência, some os resultados de cada aparelho ou use um medidor de energia para medir o consumo conjunto."}}, {"@type": "Question", "name": "O cálculo funciona para fornos a gás?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O cálculo usa potência elétrica (W) e tarifa de energia elétrica; fornos a gás dependem de consumo de gás e preço do combustível, que são calculados de forma diferente."}}]}
+</script>
 <meta name="google-adsense-account" content="ca-pub-1801908225638213">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
 <script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
@@ -44,8 +47,10 @@
     <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
   </section>
   <div class="ad-slot"></div>
-<!-- conteudo:v1 -->
-<section class="conteudo">
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
   <p class="intro">Esta ferramenta ajuda quem tem forno elétrico a estimar o gasto mensal na conta de luz, usando a potência do aparelho, o tempo de uso diário e a tarifa de energia da sua região, sem precisar de cálculos complicados.</p>
   <h2>Como o cálculo é feito</h2>
   <p class="formula"><code>kWh/mês = potência(W) × minutos/dia × 30 ÷ 60 ÷ 1000</code></p>
@@ -83,10 +88,11 @@
   <p>A ferramenta calcula apenas o forno. Para obter o consumo total da residência, some os resultados de cada aparelho ou use um medidor de energia para medir o consumo conjunto.</p>
   <h3>O cálculo funciona para fornos a gás?</h3>
   <p>Não. O cálculo usa potência elétrica (W) e tarifa de energia elétrica; fornos a gás dependem de consumo de gás e preço do combustível, que são calculados de forma diferente.</p>
-</section>
+  </div>
+</details>
 <!-- /conteudo -->
 
-  <details class="explicacao">
+<details class="explicacao">
   <summary>Ferramentas relacionadas</summary>
   <p class="relacionadas">Veja também: <a href="../gasto-liquidificador/">Quanto Gasta um Liquidificador</a> · <a href="../gasto-chuveiro/">Quanto Gasta um Chuveiro Elétrico</a> · <a href="../gasto-pc-gamer/">Quanto Gasta um PC Gamer</a></p>
 </details>

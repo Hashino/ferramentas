@@ -36,7 +36,7 @@ import ai  # noqa: E402
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 TOOLS = RAIZ / "tools"
 CACHE = RAIZ / "backlog" / "conteudo"
-MARCADOR = "<!-- conteudo:v1 -->"
+MARCADOR = "<!-- conteudo:v2 -->"
 
 TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
 DESC_RE = re.compile(r'name="description" content="(.*?)"')
@@ -47,7 +47,9 @@ FAQ_RE = re.compile(r'<script type="application/ld\+json">\s*\{"@context":"https
                     r'"@type":"FAQPage".*?</script>\s*', re.S)
 DETAILS_RE = re.compile(r'<details class="explicacao">.*?</details>', re.S)
 REL_RE = re.compile(r'<p class="relacionadas">.*?</p>', re.S)
-SECAO_RE = re.compile(re.escape(MARCADOR) + r".*?<!-- /conteudo -->\s*", re.S)
+# casa qualquer versão do marcador: re-renderizar uma página antiga é só
+# trocar a MARCADOR acima (o texto vem do cache, sem gastar chamada de IA).
+SECAO_RE = re.compile(r"<!-- conteudo:v\d+ -->.*?<!-- /conteudo -->\s*", re.S)
 
 SISTEMA = (
     "Você escreve o texto de apoio de uma calculadora online brasileira, em "
@@ -168,7 +170,9 @@ def render(c):
     faq = "\n".join(
         f"  <h3>{e(q['p'])}</h3>\n  <p>{e(q['r'])}</p>" for q in c["faq"])
     return f"""{MARCADOR}
-<section class="conteudo">
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
   <p class="intro">{e(c['intro'])}</p>
   <h2>Como o cálculo é feito</h2>
   <p class="formula"><code>{e(c['formula'])}</code></p>
@@ -192,7 +196,8 @@ def render(c):
   </ul>
   <h2>Perguntas frequentes</h2>
 {faq}
-</section>
+  </div>
+</details>
 <!-- /conteudo -->
 """
 

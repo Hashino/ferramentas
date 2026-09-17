@@ -300,8 +300,25 @@ a:hover { color: var(--link-hover); }
 .conteudo {
   margin-top: 2rem;
   line-height: 1.65;
+  border-top: 1px solid var(--border, rgba(127,127,127,.25));
+  padding-top: 0.75rem;
 }
+.conteudo > summary {
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--accent);
+  list-style: none;
+}
+.conteudo > summary::-webkit-details-marker { display: none; }
+.conteudo > summary::before {
+  content: "\25b8 ";
+  display: inline-block;
+  transition: transform 0.15s;
+}
+.conteudo[open] > summary::before { transform: rotate(90deg); }
+.conteudo[open] > summary { margin-bottom: 0.5rem; }
 .conteudo .intro { font-size: 1rem; }
+.conteudo-corpo > .intro { margin-top: 0.4rem; }
 .conteudo h2 {
   font-size: 1.05rem;
   color: var(--accent);

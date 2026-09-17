@@ -121,18 +121,7 @@ def sitemap(tools: list[dict]) -> None:
         f"{itens}\n</urlset>\n",
         encoding="utf-8",
     )
-    # Índice de sitemaps. Existe por dois motivos: (1) é a estrutura padrão pra
-    # quando o site passar de um arquivo só, e (2) é URL nova — serve de teste
-    # limpo quando o Search Console trava um sitemap em "Couldn't fetch" (o
-    # status fica preso mesmo com o arquivo respondendo 200 e válido; medido
-    # em 17/09/2026 depois da migração de domínio).
-    (ROOT / "sitemap-index.xml").write_text(
-        '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        f'  <sitemap><loc>{BASE}/sitemap.xml</loc><lastmod>{HOJE}</lastmod></sitemap>\n'
-        "</sitemapindex>\n",
-        encoding="utf-8",
-    )
+
 
 
 def robots() -> None:
