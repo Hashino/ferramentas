@@ -1,0 +1,65 @@
+{
+ "intro": "Esta calculadora ajuda quem está projetando ou reformando uma casa a estimar a quantidade de tijolos ou blocos necessária, evitando falta de material ou excesso de compra. É útil para proprietários, pedreiros e arquitetos que precisam de um número aproximado antes de solicitar orçamento.",
+ "formula": "total = área (m²) × fator (m² de parede por m² de casa) × unidades por m² × 1,10",
+ "como": [
+  "Primeiro o programa multiplica a área construída pelo fator de parede, que indica quantos metros quadrados de parede são gerados por metro quadrado de área útil, considerando aberturas e pé-direito. Em seguida, aplica a taxa de unidades por metro quadrado do tipo de tijolo escolhido e acrescenta 10 % para perdas de corte e quebras, arredondando para cima.",
+  "Os valores inseridos são: a área da casa em metros quadrados, o fator de parede (geralmente entre 1,5 e 3,0) e o tipo de alvenaria, que define quantas unidades são necessárias por metro quadrado - 76 para tijolo baiano furado, 25 para cerâmico 9 furos e 12,5 para bloco de concreto."
+ ],
+ "exemplo": {
+  "cenario": "Casa de 80 m², parede padrão e tijolo baiano furado.",
+  "passos": [
+   "80 m² × 2,5 = 200 m² de parede",
+   "200 m² × 76 un/m² = 15 200 unidades",
+   "15 200 × 1,10 ≈ 16 720 tijolos (arredondado)"
+  ],
+  "resultado": "A estimativa é de aproximadamente 16 720 tijolos baianos."
+ },
+ "tabela": {
+  "titulo": "Tipos de alvenaria e consumo típico",
+  "colunas": [
+   "Tipo",
+   "Unidades por m²"
+  ],
+  "linhas": [
+   [
+    "Tijolo baiano furado",
+    "≈ 76"
+   ],
+   [
+    "Tijolo cerâmico 9 furos (19×19 mm)",
+    "≈ 25"
+   ],
+   [
+    "Bloco de concreto 14×19×39 mm",
+    "≈ 12,5"
+   ],
+   [
+    "Fator de parede (m² de parede / m² de casa)",
+    "1,5 - 3,0"
+   ]
+  ]
+ },
+ "cuidados": [
+  "O fator de parede varia com o projeto; use valores maiores para casas com pé-direito alto ou muitas aberturas.",
+  "A perda de 10 % é uma estimativa; quebras excessivas ou cortes especiais podem exigir acréscimo.",
+  "A conta considera apenas paredes externas e internas sem revestimentos especiais; revestimentos ou acabamentos podem mudar o consumo."
+ ],
+ "faq": [
+  {
+   "p": "Como escolher o fator de parede correto?",
+   "r": "Multiplique a altura média dos cômodos pelo perímetro interno e subtraia áreas de portas e janelas. Valores entre 1,5 e 2,5 são comuns para residências padrão."
+  },
+  {
+   "p": "Por que acrescentar 10 % de perda?",
+   "r": "É a margem típica para compensar quebras, cortes e peças defeituosas durante a obra, evitando falta de material no meio do trabalho."
+  },
+  {
+   "p": "Posso usar a mesma conta para paredes de alvenaria estrutural?",
+   "r": "Sim, mas verifique se o tipo de bloco escolhido corresponde ao projeto estrutural e ajuste o fator de parede se houver paredes mais espessas."
+  },
+  {
+   "p": "A calculadora considera paredes internas e externas?",
+   "r": "Sim, o fator de parede já engloba ambas as superfícies, mas se houver diferenças significativas (por exemplo, paredes externas com isolamento), ajuste o fator ou faça contas separadas."
+  }
+ ]
+}

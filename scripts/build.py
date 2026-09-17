@@ -87,6 +87,11 @@ def hub(tools: list[dict]) -> None:
 <main>
   <input id="tool-search" class="search-box" type="search"
          placeholder="buscar ferramenta…" autocomplete="off">
+  <p class="hub-intro">Cada página aqui é uma calculadora que roda inteira no seu
+  navegador: você digita as medidas do seu caso, ela mostra o número e explica a
+  conta por trás dele — com a fórmula, um exemplo resolvido e o que o cálculo
+  não considera. Sem cadastro, sem instalar nada e sem enviar seus dados para
+  lugar nenhum.</p>
   <div class="grid" id="tool-list">
 {cards}
   </div>

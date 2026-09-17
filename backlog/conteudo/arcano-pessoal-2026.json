@@ -1,0 +1,65 @@
+{
+ "intro": "A Calculadora de Arcano Pessoal 2026 permite que você descubra, em segundos, qual arcano do tarô representa o seu ano pessoal de 2026. É útil para quem acompanha a simbologia dos arcanos e quer usar essa informação como referência para decisões ou reflexões ao longo do ano.",
+ "formula": "Arcano = reduzir(Dia + Mês + Ano), onde reduzir soma os dígitos até que o resultado esteja entre 1 e 22",
+ "como": [
+  "O cálculo soma o dia, o mês e o ano que você informou e, se o total ultrapassar 22, soma novamente os dígitos desse total. O processo se repete até que o número fique entre 1 e 22, que são os arcanos do tarô.",
+  "Os valores inseridos são o dia (1-31) e o mês (1-12) da sua data de nascimento, além do ano que você quer analisar - neste caso, 2026 já vem preenchido. Cada número entra diretamente na soma inicial."
+ ],
+ "exemplo": {
+  "cenario": "Nascida em 14 de julho, quer saber o arcano para 2026",
+  "passos": [
+   "Somar 14 (dia) + 7 (mês) + 2026 (ano) = 2047",
+   "Reduzir 2047: 2+0+4+7 = 13 (já está entre 1 e 22)",
+   "Arcano 13 corresponde a \"A Morte\""
+  ],
+  "resultado": "Arcano pessoal de 2026: o arcano 13 - A Morte."
+ },
+ "tabela": {
+  "titulo": "Arcanos e seus números",
+  "colunas": [
+   "Número",
+   "Arcano"
+  ],
+  "linhas": [
+   [
+    "1",
+    "O Mago"
+   ],
+   [
+    "5",
+    "O Hierofante"
+   ],
+   [
+    "10",
+    "A Roda da Fortuna"
+   ],
+   [
+    "15",
+    "O Diabo"
+   ]
+  ]
+ },
+ "cuidados": [
+  "A data deve ser válida; dias como 31 de fevereiro não são aceitos.",
+  "O cálculo não considera anos bissextos nem ajustes de calendário; usa apenas a soma simples.",
+  "O resultado é simbólico e não substitui orientação profissional em áreas como finanças ou saúde."
+ ],
+ "faq": [
+  {
+   "p": "Como funciona a redução de números acima de 22?",
+   "r": "A função \"reduzir\" soma os dígitos do número até que o resultado fique entre 1 e 22. Por exemplo, 2047 vira 2+0+4+7=13."
+  },
+  {
+   "p": "Posso usar a calculadora para outro ano além de 2026?",
+   "r": "Sim, basta alterar o campo \"Ano do ano pessoal\" para o ano desejado, respeitando o intervalo de 1900 a 2200."
+  },
+  {
+   "p": "O que significa o arcano obtido?",
+   "r": "Cada arcano tem um significado tradicional no tarô; você pode consultar livros ou sites de tarô para interpretar o símbolo associado ao número."
+  },
+  {
+   "p": "Por que o arcano 22 aparece como \"O Louco\"?",
+   "r": "No tarô, o número 22 representa o Louco, que costuma ser numerado como 0 ou 22 dependendo da tradição. Aqui ele está incluído como 22."
+  }
+ ]
+}

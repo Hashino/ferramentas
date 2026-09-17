@@ -14,10 +14,10 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de café por pessoa","url":"https://hashino.xyz/tools/cafe-por-pessoa/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quanto de café por pessoa."}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como funciona Quanto de Café por Pessoa?","acceptedAnswer":{"@type":"Answer","text":"Calcule o café para o grupo: litros, xícaras e colheres de pó pela quantidade de pessoas e xícaras cada uma. Grátis."}}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de café por pessoa","item":"https://hashino.xyz/tools/cafe-por-pessoa/"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de café por pessoa","item":"https://hashino.xyz/tools/cafe-por-pessoa/"}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quantas colheres de café devo usar por litro?", "acceptedAnswer": {"@type": "Answer", "text": "Depende da força desejada: 6 colheres para suave, 8 para tradicional e 10 para forte, considerando que cada colher cheia pesa cerca de 10 g."}}, {"@type": "Question", "name": "Posso usar xícaras de 150 ml?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, basta ajustar o cálculo: substitua 0,1 L (100 ml) pelo volume da sua xícara em litros."}}, {"@type": "Question", "name": "Como calcular se quero servir café frio em garrafas?", "acceptedAnswer": {"@type": "Answer", "text": "Use a mesma fórmula de litros, mas considere que a garrafa tem capacidade diferente; depois converta o volume total para o número de garrafas necessárias."}}, {"@type": "Question", "name": "O que fazer se o café ficar muito fraco?", "acceptedAnswer": {"@type": "Answer", "text": "Aumente a quantidade de pó por litro (por exemplo, de 80 g/L para 90 g/L) ou reduza o volume de água para a mesma quantidade de pó."}}]}
 </script>
 <meta name="google-adsense-account" content="ca-pub-1801908225638213">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
@@ -43,11 +43,53 @@
     <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
   </section>
   <div class="ad-slot"></div>
+<!-- conteudo:v1 -->
+<section class="conteudo">
+  <p class="intro">Esta calculadora ajuda quem vai organizar um evento, reunião ou café da manhã a estimar a quantidade de café líquido, xícaras e pó necessários para atender todas as pessoas, considerando a quantidade de xícaras por pessoa e a força desejada do café.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>litros = pessoas × xícarasPorPessoa × 0,1 L; pó(g) = litros × força(g/L)</code></p>
+  <p>Primeiro o script multiplica o número de participantes pelo número de xícaras que cada um vai beber e converte o volume total para litros (cada xícara tem 100 ml). Em seguida, aplica a taxa de pó por litro definida pela força escolhida, obtendo a massa de café em gramas.</p>
+  <p>Os valores inseridos são: quantidade de pessoas, xícaras por pessoa (inteiro, padrão 2) e força do café (60 g/L para suave, 80 g/L para tradicional, 100 g/L para forte). O cálculo usa esses números diretamente, sem arredondamentos além dos que já vêm do HTML.</p>
+  <h2>Exemplo</h2>
+  <p>Um grupo de 12 pessoas, cada uma tomando 3 xícaras, com força tradicional.</p>
+  <ol>
+    <li>litros = 12 × 3 × 0,1 = 3,6 L</li>
+    <li>pó = 3,6 L × 80 g/L = 288 g</li>
+    <li>288 g correspondem a aproximadamente 29 colheres de sopa (10 g por colher).</li>
+  </ol>
+  <p><strong>Serão necessários cerca de 3,6 litros de café, o que equivale a 288 g de pó ou 29 colheres de sopa.</strong></p>
+  <h2>Equivalências de força</h2>
+  <table>
+    <thead><tr><th>Força</th><th>Pó por litro (g)</th></tr></thead>
+    <tbody>
+      <tr><td>Suave</td><td>60</td></tr>
+      <tr><td>Tradicional</td><td>80</td></tr>
+      <tr><td>Forte</td><td>100</td></tr>
+      <tr><td>Colher de sopa (10 g)</td><td>≈ 10 g</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>A conta assume xícara padrão de 100 ml; xícaras maiores ou menores alteram o volume final.</li>
+    <li>Não considera perdas de pó durante a preparação ou variações de moagem.</li>
+    <li>Para grupos muito grandes (centenas de pessoas) pode ser necessário ajustar a proporção de água e pó conforme o equipamento usado.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Quantas colheres de café devo usar por litro?</h3>
+  <p>Depende da força desejada: 6 colheres para suave, 8 para tradicional e 10 para forte, considerando que cada colher cheia pesa cerca de 10 g.</p>
+  <h3>Posso usar xícaras de 150 ml?</h3>
+  <p>Sim, basta ajustar o cálculo: substitua 0,1 L (100 ml) pelo volume da sua xícara em litros.</p>
+  <h3>Como calcular se quero servir café frio em garrafas?</h3>
+  <p>Use a mesma fórmula de litros, mas considere que a garrafa tem capacidade diferente; depois converta o volume total para o número de garrafas necessárias.</p>
+  <h3>O que fazer se o café ficar muito fraco?</h3>
+  <p>Aumente a quantidade de pó por litro (por exemplo, de 80 g/L para 90 g/L) ou reduza o volume de água para a mesma quantidade de pó.</p>
+</section>
+<!-- /conteudo -->
+
   <details class="explicacao">
-    <summary>Como funciona</summary>
-    <p>Calcule o café para o grupo: litros, xícaras e colheres de pó pela quantidade de pessoas e xícaras cada uma. Grátis.</p>
-    <p class="relacionadas">Veja também: <a href="../calculadora-tijolos/">Quantos Tijolos por Metro Quadrado</a> · <a href="../gasto-chuveiro/">Quanto Gasta um Chuveiro Elétrico</a> · <a href="../galinhas-por-m2/">Quantas Galinhas Poedeiras por m²</a></p>
-  </details>
+  <summary>Ferramentas relacionadas</summary>
+  <p class="relacionadas">Veja também: <a href="../calculadora-tijolos/">Quantos Tijolos por Metro Quadrado</a> · <a href="../gasto-chuveiro/">Quanto Gasta um Chuveiro Elétrico</a> · <a href="../galinhas-por-m2/">Quantas Galinhas Poedeiras por m²</a></p>
+</details>
 </main>
 <script src="../../config.js"></script>
 <script src="../../chrome.js"></script>

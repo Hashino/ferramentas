@@ -27,6 +27,7 @@ Monetização: Google AdSense, configurado em `site.json` e injetado via `config
 - `scripts/ai.py` — cliente de LLM grátis (endpoint OpenAI-compatible). A chave é lida em runtime do `.env` do learnive e **nunca** entra neste repo. Trata as pegadinhas do free tier: 429 é por pool do modelo (troca de modelo em vez de esperar), Cloudflare da Groq exige User-Agent de browser, `response_format: json_object` exige a palavra "json" na mensagem, e 429 em lote (`triagem.py --tools` rodando dezenas de chamadas seguidas) estoura o TPM — o cliente lê o tempo de espera sugerido na própria mensagem de erro da Groq ("try again in Xs") em vez de um `sleep` fixo curto.
 - `scripts/lint_fake_calculator.py` — rede de segurança automática, só por prefixo de slug (bucket de categorias JÁ CONHECIDAS como "preço de serviço/produto": custo-, consulta-, cirurgia-, consertar-, alugar-, instalar-, trocar-, exame-, aula-, etc.). NÃO tenta mais detectar a frase "preço/valor de X" no texto via regex — foi abandonado porque a mesma frase aparece tanto numa pergunta informacional real quanto describing um input legítimo de calculadora ("valor da hora", "preço do kg do gás"), e regex não distingue intenção. A distinção real é feita pelo AGENTE no passo 2(d) abaixo, ANTES de construir a ferramenta — este script só pega reincidências óbvias de categoria. Rodar nas N ferramentas da leva antes de commitar (`python3 scripts/lint_fake_calculator.py <slug1> <slug2> ...`) — exit 1 se achar alguma.
 - `scripts/backfill_explicacao.py` — insere `<details class="explicacao">` (texto SEO colapsado, reaproveita a própria `{{DESCRIPTION}}` de cada ferramenta + 3 links "relacionadas" por bucket de prefixo do slug), FAQPage JSON-LD e `data-footer` em qualquer `tools/*/index.html` que ainda não tenha. Idempotente pra criar; mas **também repara** os links "relacionadas" TODA vez que roda, mesmo em páginas já processadas (função `reparar_relacionadas`) — se algum link aponta pra uma ferramenta que não existe mais (ex: deletada num reaudit de AI-Overview), ele regenera o trio a partir da lista atual de `tools/`. Achado real em 15/09/2026: 38 de 45 links "relacionadas" estavam 404 porque tools deletadas nunca tiveram seus back-links limpos — por isso **rodar este script também depois de QUALQUER deleção de ferramenta**, não só depois de criar.
+- `scripts/conteudo.py` — **obrigatório para toda ferramenta nova**: escreve o corpo de texto da página (intro, "como o cálculo é feito" com a fórmula lida do JS, exemplo resolvido, tabela de referência, limites do cálculo e 4 FAQs de verdade, que também viram o FAQPage JSON-LD). Duas chamadas de IA grátis por ferramenta: uma escreve, outra **recalcula todo número contra o código da própria calculadora** (o gerador erra conta sozinho — já disse "R$ 2,80 por banho" onde a fórmula dava R$ 1,05). Cacheado em `backlog/conteudo/<slug>.json` (versionado: dá pra revisar e corrigir à mão), idempotente pelo marcador `<!-- conteudo:v1 -->`, `--force` reescreve. Motivo de existir: em 17/09/2026 o AdSense acusou violação de política e a auditoria achou 67-98 palavras por página, com o único bloco de texto repetindo a meta description em todas elas.
 - `scripts/build.py` — regenera `index.html` (hub), `sitemap.xml`, `robots.txt`, `llms.txt`, `config.js`, `ads.txt`. SEMPRE rodar antes de commitar.
 - `scripts/ping_indexnow.py` — roda no CI a cada push; não rodar manualmente
 - `search.js` — busca fuzzy da home (filtra/reordena os cards conforme digitação)
@@ -98,13 +99,17 @@ Regras do código (todas obrigatórias):
 ```
 python3 scripts/lint_fake_calculator.py <SLUG>
 python3 scripts/backfill_explicacao.py
+python3 scripts/conteudo.py <SLUG>
 python3 scripts/build.py
 git add -A && git commit -m "tool: <SLUG>" && git push
 ```
 
 Se o lint falhar, conserte a ferramenta e rode de novo — não commite.
-`backfill_explicacao.py` é quem insere explicação/FAQ/rodapé; por isso o passo 2
-proíbe escrever isso à mão.
+`backfill_explicacao.py` insere os links relacionados e o rodapé;
+`conteudo.py` escreve o texto que a página precisa ter para não ser
+"conteúdo de baixo valor" no olho do revisor do AdSense — **nenhum dos dois
+se escreve à mão**, e pular o `conteudo.py` publica uma página de ~80
+palavras, que foi exatamente o que derrubou a conta em 17/09/2026.
 
 **5. Conferir** que `tools/<SLUG>/index.html` não tem mais nenhum `{{` sobrando,
 e voltar ao passo 1 para a próxima ferramenta.
@@ -112,7 +117,8 @@ e voltar ao passo 1 para a próxima ferramenta.
 ## Regras
 
 - NUNCA editar `tools/<slug>/` já publicado sem pedido explícito do usuário — EXCETO rodar `backfill_explicacao.py`, que é seguro (idempotente, só adiciona o que falta) e faz parte da pipeline padrão.
-- Página de ferramenta = head (meta/SEO) + `<main>` (H1 + `.app` + `.ad-slot`) + scripts `config.js`, `chrome.js` e o JS da ferramenta, criada assim pelo template. `backfill_explicacao.py` acrescenta depois: `<details class="explicacao">` (texto SEO + 3 links relacionados, colapsado por padrão — invisível até o clique), FAQPage JSON-LD e `data-footer` (liga o footer com Sobre/Privacidade/GitHub). Nenhum desses três é escrito à mão nem varia o design visível da ferramenta.
+- Página de ferramenta = head (meta/SEO) + `<main>` (H1 + `.app` + `.ad-slot` + `<section class="conteudo">` + `<details>` com os relacionados) + scripts `config.js`, `chrome.js` e o JS da ferramenta. O template cria só a parte de cima; `backfill_explicacao.py` acrescenta relacionados e `data-footer`, e `conteudo.py` acrescenta a seção de conteúdo **visível** (não colapsar: texto escondido atrás de `<details>` não conta como conteúdo para o revisor) e o FAQPage JSON-LD real. Nada disso é escrito à mão.
+- **Nunca colocar AdSense em página sem conteúdo do editor** (404, páginas em branco, redirecionamentos). O `404.html` teve a tag removida em 17/09/2026 por isso.
 - Home (gerada por build.py): lista de cards com H1 + descrição; sobre/privacidade mantêm texto.
 - 1 ferramenta = 1 página = 1 keyword. Zero dependências externas (sem CDN, sem fontes remotas, sem analytics pesado).
 - Sempre `scripts/build.py` antes de commit.

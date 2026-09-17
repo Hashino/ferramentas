@@ -1,0 +1,64 @@
+{
+ "intro": "Esta conta ajuda quem usa liquidificador em casa a estimar o gasto mensal de energia elétrica, permitindo comparar custos ou ajustar o tempo de uso. É útil para consumidores que querem entender o impacto na conta de luz e planejar melhor o consumo diário.",
+ "formula": "kWh/mês = potência(W) × minutos/dia × 30 ÷ 60 ÷ 1000",
+ "como": [
+  "O cálculo parte da potência do aparelho, converte o tempo de uso diário em horas, multiplica pelos 30 dias do mês e converte watts-hora para quilowatt-hora. Em seguida, multiplica o consumo em kWh pela tarifa de energia informada, obtendo o custo mensal.",
+  "Os valores inseridos são a potência nominal do liquidificador (em watts), o tempo médio de uso por dia (em minutos) e a tarifa de energia da sua concessionária (em reais por kWh). Cada um desses dados provém do manual do aparelho, do seu hábito de uso e da sua conta de luz, respectivamente."
+ ],
+ "exemplo": {
+  "cenario": "Um liquidificador de 400 W usado 5 minutos por dia, com tarifa de R$ 0,95 /kWh",
+  "passos": [
+   "kWh/mês = 400 × 5 × 30 ÷ 60 ÷ 1000 = 1,00 kWh",
+   "Custo = 1,00 kWh × R$ 0,95 = R$ 0,95"
+  ],
+  "resultado": "O gasto mensal será aproximadamente R$ 0,95."
+ },
+ "tabela": {
+  "titulo": "Consumo mensal estimado",
+  "colunas": [
+   "Potência (W)",
+   "Consumo (kWh/mês) para 10 min/dia"
+  ],
+  "linhas": [
+   [
+    "300",
+    "1,50"
+   ],
+   [
+    "400",
+    "2,00"
+   ],
+   [
+    "550",
+    "2,75"
+   ],
+   [
+    "700",
+    "3,50"
+   ]
+  ]
+ },
+ "cuidados": [
+  "O cálculo assume uso constante todos os dias do mês; variações no número de dias ou interrupções não são consideradas.",
+  "A potência informada deve ser a nominal do aparelho; picos de consumo momentâneos não são refletidos.",
+  "A tarifa usada é a média por kWh; tarifas diferenciadas (horário de ponta/off-peak) exigem ajuste manual."
+ ],
+ "faq": [
+  {
+   "p": "Quanto custa usar o liquidificador por mês?",
+   "r": "Depende da potência, do tempo diário de uso e da tarifa de energia. Use a conta para inserir seus valores e obter o custo estimado."
+  },
+  {
+   "p": "Por que o consumo parece tão baixo?",
+   "r": "Liquidificadores operam por curtos períodos, então mesmo com potência alta o consumo total em kWh permanece pequeno."
+  },
+  {
+   "p": "Posso usar a conta para outros eletrodomésticos?",
+   "r": "Sim, basta substituir a potência e o tempo de uso pelos do aparelho que deseja analisar."
+  },
+  {
+   "p": "A conta considera tarifa diferenciada por horário?",
+   "r": "Não. Ela usa um único valor de tarifa informado pelo usuário; para tarifas horárias, calcule separadamente e some os resultados."
+  }
+ ]
+}

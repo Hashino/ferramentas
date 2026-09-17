@@ -1,0 +1,65 @@
+{
+ "intro": "Esta calculadora ajuda quem quer saber quanto o chuveiro elétrico pesa na conta de luz, permitindo comparar diferentes potências, tempo de banho e frequência diária. É útil para moradores que desejam ajustar o consumo ou avaliar o impacto financeiro antes de trocar o equipamento.",
+ "formula": "custoMensal = (potência(W) × minutosPorBanho ÷ 60 ÷ 1000) × banhosPorDia × 30 × tarifa(R$/kWh)",
+ "como": [
+  "O cálculo parte da potência do chuveiro em watts, converte o tempo de uso para horas e depois para kilowatt-hora (kWh) por banho. Esse consumo é multiplicado pelo número de banhos diários e pelos 30 dias do mês, resultando o consumo mensal em kWh, que é então convertido em reais usando a tarifa informada.",
+  "Os valores inseridos são: potência do chuveiro (W), minutos de uso por banho, quantidade de banhos feitos por dia e a tarifa de energia da sua concessionária (R$/kWh). Todos são números reais fornecidos ao usuário, sem suposições adicionais."
+ ],
+ "exemplo": {
+  "cenario": "Um chuveiro de 5500 W, 12 minutos por banho, 3 banhos por dia, tarifa de R$ 0,95/kWh",
+  "passos": [
+   "kWh por banho = 5500 W × 12 min ÷ 60 ÷ 1000 = 1,10 kWh",
+   "kWh por dia = 1,10 kWh × 3 = 3,30 kWh",
+   "custo mensal = 3,30 kWh × 30 dias × R$ 0,95 = R$ 94,05"
+  ],
+  "resultado": "O custo mensal estimado é de aproximadamente R$ 94,05."
+ },
+ "tabela": {
+  "titulo": "Consumo típico de chuveiros",
+  "colunas": [
+   "Potência (W)",
+   "Consumo por banho (kWh)"
+  ],
+  "linhas": [
+   [
+    "3200",
+    "0,64"
+   ],
+   [
+    "4500",
+    "0,90"
+   ],
+   [
+    "5500",
+    "1,10"
+   ],
+   [
+    "6800",
+    "1,36"
+   ]
+  ]
+ },
+ "cuidados": [
+  "A conta assume uso constante da potência nominal; chuveiros com controle de temperatura podem consumir menos em prática.",
+  "A tarifa usada deve ser a tarifa residencial vigente; tarifas diferenciadas (horário de ponta, bandeiras) não são consideradas.",
+  "O cálculo considera 30 dias por mês; meses com mais ou menos dias alteram levemente o resultado."
+ ],
+ "faq": [
+  {
+   "p": "Quanto custa um banho de chuveiro elétrico?",
+   "r": "Depende da potência, do tempo de uso e da tarifa de energia. Use a calculadora inserindo seus valores para obter o custo exato."
+  },
+  {
+   "p": "É mais barato usar chuveiro a gás que elétrico?",
+   "r": "Em geral, o chuveiro a gás tem custo por banho menor, mas depende do preço do gás e da eficiência do aparelho. Compare os custos mensais de cada fonte."
+  },
+  {
+   "p": "Como a tarifa de energia influencia o gasto?",
+   "r": "A tarifa é o preço que você paga por cada kWh consumido. Um aumento na tarifa eleva diretamente o custo do banho, enquanto uma tarifa menor reduz o valor final."
+  },
+  {
+   "p": "Posso usar a mesma conta para chuveiros com regulador de temperatura?",
+   "r": "Sim, mas o regulador costuma reduzir a potência média usada. Para maior precisão, use a potência real medida em watts, se disponível."
+  }
+ ]
+}

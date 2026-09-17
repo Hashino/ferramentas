@@ -1,0 +1,65 @@
+{
+ "intro": "A calculadora de Arcano Pessoal Anual permite descobrir qual carta do tarô representa o seu ano pessoal, usando apenas dia, mês e o ano que você deseja analisar. É útil para quem acompanha a astrologia ou o tarô e quer um indicativo rápido e gratuito para orientar decisões ao longo do ano.",
+ "formula": "arcano = reduzir(dia + mês + ano) onde reduzir soma os dígitos até resultar em número entre 1 e 22",
+ "como": [
+  "O algoritmo soma o dia, o mês e o ano informados, obtendo um número inteiro. Em seguida, aplica a função reduzir, que soma os algarismos desse total repetidamente até que o resultado fique entre 1 e 22, que são os índices dos arcanos do tarô.",
+  "Os valores inseridos são simples: o dia (1-31) e o mês (1-12) da sua data de nascimento, e o ano que você quer analisar (geralmente o corrente). O cálculo não usa nenhum dado externo, apenas esses três números."
+ ],
+ "exemplo": {
+  "cenario": "Nascimento em 14 de julho, analisando o ano de 2024",
+  "passos": [
+   "Somar: 14 + 7 + 2024 = 2045",
+   "Reduzir: 2+0+4+5 = 11",
+   "Arcano correspondente ao número 11 é \"A Força\""
+  ],
+  "resultado": "Ano pessoal de 2024: arcano 11 - A Força"
+ },
+ "tabela": {
+  "titulo": "Arcanos por número",
+  "colunas": [
+   "Número",
+   "Carta"
+  ],
+  "linhas": [
+   [
+    "1",
+    "O Mago"
+   ],
+   [
+    "5",
+    "O Hierofante"
+   ],
+   [
+    "10",
+    "A Roda da Fortuna"
+   ],
+   [
+    "15",
+    "O Diabo"
+   ]
+  ]
+ },
+ "cuidados": [
+  "A data deve ser válida; dias como 31 de fevereiro não são aceitos.",
+  "O cálculo não considera fusos horários ou horário de nascimento; usa apenas dia, mês e ano.",
+  "O resultado é simbólico e não substitui orientação profissional em áreas como finanças ou saúde."
+ ],
+ "faq": [
+  {
+   "p": "Como funciona a redução do número para ficar entre 1 e 22?",
+   "r": "A função reduzir soma os dígitos do número resultante; se ainda for maior que 22, repete a soma até que o valor esteja entre 1 e 22."
+  },
+  {
+   "p": "Posso usar a calculadora para anos futuros ou passados?",
+   "r": "Sim, basta inserir o ano desejado; o algoritmo funciona para qualquer ano entre 1900 e 2200."
+  },
+  {
+   "p": "Por que o número 22 corresponde ao Louco e não ao 0?",
+   "r": "No tarô tradicional, o Louco é numerado como 0, mas aqui ele foi incluído como 22 para fechar o ciclo de 22 arcanos principais."
+  },
+  {
+   "p": "O que fazer se o resultado for um arcano que não conheço?",
+   "r": "Procure o significado da carta em fontes de tarô confiáveis; cada arcano traz mensagens sobre desafios e oportunidades para o ano."
+  }
+ ]
+}

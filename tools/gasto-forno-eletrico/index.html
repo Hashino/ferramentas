@@ -14,10 +14,10 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Gasto do Forno Elétrico","url":"https://hashino.xyz/tools/gasto-forno-eletrico/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quanto gasta um forno elétrico por mês."}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como funciona Quanto Gasta um Forno Elétrico?","acceptedAnswer":{"@type":"Answer","text":"Calcule o gasto mensal do forno elétrico na conta de luz: potência e minutos de uso por dia. Grátis, sem cadastro, resultado na hora."}}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Gasto do Forno Elétrico","item":"https://hashino.xyz/tools/gasto-forno-eletrico/"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Gasto do Forno Elétrico","item":"https://hashino.xyz/tools/gasto-forno-eletrico/"}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quanto gasto se uso o forno só nos fins de semana?", "acceptedAnswer": {"@type": "Answer", "text": "Basta inserir a média de minutos por dia considerando apenas os dias em que o forno é usado; por exemplo, 90 min em 2 dias da semana equivale a 30 min/dia no cálculo."}}, {"@type": "Question", "name": "A tarifa da conta inclui impostos e encargos?", "acceptedAnswer": {"@type": "Answer", "text": "A tarifa inserida deve ser o valor total que aparece na sua conta (R$/kWh), já com impostos e encargos. Caso use apenas a tarifa base, o resultado ficará subestimado."}}, {"@type": "Question", "name": "Como considerar o consumo de outros aparelhos?", "acceptedAnswer": {"@type": "Answer", "text": "A ferramenta calcula apenas o forno. Para obter o consumo total da residência, some os resultados de cada aparelho ou use um medidor de energia para medir o consumo conjunto."}}, {"@type": "Question", "name": "O cálculo funciona para fornos a gás?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O cálculo usa potência elétrica (W) e tarifa de energia elétrica; fornos a gás dependem de consumo de gás e preço do combustível, que são calculados de forma diferente."}}]}
 </script>
 <meta name="google-adsense-account" content="ca-pub-1801908225638213">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
@@ -44,11 +44,52 @@
     <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
   </section>
   <div class="ad-slot"></div>
+<!-- conteudo:v1 -->
+<section class="conteudo">
+  <p class="intro">Esta ferramenta ajuda quem tem forno elétrico a estimar o gasto mensal na conta de luz, usando a potência do aparelho, o tempo de uso diário e a tarifa de energia da sua região, sem precisar de cálculos complicados.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>kWh/mês = potência(W) × minutos/dia × 30 ÷ 60 ÷ 1000</code></p>
+  <p>O cálculo parte da potência nominal do forno, converte o tempo de uso diário em horas, multiplica pelos 30 dias do mês e converte watts-hora para quilowatt-hora. Em seguida, o consumo em kWh é multiplicado pela tarifa de energia para obter o custo mensal.</p>
+  <p>Os valores inseridos são a potência do forno (informada no rótulo ou na ficha técnica), os minutos que ele fica ligado por dia (uso típico) e a tarifa de energia (custo por kWh cobrado pela concessionária na sua conta).</p>
+  <h2>Exemplo</h2>
+  <p>Um forno de 1300 W usado 45 min por dia, tarifa de R$ 0,95 /kWh</p>
+  <ol>
+    <li>kWh/mês = 1300 × 45 × 30 ÷ 60 ÷ 1000 = 29,25 kWh</li>
+    <li>Custo = 29,25 kWh × R$ 0,95 = R$ 27,79</li>
+  </ol>
+  <p><strong>O gasto mensal estimado é de aproximadamente R$ 27,79.</strong></p>
+  <h2>Consumo mensal aproximado</h2>
+  <table>
+    <thead><tr><th>Potência (W)</th><th>Consumo (kWh/mês) para 45 min/dia</th></tr></thead>
+    <tbody>
+      <tr><td>1000</td><td>22,5</td></tr>
+      <tr><td>1300</td><td>29,25</td></tr>
+      <tr><td>1700</td><td>38,25</td></tr>
+      <tr><td>2200</td><td>49,5</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>O cálculo assume uso diário constante durante 30 dias; variações no número de dias ou nas horas de uso alteram o resultado.</li>
+    <li>A tarifa usada deve ser a tarifa residencial vigente; tarifas diferenciadas (horário de ponta, bandeira) exigem ajuste manual.</li>
+    <li>A potência nominal pode diferir da potência real consumida; aparelhos mais antigos ou com manutenção deficiente podem consumir mais energia.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Quanto gasto se uso o forno só nos fins de semana?</h3>
+  <p>Basta inserir a média de minutos por dia considerando apenas os dias em que o forno é usado; por exemplo, 90 min em 2 dias da semana equivale a 30 min/dia no cálculo.</p>
+  <h3>A tarifa da conta inclui impostos e encargos?</h3>
+  <p>A tarifa inserida deve ser o valor total que aparece na sua conta (R$/kWh), já com impostos e encargos. Caso use apenas a tarifa base, o resultado ficará subestimado.</p>
+  <h3>Como considerar o consumo de outros aparelhos?</h3>
+  <p>A ferramenta calcula apenas o forno. Para obter o consumo total da residência, some os resultados de cada aparelho ou use um medidor de energia para medir o consumo conjunto.</p>
+  <h3>O cálculo funciona para fornos a gás?</h3>
+  <p>Não. O cálculo usa potência elétrica (W) e tarifa de energia elétrica; fornos a gás dependem de consumo de gás e preço do combustível, que são calculados de forma diferente.</p>
+</section>
+<!-- /conteudo -->
+
   <details class="explicacao">
-    <summary>Como funciona</summary>
-    <p>Calcule o gasto mensal do forno elétrico na conta de luz: potência e minutos de uso por dia. Grátis, sem cadastro, resultado na hora.</p>
-    <p class="relacionadas">Veja também: <a href="../gasto-liquidificador/">Quanto Gasta um Liquidificador</a> · <a href="../gasto-chuveiro/">Quanto Gasta um Chuveiro Elétrico</a> · <a href="../gasto-pc-gamer/">Quanto Gasta um PC Gamer</a></p>
-  </details>
+  <summary>Ferramentas relacionadas</summary>
+  <p class="relacionadas">Veja também: <a href="../gasto-liquidificador/">Quanto Gasta um Liquidificador</a> · <a href="../gasto-chuveiro/">Quanto Gasta um Chuveiro Elétrico</a> · <a href="../gasto-pc-gamer/">Quanto Gasta um PC Gamer</a></p>
+</details>
 </main>
 <script src="../../config.js"></script>
 <script src="../../chrome.js"></script>

@@ -1,0 +1,65 @@
+{
+ "intro": "Esta calculadora ajuda quem vai instalar ou reformar um telhado a estimar a quantidade de telhas necessária, considerando o tipo de telha, a área do telhado e uma margem de perda. É útil para proprietários, pedreiros e arquitetos que precisam comprar o material com antecedência e evitar faltas ou excessos.",
+ "formula": "unidades = unidadesPorM2 × área(m²) × (1 + perda %/100)",
+ "como": [
+  "Primeiro, informe quantas telhas são recomendadas por metro quadrado para o tipo escolhido; o campo pode ser ajustado se houver variação no fornecedor. Depois, indique a área total do telhado em metros quadrados e a porcentagem de perda esperada, que cobre quebras, cortes e sobras. O cálculo multiplica esses três valores e arredonda para cima, garantindo que você tenha telhas suficientes.",
+  "O número de unidades por m² vem da especificação do fabricante (por exemplo, 16 telhas por m² para colonial). A área do telhado é medida no plano horizontal, sem considerar a inclinação. A perda percentual é uma estimativa prática, geralmente entre 5 % e 15 %, para compensar danos durante a obra."
+ ],
+ "exemplo": {
+  "cenario": "Um telhado de 120 m² usando telhas coloniais, com 5 % de perda.",
+  "passos": [
+   "unidadesPorM2 = 16",
+   "total = 16 × 120 × (1 + 5/100)",
+   "total = 16 × 120 × 1,05 = 2016"
+  ],
+  "resultado": "Serão necessárias 2 016 telhas coloniais."
+ },
+ "tabela": {
+  "titulo": "Tipos de telha e consumo típico",
+  "colunas": [
+   "Tipo",
+   "Unidades por m²"
+  ],
+  "linhas": [
+   [
+    "Colonial cerâmica",
+    "≈ 16"
+   ],
+   [
+    "Portuguesa cerâmica",
+    "≈ 16,5"
+   ],
+   [
+    "Romana cerâmica",
+    "≈ 45"
+   ],
+   [
+    "Fibrocimento (chapa 2,44×1,10 m)",
+    "≈ 0,37"
+   ]
+  ]
+ },
+ "cuidados": [
+  "A área considerada deve ser a projeção horizontal; inclinações elevadas aumentam o consumo real.",
+  "A perda percentual varia conforme a qualidade da telha e a experiência da equipe; ajuste conforme o histórico da obra.",
+  "Para telhas de fibrocimento, verifique o espaçamento entre chapas, pois o consumo pode mudar se houver sobreposição."
+ ],
+ "faq": [
+  {
+   "p": "Como calcular a área do telhado se ele tem duas águas?",
+   "r": "Meça o comprimento e a largura de cada plano inclinado, multiplique e some os resultados. Use a projeção horizontal se quiser simplificar, mas acrescente 10 % a 30 % ao total para compensar a inclinação."
+  },
+  {
+   "p": "Por que a calculadora arredonda para cima?",
+   "r": "Arredondar para cima garante que você não fique sem telhas durante a obra, evitando atrasos e compras de última hora."
+  },
+  {
+   "p": "Posso usar a mesma porcentagem de perda para todos os tipos de telha?",
+   "r": "A porcentagem de perda pode ser semelhante, mas telhas mais frágeis, como cerâmica, costumam exigir um percentual ligeiramente maior que chapas de fibrocimento."
+  },
+  {
+   "p": "A calculadora considera o recorte das telhas nas bordas?",
+   "r": "Sim, a margem de perda inclui recortes, quebras e sobras nas bordas. Ajuste o percentual se souber que o recorte será maior ou menor."
+  }
+ ]
+}

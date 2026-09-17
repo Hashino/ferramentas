@@ -14,10 +14,13 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Gasto do Liquidificador","url":"https://hashino.xyz/tools/gasto-liquidificador/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quanto gasta um liquidificador por mês."}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como funciona Quanto Gasta um Liquidificador?","acceptedAnswer":{"@type":"Answer","text":"Calcule o gasto mensal do liquidificador na conta de luz: potência e minutos de uso por dia. Grátis, sem cadastro, na hora."}}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Gasto do Liquidificador","item":"https://hashino.xyz/tools/gasto-liquidificador/"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Gasto do Liquidificador","item":"https://hashino.xyz/tools/gasto-liquidificador/"}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quanto custa usar o liquidificador todos os dias?", "acceptedAnswer": {"@type": "Answer", "text": "Basta inserir a potência, o tempo diário de uso e a tarifa de energia; o resultado mostra o custo mensal aproximado."}}, {"@type": "Question", "name": "A potência indicada no rótulo é a mesma que o cálculo usa?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, o cálculo usa a potência nominal em watts que aparece na etiqueta do aparelho."}}, {"@type": "Question", "name": "E se eu usar o liquidificador só alguns dias por semana?", "acceptedAnswer": {"@type": "Answer", "text": "Divida o número de dias de uso por 30 no cálculo ou ajuste o tempo diário para refletir a média semanal."}}, {"@type": "Question", "name": "A tarifa da minha conta tem bandeira tarifária, isso muda o resultado?", "acceptedAnswer": {"@type": "Answer", "text": "A ferramenta usa a tarifa base informada; se houver bandeira ou horário de ponta, o custo real pode ser maior."}}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quanto custa usar o liquidificador por mês?", "acceptedAnswer": {"@type": "Answer", "text": "Depende da potência, do tempo diário de uso e da tarifa de energia. Use a conta para inserir seus valores e obter o custo estimado."}}, {"@type": "Question", "name": "Por que o consumo parece tão baixo?", "acceptedAnswer": {"@type": "Answer", "text": "Liquidificadores operam por curtos períodos, então mesmo com potência alta o consumo total em kWh permanece pequeno."}}, {"@type": "Question", "name": "Posso usar a conta para outros eletrodomésticos?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, basta substituir a potência e o tempo de uso pelos do aparelho que deseja analisar."}}, {"@type": "Question", "name": "A conta considera tarifa diferenciada por horário?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Ela usa um único valor de tarifa informado pelo usuário; para tarifas horárias, calcule separadamente e some os resultados."}}]}
 </script>
 <meta name="google-adsense-account" content="ca-pub-1801908225638213">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
@@ -44,11 +47,52 @@
     <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
   </section>
   <div class="ad-slot"></div>
-  <details class="explicacao">
-    <summary>Como funciona</summary>
-    <p>Calcule o gasto mensal do liquidificador na conta de luz: potência e minutos de uso por dia. Grátis, sem cadastro, na hora.</p>
-    <p class="relacionadas">Veja também: <a href="../gasto-forno-eletrico/">Quanto Gasta um Forno Elétrico</a> · <a href="../gasto-pc-gamer/">Quanto Gasta um PC Gamer</a> · <a href="../gasto-chuveiro/">Quanto Gasta um Chuveiro Elétrico</a></p>
-  </details>
+<!-- conteudo:v1 -->
+<section class="conteudo">
+  <p class="intro">Esta conta ajuda quem usa liquidificador em casa a estimar o gasto mensal de energia elétrica, permitindo comparar custos ou ajustar o tempo de uso. É útil para consumidores que querem entender o impacto na conta de luz e planejar melhor o consumo diário.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>kWh/mês = potência(W) × minutos/dia × 30 ÷ 60 ÷ 1000</code></p>
+  <p>O cálculo parte da potência do aparelho, converte o tempo de uso diário em horas, multiplica pelos 30 dias do mês e converte watts-hora para quilowatt-hora. Em seguida, multiplica o consumo em kWh pela tarifa de energia informada, obtendo o custo mensal.</p>
+  <p>Os valores inseridos são a potência nominal do liquidificador (em watts), o tempo médio de uso por dia (em minutos) e a tarifa de energia da sua concessionária (em reais por kWh). Cada um desses dados provém do manual do aparelho, do seu hábito de uso e da sua conta de luz, respectivamente.</p>
+  <h2>Exemplo</h2>
+  <p>Um liquidificador de 400 W usado 5 minutos por dia, com tarifa de R$ 0,95 /kWh</p>
+  <ol>
+    <li>kWh/mês = 400 × 5 × 30 ÷ 60 ÷ 1000 = 1,00 kWh</li>
+    <li>Custo = 1,00 kWh × R$ 0,95 = R$ 0,95</li>
+  </ol>
+  <p><strong>O gasto mensal será aproximadamente R$ 0,95.</strong></p>
+  <h2>Consumo mensal estimado</h2>
+  <table>
+    <thead><tr><th>Potência (W)</th><th>Consumo (kWh/mês) para 10 min/dia</th></tr></thead>
+    <tbody>
+      <tr><td>300</td><td>1,50</td></tr>
+      <tr><td>400</td><td>2,00</td></tr>
+      <tr><td>550</td><td>2,75</td></tr>
+      <tr><td>700</td><td>3,50</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>O cálculo assume uso constante todos os dias do mês; variações no número de dias ou interrupções não são consideradas.</li>
+    <li>A potência informada deve ser a nominal do aparelho; picos de consumo momentâneos não são refletidos.</li>
+    <li>A tarifa usada é a média por kWh; tarifas diferenciadas (horário de ponta/off-peak) exigem ajuste manual.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Quanto custa usar o liquidificador por mês?</h3>
+  <p>Depende da potência, do tempo diário de uso e da tarifa de energia. Use a conta para inserir seus valores e obter o custo estimado.</p>
+  <h3>Por que o consumo parece tão baixo?</h3>
+  <p>Liquidificadores operam por curtos períodos, então mesmo com potência alta o consumo total em kWh permanece pequeno.</p>
+  <h3>Posso usar a conta para outros eletrodomésticos?</h3>
+  <p>Sim, basta substituir a potência e o tempo de uso pelos do aparelho que deseja analisar.</p>
+  <h3>A conta considera tarifa diferenciada por horário?</h3>
+  <p>Não. Ela usa um único valor de tarifa informado pelo usuário; para tarifas horárias, calcule separadamente e some os resultados.</p>
+</section>
+<!-- /conteudo -->
+
+<details class="explicacao">
+  <summary>Ferramentas relacionadas</summary>
+  <p class="relacionadas">Veja também: <a href="../gasto-forno-eletrico/">Quanto Gasta um Forno Elétrico</a> · <a href="../gasto-pc-gamer/">Quanto Gasta um PC Gamer</a> · <a href="../gasto-chuveiro/">Quanto Gasta um Chuveiro Elétrico</a></p>
+</details>
 </main>
 <script src="../../config.js"></script>
 <script src="../../chrome.js"></script>

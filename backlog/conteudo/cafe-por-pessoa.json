@@ -1,0 +1,65 @@
+{
+ "intro": "Esta calculadora ajuda quem vai organizar um evento, reunião ou café da manhã a estimar a quantidade de café líquido, xícaras e pó necessários para atender todas as pessoas, considerando a quantidade de xícaras por pessoa e a força desejada do café.",
+ "formula": "litros = pessoas × xícarasPorPessoa × 0,1 L; pó(g) = litros × força(g/L)",
+ "como": [
+  "Primeiro o script multiplica o número de participantes pelo número de xícaras que cada um vai beber e converte o volume total para litros (cada xícara tem 100 ml). Em seguida, aplica a taxa de pó por litro definida pela força escolhida, obtendo a massa de café em gramas.",
+  "Os valores inseridos são: quantidade de pessoas, xícaras por pessoa (inteiro, padrão 2) e força do café (60 g/L para suave, 80 g/L para tradicional, 100 g/L para forte). O cálculo usa esses números diretamente, sem arredondamentos além dos que já vêm do HTML."
+ ],
+ "exemplo": {
+  "cenario": "Um grupo de 12 pessoas, cada uma tomando 3 xícaras, com força tradicional.",
+  "passos": [
+   "litros = 12 × 3 × 0,1 = 3,6 L",
+   "pó = 3,6 L × 80 g/L = 288 g",
+   "288 g correspondem a aproximadamente 29 colheres de sopa (10 g por colher)."
+  ],
+  "resultado": "Serão necessários cerca de 3,6 litros de café, o que equivale a 288 g de pó ou 29 colheres de sopa."
+ },
+ "tabela": {
+  "titulo": "Equivalências de força",
+  "colunas": [
+   "Força",
+   "Pó por litro (g)"
+  ],
+  "linhas": [
+   [
+    "Suave",
+    "60"
+   ],
+   [
+    "Tradicional",
+    "80"
+   ],
+   [
+    "Forte",
+    "100"
+   ],
+   [
+    "Colher de sopa (10 g)",
+    "≈ 10 g"
+   ]
+  ]
+ },
+ "cuidados": [
+  "A conta assume xícara padrão de 100 ml; xícaras maiores ou menores alteram o volume final.",
+  "Não considera perdas de pó durante a preparação ou variações de moagem.",
+  "Para grupos muito grandes (centenas de pessoas) pode ser necessário ajustar a proporção de água e pó conforme o equipamento usado."
+ ],
+ "faq": [
+  {
+   "p": "Quantas colheres de café devo usar por litro?",
+   "r": "Depende da força desejada: 6 colheres para suave, 8 para tradicional e 10 para forte, considerando que cada colher cheia pesa cerca de 10 g."
+  },
+  {
+   "p": "Posso usar xícaras de 150 ml?",
+   "r": "Sim, basta ajustar o cálculo: substitua 0,1 L (100 ml) pelo volume da sua xícara em litros."
+  },
+  {
+   "p": "Como calcular se quero servir café frio em garrafas?",
+   "r": "Use a mesma fórmula de litros, mas considere que a garrafa tem capacidade diferente; depois converta o volume total para o número de garrafas necessárias."
+  },
+  {
+   "p": "O que fazer se o café ficar muito fraco?",
+   "r": "Aumente a quantidade de pó por litro (por exemplo, de 80 g/L para 90 g/L) ou reduza o volume de água para a mesma quantidade de pó."
+  }
+ ]
+}

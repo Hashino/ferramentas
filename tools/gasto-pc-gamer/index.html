@@ -14,10 +14,10 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Gasto do PC Gamer","url":"https://hashino.xyz/tools/gasto-pc-gamer/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quanto gasta um pc gamer de energia por mês."}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como funciona Quanto Gasta um PC Gamer?","acceptedAnswer":{"@type":"Answer","text":"Calcule o gasto mensal do PC gamer na conta de luz: potência real, horas de jogo por dia e tarifa. Grátis, sem cadastro."}}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Gasto do PC Gamer","item":"https://hashino.xyz/tools/gasto-pc-gamer/"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Gasto do PC Gamer","item":"https://hashino.xyz/tools/gasto-pc-gamer/"}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como saber a potência real do meu PC?", "acceptedAnswer": {"@type": "Answer", "text": "Consulte o TDP da CPU e da GPU ou use um medidor de energia plugado na tomada para medir o consumo em carga."}}, {"@type": "Question", "name": "A conta inclui o consumo do monitor?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, a potência selecionada deve somar o consumo do PC e do monitor, já que ambos ficam ligados enquanto você joga."}}, {"@type": "Question", "name": "O cálculo considera o consumo em standby ou fora de jogo?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Ele calcula apenas o consumo durante as horas informadas de jogo. Consumo fora desse período deve ser adicionado separadamente."}}, {"@type": "Question", "name": "Por que o custo por hora de jogo parece baixo?", "acceptedAnswer": {"@type": "Answer", "text": "O custo por hora reflete apenas a energia elétrica consumida, sem incluir custos de hardware, internet ou manutenção."}}]}
 </script>
 <meta name="google-adsense-account" content="ca-pub-1801908225638213">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
@@ -45,11 +45,53 @@
     <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
   </section>
   <div class="ad-slot"></div>
+<!-- conteudo:v1 -->
+<section class="conteudo">
+  <p class="intro">Esta calculadora estima quanto você gasta na conta de luz ao usar seu PC gamer. É útil para quem quer entender o impacto financeiro de jogar diariamente e comparar diferentes configurações ou tarifas de energia.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>kWh/mês = Potência (W) × Horas/dia × 30 / 1000; Custo/mês = kWh/mês × Tarifa (R$/kWh)</code></p>
+  <p>O cálculo converte a potência do seu setup de watts para kilowatts, multiplica pelas horas jogadas por dia e pelos 30 dias do mês, obtendo o consumo mensal em kWh. Em seguida, esse consumo é multiplicado pela tarifa de energia para gerar o custo mensal.</p>
+  <p>A potência real (valor selecionado) representa o consumo máximo do PC + monitor em carga. As horas por dia são informadas pelo usuário, assim como a tarifa da concessionária, que varia de acordo com a região e o plano contratado.</p>
+  <h2>Exemplo</h2>
+  <p>Um PC de 300 W, jogando 4 h por dia, com tarifa de R$ 0,95/kWh.</p>
+  <ol>
+    <li>kWh/mês = 300 W × 4 h × 30 / 1000 = 36 kWh</li>
+    <li>Custo/mês = 36 kWh × R$ 0,95 = R$ 34,20</li>
+    <li>Custo por hora de jogo = 300 W / 1000 × R$ 0,95 = R$ 0,29</li>
+  </ol>
+  <p><strong>O gasto mensal será aproximadamente R$ 34,20, ou R$ 0,29 por hora jogada.</strong></p>
+  <h2>Consumo mensal estimado</h2>
+  <table>
+    <thead><tr><th>Potência (W)</th><th>Consumo mensal (kWh) - 4 h/dia</th></tr></thead>
+    <tbody>
+      <tr><td>200</td><td>24,0</td></tr>
+      <tr><td>300</td><td>36,0</td></tr>
+      <tr><td>450</td><td>54,0</td></tr>
+      <tr><td>600</td><td>72,0</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>Use a potência real em carga (CPU + GPU), não a potência nominal da fonte.</li>
+    <li>A conta assume uso constante da potência máxima durante as horas de jogo; variações de carga reduzem o consumo real.</li>
+    <li>A tarifa pode mudar ao longo do mês; use o valor médio da sua conta para estimativas mais precisas.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Como saber a potência real do meu PC?</h3>
+  <p>Consulte o TDP da CPU e da GPU ou use um medidor de energia plugado na tomada para medir o consumo em carga.</p>
+  <h3>A conta inclui o consumo do monitor?</h3>
+  <p>Sim, a potência selecionada deve somar o consumo do PC e do monitor, já que ambos ficam ligados enquanto você joga.</p>
+  <h3>O cálculo considera o consumo em standby ou fora de jogo?</h3>
+  <p>Não. Ele calcula apenas o consumo durante as horas informadas de jogo. Consumo fora desse período deve ser adicionado separadamente.</p>
+  <h3>Por que o custo por hora de jogo parece baixo?</h3>
+  <p>O custo por hora reflete apenas a energia elétrica consumida, sem incluir custos de hardware, internet ou manutenção.</p>
+</section>
+<!-- /conteudo -->
+
   <details class="explicacao">
-    <summary>Como funciona</summary>
-    <p>Calcule o gasto mensal do PC gamer na conta de luz: potência real, horas de jogo por dia e tarifa. Grátis, sem cadastro.</p>
-    <p class="relacionadas">Veja também: <a href="../gasto-forno-eletrico/">Quanto Gasta um Forno Elétrico</a> · <a href="../gasto-chuveiro/">Quanto Gasta um Chuveiro Elétrico</a> · <a href="../gasto-liquidificador/">Quanto Gasta um Liquidificador</a></p>
-  </details>
+  <summary>Ferramentas relacionadas</summary>
+  <p class="relacionadas">Veja também: <a href="../gasto-forno-eletrico/">Quanto Gasta um Forno Elétrico</a> · <a href="../gasto-chuveiro/">Quanto Gasta um Chuveiro Elétrico</a> · <a href="../gasto-liquidificador/">Quanto Gasta um Liquidificador</a></p>
+</details>
 </main>
 <script src="../../config.js"></script>
 <script src="../../chrome.js"></script>

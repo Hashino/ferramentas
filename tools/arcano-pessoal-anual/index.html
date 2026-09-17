@@ -14,10 +14,10 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Arcano Pessoal Anual","url":"https://hashino.xyz/tools/arcano-pessoal-anual/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora grátis do Arcano Pessoal Anual (ano pessoal) do tarô."}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como funciona Calculadora de Arcano Pessoal Anual?","acceptedAnswer":{"@type":"Answer","text":"Descubra seu Arcano Pessoal Anual (ano pessoal do tarô) a partir do dia e mês de nascimento. Calculadora grátis, resultado na hora."}}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Arcano Pessoal Anual","item":"https://hashino.xyz/tools/arcano-pessoal-anual/"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Arcano Pessoal Anual","item":"https://hashino.xyz/tools/arcano-pessoal-anual/"}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como funciona a redução do número para ficar entre 1 e 22?", "acceptedAnswer": {"@type": "Answer", "text": "A função reduzir soma os dígitos do número resultante; se ainda for maior que 22, repete a soma até que o valor esteja entre 1 e 22."}}, {"@type": "Question", "name": "Posso usar a calculadora para anos futuros ou passados?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, basta inserir o ano desejado; o algoritmo funciona para qualquer ano entre 1900 e 2200."}}, {"@type": "Question", "name": "Por que o número 22 corresponde ao Louco e não ao 0?", "acceptedAnswer": {"@type": "Answer", "text": "No tarô tradicional, o Louco é numerado como 0, mas aqui ele foi incluído como 22 para fechar o ciclo de 22 arcanos principais."}}, {"@type": "Question", "name": "O que fazer se o resultado for um arcano que não conheço?", "acceptedAnswer": {"@type": "Answer", "text": "Procure o significado da carta em fontes de tarô confiáveis; cada arcano traz mensagens sobre desafios e oportunidades para o ano."}}]}
 </script>
 <meta name="google-adsense-account" content="ca-pub-1801908225638213">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
@@ -38,11 +38,53 @@
     <div class="resultado" id="resultado" hidden></div>
   </section>
   <div class="ad-slot"></div>
+<!-- conteudo:v1 -->
+<section class="conteudo">
+  <p class="intro">A calculadora de Arcano Pessoal Anual permite descobrir qual carta do tarô representa o seu ano pessoal, usando apenas dia, mês e o ano que você deseja analisar. É útil para quem acompanha a astrologia ou o tarô e quer um indicativo rápido e gratuito para orientar decisões ao longo do ano.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>arcano = reduzir(dia + mês + ano) onde reduzir soma os dígitos até resultar em número entre 1 e 22</code></p>
+  <p>O algoritmo soma o dia, o mês e o ano informados, obtendo um número inteiro. Em seguida, aplica a função reduzir, que soma os algarismos desse total repetidamente até que o resultado fique entre 1 e 22, que são os índices dos arcanos do tarô.</p>
+  <p>Os valores inseridos são simples: o dia (1-31) e o mês (1-12) da sua data de nascimento, e o ano que você quer analisar (geralmente o corrente). O cálculo não usa nenhum dado externo, apenas esses três números.</p>
+  <h2>Exemplo</h2>
+  <p>Nascimento em 14 de julho, analisando o ano de 2024</p>
+  <ol>
+    <li>Somar: 14 + 7 + 2024 = 2045</li>
+    <li>Reduzir: 2+0+4+5 = 11</li>
+    <li>Arcano correspondente ao número 11 é "A Força"</li>
+  </ol>
+  <p><strong>Ano pessoal de 2024: arcano 11 - A Força</strong></p>
+  <h2>Arcanos por número</h2>
+  <table>
+    <thead><tr><th>Número</th><th>Carta</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>O Mago</td></tr>
+      <tr><td>5</td><td>O Hierofante</td></tr>
+      <tr><td>10</td><td>A Roda da Fortuna</td></tr>
+      <tr><td>15</td><td>O Diabo</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>A data deve ser válida; dias como 31 de fevereiro não são aceitos.</li>
+    <li>O cálculo não considera fusos horários ou horário de nascimento; usa apenas dia, mês e ano.</li>
+    <li>O resultado é simbólico e não substitui orientação profissional em áreas como finanças ou saúde.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Como funciona a redução do número para ficar entre 1 e 22?</h3>
+  <p>A função reduzir soma os dígitos do número resultante; se ainda for maior que 22, repete a soma até que o valor esteja entre 1 e 22.</p>
+  <h3>Posso usar a calculadora para anos futuros ou passados?</h3>
+  <p>Sim, basta inserir o ano desejado; o algoritmo funciona para qualquer ano entre 1900 e 2200.</p>
+  <h3>Por que o número 22 corresponde ao Louco e não ao 0?</h3>
+  <p>No tarô tradicional, o Louco é numerado como 0, mas aqui ele foi incluído como 22 para fechar o ciclo de 22 arcanos principais.</p>
+  <h3>O que fazer se o resultado for um arcano que não conheço?</h3>
+  <p>Procure o significado da carta em fontes de tarô confiáveis; cada arcano traz mensagens sobre desafios e oportunidades para o ano.</p>
+</section>
+<!-- /conteudo -->
+
   <details class="explicacao">
-    <summary>Como funciona</summary>
-    <p>Descubra seu Arcano Pessoal Anual (ano pessoal do tarô) a partir do dia e mês de nascimento. Calculadora grátis, resultado na hora.</p>
-    <p class="relacionadas">Veja também: <a href="../arcano-pessoal-2026/">Calculadora de Arcano Pessoal 2026</a> · <a href="../calculadora-telhas/">Quantas Telhas por Metro Quadrado</a> · <a href="../tijolos-casa/">Quantos Tijolos para Construir uma Casa</a></p>
-  </details>
+  <summary>Ferramentas relacionadas</summary>
+  <p class="relacionadas">Veja também: <a href="../arcano-pessoal-2026/">Calculadora de Arcano Pessoal 2026</a> · <a href="../calculadora-telhas/">Quantas Telhas por Metro Quadrado</a> · <a href="../tijolos-casa/">Quantos Tijolos para Construir uma Casa</a></p>
+</details>
 </main>
 <script src="../../config.js"></script>
 <script src="../../chrome.js"></script>

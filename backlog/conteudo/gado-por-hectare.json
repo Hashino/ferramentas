@@ -1,0 +1,65 @@
+{
+ "intro": "Esta calculadora estima quantas cabeças de gado podem ser mantidas em um pasto, usando a área em hectares, a lotação (unidades animais por hectare) e o peso médio dos animais. É útil para produtores que precisam planejar a capacidade de lotação de suas pastagens antes de iniciar ou ajustar um rebanho.",
+ "formula": "cabeças = (hectares × UA/ha × 450) ÷ peso_médio_kg",
+ "como": [
+  "O cálculo multiplica a área do pasto pela lotação escolhida, obtendo o total de unidades animais (UA) que o terreno pode suportar em condições padrão de 450 kg de peso vivo por UA. Em seguida, divide-se esse total pelo peso médio informado para converter UA em número de cabeças reais.",
+  "A área (hectares) vem do tamanho do terreno. A lotação (UA/ha) reflete o manejo adotado: extensivo, manejado, rotacionado ou irrigado, cada um com produtividade típica. O peso médio (kg) representa o peso vivo esperado dos animais que compõem o rebanho."
+ ],
+ "exemplo": {
+  "cenario": "Um produtor tem 15 ha de pasto manejado (2 UA/ha) e pretende bovinos com peso médio de 500 kg.",
+  "passos": [
+   "UA total = 15 ha × 2 UA/ha = 30 UA",
+   "Peso total em UA = 30 UA × 450 kg = 13 500 kg",
+   "Cabeças = 13 500 kg ÷ 500 kg = 27 cabeças"
+  ],
+  "resultado": "O pasto comporta aproximadamente 27 cabeças de gado de 500 kg cada."
+ },
+ "tabela": {
+  "titulo": "Lotação típica por manejo",
+  "colunas": [
+   "Manejo",
+   "UA/ha"
+  ],
+  "linhas": [
+   [
+    "Extensivo sem manejo",
+    "1,0"
+   ],
+   [
+    "Pasto manejado",
+    "2,0"
+   ],
+   [
+    "Piqueteira / rotacionado",
+    "3,5"
+   ],
+   [
+    "Irrigado / alto desempenho",
+    "6,0"
+   ]
+  ]
+ },
+ "cuidados": [
+  "A lotação real varia com a qualidade da pastagem, fertilidade do solo e estação do ano.",
+  "Peso médio estimado deve refletir o peso vivo dos animais no momento da avaliação; desvios podem alterar a contagem final.",
+  "A fórmula assume 450 kg de peso vivo por UA, valor padrão que pode não se aplicar a sistemas de produção intensiva ou extensiva muito diferentes."
+ ],
+ "faq": [
+  {
+   "p": "Como escolher a lotação correta para meu pasto?",
+   "r": "Use a lotação que corresponde ao manejo que você aplica: extensivo sem manejo, manejado, rotacionado ou irrigado. Cada categoria tem uma UA/ha típica, mas ajuste conforme a produtividade observada na sua propriedade."
+  },
+  {
+   "p": "Posso usar a calculadora para outras espécies, como ovinos?",
+   "r": "A fórmula pode ser adaptada, mas o fator de 450 kg por UA é específico para bovinos. Para ovinos, substitua esse valor pela produção média de peso vivo por unidade animal da espécie."
+  },
+  {
+   "p": "O que fazer se o resultado for muito baixo para o meu rebanho atual?",
+   "r": "Reavalie a qualidade da pastagem, considere suplementação ou manejo rotacionado, ou ajuste a lotação escolhida para refletir práticas mais intensivas."
+  },
+  {
+   "p": "A calculadora considera a variação de peso ao longo do ano?",
+   "r": "Não. O peso médio inserido deve ser uma estimativa representativa do período de avaliação. Para análises sazonais, repita o cálculo com pesos médios diferentes."
+  }
+ ]
+}

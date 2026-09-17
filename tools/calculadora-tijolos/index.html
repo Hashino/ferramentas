@@ -14,10 +14,10 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de tijolos por metro quadrado","url":"https://hashino.xyz/tools/calculadora-tijolos/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quantos tijolos por metro quadrado."}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como funciona Quantos Tijolos por Metro Quadrado?","acceptedAnswer":{"@type":"Answer","text":"Calcule quantos tijolos você precisa por metro quadrado ou pela área da parede: baiano, 9 furos, bloco ou tijolinho. Grátis."}}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de tijolos por metro quadrado","item":"https://hashino.xyz/tools/calculadora-tijolos/"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de tijolos por metro quadrado","item":"https://hashino.xyz/tools/calculadora-tijolos/"}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como calcular a perda de material na prática?", "acceptedAnswer": {"@type": "Answer", "text": "Observe quantas peças quebram ou são cortadas durante a obra e estime um percentual (geralmente entre 5 % e 15 %). Use esse valor no campo perda para garantir margem."}}, {"@type": "Question", "name": "Posso usar a mesma calculadora para paredes internas e externas?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, a fórmula é a mesma; apenas ajuste a taxa de perda se o material for mais suscetível a danos na obra externa."}}, {"@type": "Question", "name": "Qual a diferença entre tijolo baiano e tijolinho ecológico?", "acceptedAnswer": {"@type": "Answer", "text": "Ambos têm dimensões semelhantes, por isso a contagem por m² é quase igual. O tijolinho ecológico costuma ser mais leve e pode exigir menos argamassa."}}, {"@type": "Question", "name": "Se a parede tem inclinação, como faço o cálculo?", "acceptedAnswer": {"@type": "Answer", "text": "Meça a superfície real da parede (incluindo a inclinação) em metros quadrados e use esse valor no campo área. O cálculo permanece válido."}}]}
 </script>
 <meta name="google-adsense-account" content="ca-pub-1801908225638213">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
@@ -46,11 +46,53 @@
     <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
   </section>
   <div class="ad-slot"></div>
+<!-- conteudo:v1 -->
+<section class="conteudo">
+  <p class="intro">Esta calculadora ajuda quem vai construir ou reformar a determinar a quantidade de tijolos ou blocos necessária para cobrir a área de uma parede, considerando o tipo de peça e a perda esperada. É útil para pedreiros, arquitetos e proprietários que precisam comprar o material correto sem sobras ou faltas.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>total = unidadesPorM2 × áreaDaParede × (1 + perda %/100)</code></p>
+  <p>Primeiro informe quantas unidades de tijolo ou bloco cabem em um metro quadrado - o campo já vem preenchido com valores padrão para os tipos mais comuns. Depois indique a área da parede em metros quadrados e, se desejar, a porcentagem de perda que costuma ocorrer por quebras ou cortes. Ao clicar em Calcular, o script multiplica esses valores e arredonda para cima, apresentando o número de peças necessárias.</p>
+  <p>Os números que você digita vêm de três fontes: o valor padrão de unidades por m² (por exemplo, 76 tijolos baianos), a medida da superfície que será alvençada (em m²) e a taxa de perda que você estima (em %). A taxa de perda é opcional; se deixada em zero, o cálculo considera apenas a quantidade exata sem margem.</p>
+  <h2>Exemplo</h2>
+  <p>Uma parede de 12 m² usando tijolo baiano, com 10 % de perda.</p>
+  <ol>
+    <li>unidadesPorM2 = 76</li>
+    <li>total = 76 × 12 × (1 + 10/100) = 76 × 12 × 1,10</li>
+    <li>total ≈ 1003,2 → arredondado para 1004 tijolos</li>
+  </ol>
+  <p><strong>Serão necessários 1 004 tijolos baianos para a parede.</strong></p>
+  <h2>Unidades típicas por m²</h2>
+  <table>
+    <thead><tr><th>Tipo</th><th>Unidades / m²</th></tr></thead>
+    <tbody>
+      <tr><td>Tijolo baiano (meia vez)</td><td>≈ 76</td></tr>
+      <tr><td>Tijolo cerâmico 9 furos 19×19</td><td>≈ 25</td></tr>
+      <tr><td>Bloco de concreto 14×19×39</td><td>≈ 12,5</td></tr>
+      <tr><td>Tijolinho ecológico</td><td>≈ 76</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>A perda estimada varia conforme a qualidade do material e o cuidado na obra; ajuste o percentual conforme sua experiência.</li>
+    <li>A contagem padrão assume junta de 1 cm já incluída; se usar juntas maiores, aumente as unidades por m².</li>
+    <li>Para paredes com aberturas (portas, janelas) subtraia a área dessas aberturas antes de calcular.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Como calcular a perda de material na prática?</h3>
+  <p>Observe quantas peças quebram ou são cortadas durante a obra e estime um percentual (geralmente entre 5 % e 15 %). Use esse valor no campo perda para garantir margem.</p>
+  <h3>Posso usar a mesma calculadora para paredes internas e externas?</h3>
+  <p>Sim, a fórmula é a mesma; apenas ajuste a taxa de perda se o material for mais suscetível a danos na obra externa.</p>
+  <h3>Qual a diferença entre tijolo baiano e tijolinho ecológico?</h3>
+  <p>Ambos têm dimensões semelhantes, por isso a contagem por m² é quase igual. O tijolinho ecológico costuma ser mais leve e pode exigir menos argamassa.</p>
+  <h3>Se a parede tem inclinação, como faço o cálculo?</h3>
+  <p>Meça a superfície real da parede (incluindo a inclinação) em metros quadrados e use esse valor no campo área. O cálculo permanece válido.</p>
+</section>
+<!-- /conteudo -->
+
   <details class="explicacao">
-    <summary>Como funciona</summary>
-    <p>Calcule quantos tijolos você precisa por metro quadrado ou pela área da parede: baiano, 9 furos, bloco ou tijolinho. Grátis.</p>
-    <p class="relacionadas">Veja também: <a href="../calculadora-telhas/">Quantas Telhas por Metro Quadrado</a> · <a href="../cloro-piscina/">Quantos Litros de Cloro para Piscina</a> · <a href="../cafe-por-pessoa/">Quanto de Café por Pessoa</a></p>
-  </details>
+  <summary>Ferramentas relacionadas</summary>
+  <p class="relacionadas">Veja também: <a href="../calculadora-telhas/">Quantas Telhas por Metro Quadrado</a> · <a href="../cloro-piscina/">Quantos Litros de Cloro para Piscina</a> · <a href="../cafe-por-pessoa/">Quanto de Café por Pessoa</a></p>
+</details>
 </main>
 <script src="../../config.js"></script>
 <script src="../../chrome.js"></script>

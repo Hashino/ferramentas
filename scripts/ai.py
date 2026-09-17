@@ -71,7 +71,8 @@ class SemIA(RuntimeError):
 
 
 def perguntar(prompt: str, *, sistema: str = "", json_mode: bool = False,
-              robusto: bool = False, tentativas: int = 6) -> str:
+              robusto: bool = False, tentativas: int = 6,
+              max_tokens: int = 1500) -> str:
     cfg = _config()
     base = cfg.get("LEARNIVE_API_BASE_URL")
     key = cfg.get("LEARNIVE_API_KEY")
@@ -99,7 +100,7 @@ def perguntar(prompt: str, *, sistema: str = "", json_mode: bool = False,
             "model": modelo,
             "messages": msgs,
             "temperature": 0,
-            "max_tokens": 1500,
+            "max_tokens": max_tokens,
             "reasoning_effort": "low",  # senão a resposta vaza pro canal reasoning
         }
         if json_mode:
@@ -146,8 +147,10 @@ def perguntar(prompt: str, *, sistema: str = "", json_mode: bool = False,
     raise SemIA(f"esgotou {tentativas} tentativas; último erro: {ultimo}")
 
 
-def perguntar_json(prompt: str, *, sistema: str = "", robusto: bool = False) -> dict:
-    txt = perguntar(prompt, sistema=sistema, json_mode=True, robusto=robusto)
+def perguntar_json(prompt: str, *, sistema: str = "", robusto: bool = False,
+                   max_tokens: int = 1500) -> dict:
+    txt = perguntar(prompt, sistema=sistema, json_mode=True, robusto=robusto,
+                    max_tokens=max_tokens)
     txt = txt.strip()
     if txt.startswith("```"):  # alguns modelos free embrulham em cerca markdown
         txt = txt.split("```")[1].lstrip("json").strip()

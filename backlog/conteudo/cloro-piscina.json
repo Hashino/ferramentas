@@ -1,0 +1,65 @@
+{
+ "intro": "Esta calculadora indica a quantidade de cloro granulado necessária para manter ou desinfetar a água da sua piscina, seja para a dose diária de manutenção ou para um choque de limpeza. É útil para proprietários de piscinas residenciais que precisam dos valores corretos sem adivinhar.",
+ "formula": "dose (g) = (volume (L) / 1000) × dosePorM3 (g/m³)",
+ "como": [
+  "Primeiro o usuário informa o volume da piscina em litros. O script converte esse valor para metros cúbicos dividindo por 1 000. Em seguida multiplica o volume em m³ pela dose recomendada (2 g/m³ para manutenção ou 15 g/m³ para choque) e exibe o total em gramas.",
+  "A dose por metro cúbico vem de recomendações de fabricantes de cloro granulado: cerca de 2 g para manter o nível de cloro livre entre 1 e 3 ppm diariamente, e 15 g para um tratamento de choque que eleva rapidamente a concentração e elimina contaminantes."
+ ],
+ "exemplo": {
+  "cenario": "Piscina de 30 000 L, usando cloro de manutenção diária.",
+  "passos": [
+   "Convertendo: 30 000 L ÷ 1 000 = 30 m³",
+   "Multiplicando: 30 m³ × 2 g/m³ = 60 g",
+   "Resultado: 60 g de cloro por dia"
+  ],
+  "resultado": "Para 30 000 L, a dose diária de manutenção é de 60 g de cloro granulado."
+ },
+ "tabela": {
+  "titulo": "Doses típicas de cloro por volume",
+  "colunas": [
+   "Volume da piscina",
+   "Manutenção (g)"
+  ],
+  "linhas": [
+   [
+    "10 m³ (10 000 L)",
+    "≈ 20 g"
+   ],
+   [
+    "20 m³ (20 000 L)",
+    "≈ 40 g"
+   ],
+   [
+    "30 m³ (30 000 L)",
+    "≈ 60 g"
+   ],
+   [
+    "40 m³ (40 000 L)",
+    "≈ 80 g"
+   ]
+  ]
+ },
+ "cuidados": [
+  "A dose diária assume água bem filtrada; se a filtragem for insuficiente aumente a dose em até 20 %.",
+  "Não exceda 15 g/m³ em um único choque, pois pode causar irritação ocular e danos ao revestimento.",
+  "Sempre dissolva o cloro granulado em um balde com água antes de distribuir na piscina para evitar acúmulo de grânulos."
+ ],
+ "faq": [
+  {
+   "p": "Quanto cloro devo usar se a piscina tem muita sujeira?",
+   "r": "Para água muito suja, faça um choque usando 15 g/m³. Depois, retome a dose diária de 2 g/m³ nos dias seguintes."
+  },
+  {
+   "p": "Posso usar cloro líquido em vez de granulado?",
+   "r": "Sim, mas a concentração é diferente. Consulte a embalagem do cloro líquido para converter a dose em mililitros equivalentes."
+  },
+  {
+   "p": "Qual a frequência ideal para aplicar o choque?",
+   "r": "O choque pode ser feito a cada 2 a 4 semanas, ou sempre que a água ficar turva, houver aumento de uso ou após fortes chuvas."
+  },
+  {
+   "p": "O que fazer se o nível de cloro ficar acima de 5 ppm?",
+   "r": "Reduza a dose diária, aumente a ventilação da piscina e deixe a água circular por mais tempo até que o nível volte ao intervalo ideal de 1 a 3 ppm."
+  }
+ ]
+}

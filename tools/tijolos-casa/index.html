@@ -14,10 +14,10 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"Estimativa de tijolos para construir uma casa","url":"https://hashino.xyz/tools/tijolos-casa/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Estimativa de quantos tijolos para construir uma casa."}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como funciona Quantos Tijolos para Construir uma Casa?","acceptedAnswer":{"@type":"Answer","text":"Estime quantos tijolos são necessários para construir uma casa pelo tamanho em m² e tipo de parede. Grátis, sem cadastro."}}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Estimativa de tijolos para construir uma casa","item":"https://hashino.xyz/tools/tijolos-casa/"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Estimativa de tijolos para construir uma casa","item":"https://hashino.xyz/tools/tijolos-casa/"}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como escolher o fator de parede correto?", "acceptedAnswer": {"@type": "Answer", "text": "Multiplique a altura média dos cômodos pelo perímetro interno e subtraia áreas de portas e janelas. Valores entre 1,5 e 2,5 são comuns para residências padrão."}}, {"@type": "Question", "name": "Por que acrescentar 10 % de perda?", "acceptedAnswer": {"@type": "Answer", "text": "É a margem típica para compensar quebras, cortes e peças defeituosas durante a obra, evitando falta de material no meio do trabalho."}}, {"@type": "Question", "name": "Posso usar a mesma conta para paredes de alvenaria estrutural?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, mas verifique se o tipo de bloco escolhido corresponde ao projeto estrutural e ajuste o fator de parede se houver paredes mais espessas."}}, {"@type": "Question", "name": "A calculadora considera paredes internas e externas?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, o fator de parede já engloba ambas as superfícies, mas se houver diferenças significativas (por exemplo, paredes externas com isolamento), ajuste o fator ou faça contas separadas."}}]}
 </script>
 <meta name="google-adsense-account" content="ca-pub-1801908225638213">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
@@ -43,11 +43,53 @@
     <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
   </section>
   <div class="ad-slot"></div>
+<!-- conteudo:v1 -->
+<section class="conteudo">
+  <p class="intro">Esta calculadora ajuda quem está projetando ou reformando uma casa a estimar a quantidade de tijolos ou blocos necessária, evitando falta de material ou excesso de compra. É útil para proprietários, pedreiros e arquitetos que precisam de um número aproximado antes de solicitar orçamento.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>total = área (m²) × fator (m² de parede por m² de casa) × unidades por m² × 1,10</code></p>
+  <p>Primeiro o programa multiplica a área construída pelo fator de parede, que indica quantos metros quadrados de parede são gerados por metro quadrado de área útil, considerando aberturas e pé-direito. Em seguida, aplica a taxa de unidades por metro quadrado do tipo de tijolo escolhido e acrescenta 10 % para perdas de corte e quebras, arredondando para cima.</p>
+  <p>Os valores inseridos são: a área da casa em metros quadrados, o fator de parede (geralmente entre 1,5 e 3,0) e o tipo de alvenaria, que define quantas unidades são necessárias por metro quadrado - 76 para tijolo baiano furado, 25 para cerâmico 9 furos e 12,5 para bloco de concreto.</p>
+  <h2>Exemplo</h2>
+  <p>Casa de 80 m², parede padrão e tijolo baiano furado.</p>
+  <ol>
+    <li>80 m² × 2,5 = 200 m² de parede</li>
+    <li>200 m² × 76 un/m² = 15 200 unidades</li>
+    <li>15 200 × 1,10 ≈ 16 720 tijolos (arredondado)</li>
+  </ol>
+  <p><strong>A estimativa é de aproximadamente 16 720 tijolos baianos.</strong></p>
+  <h2>Tipos de alvenaria e consumo típico</h2>
+  <table>
+    <thead><tr><th>Tipo</th><th>Unidades por m²</th></tr></thead>
+    <tbody>
+      <tr><td>Tijolo baiano furado</td><td>≈ 76</td></tr>
+      <tr><td>Tijolo cerâmico 9 furos (19×19 mm)</td><td>≈ 25</td></tr>
+      <tr><td>Bloco de concreto 14×19×39 mm</td><td>≈ 12,5</td></tr>
+      <tr><td>Fator de parede (m² de parede / m² de casa)</td><td>1,5 - 3,0</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>O fator de parede varia com o projeto; use valores maiores para casas com pé-direito alto ou muitas aberturas.</li>
+    <li>A perda de 10 % é uma estimativa; quebras excessivas ou cortes especiais podem exigir acréscimo.</li>
+    <li>A conta considera apenas paredes externas e internas sem revestimentos especiais; revestimentos ou acabamentos podem mudar o consumo.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Como escolher o fator de parede correto?</h3>
+  <p>Multiplique a altura média dos cômodos pelo perímetro interno e subtraia áreas de portas e janelas. Valores entre 1,5 e 2,5 são comuns para residências padrão.</p>
+  <h3>Por que acrescentar 10 % de perda?</h3>
+  <p>É a margem típica para compensar quebras, cortes e peças defeituosas durante a obra, evitando falta de material no meio do trabalho.</p>
+  <h3>Posso usar a mesma conta para paredes de alvenaria estrutural?</h3>
+  <p>Sim, mas verifique se o tipo de bloco escolhido corresponde ao projeto estrutural e ajuste o fator de parede se houver paredes mais espessas.</p>
+  <h3>A calculadora considera paredes internas e externas?</h3>
+  <p>Sim, o fator de parede já engloba ambas as superfícies, mas se houver diferenças significativas (por exemplo, paredes externas com isolamento), ajuste o fator ou faça contas separadas.</p>
+</section>
+<!-- /conteudo -->
+
   <details class="explicacao">
-    <summary>Como funciona</summary>
-    <p>Estime quantos tijolos são necessários para construir uma casa pelo tamanho em m² e tipo de parede. Grátis, sem cadastro.</p>
-    <p class="relacionadas">Veja também: <a href="../arcano-pessoal-2026/">Calculadora de Arcano Pessoal 2026</a> · <a href="../calculadora-telhas/">Quantas Telhas por Metro Quadrado</a> · <a href="../cloro-piscina/">Quantos Litros de Cloro para Piscina</a></p>
-  </details>
+  <summary>Ferramentas relacionadas</summary>
+  <p class="relacionadas">Veja também: <a href="../arcano-pessoal-2026/">Calculadora de Arcano Pessoal 2026</a> · <a href="../calculadora-telhas/">Quantas Telhas por Metro Quadrado</a> · <a href="../cloro-piscina/">Quantos Litros de Cloro para Piscina</a></p>
+</details>
 </main>
 <script src="../../config.js"></script>
 <script src="../../chrome.js"></script>

@@ -1,0 +1,65 @@
+{
+ "intro": "Esta calculadora ajuda quem vai construir ou reformar a determinar a quantidade de tijolos ou blocos necessária para cobrir a área de uma parede, considerando o tipo de peça e a perda esperada. É útil para pedreiros, arquitetos e proprietários que precisam comprar o material correto sem sobras ou faltas.",
+ "formula": "total = unidadesPorM2 × áreaDaParede × (1 + perda %/100)",
+ "como": [
+  "Primeiro informe quantas unidades de tijolo ou bloco cabem em um metro quadrado - o campo já vem preenchido com valores padrão para os tipos mais comuns. Depois indique a área da parede em metros quadrados e, se desejar, a porcentagem de perda que costuma ocorrer por quebras ou cortes. Ao clicar em Calcular, o script multiplica esses valores e arredonda para cima, apresentando o número de peças necessárias.",
+  "Os números que você digita vêm de três fontes: o valor padrão de unidades por m² (por exemplo, 76 tijolos baianos), a medida da superfície que será alvençada (em m²) e a taxa de perda que você estima (em %). A taxa de perda é opcional; se deixada em zero, o cálculo considera apenas a quantidade exata sem margem."
+ ],
+ "exemplo": {
+  "cenario": "Uma parede de 12 m² usando tijolo baiano, com 10 % de perda.",
+  "passos": [
+   "unidadesPorM2 = 76",
+   "total = 76 × 12 × (1 + 10/100) = 76 × 12 × 1,10",
+   "total ≈ 1003,2 → arredondado para 1004 tijolos"
+  ],
+  "resultado": "Serão necessários 1 004 tijolos baianos para a parede."
+ },
+ "tabela": {
+  "titulo": "Unidades típicas por m²",
+  "colunas": [
+   "Tipo",
+   "Unidades / m²"
+  ],
+  "linhas": [
+   [
+    "Tijolo baiano (meia vez)",
+    "≈ 76"
+   ],
+   [
+    "Tijolo cerâmico 9 furos 19×19",
+    "≈ 25"
+   ],
+   [
+    "Bloco de concreto 14×19×39",
+    "≈ 12,5"
+   ],
+   [
+    "Tijolinho ecológico",
+    "≈ 76"
+   ]
+  ]
+ },
+ "cuidados": [
+  "A perda estimada varia conforme a qualidade do material e o cuidado na obra; ajuste o percentual conforme sua experiência.",
+  "A contagem padrão assume junta de 1 cm já incluída; se usar juntas maiores, aumente as unidades por m².",
+  "Para paredes com aberturas (portas, janelas) subtraia a área dessas aberturas antes de calcular."
+ ],
+ "faq": [
+  {
+   "p": "Como calcular a perda de material na prática?",
+   "r": "Observe quantas peças quebram ou são cortadas durante a obra e estime um percentual (geralmente entre 5 % e 15 %). Use esse valor no campo perda para garantir margem."
+  },
+  {
+   "p": "Posso usar a mesma calculadora para paredes internas e externas?",
+   "r": "Sim, a fórmula é a mesma; apenas ajuste a taxa de perda se o material for mais suscetível a danos na obra externa."
+  },
+  {
+   "p": "Qual a diferença entre tijolo baiano e tijolinho ecológico?",
+   "r": "Ambos têm dimensões semelhantes, por isso a contagem por m² é quase igual. O tijolinho ecológico costuma ser mais leve e pode exigir menos argamassa."
+  },
+  {
+   "p": "Se a parede tem inclinação, como faço o cálculo?",
+   "r": "Meça a superfície real da parede (incluindo a inclinação) em metros quadrados e use esse valor no campo área. O cálculo permanece válido."
+  }
+ ]
+}

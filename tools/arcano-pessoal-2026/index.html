@@ -14,10 +14,10 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Arcano Pessoal 2026","url":"https://hashino.xyz/tools/arcano-pessoal-2026/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Descubra seu arcano pessoal de 2026 pela data de nascimento."}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como funciona Calculadora de Arcano Pessoal 2026?","acceptedAnswer":{"@type":"Answer","text":"Descubra seu arcano pessoal de 2026 (o ano pessoal do tarô) pela sua data de nascimento. Grátis, resultado na hora."}}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Arcano Pessoal 2026","item":"https://hashino.xyz/tools/arcano-pessoal-2026/"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Arcano Pessoal 2026","item":"https://hashino.xyz/tools/arcano-pessoal-2026/"}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como funciona a redução de números acima de 22?", "acceptedAnswer": {"@type": "Answer", "text": "A função \"reduzir\" soma os dígitos do número até que o resultado fique entre 1 e 22. Por exemplo, 2047 vira 2+0+4+7=13."}}, {"@type": "Question", "name": "Posso usar a calculadora para outro ano além de 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, basta alterar o campo \"Ano do ano pessoal\" para o ano desejado, respeitando o intervalo de 1900 a 2200."}}, {"@type": "Question", "name": "O que significa o arcano obtido?", "acceptedAnswer": {"@type": "Answer", "text": "Cada arcano tem um significado tradicional no tarô; você pode consultar livros ou sites de tarô para interpretar o símbolo associado ao número."}}, {"@type": "Question", "name": "Por que o arcano 22 aparece como \"O Louco\"?", "acceptedAnswer": {"@type": "Answer", "text": "No tarô, o número 22 representa o Louco, que costuma ser numerado como 0 ou 22 dependendo da tradição. Aqui ele está incluído como 22."}}]}
 </script>
 <meta name="google-adsense-account" content="ca-pub-1801908225638213">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
@@ -37,11 +37,53 @@
     <div id="resultado" class="resultado"></div>
   </section>
   <div class="ad-slot"></div>
+<!-- conteudo:v1 -->
+<section class="conteudo">
+  <p class="intro">A Calculadora de Arcano Pessoal 2026 permite que você descubra, em segundos, qual arcano do tarô representa o seu ano pessoal de 2026. É útil para quem acompanha a simbologia dos arcanos e quer usar essa informação como referência para decisões ou reflexões ao longo do ano.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>Arcano = reduzir(Dia + Mês + Ano), onde reduzir soma os dígitos até que o resultado esteja entre 1 e 22</code></p>
+  <p>O cálculo soma o dia, o mês e o ano que você informou e, se o total ultrapassar 22, soma novamente os dígitos desse total. O processo se repete até que o número fique entre 1 e 22, que são os arcanos do tarô.</p>
+  <p>Os valores inseridos são o dia (1-31) e o mês (1-12) da sua data de nascimento, além do ano que você quer analisar - neste caso, 2026 já vem preenchido. Cada número entra diretamente na soma inicial.</p>
+  <h2>Exemplo</h2>
+  <p>Nascida em 14 de julho, quer saber o arcano para 2026</p>
+  <ol>
+    <li>Somar 14 (dia) + 7 (mês) + 2026 (ano) = 2047</li>
+    <li>Reduzir 2047: 2+0+4+7 = 13 (já está entre 1 e 22)</li>
+    <li>Arcano 13 corresponde a "A Morte"</li>
+  </ol>
+  <p><strong>Arcano pessoal de 2026: o arcano 13 - A Morte.</strong></p>
+  <h2>Arcanos e seus números</h2>
+  <table>
+    <thead><tr><th>Número</th><th>Arcano</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>O Mago</td></tr>
+      <tr><td>5</td><td>O Hierofante</td></tr>
+      <tr><td>10</td><td>A Roda da Fortuna</td></tr>
+      <tr><td>15</td><td>O Diabo</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>A data deve ser válida; dias como 31 de fevereiro não são aceitos.</li>
+    <li>O cálculo não considera anos bissextos nem ajustes de calendário; usa apenas a soma simples.</li>
+    <li>O resultado é simbólico e não substitui orientação profissional em áreas como finanças ou saúde.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Como funciona a redução de números acima de 22?</h3>
+  <p>A função "reduzir" soma os dígitos do número até que o resultado fique entre 1 e 22. Por exemplo, 2047 vira 2+0+4+7=13.</p>
+  <h3>Posso usar a calculadora para outro ano além de 2026?</h3>
+  <p>Sim, basta alterar o campo "Ano do ano pessoal" para o ano desejado, respeitando o intervalo de 1900 a 2200.</p>
+  <h3>O que significa o arcano obtido?</h3>
+  <p>Cada arcano tem um significado tradicional no tarô; você pode consultar livros ou sites de tarô para interpretar o símbolo associado ao número.</p>
+  <h3>Por que o arcano 22 aparece como "O Louco"?</h3>
+  <p>No tarô, o número 22 representa o Louco, que costuma ser numerado como 0 ou 22 dependendo da tradição. Aqui ele está incluído como 22.</p>
+</section>
+<!-- /conteudo -->
+
   <details class="explicacao">
-    <summary>Como funciona</summary>
-    <p>Descubra seu arcano pessoal de 2026 (o ano pessoal do tarô) pela sua data de nascimento. Grátis, resultado na hora.</p>
-    <p class="relacionadas">Veja também: <a href="../arcano-pessoal-anual/">Calculadora de Arcano Pessoal Anual</a> · <a href="../gasto-pc-gamer/">Quanto Gasta um PC Gamer</a> · <a href="../gado-por-hectare/">Quantas Cabeças de Gado por Hectare</a></p>
-  </details>
+  <summary>Ferramentas relacionadas</summary>
+  <p class="relacionadas">Veja também: <a href="../arcano-pessoal-anual/">Calculadora de Arcano Pessoal Anual</a> · <a href="../gasto-pc-gamer/">Quanto Gasta um PC Gamer</a> · <a href="../gado-por-hectare/">Quantas Cabeças de Gado por Hectare</a></p>
+</details>
 </main>
 <script src="../../config.js"></script>
 <script src="../../chrome.js"></script>

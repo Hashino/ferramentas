@@ -1,0 +1,64 @@
+{
+ "intro": "Esta calculadora ajuda quem está planejando construir ou reformar uma casa a estimar quantos sacos de cimento de 50 kg serão necessários, seja apenas para as paredes ou para a obra completa, evitando falta de material ou excesso de compra.",
+ "formula": "sacos = área (m²) × fator (sacos/m²)",
+ "como": [
+  "A conta multiplica a área construída informada pelo fator escolhido, que representa a quantidade média de sacos de cimento necessária por metro quadrado. O resultado é arredondado para o número inteiro mais próximo e apresentado com uma margem de variação de ±15 % para cobrir diferenças de traço, espessura e desperdício.",
+  "O usuário fornece dois dados: a área total da casa em metros quadrados e o escopo da obra. O escopo determina o fator multiplicador - aproximadamente 1,5 saco/m² para paredes apenas ou 5 sacos/m² para obra completa, valores baseados em práticas comuns de alvenaria, contrapiso, reboco e assentamento de piso."
+ ],
+ "exemplo": {
+  "cenario": "Uma casa de 120 m² com obra completa",
+  "passos": [
+   "120 m² × 5,0 saco/m² = 600 sacos",
+   "Aplicar margem de ±15 %: 600 × 0,85 = 510 sacos e 600 × 1,15 = 690 sacos"
+  ],
+  "resultado": "Serão necessários aproximadamente 600 sacos de cimento, variando entre 510 e 690 sacos dependendo do traço e perdas."
+ },
+ "tabela": {
+  "titulo": "Fatores típicos de consumo de cimento",
+  "colunas": [
+   "Escopo",
+   "Fator (sacos/m²)"
+  ],
+  "linhas": [
+   [
+    "Só paredes (alvenaria)",
+    "1,5"
+   ],
+   [
+    "Obra completa (alvenaria, contrapiso, reboco e piso)",
+    "5,0"
+   ],
+   [
+    "Paredes com revestimento interno",
+    "1,8"
+   ],
+   [
+    "Paredes externas com isolamento",
+    "2,0"
+   ]
+  ]
+ },
+ "cuidados": [
+  "A estimativa considera sacos de 50 kg; sacos de outro peso exigem ajuste proporcional.",
+  "A margem de ±15 % cobre variações de traço, espessura da camada e perdas, mas projetos com requisitos especiais podem precisar de ajustes maiores.",
+  "A área informada deve incluir todas as superfícies que receberão alvenaria; áreas não cobertas (como aberturas) reduzem o consumo real."
+ ],
+ "faq": [
+  {
+   "p": "Quantos sacos de cimento preciso para uma casa de 80 m² só com paredes?",
+   "r": "Multiplique 80 m² por 1,5 saco/m², obtendo 120 sacos. Considere a margem de ±15 % para possíveis perdas, resultando entre 102 e 138 sacos."
+  },
+  {
+   "p": "Por que a calculadora usa 5 sacos/m² para obra completa?",
+   "r": "Esse fator reúne o consumo típico de cimento para alvenaria, contrapiso, reboco e assentamento de piso, baseado em práticas de construção residencial padrão no Brasil."
+  },
+  {
+   "p": "Posso usar a mesma conta para cimento de 40 kg?",
+   "r": "Sim, basta ajustar o fator proporcionalmente. Um saco de 40 kg corresponde a 0,8 do peso de um saco de 50 kg, então divida o número de sacos de 50 kg por 1,25."
+  },
+  {
+   "p": "A margem de ±15 % é suficiente para obras com muito desperdício?",
+   "r": "Em obras com alto desperdício ou traços especiais, a margem pode ser maior. Avalie o histórico da sua equipe ou adicione um percentual extra ao resultado final."
+  }
+ ]
+}

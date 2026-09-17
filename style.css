@@ -288,6 +288,55 @@ a:hover { color: var(--link-hover); }
 }
 .explicacao .relacionadas a { color: var(--link); margin-right: 0.4rem; }
 
+.hub-intro {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--muted);
+  margin: 0 0 1.25rem;
+}
+
+/* Conteúdo de apoio (scripts/conteudo.py): VISÍVEL por padrão — é ele que faz
+   a página valer a visita sem clicar em calcular. Não colapsar. */
+.conteudo {
+  margin-top: 2rem;
+  line-height: 1.65;
+}
+.conteudo .intro { font-size: 1rem; }
+.conteudo h2 {
+  font-size: 1.05rem;
+  color: var(--accent);
+  margin: 1.8rem 0 0.5rem;
+}
+.conteudo h3 {
+  font-size: 0.95rem;
+  margin: 1.1rem 0 0.3rem;
+}
+.conteudo p, .conteudo li { font-size: 0.95rem; }
+.conteudo .formula code {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border, rgba(127,127,127,.3));
+  border-radius: 0.4rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+}
+.conteudo table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 1rem;
+  display: block;
+  overflow-x: auto;
+}
+.conteudo th, .conteudo td {
+  text-align: left;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--border, rgba(127,127,127,.25));
+}
+.conteudo th { color: var(--muted); font-weight: 600; }
+.conteudo ol, .conteudo ul { padding-left: 1.2rem; }
+.conteudo ol li, .conteudo ul li { margin: 0.3rem 0; }
+
 footer {
   position: relative;
   z-index: 1;

@@ -14,10 +14,10 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de telhas por metro quadrado","url":"https://hashino.xyz/tools/calculadora-telhas/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quantas telhas por metro quadrado."}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como funciona Quantas Telhas por Metro Quadrado?","acceptedAnswer":{"@type":"Answer","text":"Calcule quantas telhas para o seu telhado: colonial, portuguesa ou fibrocimento, pela área em m², com perda. Grátis, sem cadastro."}}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de telhas por metro quadrado","item":"https://hashino.xyz/tools/calculadora-telhas/"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de telhas por metro quadrado","item":"https://hashino.xyz/tools/calculadora-telhas/"}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como calcular a área do telhado se ele tem duas águas?", "acceptedAnswer": {"@type": "Answer", "text": "Meça o comprimento e a largura de cada plano inclinado, multiplique e some os resultados. Use a projeção horizontal se quiser simplificar, mas acrescente 10 % a 30 % ao total para compensar a inclinação."}}, {"@type": "Question", "name": "Por que a calculadora arredonda para cima?", "acceptedAnswer": {"@type": "Answer", "text": "Arredondar para cima garante que você não fique sem telhas durante a obra, evitando atrasos e compras de última hora."}}, {"@type": "Question", "name": "Posso usar a mesma porcentagem de perda para todos os tipos de telha?", "acceptedAnswer": {"@type": "Answer", "text": "A porcentagem de perda pode ser semelhante, mas telhas mais frágeis, como cerâmica, costumam exigir um percentual ligeiramente maior que chapas de fibrocimento."}}, {"@type": "Question", "name": "A calculadora considera o recorte das telhas nas bordas?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, a margem de perda inclui recortes, quebras e sobras nas bordas. Ajuste o percentual se souber que o recorte será maior ou menor."}}]}
 </script>
 <meta name="google-adsense-account" content="ca-pub-1801908225638213">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
@@ -46,11 +46,53 @@
     <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
   </section>
   <div class="ad-slot"></div>
+<!-- conteudo:v1 -->
+<section class="conteudo">
+  <p class="intro">Esta calculadora ajuda quem vai instalar ou reformar um telhado a estimar a quantidade de telhas necessária, considerando o tipo de telha, a área do telhado e uma margem de perda. É útil para proprietários, pedreiros e arquitetos que precisam comprar o material com antecedência e evitar faltas ou excessos.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>unidades = unidadesPorM2 × área(m²) × (1 + perda %/100)</code></p>
+  <p>Primeiro, informe quantas telhas são recomendadas por metro quadrado para o tipo escolhido; o campo pode ser ajustado se houver variação no fornecedor. Depois, indique a área total do telhado em metros quadrados e a porcentagem de perda esperada, que cobre quebras, cortes e sobras. O cálculo multiplica esses três valores e arredonda para cima, garantindo que você tenha telhas suficientes.</p>
+  <p>O número de unidades por m² vem da especificação do fabricante (por exemplo, 16 telhas por m² para colonial). A área do telhado é medida no plano horizontal, sem considerar a inclinação. A perda percentual é uma estimativa prática, geralmente entre 5 % e 15 %, para compensar danos durante a obra.</p>
+  <h2>Exemplo</h2>
+  <p>Um telhado de 120 m² usando telhas coloniais, com 5 % de perda.</p>
+  <ol>
+    <li>unidadesPorM2 = 16</li>
+    <li>total = 16 × 120 × (1 + 5/100)</li>
+    <li>total = 16 × 120 × 1,05 = 2016</li>
+  </ol>
+  <p><strong>Serão necessárias 2 016 telhas coloniais.</strong></p>
+  <h2>Tipos de telha e consumo típico</h2>
+  <table>
+    <thead><tr><th>Tipo</th><th>Unidades por m²</th></tr></thead>
+    <tbody>
+      <tr><td>Colonial cerâmica</td><td>≈ 16</td></tr>
+      <tr><td>Portuguesa cerâmica</td><td>≈ 16,5</td></tr>
+      <tr><td>Romana cerâmica</td><td>≈ 45</td></tr>
+      <tr><td>Fibrocimento (chapa 2,44×1,10 m)</td><td>≈ 0,37</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>A área considerada deve ser a projeção horizontal; inclinações elevadas aumentam o consumo real.</li>
+    <li>A perda percentual varia conforme a qualidade da telha e a experiência da equipe; ajuste conforme o histórico da obra.</li>
+    <li>Para telhas de fibrocimento, verifique o espaçamento entre chapas, pois o consumo pode mudar se houver sobreposição.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Como calcular a área do telhado se ele tem duas águas?</h3>
+  <p>Meça o comprimento e a largura de cada plano inclinado, multiplique e some os resultados. Use a projeção horizontal se quiser simplificar, mas acrescente 10 % a 30 % ao total para compensar a inclinação.</p>
+  <h3>Por que a calculadora arredonda para cima?</h3>
+  <p>Arredondar para cima garante que você não fique sem telhas durante a obra, evitando atrasos e compras de última hora.</p>
+  <h3>Posso usar a mesma porcentagem de perda para todos os tipos de telha?</h3>
+  <p>A porcentagem de perda pode ser semelhante, mas telhas mais frágeis, como cerâmica, costumam exigir um percentual ligeiramente maior que chapas de fibrocimento.</p>
+  <h3>A calculadora considera o recorte das telhas nas bordas?</h3>
+  <p>Sim, a margem de perda inclui recortes, quebras e sobras nas bordas. Ajuste o percentual se souber que o recorte será maior ou menor.</p>
+</section>
+<!-- /conteudo -->
+
   <details class="explicacao">
-    <summary>Como funciona</summary>
-    <p>Calcule quantas telhas para o seu telhado: colonial, portuguesa ou fibrocimento, pela área em m², com perda. Grátis, sem cadastro.</p>
-    <p class="relacionadas">Veja também: <a href="../calculadora-tijolos/">Quantos Tijolos por Metro Quadrado</a> · <a href="../arcano-pessoal-anual/">Calculadora de Arcano Pessoal Anual</a> · <a href="../cloro-piscina/">Quantos Litros de Cloro para Piscina</a></p>
-  </details>
+  <summary>Ferramentas relacionadas</summary>
+  <p class="relacionadas">Veja também: <a href="../calculadora-tijolos/">Quantos Tijolos por Metro Quadrado</a> · <a href="../arcano-pessoal-anual/">Calculadora de Arcano Pessoal Anual</a> · <a href="../cloro-piscina/">Quantos Litros de Cloro para Piscina</a></p>
+</details>
 </main>
 <script src="../../config.js"></script>
 <script src="../../chrome.js"></script>

@@ -1,0 +1,65 @@
+{
+ "intro": "Esta calculadora ajuda quem está projetando ou reformando uma casa a estimar a quantidade de blocos de concreto ou cerâmicos necessária, evitando falta de material ou excesso de compra. É útil para pedreiros, arquitetos e proprietários que precisam planejar o orçamento da obra de forma rápida e prática.",
+ "formula": "total = área × fator × unidadesPorM2 × 1,10",
+ "como": [
+  "Primeiro o usuário informa a área construída da casa em metros quadrados e o fator de parede, que indica quantos metros quadrados de parede são gerados por metro quadrado de área útil. O cálculo multiplica esses dois valores para obter a metragem total de parede, depois aplica a taxa de blocos por metro quadrado do tipo escolhido e acrescenta 10 % de perda por quebras e cortes.",
+  "O número de blocos por metro quadrado (unidadesPorM2) vem de tabelas de fabricantes: blocos de concreto 14×19×39 ou 9×19×39 exigem cerca de 12,5 unidades por m², enquanto blocos cerâmicos 19×19×39 exigem aproximadamente 25 unidades por m². O fator de parede varia conforme o layout da casa, altura dos cômodos e presença de aberturas."
+ ],
+ "exemplo": {
+  "cenario": "Casa de 120 m², usando bloco de concreto 14×19×39, com fator de parede 2,8.",
+  "passos": [
+   "paredes = 120 m² × 2,8 = 336 m²",
+   "blocos sem perda = 336 m² × 12,5 un/m² = 4 200 blocos",
+   "total com perda = 4 200 × 1,10 ≈ 4 620 blocos"
+  ],
+  "resultado": "A estimativa é de aproximadamente 4 620 blocos."
+ },
+ "tabela": {
+  "titulo": "Tipos de bloco e consumo típico",
+  "colunas": [
+   "Tipo de bloco",
+   "Unidades por m²"
+  ],
+  "linhas": [
+   [
+    "Concreto 14×19×39",
+    "12,5"
+   ],
+   [
+    "Concreto 9×19×39",
+    "12,5"
+   ],
+   [
+    "Cerâmico 19×19×39",
+    "25"
+   ],
+   [
+    "Fator de parede típico",
+    "1,5 - 3,0"
+   ]
+  ]
+ },
+ "cuidados": [
+  "O fator de parede pode ser maior em casas com muitos cômodos pequenos ou paredes internas, e menor em projetos com grandes áreas abertas.",
+  "A perda de 10 % cobre quebras e cortes, mas obras com muito recorte ou reaproveitamento podem precisar de ajuste.",
+  "A estimativa não inclui blocos para fundação, pilares ou revestimentos especiais; apenas paredes externas e internas padrão."
+ ],
+ "faq": [
+  {
+   "p": "Como calcular o fator de parede para minha casa?",
+   "r": "Multiplique a área total da casa pela altura média dos cômodos (geralmente 2,5 m) e divida pelo número de metros quadrados de parede que você espera construir. Valores entre 1,5 e 3,0 são comuns."
+  },
+  {
+   "p": "Por que o cálculo adiciona 10 % de perda?",
+   "r": "Durante a obra blocos podem quebrar, ser cortados para encaixe ou ficar sobras. O acréscimo de 10 % cobre essas perdas sem precisar de compras adicionais."
+  },
+  {
+   "p": "Posso usar a mesma estimativa para blocos de barro?",
+   "r": "Sim, mas o consumo por metro quadrado é diferente. Para blocos cerâmicos típicos use 25 unidades por m², conforme a tabela."
+  },
+  {
+   "p": "A calculadora considera aberturas como portas e janelas?",
+   "r": "Não. As aberturas reduzem a metragem de parede efetiva. Subtraia a área das aberturas do total de parede antes de aplicar o consumo de blocos."
+  }
+ ]
+}

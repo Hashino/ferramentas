@@ -1,0 +1,65 @@
+{
+ "intro": "Esta calculadora estima quanto você gasta na conta de luz ao usar seu PC gamer. É útil para quem quer entender o impacto financeiro de jogar diariamente e comparar diferentes configurações ou tarifas de energia.",
+ "formula": "kWh/mês = Potência (W) × Horas/dia × 30 / 1000; Custo/mês = kWh/mês × Tarifa (R$/kWh)",
+ "como": [
+  "O cálculo converte a potência do seu setup de watts para kilowatts, multiplica pelas horas jogadas por dia e pelos 30 dias do mês, obtendo o consumo mensal em kWh. Em seguida, esse consumo é multiplicado pela tarifa de energia para gerar o custo mensal.",
+  "A potência real (valor selecionado) representa o consumo máximo do PC + monitor em carga. As horas por dia são informadas pelo usuário, assim como a tarifa da concessionária, que varia de acordo com a região e o plano contratado."
+ ],
+ "exemplo": {
+  "cenario": "Um PC de 300 W, jogando 4 h por dia, com tarifa de R$ 0,95/kWh.",
+  "passos": [
+   "kWh/mês = 300 W × 4 h × 30 / 1000 = 36 kWh",
+   "Custo/mês = 36 kWh × R$ 0,95 = R$ 34,20",
+   "Custo por hora de jogo = 300 W / 1000 × R$ 0,95 = R$ 0,29"
+  ],
+  "resultado": "O gasto mensal será aproximadamente R$ 34,20, ou R$ 0,29 por hora jogada."
+ },
+ "tabela": {
+  "titulo": "Consumo mensal estimado",
+  "colunas": [
+   "Potência (W)",
+   "Consumo mensal (kWh) - 4 h/dia"
+  ],
+  "linhas": [
+   [
+    "200",
+    "24,0"
+   ],
+   [
+    "300",
+    "36,0"
+   ],
+   [
+    "450",
+    "54,0"
+   ],
+   [
+    "600",
+    "72,0"
+   ]
+  ]
+ },
+ "cuidados": [
+  "Use a potência real em carga (CPU + GPU), não a potência nominal da fonte.",
+  "A conta assume uso constante da potência máxima durante as horas de jogo; variações de carga reduzem o consumo real.",
+  "A tarifa pode mudar ao longo do mês; use o valor médio da sua conta para estimativas mais precisas."
+ ],
+ "faq": [
+  {
+   "p": "Como saber a potência real do meu PC?",
+   "r": "Consulte o TDP da CPU e da GPU ou use um medidor de energia plugado na tomada para medir o consumo em carga."
+  },
+  {
+   "p": "A conta inclui o consumo do monitor?",
+   "r": "Sim, a potência selecionada deve somar o consumo do PC e do monitor, já que ambos ficam ligados enquanto você joga."
+  },
+  {
+   "p": "O cálculo considera o consumo em standby ou fora de jogo?",
+   "r": "Não. Ele calcula apenas o consumo durante as horas informadas de jogo. Consumo fora desse período deve ser adicionado separadamente."
+  },
+  {
+   "p": "Por que o custo por hora de jogo parece baixo?",
+   "r": "O custo por hora reflete apenas a energia elétrica consumida, sem incluir custos de hardware, internet ou manutenção."
+  }
+ ]
+}

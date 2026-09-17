@@ -14,10 +14,10 @@
 {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de galinhas poedeiras por m²","url":"https://hashino.xyz/tools/galinhas-por-m2/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calculadora de quantas galinhas poedeiras por m²."}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como funciona Quantas Galinhas Poedeiras por m²?","acceptedAnswer":{"@type":"Answer","text":"Calcule quantas galinhas poedeiras cabem por metro quadrado ou no galpão inteiro: caipira, semi-confinamento ou gaiola. Grátis."}}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de galinhas poedeiras por m²","item":"https://hashino.xyz/tools/galinhas-por-m2/"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de galinhas poedeiras por m²","item":"https://hashino.xyz/tools/galinhas-por-m2/"}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quantas galinhas poedeiras posso colocar em um galpão de 50 m²?", "acceptedAnswer": {"@type": "Answer", "text": "Depende do sistema de criação. No modelo caipira cabem cerca de 100-150 aves, no semi-confinamento cerca de 200 e no intensivo até 300, usando as densidades padrão."}}, {"@type": "Question", "name": "A densidade de 6 aves/m² para galpão intensivo é segura?", "acceptedAnswer": {"@type": "Answer", "text": "É uma referência para sistemas bem ventilados, com iluminação adequada e manejo profissional. Se o galpão não atender a esses requisitos, reduza a densidade."}}, {"@type": "Question", "name": "Posso misturar sistemas, por exemplo, parte caipira e parte intensivo no mesmo galpão?", "acceptedAnswer": {"@type": "Answer", "text": "É possível, mas cada área deve ser calculada separadamente com a densidade correspondente, garantindo que as aves de cada segmento tenham espaço adequado."}}, {"@type": "Question", "name": "Como ajustar a densidade se o clima está muito quente?", "acceptedAnswer": {"@type": "Answer", "text": "Em climas quentes aumente a ventilação e considere reduzir a densidade em até 20 % para evitar estresse térmico e queda na postura."}}]}
 </script>
 <meta name="google-adsense-account" content="ca-pub-1801908225638213">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
@@ -41,11 +41,51 @@
     <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
   </section>
   <div class="ad-slot"></div>
+<!-- conteudo:v1 -->
+<section class="conteudo">
+  <p class="intro">Esta calculadora ajuda produtores rurais e criadores de galinhas poedeiras a definir quantas aves podem ser alojadas em um espaço disponível, considerando o sistema de criação escolhido. É útil para quem planeja montar ou ajustar um galpão, evitando superlotação que compromete a saúde e a produção das aves.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>total de galinhas = área (m²) × densidade (aves/m²)</code></p>
+  <p>O cálculo multiplica a área informada pelo número de aves permitido por metro quadrado para o sistema selecionado. O resultado é arredondado para o número inteiro mais próximo, pois não se pode ter fração de ave. O campo de detalhe mostra a operação passo a passo e lembra que exceder o limite pode estressar as aves e reduzir a postura.</p>
+  <p>Os valores de densidade vêm de recomendações práticas: 2-3 aves/m² para criação caipira (solta), 4 aves/m² para semi-confinamento com poleiros e 6 aves/m² para galpões intensivos. O usuário fornece apenas a área em metros quadrados e escolhe o sistema, que define a densidade usada no cálculo.</p>
+  <h2>Exemplo</h2>
+  <p>Um criador tem 25 m² e quer usar o sistema semi-confinamento com poleiros (4 aves/m²).</p>
+  <ol>
+    <li>25 m² × 4 aves/m² = 100</li>
+    <li>Arredonda para 100 aves</li>
+  </ol>
+  <p><strong>O galpão comporta aproximadamente 100 galinhas poedeiras.</strong></p>
+  <h2>Densidade típica por sistema</h2>
+  <table>
+    <thead><tr><th>Sistema</th><th>Aves por m²</th></tr></thead>
+    <tbody>
+      <tr><td>Caipira / solta</td><td>2-3</td></tr>
+      <tr><td>Semi-confinamento com poleiros</td><td>4</td></tr>
+      <tr><td>Galpão intensivo</td><td>6</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>A densidade indicada é uma faixa recomendada; condições climáticas, ventilação e manejo podem exigir redução.</li>
+    <li>A conta não considera espaço para comedouros, bebedouros ou corredores de limpeza, que ocupam parte da área total.</li>
+    <li>Superlotação aumenta risco de doenças, estresse e queda na produção de ovos; sempre respeite o limite máximo recomendado.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Quantas galinhas poedeiras posso colocar em um galpão de 50 m²?</h3>
+  <p>Depende do sistema de criação. No modelo caipira cabem cerca de 100-150 aves, no semi-confinamento cerca de 200 e no intensivo até 300, usando as densidades padrão.</p>
+  <h3>A densidade de 6 aves/m² para galpão intensivo é segura?</h3>
+  <p>É uma referência para sistemas bem ventilados, com iluminação adequada e manejo profissional. Se o galpão não atender a esses requisitos, reduza a densidade.</p>
+  <h3>Posso misturar sistemas, por exemplo, parte caipira e parte intensivo no mesmo galpão?</h3>
+  <p>É possível, mas cada área deve ser calculada separadamente com a densidade correspondente, garantindo que as aves de cada segmento tenham espaço adequado.</p>
+  <h3>Como ajustar a densidade se o clima está muito quente?</h3>
+  <p>Em climas quentes aumente a ventilação e considere reduzir a densidade em até 20 % para evitar estresse térmico e queda na postura.</p>
+</section>
+<!-- /conteudo -->
+
   <details class="explicacao">
-    <summary>Como funciona</summary>
-    <p>Calcule quantas galinhas poedeiras cabem por metro quadrado ou no galpão inteiro: caipira, semi-confinamento ou gaiola. Grátis.</p>
-    <p class="relacionadas">Veja também: <a href="../gado-por-hectare/">Quantas Cabeças de Gado por Hectare</a> · <a href="../arcano-pessoal-anual/">Calculadora de Arcano Pessoal Anual</a> · <a href="../cimento-casa/">Quantos Sacos de Cimento para Construir uma Casa</a></p>
-  </details>
+  <summary>Ferramentas relacionadas</summary>
+  <p class="relacionadas">Veja também: <a href="../gado-por-hectare/">Quantas Cabeças de Gado por Hectare</a> · <a href="../arcano-pessoal-anual/">Calculadora de Arcano Pessoal Anual</a> · <a href="../cimento-casa/">Quantos Sacos de Cimento para Construir uma Casa</a></p>
+</details>
 </main>
 <script src="../../config.js"></script>
 <script src="../../chrome.js"></script>
