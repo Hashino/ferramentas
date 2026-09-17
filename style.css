@@ -270,16 +270,11 @@ a:hover { color: var(--link-hover); }
 }
 .ad-slot { margin: 1.5rem 0; min-height: 0; }
 
-/* Explicação/SEO: colapsado por padrão — some visualmente até o usuário clicar. */
-.explicacao { margin-top: 1rem; }
-.explicacao summary {
-  cursor: pointer;
-  color: var(--muted);
-  font-size: 0.88rem;
-  padding: 0.4rem 0;
-  user-select: none;
+/* Links relacionados: visíveis, direto na página. */
+.explicacao {
+  display: block;
+  margin-top: 1.5rem;
 }
-.explicacao summary:hover { color: var(--accent); }
 .explicacao p {
   font-size: 0.9rem;
   color: var(--muted);

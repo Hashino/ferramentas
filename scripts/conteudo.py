@@ -45,7 +45,7 @@ APP_RE = re.compile(r'<section class="app">(.*?)</section>', re.S)
 JS_RE = re.compile(r"<script>\n(.*?)</script>\s*</body>", re.S)
 FAQ_RE = re.compile(r'<script type="application/ld\+json">\s*\{"@context":"https://schema\.org",'
                     r'"@type":"FAQPage".*?</script>\s*', re.S)
-DETAILS_RE = re.compile(r'<details class="explicacao">.*?</details>', re.S)
+DETAILS_RE = re.compile(r'<(details|nav) class="explicacao">.*?</\\1>', re.S)
 REL_RE = re.compile(r'<p class="relacionadas">.*?</p>', re.S)
 # casa qualquer versão do marcador: re-renderizar uma página antiga é só
 # trocar a MARCADOR acima (o texto vem do cache, sem gastar chamada de IA).
@@ -216,12 +216,12 @@ def aplica(slug, dados, c):
     txt = FAQ_RE.sub("", txt)
     txt = txt.replace('<meta name="google-adsense-account"',
                       faq_jsonld(c) + '<meta name="google-adsense-account"', 1)
-    # 2. o <details> guarda só os links relacionados; o texto agora é visível
+    # 2. os links relacionados ficam visíveis, fora de qualquer <details>
     det = DETAILS_RE.search(txt)
     if det:
         rel = REL_RE.search(det.group(0))
-        novo = ('<details class="explicacao">\n  <summary>Ferramentas relacionadas</summary>\n  '
-                + (rel.group(0) if rel else "") + "\n</details>") if rel else ""
+        novo = ('<nav class="explicacao">\n  '
+                + (rel.group(0) if rel else "") + "\n</nav>") if rel else ""
         txt = txt.replace(det.group(0), novo)
     # 3. a seção de conteúdo entra logo depois do anúncio
     txt = SECAO_RE.sub("", txt)

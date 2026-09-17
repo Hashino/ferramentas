@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Backfill retroativo: insere <details class="explicacao"> (texto SEO + links
+"""Backfill retroativo: insere <nav class="explicacao"> (links
 relacionados, colapsado por padrão), FAQPage JSON-LD e data-footer em todo
 tools/*/index.html que ainda não tem. Idempotente — rodar de novo não duplica.
 
@@ -118,12 +118,12 @@ def aplicar(nome: str, meta: dict, tools: dict, buckets: dict) -> str | None:
     if 'class="explicacao"' not in txt:
         rel_slugs = relacionadas(nome, tools, buckets)
         rel_html = montar_related_html(rel_slugs, tools)
+        # visível, direto na página: o "como funciona" mora na seção do
+        # conteudo.py, aqui ficam só os links (17/09/2026, decisão do dono).
         bloco = (
-            '  <details class="explicacao">\n'
-            "    <summary>Como funciona</summary>\n"
-            f"    <p>{how_text_html}</p>\n"
+            '  <nav class="explicacao">\n'
             f'    <p class="relacionadas">Veja também: {rel_html}</p>\n'
-            "  </details>\n"
+            "  </nav>\n"
         )
         if "</main>" in txt:
             txt = txt.replace("</main>", bloco + "</main>", 1)

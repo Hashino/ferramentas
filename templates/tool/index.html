@@ -6,7 +6,7 @@
   runtime por chrome.js — nunca escreva topnav/stars/footer no HTML da ferramenta.
   Regras: vanilla JS sem dependências; funciona offline; design permanece só-a-ferramenta.
 
-  NÃO adicione <details>/FAQPage/data-footer aqui manualmente — isso é responsabilidade
+  NÃO adicione links relacionados/FAQPage/data-footer aqui manualmente — isso é responsabilidade
   de scripts/backfill_explicacao.py, que roda como passo obrigatório da pipeline (depois
   de criar os arquivos da leva, antes do build.py) e insere tudo isso reaproveitando a
   própria {{DESCRIPTION}} de cada ferramenta. É idempotente: rodar de novo não duplica.
