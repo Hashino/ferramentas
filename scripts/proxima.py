@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Diz qual ferramenta construir agora. Um comando, uma resposta.
 
-    python3 scripts/proxima.py
+    python3 scripts/proxima.py            # uma keyword
+    python3 scripts/proxima.py --n 10     # uma fila de 10, num só passe
 
 Faz sozinho tudo que exige julgamento e rede: abastece o backlog se estiver
 seco, busca a SERP das candidatas, e roda a triagem por IA (é ferramenta
@@ -57,7 +58,8 @@ def _linhas() -> list[list[str]]:
     return [l.split(",") for l in CSV.read_text(encoding="utf-8").splitlines()[1:] if l.strip()]
 
 
-def main() -> None:
+def main(quantas: int = 1) -> None:
+    aprovados: list[str] = []
     serp = json.loads(SERP_PATH.read_text(encoding="utf-8")) if SERP_PATH.exists() else {}
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
     existentes = {d.name for d in TOOLS_DIR.iterdir() if d.is_dir()}
@@ -90,12 +92,22 @@ def main() -> None:
             print(f"KEYWORD: {kw}")
             print(f"SLUG: {slug}")
             print(f"MOTIVO: {r['motivo']}")
-            return
+            aprovados.append(slug)
+            # a ferramenta ainda não existe no disco; sem isto o mesmo slug
+            # sairia de novo na fila do mesmo passe.
+            existentes.add(slug)
+            if len(aprovados) >= quantas:
+                return
 
+    if aprovados:
+        return
     print(f"NENHUMA: {testadas} candidatas testadas, nenhuma aprovada. "
           "Rode `python3 scripts/mine.py matrix 5` e `python3 scripts/mine.py check 30` "
           "para trazer keywords novas, depois tente de novo.")
 
 
 if __name__ == "__main__":
-    main()
+    n = 1
+    if "--n" in sys.argv:
+        n = int(sys.argv[sys.argv.index("--n") + 1])
+    main(n)
