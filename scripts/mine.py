@@ -238,7 +238,15 @@ def matrix(n_dominios: int) -> None:
 
 
 # ── check: SERP + ingestão de relatedSearches/PAA ────────────────────────────
-def check(limite: int) -> None:
+def check(limite: int, filtro: str = "") -> None:
+    """`filtro` casa com a keyword OU com a origem (ex.: "matrix:imc").
+
+    Sem filtro a fila sai em ordem alfabética e, com 3.000 candidatas, isso
+    significa gastar crédito para sempre dentro de "calculadora de ..." —
+    justamente a família mais saturada. Descoberto em 18/09/2026: dois `check`
+    seguidos não saíram do bloco financeiro enquanto domínios recém-minerados
+    (imc, calorias, água por dia) seguiam sem SERP.
+    """
     api = _ler_dotenv()
     if not api:
         sys.exit("erro: SERPER_API_KEY ausente (.env ou ambiente)")
@@ -263,9 +271,11 @@ def check(limite: int) -> None:
             meta["status"] = "descartada"
             cortadas += 1
 
+    f = filtro.lower()
     pendentes = [
         kw for kw, meta in sorted(rows.items())
         if meta["status"] == "candidata" and kw not in serp
+        and (not f or f in kw.lower() or f in meta.get("origem", "").lower())
     ][:limite]
 
     if cortadas:
@@ -417,7 +427,8 @@ if __name__ == "__main__":
     modo = args[0] if args and not args[0].isdigit() else "harvest"
     n = int(args[1]) if len(args) > 1 else (int(args[0]) if args and args[0].isdigit() else 30)
     if modo in {"--check", "check"}:
-        check(n)
+        filtro = args[args.index("--filtro") + 1] if "--filtro" in args else ""
+        check(n, filtro)
     elif modo == "matrix":
         matrix(n)
     elif modo == "deep":
