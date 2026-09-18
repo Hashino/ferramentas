@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto rende o grafiato por metro quadrado | Calculadora</title>
+<meta name="description" content="Descubra quantos baldes de grafiato a sua área pede: escolha o grão, informe os metros quadrados e veja o consumo em kg por m² e o selador.">
+<link rel="canonical" href="https://hashino.xyz/tools/rende-grafiato-metro-quadrado/">
+<meta property="og:title" content="Quanto rende o grafiato por metro quadrado | Calculadora">
+<meta property="og:description" content="Descubra quantos baldes de grafiato a sua área pede: escolha o grão, informe os metros quadrados e veja o consumo em kg por m² e o selador.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/rende-grafiato-metro-quadrado/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Grafiato por Metro Quadrado","url":"https://hashino.xyz/tools/rende-grafiato-metro-quadrado/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Descubra quantos baldes de grafiato a sua área pede: escolha o grão, informe os metros quadrados e veja o consumo em kg por m² e o selador."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Grafiato por Metro Quadrado","item":"https://hashino.xyz/tools/rende-grafiato-metro-quadrado/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quantos metros quadrados rende um balde de 25 kg de grafiato?", "acceptedAnswer": {"@type": "Answer", "text": "Com grão médio o rendimento típico fica em torno de 7 m² por balde, o que dá cerca de 3,6 kg por metro quadrado. Grãos finos rendem mais e grãos grossos rendem menos; a ficha técnica do produto traz o valor exato."}}, {"@type": "Question", "name": "Grafiato precisa de selador antes?", "acceptedAnswer": {"@type": "Answer", "text": "Na prática sim, principalmente sobre reboco novo. O selador uniformiza a absorção da parede, evita que ela roube água do produto e ajuda o grafiato a render o que a embalagem promete."}}, {"@type": "Question", "name": "Por que o grafiato rende menos que a textura lisa?", "acceptedAnswer": {"@type": "Answer", "text": "Porque o grão exige uma camada mais espessa para poder ser riscado pela desempenadeira. Quanto mais grosso o grão, maior a espessura mínima e maior o consumo por metro quadrado."}}, {"@type": "Question", "name": "Grafiato leva quantas demãos?", "acceptedAnswer": {"@type": "Answer", "text": "É aplicado em camada única, puxada até o grão riscar. O que muda o consumo não é a quantidade de demãos, e sim a espessura da camada e o grão escolhido."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Quanto rende o grafiato por metro quadrado</h1>
+  <section class="app">
+    <label for="area">&Aacute;rea a grafiatar (m&sup2;)</label>
+    <input type="number" id="area" step="0.1" min="0" value="40">
+    <label for="grao">Gr&atilde;o do grafiato</label>
+    <select id="grao">
+      <option value="9">Fino (gr&atilde;o 9) &mdash; 9 m&sup2; por balde de 25 kg</option>
+      <option value="7" selected>M&eacute;dio (gr&atilde;o 14) &mdash; 7 m&sup2; por balde de 25 kg</option>
+      <option value="5.5">Grosso (gr&atilde;o 18) &mdash; 5,5 m&sup2; por balde de 25 kg</option>
+      <option value="0">Outro (informar abaixo)</option>
+    </select>
+    <label for="rend">Rendimento por balde de 25 kg (m&sup2;)</label>
+    <input type="number" id="rend" step="0.5" min="0.5" value="7">
+    <label for="selador">Selador antes do grafiato</label>
+    <select id="selador">
+      <option value="1" selected>Sim, com selador</option>
+      <option value="0">N&atilde;o</option>
+    </select>
+    <label for="preco">Pre&ccedil;o do balde de 25 kg (R$, opcional)</label>
+    <input type="number" id="preco" step="0.01" min="0" value="">
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">O grafiato rende menos do que a maioria das texturas porque o grão puxa material, e o rendimento cai conforme o grão engrossa. Esta página converte a sua metragem em baldes de 25 kg, mostra o consumo em quilos por metro quadrado e ainda estima o selador de fundo.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>baldes = arredonda para cima (área / rendimento do grão); consumo = 25 kg / rendimento; selador = área x 0,4 kg/m²</code></p>
+  <p>A conta divide a área pelo rendimento correspondente ao grão escolhido e arredonda para cima, porque a loja vende o balde inteiro. O consumo por metro quadrado é o peso da embalagem dividido pelo rendimento, número útil para comparar marcas que vendem em baldes de tamanhos diferentes. O campo de rendimento continua editável para quem tem a ficha técnica do produto em mãos.</p>
+  <p>A área é a das paredes que vão receber grafiato, já descontados os vãos. O grão define a textura final e o consumo: quanto mais grosso o grão, menos metros o balde cobre. O selador é calculado à parte porque é outro produto, aplicado antes para uniformizar a absorção da parede.</p>
+  <h2>Exemplo</h2>
+  <p>Fachada de 40 m² com grafiato de grão médio, rendimento de 7 m² por balde de 25 kg, com selador.</p>
+  <ol>
+    <li>Baldes: 40 / 7 = 5,71, arredondado para cima dá 6 baldes.</li>
+    <li>Peso total: 6 x 25 = 150 kg.</li>
+    <li>Consumo: 25 / 7 = 3,57 kg por m².</li>
+    <li>Selador: 40 x 0,4 = 16 kg.</li>
+  </ol>
+  <p><strong>São 6 baldes de 25 kg de grafiato, mais cerca de 16 kg de selador, e a última embalagem ainda cobriria 2 m².</strong></p>
+  <h2>Rendimento e consumo por grão</h2>
+  <table>
+    <thead><tr><th>Grão</th><th>Rendimento por balde de 25 kg</th><th>Consumo por m²</th></tr></thead>
+    <tbody>
+      <tr><td>Fino</td><td>9 m²</td><td>2,78 kg</td></tr>
+      <tr><td>Médio</td><td>7 m²</td><td>3,57 kg</td></tr>
+      <tr><td>Grosso</td><td>5,5 m²</td><td>4,55 kg</td></tr>
+      <tr><td>Definido pela ficha técnica</td><td>campo editável</td><td>25 kg dividido pelo rendimento</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>Os rendimentos por grão são valores típicos de mercado usados como ponto de partida. O da sua embalagem manda: se a ficha técnica trouxer outro número, troque no campo de rendimento.</li>
+    <li>O consumo do selador, de 0,4 kg por m², também é uma referência. Parede muito absorvente ou reboco novo puxa mais.</li>
+    <li>Aplicação com desempenadeira pesada, mão firme ou grão puxado em excesso aumenta o consumo acima do previsto pelo fabricante.</li>
+    <li>A conta cobre grafiato e selador. Andaime, fita, lona de proteção e mão de obra ficam de fora.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Quantos metros quadrados rende um balde de 25 kg de grafiato?</h3>
+  <p>Com grão médio o rendimento típico fica em torno de 7 m² por balde, o que dá cerca de 3,6 kg por metro quadrado. Grãos finos rendem mais e grãos grossos rendem menos; a ficha técnica do produto traz o valor exato.</p>
+  <h3>Grafiato precisa de selador antes?</h3>
+  <p>Na prática sim, principalmente sobre reboco novo. O selador uniformiza a absorção da parede, evita que ela roube água do produto e ajuda o grafiato a render o que a embalagem promete.</p>
+  <h3>Por que o grafiato rende menos que a textura lisa?</h3>
+  <p>Porque o grão exige uma camada mais espessa para poder ser riscado pela desempenadeira. Quanto mais grosso o grão, maior a espessura mínima e maior o consumo por metro quadrado.</p>
+  <h3>Grafiato leva quantas demãos?</h3>
+  <p>É aplicado em camada única, puxada até o grão riscar. O que muda o consumo não é a quantidade de demãos, e sim a espessura da camada e o grão escolhido.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../rende-textura-metro-quadrado/">Quanto rende a textura por metro quadrado</a> · <a href="../calculadora-telhas/">Quantas Telhas por Metro Quadrado</a> · <a href="../cafe-por-pessoa/">Quanto de Café por Pessoa</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+const els = ["area","grao","rend","selador","preco"].map(id => document.getElementById(id));
+const res = document.getElementById("resultado");
+const det = document.getElementById("detalhe");
+const real = n => n.toLocaleString("pt-BR", {style: "currency", currency: "BRL"});
+const num = (n, c) => n.toLocaleString("pt-BR", {minimumFractionDigits: c, maximumFractionDigits: c});
+
+const BALDE = 25;            // kg
+const SELADOR_KG_M2 = 0.4;   // consumo típico do selador de fundo, kg/m²
+
+function calcular() {
+  const area = parseFloat(els[0].value);
+  const grao = parseFloat(els[1].value);
+  const selador = els[3].value === "1";
+  const preco = parseFloat(els[4].value);
+  if (grao > 0 && parseFloat(els[2].value) !== grao) els[2].value = grao;
+  const rend = parseFloat(els[2].value);
+  if (!isFinite(area) || area <= 0 || !isFinite(rend) || rend <= 0) {
+    res.hidden = true; det.textContent = ""; return;
+  }
+
+  const baldes = Math.ceil(area / rend);
+  const kg = baldes * BALDE;
+  const consumo = BALDE / rend;            // kg por m²
+  const sobra = baldes * rend - area;      // m² que a última embalagem ainda cobriria
+
+  const linhas = [
+    "Consumo nesse grão: " + num(consumo, 2) + " kg por m²",
+    "Baldes de 25 kg: " + baldes + " (" + num(kg, 0) + " kg)",
+    "A última embalagem ainda cobriria " + num(sobra, 1) + " m²"
+  ];
+  if (selador) {
+    const kgSel = area * SELADOR_KG_M2;
+    linhas.push("", "Selador de fundo: " + num(kgSel, 1) + " kg (0,4 kg/m²) antes da textura");
+  }
+  if (isFinite(preco) && preco > 0) {
+    linhas.push("", "Custo do grafiato: " + real(baldes * preco),
+                "Custo por m²: " + real(baldes * preco / area));
+  }
+
+  res.hidden = false;
+  res.textContent = baldes + " balde" + (baldes > 1 ? "s" : "") + " de 25 kg para " + num(area, 1) + " m²";
+  det.textContent = linhas.join("\n");
+}
+
+for (const el of els) { el.addEventListener("input", calcular); el.addEventListener("change", calcular); }
+calcular();
+</script>
+</body>
+</html>

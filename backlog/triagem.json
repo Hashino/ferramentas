@@ -3182,5 +3182,797 @@
   "ia_overview": false,
   "regex": "REPROVA",
   "v": 4
+ },
+ "como fazer a conta de quanto vale a hora extra": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como saber quanto devo receber de hora extra": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "de férias quantos por cento em cima do salario": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "férias quantos por cento": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular férias proporcionais na rescisão": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular férias vencidas": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular férias vendidas": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular férias vendidas 10 dias": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular hora extra": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular hora extra 100": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular hora extra 100 por cento": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular hora extra 50": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular hora extra 50 por cento": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular hora extra 60": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular hora extra 75": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular hora extra em cima do salário": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular hora extra no sábado": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular hora extra noturna": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular salário": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular salário bruto": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular salário líquido": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular salário por hora": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular salário proporcional": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular salário proporcional aos dias trabalhados": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como fazer a conta das ferias de 15 dias": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como fazer a conta de 1 3 de férias": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como fazer a conta de 13 salario": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como fazer a conta de ferias": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como fazer a conta de ferias proporcionais": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como fazer a conta de ferias proporcional": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como fazer a conta de ferias vencidas": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como fazer a conta de ferias vendidas": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como fazer a conta de férias": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como fazer a conta de férias proporcionais": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como fazer a conta de hora extra": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como fazer a conta de hora extra 100": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como fazer a conta de hora extra 50": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "como calcular salário maternidade": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras de grandes portais (mobills, calculojuridico, carmelitas)",
+  "manual": true,
+  "top3": 2,
+  "top10": 4,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "de férias quantos": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 2,
+  "top10": 4,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "de férias quantos dias": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 0,
+  "top10": 2,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "ferias quantos dias antes recebe": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 0,
+  "top10": 2,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "ferias quantos dias antes tem que pagar": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 1,
+  "top10": 1,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "ferias quantos dias para receber": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 1,
+  "top10": 1,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "ferias quantos dias pode tirar": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 1,
+  "top10": 1,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "ferias quantos dias pode vender": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 0,
+  "top10": 1,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "férias quantos dias": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 1,
+  "top10": 3,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "férias quantos dias antes tem que pagar": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 1,
+  "top10": 1,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "férias quantos dias para receber": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 0,
+  "top10": 3,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "férias quantos dias posso vender": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 0,
+  "top10": 1,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quantas férias": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 1,
+  "top10": 1,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "quantas contas salario posso ter": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quantas contribuicoes salario maternidade": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "como calcular hora extra no excel": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra/prazo: um AI Overview responde sem dado do usuario",
+  "manual": true,
+  "top3": 2,
+  "top10": 5,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "cartão de crédito virtual dura quanto tempo": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
+  "manual": true,
+  "top3": 1,
+  "top10": 1,
+  "ia_overview": true,
+  "regex": "REPROVA"
+ },
+ "criptococose quanto tempo dura": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK"
+ },
+ "divida ativa demora quanto tempo": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK"
+ },
+ "divida quantos anos caduca": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK"
+ },
+ "hs consórcio quantos anos": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK"
+ },
+ "imc quantas calorias": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
+  "manual": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": true,
+  "regex": "REPROVA"
+ },
+ "imc quantos quilos deve perder": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
+  "manual": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": true,
+  "regex": "REPROVA"
+ },
+ "ipca quantos por cento": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
+  "manual": true,
+  "top3": 0,
+  "top10": 1,
+  "ia_overview": true,
+  "regex": "OK"
+ },
+ "ipca quantos salarios minimos": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK"
+ },
+ "por quanto tempo devo guardar canhoto de nota fiscal": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK"
+ },
+ "por quanto tempo devo guardar talão de nota fiscal": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK"
+ },
+ "quantas administradoras de consórcio tem no brasil": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK"
+ },
+ "quantas aposentadorias bolsonaro recebe": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK"
+ },
+ "quantas aposentadorias o lula tem": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK"
+ },
+ "granito liquido quanto rende por metro quadrado": {
+  "veredito": "CONSTRUIR",
+  "motivo": "top-3 so tem Instagram e pagina de produto; o consumo depende da area e da espessura que so o usuario sabe",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quanto rende a textura por metro quadrado": {
+  "veredito": "CONSTRUIR",
+  "motivo": "top-3 e TikTok/YouTube/artigo; o calculo precisa da area de parede do usuario e do numero de demaos",
+  "manual": true,
+  "top3": 0,
+  "top10": 1,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quanto rende o grafiato por metro quadrado": {
+  "veredito": "CONSTRUIR",
+  "motivo": "top-3 sem ferramenta; consumo depende da area, do grao e das demaos do usuario",
+  "manual": true,
+  "top3": 1,
+  "top10": 1,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "porcelanato líquido quanto rende por metro quadrado": {
+  "veredito": "DESCARTAR",
+  "motivo": "SERP quebrada (resultados de metro de SP) e mesmo calculo do granito liquido: pagina quase duplicada",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quanto rende argamassa por metro quadrado": {
+  "veredito": "DESCARTAR",
+  "motivo": "calculadora da Leroy Merlin no top-1",
+  "manual": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "quanto rende massa corrida por metro quadrado": {
+  "veredito": "DESCARTAR",
+  "motivo": "calculadora da Leroy Merlin no top-3",
+  "manual": true,
+  "top3": 1,
+  "top10": 2,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "quanto rende por metro quadrado": {
+  "veredito": "DESCARTAR",
+  "motivo": "intencao ambigua: nao diz rendimento de que material",
+  "manual": true,
+  "top3": 1,
+  "top10": 2,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "quanto rende tinta": {
+  "veredito": "DESCARTAR",
+  "motivo": "calculadoras da Suvinil e da Leroy Merlin no top-3",
+  "manual": true,
+  "top3": 3,
+  "top10": 4,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "quanto rende tinta por metro quadrado": {
+  "veredito": "DESCARTAR",
+  "motivo": "duas calculadoras de marca no top-3",
+  "manual": true,
+  "top3": 2,
+  "top10": 7,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "quanto rende tinta 3 6": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de fato fixo (3,6L rende 55-65 m2): um AI Overview responde",
+  "manual": true,
+  "top3": 1,
+  "top10": 3,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "quanto rende tinta 3 6 litros": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de fato fixo: rendimento da lata esta na embalagem",
+  "manual": true,
+  "top3": 1,
+  "top10": 2,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "quanto rende tinta 900ml": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de fato fixo, faixa estreita e conhecida",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quanto rende tinta coral 3 6 litros": {
+  "veredito": "DESCARTAR",
+  "motivo": "marca de concorrente + fato fixo",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quanto rende tinta emborrachada": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de fato fixo, respondida pela ficha do produto",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quanto rende tinta epoxi para piso": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de fato fixo, respondida pela ficha do produto",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quanto rende tinta piso 18 litros": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de fato fixo",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quanto rende tinta piso suvinil 18 litros": {
+  "veredito": "DESCARTAR",
+  "motivo": "marca de concorrente + fato fixo",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quanto rende tinta spray": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de fato fixo, faixa estreita",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quanto rende tinta suvinil": {
+  "veredito": "DESCARTAR",
+  "motivo": "marca de concorrente",
+  "manual": true,
+  "top3": 2,
+  "top10": 2,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "quanto rende 1 salario minimo": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de investimento/informacional",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quanto rende a hora extra": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadoras trabalhistas de portais",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA"
  }
 }

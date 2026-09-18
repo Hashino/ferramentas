@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto rende a textura por metro quadrado | Calculadora</title>
+<meta name="description" content="Calcule quantos baldes de textura a sua parede precisa: informe comprimento, altura, portas e janelas e veja a área líquida e o consumo por demão.">
+<link rel="canonical" href="https://hashino.xyz/tools/rende-textura-metro-quadrado/">
+<meta property="og:title" content="Quanto rende a textura por metro quadrado | Calculadora">
+<meta property="og:description" content="Calcule quantos baldes de textura a sua parede precisa: informe comprimento, altura, portas e janelas e veja a área líquida e o consumo por demão.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/rende-textura-metro-quadrado/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Textura por Metro Quadrado","url":"https://hashino.xyz/tools/rende-textura-metro-quadrado/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcule quantos baldes de textura a sua parede precisa: informe comprimento, altura, portas e janelas e veja a área líquida e o consumo por demão."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Textura por Metro Quadrado","item":"https://hashino.xyz/tools/rende-textura-metro-quadrado/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como calcular a área de parede para texturizar?", "acceptedAnswer": {"@type": "Answer", "text": "Some o comprimento das paredes que vão receber a textura e multiplique pela altura do pé-direito. Depois subtraia as portas e janelas, que não recebem produto. É esse número, e não a área do piso, que define quanto material comprar."}}, {"@type": "Question", "name": "Quantos metros quadrados rende um balde de 25 kg de textura?", "acceptedAnswer": {"@type": "Answer", "text": "Varia com o tipo e a espessura da aplicação. Texturas rústicas mais grossas costumam render em torno de 6 a 8 m² por balde, enquanto acabamentos finos rendem bem mais. O número exato está na embalagem e é o que a página usa."}}, {"@type": "Question", "name": "Preciso descontar portas e janelas do cálculo?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, especialmente em cômodos pequenos. Uma porta e duas janelas já tiram 5,6 m², o que em uma sala pode significar um balde a menos."}}, {"@type": "Question", "name": "Textura precisa de mais de uma demão?", "acceptedAnswer": {"@type": "Answer", "text": "Depende do efeito e da cobertura. Muitos acabamentos rústicos fecham em uma demão bem puxada; cores claras sobre fundo escuro e superfícies irregulares costumam pedir duas, o que dobra a área de aplicação no cálculo."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Quanto rende a textura por metro quadrado</h1>
+  <section class="app">
+    <label for="comprimento">Comprimento somado das paredes (m)</label>
+    <input type="number" id="comprimento" step="0.1" min="0" value="18">
+    <label for="altura">P&eacute;-direito / altura das paredes (m)</label>
+    <input type="number" id="altura" step="0.05" min="0" value="2.8">
+    <label for="portas">Portas a descontar</label>
+    <input type="number" id="portas" step="1" min="0" value="1">
+    <label for="janelas">Janelas a descontar</label>
+    <input type="number" id="janelas" step="1" min="0" value="2">
+    <label for="demaos">Dem&atilde;os</label>
+    <input type="number" id="demaos" step="1" min="1" max="5" value="1">
+    <label for="rend">Rendimento da embalagem (m&sup2; por dem&atilde;o)</label>
+    <input type="number" id="rend" step="0.5" min="0.5" value="7">
+    <label for="lata">Tamanho da embalagem (kg)</label>
+    <select id="lata">
+      <option value="25" selected>Balde de 25 kg</option>
+      <option value="28">Balde de 28 kg</option>
+      <option value="5.7">Gal&atilde;o de 5,7 kg</option>
+      <option value="1.6">Lata de 1,6 kg</option>
+    </select>
+    <label for="preco">Pre&ccedil;o da embalagem (R$, opcional)</label>
+    <input type="number" id="preco" step="0.01" min="0" value="">
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">A embalagem de textura informa quantos metros quadrados rende, mas o que você precisa saber é quantos baldes comprar para as suas paredes. Esta página parte das medidas do cômodo, desconta portas e janelas e devolve a área real a texturizar, o consumo por metro quadrado e o número de embalagens.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>área líquida = comprimento x altura - (portas x 1,6 + janelas x 2,0); embalagens = arredonda para cima (área líquida x demãos / rendimento)</code></p>
+  <p>Primeiro sai a área bruta, que é o comprimento somado das paredes multiplicado pela altura. Dela são descontados os vãos: cada porta tira 1,6 m² e cada janela 2 m². O resultado é a área que realmente recebe produto. Essa área é multiplicada pelo número de demãos e dividida pelo rendimento da embalagem, sempre arredondando para cima.</p>
+  <p>O comprimento somado é a volta do cômodo: some a largura de cada parede que vai ser texturizada. A altura é o pé-direito. O rendimento em metros quadrados por demão está na embalagem e muda com o tipo de textura e com a forma de aplicar. O consumo em kg por m² que a página mostra é o inverso disso, útil para comparar produtos de tamanhos diferentes.</p>
+  <h2>Exemplo</h2>
+  <p>Sala com 18 m de paredes somadas, pé-direito de 2,80 m, uma porta, duas janelas, uma demão e balde de 25 kg que rende 7 m².</p>
+  <ol>
+    <li>Área bruta: 18 x 2,80 = 50,4 m².</li>
+    <li>Vãos: 1 x 1,6 + 2 x 2,0 = 5,6 m².</li>
+    <li>Área a texturizar: 50,4 - 5,6 = 44,8 m².</li>
+    <li>Embalagens: 44,8 / 7 = 6,4, arredondado para cima dá 7 baldes, ou seja 3,57 kg por m².</li>
+  </ol>
+  <p><strong>São 44,8 m² de parede e 7 baldes de 25 kg para uma demão.</strong></p>
+  <h2>Consumo por metro quadrado conforme o rendimento da embalagem de 25 kg</h2>
+  <table>
+    <thead><tr><th>Rendimento informado</th><th>Consumo por m²</th><th>Baldes para 44,8 m²</th></tr></thead>
+    <tbody>
+      <tr><td>5 m² por balde</td><td>5,00 kg</td><td>9 baldes</td></tr>
+      <tr><td>7 m² por balde</td><td>3,57 kg</td><td>7 baldes</td></tr>
+      <tr><td>10 m² por balde</td><td>2,50 kg</td><td>5 baldes</td></tr>
+      <tr><td>20 m² por balde</td><td>1,25 kg</td><td>3 baldes</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>Os vãos usam medidas médias: 1,6 m² por porta e 2 m² por janela. Portas de correr, janelões e vitrôs fogem bastante disso; nesses casos meça o vão e ajuste o comprimento das paredes para compensar.</li>
+    <li>O rendimento da embalagem é do fabricante e supõe superfície preparada e aplicação regular. Parede crua, muito absorvente ou aplicada com desempenadeira pesada consome mais.</li>
+    <li>Selador de fundo, massa de correção e fita crepe não entram na conta: são materiais à parte.</li>
+    <li>A conta é de material. Não estima mão de obra, andaime nem o tempo entre demãos.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Como calcular a área de parede para texturizar?</h3>
+  <p>Some o comprimento das paredes que vão receber a textura e multiplique pela altura do pé-direito. Depois subtraia as portas e janelas, que não recebem produto. É esse número, e não a área do piso, que define quanto material comprar.</p>
+  <h3>Quantos metros quadrados rende um balde de 25 kg de textura?</h3>
+  <p>Varia com o tipo e a espessura da aplicação. Texturas rústicas mais grossas costumam render em torno de 6 a 8 m² por balde, enquanto acabamentos finos rendem bem mais. O número exato está na embalagem e é o que a página usa.</p>
+  <h3>Preciso descontar portas e janelas do cálculo?</h3>
+  <p>Sim, especialmente em cômodos pequenos. Uma porta e duas janelas já tiram 5,6 m², o que em uma sala pode significar um balde a menos.</p>
+  <h3>Textura precisa de mais de uma demão?</h3>
+  <p>Depende do efeito e da cobertura. Muitos acabamentos rústicos fecham em uma demão bem puxada; cores claras sobre fundo escuro e superfícies irregulares costumam pedir duas, o que dobra a área de aplicação no cálculo.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../rende-grafiato-metro-quadrado/">Quanto rende o grafiato por metro quadrado</a> · <a href="../como-13o-salario-sobre/">13º salário sobre o aviso prévio indenizado</a> · <a href="../cloro-piscina/">Quantos Litros de Cloro para Piscina</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+const els = ["comprimento","altura","portas","janelas","demaos","rend","lata","preco"]
+  .map(id => document.getElementById(id));
+const res = document.getElementById("resultado");
+const det = document.getElementById("detalhe");
+const real = n => n.toLocaleString("pt-BR", {style: "currency", currency: "BRL"});
+const num = (n, c) => n.toLocaleString("pt-BR", {minimumFractionDigits: c, maximumFractionDigits: c});
+
+// vãos médios descontados da área de parede
+const AREA_PORTA = 1.6;    // 0,80 m x 2,00 m
+const AREA_JANELA = 2.0;   // 1,00 m x 2,00 m
+
+function calcular() {
+  const comp = parseFloat(els[0].value);
+  const alt = parseFloat(els[1].value);
+  const portas = parseInt(els[2].value, 10);
+  const janelas = parseInt(els[3].value, 10);
+  const demaos = parseInt(els[4].value, 10);
+  const rend = parseFloat(els[5].value);
+  const lata = parseFloat(els[6].value);
+  const preco = parseFloat(els[7].value);
+  if (!isFinite(comp) || comp <= 0 || !isFinite(alt) || alt <= 0
+      || !isFinite(rend) || rend <= 0 || !isFinite(demaos) || demaos <= 0) {
+    res.hidden = true; det.textContent = ""; return;
+  }
+  const p = isFinite(portas) && portas > 0 ? portas : 0;
+  const j = isFinite(janelas) && janelas > 0 ? janelas : 0;
+
+  const bruta = comp * alt;
+  const vaos = p * AREA_PORTA + j * AREA_JANELA;
+  const liquida = Math.max(bruta - vaos, 0);
+  if (liquida === 0) {
+    res.hidden = false; res.textContent = "Os vãos cobrem toda a parede";
+    det.textContent = "Revise o comprimento, a altura ou a quantidade de portas e janelas.";
+    return;
+  }
+
+  const areaTotal = liquida * demaos;      // m² de aplicação somando as demãos
+  const latas = Math.ceil(areaTotal / rend);
+  const kg = latas * lata;
+  const consumo = lata / rend;             // kg por m² por demão
+
+  const linhas = [
+    "Área bruta: " + num(bruta, 1) + " m² (" + num(comp, 1) + " m x " + num(alt, 2) + " m)",
+    "Vãos descontados: " + num(vaos, 1) + " m² (" + p + " porta(s) de 1,6 m² e " + j + " janela(s) de 2 m²)",
+    "Área a texturizar: " + num(liquida, 1) + " m²",
+    "",
+    "Com " + demaos + " demão(s): " + num(areaTotal, 1) + " m² de aplicação",
+    "Consumo do produto: " + num(consumo, 2) + " kg por m² por demão",
+    "Embalagens: " + latas + " de " + num(lata, 1) + " kg = " + num(kg, 1) + " kg"
+  ];
+  if (isFinite(preco) && preco > 0) {
+    linhas.push("", "Custo do material: " + real(latas * preco),
+                "Custo por m² de parede: " + real(latas * preco / liquida));
+  }
+
+  res.hidden = false;
+  res.textContent = latas + " embalagem" + (latas > 1 ? "s" : "") + " para " + num(liquida, 1) + " m²";
+  det.textContent = linhas.join("\n");
+}
+
+for (const el of els) { el.addEventListener("input", calcular); el.addEventListener("change", calcular); }
+calcular();
+</script>
+</body>
+</html>

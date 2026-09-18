@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Granito líquido: quanto rende por metro quadrado | Calculadora</title>
+<meta name="description" content="Calcule quantos quilos de granito líquido a sua área precisa: informe metragem, espessura e o consumo da embalagem e veja quantos baldes comprar.">
+<link rel="canonical" href="https://hashino.xyz/tools/granito-liquido-rende-metro/">
+<meta property="og:title" content="Granito líquido: quanto rende por metro quadrado | Calculadora">
+<meta property="og:description" content="Calcule quantos quilos de granito líquido a sua área precisa: informe metragem, espessura e o consumo da embalagem e veja quantos baldes comprar.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/granito-liquido-rende-metro/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Granito Líquido por Metro Quadrado","url":"https://hashino.xyz/tools/granito-liquido-rende-metro/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcule quantos quilos de granito líquido a sua área precisa: informe metragem, espessura e o consumo da embalagem e veja quantos baldes comprar."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Granito Líquido por Metro Quadrado","item":"https://hashino.xyz/tools/granito-liquido-rende-metro/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quantos metros quadrados rende um balde de 20 kg de granito líquido?", "acceptedAnswer": {"@type": "Answer", "text": "Depende da espessura. Com um consumo de 0,55 kg/m² por milímetro, o balde cobre cerca de 36 m² a 1 mm e 18 m² a 2 mm. Dobrar a espessura corta a área coberta pela metade."}}, {"@type": "Question", "name": "Qual espessura usar no granito líquido?", "acceptedAnswer": {"@type": "Answer", "text": "Camadas de 1 a 2 mm são comuns sobre contrapiso liso e bem curado. Superfícies irregulares pedem mais espessura para nivelar, o que aumenta proporcionalmente o consumo."}}, {"@type": "Question", "name": "Por que somar uma perda no cálculo?", "acceptedAnswer": {"@type": "Answer", "text": "Parte do produto fica na ferramenta, na borda do balde e nos recortes. Entre 5% e 15% é a faixa usada na prática, e ignorar isso costuma resultar em uma viagem extra à loja no meio da aplicação."}}, {"@type": "Question", "name": "Posso usar essa conta para porcelanato líquido?", "acceptedAnswer": {"@type": "Answer", "text": "A lógica é a mesma, porque os dois são vendidos por quilo e aplicados por espessura. O que muda é o consumo por milímetro, que você ajusta no campo correspondente com o valor da ficha técnica do seu produto."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Granito líquido: quanto rende por metro quadrado</h1>
+  <section class="app">
+    <label for="area">&Aacute;rea a revestir (m&sup2;)</label>
+    <input type="number" id="area" step="0.1" min="0" value="12">
+    <label for="espessura">Espessura da camada (mm)</label>
+    <input type="number" id="espessura" step="0.5" min="0.5" value="2">
+    <label for="consumo">Consumo do produto (kg por m&sup2; a cada 1 mm)</label>
+    <input type="number" id="consumo" step="0.05" min="0.05" value="0.55">
+    <label for="embalagem">Tamanho da embalagem (kg)</label>
+    <select id="embalagem">
+      <option value="20" selected>Balde de 20 kg</option>
+      <option value="25">Balde de 25 kg</option>
+      <option value="4">Gal&atilde;o de 4 kg</option>
+      <option value="1.25">Kit de 1,25 kg</option>
+    </select>
+    <label for="preco">Pre&ccedil;o da embalagem (R$, opcional)</label>
+    <input type="number" id="preco" step="0.01" min="0" value="">
+    <label for="perda">Perda estimada na aplica&ccedil;&atilde;o (%)</label>
+    <input type="number" id="perda" step="1" min="0" max="50" value="10">
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">Granito líquido é vendido por peso, mas o piso é medido em metro quadrado, e entre um e outro está a espessura da camada. Esta página faz essa ponte: você informa a área, a espessura desejada e o consumo que vem na embalagem, e ela devolve os quilos e quantos baldes comprar.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>kg = área (m²) x espessura (mm) x consumo (kg/m² por mm) x (1 + perda %); baldes = arredonda para cima (kg / peso da embalagem)</code></p>
+  <p>O consumo do produto é dado por milímetro de espessura, então a conta multiplica três grandezas: a área, a espessura e o consumo. Sobre esse total entra a perda de aplicação, que cobre o material que fica na desempenadeira, no rolo e nas bordas. O número de embalagens é sempre arredondado para cima, porque meia embalagem não existe na loja.</p>
+  <p>A área é a do piso ou da parede que vai receber o revestimento, medida por você. A espessura sai do acabamento pretendido: camadas finas realçam o brilho e gastam menos, camadas grossas disfarçam imperfeições do contrapiso. O consumo em kg por m² a cada milímetro está na ficha técnica do produto e varia bastante entre marcas, por isso é um campo editável e não um valor fixo.</p>
+  <h2>Exemplo</h2>
+  <p>Piso de 12 m² com camada de 2 mm, produto que consome 0,55 kg/m² por milímetro, balde de 20 kg e 10% de perda.</p>
+  <ol>
+    <li>Massa sem perda: 12 x 2 x 0,55 = 13,2 kg.</li>
+    <li>Com 10% de perda: 13,2 x 1,10 = 14,5 kg.</li>
+    <li>Rendimento do balde nessa espessura: 20 / (2 x 0,55) = 18,2 m².</li>
+    <li>Embalagens: 14,5 / 20 = 0,73, arredondado para cima dá 1 balde, com sobra de 5,5 kg.</li>
+  </ol>
+  <p><strong>Um balde de 20 kg cobre os 12 m² a 2 mm e ainda deixa 5,5 kg de sobra.</strong></p>
+  <h2>Quanto um balde de 20 kg cobre, por espessura</h2>
+  <table>
+    <thead><tr><th>Espessura</th><th>Consumo (kg/m²)</th><th>Área coberta por balde de 20 kg</th></tr></thead>
+    <tbody>
+      <tr><td>1 mm</td><td>0,55 kg</td><td>36,4 m²</td></tr>
+      <tr><td>2 mm</td><td>1,10 kg</td><td>18,2 m²</td></tr>
+      <tr><td>3 mm</td><td>1,65 kg</td><td>12,1 m²</td></tr>
+      <tr><td>4 mm</td><td>2,20 kg</td><td>9,1 m²</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>O consumo de 0,55 kg/m² por milímetro é só o valor inicial do campo. Cada fabricante publica o seu, e a diferença entre marcas chega a dobrar a quantidade: use o número da embalagem que você vai comprar.</li>
+    <li>Contrapiso poroso ou muito irregular bebe mais produto do que a ficha técnica prevê. Nesses casos a perda realista passa dos 10%.</li>
+    <li>A conta cobre o revestimento em si. Primer, selador, catalisador e verniz de acabamento, quando o sistema pede, são comprados à parte.</li>
+    <li>Não estima mão de obra nem tempo de cura. O produto costuma exigir dias de secagem antes do uso do piso, e isso varia com a espessura e a umidade.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Quantos metros quadrados rende um balde de 20 kg de granito líquido?</h3>
+  <p>Depende da espessura. Com um consumo de 0,55 kg/m² por milímetro, o balde cobre cerca de 36 m² a 1 mm e 18 m² a 2 mm. Dobrar a espessura corta a área coberta pela metade.</p>
+  <h3>Qual espessura usar no granito líquido?</h3>
+  <p>Camadas de 1 a 2 mm são comuns sobre contrapiso liso e bem curado. Superfícies irregulares pedem mais espessura para nivelar, o que aumenta proporcionalmente o consumo.</p>
+  <h3>Por que somar uma perda no cálculo?</h3>
+  <p>Parte do produto fica na ferramenta, na borda do balde e nos recortes. Entre 5% e 15% é a faixa usada na prática, e ignorar isso costuma resultar em uma viagem extra à loja no meio da aplicação.</p>
+  <h3>Posso usar essa conta para porcelanato líquido?</h3>
+  <p>A lógica é a mesma, porque os dois são vendidos por quilo e aplicados por espessura. O que muda é o consumo por milímetro, que você ajusta no campo correspondente com o valor da ficha técnica do seu produto.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../agua/">Quanta água sua casa gasta por mês</a> · <a href="../gado-por-hectare/">Quantas Cabeças de Gado por Hectare</a> · <a href="../rende-textura-metro-quadrado/">Quanto rende a textura por metro quadrado</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+const els = ["area","espessura","consumo","embalagem","preco","perda"].map(id => document.getElementById(id));
+const res = document.getElementById("resultado");
+const det = document.getElementById("detalhe");
+const real = n => n.toLocaleString("pt-BR", {style: "currency", currency: "BRL"});
+const num = (n, c) => n.toLocaleString("pt-BR", {minimumFractionDigits: c, maximumFractionDigits: c});
+
+function calcular() {
+  const area = parseFloat(els[0].value);
+  const esp = parseFloat(els[1].value);
+  const consumo = parseFloat(els[2].value);
+  const emb = parseFloat(els[3].value);
+  const preco = parseFloat(els[4].value);
+  const perda = parseFloat(els[5].value);
+  if (!isFinite(area) || area <= 0 || !isFinite(esp) || esp <= 0
+      || !isFinite(consumo) || consumo <= 0 || !isFinite(emb) || emb <= 0) {
+    res.hidden = true; det.textContent = ""; return;
+  }
+  const p = isFinite(perda) && perda > 0 ? perda : 0;
+
+  // kg = area x espessura x consumo por mm, mais a perda de aplicacao
+  const kgLiquido = area * esp * consumo;
+  const kg = kgLiquido * (1 + p / 100);
+  const baldes = Math.ceil(kg / emb);
+  const sobra = baldes * emb - kg;
+  const rendimento = emb / (esp * consumo);   // m2 por embalagem nessa espessura
+
+  const linhas = [
+    "Massa necessária: " + num(kgLiquido, 1) + " kg + " + p + "% de perda = " + num(kg, 1) + " kg",
+    "Cada embalagem de " + num(emb, 2) + " kg cobre " + num(rendimento, 1) + " m² a " + num(esp, 1) + " mm",
+    "Embalagens a comprar: " + baldes + " (sobra de " + num(sobra, 1) + " kg)"
+  ];
+  if (isFinite(preco) && preco > 0) {
+    linhas.push("", "Custo do material: " + real(baldes * preco),
+                "Custo por m²: " + real(baldes * preco / area));
+  }
+  res.hidden = false;
+  res.textContent = num(kg, 1) + " kg de granito líquido (" + baldes + " embalagem" + (baldes > 1 ? "s" : "") + ")";
+  det.textContent = linhas.join("\n");
+}
+
+for (const el of els) { el.addEventListener("input", calcular); el.addEventListener("change", calcular); }
+calcular();
+</script>
+</body>
+</html>

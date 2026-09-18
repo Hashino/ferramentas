@@ -271,11 +271,16 @@ def check(limite: int, filtro: str = "") -> None:
             meta["status"] = "descartada"
             cortadas += 1
 
-    f = filtro.lower()
+    # vários filtros separados por vírgula: a fila alfabética dentro de UM
+    # filtro também engana ("--filtro matrix:tinta" gastou 12 créditos só em
+    # "calculadora de tinta <marca>", a cabeça mais saturada da família).
+    fs = [x.strip().lower() for x in filtro.split(",") if x.strip()]
+    def casa(kw, meta):
+        alvo = kw.lower() + " || " + meta.get("origem", "").lower()
+        return not fs or any(f in alvo for f in fs)
     pendentes = [
         kw for kw, meta in sorted(rows.items())
-        if meta["status"] == "candidata" and kw not in serp
-        and (not f or f in kw.lower() or f in meta.get("origem", "").lower())
+        if meta["status"] == "candidata" and kw not in serp and casa(kw, meta)
     ][:limite]
 
     if cortadas:

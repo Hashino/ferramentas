@@ -1,0 +1,44 @@
+{
+ "intro": "Granito líquido é vendido por peso, mas o piso é medido em metro quadrado, e entre um e outro está a espessura da camada. Esta página faz essa ponte: você informa a área, a espessura desejada e o consumo que vem na embalagem, e ela devolve os quilos e quantos baldes comprar.",
+ "formula": "kg = área (m²) x espessura (mm) x consumo (kg/m² por mm) x (1 + perda %); baldes = arredonda para cima (kg / peso da embalagem)",
+ "como": [
+  "O consumo do produto é dado por milímetro de espessura, então a conta multiplica três grandezas: a área, a espessura e o consumo. Sobre esse total entra a perda de aplicação, que cobre o material que fica na desempenadeira, no rolo e nas bordas. O número de embalagens é sempre arredondado para cima, porque meia embalagem não existe na loja.",
+  "A área é a do piso ou da parede que vai receber o revestimento, medida por você. A espessura sai do acabamento pretendido: camadas finas realçam o brilho e gastam menos, camadas grossas disfarçam imperfeições do contrapiso. O consumo em kg por m² a cada milímetro está na ficha técnica do produto e varia bastante entre marcas, por isso é um campo editável e não um valor fixo."
+ ],
+ "exemplo": {
+  "cenario": "Piso de 12 m² com camada de 2 mm, produto que consome 0,55 kg/m² por milímetro, balde de 20 kg e 10% de perda.",
+  "passos": [
+   "Massa sem perda: 12 x 2 x 0,55 = 13,2 kg.",
+   "Com 10% de perda: 13,2 x 1,10 = 14,5 kg.",
+   "Rendimento do balde nessa espessura: 20 / (2 x 0,55) = 18,2 m².",
+   "Embalagens: 14,5 / 20 = 0,73, arredondado para cima dá 1 balde, com sobra de 5,5 kg."
+  ],
+  "resultado": "Um balde de 20 kg cobre os 12 m² a 2 mm e ainda deixa 5,5 kg de sobra."
+ },
+ "tabela": {
+  "titulo": "Quanto um balde de 20 kg cobre, por espessura",
+  "colunas": ["Espessura", "Consumo (kg/m²)", "Área coberta por balde de 20 kg"],
+  "linhas": [
+   ["1 mm", "0,55 kg", "36,4 m²"],
+   ["2 mm", "1,10 kg", "18,2 m²"],
+   ["3 mm", "1,65 kg", "12,1 m²"],
+   ["4 mm", "2,20 kg", "9,1 m²"]
+  ]
+ },
+ "cuidados": [
+  "O consumo de 0,55 kg/m² por milímetro é só o valor inicial do campo. Cada fabricante publica o seu, e a diferença entre marcas chega a dobrar a quantidade: use o número da embalagem que você vai comprar.",
+  "Contrapiso poroso ou muito irregular bebe mais produto do que a ficha técnica prevê. Nesses casos a perda realista passa dos 10%.",
+  "A conta cobre o revestimento em si. Primer, selador, catalisador e verniz de acabamento, quando o sistema pede, são comprados à parte.",
+  "Não estima mão de obra nem tempo de cura. O produto costuma exigir dias de secagem antes do uso do piso, e isso varia com a espessura e a umidade."
+ ],
+ "faq": [
+  {"p": "Quantos metros quadrados rende um balde de 20 kg de granito líquido?",
+   "r": "Depende da espessura. Com um consumo de 0,55 kg/m² por milímetro, o balde cobre cerca de 36 m² a 1 mm e 18 m² a 2 mm. Dobrar a espessura corta a área coberta pela metade."},
+  {"p": "Qual espessura usar no granito líquido?",
+   "r": "Camadas de 1 a 2 mm são comuns sobre contrapiso liso e bem curado. Superfícies irregulares pedem mais espessura para nivelar, o que aumenta proporcionalmente o consumo."},
+  {"p": "Por que somar uma perda no cálculo?",
+   "r": "Parte do produto fica na ferramenta, na borda do balde e nos recortes. Entre 5% e 15% é a faixa usada na prática, e ignorar isso costuma resultar em uma viagem extra à loja no meio da aplicação."},
+  {"p": "Posso usar essa conta para porcelanato líquido?",
+   "r": "A lógica é a mesma, porque os dois são vendidos por quilo e aplicados por espessura. O que muda é o consumo por milímetro, que você ajusta no campo correspondente com o valor da ficha técnica do seu produto."}
+ ]
+}

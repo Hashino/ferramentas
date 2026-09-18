@@ -1,0 +1,44 @@
+{
+ "intro": "A embalagem de textura informa quantos metros quadrados rende, mas o que você precisa saber é quantos baldes comprar para as suas paredes. Esta página parte das medidas do cômodo, desconta portas e janelas e devolve a área real a texturizar, o consumo por metro quadrado e o número de embalagens.",
+ "formula": "área líquida = comprimento x altura - (portas x 1,6 + janelas x 2,0); embalagens = arredonda para cima (área líquida x demãos / rendimento)",
+ "como": [
+  "Primeiro sai a área bruta, que é o comprimento somado das paredes multiplicado pela altura. Dela são descontados os vãos: cada porta tira 1,6 m² e cada janela 2 m². O resultado é a área que realmente recebe produto. Essa área é multiplicada pelo número de demãos e dividida pelo rendimento da embalagem, sempre arredondando para cima.",
+  "O comprimento somado é a volta do cômodo: some a largura de cada parede que vai ser texturizada. A altura é o pé-direito. O rendimento em metros quadrados por demão está na embalagem e muda com o tipo de textura e com a forma de aplicar. O consumo em kg por m² que a página mostra é o inverso disso, útil para comparar produtos de tamanhos diferentes."
+ ],
+ "exemplo": {
+  "cenario": "Sala com 18 m de paredes somadas, pé-direito de 2,80 m, uma porta, duas janelas, uma demão e balde de 25 kg que rende 7 m².",
+  "passos": [
+   "Área bruta: 18 x 2,80 = 50,4 m².",
+   "Vãos: 1 x 1,6 + 2 x 2,0 = 5,6 m².",
+   "Área a texturizar: 50,4 - 5,6 = 44,8 m².",
+   "Embalagens: 44,8 / 7 = 6,4, arredondado para cima dá 7 baldes, ou seja 3,57 kg por m²."
+  ],
+  "resultado": "São 44,8 m² de parede e 7 baldes de 25 kg para uma demão."
+ },
+ "tabela": {
+  "titulo": "Consumo por metro quadrado conforme o rendimento da embalagem de 25 kg",
+  "colunas": ["Rendimento informado", "Consumo por m²", "Baldes para 44,8 m²"],
+  "linhas": [
+   ["5 m² por balde", "5,00 kg", "9 baldes"],
+   ["7 m² por balde", "3,57 kg", "7 baldes"],
+   ["10 m² por balde", "2,50 kg", "5 baldes"],
+   ["20 m² por balde", "1,25 kg", "3 baldes"]
+  ]
+ },
+ "cuidados": [
+  "Os vãos usam medidas médias: 1,6 m² por porta e 2 m² por janela. Portas de correr, janelões e vitrôs fogem bastante disso; nesses casos meça o vão e ajuste o comprimento das paredes para compensar.",
+  "O rendimento da embalagem é do fabricante e supõe superfície preparada e aplicação regular. Parede crua, muito absorvente ou aplicada com desempenadeira pesada consome mais.",
+  "Selador de fundo, massa de correção e fita crepe não entram na conta: são materiais à parte.",
+  "A conta é de material. Não estima mão de obra, andaime nem o tempo entre demãos."
+ ],
+ "faq": [
+  {"p": "Como calcular a área de parede para texturizar?",
+   "r": "Some o comprimento das paredes que vão receber a textura e multiplique pela altura do pé-direito. Depois subtraia as portas e janelas, que não recebem produto. É esse número, e não a área do piso, que define quanto material comprar."},
+  {"p": "Quantos metros quadrados rende um balde de 25 kg de textura?",
+   "r": "Varia com o tipo e a espessura da aplicação. Texturas rústicas mais grossas costumam render em torno de 6 a 8 m² por balde, enquanto acabamentos finos rendem bem mais. O número exato está na embalagem e é o que a página usa."},
+  {"p": "Preciso descontar portas e janelas do cálculo?",
+   "r": "Sim, especialmente em cômodos pequenos. Uma porta e duas janelas já tiram 5,6 m², o que em uma sala pode significar um balde a menos."},
+  {"p": "Textura precisa de mais de uma demão?",
+   "r": "Depende do efeito e da cobertura. Muitos acabamentos rústicos fecham em uma demão bem puxada; cores claras sobre fundo escuro e superfícies irregulares costumam pedir duas, o que dobra a área de aplicação no cálculo."}
+ ]
+}

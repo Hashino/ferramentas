@@ -1,0 +1,44 @@
+{
+ "intro": "O grafiato rende menos do que a maioria das texturas porque o grão puxa material, e o rendimento cai conforme o grão engrossa. Esta página converte a sua metragem em baldes de 25 kg, mostra o consumo em quilos por metro quadrado e ainda estima o selador de fundo.",
+ "formula": "baldes = arredonda para cima (área / rendimento do grão); consumo = 25 kg / rendimento; selador = área x 0,4 kg/m²",
+ "como": [
+  "A conta divide a área pelo rendimento correspondente ao grão escolhido e arredonda para cima, porque a loja vende o balde inteiro. O consumo por metro quadrado é o peso da embalagem dividido pelo rendimento, número útil para comparar marcas que vendem em baldes de tamanhos diferentes. O campo de rendimento continua editável para quem tem a ficha técnica do produto em mãos.",
+  "A área é a das paredes que vão receber grafiato, já descontados os vãos. O grão define a textura final e o consumo: quanto mais grosso o grão, menos metros o balde cobre. O selador é calculado à parte porque é outro produto, aplicado antes para uniformizar a absorção da parede."
+ ],
+ "exemplo": {
+  "cenario": "Fachada de 40 m² com grafiato de grão médio, rendimento de 7 m² por balde de 25 kg, com selador.",
+  "passos": [
+   "Baldes: 40 / 7 = 5,71, arredondado para cima dá 6 baldes.",
+   "Peso total: 6 x 25 = 150 kg.",
+   "Consumo: 25 / 7 = 3,57 kg por m².",
+   "Selador: 40 x 0,4 = 16 kg."
+  ],
+  "resultado": "São 6 baldes de 25 kg de grafiato, mais cerca de 16 kg de selador, e a última embalagem ainda cobriria 2 m²."
+ },
+ "tabela": {
+  "titulo": "Rendimento e consumo por grão",
+  "colunas": ["Grão", "Rendimento por balde de 25 kg", "Consumo por m²"],
+  "linhas": [
+   ["Fino", "9 m²", "2,78 kg"],
+   ["Médio", "7 m²", "3,57 kg"],
+   ["Grosso", "5,5 m²", "4,55 kg"],
+   ["Definido pela ficha técnica", "campo editável", "25 kg dividido pelo rendimento"]
+  ]
+ },
+ "cuidados": [
+  "Os rendimentos por grão são valores típicos de mercado usados como ponto de partida. O da sua embalagem manda: se a ficha técnica trouxer outro número, troque no campo de rendimento.",
+  "O consumo do selador, de 0,4 kg por m², também é uma referência. Parede muito absorvente ou reboco novo puxa mais.",
+  "Aplicação com desempenadeira pesada, mão firme ou grão puxado em excesso aumenta o consumo acima do previsto pelo fabricante.",
+  "A conta cobre grafiato e selador. Andaime, fita, lona de proteção e mão de obra ficam de fora."
+ ],
+ "faq": [
+  {"p": "Quantos metros quadrados rende um balde de 25 kg de grafiato?",
+   "r": "Com grão médio o rendimento típico fica em torno de 7 m² por balde, o que dá cerca de 3,6 kg por metro quadrado. Grãos finos rendem mais e grãos grossos rendem menos; a ficha técnica do produto traz o valor exato."},
+  {"p": "Grafiato precisa de selador antes?",
+   "r": "Na prática sim, principalmente sobre reboco novo. O selador uniformiza a absorção da parede, evita que ela roube água do produto e ajuda o grafiato a render o que a embalagem promete."},
+  {"p": "Por que o grafiato rende menos que a textura lisa?",
+   "r": "Porque o grão exige uma camada mais espessa para poder ser riscado pela desempenadeira. Quanto mais grosso o grão, maior a espessura mínima e maior o consumo por metro quadrado."},
+  {"p": "Grafiato leva quantas demãos?",
+   "r": "É aplicado em camada única, puxada até o grão riscar. O que muda o consumo não é a quantidade de demãos, e sim a espessura da camada e o grão escolhido."}
+ ]
+}
