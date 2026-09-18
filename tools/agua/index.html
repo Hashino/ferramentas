@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de Água: Consumo e Conta do Mês</title>
+<meta name="description" content="Calcule quantos litros e metros cúbicos de água sua casa gasta por mês e quanto isso pesa na conta, a partir dos banhos, descargas e lavagens.">
+<link rel="canonical" href="https://hashino.xyz/tools/agua/">
+<meta property="og:title" content="Calculadora de Água: Consumo e Conta do Mês">
+<meta property="og:description" content="Calcule quantos litros e metros cúbicos de água sua casa gasta por mês e quanto isso pesa na conta, a partir dos banhos, descargas e lavagens.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/agua/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Água","url":"https://hashino.xyz/tools/agua/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcule quantos litros e metros cúbicos de água sua casa gasta por mês e quanto isso pesa na conta, a partir dos banhos, descargas e lavagens."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Água","item":"https://hashino.xyz/tools/agua/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como reduzir o consumo de água no banho?", "acceptedAnswer": {"@type": "Answer", "text": "Instale redutores de vazão, diminua o tempo de banho ou use chuveiros elétricos com controle de temperatura que evitam desperdício."}}, {"@type": "Question", "name": "Qual a diferença de custo entre caixa d'água de 6 L e 12 L?", "acceptedAnswer": {"@type": "Answer", "text": "Uma caixa de 12 L dobra o volume por descarga, aumentando o consumo diário proporcionalmente; o custo pode crescer até cerca de 30 % se o número de descargas permanecer igual."}}, {"@type": "Question", "name": "A conta de água inclui esgoto?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, a maioria das tarifas combina água e esgoto em um único valor por metro cúbico, como usado na calculadora."}}, {"@type": "Question", "name": "Por que a calculadora usa 30 dias para o mês?", "acceptedAnswer": {"@type": "Answer", "text": "É uma média simplificada que facilita a estimativa; para maior precisão, ajuste o resultado multiplicando o consumo diário pelo número exato de dias do mês."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Quanta água sua casa gasta por mês</h1>
+  <section class="app">
+    <label for="pessoas">Pessoas na casa</label>
+    <input type="number" id="pessoas" step="1" min="1" max="20" value="3">
+    <label for="banho">Minutos de banho por pessoa, por dia</label>
+    <input type="number" id="banho" step="1" min="0" max="60" value="10">
+    <label for="vazao">Vazão do chuveiro (litros por minuto)</label>
+    <select id="vazao">
+      <option value="8" selected>8 L/min (chuveiro elétrico comum)</option>
+      <option value="12">12 L/min (chuveiro a gás / ducha forte)</option>
+      <option value="6">6 L/min (redutor de vazão)</option>
+    </select>
+    <label for="descargas">Descargas por pessoa, por dia</label>
+    <input type="number" id="descargas" step="1" min="0" max="20" value="5">
+    <label for="caixa">Litros por descarga</label>
+    <select id="caixa">
+      <option value="6" selected>6 L (caixa acoplada atual)</option>
+      <option value="12">12 L (caixa antiga)</option>
+      <option value="3">3 L (meia descarga)</option>
+    </select>
+    <label for="lavagens">Lavagens de roupa por semana</label>
+    <input type="number" id="lavagens" step="1" min="0" max="30" value="4">
+    <label for="tarifa">Tarifa de água + esgoto da sua conta (R$ por m&sup3;)</label>
+    <input type="number" id="tarifa" step="0.01" min="0" value="12.00">
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">Esta calculadora estima o volume de água que sua residência consome mensalmente e o custo associado, a partir de hábitos cotidianos como banhos, descargas e lavagens de roupa. É útil para quem quer entender o impacto das rotinas domésticas na conta de água e buscar economia.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>metros³/mes = (pessoas × banho × vazão + pessoas × descargas × caixa + lavagens × 100/7) × 30 / 1000; custo = metros³/mes × tarifa</code></p>
+  <p>O cálculo soma o consumo diário de água proveniente de três fontes: banhos (pessoas × minutos × vazão), descargas (pessoas × número × litros por descarga) e lavagens de roupa (lavagens semanais convertidas para consumo diário). O total diário é multiplicado por 30 dias e convertido para metros cúbicos.</p>
+  <p>Cada campo corresponde a um dado que você fornece: número de moradores, tempo de banho, vazão do chuveiro, frequência e volume das descargas, quantidade semanal de lavagens e o valor da tarifa de água + esgoto cobrada na sua conta.</p>
+  <h2>Exemplo</h2>
+  <p>Família de 4 pessoas, banho de 8 min, chuveiro 10 L/min, 5 descargas diárias de 6 L, 3 lavagens por semana, tarifa R$ 13,00/m³.</p>
+  <ol>
+    <li>Banho diário: 4 × 8 × 10 = 320 L</li>
+    <li>Descarga diária: 4 × 5 × 6 = 120 L</li>
+    <li>Lavagem diária: 3 × 100 / 7 ≈ 43 L</li>
+    <li>Consumo diário total: 320 + 120 + 43 ≈ 483 L</li>
+    <li>Consumo mensal: 483 × 30 / 1000 ≈ 14,5 m³</li>
+    <li>Custo: 14,5 × 13,00 ≈ R$ 188,31</li>
+  </ol>
+  <p><strong>A família gastaria cerca de 14,5 m³ de água por mês, resultando em aproximadamente R$ 188,31 na conta.</strong></p>
+  <h2>Valores típicos de consumo</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Consumo médio diário (L)</th></tr></thead>
+    <tbody>
+      <tr><td>Banho (8 min, 10 L/min)</td><td>80 L por pessoa</td></tr>
+      <tr><td>Descarga (caixa 6 L, 5 vezes)</td><td>30 L por pessoa</td></tr>
+      <tr><td>Lavagem de roupa (100 L)</td><td>14 L por lavagem</td></tr>
+      <tr><td>Uso geral (torneira, cozinha)</td><td>15-30 L por pessoa</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>O cálculo não inclui água usada em torneiras, cozinha, limpeza de pisos ou rega de jardins, que podem representar até 30 % do consumo total.</li>
+    <li>A tarifa usada é a média da conta; impostos, taxas de esgoto ou descontos regionais podem alterar o valor final.</li>
+    <li>A estimativa assume 30 dias por mês; meses com 31 ou 28 dias terão variação proporcional.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Como reduzir o consumo de água no banho?</h3>
+  <p>Instale redutores de vazão, diminua o tempo de banho ou use chuveiros elétricos com controle de temperatura que evitam desperdício.</p>
+  <h3>Qual a diferença de custo entre caixa d'água de 6 L e 12 L?</h3>
+  <p>Uma caixa de 12 L dobra o volume por descarga, aumentando o consumo diário proporcionalmente; o custo pode crescer até cerca de 30 % se o número de descargas permanecer igual.</p>
+  <h3>A conta de água inclui esgoto?</h3>
+  <p>Sim, a maioria das tarifas combina água e esgoto em um único valor por metro cúbico, como usado na calculadora.</p>
+  <h3>Por que a calculadora usa 30 dias para o mês?</h3>
+  <p>É uma média simplificada que facilita a estimativa; para maior precisão, ajuste o resultado multiplicando o consumo diário pelo número exato de dias do mês.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../gasto-chuveiro/">Quanto Gasta um Chuveiro Elétrico</a> · <a href="../arcano-pessoal-anual/">Calculadora de Arcano Pessoal Anual</a> · <a href="../blocos-casa/">Quantos Blocos para Construir uma Casa</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+const CAMPOS = ["pessoas","banho","vazao","descargas","caixa","lavagens","tarifa"];
+const LITROS_LAVAGEM = 100;
+const res = document.getElementById("resultado");
+const det = document.getElementById("detalhe");
+const num = (n, c) => n.toLocaleString("pt-BR", {minimumFractionDigits: c, maximumFractionDigits: c});
+
+function calcular() {
+  const v = {};
+  for (const id of CAMPOS) {
+    const n = parseFloat(document.getElementById(id).value);
+    if (!isFinite(n) || n < 0) { res.hidden = true; det.textContent = ""; return; }
+    v[id] = n;
+  }
+  if (v.pessoas < 1) { res.hidden = true; det.textContent = ""; return; }
+
+  const banhoDia = v.pessoas * v.banho * v.vazao;
+  const descargaDia = v.pessoas * v.descargas * v.caixa;
+  const lavagemDia = v.lavagens * LITROS_LAVAGEM / 7;
+  const litrosDia = banhoDia + descargaDia + lavagemDia;
+  const metrosMes = litrosDia * 30 / 1000;
+  const custo = metrosMes * v.tarifa;
+
+  res.hidden = false;
+  res.textContent = num(metrosMes, 1) + " m\u00b3 por m\u00eas \u2014 R$ " + num(custo, 2);
+  det.textContent =
+    "Consumo por dia: " + num(litrosDia, 0) + " litros (" + num(litrosDia / v.pessoas, 0) + " L por pessoa)\n" +
+    "Banhos: " + num(banhoDia, 0) + " L/dia\n" +
+    "Descargas: " + num(descargaDia, 0) + " L/dia\n" +
+    "M\u00e1quina de lavar: " + num(lavagemDia, 0) + " L/dia (" + LITROS_LAVAGEM + " L por lavagem)\n" +
+    "Isso n\u00e3o inclui torneiras, cozinha, limpeza e rega \u2014 some o que a sua rotina tiver a mais.";
+}
+
+for (const id of CAMPOS) {
+  const el = document.getElementById(id);
+  el.addEventListener("input", calcular);
+  el.addEventListener("change", calcular);
+}
+calcular();
+</script>
+</body>
+</html>

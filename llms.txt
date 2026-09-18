@@ -4,6 +4,7 @@
 
 ## Ferramentas
 
+- [Calculadora de Água: Consumo e Conta do Mês](https://hashino.xyz/tools/agua/): Calcule quantos litros e metros cúbicos de água sua casa gasta por mês e quanto isso pesa na conta, a partir dos banhos, descargas e lavagens.
 - [Calculadora de Arcano Pessoal 2026 — Ano Pessoal no Tarô](https://hashino.xyz/tools/arcano-pessoal-2026/): Descubra seu arcano pessoal de 2026 (o ano pessoal do tarô) pela sua data de nascimento. Grátis, resultado na hora.
 - [Calculadora de Arcano Pessoal Anual — Ano Pessoal do Tarô](https://hashino.xyz/tools/arcano-pessoal-anual/): Descubra seu Arcano Pessoal Anual (ano pessoal do tarô) a partir do dia e mês de nascimento. Calculadora grátis, resultado na hora.
 - [Quantos Blocos para Construir uma Casa — Estimativa](https://hashino.xyz/tools/blocos-casa/): Estime quantos blocos de concreto ou cerâmicos para construir uma casa pelo tamanho em m². Grátis, sem cadastro, na hora.

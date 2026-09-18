@@ -1,0 +1,68 @@
+{
+ "intro": "Esta calculadora estima o volume de água que sua residência consome mensalmente e o custo associado, a partir de hábitos cotidianos como banhos, descargas e lavagens de roupa. É útil para quem quer entender o impacto das rotinas domésticas na conta de água e buscar economia.",
+ "formula": "metros³/mes = (pessoas × banho × vazão + pessoas × descargas × caixa + lavagens × 100/7) × 30 / 1000; custo = metros³/mes × tarifa",
+ "como": [
+  "O cálculo soma o consumo diário de água proveniente de três fontes: banhos (pessoas × minutos × vazão), descargas (pessoas × número × litros por descarga) e lavagens de roupa (lavagens semanais convertidas para consumo diário). O total diário é multiplicado por 30 dias e convertido para metros cúbicos.",
+  "Cada campo corresponde a um dado que você fornece: número de moradores, tempo de banho, vazão do chuveiro, frequência e volume das descargas, quantidade semanal de lavagens e o valor da tarifa de água + esgoto cobrada na sua conta."
+ ],
+ "exemplo": {
+  "cenario": "Família de 4 pessoas, banho de 8 min, chuveiro 10 L/min, 5 descargas diárias de 6 L, 3 lavagens por semana, tarifa R$ 13,00/m³.",
+  "passos": [
+   "Banho diário: 4 × 8 × 10 = 320 L",
+   "Descarga diária: 4 × 5 × 6 = 120 L",
+   "Lavagem diária: 3 × 100 / 7 ≈ 43 L",
+   "Consumo diário total: 320 + 120 + 43 ≈ 483 L",
+   "Consumo mensal: 483 × 30 / 1000 ≈ 14,5 m³",
+   "Custo: 14,5 × 13,00 ≈ R$ 188,31"
+  ],
+  "resultado": "A família gastaria cerca de 14,5 m³ de água por mês, resultando em aproximadamente R$ 188,31 na conta."
+ },
+ "tabela": {
+  "titulo": "Valores típicos de consumo",
+  "colunas": [
+   "Item",
+   "Consumo médio diário (L)"
+  ],
+  "linhas": [
+   [
+    "Banho (8 min, 10 L/min)",
+    "80 L por pessoa"
+   ],
+   [
+    "Descarga (caixa 6 L, 5 vezes)",
+    "30 L por pessoa"
+   ],
+   [
+    "Lavagem de roupa (100 L)",
+    "14 L por lavagem"
+   ],
+   [
+    "Uso geral (torneira, cozinha)",
+    "15-30 L por pessoa"
+   ]
+  ]
+ },
+ "cuidados": [
+  "O cálculo não inclui água usada em torneiras, cozinha, limpeza de pisos ou rega de jardins, que podem representar até 30 % do consumo total.",
+  "A tarifa usada é a média da conta; impostos, taxas de esgoto ou descontos regionais podem alterar o valor final.",
+  "A estimativa assume 30 dias por mês; meses com 31 ou 28 dias terão variação proporcional."
+ ],
+ "faq": [
+  {
+   "p": "Como reduzir o consumo de água no banho?",
+   "r": "Instale redutores de vazão, diminua o tempo de banho ou use chuveiros elétricos com controle de temperatura que evitam desperdício."
+  },
+  {
+   "p": "Qual a diferença de custo entre caixa d'água de 6 L e 12 L?",
+   "r": "Uma caixa de 12 L dobra o volume por descarga, aumentando o consumo diário proporcionalmente; o custo pode crescer até cerca de 30 % se o número de descargas permanecer igual."
+  },
+  {
+   "p": "A conta de água inclui esgoto?",
+   "r": "Sim, a maioria das tarifas combina água e esgoto em um único valor por metro cúbico, como usado na calculadora."
+  },
+  {
+   "p": "Por que a calculadora usa 30 dias para o mês?",
+   "r": "É uma média simplificada que facilita a estimativa; para maior precisão, ajuste o resultado multiplicando o consumo diário pelo número exato de dias do mês."
+  }
+ ]
+}
