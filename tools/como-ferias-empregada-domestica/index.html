@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Férias de Empregada Doméstica Proporcional: Calcule</title>
+<meta name="description" content="Calcule as férias proporcionais da empregada doméstica: avos do período aquisitivo, dias de direito, terço constitucional e venda de 1/3.">
+<link rel="canonical" href="https://hashino.xyz/tools/como-ferias-empregada-domestica/">
+<meta property="og:title" content="Férias de Empregada Doméstica Proporcional: Calcule">
+<meta property="og:description" content="Calcule as férias proporcionais da empregada doméstica: avos do período aquisitivo, dias de direito, terço constitucional e venda de 1/3.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/como-ferias-empregada-domestica/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Férias Proporcionais de Empregada Doméstica","url":"https://hashino.xyz/tools/como-ferias-empregada-domestica/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcule as férias proporcionais da empregada doméstica: avos do período aquisitivo, dias de direito, terço constitucional e venda de 1/3."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Férias Proporcionais de Empregada Doméstica","item":"https://hashino.xyz/tools/como-ferias-empregada-domestica/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Empregada doméstica tem direito a 30 dias de férias?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, depois de doze meses completos de trabalho. Antes disso o direito é proporcional: cada mês com 15 dias ou mais trabalhados acrescenta 2,5 dias de férias."}}, {"@type": "Question", "name": "Como calcular férias proporcionais na saída?", "acceptedAnswer": {"@type": "Answer", "text": "Conte quantos meses do período aquisitivo tiveram 15 dias ou mais trabalhados, multiplique por 2,5 para achar os dias e multiplique pelo valor do dia, que é o salário dividido por 30. Depois some um terço."}}, {"@type": "Question", "name": "Vender um terço das férias aumenta o valor recebido?", "acceptedAnswer": {"@type": "Answer", "text": "Não aumenta o total bruto: o abono paga os mesmos dias que deixaram de ser gozados, com o terço proporcional. A diferença prática é que sobre o abono não incidem INSS e FGTS, e a empregada volta ao trabalho mais cedo."}}, {"@type": "Question", "name": "Um mês com 14 dias trabalhados entra na conta?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O avo exige 15 dias ou mais dentro daquele mês do período aquisitivo. Com 14 dias o mês fica de fora e a diferença de um único dia pode valer 2,5 dias de férias."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Férias proporcionais de empregada doméstica</h1>
+  <section class="app">
+    <label for="salario">Sal&aacute;rio mensal da empregada (R$)</label>
+    <input type="number" id="salario" step="0.01" min="0" value="1620">
+    <label for="inicio">In&iacute;cio do per&iacute;odo aquisitivo (admiss&atilde;o ou &uacute;ltimas f&eacute;rias)</label>
+    <input type="date" id="inicio" value="2025-10-01">
+    <label for="fim">Data do c&aacute;lculo (sa&iacute;da ou in&iacute;cio das f&eacute;rias)</label>
+    <input type="date" id="fim" value="2026-09-18">
+    <label for="abono">Vender 1/3 das f&eacute;rias (abono pecuni&aacute;rio)</label>
+    <select id="abono">
+      <option value="0" selected>N&atilde;o, tira todas as f&eacute;rias</option>
+      <option value="1">Sim, vende 1/3 dos dias</option>
+    </select>
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">Antes de acertar as contas com quem trabalha na sua casa, é preciso saber quantos dias de férias já foram conquistados e quanto eles valem. Esta página faz essa conta para períodos incompletos, que é o caso de quase toda saída no meio do ano e de quem vai tirar férias antes de fechar doze meses.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>dias de direito = 30 x avos / 12; valor = dias x (salário / 30) + um terço; avo = mês do período aquisitivo com 15 dias ou mais trabalhados</code></p>
+  <p>A conta anda mês a mês a partir do início do período aquisitivo. Cada intervalo mensal que tiver 15 dias ou mais dentro do período vira um avo, até o limite de doze. Os avos viram dias de férias na proporção de 30 dias para doze meses, e cada dia vale o salário dividido por 30. Sobre o resultado entra o terço constitucional.</p>
+  <p>O início do período aquisitivo é a data de admissão, se ainda não houve férias, ou a data em que começou o período seguinte às últimas férias tiradas. A data do cálculo é o dia da saída ou o primeiro dia das férias que serão tiradas. O salário é o mensal combinado, sem vale-transporte e sem descontos. Escolher vender um terço divide o resultado entre dias gozados e abono, mas não muda o total bruto.</p>
+  <h2>Exemplo</h2>
+  <p>Salário de R$ 1.620,00, período aquisitivo iniciado em 01/10/2025 e cálculo em 18/09/2026, sem vender dias.</p>
+  <ol>
+    <li>De outubro a agosto são onze meses cheios e setembro tem 18 dias, ou seja 12/12 avos.</li>
+    <li>Dias de direito: 30 x 12 / 12 = 30 dias.</li>
+    <li>Valor do dia: 1.620 / 30 = R$ 54,00. Férias: 30 x 54 = R$ 1.620,00.</li>
+    <li>Terço constitucional: 1.620 / 3 = R$ 540,00.</li>
+  </ol>
+  <p><strong>Total bruto de R$ 2.160,00, sendo R$ 1.620,00 de férias e R$ 540,00 de terço.</strong></p>
+  <h2>Dias de férias por avos completos</h2>
+  <table>
+    <thead><tr><th>Avos</th><th>Dias de direito</th><th>Valor com o terço, para salário de R$ 1.620,00</th></tr></thead>
+    <tbody>
+      <tr><td>3/12</td><td>7,5 dias</td><td>R$ 540,00</td></tr>
+      <tr><td>6/12</td><td>15 dias</td><td>R$ 1.080,00</td></tr>
+      <tr><td>7/12</td><td>17,5 dias</td><td>R$ 1.260,00</td></tr>
+      <tr><td>12/12</td><td>30 dias</td><td>R$ 2.160,00</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>O valor é bruto. A parte gozada ainda sofre desconto de INSS e, conforme a faixa, imposto de renda; o abono pecuniário não entra nessa base.</li>
+    <li>A conta usa o salário mensal fixo. Se houver horas extras habituais ou adicional noturno, a média desses valores também compõe as férias e não é somada aqui.</li>
+    <li>Faltas injustificadas podem reduzir os dias de férias em uma escala prevista na lei. A página não pergunta faltas e assume o período sem descontos.</li>
+    <li>Não separa férias vencidas em dobro. Se um período completo passou mais de um ano sem ser concedido, o cálculo da dobra é outro e vale procurar orientação.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Empregada doméstica tem direito a 30 dias de férias?</h3>
+  <p>Sim, depois de doze meses completos de trabalho. Antes disso o direito é proporcional: cada mês com 15 dias ou mais trabalhados acrescenta 2,5 dias de férias.</p>
+  <h3>Como calcular férias proporcionais na saída?</h3>
+  <p>Conte quantos meses do período aquisitivo tiveram 15 dias ou mais trabalhados, multiplique por 2,5 para achar os dias e multiplique pelo valor do dia, que é o salário dividido por 30. Depois some um terço.</p>
+  <h3>Vender um terço das férias aumenta o valor recebido?</h3>
+  <p>Não aumenta o total bruto: o abono paga os mesmos dias que deixaram de ser gozados, com o terço proporcional. A diferença prática é que sobre o abono não incidem INSS e FGTS, e a empregada volta ao trabalho mais cedo.</p>
+  <h3>Um mês com 14 dias trabalhados entra na conta?</h3>
+  <p>Não. O avo exige 15 dias ou mais dentro daquele mês do período aquisitivo. Com 14 dias o mês fica de fora e a diferença de um único dia pode valer 2,5 dias de férias.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../como-13o-salario-sobre/">13º salário sobre o aviso prévio indenizado</a> · <a href="../gasto-forno-eletrico/">Quanto Gasta um Forno Elétrico</a> · <a href="../calculadora-telhas/">Quantas Telhas por Metro Quadrado</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+const els = ["salario","inicio","fim","abono"].map(id => document.getElementById(id));
+const res = document.getElementById("resultado");
+const det = document.getElementById("detalhe");
+const real = n => n.toLocaleString("pt-BR", {style: "currency", currency: "BRL"});
+const num = (n, c) => n.toLocaleString("pt-BR", {minimumFractionDigits: c, maximumFractionDigits: c});
+const dia = 86400000;
+
+// Avos: mês do período aquisitivo só conta com 15 dias ou mais trabalhados
+// (art. 17 da LC 150/2015, que repete a regra da CLT para o doméstico).
+function avos(ini, fim) {
+  let n = 0;
+  const p = new Date(ini);
+  while (true) {
+    const prox = new Date(p); prox.setMonth(prox.getMonth() + 1);
+    if (p > fim) break;
+    const b = fim < new Date(prox.getTime() - dia) ? fim : new Date(prox.getTime() - dia);
+    const dias = Math.round((b - p) / dia) + 1;
+    if (dias >= 15) n++;
+    p.setMonth(p.getMonth() + 1);
+    if (n >= 12) break;
+  }
+  return Math.min(n, 12);
+}
+
+function calcular() {
+  const salario = parseFloat(els[0].value);
+  const ini = new Date(els[1].value + "T00:00:00");
+  const fim = new Date(els[2].value + "T00:00:00");
+  const vende = els[3].value === "1";
+  if (!isFinite(salario) || salario <= 0 || isNaN(ini) || isNaN(fim) || fim < ini) {
+    res.hidden = true; det.textContent = ""; return;
+  }
+
+  const meses = avos(ini, fim);
+  if (meses === 0) {
+    res.hidden = false;
+    res.textContent = "Nenhum avo completo ainda";
+    det.textContent = "O primeiro avo s\u00f3 nasce quando um m\u00eas do per\u00edodo aquisitivo tiver 15 dias ou mais trabalhados.";
+    return;
+  }
+
+  const diasDireito = 30 * meses / 12;
+  const valorDia = salario / 30;
+  const diasVendidos = vende ? diasDireito / 3 : 0;
+  const diasGozados = diasDireito - diasVendidos;
+
+  const gozo = diasGozados * valorDia, tercoGozo = gozo / 3;
+  const abono = diasVendidos * valorDia, tercoAbono = abono / 3;
+  const total = gozo + tercoGozo + abono + tercoAbono;
+
+  const linhas = [
+    "Avos completos: " + meses + "/12",
+    "Dias de f\u00e9rias a que tem direito: " + num(diasDireito, 1),
+    "Valor do dia: " + real(valorDia) + " (sal\u00e1rio \u00f7 30)",
+    "",
+    "F\u00e9rias gozadas (" + num(diasGozados, 1) + " dias): " + real(gozo),
+    "Ter\u00e7o constitucional sobre elas: " + real(tercoGozo)
+  ];
+  if (vende) {
+    linhas.push("Abono pecuni\u00e1rio (" + num(diasVendidos, 1) + " dias vendidos): " + real(abono),
+                "Ter\u00e7o sobre o abono: " + real(tercoAbono));
+  }
+  linhas.push("", "Valor bruto. O abono pecuni\u00e1rio n\u00e3o sofre INSS nem FGTS; a parte gozada sim.");
+
+  res.hidden = false;
+  res.textContent = "Total das f\u00e9rias proporcionais: " + real(total);
+  det.textContent = linhas.join("\n");
+}
+
+for (const el of els) { el.addEventListener("input", calcular); el.addEventListener("change", calcular); }
+calcular();
+</script>
+</body>
+</html>

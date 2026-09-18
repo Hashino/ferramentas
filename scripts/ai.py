@@ -33,7 +33,17 @@ import urllib.request
 # seguidas), diferente do uso leve original que este cliente foi desenhado
 # para. Sem isso, 4 tentativas alternando entre os 2 modelos saturados
 # esgotam rápido e o chamador recebe SemIA à toa.
-_RETRY_APOS = re.compile(r"try again in ([\d.]+)s", re.I)
+# "Please try again in 3m22.176s" — sem o grupo de minutos a regex antiga não
+# casava nada e o cliente dormia os 2s do fallback, queimando as 6 tentativas
+# em 12 segundos contra um limite que precisava de 3 minutos (18/09/2026).
+_RETRY_APOS = re.compile(r"try again in (?:(\d+)m)?([\d.]+)s", re.I)
+
+
+def _espera_sugerida(detalhe: str, padrao: float = 2.0) -> float:
+    m = _RETRY_APOS.search(detalhe)
+    if not m:
+        return padrao
+    return int(m.group(1) or 0) * 60 + float(m.group(2)) + 0.5
 
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
       "Chrome/129.0.0.0 Safari/537.36")
@@ -133,8 +143,15 @@ def perguntar(prompt: str, *, sistema: str = "", json_mode: bool = False,
                 detalhe = ""
             ultimo = f"{e.code} {e.reason} {detalhe}"
             if e.code == 429:
-                m = _RETRY_APOS.search(detalhe)
-                espera = float(m.group(1)) + 0.5 if m else 2.0
+                # TPD (tokens por dia) é diferente de TPM: o modelo está morto
+                # para o resto do dia, insistir nele só gasta tentativa. Sai da
+                # lista e a vez passa para o outro modelo.
+                if "tokens per day" in detalhe.lower() and len(modelos) > 1:
+                    print(f"[ai] {modelo}: cota diária estourada, usando só o outro modelo",
+                          file=sys.stderr)
+                    modelos = [x for x in modelos if x != modelo]
+                    continue
+                espera = min(_espera_sugerida(detalhe), 45.0)
                 time.sleep(espera)  # e na volta o `i % len` já troca de modelo
                 continue
             if e.code in (500, 502, 503):

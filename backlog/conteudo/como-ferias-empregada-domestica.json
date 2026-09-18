@@ -1,0 +1,44 @@
+{
+ "intro": "Antes de acertar as contas com quem trabalha na sua casa, é preciso saber quantos dias de férias já foram conquistados e quanto eles valem. Esta página faz essa conta para períodos incompletos, que é o caso de quase toda saída no meio do ano e de quem vai tirar férias antes de fechar doze meses.",
+ "formula": "dias de direito = 30 x avos / 12; valor = dias x (salário / 30) + um terço; avo = mês do período aquisitivo com 15 dias ou mais trabalhados",
+ "como": [
+  "A conta anda mês a mês a partir do início do período aquisitivo. Cada intervalo mensal que tiver 15 dias ou mais dentro do período vira um avo, até o limite de doze. Os avos viram dias de férias na proporção de 30 dias para doze meses, e cada dia vale o salário dividido por 30. Sobre o resultado entra o terço constitucional.",
+  "O início do período aquisitivo é a data de admissão, se ainda não houve férias, ou a data em que começou o período seguinte às últimas férias tiradas. A data do cálculo é o dia da saída ou o primeiro dia das férias que serão tiradas. O salário é o mensal combinado, sem vale-transporte e sem descontos. Escolher vender um terço divide o resultado entre dias gozados e abono, mas não muda o total bruto."
+ ],
+ "exemplo": {
+  "cenario": "Salário de R$ 1.620,00, período aquisitivo iniciado em 01/10/2025 e cálculo em 18/09/2026, sem vender dias.",
+  "passos": [
+   "De outubro a agosto são onze meses cheios e setembro tem 18 dias, ou seja 12/12 avos.",
+   "Dias de direito: 30 x 12 / 12 = 30 dias.",
+   "Valor do dia: 1.620 / 30 = R$ 54,00. Férias: 30 x 54 = R$ 1.620,00.",
+   "Terço constitucional: 1.620 / 3 = R$ 540,00."
+  ],
+  "resultado": "Total bruto de R$ 2.160,00, sendo R$ 1.620,00 de férias e R$ 540,00 de terço."
+ },
+ "tabela": {
+  "titulo": "Dias de férias por avos completos",
+  "colunas": ["Avos", "Dias de direito", "Valor com o terço, para salário de R$ 1.620,00"],
+  "linhas": [
+   ["3/12", "7,5 dias", "R$ 540,00"],
+   ["6/12", "15 dias", "R$ 1.080,00"],
+   ["7/12", "17,5 dias", "R$ 1.260,00"],
+   ["12/12", "30 dias", "R$ 2.160,00"]
+  ]
+ },
+ "cuidados": [
+  "O valor é bruto. A parte gozada ainda sofre desconto de INSS e, conforme a faixa, imposto de renda; o abono pecuniário não entra nessa base.",
+  "A conta usa o salário mensal fixo. Se houver horas extras habituais ou adicional noturno, a média desses valores também compõe as férias e não é somada aqui.",
+  "Faltas injustificadas podem reduzir os dias de férias em uma escala prevista na lei. A página não pergunta faltas e assume o período sem descontos.",
+  "Não separa férias vencidas em dobro. Se um período completo passou mais de um ano sem ser concedido, o cálculo da dobra é outro e vale procurar orientação."
+ ],
+ "faq": [
+  {"p": "Empregada doméstica tem direito a 30 dias de férias?",
+   "r": "Sim, depois de doze meses completos de trabalho. Antes disso o direito é proporcional: cada mês com 15 dias ou mais trabalhados acrescenta 2,5 dias de férias."},
+  {"p": "Como calcular férias proporcionais na saída?",
+   "r": "Conte quantos meses do período aquisitivo tiveram 15 dias ou mais trabalhados, multiplique por 2,5 para achar os dias e multiplique pelo valor do dia, que é o salário dividido por 30. Depois some um terço."},
+  {"p": "Vender um terço das férias aumenta o valor recebido?",
+   "r": "Não aumenta o total bruto: o abono paga os mesmos dias que deixaram de ser gozados, com o terço proporcional. A diferença prática é que sobre o abono não incidem INSS e FGTS, e a empregada volta ao trabalho mais cedo."},
+  {"p": "Um mês com 14 dias trabalhados entra na conta?",
+   "r": "Não. O avo exige 15 dias ou mais dentro daquele mês do período aquisitivo. Com 14 dias o mês fica de fora e a diferença de um único dia pode valer 2,5 dias de férias."}
+ ]
+}

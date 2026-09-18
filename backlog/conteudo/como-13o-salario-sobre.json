@@ -1,0 +1,44 @@
+{
+ "intro": "Quem é demitido sem justa causa e recebe o aviso prévio em dinheiro costuma olhar só o valor do aviso e esquecer que ele estica a data de saída no papel. Essa conta mostra quantos avos de 13º essa projeção acrescenta e quanto isso vale em reais, antes de conferir o termo de rescisão.",
+ "formula": "13º = (salário bruto / 12) × avos; avos = meses do ano com 15 dias ou mais dentro do período que vai da admissão até a data projetada (último dia trabalhado + dias de aviso)",
+ "como": [
+  "A conta faz três passos. Primeiro mede os anos completos de casa para achar os dias de aviso: 30 dias mais 3 por ano completo, limitados a 90. Depois soma esses dias ao último dia trabalhado e chama o resultado de data projetada do fim do contrato. Por último varre mês a mês do ano e conta como avo todo mês que teve 15 dias ou mais dentro desse período.",
+  "Os três campos vêm de documentos que você já tem em mãos. O salário bruto mensal é o da última remuneração fixa, sem descontos. A data de admissão está na carteira de trabalho ou no contrato. O último dia trabalhado é a data do desligamento comunicada pela empresa, não a data em que a rescisão foi paga. Se o aviso projetado passar de 31 de dezembro, a página separa os avos de cada ano."
+ ],
+ "exemplo": {
+  "cenario": "Salário de R$ 2.500,00, admissão em 15/03/2022 e último dia trabalhado em 10/09/2026.",
+  "passos": [
+   "Anos completos até a saída: 4. Dias de aviso: 30 + 3 x 4 = 42 dias.",
+   "Data projetada: 10/09/2026 + 42 dias = 22/10/2026.",
+   "Avos de 2026 com a projeção: janeiro a setembro fecham o mês e outubro tem 22 dias, ou seja 10/12. Sem a projeção seriam 8/12, porque setembro pararia no dia 10.",
+   "Parcela mensal: 2.500 / 12 = R$ 208,33. Total: 208,33 x 10 = R$ 2.083,33."
+  ],
+  "resultado": "O 13º sai R$ 2.083,33, dos quais R$ 416,67 existem só por causa da projeção do aviso indenizado."
+ },
+ "tabela": {
+  "titulo": "Dias de aviso prévio por tempo de casa",
+  "colunas": ["Anos completos na empresa", "Dias de aviso", "Dias somados ao último dia trabalhado"],
+  "linhas": [
+   ["1 ano", "33 dias", "pouco mais de um mês"],
+   ["4 anos", "42 dias", "cerca de um mês e dez dias"],
+   ["10 anos", "60 dias", "dois meses"],
+   ["20 anos ou mais", "90 dias (teto)", "três meses"]
+  ]
+ },
+ "cuidados": [
+  "A conta usa o salário bruto fixo. Médias de horas extras, comissões, adicional noturno e insalubridade entram no 13º de quem tem parte variável e não são somadas aqui.",
+  "O resultado é o 13º bruto do ano. Não desconta INSS nem imposto de renda, que incidem na parcela paga na rescisão.",
+  "Vale para aviso prévio indenizado, em que a empresa dispensa o cumprimento e paga o período. No aviso trabalhado os dias já são tempo de serviço normal e não existe projeção a acrescentar.",
+  "Pedido de demissão e justa causa seguem outra regra: não há projeção de aviso pago pela empresa, então os avos param no último dia trabalhado."
+ ],
+ "faq": [
+  {"p": "O aviso prévio indenizado conta como tempo de serviço?",
+   "r": "Sim, para efeito das verbas que dependem do tempo de casa. É por isso que a data usada no cálculo do 13º é a data projetada, e não o último dia em que você apareceu na empresa."},
+  {"p": "Quantos dias tenho de aviso prévio?",
+   "r": "São 30 dias como base, mais 3 dias por ano completo trabalhado na mesma empresa, com teto de 90 dias. Quem tem 4 anos de casa, por exemplo, chega a 42 dias."},
+  {"p": "Um mês com 12 dias trabalhados gera avo de 13º?",
+   "r": "Não. O avo só nasce quando o mês tem 15 dias ou mais dentro do período contado. Com 12 dias aquele mês fica de fora, e é justamente aí que a projeção do aviso costuma virar o jogo."},
+  {"p": "E se a data projetada cair no ano seguinte?",
+   "r": "Os avos são contados separadamente por ano. A página mostra a linha de cada ano, porque o 13º do ano que começou é proporcional ao período projetado dentro dele."}
+ ]
+}
