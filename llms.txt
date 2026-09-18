@@ -13,6 +13,7 @@
 - [Quantos Tijolos por Metro Quadrado — Calculadora](https://hashino.xyz/tools/calculadora-tijolos/): Calcule quantos tijolos você precisa por metro quadrado ou pela área da parede: baiano, 9 furos, bloco ou tijolinho. Grátis.
 - [Quantos Sacos de Cimento para Construir uma Casa](https://hashino.xyz/tools/cimento-casa/): Estime os sacos de cimento para construir uma casa pelo m²: só as paredes ou a obra completa. Grátis, sem cadastro.
 - [Quantos Litros de Cloro para Piscina — Calculadora](https://hashino.xyz/tools/cloro-piscina/): Calcule o cloro da piscina: granulado de manutenção e choque pelo volume em litros. Doses por dia e por choque. Grátis.
+- [13º Salário sobre Aviso Prévio Indenizado: Calcule](https://hashino.xyz/tools/como-13o-salario-sobre/): Calcule quanto de 13º salário o aviso prévio indenizado acrescenta: a projeção do aviso conta como tempo de serviço e pode somar avos.
 - [Quantas Cabeças de Gado por Hectare — Calculadora](https://hashino.xyz/tools/gado-por-hectare/): Calcule quantas cabeças de gado cabem por hectare: lotação do pasto e peso médio dos animais. Grátis, sem cadastro.
 - [Quantas Galinhas Poedeiras por m² — Calculadora](https://hashino.xyz/tools/galinhas-por-m2/): Calcule quantas galinhas poedeiras cabem por metro quadrado ou no galpão inteiro: caipira, semi-confinamento ou gaiola. Grátis.
 - [Quanto Gasta um Chuveiro Elétrico — Calculadora](https://hashino.xyz/tools/gasto-chuveiro/): Calcule quanto o chuveiro elétrico adiciona à sua conta de luz: potência, minutos de banho e banhos por dia. Grátis, sem cadastro.

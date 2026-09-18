@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>13º Salário sobre Aviso Prévio Indenizado: Calcule</title>
+<meta name="description" content="Calcule quanto de 13º salário o aviso prévio indenizado acrescenta: a projeção do aviso conta como tempo de serviço e pode somar avos.">
+<link rel="canonical" href="https://hashino.xyz/tools/como-13o-salario-sobre/">
+<meta property="og:title" content="13º Salário sobre Aviso Prévio Indenizado: Calcule">
+<meta property="og:description" content="Calcule quanto de 13º salário o aviso prévio indenizado acrescenta: a projeção do aviso conta como tempo de serviço e pode somar avos.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/como-13o-salario-sobre/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de 13º sobre Aviso Prévio Indenizado","url":"https://hashino.xyz/tools/como-13o-salario-sobre/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcule quanto de 13º salário o aviso prévio indenizado acrescenta: a projeção do aviso conta como tempo de serviço e pode somar avos."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como funciona 13º salário sobre o aviso prévio indenizado?","acceptedAnswer":{"@type":"Answer","text":"Calcule quanto de 13º salário o aviso prévio indenizado acrescenta: a projeção do aviso conta como tempo de serviço e pode somar avos."}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de 13º sobre Aviso Prévio Indenizado","item":"https://hashino.xyz/tools/como-13o-salario-sobre/"}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>13º salário sobre o aviso prévio indenizado</h1>
+  <section class="app">
+    <label for="salario">Sal&aacute;rio bruto mensal (R$)</label>
+    <input type="number" id="salario" step="0.01" min="0" value="2500">
+    <label for="admissao">Data de admiss&atilde;o</label>
+    <input type="date" id="admissao" value="2022-03-15">
+    <label for="saida">&Uacute;ltimo dia trabalhado (data do desligamento)</label>
+    <input type="date" id="saida" value="2026-09-10">
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../gasto-pc-gamer/">Quanto Gasta um PC Gamer</a> · <a href="../blocos-casa/">Quantos Blocos para Construir uma Casa</a> · <a href="../cloro-piscina/">Quantos Litros de Cloro para Piscina</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+const els = ["salario","admissao","saida"].map(id => document.getElementById(id));
+const res = document.getElementById("resultado");
+const det = document.getElementById("detalhe");
+const real = n => n.toLocaleString("pt-BR", {style: "currency", currency: "BRL"});
+const dia = 86400000;
+
+// Meses com 15 dias ou mais dentro da janela [ini, fim], contados mês a mês.
+// É a regra de avos do 13º (art. 1º da Lei 4.090/62).
+function avos(ini, fim, ano) {
+  let n = 0, meses = [];
+  for (let m = 0; m < 12; m++) {
+    const pIni = new Date(ano, m, 1), pFim = new Date(ano, m + 1, 0);
+    const a = ini > pIni ? ini : pIni, b = fim < pFim ? fim : pFim;
+    if (b < a) continue;
+    const dias = Math.round((b - a) / dia) + 1;
+    if (dias >= 15) { n++; meses.push(m + 1); }
+  }
+  return {n, meses};
+}
+
+function calcular() {
+  const salario = parseFloat(els[0].value);
+  const admissao = new Date(els[1].value + "T00:00:00");
+  const saida = new Date(els[2].value + "T00:00:00");
+  if (!isFinite(salario) || salario <= 0 || isNaN(admissao) || isNaN(saida) || saida < admissao) {
+    res.hidden = true; det.textContent = ""; return;
+  }
+
+  // Aviso prévio: 30 dias + 3 por ano completo, teto de 90 (Lei 12.506/2011).
+  let anos = saida.getFullYear() - admissao.getFullYear();
+  const aniv = new Date(admissao); aniv.setFullYear(admissao.getFullYear() + anos);
+  if (aniv > saida) anos--;
+  const diasAviso = Math.min(30 + 3 * Math.max(anos, 0), 90);
+
+  // O aviso indenizado projeta o contrato: conta como tempo de serviço.
+  const projetada = new Date(saida.getTime() + diasAviso * dia);
+
+  const anoS = saida.getFullYear(), anoP = projetada.getFullYear();
+  const fimNoAnoS = anoP > anoS ? new Date(anoS, 11, 31) : projetada;
+  const iniNoAnoS = admissao > new Date(anoS, 0, 1) ? admissao : new Date(anoS, 0, 1);
+  const a1 = avos(iniNoAnoS, fimNoAnoS, anoS);
+  const semAviso = avos(iniNoAnoS, saida, anoS);
+
+  const parcela = salario / 12;
+  let total = parcela * a1.n;
+  let linhas = [
+    "Aviso pr\u00e9vio indenizado: " + diasAviso + " dias (30 + 3 por ano completo, " + Math.max(anos, 0) + " ano(s))",
+    "Data projetada do fim do contrato: " + projetada.toLocaleDateString("pt-BR"),
+    "",
+    anoS + ": " + a1.n + "/12 avos \u2014 " + real(parcela * a1.n),
+    "Sem a proje\u00e7\u00e3o do aviso seriam " + semAviso.n + "/12 avos (" + real(parcela * semAviso.n) + ")",
+    "Diferen\u00e7a que o aviso indenizado gera: " + real(parcela * (a1.n - semAviso.n))
+  ];
+
+  if (anoP > anoS) {
+    const a2 = avos(new Date(anoP, 0, 1), projetada, anoP);
+    total += parcela * a2.n;
+    linhas.push("", anoP + ": " + a2.n + "/12 avos \u2014 " + real(parcela * a2.n) +
+                " (a proje\u00e7\u00e3o entrou no ano seguinte e gera 13\u00ba pr\u00f3prio)");
+  }
+
+  linhas.push("", "Valor bruto: o 13\u00ba tem desconto de INSS e IRRF na segunda parcela.");
+  res.hidden = false;
+  res.textContent = "13\u00ba proporcional: " + real(total);
+  det.textContent = linhas.join("\n");
+}
+
+for (const el of els) el.addEventListener("input", calcular);
+calcular();
+</script>
+</body>
+</html>
