@@ -55,7 +55,9 @@ def listar(n: int, filtro: str = "") -> None:
         kw = row[0].strip()
         if kw.lower() in julgadas or kw not in serp:
             continue
-        if filtro and filtro.lower() not in kw.lower():
+        # vários filtros separados por vírgula, como no mine.py check
+        fs = [x.strip().lower() for x in filtro.split(",") if x.strip()]
+        if fs and not any(f in kw.lower() for f in fs):
             continue
         print(f"\n# {kw}")
         for i, item in enumerate(serp[kw][:3]):

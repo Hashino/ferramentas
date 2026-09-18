@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantas libras no pneu de bicicleta | Calculadora de calibragem</title>
+<meta name="description" content="Descubra quantas libras colocar no pneu da bike a partir do seu peso, da largura do pneu e do terreno, com valor separado para frente e traseira.">
+<link rel="canonical" href="https://hashino.xyz/tools/libras-pneu-bicicleta/">
+<meta property="og:title" content="Quantas libras no pneu de bicicleta | Calculadora de calibragem">
+<meta property="og:description" content="Descubra quantas libras colocar no pneu da bike a partir do seu peso, da largura do pneu e do terreno, com valor separado para frente e traseira.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/libras-pneu-bicicleta/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Calibragem de Pneu de Bicicleta","url":"https://hashino.xyz/tools/libras-pneu-bicicleta/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Descubra quantas libras colocar no pneu da bike a partir do seu peso, da largura do pneu e do terreno, com valor separado para frente e traseira."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Calibragem de Pneu de Bicicleta","item":"https://hashino.xyz/tools/libras-pneu-bicicleta/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quantas libras colocar no pneu da bicicleta?", "acceptedAnswer": {"@type": "Answer", "text": "Depende do seu peso e da largura do pneu, não só do tipo de bike. Um ciclista de 93 kg no conjunto roda perto de 33 psi atrás em pneu de 50 mm, mas o mesmo pneu com 60 kg de conjunto pede bem menos."}}, {"@type": "Question", "name": "Por que a pressão da frente é menor que a de trás?", "acceptedAnswer": {"@type": "Answer", "text": "Porque a roda dianteira suporta menos peso. Com o ciclista sentado, cerca de 40% da carga fica na frente, e manter os dois pneus na mesma pressão deixa a dianteira dura e sem aderência."}}, {"@type": "Question", "name": "Libras e psi são a mesma coisa?", "acceptedAnswer": {"@type": "Answer", "text": "No uso cotidiano, sim: a libra do posto é a libra por polegada quadrada, o psi. Para converter em bar, divida por 14,5, ou multiplique por 0,0689 como a página faz."}}, {"@type": "Question", "name": "Tubeless roda com quantas libras a menos?", "acceptedAnswer": {"@type": "Answer", "text": "Sem câmara desaparece o risco de pinçar, o que permite baixar a pressão. A página aplica um desconto de 15% sobre a estimativa, mas respeite sempre a pressão mínima que o fabricante do pneu indica."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Quantas libras no pneu de bicicleta</h1>
+  <section class="app">
+    <label for="ciclista">Peso do ciclista equipado (kg)</label>
+    <input type="number" id="ciclista" step="0.5" min="20" value="80">
+    <label for="bike">Peso da bicicleta com bagagem (kg)</label>
+    <input type="number" id="bike" step="0.5" min="3" value="13">
+    <label for="pneu">Largura do pneu (mm)</label>
+    <input type="number" id="pneu" step="1" min="18" value="50">
+    <label for="terreno">Terreno</label>
+    <select id="terreno">
+      <option value="1.1">Asfalto liso</option>
+      <option value="1" selected>Estrada de terra / misto</option>
+      <option value="0.9">Trilha com pedra e raiz</option>
+    </select>
+    <label for="tubeless">Montagem</label>
+    <select id="tubeless">
+      <option value="1" selected>Com c&acirc;mara</option>
+      <option value="0.85">Tubeless</option>
+    </select>
+    <label for="dist">Peso na roda traseira (%)</label>
+    <input type="number" id="dist" step="1" min="40" max="80" value="60">
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">A tabela genérica da internet não sabe quanto você pesa, e é o seu peso que define a pressão certa. Esta página estima a calibragem a partir da carga que cai em cada roda, da largura do pneu e do terreno, e devolve valores separados para frente e traseira, além de uma faixa para ajustar no pedal.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>psi = 30 x carga da roda (kg) / largura do pneu (mm), ajustado pelo terreno e pela montagem; carga traseira = peso total x percentual na traseira</code></p>
+  <p>O peso total é a soma do ciclista equipado com a bicicleta e a bagagem. Esse peso não se divide igualmente: com o ciclista sentado, algo em torno de 60% cai na roda traseira. Cada carga é convertida em pressão pela relação entre peso e largura do pneu, porque pneu largo comporta a mesma carga com menos pressão. Terreno e montagem aplicam o último ajuste.</p>
+  <p>O peso do ciclista é com roupa, capacete e mochila. O da bicicleta inclui garrafa, ferramentas e bagageiro. A largura do pneu está gravada na lateral, em milímetros ou em polegadas (uma polegada equivale a 25,4 mm). Terreno mais irregular pede pressão mais baixa para o pneu absorver o solo, e montagem tubeless roda com menos pressão porque não existe câmara para pinçar.</p>
+  <h2>Exemplo</h2>
+  <p>Ciclista de 80 kg equipado, bicicleta de 13 kg, pneu de 50 mm, estrada de terra, com câmara, 60% do peso na traseira.</p>
+  <ol>
+    <li>Peso total: 80 + 13 = 93 kg.</li>
+    <li>Carga traseira: 93 x 0,60 = 55,8 kg. Dianteira: 37,2 kg.</li>
+    <li>Traseiro: 30 x 55,8 / 50 = 33 psi (2,3 bar).</li>
+    <li>Dianteiro: 30 x 37,2 / 50 = 22 psi (1,5 bar).</li>
+  </ol>
+  <p><strong>Cerca de 33 psi atrás e 22 psi na frente, com uma faixa de mais ou menos 10% para ajustar conforme a sensação.</strong></p>
+  <h2>Estimativa para 93 kg de peso total, terreno misto, com câmara</h2>
+  <table>
+    <thead><tr><th>Largura do pneu</th><th>Traseiro</th><th>Dianteiro</th></tr></thead>
+    <tbody>
+      <tr><td>25 mm (speed)</td><td>67 psi</td><td>45 psi</td></tr>
+      <tr><td>40 mm (gravel)</td><td>42 psi</td><td>28 psi</td></tr>
+      <tr><td>50 mm (MTB)</td><td>33 psi</td><td>22 psi</td></tr>
+      <tr><td>60 mm (MTB largo)</td><td>28 psi</td><td>19 psi</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>O resultado é estimativa de partida, não especificação. A pressão máxima gravada na lateral do pneu e no aro é o limite que não se ultrapassa, e a mínima do fabricante vale principalmente em tubeless, onde pressão de menos descola o pneu do aro.</li>
+    <li>O modelo usa largura declarada. Pneu montado em aro largo mede mais do que diz a lateral, e essa diferença muda a pressão ideal para baixo.</li>
+    <li>A distribuição de 60% na traseira vale para posição sentada em terreno plano. Descida forte joga peso para a frente e subida joga para trás.</li>
+    <li>Não considera temperatura. Pneu calibrado no fresco da manhã ganha pressão ao longo do dia, e o inverso também acontece.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Quantas libras colocar no pneu da bicicleta?</h3>
+  <p>Depende do seu peso e da largura do pneu, não só do tipo de bike. Um ciclista de 93 kg no conjunto roda perto de 33 psi atrás em pneu de 50 mm, mas o mesmo pneu com 60 kg de conjunto pede bem menos.</p>
+  <h3>Por que a pressão da frente é menor que a de trás?</h3>
+  <p>Porque a roda dianteira suporta menos peso. Com o ciclista sentado, cerca de 40% da carga fica na frente, e manter os dois pneus na mesma pressão deixa a dianteira dura e sem aderência.</p>
+  <h3>Libras e psi são a mesma coisa?</h3>
+  <p>No uso cotidiano, sim: a libra do posto é a libra por polegada quadrada, o psi. Para converter em bar, divida por 14,5, ou multiplique por 0,0689 como a página faz.</p>
+  <h3>Tubeless roda com quantas libras a menos?</h3>
+  <p>Sem câmara desaparece o risco de pinçar, o que permite baixar a pressão. A página aplica um desconto de 15% sobre a estimativa, mas respeite sempre a pressão mínima que o fabricante do pneu indica.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../trelicas-metro-quadrado/">Quantas treliças por metro quadrado</a> · <a href="../galinhas-por-m2/">Quantas Galinhas Poedeiras por m²</a> · <a href="../gasto-chuveiro/">Quanto Gasta um Chuveiro Elétrico</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+const els = ["ciclista","bike","pneu","terreno","tubeless","dist"].map(id => document.getElementById(id));
+const res = document.getElementById("resultado");
+const det = document.getElementById("detalhe");
+const num = (n, c) => n.toLocaleString("pt-BR", {minimumFractionDigits: c, maximumFractionDigits: c});
+
+// Modelo de carga por largura: pressão (psi) = K x carga da roda (kg) / largura (mm).
+// K = 30 põe o resultado dentro das faixas que os fabricantes publicam: um pneu de
+// 50 mm com 56 kg na roda dá ~33 psi (MTB), e um de 25 mm com 50 kg dá ~66 psi
+// (speed). É estimativa de partida para ajustar no pedal, não especificação técnica.
+const K = 30;
+
+function calcular() {
+  const ciclista = parseFloat(els[0].value);
+  const bike = parseFloat(els[1].value);
+  const pneu = parseFloat(els[2].value);
+  const terreno = parseFloat(els[3].value);
+  const tubeless = parseFloat(els[4].value);
+  const dist = parseFloat(els[5].value);
+  if (!isFinite(ciclista) || ciclista <= 0 || !isFinite(bike) || bike <= 0
+      || !isFinite(pneu) || pneu <= 0 || !isFinite(dist) || dist <= 0) {
+    res.hidden = true; det.textContent = ""; return;
+  }
+
+  const total = ciclista + bike;
+  const tras = total * dist / 100;
+  const diant = total - tras;
+  const psi = carga => K * carga / pneu * terreno * tubeless;
+  const pT = psi(tras), pD = psi(diant);
+
+  const linhas = [
+    "Peso total: " + num(total, 1) + " kg (ciclista + bicicleta)",
+    "Carga na roda traseira: " + num(tras, 1) + " kg | dianteira: " + num(diant, 1) + " kg",
+    "",
+    "Traseiro: " + num(pT, 0) + " psi (" + num(pT * 0.0689, 1) + " bar)",
+    "Dianteiro: " + num(pD, 0) + " psi (" + num(pD * 0.0689, 1) + " bar)",
+    "",
+    "Faixa de ajuste: " + num(pT * 0.9, 0) + " a " + num(pT * 1.1, 0) + " psi atrás, " +
+      num(pD * 0.9, 0) + " a " + num(pD * 1.1, 0) + " psi na frente",
+    "Nunca ultrapasse a pressão máxima gravada na lateral do pneu e no aro."
+  ];
+
+  res.hidden = false;
+  res.textContent = num(pT, 0) + " psi atrás e " + num(pD, 0) + " psi na frente";
+  det.textContent = linhas.join("\n");
+}
+
+for (const el of els) { el.addEventListener("input", calcular); el.addEventListener("change", calcular); }
+calcular();
+</script>
+</body>
+</html>

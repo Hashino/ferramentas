@@ -2447,7 +2447,7 @@ quantas cdb o santos tem,descartada,2026-09-10,matrix:cdb
 quantas cdb o vasco tem,descartada,2026-09-10,matrix:cdb
 quantas cdb tem o cruzeiro,descartada,2026-09-10,matrix:cdb
 quantas cdb tem o gremio,descartada,2026-09-10,matrix:cdb
-quantas codornas por metro quadrado,candidata,2026-09-18,matrix:metro quadrado
+quantas codornas por metro quadrado,feita,2026-09-18,matrix:metro quadrado
 quantas construção,candidata,2026-09-18,matrix:construção
 quantas contas salario posso ter,candidata,2026-09-10,matrix:salário
 quantas contemplação consórcio honda,candidata,2026-09-10,matrix:consórcio
@@ -2523,7 +2523,7 @@ quantas libras pneu bicicleta aro 26,candidata,2026-09-18,matrix:pneu
 quantas libras pneu bicicleta aro 29,candidata,2026-09-18,matrix:pneu
 quantas libras pneu biz,candidata,2026-09-18,matrix:pneu
 quantas libras pneu biz 125,candidata,2026-09-18,matrix:pneu
-quantas libras pneu de bicicleta,candidata,2026-09-18,matrix:pneu
+quantas libras pneu de bicicleta,feita,2026-09-18,matrix:pneu
 quantas libras pneu de carro,candidata,2026-09-18,matrix:pneu
 quantas libras pneu de moto,candidata,2026-09-18,matrix:pneu
 quantas marchas cambio cvt,candidata,2026-09-10,matrix:câmbio
@@ -2604,7 +2604,7 @@ quantas taças tem uma garrafa de vinho,feita,tacas-vinho,leva16
 quantas telhas para cobrir uma casa,descartada,,manual
 quantas telhas por metro quadrado,feita,,manual
 quantas telhas por metro quadrado colonial,candidata,2026-09-18,matrix:metro quadrado
-quantas tilapias por metro quadrado,candidata,2026-09-18,matrix:metro quadrado
+quantas tilapias por metro quadrado,feita,2026-09-18,matrix:metro quadrado
 quantas tinta,candidata,2026-09-18,matrix:tinta
 quantas tinta guache vem na caixa,candidata,2026-09-18,matrix:tinta
 quantas tinta para pintar o cabelo,candidata,2026-09-18,matrix:tinta
@@ -2625,7 +2625,7 @@ quantas toneladas de combustivel leva um voo,candidata,2026-09-18,matrix:combust
 quantas toneladas de combustível leva um avião,candidata,2026-09-18,matrix:combustível
 quantas toneladas de combustível tem um foguete,candidata,2026-09-18,matrix:combustível
 quantas toneladas de combustível vai no a380,candidata,2026-09-18,matrix:combustível
-quantas treliças por metro quadrado,candidata,2026-09-18,matrix:metro quadrado
+quantas treliças por metro quadrado,feita,2026-09-18,matrix:metro quadrado
 quantas tá o dólar,candidata,2026-09-10,matrix:dólar
 quantas tá o dólar hoje,candidata,2026-09-10,matrix:dólar
 quantas unidades,candidata,2026-09-18,matrix:unidades

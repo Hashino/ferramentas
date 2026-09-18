@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantas codornas por metro quadrado | Calculadora de lotação</title>
+<meta name="description" content="Calcule quantas codornas cabem no seu galpão: informe as medidas, a área perdida com corredor e a densidade, e veja aves, ração diária e ovos.">
+<link rel="canonical" href="https://hashino.xyz/tools/codornas-metro-quadrado/">
+<meta property="og:title" content="Quantas codornas por metro quadrado | Calculadora de lotação">
+<meta property="og:description" content="Calcule quantas codornas cabem no seu galpão: informe as medidas, a área perdida com corredor e a densidade, e veja aves, ração diária e ovos.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/codornas-metro-quadrado/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Codornas por Metro Quadrado","url":"https://hashino.xyz/tools/codornas-metro-quadrado/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcule quantas codornas cabem no seu galpão: informe as medidas, a área perdida com corredor e a densidade, e veja aves, ração diária e ovos."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Codornas por Metro Quadrado","item":"https://hashino.xyz/tools/codornas-metro-quadrado/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quantas codornas cabem em 1 metro quadrado?", "acceptedAnswer": {"@type": "Answer", "text": "Em gaiola de postura a referência comum fica entre 60 e 100 aves por metro quadrado de piso de gaiola. Em criação no piso com cama o número cai para algo em torno de 50, porque as aves dividem o espaço com o esterco."}}, {"@type": "Question", "name": "Por que descontar o corredor da área do galpão?", "acceptedAnswer": {"@type": "Answer", "text": "Porque o corredor de serviço, o depósito de ração e a circulação não abrigam aves. Em galpões pequenos essa perda passa de 25% da área construída, e ignorá-la superestima o plantel."}}, {"@type": "Question", "name": "Quanta ração uma codorna come por dia?", "acceptedAnswer": {"@type": "Answer", "text": "Aves adultas em produção costumam consumir algo em torno de 22 a 28 gramas por dia. O campo é editável justamente porque esse número muda com a linhagem, a fase e a temperatura do galpão."}}, {"@type": "Question", "name": "Quantos ovos por dia esperar do plantel?", "acceptedAnswer": {"@type": "Answer", "text": "Multiplique o número de aves pela taxa de postura. Plantéis adultos bem manejados operam entre 75% e 90%, então 720 aves a 80% rendem cerca de 576 ovos diários."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Quantas codornas por metro quadrado</h1>
+  <section class="app">
+    <label for="comprimento">Comprimento do galp&atilde;o ou da gaiola (m)</label>
+    <input type="number" id="comprimento" step="0.1" min="0" value="4">
+    <label for="largura">Largura (m)</label>
+    <input type="number" id="largura" step="0.1" min="0" value="3">
+    <label for="corredor">&Aacute;rea perdida com corredor e equipamento (%)</label>
+    <input type="number" id="corredor" step="1" min="0" max="80" value="25">
+    <label for="sistema">Sistema de cria&ccedil;&atilde;o</label>
+    <select id="sistema">
+      <option value="80" selected>Postura em gaiola &mdash; 80 aves/m&sup2;</option>
+      <option value="100">Corte em gaiola &mdash; 100 aves/m&sup2;</option>
+      <option value="50">Piso com cama &mdash; 50 aves/m&sup2;</option>
+      <option value="0">Informar densidade</option>
+    </select>
+    <label for="densidade">Densidade usada (aves por m&sup2;)</label>
+    <input type="number" id="densidade" step="1" min="1" value="80">
+    <label for="racao">Ra&ccedil;&atilde;o por ave (g/dia)</label>
+    <input type="number" id="racao" step="1" min="1" value="25">
+    <label for="postura">Taxa de postura (%)</label>
+    <input type="number" id="postura" step="1" min="0" max="100" value="80">
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">Lotação errada é o erro que mais custa caro na coturnicultura: aperta demais e caem a postura e a sanidade, sobra espaço e o galpão não paga o investimento. Esta página parte das medidas do seu galpão ou gaiola, desconta o que corredor e equipamento ocupam e mostra quantas aves cabem, com ração e ovos por dia.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>área útil = comprimento x largura x (1 - corredor %); aves = área útil x densidade; ração/dia = aves x gramas por ave; ovos/dia = aves x taxa de postura</code></p>
+  <p>A conta começa pela área construída e tira dela a fração ocupada por corredor de serviço, comedouro externo e circulação. O que sobra é a área que de fato abriga as aves. Multiplicada pela densidade do sistema escolhido, dá o plantel. Ração e ovos saem do plantel por regra de três simples, com os parâmetros que você pode ajustar.</p>
+  <p>As medidas são as do galpão, quando a criação é em piso, ou as da área total de gaiola, quando é em bateria. A densidade muda com o sistema: gaiola comporta muito mais aves por metro quadrado do que piso com cama, porque o esterco não fica junto das aves. A taxa de postura e o consumo de ração vêm do seu histórico; os valores iniciais são referências de plantéis adultos em produção.</p>
+  <h2>Exemplo</h2>
+  <p>Galpão de 4 m por 3 m, 25% da área tomada por corredor, postura em gaiola a 80 aves/m², 25 g de ração por ave e 80% de postura.</p>
+  <ol>
+    <li>Área total: 4 x 3 = 12 m².</li>
+    <li>Área útil: 12 x 0,75 = 9 m².</li>
+    <li>Aves: 9 x 80 = 720 codornas.</li>
+    <li>Ração: 720 x 25 g = 18 kg por dia. Ovos: 720 x 0,80 = 576 por dia.</li>
+  </ol>
+  <p><strong>Cabem 720 codornas em 9 m² úteis, consumindo 18 kg de ração e rendendo cerca de 576 ovos por dia.</strong></p>
+  <h2>Densidades usadas como ponto de partida</h2>
+  <table>
+    <thead><tr><th>Sistema</th><th>Aves por m²</th><th>Aves em 9 m² úteis</th></tr></thead>
+    <tbody>
+      <tr><td>Piso com cama</td><td>50</td><td>450</td></tr>
+      <tr><td>Postura em gaiola</td><td>80</td><td>720</td></tr>
+      <tr><td>Corte em gaiola</td><td>100</td><td>1.000</td></tr>
+      <tr><td>Densidade própria</td><td>campo editável</td><td>9 x o valor informado</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>As densidades são referências de mercado, não normas. Clima quente, galpão mal ventilado ou linhagem maior pedem folga; publicações de extensão rural chegam a citar 120 aves por m² em gaiola bem ventilada.</li>
+    <li>A conta assume que a ventilação, o comedouro e o bebedouro acompanham o plantel. Lotação alta sem ventilação adequada derruba a postura antes de qualquer outro problema aparecer.</li>
+    <li>Consumo de ração e taxa de postura variam com idade, linhagem e temperatura. Os valores iniciais representam aves adultas em plena produção.</li>
+    <li>Não considera investimento, custo de ração nem preço do ovo: é uma conta de espaço e de plantel, não de viabilidade financeira.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Quantas codornas cabem em 1 metro quadrado?</h3>
+  <p>Em gaiola de postura a referência comum fica entre 60 e 100 aves por metro quadrado de piso de gaiola. Em criação no piso com cama o número cai para algo em torno de 50, porque as aves dividem o espaço com o esterco.</p>
+  <h3>Por que descontar o corredor da área do galpão?</h3>
+  <p>Porque o corredor de serviço, o depósito de ração e a circulação não abrigam aves. Em galpões pequenos essa perda passa de 25% da área construída, e ignorá-la superestima o plantel.</p>
+  <h3>Quanta ração uma codorna come por dia?</h3>
+  <p>Aves adultas em produção costumam consumir algo em torno de 22 a 28 gramas por dia. O campo é editável justamente porque esse número muda com a linhagem, a fase e a temperatura do galpão.</p>
+  <h3>Quantos ovos por dia esperar do plantel?</h3>
+  <p>Multiplique o número de aves pela taxa de postura. Plantéis adultos bem manejados operam entre 75% e 90%, então 720 aves a 80% rendem cerca de 576 ovos diários.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../como-13o-salario-sobre/">13º salário sobre o aviso prévio indenizado</a> · <a href="../trelicas-metro-quadrado/">Quantas treliças por metro quadrado</a> · <a href="../gasto-liquidificador/">Quanto Gasta um Liquidificador</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+const els = ["comprimento","largura","corredor","sistema","densidade","racao","postura"]
+  .map(id => document.getElementById(id));
+const res = document.getElementById("resultado");
+const det = document.getElementById("detalhe");
+const num = (n, c) => n.toLocaleString("pt-BR", {minimumFractionDigits: c, maximumFractionDigits: c});
+
+function calcular() {
+  const comp = parseFloat(els[0].value);
+  const larg = parseFloat(els[1].value);
+  const corredor = parseFloat(els[2].value);
+  const preset = parseFloat(els[3].value);
+  if (preset > 0 && parseFloat(els[4].value) !== preset) els[4].value = preset;
+  const dens = parseFloat(els[4].value);
+  const racao = parseFloat(els[5].value);
+  const postura = parseFloat(els[6].value);
+  if (!isFinite(comp) || comp <= 0 || !isFinite(larg) || larg <= 0 || !isFinite(dens) || dens <= 0) {
+    res.hidden = true; det.textContent = ""; return;
+  }
+  const perda = isFinite(corredor) && corredor > 0 ? Math.min(corredor, 90) : 0;
+
+  const bruta = comp * larg;
+  const util = bruta * (1 - perda / 100);
+  const aves = Math.floor(util * dens);
+
+  const linhas = [
+    "Área total: " + num(bruta, 2) + " m² (" + num(comp, 1) + " m x " + num(larg, 1) + " m)",
+    "Área útil depois de " + num(perda, 0) + "% de corredor: " + num(util, 2) + " m²",
+    "Densidade: " + num(dens, 0) + " aves por m²",
+    "Cabem " + aves.toLocaleString("pt-BR") + " codornas"
+  ];
+  if (isFinite(racao) && racao > 0) {
+    const kgDia = aves * racao / 1000;
+    linhas.push("", "Ração: " + num(kgDia, 1) + " kg por dia (" + num(kgDia * 30, 0) + " kg por mês)");
+  }
+  if (isFinite(postura) && postura > 0) {
+    const ovos = Math.floor(aves * postura / 100);
+    linhas.push("Ovos a " + num(postura, 0) + "% de postura: " + ovos.toLocaleString("pt-BR") +
+                " por dia (" + num(ovos / 30, 1) + " dúzias/dia arredondando)");
+  }
+
+  res.hidden = false;
+  res.textContent = aves.toLocaleString("pt-BR") + " codornas em " + num(util, 2) + " m² úteis";
+  det.textContent = linhas.join("\n");
+}
+
+for (const el of els) { el.addEventListener("input", calcular); el.addEventListener("change", calcular); }
+calcular();
+</script>
+</body>
+</html>

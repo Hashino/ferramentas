@@ -3974,5 +3974,140 @@
   "top10": 8,
   "ia_overview": null,
   "regex": "REPROVA"
+ },
+ "quantas codornas por metro quadrado": {
+  "veredito": "CONSTRUIR",
+  "motivo": "top-3 e video e cartilha; a lotacao depende da area do galpao/gaiola do usuario",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quantas tilapias por metro quadrado": {
+  "veredito": "CONSTRUIR",
+  "motivo": "top-3 e video do Globo Rural, YouTube e TikTok; depende da area e da profundidade do tanque do usuario",
+  "manual": true,
+  "top3": 0,
+  "top10": 1,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quantas treliças por metro quadrado": {
+  "veredito": "CONSTRUIR",
+  "motivo": "top-3 e TikTok/YouTube/Instagram; depende do vao e da largura da laje do usuario",
+  "manual": true,
+  "top3": 2,
+  "top10": 5,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "quantas libras pneu de bicicleta": {
+  "veredito": "CONSTRUIR",
+  "motivo": "top-3 sao artigos com tabela generica; a pressao util depende do peso do ciclista e da largura do pneu",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quantas vigotas por metro quadrado": {
+  "veredito": "DESCARTAR",
+  "motivo": "calculadora de vigotas real no top-2 (lajetrelicada.com)",
+  "manual": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "quantas lajotas por metro quadrado": {
+  "veredito": "DESCARTAR",
+  "motivo": "a SERP responde sobre tijolo por m2, calculo que o site ja publica",
+  "manual": true,
+  "top3": 1,
+  "top10": 3,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "construção quantos tijolos por metro quadrado": {
+  "veredito": "DESCARTAR",
+  "motivo": "mesma conta da calculadora-tijolos ja publicada",
+  "manual": true,
+  "top3": 1,
+  "top10": 4,
+  "ia_overview": null,
+  "regex": "REPROVA"
+ },
+ "quantas libras pneu de carro": {
+  "veredito": "DESCARTAR",
+  "motivo": "a resposta e a etiqueta do fabricante: nao ha o que calcular",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quantas libras pneu de moto": {
+  "veredito": "DESCARTAR",
+  "motivo": "resposta de faixa fixa por cilindrada, um AI Overview resolve",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "minecraft quantas estantes": {
+  "veredito": "DESCARTAR",
+  "motivo": "fato fixo do jogo (15 estantes para nivel 30)",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "minecraft quantos blocos água rega": {
+  "veredito": "DESCARTAR",
+  "motivo": "fato fixo do jogo (um bloco de agua hidrata 9x9)",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "pxg quantas pokebola para catch": {
+  "veredito": "DESCARTAR",
+  "motivo": "PxG Tools, ferramenta interativa, esta no top-1",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quantas balls pxg": {
+  "veredito": "DESCARTAR",
+  "motivo": "PxG Tools, ferramenta interativa, esta no top-1",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quantos unown existem pxg": {
+  "veredito": "DESCARTAR",
+  "motivo": "fato fixo do jogo",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
+ },
+ "quantas parcelas salário maternidade para desempregada": {
+  "veredito": "DESCARTAR",
+  "motivo": "pergunta de regra do INSS, sem dado do usuario",
+  "manual": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": null,
+  "regex": "OK"
  }
 }

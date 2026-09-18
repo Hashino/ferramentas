@@ -1,0 +1,44 @@
+{
+ "intro": "A tabela genérica da internet não sabe quanto você pesa, e é o seu peso que define a pressão certa. Esta página estima a calibragem a partir da carga que cai em cada roda, da largura do pneu e do terreno, e devolve valores separados para frente e traseira, além de uma faixa para ajustar no pedal.",
+ "formula": "psi = 30 x carga da roda (kg) / largura do pneu (mm), ajustado pelo terreno e pela montagem; carga traseira = peso total x percentual na traseira",
+ "como": [
+  "O peso total é a soma do ciclista equipado com a bicicleta e a bagagem. Esse peso não se divide igualmente: com o ciclista sentado, algo em torno de 60% cai na roda traseira. Cada carga é convertida em pressão pela relação entre peso e largura do pneu, porque pneu largo comporta a mesma carga com menos pressão. Terreno e montagem aplicam o último ajuste.",
+  "O peso do ciclista é com roupa, capacete e mochila. O da bicicleta inclui garrafa, ferramentas e bagageiro. A largura do pneu está gravada na lateral, em milímetros ou em polegadas (uma polegada equivale a 25,4 mm). Terreno mais irregular pede pressão mais baixa para o pneu absorver o solo, e montagem tubeless roda com menos pressão porque não existe câmara para pinçar."
+ ],
+ "exemplo": {
+  "cenario": "Ciclista de 80 kg equipado, bicicleta de 13 kg, pneu de 50 mm, estrada de terra, com câmara, 60% do peso na traseira.",
+  "passos": [
+   "Peso total: 80 + 13 = 93 kg.",
+   "Carga traseira: 93 x 0,60 = 55,8 kg. Dianteira: 37,2 kg.",
+   "Traseiro: 30 x 55,8 / 50 = 33 psi (2,3 bar).",
+   "Dianteiro: 30 x 37,2 / 50 = 22 psi (1,5 bar)."
+  ],
+  "resultado": "Cerca de 33 psi atrás e 22 psi na frente, com uma faixa de mais ou menos 10% para ajustar conforme a sensação."
+ },
+ "tabela": {
+  "titulo": "Estimativa para 93 kg de peso total, terreno misto, com câmara",
+  "colunas": ["Largura do pneu", "Traseiro", "Dianteiro"],
+  "linhas": [
+   ["25 mm (speed)", "67 psi", "45 psi"],
+   ["40 mm (gravel)", "42 psi", "28 psi"],
+   ["50 mm (MTB)", "33 psi", "22 psi"],
+   ["60 mm (MTB largo)", "28 psi", "19 psi"]
+  ]
+ },
+ "cuidados": [
+  "O resultado é estimativa de partida, não especificação. A pressão máxima gravada na lateral do pneu e no aro é o limite que não se ultrapassa, e a mínima do fabricante vale principalmente em tubeless, onde pressão de menos descola o pneu do aro.",
+  "O modelo usa largura declarada. Pneu montado em aro largo mede mais do que diz a lateral, e essa diferença muda a pressão ideal para baixo.",
+  "A distribuição de 60% na traseira vale para posição sentada em terreno plano. Descida forte joga peso para a frente e subida joga para trás.",
+  "Não considera temperatura. Pneu calibrado no fresco da manhã ganha pressão ao longo do dia, e o inverso também acontece."
+ ],
+ "faq": [
+  {"p": "Quantas libras colocar no pneu da bicicleta?",
+   "r": "Depende do seu peso e da largura do pneu, não só do tipo de bike. Um ciclista de 93 kg no conjunto roda perto de 33 psi atrás em pneu de 50 mm, mas o mesmo pneu com 60 kg de conjunto pede bem menos."},
+  {"p": "Por que a pressão da frente é menor que a de trás?",
+   "r": "Porque a roda dianteira suporta menos peso. Com o ciclista sentado, cerca de 40% da carga fica na frente, e manter os dois pneus na mesma pressão deixa a dianteira dura e sem aderência."},
+  {"p": "Libras e psi são a mesma coisa?",
+   "r": "No uso cotidiano, sim: a libra do posto é a libra por polegada quadrada, o psi. Para converter em bar, divida por 14,5, ou multiplique por 0,0689 como a página faz."},
+  {"p": "Tubeless roda com quantas libras a menos?",
+   "r": "Sem câmara desaparece o risco de pinçar, o que permite baixar a pressão. A página aplica um desconto de 15% sobre a estimativa, mas respeite sempre a pressão mínima que o fabricante do pneu indica."}
+ ]
+}

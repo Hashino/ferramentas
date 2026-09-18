@@ -1,0 +1,44 @@
+{
+ "intro": "Povoar demais um tanque é a forma mais rápida de perder um lote: o oxigênio cai, a conversão piora e a mortalidade sobe. Esta página dimensiona o povoamento a partir das medidas reais do seu tanque escavado e mostra volume, alevinos, biomassa na despesca e ração do ciclo.",
+ "formula": "área = comprimento x largura; volume = área x profundidade; alevinos = área x densidade; biomassa = sobreviventes x peso médio; ração = biomassa x conversão alimentar",
+ "como": [
+  "A conta usa a área da lâmina d'água para o povoamento, que é como a densidade costuma ser publicada, e a profundidade média para achar o volume, que é o que define a diluição e a densidade final em quilos por metro cúbico. Da quantidade povoada sai a mortalidade esperada, e só os sobreviventes entram no cálculo de biomassa e de ração.",
+  "Comprimento e largura são os da lâmina d'água, não os da borda externa do talude. A profundidade é a média entre a parte rasa e a funda. A densidade depende do sistema: sem aeração o tanque sustenta pouca coisa; com aeração mecânica e renovação de água a lotação sobe várias vezes. O peso de despesca e a conversão alimentar são metas suas e por isso ficam editáveis."
+ ],
+ "exemplo": {
+  "cenario": "Tanque escavado de 20 m por 10 m, 1,5 m de profundidade média, sistema semi-intensivo a 4 peixes/m², despesca a 800 g, 10% de mortalidade e conversão de 1,6.",
+  "passos": [
+   "Área: 20 x 10 = 200 m². Volume: 200 x 1,5 = 300 m³, ou 300 mil litros.",
+   "Alevinos: 200 x 4 = 800 peixes.",
+   "Sobreviventes: 800 x 0,90 = 720 peixes.",
+   "Biomassa: 720 x 0,8 kg = 576 kg, o que dá 1,9 kg por m³. Ração: 576 x 1,6 = 922 kg."
+  ],
+  "resultado": "São 800 alevinos para render cerca de 576 kg de tilápia com pouco mais de 900 kg de ração no ciclo."
+ },
+ "tabela": {
+  "titulo": "Densidade por sistema e resultado em 200 m²",
+  "colunas": ["Sistema", "Peixes por m²", "Alevinos em 200 m²"],
+  "linhas": [
+   ["Extensivo, sem aeração", "1", "200"],
+   ["Semi-intensivo", "4", "800"],
+   ["Intensivo com aeração", "10", "2.000"],
+   ["Densidade própria", "campo editável", "200 x o valor informado"]
+  ]
+ },
+ "cuidados": [
+  "As densidades são referências de partida. O que realmente limita o tanque é o oxigênio dissolvido, que depende de aeração, renovação de água, temperatura e do próprio manejo de ração.",
+  "A conta usa a área para povoar e o volume só para mostrar a densidade final. Tanque muito raso aquece e desoxigena mais rápido do que a área sozinha indica.",
+  "Mortalidade e conversão alimentar variam com a qualidade do alevino, a temperatura e o arraçoamento. Os valores iniciais representam um ciclo sem grandes problemas.",
+  "Não trata de licenciamento ambiental, outorga de água nem custo. Criação comercial exige regularização junto aos órgãos competentes."
+ ],
+ "faq": [
+  {"p": "Quantas tilápias por metro quadrado em tanque escavado?",
+   "r": "Sem aeração, algo próximo de 1 peixe por metro quadrado. Em sistema semi-intensivo trabalha-se em torno de 4, e com aeração mecânica e renovação de água é possível passar de 10. O limite prático é o oxigênio, não a área."},
+  {"p": "Qual a diferença entre densidade por m² e por m³?",
+   "r": "A densidade por metro quadrado é a forma tradicional de povoar tanque escavado, ligada à área da lâmina d'água. A densidade por metro cúbico descreve melhor a carga de peixe na água e é a referência em tanque-rede. A página mostra as duas."},
+  {"p": "Quanta ração um ciclo de tilápia consome?",
+   "r": "Multiplique a biomassa produzida pela conversão alimentar. Com conversão de 1,6, cada quilo de peixe consome 1,6 kg de ração, então 576 kg de tilápia pedem cerca de 920 kg no ciclo inteiro."},
+  {"p": "Preciso descontar mortalidade no povoamento?",
+   "r": "Sim. Uma parte dos alevinos não chega à despesca, e projetar biomassa sobre o total povoado infla o resultado. Entre 5% e 15% é a faixa comum em lotes bem manejados."}
+ ]
+}

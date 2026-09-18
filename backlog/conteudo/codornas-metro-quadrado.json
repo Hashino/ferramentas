@@ -1,0 +1,44 @@
+{
+ "intro": "Lotação errada é o erro que mais custa caro na coturnicultura: aperta demais e caem a postura e a sanidade, sobra espaço e o galpão não paga o investimento. Esta página parte das medidas do seu galpão ou gaiola, desconta o que corredor e equipamento ocupam e mostra quantas aves cabem, com ração e ovos por dia.",
+ "formula": "área útil = comprimento x largura x (1 - corredor %); aves = área útil x densidade; ração/dia = aves x gramas por ave; ovos/dia = aves x taxa de postura",
+ "como": [
+  "A conta começa pela área construída e tira dela a fração ocupada por corredor de serviço, comedouro externo e circulação. O que sobra é a área que de fato abriga as aves. Multiplicada pela densidade do sistema escolhido, dá o plantel. Ração e ovos saem do plantel por regra de três simples, com os parâmetros que você pode ajustar.",
+  "As medidas são as do galpão, quando a criação é em piso, ou as da área total de gaiola, quando é em bateria. A densidade muda com o sistema: gaiola comporta muito mais aves por metro quadrado do que piso com cama, porque o esterco não fica junto das aves. A taxa de postura e o consumo de ração vêm do seu histórico; os valores iniciais são referências de plantéis adultos em produção."
+ ],
+ "exemplo": {
+  "cenario": "Galpão de 4 m por 3 m, 25% da área tomada por corredor, postura em gaiola a 80 aves/m², 25 g de ração por ave e 80% de postura.",
+  "passos": [
+   "Área total: 4 x 3 = 12 m².",
+   "Área útil: 12 x 0,75 = 9 m².",
+   "Aves: 9 x 80 = 720 codornas.",
+   "Ração: 720 x 25 g = 18 kg por dia. Ovos: 720 x 0,80 = 576 por dia."
+  ],
+  "resultado": "Cabem 720 codornas em 9 m² úteis, consumindo 18 kg de ração e rendendo cerca de 576 ovos por dia."
+ },
+ "tabela": {
+  "titulo": "Densidades usadas como ponto de partida",
+  "colunas": ["Sistema", "Aves por m²", "Aves em 9 m² úteis"],
+  "linhas": [
+   ["Piso com cama", "50", "450"],
+   ["Postura em gaiola", "80", "720"],
+   ["Corte em gaiola", "100", "1.000"],
+   ["Densidade própria", "campo editável", "9 x o valor informado"]
+  ]
+ },
+ "cuidados": [
+  "As densidades são referências de mercado, não normas. Clima quente, galpão mal ventilado ou linhagem maior pedem folga; publicações de extensão rural chegam a citar 120 aves por m² em gaiola bem ventilada.",
+  "A conta assume que a ventilação, o comedouro e o bebedouro acompanham o plantel. Lotação alta sem ventilação adequada derruba a postura antes de qualquer outro problema aparecer.",
+  "Consumo de ração e taxa de postura variam com idade, linhagem e temperatura. Os valores iniciais representam aves adultas em plena produção.",
+  "Não considera investimento, custo de ração nem preço do ovo: é uma conta de espaço e de plantel, não de viabilidade financeira."
+ ],
+ "faq": [
+  {"p": "Quantas codornas cabem em 1 metro quadrado?",
+   "r": "Em gaiola de postura a referência comum fica entre 60 e 100 aves por metro quadrado de piso de gaiola. Em criação no piso com cama o número cai para algo em torno de 50, porque as aves dividem o espaço com o esterco."},
+  {"p": "Por que descontar o corredor da área do galpão?",
+   "r": "Porque o corredor de serviço, o depósito de ração e a circulação não abrigam aves. Em galpões pequenos essa perda passa de 25% da área construída, e ignorá-la superestima o plantel."},
+  {"p": "Quanta ração uma codorna come por dia?",
+   "r": "Aves adultas em produção costumam consumir algo em torno de 22 a 28 gramas por dia. O campo é editável justamente porque esse número muda com a linhagem, a fase e a temperatura do galpão."},
+  {"p": "Quantos ovos por dia esperar do plantel?",
+   "r": "Multiplique o número de aves pela taxa de postura. Plantéis adultos bem manejados operam entre 75% e 90%, então 720 aves a 80% rendem cerca de 576 ovos diários."}
+ ]
+}

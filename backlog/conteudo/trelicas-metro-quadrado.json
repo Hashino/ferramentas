@@ -1,0 +1,44 @@
+{
+ "intro": "Laje treliçada não se compra por metro quadrado: compra-se vigota em metro linear e lajota em peça. Esta página faz a tradução, a partir do vão, da largura e do intereixo, e mostra quantas vigotas, quantos metros lineares e quantas lajotas a sua laje pede.",
+ "formula": "vigotas = arredonda para cima (largura / intereixo); metros = vigotas x (vão + 2 x apoio); lajotas = (vigotas - 1) x arredonda para cima (vão / comprimento da lajota)",
+ "como": [
+  "As vigotas correm no sentido do menor vão, que é o que define o comprimento de cada peça. A quantidade sai da largura dividida pelo intereixo, arredondando para cima, porque a última fileira precisa existir inteira. Entre duas vigotas entra uma fileira de lajotas, e cada fileira leva tantas peças quanto o vão comporta.",
+  "O vão é a distância livre que a laje vence, medida no sentido em que as vigotas serão apoiadas. A largura é a dimensão transversal. O intereixo é a distância de centro a centro entre vigotas e vem junto com o tipo de lajota escolhido. O apoio é a sobra que entra na alvenaria em cada extremidade, normalmente 5 cm de cada lado."
+ ],
+ "exemplo": {
+  "cenario": "Laje de 3 m de vão por 6 m de largura, intereixo de 0,42 m, lajota de 25 cm e 5 cm de apoio de cada lado.",
+  "passos": [
+   "Área: 3 x 6 = 18 m².",
+   "Vigotas: 6 / 0,42 = 14,3, arredondado para cima dá 15 vigotas.",
+   "Comprimento de cada uma: 3 + 2 x 0,05 = 3,10 m, totalizando 15 x 3,10 = 46,50 m lineares.",
+   "Lajotas: 14 fileiras x (3 / 0,25 = 12 peças) = 168 lajotas, ou 9,3 por m²."
+  ],
+  "resultado": "São 15 vigotas, 46,50 m lineares e 168 lajotas para os 18 m² da laje."
+ },
+ "tabela": {
+  "titulo": "Peças por metro quadrado conforme o intereixo",
+  "colunas": ["Intereixo", "Metro linear de vigota por m²", "Lajotas de 25 cm por m²"],
+  "linhas": [
+   ["0,33 m", "3,0 m", "12,1"],
+   ["0,42 m", "2,4 m", "9,5"],
+   ["0,50 m", "2,0 m", "8,0"],
+   ["Outro", "1 dividido pelo intereixo", "1 dividido por (intereixo x 0,25)"]
+  ]
+ },
+ "cuidados": [
+  "A altura da vigota e o vão máximo dependem do carregamento e são definidos por projeto estrutural. Esta página conta peças, não dimensiona laje.",
+  "O sentido das vigotas importa: elas devem vencer o menor vão. Inverter o sentido muda a quantidade e, pior, pode estourar o vão máximo da vigota.",
+  "As quantidades são teóricas, sem quebra. Compre com folga para peças danificadas no transporte e nos recortes.",
+  "Capa de concreto, armadura de distribuição, escoramento e concretagem não entram na conta e são parte relevante do custo."
+ ],
+ "faq": [
+  {"p": "Quantos metros de vigota treliçada por metro quadrado de laje?",
+   "r": "É o inverso do intereixo. Com intereixo de 0,42 m são cerca de 2,4 metros lineares por metro quadrado; com 0,33 m sobem para 3 metros, porque as vigotas ficam mais próximas."},
+  {"p": "Qual o sentido certo para colocar as vigotas?",
+   "r": "No sentido do menor vão. A vigota trabalha à flexão ao longo do próprio comprimento, então quanto menor o vão que ela vence, menor a solicitação e menor a altura necessária."},
+  {"p": "O que é intereixo na laje treliçada?",
+   "r": "É a distância de centro a centro entre duas vigotas vizinhas, e ela é definida pelo comprimento da lajota usada. Lajota de 30 cm com vigota de 12 cm de base, por exemplo, resulta em intereixo de 0,42 m."},
+  {"p": "Preciso somar apoio no comprimento da vigota?",
+   "r": "Sim. A vigota não para no limite do vão livre: ela avança sobre a alvenaria ou a viga. Cerca de 5 cm de cada lado é a folga usual, e é isso que o campo de apoio representa."}
+ ]
+}

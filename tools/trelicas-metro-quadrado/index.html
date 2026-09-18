@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantas treliças por metro quadrado | Calculadora de laje treliçada</title>
+<meta name="description" content="Calcule quantas vigotas treliçadas e lajotas a sua laje precisa: informe vão, largura e intereixo e veja metros lineares e peças por metro quadrado.">
+<link rel="canonical" href="https://hashino.xyz/tools/trelicas-metro-quadrado/">
+<meta property="og:title" content="Quantas treliças por metro quadrado | Calculadora de laje treliçada">
+<meta property="og:description" content="Calcule quantas vigotas treliçadas e lajotas a sua laje precisa: informe vão, largura e intereixo e veja metros lineares e peças por metro quadrado.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/trelicas-metro-quadrado/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Treliças e Lajotas para Laje","url":"https://hashino.xyz/tools/trelicas-metro-quadrado/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcule quantas vigotas treliçadas e lajotas a sua laje precisa: informe vão, largura e intereixo e veja metros lineares e peças por metro quadrado."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Treliças e Lajotas para Laje","item":"https://hashino.xyz/tools/trelicas-metro-quadrado/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quantos metros de vigota treliçada por metro quadrado de laje?", "acceptedAnswer": {"@type": "Answer", "text": "É o inverso do intereixo. Com intereixo de 0,42 m são cerca de 2,4 metros lineares por metro quadrado; com 0,33 m sobem para 3 metros, porque as vigotas ficam mais próximas."}}, {"@type": "Question", "name": "Qual o sentido certo para colocar as vigotas?", "acceptedAnswer": {"@type": "Answer", "text": "No sentido do menor vão. A vigota trabalha à flexão ao longo do próprio comprimento, então quanto menor o vão que ela vence, menor a solicitação e menor a altura necessária."}}, {"@type": "Question", "name": "O que é intereixo na laje treliçada?", "acceptedAnswer": {"@type": "Answer", "text": "É a distância de centro a centro entre duas vigotas vizinhas, e ela é definida pelo comprimento da lajota usada. Lajota de 30 cm com vigota de 12 cm de base, por exemplo, resulta em intereixo de 0,42 m."}}, {"@type": "Question", "name": "Preciso somar apoio no comprimento da vigota?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. A vigota não para no limite do vão livre: ela avança sobre a alvenaria ou a viga. Cerca de 5 cm de cada lado é a folga usual, e é isso que o campo de apoio representa."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Quantas treliças por metro quadrado</h1>
+  <section class="app">
+    <label for="vao">V&atilde;o da laje, sentido das vigotas (m)</label>
+    <input type="number" id="vao" step="0.05" min="0.5" value="3">
+    <label for="largura">Largura da laje, sentido transversal (m)</label>
+    <input type="number" id="largura" step="0.05" min="0.5" value="6">
+    <label for="intereixo">Intereixo (dist&acirc;ncia entre eixos das vigotas)</label>
+    <select id="intereixo">
+      <option value="0.42" selected>0,42 m &mdash; lajota de 30 cm</option>
+      <option value="0.33">0,33 m &mdash; lajota de 20 cm</option>
+      <option value="0.50">0,50 m &mdash; lajota de 38 cm</option>
+    </select>
+    <label for="lajota">Comprimento da lajota (m)</label>
+    <input type="number" id="lajota" step="0.01" min="0.1" value="0.25">
+    <label for="apoio">Apoio em cada extremidade da vigota (m)</label>
+    <input type="number" id="apoio" step="0.01" min="0" value="0.05">
+    <label for="preco">Pre&ccedil;o do metro de vigota (R$, opcional)</label>
+    <input type="number" id="preco" step="0.01" min="0" value="">
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">Laje treliçada não se compra por metro quadrado: compra-se vigota em metro linear e lajota em peça. Esta página faz a tradução, a partir do vão, da largura e do intereixo, e mostra quantas vigotas, quantos metros lineares e quantas lajotas a sua laje pede.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>vigotas = arredonda para cima (largura / intereixo); metros = vigotas x (vão + 2 x apoio); lajotas = (vigotas - 1) x arredonda para cima (vão / comprimento da lajota)</code></p>
+  <p>As vigotas correm no sentido do menor vão, que é o que define o comprimento de cada peça. A quantidade sai da largura dividida pelo intereixo, arredondando para cima, porque a última fileira precisa existir inteira. Entre duas vigotas entra uma fileira de lajotas, e cada fileira leva tantas peças quanto o vão comporta.</p>
+  <p>O vão é a distância livre que a laje vence, medida no sentido em que as vigotas serão apoiadas. A largura é a dimensão transversal. O intereixo é a distância de centro a centro entre vigotas e vem junto com o tipo de lajota escolhido. O apoio é a sobra que entra na alvenaria em cada extremidade, normalmente 5 cm de cada lado.</p>
+  <h2>Exemplo</h2>
+  <p>Laje de 3 m de vão por 6 m de largura, intereixo de 0,42 m, lajota de 25 cm e 5 cm de apoio de cada lado.</p>
+  <ol>
+    <li>Área: 3 x 6 = 18 m².</li>
+    <li>Vigotas: 6 / 0,42 = 14,3, arredondado para cima dá 15 vigotas.</li>
+    <li>Comprimento de cada uma: 3 + 2 x 0,05 = 3,10 m, totalizando 15 x 3,10 = 46,50 m lineares.</li>
+    <li>Lajotas: 14 fileiras x (3 / 0,25 = 12 peças) = 168 lajotas, ou 9,3 por m².</li>
+  </ol>
+  <p><strong>São 15 vigotas, 46,50 m lineares e 168 lajotas para os 18 m² da laje.</strong></p>
+  <h2>Peças por metro quadrado conforme o intereixo</h2>
+  <table>
+    <thead><tr><th>Intereixo</th><th>Metro linear de vigota por m²</th><th>Lajotas de 25 cm por m²</th></tr></thead>
+    <tbody>
+      <tr><td>0,33 m</td><td>3,0 m</td><td>12,1</td></tr>
+      <tr><td>0,42 m</td><td>2,4 m</td><td>9,5</td></tr>
+      <tr><td>0,50 m</td><td>2,0 m</td><td>8,0</td></tr>
+      <tr><td>Outro</td><td>1 dividido pelo intereixo</td><td>1 dividido por (intereixo x 0,25)</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>A altura da vigota e o vão máximo dependem do carregamento e são definidos por projeto estrutural. Esta página conta peças, não dimensiona laje.</li>
+    <li>O sentido das vigotas importa: elas devem vencer o menor vão. Inverter o sentido muda a quantidade e, pior, pode estourar o vão máximo da vigota.</li>
+    <li>As quantidades são teóricas, sem quebra. Compre com folga para peças danificadas no transporte e nos recortes.</li>
+    <li>Capa de concreto, armadura de distribuição, escoramento e concretagem não entram na conta e são parte relevante do custo.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Quantos metros de vigota treliçada por metro quadrado de laje?</h3>
+  <p>É o inverso do intereixo. Com intereixo de 0,42 m são cerca de 2,4 metros lineares por metro quadrado; com 0,33 m sobem para 3 metros, porque as vigotas ficam mais próximas.</p>
+  <h3>Qual o sentido certo para colocar as vigotas?</h3>
+  <p>No sentido do menor vão. A vigota trabalha à flexão ao longo do próprio comprimento, então quanto menor o vão que ela vence, menor a solicitação e menor a altura necessária.</p>
+  <h3>O que é intereixo na laje treliçada?</h3>
+  <p>É a distância de centro a centro entre duas vigotas vizinhas, e ela é definida pelo comprimento da lajota usada. Lajota de 30 cm com vigota de 12 cm de base, por exemplo, resulta em intereixo de 0,42 m.</p>
+  <h3>Preciso somar apoio no comprimento da vigota?</h3>
+  <p>Sim. A vigota não para no limite do vão livre: ela avança sobre a alvenaria ou a viga. Cerca de 5 cm de cada lado é a folga usual, e é isso que o campo de apoio representa.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../cafe-por-pessoa/">Quanto de Café por Pessoa</a> · <a href="../arcano-pessoal-anual/">Calculadora de Arcano Pessoal Anual</a> · <a href="../gasto-liquidificador/">Quanto Gasta um Liquidificador</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+const els = ["vao","largura","intereixo","lajota","apoio","preco"].map(id => document.getElementById(id));
+const res = document.getElementById("resultado");
+const det = document.getElementById("detalhe");
+const real = n => n.toLocaleString("pt-BR", {style: "currency", currency: "BRL"});
+const num = (n, c) => n.toLocaleString("pt-BR", {minimumFractionDigits: c, maximumFractionDigits: c});
+
+function calcular() {
+  const vao = parseFloat(els[0].value);
+  const larg = parseFloat(els[1].value);
+  const inter = parseFloat(els[2].value);
+  const lajota = parseFloat(els[3].value);
+  const apoio = parseFloat(els[4].value);
+  const preco = parseFloat(els[5].value);
+  if (!isFinite(vao) || vao <= 0 || !isFinite(larg) || larg <= 0
+      || !isFinite(inter) || inter <= 0 || !isFinite(lajota) || lajota <= 0) {
+    res.hidden = true; det.textContent = ""; return;
+  }
+  const ap = isFinite(apoio) && apoio > 0 ? apoio : 0;
+
+  const area = vao * larg;
+  // as vigotas correm no sentido do vão; a quantidade sai da largura / intereixo
+  const vigotas = Math.ceil(larg / inter);
+  const compVigota = vao + 2 * ap;
+  const metros = vigotas * compVigota;
+  // entre duas vigotas entra uma fileira de lajotas, com (vão / comprimento) peças
+  const fileiras = vigotas - 1;
+  const porFileira = Math.ceil(vao / lajota);
+  const lajotas = Math.max(fileiras, 0) * porFileira;
+  const porM2 = area > 0 ? lajotas / area : 0;
+
+  const linhas = [
+    "Área da laje: " + num(area, 2) + " m²",
+    "Vigotas: " + vigotas + " (largura " + num(larg, 2) + " m ÷ intereixo " + num(inter, 2) + " m, arredondado para cima)",
+    "Comprimento de cada vigota: " + num(compVigota, 2) + " m (vão + " + num(ap, 2) + " m de apoio de cada lado)",
+    "Metros lineares de vigota: " + num(metros, 2) + " m",
+    "",
+    "Fileiras de lajota: " + fileiras + ", com " + porFileira + " peças cada",
+    "Lajotas: " + lajotas.toLocaleString("pt-BR") + " (" + num(porM2, 1) + " por m²)"
+  ];
+  if (isFinite(preco) && preco > 0) {
+    linhas.push("", "Custo das vigotas: " + real(metros * preco));
+  }
+
+  res.hidden = false;
+  res.textContent = vigotas + " vigotas e " + lajotas.toLocaleString("pt-BR") + " lajotas para " + num(area, 2) + " m²";
+  det.textContent = linhas.join("\n");
+}
+
+for (const el of els) { el.addEventListener("input", calcular); el.addEventListener("change", calcular); }
+calcular();
+</script>
+</body>
+</html>

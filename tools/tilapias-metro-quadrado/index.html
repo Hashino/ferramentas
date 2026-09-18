@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantas tilápias por metro quadrado | Calculadora de povoamento</title>
+<meta name="description" content="Calcule quantos alevinos de tilápia cabem no seu tanque: informe comprimento, largura, profundidade e densidade e veja volume, biomassa e ração.">
+<link rel="canonical" href="https://hashino.xyz/tools/tilapias-metro-quadrado/">
+<meta property="og:title" content="Quantas tilápias por metro quadrado | Calculadora de povoamento">
+<meta property="og:description" content="Calcule quantos alevinos de tilápia cabem no seu tanque: informe comprimento, largura, profundidade e densidade e veja volume, biomassa e ração.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/tilapias-metro-quadrado/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Tilápias por Metro Quadrado","url":"https://hashino.xyz/tools/tilapias-metro-quadrado/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcule quantos alevinos de tilápia cabem no seu tanque: informe comprimento, largura, profundidade e densidade e veja volume, biomassa e ração."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Tilápias por Metro Quadrado","item":"https://hashino.xyz/tools/tilapias-metro-quadrado/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quantas tilápias por metro quadrado em tanque escavado?", "acceptedAnswer": {"@type": "Answer", "text": "Sem aeração, algo próximo de 1 peixe por metro quadrado. Em sistema semi-intensivo trabalha-se em torno de 4, e com aeração mecânica e renovação de água é possível passar de 10. O limite prático é o oxigênio, não a área."}}, {"@type": "Question", "name": "Qual a diferença entre densidade por m² e por m³?", "acceptedAnswer": {"@type": "Answer", "text": "A densidade por metro quadrado é a forma tradicional de povoar tanque escavado, ligada à área da lâmina d'água. A densidade por metro cúbico descreve melhor a carga de peixe na água e é a referência em tanque-rede. A página mostra as duas."}}, {"@type": "Question", "name": "Quanta ração um ciclo de tilápia consome?", "acceptedAnswer": {"@type": "Answer", "text": "Multiplique a biomassa produzida pela conversão alimentar. Com conversão de 1,6, cada quilo de peixe consome 1,6 kg de ração, então 576 kg de tilápia pedem cerca de 920 kg no ciclo inteiro."}}, {"@type": "Question", "name": "Preciso descontar mortalidade no povoamento?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Uma parte dos alevinos não chega à despesca, e projetar biomassa sobre o total povoado infla o resultado. Entre 5% e 15% é a faixa comum em lotes bem manejados."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Quantas tilápias por metro quadrado</h1>
+  <section class="app">
+    <label for="comprimento">Comprimento do tanque (m)</label>
+    <input type="number" id="comprimento" step="0.1" min="0" value="20">
+    <label for="largura">Largura do tanque (m)</label>
+    <input type="number" id="largura" step="0.1" min="0" value="10">
+    <label for="profundidade">Profundidade m&eacute;dia da &aacute;gua (m)</label>
+    <input type="number" id="profundidade" step="0.1" min="0.1" value="1.5">
+    <label for="sistema">Sistema de cria&ccedil;&atilde;o</label>
+    <select id="sistema">
+      <option value="1">Extensivo, sem aera&ccedil;&atilde;o &mdash; 1 peixe/m&sup2;</option>
+      <option value="4" selected>Semi-intensivo &mdash; 4 peixes/m&sup2;</option>
+      <option value="10">Intensivo com aera&ccedil;&atilde;o &mdash; 10 peixes/m&sup2;</option>
+      <option value="0">Informar densidade</option>
+    </select>
+    <label for="densidade">Densidade usada (peixes por m&sup2;)</label>
+    <input type="number" id="densidade" step="0.5" min="0.1" value="4">
+    <label for="peso">Peso m&eacute;dio na despesca (g)</label>
+    <input type="number" id="peso" step="10" min="10" value="800">
+    <label for="mortalidade">Mortalidade esperada (%)</label>
+    <input type="number" id="mortalidade" step="1" min="0" max="90" value="10">
+    <label for="conversao">Convers&atilde;o alimentar (kg de ra&ccedil;&atilde;o por kg de peixe)</label>
+    <input type="number" id="conversao" step="0.1" min="0.1" value="1.6">
+    <div class="resultado" id="resultado" hidden></div>
+    <div id="detalhe" style="margin-top:.75rem;color:var(--muted);font-size:.95rem;white-space:pre-line"></div>
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">Povoar demais um tanque é a forma mais rápida de perder um lote: o oxigênio cai, a conversão piora e a mortalidade sobe. Esta página dimensiona o povoamento a partir das medidas reais do seu tanque escavado e mostra volume, alevinos, biomassa na despesca e ração do ciclo.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>área = comprimento x largura; volume = área x profundidade; alevinos = área x densidade; biomassa = sobreviventes x peso médio; ração = biomassa x conversão alimentar</code></p>
+  <p>A conta usa a área da lâmina d'água para o povoamento, que é como a densidade costuma ser publicada, e a profundidade média para achar o volume, que é o que define a diluição e a densidade final em quilos por metro cúbico. Da quantidade povoada sai a mortalidade esperada, e só os sobreviventes entram no cálculo de biomassa e de ração.</p>
+  <p>Comprimento e largura são os da lâmina d'água, não os da borda externa do talude. A profundidade é a média entre a parte rasa e a funda. A densidade depende do sistema: sem aeração o tanque sustenta pouca coisa; com aeração mecânica e renovação de água a lotação sobe várias vezes. O peso de despesca e a conversão alimentar são metas suas e por isso ficam editáveis.</p>
+  <h2>Exemplo</h2>
+  <p>Tanque escavado de 20 m por 10 m, 1,5 m de profundidade média, sistema semi-intensivo a 4 peixes/m², despesca a 800 g, 10% de mortalidade e conversão de 1,6.</p>
+  <ol>
+    <li>Área: 20 x 10 = 200 m². Volume: 200 x 1,5 = 300 m³, ou 300 mil litros.</li>
+    <li>Alevinos: 200 x 4 = 800 peixes.</li>
+    <li>Sobreviventes: 800 x 0,90 = 720 peixes.</li>
+    <li>Biomassa: 720 x 0,8 kg = 576 kg, o que dá 1,9 kg por m³. Ração: 576 x 1,6 = 922 kg.</li>
+  </ol>
+  <p><strong>São 800 alevinos para render cerca de 576 kg de tilápia com pouco mais de 900 kg de ração no ciclo.</strong></p>
+  <h2>Densidade por sistema e resultado em 200 m²</h2>
+  <table>
+    <thead><tr><th>Sistema</th><th>Peixes por m²</th><th>Alevinos em 200 m²</th></tr></thead>
+    <tbody>
+      <tr><td>Extensivo, sem aeração</td><td>1</td><td>200</td></tr>
+      <tr><td>Semi-intensivo</td><td>4</td><td>800</td></tr>
+      <tr><td>Intensivo com aeração</td><td>10</td><td>2.000</td></tr>
+      <tr><td>Densidade própria</td><td>campo editável</td><td>200 x o valor informado</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>As densidades são referências de partida. O que realmente limita o tanque é o oxigênio dissolvido, que depende de aeração, renovação de água, temperatura e do próprio manejo de ração.</li>
+    <li>A conta usa a área para povoar e o volume só para mostrar a densidade final. Tanque muito raso aquece e desoxigena mais rápido do que a área sozinha indica.</li>
+    <li>Mortalidade e conversão alimentar variam com a qualidade do alevino, a temperatura e o arraçoamento. Os valores iniciais representam um ciclo sem grandes problemas.</li>
+    <li>Não trata de licenciamento ambiental, outorga de água nem custo. Criação comercial exige regularização junto aos órgãos competentes.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Quantas tilápias por metro quadrado em tanque escavado?</h3>
+  <p>Sem aeração, algo próximo de 1 peixe por metro quadrado. Em sistema semi-intensivo trabalha-se em torno de 4, e com aeração mecânica e renovação de água é possível passar de 10. O limite prático é o oxigênio, não a área.</p>
+  <h3>Qual a diferença entre densidade por m² e por m³?</h3>
+  <p>A densidade por metro quadrado é a forma tradicional de povoar tanque escavado, ligada à área da lâmina d'água. A densidade por metro cúbico descreve melhor a carga de peixe na água e é a referência em tanque-rede. A página mostra as duas.</p>
+  <h3>Quanta ração um ciclo de tilápia consome?</h3>
+  <p>Multiplique a biomassa produzida pela conversão alimentar. Com conversão de 1,6, cada quilo de peixe consome 1,6 kg de ração, então 576 kg de tilápia pedem cerca de 920 kg no ciclo inteiro.</p>
+  <h3>Preciso descontar mortalidade no povoamento?</h3>
+  <p>Sim. Uma parte dos alevinos não chega à despesca, e projetar biomassa sobre o total povoado infla o resultado. Entre 5% e 15% é a faixa comum em lotes bem manejados.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../rende-textura-metro-quadrado/">Quanto rende a textura por metro quadrado</a> · <a href="../blocos-casa/">Quantos Blocos para Construir uma Casa</a> · <a href="../libras-pneu-bicicleta/">Quantas libras no pneu de bicicleta</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+const els = ["comprimento","largura","profundidade","sistema","densidade","peso","mortalidade","conversao"]
+  .map(id => document.getElementById(id));
+const res = document.getElementById("resultado");
+const det = document.getElementById("detalhe");
+const num = (n, c) => n.toLocaleString("pt-BR", {minimumFractionDigits: c, maximumFractionDigits: c});
+
+function calcular() {
+  const comp = parseFloat(els[0].value);
+  const larg = parseFloat(els[1].value);
+  const prof = parseFloat(els[2].value);
+  const preset = parseFloat(els[3].value);
+  if (preset > 0 && parseFloat(els[4].value) !== preset) els[4].value = preset;
+  const dens = parseFloat(els[4].value);
+  const peso = parseFloat(els[5].value);
+  const mort = parseFloat(els[6].value);
+  const conv = parseFloat(els[7].value);
+  if (!isFinite(comp) || comp <= 0 || !isFinite(larg) || larg <= 0
+      || !isFinite(prof) || prof <= 0 || !isFinite(dens) || dens <= 0) {
+    res.hidden = true; det.textContent = ""; return;
+  }
+
+  const area = comp * larg;
+  const volume = area * prof;
+  const alevinos = Math.floor(area * dens);
+  const m = isFinite(mort) && mort > 0 ? Math.min(mort, 95) : 0;
+  const vivos = Math.floor(alevinos * (1 - m / 100));
+
+  const linhas = [
+    "Área da lâmina d'água: " + num(area, 1) + " m²",
+    "Volume: " + num(volume, 1) + " m³ (" + num(volume * 1000, 0) + " litros)",
+    "Densidade: " + num(dens, 1) + " peixes por m², ou " + num(dens / prof, 2) + " por m³",
+    "Alevinos a povoar: " + alevinos.toLocaleString("pt-BR"),
+    "Sobreviventes com " + num(m, 0) + "% de mortalidade: " + vivos.toLocaleString("pt-BR")
+  ];
+  if (isFinite(peso) && peso > 0) {
+    const biomassa = vivos * peso / 1000;
+    linhas.push("", "Biomassa na despesca: " + num(biomassa, 0) + " kg",
+                "Densidade final: " + num(biomassa / volume, 1) + " kg por m³");
+    if (isFinite(conv) && conv > 0) {
+      linhas.push("Ração no ciclo: " + num(biomassa * conv, 0) + " kg (conversão " + num(conv, 1) + ":1)");
+    }
+  }
+
+  res.hidden = false;
+  res.textContent = alevinos.toLocaleString("pt-BR") + " tilápias em " + num(area, 1) + " m²";
+  det.textContent = linhas.join("\n");
+}
+
+for (const el of els) { el.addEventListener("input", calcular); el.addEventListener("change", calcular); }
+calcular();
+</script>
+</body>
+</html>
