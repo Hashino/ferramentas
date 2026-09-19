@@ -78,12 +78,20 @@ def main(quantas: int = 1) -> None:
         _rodar("scripts/mine.py", "check", "20")
         serp = json.loads(SERP_PATH.read_text(encoding="utf-8"))
 
+    mortas = triagem.familias_condenadas(cache)
+    puladas_familia = 0
     testadas = 0
     for kw in [c[0] for c in _linhas() if len(c) > 1 and c[1] == "candidata"]:
         if kw not in serp:
             continue
         slug = slugificar(kw)
         if slug in existentes:
+            continue
+        # família já condenada por vereditos anteriores: pula sem gastar IA.
+        # Sem isto o loop varre o backlog inteiro (900+ com SERP) chamando
+        # Groq um por um; medido em 19/09/2026, 570 sem cache = timeout.
+        if triagem.familia(kw) in mortas:
+            puladas_familia += 1
             continue
         testadas += 1
         r = triagem.triar(kw, serp[kw], cache)
@@ -101,8 +109,9 @@ def main(quantas: int = 1) -> None:
 
     if aprovados:
         return
-    print(f"NENHUMA: {testadas} candidatas testadas, nenhuma aprovada. "
-          "Rode `python3 scripts/mine.py matrix 5` e `python3 scripts/mine.py check 30` "
+    print(f"NENHUMA: {testadas} candidatas testadas ({puladas_familia} puladas por "
+          "família condenada), nenhuma aprovada. Rode "
+          "`python3 scripts/mine.py matrix 5` e `python3 scripts/mine.py check 30` "
           "para trazer keywords novas, depois tente de novo.")
 
 

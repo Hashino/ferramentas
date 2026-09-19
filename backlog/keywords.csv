@@ -209,7 +209,7 @@ calculadora de divida,candidata,2026-09-18,matrix:dívida
 calculadora de divida ativa,candidata,2026-09-18,matrix:dívida
 calculadora de divida atualizada,candidata,2026-09-18,matrix:dívida
 calculadora de divida de aluguel,candidata,2026-09-18,matrix:dívida
-calculadora de divida de condominio,candidata,2026-09-18,matrix:dívida
+calculadora de divida de condominio,feita,2026-09-18,matrix:dívida
 calculadora de divida judicial,candidata,2026-09-18,matrix:dívida
 calculadora de divida juros compostos,candidata,2026-09-18,matrix:dívida
 calculadora de dolar,candidata,2026-09-10,matrix:dólar
@@ -324,7 +324,7 @@ calculadora de inss sobre salario,descartada,2026-09-10,matrix:inss
 calculadora de investimento tesouro direto,candidata,2026-09-10,matrix:tesouro direto
 calculadora de investimentos,candidata,2026-09-10,
 calculadora de iof cartão de crédito,candidata,2026-09-10,matrix:cartão de crédito
-calculadora de iof cheque especial,candidata,2026-09-18,matrix:cheque especial
+calculadora de iof cheque especial,feita,2026-09-18,matrix:cheque especial
 calculadora de ipca,candidata,2026-09-10,matrix:ipca
 calculadora de ipca +,candidata,2026-09-10,matrix:ipca
 calculadora de ipca + juros,candidata,2026-09-10,matrix:ipca
@@ -516,7 +516,7 @@ calculadora de xp pxg,candidata,2026-09-18,matrix:pxg
 calculadora energia eletrica copel,candidata,2026-09-18,matrix:energia elétrica
 calculadora energia eletrica cpfl,candidata,2026-09-18,matrix:energia elétrica
 calculadora icms energia eletrica,candidata,2026-09-18,matrix:energia elétrica
-calculadora juros de cartão de crédito atrasado online,candidata,2026-09-10,matrix:cartão de crédito
+calculadora juros de cartão de crédito atrasado online,descartada,2026-09-10,matrix:cartão de crédito
 calculadora material de construção,candidata,2026-09-18,matrix:construção
 calculadora medida de pneu,candidata,2026-09-18,matrix:pneu
 calculadora meios de contraste,candidata,2026-09-10,matrix:mei
@@ -1566,7 +1566,7 @@ inss quantas vagas por estado,descartada,2026-09-10,matrix:inss
 inss quantos dias de atestado,descartada,2026-09-10,matrix:inss
 inss quantos por cento,descartada,2026-09-10,matrix:inss
 inss quantos por cento do salario,descartada,2026-09-10,matrix:inss
-ipca lista de colocados 2025,candidata,2026-09-10,matrix:ipca
+ipca lista de colocados 2025,descartada,2026-09-10,matrix:ipca
 ipca quantos por cento,candidata,2026-09-10,matrix:ipca
 ipca quantos salarios minimos,candidata,2026-09-10,matrix:ipca
 lista cdb banco master,candidata,2026-09-10,matrix:cdb
@@ -2448,7 +2448,7 @@ quantas cdb o vasco tem,descartada,2026-09-10,matrix:cdb
 quantas cdb tem o cruzeiro,descartada,2026-09-10,matrix:cdb
 quantas cdb tem o gremio,descartada,2026-09-10,matrix:cdb
 quantas codornas por metro quadrado,feita,2026-09-18,matrix:metro quadrado
-quantas construção,candidata,2026-09-18,matrix:construção
+quantas construção,descartada,2026-09-18,matrix:construção
 quantas contas salario posso ter,candidata,2026-09-10,matrix:salário
 quantas contemplação consórcio honda,candidata,2026-09-10,matrix:consórcio
 quantas contribuicoes salario maternidade,candidata,2026-09-10,matrix:salário
@@ -2527,16 +2527,16 @@ quantas libras pneu de bicicleta,feita,2026-09-18,matrix:pneu
 quantas libras pneu de carro,candidata,2026-09-18,matrix:pneu
 quantas libras pneu de moto,candidata,2026-09-18,matrix:pneu
 quantas marchas cambio cvt,candidata,2026-09-10,matrix:câmbio
-quantas medidas de agua para arroz,candidata,2026-09-18,matrix:medidas
-quantas medidas de creatina devo tomar,candidata,2026-09-18,matrix:medidas
-quantas medidas de creatina devo tomar por dia,candidata,2026-09-18,matrix:medidas
-quantas medidas de leite ninho para 150ml,candidata,2026-09-18,matrix:medidas
-quantas medidas de leite ninho para 180ml,candidata,2026-09-18,matrix:medidas
-quantas medidas de leite ninho para 210ml,candidata,2026-09-18,matrix:medidas
-quantas medidas de leite ninho para 240 ml,candidata,2026-09-18,matrix:medidas
-quantas medidas de whey posso tomar por dia,candidata,2026-09-18,matrix:medidas
-quantas medidas protetivas uma pessoa pode ter,candidata,2026-09-18,matrix:medidas
-quantas medidas tem um copo americano,candidata,2026-09-18,matrix:medidas
+quantas medidas de agua para arroz,descartada,2026-09-18,matrix:medidas
+quantas medidas de creatina devo tomar,descartada,2026-09-18,matrix:medidas
+quantas medidas de creatina devo tomar por dia,descartada,2026-09-18,matrix:medidas
+quantas medidas de leite ninho para 150ml,descartada,2026-09-18,matrix:medidas
+quantas medidas de leite ninho para 180ml,descartada,2026-09-18,matrix:medidas
+quantas medidas de leite ninho para 210ml,descartada,2026-09-18,matrix:medidas
+quantas medidas de leite ninho para 240 ml,descartada,2026-09-18,matrix:medidas
+quantas medidas de whey posso tomar por dia,descartada,2026-09-18,matrix:medidas
+quantas medidas protetivas uma pessoa pode ter,descartada,2026-09-18,matrix:medidas
+quantas medidas tem um copo americano,descartada,2026-09-18,matrix:medidas
 quantas mei,candidata,2026-09-10,matrix:mei
 quantas mei existem,candidata,2026-09-10,matrix:mei
 quantas mei existem no brasil,candidata,2026-09-10,matrix:mei
@@ -3192,7 +3192,7 @@ quanto de churrasco por pessoa,descartada,"4 calculadoras (zaffari, pifpaf, perd
 quanto de combustível é necessário para ir até a lua,candidata,2026-09-18,matrix:combustível
 quanto de feijão por pessoa,feita,,manual
 quanto de gelo por pessoa,descartada,,manual
-quanto de imc é considerado obeso,candidata,2026-09-18,matrix:imc
+quanto de imc é considerado obeso,descartada,2026-09-18,matrix:imc
 quanto de imposto de renda paga,descartada,2026-09-10,matrix:imposto de renda
 quanto de imposto de renda paga quem ganha 10 mil,descartada,2026-09-10,matrix:imposto de renda
 quanto de imposto de renda paga quem ganha 5 mil,descartada,2026-09-10,matrix:imposto de renda
@@ -3303,123 +3303,123 @@ quanto gasto de gasolina por mes,descartada,"5 calculadoras (mobills, serasa, za
 quanto hora extra paga,candidata,2026-09-10,matrix:hora extra
 quanto inss é descontado,descartada,2026-09-10,matrix:inss
 quanto metro quadrado rende um saco de cimento,candidata,2026-09-18,matrix:metro quadrado
-quanto o cheque especial cobra de juros,candidata,2026-09-18,matrix:cheque especial
-quanto o cheque especial cobra por dia,candidata,2026-09-18,matrix:cheque especial
+quanto o cheque especial cobra de juros,descartada,2026-09-18,matrix:cheque especial
+quanto o cheque especial cobra por dia,descartada,2026-09-18,matrix:cheque especial
 quanto o tesouro direto esta rendendo,candidata,2026-09-10,matrix:tesouro direto
 quanto o tesouro direto está pagando,candidata,2026-09-10,matrix:tesouro direto
 quanto paga de imposto de renda quem ganha 100 mil,candidata,2026-09-10,matrix:imposto de renda
 quanto paga imposto de renda,candidata,2026-09-10,matrix:imposto de renda
-quanto rende $10 dólares no porquinho inter por mês,candidata,2026-09-10,matrix:dólar
-quanto rende 1 dolar no inter,candidata,2026-09-10,matrix:dólar
+quanto rende $10 dólares no porquinho inter por mês,descartada,2026-09-10,matrix:dólar
+quanto rende 1 dolar no inter,descartada,2026-09-10,matrix:dólar
 quanto rende 1 kg de carne cozida,feita,,manual
-quanto rende 1 milhao em juros compostos,candidata,2026-09-10,matrix:juros compostos
-quanto rende 1 milhão na poupança livre de imposto de renda,candidata,2026-09-10,matrix:imposto de renda
+quanto rende 1 milhao em juros compostos,descartada,2026-09-10,matrix:juros compostos
+quanto rende 1 milhão na poupança livre de imposto de renda,descartada,2026-09-10,matrix:imposto de renda
 quanto rende 1 salario minimo,candidata,2026-09-10,matrix:salário
-quanto rende 1.000 dólares na nomad,candidata,2026-09-10,matrix:dólar
-quanto rende 10 dólares no porquinho inter,candidata,2026-09-10,matrix:dólar
-quanto rende 10 mil em juros compostos,candidata,2026-09-10,matrix:juros compostos
-quanto rende 10.000 em criptomoedas,candidata,2026-09-10,matrix:cripto
-quanto rende 100 do cdi descontado imposto de renda,candidata,2026-09-10,matrix:imposto de renda
-quanto rende 100 dólares na nomad,candidata,2026-09-10,matrix:dólar
-quanto rende 100 em criptomoedas,candidata,2026-09-10,matrix:cripto
-quanto rende 100 mil em juros compostos,candidata,2026-09-10,matrix:juros compostos
-quanto rende 100 reais em cripto,candidata,2026-09-10,matrix:cripto
-quanto rende 1000 em criptomoedas,candidata,2026-09-10,matrix:cripto
+quanto rende 1.000 dólares na nomad,descartada,2026-09-10,matrix:dólar
+quanto rende 10 dólares no porquinho inter,descartada,2026-09-10,matrix:dólar
+quanto rende 10 mil em juros compostos,descartada,2026-09-10,matrix:juros compostos
+quanto rende 10.000 em criptomoedas,descartada,2026-09-10,matrix:cripto
+quanto rende 100 do cdi descontado imposto de renda,descartada,2026-09-10,matrix:imposto de renda
+quanto rende 100 dólares na nomad,descartada,2026-09-10,matrix:dólar
+quanto rende 100 em criptomoedas,descartada,2026-09-10,matrix:cripto
+quanto rende 100 mil em juros compostos,descartada,2026-09-10,matrix:juros compostos
+quanto rende 100 reais em cripto,descartada,2026-09-10,matrix:cripto
+quanto rende 1000 em criptomoedas,descartada,2026-09-10,matrix:cripto
 quanto rende 1000 reais na poupança,feita,2026-09-10,manual
-quanto rende 20 mil em juros compostos,candidata,2026-09-10,matrix:juros compostos
-quanto rende 300 mil em juros compostos,candidata,2026-09-10,matrix:juros compostos
-quanto rende 50 mil em juros compostos,candidata,2026-09-10,matrix:juros compostos
-quanto rende a aposentadoria,candidata,2026-09-10,matrix:aposentadoria
-quanto rende a criptomoeda por dia,candidata,2026-09-10,matrix:cripto
-quanto rende a criptomoeda por mês,candidata,2026-09-10,matrix:cripto
+quanto rende 20 mil em juros compostos,descartada,2026-09-10,matrix:juros compostos
+quanto rende 300 mil em juros compostos,descartada,2026-09-10,matrix:juros compostos
+quanto rende 50 mil em juros compostos,descartada,2026-09-10,matrix:juros compostos
+quanto rende a aposentadoria,descartada,2026-09-10,matrix:aposentadoria
+quanto rende a criptomoeda por dia,descartada,2026-09-10,matrix:cripto
+quanto rende a criptomoeda por mês,descartada,2026-09-10,matrix:cripto
 quanto rende a hora extra,candidata,2026-09-10,matrix:hora extra
-quanto rende a restituição do imposto de renda,candidata,2026-09-10,matrix:imposto de renda
+quanto rende a restituição do imposto de renda,descartada,2026-09-10,matrix:imposto de renda
 quanto rende a textura por metro quadrado,feita,2026-09-18,matrix:metro quadrado
-quanto rende aposentadoria privada,candidata,2026-09-10,matrix:aposentadoria
+quanto rende aposentadoria privada,descartada,2026-09-10,matrix:aposentadoria
 quanto rende argamassa por metro quadrado,candidata,2026-09-18,matrix:metro quadrado
-quanto rende bitcoin,candidata,2026-09-10,matrix:bitcoin
-quanto rende bitcoin em 1 ano,candidata,2026-09-10,matrix:bitcoin
-quanto rende bitcoin hoje,candidata,2026-09-10,matrix:bitcoin
-quanto rende bitcoin na binance,candidata,2026-09-10,matrix:bitcoin
-quanto rende bitcoin no mercado pago,candidata,2026-09-10,matrix:bitcoin
-quanto rende bitcoin no picpay,candidata,2026-09-10,matrix:bitcoin
-quanto rende bitcoin nubank,candidata,2026-09-10,matrix:bitcoin
-quanto rende bitcoin por ano,candidata,2026-09-10,matrix:bitcoin
-quanto rende bitcoin por dia,candidata,2026-09-10,matrix:bitcoin
-quanto rende bitcoin por mês,candidata,2026-09-10,matrix:bitcoin
-quanto rende cdb,candidata,2026-09-10,matrix:cdb
-quanto rende cdb 100 do cdi,candidata,2026-09-10,matrix:cdb
-quanto rende cdb banco do brasil,candidata,2026-09-10,matrix:cdb
-quanto rende cdb bradesco,candidata,2026-09-10,matrix:cdb
-quanto rende cdb caixa,candidata,2026-09-10,matrix:cdb
-quanto rende cdb cartao de credito c6 bank,candidata,2026-09-10,matrix:cartão de crédito
-quanto rende cdb descontado imposto de renda,candidata,2026-09-10,matrix:imposto de renda
-quanto rende cdb hoje,candidata,2026-09-10,matrix:cdb
-quanto rende cdb itau,candidata,2026-09-10,matrix:cdb
-quanto rende cdb itau por mes,candidata,2026-09-10,matrix:cdb
-quanto rende cdb mercado pago,candidata,2026-09-10,matrix:cdb
-quanto rende cdb nubank,candidata,2026-09-10,matrix:cdb
-quanto rende cdb por mes,candidata,2026-09-10,matrix:cdb
-quanto rende consorcio,candidata,2026-09-10,matrix:consórcio
-quanto rende consórcio,candidata,2026-09-10,matrix:consórcio
-quanto rende consórcio contemplado,candidata,2026-09-10,matrix:consórcio
-quanto rende criptomoedas,candidata,2026-09-10,matrix:cripto
-quanto rende criptomoedas no mercado pago,candidata,2026-09-10,matrix:cripto
-quanto rende criptomoedas no nubank,candidata,2026-09-10,matrix:cripto
-quanto rende dolar,candidata,2026-09-10,matrix:dólar
-quanto rende dolar na nomad,candidata,2026-09-10,matrix:dólar
-quanto rende dolar na wise,candidata,2026-09-10,matrix:dólar
-quanto rende dolar no inter,candidata,2026-09-10,matrix:dólar
-quanto rende imposto de renda,candidata,2026-09-10,matrix:imposto de renda
-quanto rende inss,candidata,2026-09-10,matrix:inss
-quanto rende investir em criptomoedas,candidata,2026-09-10,matrix:cripto
-quanto rende ipca,candidata,2026-09-10,matrix:ipca
-quanto rende ipca + 10,candidata,2026-09-10,matrix:ipca
-quanto rende ipca + 7,candidata,2026-09-10,matrix:ipca
-quanto rende ipca + 7 ao ano,candidata,2026-09-10,matrix:ipca
-quanto rende ipca + 8,candidata,2026-09-10,matrix:ipca
-quanto rende ipca + 9,candidata,2026-09-10,matrix:ipca
-quanto rende ipca 8 hoje,candidata,2026-09-10,matrix:ipca
-quanto rende ipca 8.5,candidata,2026-09-10,matrix:ipca
-quanto rende ipca ao ano,candidata,2026-09-10,matrix:ipca
-quanto rende ipca ao mes,candidata,2026-09-10,matrix:ipca
-quanto rende ipca hoje,candidata,2026-09-10,matrix:ipca
-quanto rende juros compostos,candidata,2026-09-10,matrix:juros compostos
+quanto rende bitcoin,descartada,2026-09-10,matrix:bitcoin
+quanto rende bitcoin em 1 ano,descartada,2026-09-10,matrix:bitcoin
+quanto rende bitcoin hoje,descartada,2026-09-10,matrix:bitcoin
+quanto rende bitcoin na binance,descartada,2026-09-10,matrix:bitcoin
+quanto rende bitcoin no mercado pago,descartada,2026-09-10,matrix:bitcoin
+quanto rende bitcoin no picpay,descartada,2026-09-10,matrix:bitcoin
+quanto rende bitcoin nubank,descartada,2026-09-10,matrix:bitcoin
+quanto rende bitcoin por ano,descartada,2026-09-10,matrix:bitcoin
+quanto rende bitcoin por dia,descartada,2026-09-10,matrix:bitcoin
+quanto rende bitcoin por mês,descartada,2026-09-10,matrix:bitcoin
+quanto rende cdb,descartada,2026-09-10,matrix:cdb
+quanto rende cdb 100 do cdi,descartada,2026-09-10,matrix:cdb
+quanto rende cdb banco do brasil,descartada,2026-09-10,matrix:cdb
+quanto rende cdb bradesco,descartada,2026-09-10,matrix:cdb
+quanto rende cdb caixa,descartada,2026-09-10,matrix:cdb
+quanto rende cdb cartao de credito c6 bank,descartada,2026-09-10,matrix:cartão de crédito
+quanto rende cdb descontado imposto de renda,descartada,2026-09-10,matrix:imposto de renda
+quanto rende cdb hoje,descartada,2026-09-10,matrix:cdb
+quanto rende cdb itau,descartada,2026-09-10,matrix:cdb
+quanto rende cdb itau por mes,descartada,2026-09-10,matrix:cdb
+quanto rende cdb mercado pago,descartada,2026-09-10,matrix:cdb
+quanto rende cdb nubank,descartada,2026-09-10,matrix:cdb
+quanto rende cdb por mes,descartada,2026-09-10,matrix:cdb
+quanto rende consorcio,descartada,2026-09-10,matrix:consórcio
+quanto rende consórcio,descartada,2026-09-10,matrix:consórcio
+quanto rende consórcio contemplado,descartada,2026-09-10,matrix:consórcio
+quanto rende criptomoedas,descartada,2026-09-10,matrix:cripto
+quanto rende criptomoedas no mercado pago,descartada,2026-09-10,matrix:cripto
+quanto rende criptomoedas no nubank,descartada,2026-09-10,matrix:cripto
+quanto rende dolar,descartada,2026-09-10,matrix:dólar
+quanto rende dolar na nomad,descartada,2026-09-10,matrix:dólar
+quanto rende dolar na wise,descartada,2026-09-10,matrix:dólar
+quanto rende dolar no inter,descartada,2026-09-10,matrix:dólar
+quanto rende imposto de renda,descartada,2026-09-10,matrix:imposto de renda
+quanto rende inss,descartada,2026-09-10,matrix:inss
+quanto rende investir em criptomoedas,descartada,2026-09-10,matrix:cripto
+quanto rende ipca,descartada,2026-09-10,matrix:ipca
+quanto rende ipca + 10,descartada,2026-09-10,matrix:ipca
+quanto rende ipca + 7,descartada,2026-09-10,matrix:ipca
+quanto rende ipca + 7 ao ano,descartada,2026-09-10,matrix:ipca
+quanto rende ipca + 8,descartada,2026-09-10,matrix:ipca
+quanto rende ipca + 9,descartada,2026-09-10,matrix:ipca
+quanto rende ipca 8 hoje,descartada,2026-09-10,matrix:ipca
+quanto rende ipca 8.5,descartada,2026-09-10,matrix:ipca
+quanto rende ipca ao ano,descartada,2026-09-10,matrix:ipca
+quanto rende ipca ao mes,descartada,2026-09-10,matrix:ipca
+quanto rende ipca hoje,descartada,2026-09-10,matrix:ipca
+quanto rende juros compostos,descartada,2026-09-10,matrix:juros compostos
 quanto rende massa corrida por metro quadrado,candidata,2026-09-18,matrix:metro quadrado
-quanto rende meio milhao no cdi,candidata,2026-09-10,matrix:mei
-quanto rende meio milhão,candidata,2026-09-10,matrix:mei
-quanto rende meio milhão na caixinha do nubank,candidata,2026-09-10,matrix:mei
-quanto rende meio milhão na poupança,candidata,2026-09-10,matrix:mei
-quanto rende meio milhão na poupança por mês,candidata,2026-09-10,matrix:mei
-quanto rende meio milhão no cdb,candidata,2026-09-10,matrix:mei
-quanto rende meio milhão no mercado pago,candidata,2026-09-10,matrix:mei
-quanto rende meio milhão no nubank,candidata,2026-09-10,matrix:mei
-quanto rende meio milhão no tesouro direto,candidata,2026-09-10,matrix:mei
-quanto rende meio milhão por mês,candidata,2026-09-10,matrix:mei
-quanto rende meli dolar,candidata,2026-09-10,matrix:dólar
-quanto rende mil dolar,candidata,2026-09-10,matrix:dólar
-quanto rende mineração de criptomoedas,candidata,2026-09-10,matrix:cripto
-quanto rende nota fiscal paulista,candidata,2026-09-10,matrix:nota fiscal
-quanto rende o cdi tirando o imposto de renda,candidata,2026-09-10,matrix:imposto de renda
-quanto rende o dolar na poupança,candidata,2026-09-10,matrix:dólar
-quanto rende o dolar por ano,candidata,2026-09-10,matrix:dólar
-quanto rende o dólar digital no nubank,candidata,2026-09-10,matrix:dólar
-quanto rende o dólar no nubank,candidata,2026-09-10,matrix:dólar
+quanto rende meio milhao no cdi,descartada,2026-09-10,matrix:mei
+quanto rende meio milhão,descartada,2026-09-10,matrix:mei
+quanto rende meio milhão na caixinha do nubank,descartada,2026-09-10,matrix:mei
+quanto rende meio milhão na poupança,descartada,2026-09-10,matrix:mei
+quanto rende meio milhão na poupança por mês,descartada,2026-09-10,matrix:mei
+quanto rende meio milhão no cdb,descartada,2026-09-10,matrix:mei
+quanto rende meio milhão no mercado pago,descartada,2026-09-10,matrix:mei
+quanto rende meio milhão no nubank,descartada,2026-09-10,matrix:mei
+quanto rende meio milhão no tesouro direto,descartada,2026-09-10,matrix:mei
+quanto rende meio milhão por mês,descartada,2026-09-10,matrix:mei
+quanto rende meli dolar,descartada,2026-09-10,matrix:dólar
+quanto rende mil dolar,descartada,2026-09-10,matrix:dólar
+quanto rende mineração de criptomoedas,descartada,2026-09-10,matrix:cripto
+quanto rende nota fiscal paulista,descartada,2026-09-10,matrix:nota fiscal
+quanto rende o cdi tirando o imposto de renda,descartada,2026-09-10,matrix:imposto de renda
+quanto rende o dolar na poupança,descartada,2026-09-10,matrix:dólar
+quanto rende o dolar por ano,descartada,2026-09-10,matrix:dólar
+quanto rende o dólar digital no nubank,descartada,2026-09-10,matrix:dólar
+quanto rende o dólar no nubank,descartada,2026-09-10,matrix:dólar
 quanto rende o grafiato por metro quadrado,feita,2026-09-18,matrix:metro quadrado
-quanto rende o inss por ano,candidata,2026-09-10,matrix:inss
-quanto rende o inss por mês,candidata,2026-09-10,matrix:inss
+quanto rende o inss por ano,descartada,2026-09-10,matrix:inss
+quanto rende o inss por mês,descartada,2026-09-10,matrix:inss
 quanto rende por metro quadrado,candidata,2026-09-18,matrix:metro quadrado
-quanto rende tesouro direto,candidata,2026-09-10,matrix:tesouro direto
-quanto rende tesouro direto ao ano,candidata,2026-09-10,matrix:tesouro direto
-quanto rende tesouro direto banco do brasil,candidata,2026-09-10,matrix:tesouro direto
-quanto rende tesouro direto hoje,candidata,2026-09-10,matrix:tesouro direto
-quanto rende tesouro direto liquidez diaria,candidata,2026-09-10,matrix:tesouro direto
-quanto rende tesouro direto nubank,candidata,2026-09-10,matrix:tesouro direto
-quanto rende tesouro direto por mes,candidata,2026-09-10,matrix:tesouro direto
-quanto rende tesouro direto prefixado,candidata,2026-09-10,matrix:tesouro direto
-quanto rende tesouro direto santander,candidata,2026-09-10,matrix:tesouro direto
-quanto rende tesouro direto selic,candidata,2026-09-10,matrix:tesouro direto
-quanto rende tesouro direto selic 2031,candidata,2026-09-10,matrix:tesouro direto
+quanto rende tesouro direto,descartada,2026-09-10,matrix:tesouro direto
+quanto rende tesouro direto ao ano,descartada,2026-09-10,matrix:tesouro direto
+quanto rende tesouro direto banco do brasil,descartada,2026-09-10,matrix:tesouro direto
+quanto rende tesouro direto hoje,descartada,2026-09-10,matrix:tesouro direto
+quanto rende tesouro direto liquidez diaria,descartada,2026-09-10,matrix:tesouro direto
+quanto rende tesouro direto nubank,descartada,2026-09-10,matrix:tesouro direto
+quanto rende tesouro direto por mes,descartada,2026-09-10,matrix:tesouro direto
+quanto rende tesouro direto prefixado,descartada,2026-09-10,matrix:tesouro direto
+quanto rende tesouro direto santander,descartada,2026-09-10,matrix:tesouro direto
+quanto rende tesouro direto selic,descartada,2026-09-10,matrix:tesouro direto
+quanto rende tesouro direto selic 2031,descartada,2026-09-10,matrix:tesouro direto
 quanto rende tinta,candidata,2026-09-18,matrix:tinta
 quanto rende tinta 3 6,candidata,2026-09-18,matrix:tinta
 quanto rende tinta 3 6 litros,candidata,2026-09-18,matrix:tinta
@@ -3432,16 +3432,16 @@ quanto rende tinta piso suvinil 18 litros,candidata,2026-09-18,matrix:tinta
 quanto rende tinta por metro quadrado,candidata,2026-09-18,matrix:metro quadrado
 quanto rende tinta spray,candidata,2026-09-18,matrix:tinta
 quanto rende tinta suvinil,candidata,2026-09-18,matrix:tinta
-quanto rende titulos da divida publica,candidata,2026-09-18,matrix:dívida
-quanto rende um consórcio contemplado bradesco,candidata,2026-09-10,matrix:consórcio
-quanto rende um posto de combustível,candidata,2026-09-18,matrix:combustível
+quanto rende titulos da divida publica,descartada,2026-09-18,matrix:dívida
+quanto rende um consórcio contemplado bradesco,descartada,2026-09-10,matrix:consórcio
+quanto rende um posto de combustível,descartada,2026-09-18,matrix:combustível
 quanto rende um salário mínimo na caixinha do nubank,candidata,2026-09-10,matrix:salário
 quanto rende um salário mínimo na poupança,candidata,2026-09-10,matrix:salário
 quanto rende um salário mínimo na poupança por mês,candidata,2026-09-10,matrix:salário
 quanto rende um salário mínimo no mercado pago,candidata,2026-09-10,matrix:salário
-quanto rende uma carta de consorcio contemplada,candidata,2026-09-10,matrix:consórcio
-quanto rende uma carta de consórcio,candidata,2026-09-10,matrix:consórcio
-quanto rende uma carta de consórcio contemplada,candidata,2026-09-10,matrix:consórcio
+quanto rende uma carta de consorcio contemplada,descartada,2026-09-10,matrix:consórcio
+quanto rende uma carta de consórcio,descartada,2026-09-10,matrix:consórcio
+quanto rende uma carta de consórcio contemplada,descartada,2026-09-10,matrix:consórcio
 quanto tempo demora analise inss,candidata,2026-09-10,matrix:inss
 quanto tempo demora inss,candidata,2026-09-10,matrix:inss
 quanto tempo demora o estorno do cartão de crédito,candidata,2026-09-10,matrix:cartão de crédito
@@ -3702,9 +3702,9 @@ quanto é 7 unidades,candidata,2026-09-18,matrix:unidades
 quanto é 700 dólares em reais,candidata,2026-09-10,matrix:dólar
 quanto é 8 unidades,candidata,2026-09-18,matrix:unidades
 quanto é a assinatura do pokemon home,candidata,2026-09-18,matrix:pokemon
-quanto é a divida do vasco,candidata,2026-09-18,matrix:dívida
-quanto é a dívida do brasil hoje,candidata,2026-09-18,matrix:dívida
-quanto é a dívida do flamengo hoje,candidata,2026-09-18,matrix:dívida
+quanto é a divida do vasco,descartada,2026-09-18,matrix:dívida
+quanto é a dívida do brasil hoje,descartada,2026-09-18,matrix:dívida
+quanto é a dívida do flamengo hoje,descartada,2026-09-18,matrix:dívida
 quanto é a hora extra de quem ganha 2000,candidata,2026-09-10,matrix:hora extra
 quanto é a hora extra de quem ganha um salário mínimo,candidata,2026-09-10,matrix:hora extra
 quanto é a multa por construção irregular,candidata,2026-09-18,matrix:construção
@@ -3744,8 +3744,8 @@ quanto é consórcio de carro,descartada,2026-09-10,matrix:consórcio
 quanto é consórcio de moto,descartada,2026-09-10,matrix:consórcio
 quanto é criptomoeda,candidata,2026-09-10,matrix:cripto
 quanto é descontado inss do salario,candidata,2026-09-10,matrix:inss
-quanto é divida do brasil,candidata,2026-09-18,matrix:dívida
-quanto é divida externa do brasil,candidata,2026-09-18,matrix:dívida
+quanto é divida do brasil,descartada,2026-09-18,matrix:dívida
+quanto é divida externa do brasil,descartada,2026-09-18,matrix:dívida
 quanto é dolar,descartada,2026-09-10,matrix:dólar
 quanto é dolar 1 em real,descartada,2026-09-10,matrix:dólar
 quanto é dolar canadense,descartada,2026-09-10,matrix:dólar
@@ -3756,14 +3756,14 @@ quanto é duas medidas,candidata,2026-09-18,matrix:medidas
 quanto é duas medidas de leite,candidata,2026-09-18,matrix:medidas
 quanto é duas medidas de água oxigenada,candidata,2026-09-18,matrix:medidas
 quanto é duas unidades,candidata,2026-09-18,matrix:unidades
-quanto é dívida do brasil,candidata,2026-09-18,matrix:dívida
-quanto é dívida do corinthians,candidata,2026-09-18,matrix:dívida
-quanto é dívida do flamengo,candidata,2026-09-18,matrix:dívida
-quanto é dívida do palmeiras,candidata,2026-09-18,matrix:dívida
-quanto é dívida do são paulo,candidata,2026-09-18,matrix:dívida
-quanto é dívida externa do brasil,candidata,2026-09-18,matrix:dívida
-quanto é dívida externa do brasil hoje,candidata,2026-09-18,matrix:dívida
-quanto é dívida pública do brasil,candidata,2026-09-18,matrix:dívida
+quanto é dívida do brasil,descartada,2026-09-18,matrix:dívida
+quanto é dívida do corinthians,descartada,2026-09-18,matrix:dívida
+quanto é dívida do flamengo,descartada,2026-09-18,matrix:dívida
+quanto é dívida do palmeiras,descartada,2026-09-18,matrix:dívida
+quanto é dívida do são paulo,descartada,2026-09-18,matrix:dívida
+quanto é dívida externa do brasil,descartada,2026-09-18,matrix:dívida
+quanto é dívida externa do brasil hoje,descartada,2026-09-18,matrix:dívida
+quanto é dívida pública do brasil,descartada,2026-09-18,matrix:dívida
 quanto é dólar no brasil,descartada,2026-09-10,matrix:dólar
 quanto é ferias,candidata,2026-09-10,matrix:férias
 quanto é ferias clt,candidata,2026-09-10,matrix:férias
@@ -3795,16 +3795,16 @@ quanto é inss clt,descartada,2026-09-10,matrix:inss
 quanto é inss de obra,descartada,2026-09-10,matrix:inss
 quanto é inss patronal,descartada,2026-09-10,matrix:inss
 quanto é inss por mes,descartada,2026-09-10,matrix:inss
-quanto é ipca,candidata,2026-09-10,matrix:ipca
-quanto é ipca + 7,candidata,2026-09-10,matrix:ipca
-quanto é ipca + 8,candidata,2026-09-10,matrix:ipca
-quanto é ipca + 8 hoje,candidata,2026-09-10,matrix:ipca
-quanto é ipca + 9,candidata,2026-09-10,matrix:ipca
-quanto é ipca 10,candidata,2026-09-10,matrix:ipca
-quanto é ipca 10 hoje,candidata,2026-09-10,matrix:ipca
-quanto é ipca 9 5,candidata,2026-09-10,matrix:ipca
-quanto é ipca hoje,candidata,2026-09-10,matrix:ipca
-quanto é ipca mais 8,candidata,2026-09-10,matrix:ipca
+quanto é ipca,descartada,2026-09-10,matrix:ipca
+quanto é ipca + 7,descartada,2026-09-10,matrix:ipca
+quanto é ipca + 8,descartada,2026-09-10,matrix:ipca
+quanto é ipca + 8 hoje,descartada,2026-09-10,matrix:ipca
+quanto é ipca + 9,descartada,2026-09-10,matrix:ipca
+quanto é ipca 10,descartada,2026-09-10,matrix:ipca
+quanto é ipca 10 hoje,descartada,2026-09-10,matrix:ipca
+quanto é ipca 9 5,descartada,2026-09-10,matrix:ipca
+quanto é ipca hoje,descartada,2026-09-10,matrix:ipca
+quanto é ipca mais 8,descartada,2026-09-10,matrix:ipca
 quanto é mei,candidata,2026-09-10,matrix:mei
 quanto é mei anual,candidata,2026-09-10,matrix:mei
 quanto é mei mensal,candidata,2026-09-10,matrix:mei
@@ -3823,7 +3823,7 @@ quanto é meio milhão,candidata,2026-09-10,matrix:mei
 quanto é meio milhão em criptomoedas,candidata,2026-09-10,matrix:cripto
 quanto é meio salario minimo,candidata,2026-09-10,matrix:mei
 quanto é metro quadrado,candidata,2026-09-18,matrix:metro quadrado
-quanto é meu imc,candidata,2026-09-18,matrix:imc
+quanto é meu imc,descartada,2026-09-18,matrix:imc
 quanto é minecraft,candidata,2026-09-18,matrix:minecraft
 quanto é minecraft bedrock no pc,candidata,2026-09-18,matrix:minecraft
 quanto é minecraft java,candidata,2026-09-18,matrix:minecraft
@@ -3861,21 +3861,21 @@ quanto é o financiamento de uma biz,descartada,2026-09-10,matrix:financiamento
 quanto é o financiamento de uma moto,descartada,2026-09-10,matrix:financiamento
 quanto é o financiamento de uma pop,descartada,2026-09-10,matrix:financiamento
 quanto é o financiamento minha casa minha vida,descartada,2026-09-10,matrix:financiamento
-quanto é o imc,candidata,2026-09-18,matrix:imc
-quanto é o imc de obesidade,candidata,2026-09-18,matrix:imc
-quanto é o imc ideal,candidata,2026-09-18,matrix:imc
+quanto é o imc,descartada,2026-09-18,matrix:imc
+quanto é o imc de obesidade,descartada,2026-09-18,matrix:imc
+quanto é o imc ideal,descartada,2026-09-18,matrix:imc
 quanto é o imposto de renda,descartada,2026-09-10,matrix:imposto de renda
 quanto é o imposto sobre criptomoedas,descartada,2026-09-10,matrix:cripto
 quanto é o inss de um salario minimo,descartada,2026-09-10,matrix:inss
 quanto é o iof do cheque especial,candidata,2026-09-18,matrix:cheque especial
 quanto é o iof do cheque especial santander,candidata,2026-09-18,matrix:cheque especial
-quanto é o juros do cartão de crédito,candidata,2026-09-10,matrix:cartão de crédito
-quanto é o juros do cheque especial,candidata,2026-09-18,matrix:cheque especial
-quanto é o juros do cheque especial banco do brasil,candidata,2026-09-18,matrix:cheque especial
-quanto é o juros do cheque especial bradesco,candidata,2026-09-18,matrix:cheque especial
-quanto é o juros do cheque especial da caixa,candidata,2026-09-18,matrix:cheque especial
-quanto é o juros do cheque especial itau,candidata,2026-09-18,matrix:cheque especial
-quanto é o juros do cheque especial santander,candidata,2026-09-18,matrix:cheque especial
+quanto é o juros do cartão de crédito,descartada,2026-09-10,matrix:cartão de crédito
+quanto é o juros do cheque especial,descartada,2026-09-18,matrix:cheque especial
+quanto é o juros do cheque especial banco do brasil,descartada,2026-09-18,matrix:cheque especial
+quanto é o juros do cheque especial bradesco,descartada,2026-09-18,matrix:cheque especial
+quanto é o juros do cheque especial da caixa,descartada,2026-09-18,matrix:cheque especial
+quanto é o juros do cheque especial itau,descartada,2026-09-18,matrix:cheque especial
+quanto é o juros do cheque especial santander,descartada,2026-09-18,matrix:cheque especial
 quanto é o m2 de construção,candidata,2026-09-18,matrix:construção
 quanto é o mei caminhoneiro,candidata,2026-09-10,matrix:mei
 quanto é o mei hoje,candidata,2026-09-10,matrix:mei
@@ -3947,11 +3947,11 @@ quanto é um estagio em pokemon,candidata,2026-09-18,matrix:pokemon
 quanto é um financiamento de um apartamento,descartada,2026-09-10,matrix:financiamento
 quanto é um financiamento de uma casa pela caixa,descartada,2026-09-10,matrix:financiamento
 quanto é um galão de combustível nos estados unidos,candidata,2026-09-18,matrix:combustível
-quanto é um imc alto,candidata,2026-09-18,matrix:imc
-quanto é um imc baixo,candidata,2026-09-18,matrix:imc
-quanto é um imc bom,candidata,2026-09-18,matrix:imc
-quanto é um imc normal,candidata,2026-09-18,matrix:imc
-quanto é um imc saudavel,candidata,2026-09-18,matrix:imc
+quanto é um imc alto,descartada,2026-09-18,matrix:imc
+quanto é um imc baixo,descartada,2026-09-18,matrix:imc
+quanto é um imc bom,descartada,2026-09-18,matrix:imc
+quanto é um imc normal,descartada,2026-09-18,matrix:imc
+quanto é um imc saudavel,descartada,2026-09-18,matrix:imc
 quanto é um pacote pokemon,candidata,2026-09-18,matrix:pokemon
 quanto é um pacotinho de pokemon,candidata,2026-09-18,matrix:pokemon
 quanto é um pacotinho pokémon,candidata,2026-09-18,matrix:pokemon
@@ -3959,7 +3959,7 @@ quanto é um álbum pokémon,candidata,2026-09-18,matrix:pokemon
 quanto é uma box pokémon,candidata,2026-09-18,matrix:pokemon
 quanto é uma caixa pokémon,candidata,2026-09-18,matrix:pokemon
 quanto é uma cartinha pokemon,candidata,2026-09-18,matrix:pokemon
-quanto é uma construção,candidata,2026-09-18,matrix:construção
+quanto é uma construção,descartada,2026-09-18,matrix:construção
 quanto é uma criptomoeda hoje,candidata,2026-09-10,matrix:cripto
 quanto é uma hora extra de trabalho,candidata,2026-09-10,matrix:hora extra
 quanto é uma xícara em medidas,candidata,2026-09-18,matrix:medidas
@@ -4038,20 +4038,20 @@ quantos db tem a voz humana,candidata,2026-09-10,matrix:cdb
 quantos db tem um tiro,candidata,2026-09-10,matrix:cdb
 quantos db é permitido por lei no trabalho,candidata,2026-09-10,matrix:cdb
 quantos de combustível,candidata,2026-09-18,matrix:combustível
-quantos de divida o brasil tem,candidata,2026-09-18,matrix:dívida
-quantos de divida o corinthians tem,candidata,2026-09-18,matrix:dívida
-quantos de divida o flamengo tem,candidata,2026-09-18,matrix:dívida
-quantos de divida o palmeiras tem,candidata,2026-09-18,matrix:dívida
-quantos de divida o sao paulo tem,candidata,2026-09-18,matrix:dívida
-quantos de dívida o brasil tem,candidata,2026-09-18,matrix:dívida
-quantos de dívida o corinthians deve,candidata,2026-09-18,matrix:dívida
-quantos de dívida o corinthians está devendo,candidata,2026-09-18,matrix:dívida
-quantos de dívida o corinthians tem,candidata,2026-09-18,matrix:dívida
-quantos de dívida o flamengo tem,candidata,2026-09-18,matrix:dívida
-quantos de dívida o santos tem,candidata,2026-09-18,matrix:dívida
-quantos de dívida o são paulo tem,candidata,2026-09-18,matrix:dívida
-quantos de dívida o vasco tem,candidata,2026-09-18,matrix:dívida
-quantos de imc para fazer bariatrica,candidata,2026-09-18,matrix:imc
+quantos de divida o brasil tem,descartada,2026-09-18,matrix:dívida
+quantos de divida o corinthians tem,descartada,2026-09-18,matrix:dívida
+quantos de divida o flamengo tem,descartada,2026-09-18,matrix:dívida
+quantos de divida o palmeiras tem,descartada,2026-09-18,matrix:dívida
+quantos de divida o sao paulo tem,descartada,2026-09-18,matrix:dívida
+quantos de dívida o brasil tem,descartada,2026-09-18,matrix:dívida
+quantos de dívida o corinthians deve,descartada,2026-09-18,matrix:dívida
+quantos de dívida o corinthians está devendo,descartada,2026-09-18,matrix:dívida
+quantos de dívida o corinthians tem,descartada,2026-09-18,matrix:dívida
+quantos de dívida o flamengo tem,descartada,2026-09-18,matrix:dívida
+quantos de dívida o santos tem,descartada,2026-09-18,matrix:dívida
+quantos de dívida o são paulo tem,descartada,2026-09-18,matrix:dívida
+quantos de dívida o vasco tem,descartada,2026-09-18,matrix:dívida
+quantos de imc para fazer bariatrica,descartada,2026-09-18,matrix:imc
 quantos dias cheque especial banco do brasil,candidata,2026-09-18,matrix:cheque especial
 quantos dias cheque especial bradesco,candidata,2026-09-18,matrix:cheque especial
 quantos dias cheque especial sem juros,candidata,2026-09-18,matrix:cheque especial
@@ -4104,8 +4104,8 @@ quantos financiamentos posso ter na caixa,candidata,2026-09-10,matrix:financiame
 quantos financiamentos um cpf pode ter,candidata,2026-09-10,matrix:financiamento
 quantos financiamentos uma pessoa pode ter,candidata,2026-09-10,matrix:financiamento
 quantos férias frustradas tem,candidata,2026-09-10,matrix:férias
-quantos imc,candidata,2026-09-18,matrix:imc
-quantos imc pode fazer bariatrica,candidata,2026-09-18,matrix:imc
+quantos imc,descartada,2026-09-18,matrix:imc
+quantos imc pode fazer bariatrica,descartada,2026-09-18,matrix:imc
 quantos imposto de renda,descartada,2026-09-10,matrix:imposto de renda
 quantos inss,descartada,2026-09-10,matrix:inss
 quantos inss desconta,descartada,2026-09-10,matrix:inss
@@ -4114,8 +4114,8 @@ quantos inss tem em campinas,descartada,2026-09-10,matrix:inss
 quantos inss tem em feira de santana,descartada,2026-09-10,matrix:inss
 quantos inss tem em ribeirão preto,descartada,2026-09-10,matrix:inss
 quantos inss tem em são bernardo do campo,descartada,2026-09-10,matrix:inss
-quantos ipca,candidata,2026-09-10,matrix:ipca
-quantos ipca existem,candidata,2026-09-10,matrix:ipca
+quantos ipca,descartada,2026-09-10,matrix:ipca
+quantos ipca existem,descartada,2026-09-10,matrix:ipca
 quantos kg de argamassa por metro quadrado,descartada,,manual
 quantos ladrilhos de medidas 20 cm de largura e 30 cm de comprimento,candidata,2026-09-18,matrix:medidas
 quantos litros cambio al4,candidata,2026-09-10,matrix:câmbio
@@ -4149,8 +4149,8 @@ quantos litros tinta por m2,candidata,2026-09-18,matrix:tinta
 quantos litros óleo câmbio automático ecosport 2.0 16v,candidata,2026-09-10,matrix:câmbio
 quantos litros óleo câmbio automático ecosport 2.0 16v 2008,candidata,2026-09-10,matrix:câmbio
 quantos litros óleo câmbio automático ecosport 2.0 16v 2019,candidata,2026-09-10,matrix:câmbio
-quantos medidas,candidata,2026-09-18,matrix:medidas
-quantos medidas de creatina devo tomar,candidata,2026-09-18,matrix:medidas
+quantos medidas,descartada,2026-09-18,matrix:medidas
+quantos medidas de creatina devo tomar,descartada,2026-09-18,matrix:medidas
 quantos mei existem no brasil,candidata,2026-09-10,matrix:mei
 quantos mei existem no brasil 2026,candidata,2026-09-10,matrix:mei
 quantos mei pode abrir por cpf,candidata,2026-09-10,matrix:mei
@@ -4230,7 +4230,7 @@ quantos pokémons tem no pokémon champions,candidata,2026-09-18,matrix:pokemon
 quantos postos de combustível existem no brasil,candidata,2026-09-18,matrix:combustível
 quantos predios em construcao em itapema,candidata,2026-09-18,matrix:construção
 quantos predios em construção em itapema sc,candidata,2026-09-18,matrix:construção
-quantos rende o ipca,candidata,2026-09-10,matrix:ipca
+quantos rende o ipca,descartada,2026-09-10,matrix:ipca
 quantos sacos de cimento para construir uma casa,feita,,manual
 quantos sacos de cimento por metro quadrado,feita,,manual
 quantos salgados por pessoa,descartada,3+ calculadoras de festa,manual

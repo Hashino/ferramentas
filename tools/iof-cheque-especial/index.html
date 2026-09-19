@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de IOF do Cheque Especial</title>
+<meta name="description" content="Calcule o IOF do cheque especial: digite o valor usado e os dias de uso e veja o imposto na hora, com a alíquota fixa e a diária.">
+<link rel="canonical" href="https://hashino.xyz/tools/iof-cheque-especial/">
+<meta property="og:title" content="Calculadora de IOF do Cheque Especial">
+<meta property="og:description" content="Calcule o IOF do cheque especial: digite o valor usado e os dias de uso e veja o imposto na hora, com a alíquota fixa e a diária.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/iof-cheque-especial/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de IOF do Cheque Especial","url":"https://hashino.xyz/tools/iof-cheque-especial/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcule o IOF do cheque especial: digite o valor usado e os dias de uso e veja o imposto na hora, com a alíquota fixa e a diária."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de IOF do Cheque Especial","item":"https://hashino.xyz/tools/iof-cheque-especial/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "O IOF do cheque especial é cobrado toda vez que eu uso o limite?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, incide sobre qualquer valor negativo que fique em aberto, mesmo que seja pago no mesmo dia - nesse caso só a parte fixa de 0,38% é cobrada, já que não há dias adicionais de uso."}}, {"@type": "Question", "name": "IOF e juros do cheque especial são a mesma coisa?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O IOF é um imposto federal com alíquota pública e igual para todos os bancos; os juros são cobrados pelo banco por emprestar o dinheiro e variam muito de instituição para instituição."}}, {"@type": "Question", "name": "Pagar o cheque especial mais rápido reduz o IOF?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, porque a parte diária do IOF (0,0082%) só é cobrada enquanto o valor continua em aberto - menos dias de uso significam menos IOF, além de menos juros acumulados."}}, {"@type": "Question", "name": "Essa calculadora serve para outros tipos de crédito?", "acceptedAnswer": {"@type": "Answer", "text": "A fórmula de IOF fixo mais diário é a mesma usada em empréstimos e financiamentos pessoa física, então a conta serve como estimativa, mas confirme a alíquota exata do seu contrato antes de decidir."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Calculadora de IOF do Cheque Especial</h1>
+  <section class="app">
+    <label for="valor">Valor usado do limite (R$)</label>
+    <input id="valor" type="number" inputmode="decimal" placeholder="Ex: 1000">
+
+    <label for="dias">Dias de uso</label>
+    <input id="dias" type="number" inputmode="numeric" placeholder="Ex: 15">
+
+    <div id="resultado" class="resultado"></div>
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">Toda vez que você usa o cheque especial, a Receita Federal cobra um imposto chamado IOF sobre o valor utilizado. Essa calculadora mostra exatamente quanto desse imposto entra na sua fatura, separando a parte fixa da parte que cresce a cada dia que o limite fica em uso.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>IOF = valor usado x 0,38% + valor usado x 0,0082% x dias de uso</code></p>
+  <p>O IOF do cheque especial tem duas partes somadas: uma alíquota fixa de 0,38% que incide uma única vez sobre o valor que você usou do limite, e uma alíquota diária de 0,0082% que incide de novo a cada dia em que esse valor continua em aberto.</p>
+  <p>Os dois números que você digita são o valor que ficou negativo na conta e quantos dias ele ficou assim até ser pago. Quanto mais dias o limite fica em uso, maior a parte diária do imposto - por isso quitar o cheque especial rápido custa menos IOF, além de menos juros.</p>
+  <h2>Exemplo</h2>
+  <p>Você usou R$ 1.200 do limite do cheque especial e ficou 10 dias no negativo antes de cobrir.</p>
+  <ol>
+    <li>IOF fixo: R$ 1.200 x 0,38% = R$ 4,56</li>
+    <li>IOF diário: R$ 1.200 x 0,0082% x 10 dias = R$ 0,98</li>
+    <li>Total: R$ 4,56 + R$ 0,98 = R$ 5,54</li>
+  </ol>
+  <p><strong>O IOF cobrado nessa operação é R$ 5,54, além dos juros do cheque especial em si.</strong></p>
+  <h2>IOF aproximado por valor usado e dias em aberto</h2>
+  <table>
+    <thead><tr><th>Valor usado</th><th>5 dias</th><th>15 dias</th><th>30 dias</th></tr></thead>
+    <tbody>
+      <tr><td>R$ 500</td><td>R$ 2,11</td><td>R$ 2,52</td><td>R$ 3,13</td></tr>
+      <tr><td>R$ 1.000</td><td>R$ 4,21</td><td>R$ 5,03</td><td>R$ 6,26</td></tr>
+      <tr><td>R$ 2.000</td><td>R$ 8,42</td><td>R$ 10,06</td><td>R$ 12,52</td></tr>
+      <tr><td>R$ 5.000</td><td>R$ 21,05</td><td>R$ 25,15</td><td>R$ 31,30</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>A calculadora traz só o IOF - não inclui os juros do cheque especial em si, que costumam pesar muito mais na fatura e variam de banco para banco.</li>
+    <li>A alíquota do IOF é fixada por decreto federal e já mudou no passado; confira o percentual vigente no site da Receita Federal antes de uma decisão financeira importante.</li>
+    <li>Se o limite for usado e pago em partes ao longo do mês, o cálculo exato do banco considera cada movimentação separadamente - esta conta assume um único valor parado pelo período informado.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>O IOF do cheque especial é cobrado toda vez que eu uso o limite?</h3>
+  <p>Sim, incide sobre qualquer valor negativo que fique em aberto, mesmo que seja pago no mesmo dia - nesse caso só a parte fixa de 0,38% é cobrada, já que não há dias adicionais de uso.</p>
+  <h3>IOF e juros do cheque especial são a mesma coisa?</h3>
+  <p>Não. O IOF é um imposto federal com alíquota pública e igual para todos os bancos; os juros são cobrados pelo banco por emprestar o dinheiro e variam muito de instituição para instituição.</p>
+  <h3>Pagar o cheque especial mais rápido reduz o IOF?</h3>
+  <p>Sim, porque a parte diária do IOF (0,0082%) só é cobrada enquanto o valor continua em aberto - menos dias de uso significam menos IOF, além de menos juros acumulados.</p>
+  <h3>Essa calculadora serve para outros tipos de crédito?</h3>
+  <p>A fórmula de IOF fixo mais diário é a mesma usada em empréstimos e financiamentos pessoa física, então a conta serve como estimativa, mas confirme a alíquota exata do seu contrato antes de decidir.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../como-ferias-empregada-domestica/">Férias proporcionais de empregada doméstica</a> · <a href="../libras-pneu-bicicleta/">Quantas libras no pneu de bicicleta</a> · <a href="../rende-textura-metro-quadrado/">Quanto rende a textura por metro quadrado</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+// IOF sobre operação de crédito (cheque especial): alíquota fixa de 0,38% +
+// alíquota diária de 0,0082%, sobre o valor utilizado (Decreto 6.306/2007,
+// arts. 7º e 8º, valores vigentes desde 2008 — confira o percentual atual no
+// site da Receita Federal antes de decisão financeira, o decreto pode mudar).
+const ALIQUOTA_FIXA = 0.0038;
+const ALIQUOTA_DIARIA = 0.000082;
+
+const valor = document.getElementById("valor");
+const dias = document.getElementById("dias");
+const resultado = document.getElementById("resultado");
+
+function calcular() {
+  const v = parseFloat(valor.value);
+  const d = parseFloat(dias.value);
+  if (!v || v <= 0 || !d || d <= 0) {
+    resultado.textContent = "";
+    return;
+  }
+  const iofFixo = v * ALIQUOTA_FIXA;
+  const iofDiario = v * ALIQUOTA_DIARIA * d;
+  const total = iofFixo + iofDiario;
+  resultado.innerHTML =
+    "IOF fixo (0,38%): " + iofFixo.toLocaleString("pt-BR", {style: "currency", currency: "BRL"}) +
+    "<br>IOF diário (0,0082% × " + d + " dia(s)): " + iofDiario.toLocaleString("pt-BR", {style: "currency", currency: "BRL"}) +
+    "<br><strong>Total de IOF: " + total.toLocaleString("pt-BR", {style: "currency", currency: "BRL"}) + "</strong>";
+}
+
+valor.addEventListener("input", calcular);
+dias.addEventListener("input", calcular);
+</script>
+</body>
+</html>

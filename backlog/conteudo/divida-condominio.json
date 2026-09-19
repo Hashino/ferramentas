@@ -1,0 +1,80 @@
+{
+ "intro": "Quando a taxa de condomínio atrasa, o valor original não é mais o que você deve: entram multa e juros por atraso. Essa calculadora mostra quanto a dívida cresceu, usando a regra padrão do Código Civil para quando a convenção do condomínio não fixa outro percentual.",
+ "formula": "Total = valor da taxa + (valor x 2% de multa) + (valor x 1%/30 x dias de atraso)",
+ "como": [
+  "A regra padrão soma dois encargos ao valor original: uma multa única de até 2%, cobrada uma vez independentemente de quantos dias durar o atraso, e juros de 1% ao mês, calculados aqui proporcionalmente aos dias de atraso informados.",
+  "Os dois números que você digita são o valor da taxa condominial que venceu e quantos dias se passaram desde o vencimento até hoje (ou até a data em que pretende pagar). Quanto mais dias de atraso, maior a parcela de juros, mas a multa continua sendo cobrada uma única vez."
+ ],
+ "exemplo": {
+  "cenario": "Sua taxa de condomínio de R$ 500 venceu e já se passaram 20 dias sem pagamento.",
+  "passos": [
+   "Multa: R$ 500 x 2% = R$ 10,00",
+   "Juros: R$ 500 x (1%/30) x 20 dias = R$ 3,33",
+   "Total: R$ 500 + R$ 10,00 + R$ 3,33 = R$ 513,33"
+  ],
+  "resultado": "A dívida de condomínio depois de 20 dias de atraso soma R$ 513,33."
+ },
+ "tabela": {
+  "titulo": "Total a pagar por valor da taxa e dias de atraso",
+  "colunas": [
+   "Valor da taxa",
+   "5 dias",
+   "10 dias",
+   "20 dias",
+   "30 dias"
+  ],
+  "linhas": [
+   [
+    "R$ 300",
+    "R$ 306,50",
+    "R$ 307,00",
+    "R$ 308,00",
+    "R$ 309,00"
+   ],
+   [
+    "R$ 400",
+    "R$ 408,67",
+    "R$ 409,33",
+    "R$ 410,67",
+    "R$ 412,00"
+   ],
+   [
+    "R$ 500",
+    "R$ 510,83",
+    "R$ 511,67",
+    "R$ 513,33",
+    "R$ 515,00"
+   ],
+   [
+    "R$ 600",
+    "R$ 613,00",
+    "R$ 614,00",
+    "R$ 616,00",
+    "R$ 618,00"
+   ]
+  ]
+ },
+ "cuidados": [
+  "A convenção do seu condomínio pode fixar multa e juros diferentes desta regra padrão do Código Civil - confira a ata ou o regimento antes de considerar o valor definitivo.",
+  "Esta conta não inclui correção monetária, que alguns condomínios aplicam além de multa e juros e que varia conforme o índice escolhido em assembleia.",
+  "Se a dívida acumular vários meses seguidos, o síndico costuma calcular cada mês separadamente a partir do respectivo vencimento, não como um valor único parado desde a primeira taxa."
+ ],
+ "faq": [
+  {
+   "p": "Qual é a multa máxima que um condomínio pode cobrar por atraso?",
+   "r": "O Código Civil fixa o teto padrão em 2% sobre o valor da taxa, mas a convenção do condomínio pode prever um percentual menor - ela nunca pode ultrapassar esse limite legal."
+  },
+  {
+   "p": "Os juros de condomínio atrasado continuam subindo para sempre?",
+   "r": "Sim, os juros de 1% ao mês são proporcionais ao tempo de atraso e continuam sendo somados enquanto a taxa não for paga, diferente da multa, que é cobrada uma única vez."
+  },
+  {
+   "p": "Correção monetária é a mesma coisa que juros?",
+   "r": "Não. A correção monetária atualiza o valor pela inflação de um índice (como o IPCA), enquanto os juros são um encargo adicional por atraso - esta calculadora só considera multa e juros, não a correção."
+  },
+  {
+   "p": "O que acontece se eu não pagar o condomínio por vários meses?",
+   "r": "Cada mês de taxa em aberto acumula sua própria multa e seus próprios juros a partir do vencimento respectivo, e o condomínio pode cobrar a dívida judicialmente depois de um determinado prazo de inadimplência."
+  }
+ ]
+}

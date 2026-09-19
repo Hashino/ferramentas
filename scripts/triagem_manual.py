@@ -30,6 +30,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import lint_serp  # noqa: E402
+import triagem  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SERP = ROOT / "backlog" / "serp.json"
@@ -81,7 +82,8 @@ def veredito(kw: str, v: str, motivo: str) -> None:
     sinal = lint_serp.avaliar(serp[kw]) if kw in serp else {}
     c[kw] = {"veredito": v, "motivo": motivo, "manual": True,
              "top3": sinal.get("top3"), "top10": sinal.get("top10"),
-             "ia_overview": None, "regex": sinal.get("veredito")}
+             "ia_overview": None, "regex": sinal.get("veredito"),
+             "v": triagem.VERSAO}
     _salvar(c)
     print(f"{v}: {kw}")
 

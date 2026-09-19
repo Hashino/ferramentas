@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de Dívida de Condomínio Atrasado</title>
+<meta name="description" content="Calcule quanto uma taxa de condomínio atrasada vira com juros e multa: digite o valor e os dias de atraso e veja o total a pagar.">
+<link rel="canonical" href="https://hashino.xyz/tools/divida-condominio/">
+<meta property="og:title" content="Calculadora de Dívida de Condomínio Atrasado">
+<meta property="og:description" content="Calcule quanto uma taxa de condomínio atrasada vira com juros e multa: digite o valor e os dias de atraso e veja o total a pagar.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/divida-condominio/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Dívida de Condomínio","url":"https://hashino.xyz/tools/divida-condominio/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcule quanto uma taxa de condomínio atrasada vira com juros e multa: digite o valor e os dias de atraso e veja o total a pagar."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Dívida de Condomínio","item":"https://hashino.xyz/tools/divida-condominio/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qual é a multa máxima que um condomínio pode cobrar por atraso?", "acceptedAnswer": {"@type": "Answer", "text": "O Código Civil fixa o teto padrão em 2% sobre o valor da taxa, mas a convenção do condomínio pode prever um percentual menor - ela nunca pode ultrapassar esse limite legal."}}, {"@type": "Question", "name": "Os juros de condomínio atrasado continuam subindo para sempre?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, os juros de 1% ao mês são proporcionais ao tempo de atraso e continuam sendo somados enquanto a taxa não for paga, diferente da multa, que é cobrada uma única vez."}}, {"@type": "Question", "name": "Correção monetária é a mesma coisa que juros?", "acceptedAnswer": {"@type": "Answer", "text": "Não. A correção monetária atualiza o valor pela inflação de um índice (como o IPCA), enquanto os juros são um encargo adicional por atraso - esta calculadora só considera multa e juros, não a correção."}}, {"@type": "Question", "name": "O que acontece se eu não pagar o condomínio por vários meses?", "acceptedAnswer": {"@type": "Answer", "text": "Cada mês de taxa em aberto acumula sua própria multa e seus próprios juros a partir do vencimento respectivo, e o condomínio pode cobrar a dívida judicialmente depois de um determinado prazo de inadimplência."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Calculadora de Dívida de Condomínio Atrasado</h1>
+  <section class="app">
+    <label for="valor">Valor da taxa condominial (R$)</label>
+    <input id="valor" type="number" inputmode="decimal" placeholder="Ex: 500">
+
+    <label for="dias">Dias de atraso</label>
+    <input id="dias" type="number" inputmode="numeric" placeholder="Ex: 20">
+
+    <div id="resultado" class="resultado"></div>
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">Quando a taxa de condomínio atrasa, o valor original não é mais o que você deve: entram multa e juros por atraso. Essa calculadora mostra quanto a dívida cresceu, usando a regra padrão do Código Civil para quando a convenção do condomínio não fixa outro percentual.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>Total = valor da taxa + (valor x 2% de multa) + (valor x 1%/30 x dias de atraso)</code></p>
+  <p>A regra padrão soma dois encargos ao valor original: uma multa única de até 2%, cobrada uma vez independentemente de quantos dias durar o atraso, e juros de 1% ao mês, calculados aqui proporcionalmente aos dias de atraso informados.</p>
+  <p>Os dois números que você digita são o valor da taxa condominial que venceu e quantos dias se passaram desde o vencimento até hoje (ou até a data em que pretende pagar). Quanto mais dias de atraso, maior a parcela de juros, mas a multa continua sendo cobrada uma única vez.</p>
+  <h2>Exemplo</h2>
+  <p>Sua taxa de condomínio de R$ 500 venceu e já se passaram 20 dias sem pagamento.</p>
+  <ol>
+    <li>Multa: R$ 500 x 2% = R$ 10,00</li>
+    <li>Juros: R$ 500 x (1%/30) x 20 dias = R$ 3,33</li>
+    <li>Total: R$ 500 + R$ 10,00 + R$ 3,33 = R$ 513,33</li>
+  </ol>
+  <p><strong>A dívida de condomínio depois de 20 dias de atraso soma R$ 513,33.</strong></p>
+  <h2>Total a pagar por valor da taxa e dias de atraso</h2>
+  <table>
+    <thead><tr><th>Valor da taxa</th><th>5 dias</th><th>10 dias</th><th>20 dias</th><th>30 dias</th></tr></thead>
+    <tbody>
+      <tr><td>R$ 300</td><td>R$ 306,50</td><td>R$ 307,00</td><td>R$ 308,00</td><td>R$ 309,00</td></tr>
+      <tr><td>R$ 400</td><td>R$ 408,67</td><td>R$ 409,33</td><td>R$ 410,67</td><td>R$ 412,00</td></tr>
+      <tr><td>R$ 500</td><td>R$ 510,83</td><td>R$ 511,67</td><td>R$ 513,33</td><td>R$ 515,00</td></tr>
+      <tr><td>R$ 600</td><td>R$ 613,00</td><td>R$ 614,00</td><td>R$ 616,00</td><td>R$ 618,00</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>A convenção do seu condomínio pode fixar multa e juros diferentes desta regra padrão do Código Civil - confira a ata ou o regimento antes de considerar o valor definitivo.</li>
+    <li>Esta conta não inclui correção monetária, que alguns condomínios aplicam além de multa e juros e que varia conforme o índice escolhido em assembleia.</li>
+    <li>Se a dívida acumular vários meses seguidos, o síndico costuma calcular cada mês separadamente a partir do respectivo vencimento, não como um valor único parado desde a primeira taxa.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Qual é a multa máxima que um condomínio pode cobrar por atraso?</h3>
+  <p>O Código Civil fixa o teto padrão em 2% sobre o valor da taxa, mas a convenção do condomínio pode prever um percentual menor - ela nunca pode ultrapassar esse limite legal.</p>
+  <h3>Os juros de condomínio atrasado continuam subindo para sempre?</h3>
+  <p>Sim, os juros de 1% ao mês são proporcionais ao tempo de atraso e continuam sendo somados enquanto a taxa não for paga, diferente da multa, que é cobrada uma única vez.</p>
+  <h3>Correção monetária é a mesma coisa que juros?</h3>
+  <p>Não. A correção monetária atualiza o valor pela inflação de um índice (como o IPCA), enquanto os juros são um encargo adicional por atraso - esta calculadora só considera multa e juros, não a correção.</p>
+  <h3>O que acontece se eu não pagar o condomínio por vários meses?</h3>
+  <p>Cada mês de taxa em aberto acumula sua própria multa e seus próprios juros a partir do vencimento respectivo, e o condomínio pode cobrar a dívida judicialmente depois de um determinado prazo de inadimplência.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../calculadora-tijolos/">Quantos Tijolos por Metro Quadrado</a> · <a href="../rende-grafiato-metro-quadrado/">Quanto rende o grafiato por metro quadrado</a> · <a href="../gasto-chuveiro/">Quanto Gasta um Chuveiro Elétrico</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+// Regra padrão do Código Civil (art. 1.336, §1º) quando a convenção do
+// condomínio não fixa outra: multa de até 2% (one-time) + juros de 1% ao mês,
+// aqui pro-rateados por dia (1%/30 x dias). A convenção do SEU condomínio pode
+// fixar multa e juros diferentes — confira a ata antes de decisão financeira.
+// Não inclui correção monetária (índice varia mês a mês, sem valor fixo).
+const TAXA_JUROS_MENSAL = 0.01;
+const TAXA_MULTA = 0.02;
+
+const valor = document.getElementById("valor");
+const dias = document.getElementById("dias");
+const resultado = document.getElementById("resultado");
+
+function moeda(n) {
+  return n.toLocaleString("pt-BR", {style: "currency", currency: "BRL"});
+}
+
+function calcular() {
+  const v = parseFloat(valor.value);
+  const d = parseFloat(dias.value);
+  if (!v || v <= 0 || !d || d <= 0) {
+    resultado.textContent = "";
+    return;
+  }
+  const juros = v * (TAXA_JUROS_MENSAL / 30) * d;
+  const multa = v * TAXA_MULTA;
+  const total = v + juros + multa;
+  resultado.innerHTML =
+    "Multa (2%): " + moeda(multa) +
+    "<br>Juros (1% ao mês × " + d + " dia(s)): " + moeda(juros) +
+    "<br><strong>Total a pagar: " + moeda(total) + "</strong>";
+}
+
+valor.addEventListener("input", calcular);
+dias.addEventListener("input", calcular);
+</script>
+</body>
+</html>

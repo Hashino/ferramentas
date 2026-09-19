@@ -3662,12 +3662,13 @@
  },
  "cartão de crédito virtual dura quanto tempo": {
   "veredito": "DESCARTAR",
-  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
-  "manual": true,
-  "top3": 1,
-  "top10": 1,
+  "motivo": "Busca por informação fixa, não requer ferramenta.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
   "ia_overview": true,
-  "regex": "REPROVA"
+  "regex": "REPROVA",
+  "v": 4
  },
  "criptococose quanto tempo dura": {
   "veredito": "DESCARTAR",
@@ -4109,5 +4110,2075 @@
   "top10": 0,
   "ia_overview": null,
   "regex": "OK"
+ },
+ "botox 30 unidades quanto tempo dura": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca procura informação sobre duração do Botox, não requer cálculo interativo; a IA pode responder com a faixa típica de 3 a 6 meses.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
+ },
+ "calculadora atualização de divida": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras nos primeiros resultados, não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora atualização de dívida": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica necessidade de calculadora e há ferramentas interativas nos primeiros resultados, portanto não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora cheque especial banco do brasil": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há calculadoras disponíveis nos resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 2,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de blocos minecraft": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca uma calculadora interativa, mas os três primeiros resultados já são ferramentas, então não há necessidade de construir outra.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de catch pxg": {
+  "veredito": "DESCARTAR",
+  "motivo": "Nenhum dos resultados apresenta uma calculadora interativa e a busca não pode ser respondida totalmente por IA sem dados específicos do usuário.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "OK",
+  "v": 4
+ },
+ "calculadora de cheque especial": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos 3 primeiros resultados, então não atende ao critério de CONSTRUIR.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de cheque especial bradesco": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há ferramentas interativas nos primeiros resultados, mas não são zero; portanto não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de cheque especial itau": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca uma calculadora, mas já existem ferramentas interativas nos top‑3 resultados, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de cheque especial santander": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há ferramentas nos resultados e a busca é por cálculo, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de circulo minecraft": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não é necessário construir.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de combustível byd": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há ferramentas interativas nos primeiros resultados, portanto não vale criar nova página.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de combustível diesel": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas já disponíveis no top 3",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de combustível e pedágio": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica necessidade de ferramenta interativa; já há várias calculadoras nos três primeiros resultados, portanto não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de combustível gratuita": {
+  "veredito": "DESCARTAR",
+  "motivo": "A maioria dos resultados são calculadoras interativas e a busca indica intenção de usar uma ferramenta, mas já existem 3 ferramentas no top‑3, então não atende ao critério de CONSTRUIR.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de combustível online": {
+  "veredito": "DESCARTAR",
+  "motivo": "Os três primeiros resultados já são calculadoras interativas, não há necessidade de nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de combustível por km": {
+  "veredito": "DESCARTAR",
+  "motivo": "top-3 tomado por calculadora interativa dedicada (Mobills, Serasa) — a mesma armadilha que derrubou 52 ferramentas antes",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de combustível viagem": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras nos primeiros resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de combustível álcool e gasolina": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer usar uma calculadora e há ferramentas já disponíveis no top‑10, então não há necessidade de construir outra.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de construcao gratis": {
+  "veredito": "DESCARTAR",
+  "motivo": "Os primeiros resultados já oferecem várias calculadoras interativas, não há necessidade de nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de construção": {
+  "veredito": "DESCARTAR",
+  "motivo": "A maioria dos resultados são ferramentas interativas e o usuário provavelmente quer usar uma calculadora, mas já há muitas opções disponíveis.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de construção civil": {
+  "veredito": "DESCARTAR",
+  "motivo": "Os três primeiros resultados já são calculadoras interativas, não há necessidade de nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de construção civil gratuito": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não é necessário construir.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de construção de casa": {
+  "veredito": "DESCARTAR",
+  "motivo": "Os três primeiros resultados já são calculadoras interativas, não há necessidade de nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de construção m2": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não é apenas construção.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de construção muro": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, portanto não é necessário criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de construção online": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não é necessário construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de consumo de energia elétrica kwh": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, portanto não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de craft pxg": {
+  "veredito": "DESCARTAR",
+  "motivo": "PokeTools já tem calculadora de crafting dedicada pro PokeXGames no top-3, com subcrafts e preço de mercado",
+  "manual": true,
+  "top3": 0,
+  "top10": 1,
+  "ia_overview": null,
+  "regex": "OK",
+  "v": 4
+ },
+ "calculadora de custo de energia eletrica": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca é por uma calculadora; já há várias ferramentas nos primeiros resultados, portanto não vale a pena criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de dano pxg": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca uma calculadora interativa, mas já existem ferramentas nos top‑3 e a IA não pode responder sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 2,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de diametro pneu": {
+  "veredito": "DESCARTAR",
+  "motivo": "Ferramenta já disponível e requer dados do usuário para cálculo.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de divida": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem várias calculadoras interativas nos primeiros resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de divida ativa": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer usar uma calculadora, mas já há ferramentas interativas disponíveis; portanto não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de divida atualizada": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica necessidade de calculadora, mas já há várias ferramentas nos primeiros resultados.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de divida de aluguel": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de divida de condominio": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Nenhuma das três primeiras posições oferece uma calculadora interativa e a IA não pode responder sem os dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de divida judicial": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, portanto não vale a pena criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de divida juros compostos": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica necessidade de calculadora, mas já há ferramentas nos primeiros resultados.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de dívida": {
+  "veredito": "DESCARTAR",
+  "motivo": "A maioria dos resultados são calculadoras interativas, então a busca já atende ao objetivo sem necessidade de construir algo novo.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de dívida de pensão alimentícia": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não é necessário construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de dívida de pensão alimentícia dpe pa": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem várias calculadoras nos resultados, não é necessário criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de dívidas vencidas": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica intenção de usar calculadora, mas todos os top‑10 são ferramentas interativas e a IA não pode responder sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de encantamentos minecraft": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem ferramentas interativas nos primeiros resultados, não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de energia eletrica consumida": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas já disponíveis nos top 3 resultados.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de energia eletrica online": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de energia elétrica": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos resultados, então não é necessário construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de energia elétrica light": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de equivalencia pneu": {
+  "veredito": "DESCARTAR",
+  "motivo": "Ferramentas já disponíveis nos top 3, não há necessidade de construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de ganancias stardew valley": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem ferramentas interativas nos primeiros resultados, não há necessidade de criar nova página.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de imc adolescente": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top‑3, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de imc adulto": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca é por uma calculadora que requer dados pessoais (peso e altura), e já há várias ferramentas nos primeiros resultados.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de imc e peso ideal": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top‑3, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de imc feminino": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de imc gestacional": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem calculadoras interativas nos resultados, então a busca não pode ser resolvida apenas por IA.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de imc idoso": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, portanto não vale a pena criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de imc infantil": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não é necessário construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de imc infantil de 0 a 5 anos": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas no top‑3, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de imc masculino": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há ferramentas interativas nos primeiros resultados, portanto não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 2,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de imc online": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não há necessidade de construir.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de investimento tesouro direto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, portanto não vale a pena criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de iof cartão de crédito": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas nos top 3, então não construir.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de iof cheque especial": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Os três primeiros resultados são apenas artigos; a IA não pode calcular sem os dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 2,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de ipca": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica intenção de usar uma calculadora, mas já há ferramentas interativas nos resultados e a IA não pode responder sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de ipca +": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras nos primeiros resultados, não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de ipca + juros": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem calculadoras interativas nos resultados, então não é necessário construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de ipca acumulado": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem várias calculadoras interativas nos resultados, não é necessário criar outra.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de ipca aluguel": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não construir.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de ipca banco central": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem várias calculadoras interativas nos primeiros resultados, não é necessário criar outra.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de ipca e selic": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer usar uma calculadora, mas já existem ferramentas interativas nos top‑3 resultados, então não há necessidade de construir outra.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de ipca entre datas": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias ferramentas nos primeiros resultados, não vale criar outra.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de ipca ibge": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas nos top 3, então não atende ao critério de CONSTRUIR.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de ipca mais": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos resultados, portanto não vale a pena criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de ipca online": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de ir cripto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de ir mei": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de irpf mei": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de itens minecraft": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não é necessário construir.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros abusivos cartão de crédito": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, não há necessidade de criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros cartão de credito": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não é necessário construir.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros cartão de credito nubank": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem calculadoras interativas nos primeiros resultados, não há necessidade de criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros cartão de crédito": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não é necessário construir.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros cheque especial": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras nos primeiros resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros cheque especial bradesco": {
+  "veredito": "DESCARTAR",
+  "motivo": "Usuário busca calculadora, mas já há ferramentas disponíveis no top 3.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 2,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros cheque especial itau": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias ferramentas interativas nos primeiros resultados, não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros cheque especial santander": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existe ferramenta no top‑3, então não há necessidade de construir nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 2,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros compostos banco central": {
+  "veredito": "DESCARTAR",
+  "motivo": "Os três primeiros resultados já são calculadoras interativas, portanto não há necessidade de criar outra ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros compostos cdb": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca usar uma calculadora, mas já existem ferramentas interativas nos resultados; portanto não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros compostos com aporte mensal": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica necessidade de uma calculadora interativa; já há várias ferramentas nos resultados, portanto não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros compostos diarios": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não é necessário construir nova.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros compostos financiamento": {
+  "veredito": "DESCARTAR",
+  "motivo": "Os três primeiros resultados já são calculadoras interativas, não há necessidade de nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros compostos investidor sardinha": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca usar uma calculadora de juros compostos, mas já há ferramentas interativas disponíveis; portanto não há necessidade de construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros compostos investidor10": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há ferramenta nos primeiros resultados, não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros compostos mobills": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca usar a calculadora, mas já há ferramentas disponíveis no top‑3, então não há necessidade de construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros compostos online": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica necessidade de ferramenta interativa e já há várias opções nos primeiros resultados, portanto não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros compostos sardinha": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca indica uso de calculadora, não pode ser respondida sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros da dívida": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, não justifica criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros nubank cartão de crédito": {
+  "veredito": "DESCARTAR",
+  "motivo": "Ferramentas já disponíveis nos top 3, então não há necessidade de construir nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 2,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de juros tesouro direto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem várias calculadoras interativas nos primeiros resultados, portanto não é necessário criar outra.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de level pxg": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer usar uma calculadora, mas já existem ferramentas nos top‑3, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de lucro crypto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, portanto não vale a pena criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de lucro stardew valley": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca uma calculadora interativa, mas já existem ferramentas nos top‑3, então não há necessidade de construir outra.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de medidas": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias ferramentas interativas nos primeiros resultados, não vale criar nova página.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de medidas antropometricas": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer usar uma calculadora, mas já existem ferramentas interativas nos resultados; portanto não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de medidas caseiras": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias ferramentas interativas nos primeiros resultados, portanto não vale criar nova calculadora.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de medidas corporais": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer usar uma calculadora, mas há ferramentas disponíveis; portanto não é necessário construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de medidas corporais para roupa": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de mei": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de mei 2026": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de mei para clt": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica necessidade de calculadora, mas já há várias ferramentas nos primeiros resultados.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de mei para irpf 2026": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras nos primeiros resultados, portanto não vale a pena criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de meia maratona": {
+  "veredito": "DESCARTAR",
+  "motivo": "Usuário busca ferramenta, mas já há ferramentas disponíveis no top 3.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de metro quadrado": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica necessidade de cálculo personalizado; já há ferramentas nos primeiros resultados, portanto não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de metro quadrado com lados diferentes": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top‑3, então a busca não é única para construção.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de metro quadrado de parede": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer usar uma calculadora e os resultados são ferramentas interativas, não há resposta automática do Google.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de metro quadrado online": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias ferramentas interativas nos primeiros resultados, não vale criar nova página.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de metro quadrado para ar condicionado": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de metro quadrado para hectare": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias ferramentas interativas nos primeiros resultados, portanto não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de metro quadrado para pintura": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem calculadoras interativas nos top 3 resultados, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de metro quadrado para piso": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, não justifica criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de metro quadrado terreno": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário procura usar uma calculadora, mas já existem ferramentas interativas nos resultados.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de metro quadrado valor": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de minecraft": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top‑3, então não é necessário construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de mineração de cripto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, portanto não vale a pena criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de nota fiscal": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca uma calculadora interativa, mas já existem várias ferramentas disponíveis no top‑10, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de nota fiscal avulsa": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de nota fiscal de serviço": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos três primeiros resultados, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de nota fiscal mei": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de nota fiscal online": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3 resultados",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pace meia maratona": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras nos primeiros resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de packs minecraft": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3 resultados, então não é necessário construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de parcelas cartão de crédito": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras nos primeiros resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de perda de energia elétrica": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top‑3, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pilhas minecraft": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há ferramentas interativas nos primeiros resultados, portanto não vale criar nova página.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de plantação stardew valley": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer usar uma calculadora, mas já existem ferramentas interativas nos top‑3, então não há necessidade de construir outra.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pneu": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica intenção de usar uma calculadora e há ferramentas interativas nos top‑3, então não se aplica a construção de nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pneu carro": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, portanto não vale a pena criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pneu e roda": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas já disponíveis nos top 3 resultados.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pneu moto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Os três primeiros resultados já são calculadoras interativas, não há necessidade de criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pneu online": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca uma calculadora interativa, mas já há ferramentas disponíveis; a IA não pode responder sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pneus": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica necessidade de calculadora, mas já há várias ferramentas nos primeiros resultados, tornando desnecessário criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pneus auto ideia": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca usar uma calculadora, mas já há ferramentas disponíveis no top‑10, então não há necessidade de construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pneus de moto": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca usar uma calculadora e os resultados são ferramentas interativas, não respondidas por IA sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pneus e rodas": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pneus em polegadas": {
+  "veredito": "DESCARTAR",
+  "motivo": "Ferramentas já disponíveis, não há necessidade de construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pneus guapore": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pokemon": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca uma calculadora interativa, mas já há ferramentas disponíveis no top‑10; portanto não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pokemon champions": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem ferramentas interativas nos primeiros resultados, não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pokemon go": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer usar uma calculadora que requer dados pessoais; não há resposta automática do Google.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pokemon go iv": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem ferramentas interativas nos primeiros resultados, não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pokemon go pvp": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer usar uma calculadora de PvP, mas já há ferramentas interativas nos top‑3, então não há necessidade de construir outra.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pokemon iphone": {
+  "veredito": "DESCARTAR",
+  "motivo": "saturado por apps de App Store (Smart IV, PokeCalc) e calculadora web dedicada (qpinmap) no top-3",
+  "manual": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": null,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pokemon iv": {
+  "veredito": "DESCARTAR",
+  "motivo": "Ferramentas já existentes nos top‑3, não há necessidade de criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pokemon purificado": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras disponíveis nos resultados, não é necessário criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pokemon showdown": {
+  "veredito": "DESCARTAR",
+  "motivo": "Usuário busca ferramenta, mas já existem calculadoras disponíveis",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pokemon tipos": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, portanto não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pokémon": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer usar uma calculadora que requer dados pessoais; há ferramentas disponíveis, então não há necessidade de construir.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de pontos cartão de crédito": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos resultados, portanto não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de portal minecraft": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não atende ao critério de CONSTRUIR.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de preço do crypto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias ferramentas interativas nos primeiros resultados, portanto não vale a pena criar nova calculadora.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de profissões pxg": {
+  "veredito": "DESCARTAR",
+  "motivo": "exigiria tabela real de XP/recursos por rank do jogo, que não tenho de forma verificável — inventar dado de jogo é diferente de calibrar física simples",
+  "manual": true,
+  "top3": 0,
+  "top10": 1,
+  "ia_overview": null,
+  "regex": "OK",
+  "v": 4
+ },
+ "calculadora de rendimento tesouro direto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, portanto não vale a pena criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de rescisão construção civil": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem calculadoras interativas nos top 3, então não é necessário construir.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de restituição de icms energia elétrica": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem ferramentas interativas nos primeiros resultados, portanto não vale criar nova calculadora.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 2,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de seed minecraft": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não é necessário construir.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de simulação tesouro direto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, não há necessidade de criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de stones pxg": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos resultados, então não é necessário construir nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 2,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de stronghold minecraft": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de taxas cartao de credito": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca uma calculadora interativa, mas já existem ferramentas disponíveis nos top‑3 resultados.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de taxas cartão de crédito": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem ferramentas interativas nos primeiros resultados, não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tesouro direto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem calculadoras interativas nos top‑3, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tesouro direto ipca": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras nos primeiros resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tesouro direto nubank": {
+  "veredito": "DESCARTAR",
+  "motivo": "Ferramentas já existentes nos top‑3, não há necessidade de criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tesouro direto prefixado": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tesouro direto selic": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário procura uma calculadora e já existem ferramentas interativas disponíveis no top‑10.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tick minecraft": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem ferramentas interativas nos primeiros resultados, não é necessário criar nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tinta coral": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não construir.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tinta eucatex": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica necessidade de calculadora interativa; já há várias ferramentas nos resultados, portanto não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tinta online": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer usar uma calculadora, mas já existem ferramentas no top‑3 e a IA não pode responder sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tinta para estrutura metalica": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, portanto não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tinta para parede": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas já disponíveis nos top 3 resultados.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tinta por m2": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem várias calculadoras interativas nos primeiros resultados, não é necessário criar outra.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tinta por m2 coral": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top‑3, então não atende ao critério de construir.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tinta por m2 suvinil": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há calculadoras interativas nos resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tinta sherwin williams": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer usar uma calculadora, mas já existem ferramentas interativas nos resultados e a IA não pode responder sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de tinta suvinil": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica necessidade de ferramenta, mas já há calculadoras interativas nos primeiros resultados, portanto não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de unidades": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas já disponíveis nos top 3 resultados.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora icms energia eletrica": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem calculadoras de ICMS nos primeiros resultados, não é necessário criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora material de construção": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca uma calculadora interativa, mas já existem várias opções no top‑10 e a IA não pode responder sem dados específicos do usuário.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora stardew valley": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há ferramentas nos primeiros resultados, portanto não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "chip conversor de combustivel": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica interesse em informações ou compra de chip conversor, não em cálculo interativo.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de bateria para energia elétrica": {
+  "veredito": "DESCARTAR",
+  "motivo": "Não há ferramenta interativa nem resposta automática suficiente.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de cm para metro quadrado": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há ferramentas interativas nos primeiros resultados, não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de combustivel bioflex": {
+  "veredito": "DESCARTAR",
+  "motivo": "Não há ferramenta interativa nem resposta automática suficiente",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de combustível": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica interesse em produtos ou conversores prontos, não em uma calculadora interativa que o usuário preencha.",
+  "quer_ferramenta": false,
+  "top3": 1,
+  "top10": 2,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de combustível bioflex": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca por produto, não ferramenta interativa",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de coordenadas minecraft": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem várias ferramentas interativas nos primeiros resultados, não justifica criar outra.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de ferias": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem calculadoras interativas nos top 3 resultados.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de ferrugem tintas 2000": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca por produto, não ferramenta interativa",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de hora extra": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras nos primeiros resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de medidas metro quadrado": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário quer usar uma calculadora, mas já existem ferramentas no top‑3, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de salario": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas já disponíveis nos top 3 resultados.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de salario bruto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos três primeiros resultados, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de salario bruto para liquido": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário procura uma calculadora interativa, mas os 3 primeiros resultados já oferecem ferramentas, então não há necessidade de construir outra.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de salario clt": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras nos primeiros resultados, não vale criar outra.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de salario clt para pj": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem calculadoras interativas nos top 3 resultados",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "conversor de salario liquido": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas já disponíveis nos top 3 resultados.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
  }
 }
