@@ -1,0 +1,8 @@
+# ── git-crypt ────────────────────────────────────────────────────────────────
+# Este repo é PÚBLICO (serve o hashino.xyz via GitHub Pages), então o .env com
+# as chaves de API entra CIFRADO. O nome do arquivo continua visível; só o
+# conteúdo é cifrado.
+#
+# Destrancar numa máquina nova (a chave vem no wilson3, que é privado):
+#   git-crypt unlock ../secrets/ferramentas-git-crypt.key
+.env filter=git-crypt diff=git-crypt
