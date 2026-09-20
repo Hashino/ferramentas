@@ -3672,12 +3672,13 @@
  },
  "criptococose quanto tempo dura": {
   "veredito": "DESCARTAR",
-  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
-  "manual": true,
+  "motivo": "Busca por informação fixa, não requer ferramenta interativa.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
-  "ia_overview": true,
-  "regex": "OK"
+  "ia_overview": false,
+  "regex": "OK",
+  "v": 4
  },
  "divida ativa demora quanto tempo": {
   "veredito": "DESCARTAR",
@@ -3699,12 +3700,13 @@
  },
  "hs consórcio quantos anos": {
   "veredito": "DESCARTAR",
-  "motivo": "pergunta informacional (prazo, regra, curiosidade): nao ha dado do usuario para calcular",
-  "manual": true,
+  "motivo": "A consulta busca apenas a idade da HS Consórcios, informação factual que a IA pode fornecer sem necessidade de ferramenta.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
   "ia_overview": true,
-  "regex": "OK"
+  "regex": "OK",
+  "v": 4
  },
  "imc quantas calorias": {
   "veredito": "DESCARTAR",
@@ -6179,6 +6181,286 @@
   "top10": 10,
   "ia_overview": false,
   "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de unidades a ml": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem várias calculadoras nos primeiros resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de unidades apostas": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias ferramentas interativas nos primeiros resultados, portanto não vale a pena criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de unidades de medida": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem várias calculadoras interativas nos primeiros resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de unidades decenas y centenas": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existe ferramenta interativa entre os primeiros resultados, portanto não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 1,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de unidades google": {
+  "veredito": "DESCARTAR",
+  "motivo": "A maioria dos resultados são ferramentas interativas e o usuário busca usar uma calculadora, portanto não há oportunidade de construir uma nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 9,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de unidades internacionais": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, não justifica nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de unidades internacionales a mg": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica necessidade de usar uma calculadora e há ferramentas interativas disponíveis, mas a IA não pode responder sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de unidades maço ano": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de unidades metricas": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca uma calculadora interativa, mas já existem várias ferramentas no top‑10, então não há necessidade de construir outra.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de xp nw pxg": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Nenhuma das 3 primeiras páginas oferece calculadora interativa; a busca indica necessidade de ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora de xp pxg": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não construir.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora medida de pneu": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos resultados, não há necessidade de criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora meios de contraste": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem calculadoras interativas nos resultados, então não há necessidade de construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora perfil de pneu": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias calculadoras interativas nos primeiros resultados, não há necessidade de criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora pxg": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca uma calculadora interativa, mas já existem ferramentas disponíveis; a IA não pode responder sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calculadora troca de pneu": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias ferramentas interativas nos primeiros resultados, portanto não vale a pena criar nova calculadora.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "calha de telhado": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca por produto, não ferramenta interativa",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "OK",
+  "v": 4
+ },
+ "converter consumo de combustível": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias ferramentas nos primeiros resultados e a IA pode responder sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": true,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "converter cripto binance": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos resultados, mas já há opções prontas no Google e a busca não requer cálculo exclusivo do usuário.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "converter de meia largura": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem várias ferramentas interativas nos primeiros resultados, portanto não vale a pena criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "lista de compras férias": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca por lista de itens, não por cálculo ou ferramenta interativa.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "OK",
+  "v": 4
+ },
+ "lista de construção": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca busca uma lista de itens, não uma calculadora; a IA pode gerar a lista sem dados do usuário.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
+ },
+ "lista de feriados 2025": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca procura uma lista fixa de feriados, que o Google já fornece no topo.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
+ },
+ "lista de ferias del agricultor en costa rica": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca uma lista de feiras, não uma ferramenta interativa nem uma resposta automática de IA.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "OK",
+  "v": 4
+ },
+ "lista de ferias dominio": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica interesse em relatórios de férias, não em usar uma calculadora; a maioria dos resultados são ferramentas interativas, mas a intenção não é usar uma calculadora.",
+  "quer_ferramenta": false,
+  "top3": 3,
+  "top10": 8,
+  "ia_overview": false,
+  "regex": "OK",
+  "v": 4
+ },
+ "lista de ferias para crianças": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca por lista de atividades, não ferramenta",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
+ },
+ "lista de ferias premio pbh": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca por informação, não ferramenta interativa",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
+ },
+ "lista de ferias.com ex": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca por informação sobre programa, não ferramenta",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
   "v": 4
  }
 }
