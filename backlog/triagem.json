@@ -4061,21 +4061,23 @@
  },
  "minecraft quantas estantes": {
   "veredito": "DESCARTAR",
-  "motivo": "fato fixo do jogo (15 estantes para nivel 30)",
-  "manual": true,
+  "motivo": "A busca tem resposta fixa (15 estantes) que a IA pode fornecer sem necessidade de cálculo do usuário.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
-  "ia_overview": null,
-  "regex": "OK"
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
  },
  "minecraft quantos blocos água rega": {
   "veredito": "DESCARTAR",
-  "motivo": "fato fixo do jogo (um bloco de agua hidrata 9x9)",
-  "manual": true,
+  "motivo": "A busca pede apenas um número fixo (quantos blocos a água rega), que a IA pode responder sem necessidade de cálculo do usuário.",
+  "quer_ferramenta": false,
   "top3": 0,
   "top10": 0,
-  "ia_overview": null,
-  "regex": "OK"
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
  },
  "pxg quantas pokebola para catch": {
   "veredito": "DESCARTAR",
@@ -6461,6 +6463,286 @@
   "top10": 0,
   "ia_overview": true,
   "regex": "OK",
+  "v": 4
+ },
+ "converter dolar real cartao de credito": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias calculadoras interativas nos primeiros resultados, não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 6,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "convertidor de julios a calorias": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem ferramentas interativas nos primeiros resultados, portanto não vale criar nova ferramenta.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "OK",
+  "v": 4
+ },
+ "de cartão de crédito": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca é por informações ou opções de cartões de crédito, não por uma calculadora interativa.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "OK",
+  "v": 4
+ },
+ "de cartão de crédito banco do brasil": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca busca informações sobre cartões, não cálculo; a IA pode responder com detalhes gerais sem necessidade de dados do usuário.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
+ },
+ "de cartão de crédito bradesco": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca não indica necessidade de uma calculadora ou ferramenta interativa.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "OK",
+  "v": 4
+ },
+ "de cartão de crédito e débito": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca busca explicação sobre cartões, não requer cálculo nem ferramenta interativa.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
+ },
+ "de cartão de crédito itaú": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca não indica necessidade de cálculo nem resposta automática; trata‑se de informação sobre cartão de crédito.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "OK",
+  "v": 4
+ },
+ "de cartão de crédito mercado pago": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca busca informações ou solicitação de cartão, não cálculo interativo, e a IA não pode responder completamente sem dados específicos.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "OK",
+  "v": 4
+ },
+ "de cartão de crédito nubank": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca não indica necessidade de uma calculadora ou ferramenta interativa.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "OK",
+  "v": 4
+ },
+ "de cartão de crédito para negativado": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca procura informação geral, não uma ferramenta interativa, e a IA pode responder sem dados adicionais.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
+ },
+ "de cartão de crédito santander": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca visa informações sobre cartões Santander, não uma calculadora ou ferramenta interativa.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
+ },
+ "densidade": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca por definição, não requer ferramenta.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "fato gerador de imposto de renda": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca por definição, não ferramenta",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "fato gerador de inss": {
+  "veredito": "DESCARTAR",
+  "motivo": "A consulta busca definição do fato gerador do INSS, não requer cálculo ou entrada de dados do usuário.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "imco lista de carreras": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca não requer ferramenta interativa; resposta pode ser fornecida por IA.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
+ },
+ "maquina gerador de dolar": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica interesse em gerar dólares, mas os resultados são produtos e artigos, não há ferramenta interativa nem resposta fixa da IA.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "mecanico de gerador salario": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca por salário médio, não requer ferramenta interativa.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "metros cubicos": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há ferramentas interativas nos primeiros resultados, mas a busca não pode ser respondida totalmente por IA sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 2,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "metros quadrados": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário provavelmente busca a definição de metros quadrados, que pode ser respondida por IA sem dados adicionais, e não há necessidade de usar uma ferramenta interativa.",
+  "quer_ferramenta": false,
+  "top3": 1,
+  "top10": 1,
+  "ia_overview": true,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "minecraft quantas copias vendidas": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca por valor fixo, não requer ferramenta.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
+ },
+ "minecraft quantas gb": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca procura um valor fixo (quantidade de GB que o jogo ocupa), que pode ser fornecido por IA sem dados adicionais.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
+ },
+ "operador de gerador salário": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca a média salarial, não uma calculadora interativa; a IA pode responder com dados fixos.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha de férias": {
+  "veredito": "DESCARTAR",
+  "motivo": "Busca por planilha de férias indica necessidade de download de modelo, não cálculo interativo.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha de férias de funcionários": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Não há ferramenta interativa nos top 3 e IA não pode responder sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha de férias equipe": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Busca indica necessidade de calculadora de férias; nenhum dos resultados oferece ferramenta interativa e IA não pode responder sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha de férias excel": {
+  "veredito": "CONSTRUIR",
+  "motivo": "O usuário busca uma planilha interativa para calcular férias, mas os top‑3 resultados são apenas downloads; a IA não pode responder sem dados específicos.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha de férias funcionários excel": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Usuário quer uma ferramenta de cálculo, mas os resultados são apenas planilhas para download e artigos; não há ferramenta interativa nem resposta completa da IA.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha de férias modelo": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Usuário procura planilha para calcular férias, não há ferramenta interativa nem resposta IA pronta.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
   "v": 4
  }
 }

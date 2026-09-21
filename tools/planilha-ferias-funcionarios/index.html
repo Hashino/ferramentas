@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planilha de Férias de Funcionários – Calcule Online | Ferramentas</title>
+<meta name="description" content="Calcule o valor das férias de funcionários, o 1/3 constitucional e o abono pecuniário. Grátis, direto no navegador, sem cadastro.">
+<link rel="canonical" href="https://hashino.xyz/tools/planilha-ferias-funcionarios/">
+<meta property="og:title" content="Planilha de Férias de Funcionários – Calcule Online | Ferramentas">
+<meta property="og:description" content="Calcule o valor das férias de funcionários, o 1/3 constitucional e o abono pecuniário. Grátis, direto no navegador, sem cadastro.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/planilha-ferias-funcionarios/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Férias de Funcionários","url":"https://hashino.xyz/tools/planilha-ferias-funcionarios/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcule o valor das férias de funcionários, o 1/3 constitucional e o abono pecuniário. Grátis, direto no navegador, sem cadastro."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Férias de Funcionários","item":"https://hashino.xyz/tools/planilha-ferias-funcionarios/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como saber quantos dias de férias tenho direito?", "acceptedAnswer": {"@type": "Answer", "text": "Após completar 12 meses de trabalho, o empregado tem direito a 30 dias corridos de férias, podendo fracionar em até três períodos, sendo um deles de no mínimo 14 dias."}}, {"@type": "Question", "name": "O que é o 1/3 constitucional nas férias?", "acceptedAnswer": {"@type": "Answer", "text": "É um adicional obrigatório de um terço sobre o valor das férias, garantido pela Constituição, que deve ser pago junto ao salário de férias."}}, {"@type": "Question", "name": "O abono pecuniário é tributado?", "acceptedAnswer": {"@type": "Answer", "text": "O valor do abono é isento de INSS e IRRF, mas incide sobre o adicional de 1/3, que também é isento de encargos."}}, {"@type": "Question", "name": "Posso vender mais de 10 dias de férias?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O limite legal para a venda de férias, o abono pecuniário, é de até 10 dias, correspondendo a 1/3 do período aquisitivo."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Calculadora de Férias de Funcionários (CLT)</h1>
+  <section class="app">
+  <form id="calc" autocomplete="off">
+    <label for="salario">Salário bruto mensal (R$)</label>
+    <input id="salario" type="number" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 3000">
+
+    <label for="dias">Dias de férias que vai tirar (1 a 30)</label>
+    <input id="dias" type="number" inputmode="numeric" min="1" max="30" step="1" placeholder="Ex: 30">
+
+    <label for="abono">Dias de abono pecuniário — venda de férias (0 a 10)</label>
+    <input id="abono" type="number" inputmode="numeric" min="0" max="10" step="1" placeholder="Ex: 0">
+  </form>
+  <div id="resultado" class="resultado"></div>
+
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">A calculadora de férias CLT permite que empregadores e trabalhadores descubram rapidamente quanto receberá o funcionário ao tirar férias, incluindo o adicional de 1/3 constitucional e o valor do abono pecuniário, sem precisar de planilhas ou consultas complexas.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>total = (salário/30 * dias) + (salário/30 * dias)/3 + (abono&gt;0 ? (salário/30 * abono) + (salário/30 * abono)/3 : 0)</code></p>
+  <p>O cálculo parte do salário bruto mensal, divide por 30 para obter o valor da diária e multiplica pelos dias de férias efetivamente gozados. Sobre esse valor é acrescentado um terço, conforme determina a Constituição. Se houver venda de dias (abono), o mesmo procedimento é repetido e somado ao total.</p>
+  <p>O usuário informa três números: salário bruto mensal, quantidade de dias de férias que pretende tirar (até 30) e dias de abono pecuniário (até 10). O script valida limites, calcula a diária, aplica a proporção de dias e adiciona o terço constitucional tanto para as férias quanto para o abono.</p>
+  <h2>Exemplo</h2>
+  <p>Um trabalhador com salário de R$ 3.200,00 tira 20 dias de férias e vende 5 dias de abono.</p>
+  <ol>
+    <li>Diária = 3200 / 30 = 106,67</li>
+    <li>Valor férias = 106,67 * 20 = 2.133,33; 1/3 = 711,11; total férias = 2.844,44</li>
+    <li>Valor abono = 106,67 * 5 = 533,33; 1/3 = 177,78; total abono = 711,11</li>
+  </ol>
+  <p><strong>O total bruto a receber será de R$ 3.555,55.</strong></p>
+  <h2>Faixas típicas de dias</h2>
+  <table>
+    <thead><tr><th>Dias de férias</th><th>Dias de abono (máx)</th></tr></thead>
+    <tbody>
+      <tr><td>10</td><td>0 a 10 (até 1/3 dos dias)</td></tr>
+      <tr><td>15</td><td>0 a 10 (até 1/3 dos dias)</td></tr>
+      <tr><td>20</td><td>0 a 10 (até 1/3 dos dias)</td></tr>
+      <tr><td>30</td><td>0 a 10 (máximo permitido)</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>O total bruto não inclui descontos de INSS e IRRF, que são aplicados apenas sobre a parte das férias, não sobre o abono.</li>
+    <li>Dias de férias + dias de abono não podem ultrapassar 30 dias.</li>
+    <li>O abono pecuniário só pode ser vendido até 10 dias, equivalente a 1/3 do período aquisitivo.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Como saber quantos dias de férias tenho direito?</h3>
+  <p>Após completar 12 meses de trabalho, o empregado tem direito a 30 dias corridos de férias, podendo fracionar em até três períodos, sendo um deles de no mínimo 14 dias.</p>
+  <h3>O que é o 1/3 constitucional nas férias?</h3>
+  <p>É um adicional obrigatório de um terço sobre o valor das férias, garantido pela Constituição, que deve ser pago junto ao salário de férias.</p>
+  <h3>O abono pecuniário é tributado?</h3>
+  <p>O valor do abono é isento de INSS e IRRF, mas incide sobre o adicional de 1/3, que também é isento de encargos.</p>
+  <h3>Posso vender mais de 10 dias de férias?</h3>
+  <p>Não. O limite legal para a venda de férias, o abono pecuniário, é de até 10 dias, correspondendo a 1/3 do período aquisitivo.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../arcano-pessoal-2026/">Calculadora de Arcano Pessoal 2026</a> · <a href="../gasto-pc-gamer/">Quanto Gasta um PC Gamer</a> · <a href="../arcano-pessoal-anual/">Calculadora de Arcano Pessoal Anual</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+(function () {
+  var salarioEl = document.getElementById("salario");
+  var diasEl = document.getElementById("dias");
+  var abonoEl = document.getElementById("abono");
+  var out = document.getElementById("resultado");
+
+  function brl(v) {
+    return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  }
+
+  function calcular() {
+    var salario = parseFloat(salarioEl.value);
+    var dias = parseInt(diasEl.value, 10);
+    var abono = parseInt(abonoEl.value, 10);
+    if (isNaN(abono)) abono = 0;
+
+    if (isNaN(salario) || salario <= 0 || isNaN(dias) || dias <= 0) {
+      out.innerHTML = "";
+      return;
+    }
+    if (dias > 30) {
+      out.innerHTML = "<p><strong>Dias de férias não pode passar de 30.</strong></p>";
+      return;
+    }
+    if (abono > 10) {
+      out.innerHTML = "<p><strong>Abono pecuniário não pode passar de 10 dias (1/3 de 30).</strong></p>";
+      return;
+    }
+    if (dias + abono > 30) {
+      out.innerHTML = "<p><strong>Dias de férias + dias de abono não pode passar de 30.</strong></p>";
+      return;
+    }
+
+    var diaria = salario / 30;
+    var valorFerias = diaria * dias;
+    var tercoFerias = valorFerias / 3;
+    var totalFerias = valorFerias + tercoFerias;
+
+    var html = "";
+    html += "<table class=\"tabela-resultado\">";
+    html += "<tr><td>Dias gozados (" + dias + ")</td><td>" + brl(valorFerias) + "</td></tr>";
+    html += "<tr><td>1/3 constitucional</td><td>" + brl(tercoFerias) + "</td></tr>";
+    html += "<tr><td><strong>Total das férias gozadas (bruto)</strong></td><td><strong>" + brl(totalFerias) + "</strong></td></tr>";
+
+    var totalGeral = totalFerias;
+
+    if (abono > 0) {
+      var valorAbono = diaria * abono;
+      var tercoAbono = valorAbono / 3;
+      var totalAbono = valorAbono + tercoAbono;
+      totalGeral += totalAbono;
+      html += "<tr><td>Abono pecuniário (" + abono + " dias vendidos)</td><td>" + brl(valorAbono) + "</td></tr>";
+      html += "<tr><td>1/3 sobre o abono</td><td>" + brl(tercoAbono) + "</td></tr>";
+      html += "<tr><td><strong>Total do abono (isento de INSS/IRRF)</strong></td><td><strong>" + brl(totalAbono) + "</strong></td></tr>";
+    }
+
+    html += "<tr><td><strong>Total geral bruto a receber</strong></td><td><strong>" + brl(totalGeral) + "</strong></td></tr>";
+    html += "</table>";
+    html += "<p class=\"nota\">Valor bruto. As férias gozadas (não o abono) sofrem desconto de INSS e IRRF na folha — as tabelas mudam todo ano, então não estão incluídas aqui; confira o holerite ou a tabela vigente para o valor líquido.</p>";
+
+    out.innerHTML = html;
+  }
+
+  [salarioEl, diasEl, abonoEl].forEach(function (el) {
+    el.addEventListener("input", calcular);
+  });
+  calcular();
+})();
+
+</script>
+</body>
+</html>

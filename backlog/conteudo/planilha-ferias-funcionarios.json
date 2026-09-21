@@ -1,0 +1,65 @@
+{
+ "intro": "A calculadora de férias CLT permite que empregadores e trabalhadores descubram rapidamente quanto receberá o funcionário ao tirar férias, incluindo o adicional de 1/3 constitucional e o valor do abono pecuniário, sem precisar de planilhas ou consultas complexas.",
+ "formula": "total = (salário/30 * dias) + (salário/30 * dias)/3 + (abono>0 ? (salário/30 * abono) + (salário/30 * abono)/3 : 0)",
+ "como": [
+  "O cálculo parte do salário bruto mensal, divide por 30 para obter o valor da diária e multiplica pelos dias de férias efetivamente gozados. Sobre esse valor é acrescentado um terço, conforme determina a Constituição. Se houver venda de dias (abono), o mesmo procedimento é repetido e somado ao total.",
+  "O usuário informa três números: salário bruto mensal, quantidade de dias de férias que pretende tirar (até 30) e dias de abono pecuniário (até 10). O script valida limites, calcula a diária, aplica a proporção de dias e adiciona o terço constitucional tanto para as férias quanto para o abono."
+ ],
+ "exemplo": {
+  "cenario": "Um trabalhador com salário de R$ 3.200,00 tira 20 dias de férias e vende 5 dias de abono.",
+  "passos": [
+   "Diária = 3200 / 30 = 106,67",
+   "Valor férias = 106,67 * 20 = 2.133,33; 1/3 = 711,11; total férias = 2.844,44",
+   "Valor abono = 106,67 * 5 = 533,33; 1/3 = 177,78; total abono = 711,11"
+  ],
+  "resultado": "O total bruto a receber será de R$ 3.555,55."
+ },
+ "tabela": {
+  "titulo": "Faixas típicas de dias",
+  "colunas": [
+   "Dias de férias",
+   "Dias de abono (máx)"
+  ],
+  "linhas": [
+   [
+    "10",
+    "0 a 10 (até 1/3 dos dias)"
+   ],
+   [
+    "15",
+    "0 a 10 (até 1/3 dos dias)"
+   ],
+   [
+    "20",
+    "0 a 10 (até 1/3 dos dias)"
+   ],
+   [
+    "30",
+    "0 a 10 (máximo permitido)"
+   ]
+  ]
+ },
+ "cuidados": [
+  "O total bruto não inclui descontos de INSS e IRRF, que são aplicados apenas sobre a parte das férias, não sobre o abono.",
+  "Dias de férias + dias de abono não podem ultrapassar 30 dias.",
+  "O abono pecuniário só pode ser vendido até 10 dias, equivalente a 1/3 do período aquisitivo."
+ ],
+ "faq": [
+  {
+   "p": "Como saber quantos dias de férias tenho direito?",
+   "r": "Após completar 12 meses de trabalho, o empregado tem direito a 30 dias corridos de férias, podendo fracionar em até três períodos, sendo um deles de no mínimo 14 dias."
+  },
+  {
+   "p": "O que é o 1/3 constitucional nas férias?",
+   "r": "É um adicional obrigatório de um terço sobre o valor das férias, garantido pela Constituição, que deve ser pago junto ao salário de férias."
+  },
+  {
+   "p": "O abono pecuniário é tributado?",
+   "r": "O valor do abono é isento de INSS e IRRF, mas incide sobre o adicional de 1/3, que também é isento de encargos."
+  },
+  {
+   "p": "Posso vender mais de 10 dias de férias?",
+   "r": "Não. O limite legal para a venda de férias, o abono pecuniário, é de até 10 dias, correspondendo a 1/3 do período aquisitivo."
+  }
+ ]
+}
