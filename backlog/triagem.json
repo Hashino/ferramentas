@@ -6744,5 +6744,285 @@
   "ia_overview": false,
   "regex": "REPROVA",
   "v": 4
+ },
+ "planilha abastecimento de combustível": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica necessidade de planilha para preenchimento próprio, não de cálculo automático; não há ferramenta interativa nem resposta completa por IA.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha bitcoin excel grátis": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Usuário quer uma planilha gratuita; nenhum dos resultados oferece calculadora interativa e a IA não pode fornecer o arquivo completo.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha bitcoin grátis": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Busca por planilha gratuita, não há ferramenta interativa nos primeiros resultados e IA não pode fornecer a planilha.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha calculo cheque especial": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem ferramentas interativas nos resultados, portanto não vale criar nova página.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 2,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha calculo de aposentadoria": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos resultados, mas já há opções no top‑3, então não é necessário construir nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha calculo de calorias": {
+  "veredito": "CONSTRUIR",
+  "motivo": "O usuário quer usar uma calculadora de calorias, porém nenhum dos 10 resultados apresenta uma ferramenta interativa que devolva o cálculo.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha calculo tesouro direto": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existem ferramentas interativas nos top 3, então não é necessário construir nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 10,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha calibragem de pneus": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem tabelas estáticas que a IA pode fornecer, não há ferramenta interativa nos resultados e a busca pode ser respondida sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": true,
+  "regex": "OK",
+  "v": 4
+ },
+ "planilha cartão de crédito me poupe": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Busca por planilha interativa, não há ferramenta no top 10.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha cartão de crédito parcelado": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Busca por planilha de cálculo de parcelamento, sem ferramenta interativa nos resultados e IA não fornece resposta completa.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha cdb excel": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existe uma ferramenta interativa no top‑3, então não há necessidade de construir outra.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 1,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha cdb lci lca": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Busca por calculadora interativa, nenhuma encontrada",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha cdb liquidez diaria": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há ferramentas interativas nos resultados, portanto não justifica criar nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha cdb me poupe": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há ferramenta interativa nos resultados, mas não nos 3 primeiros; não justifica nova construção.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 1,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha cheque especial": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já existem ferramentas interativas nos resultados, portanto não vale criar nova página.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 2,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha contadora de calorias": {
+  "veredito": "DESCARTAR",
+  "motivo": "Já há várias ferramentas interativas nos primeiros resultados, não vale criar nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 7,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha controle de calorias": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca uma planilha interativa, mas já existem ferramentas disponíveis; a IA não pode responder sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 2,
+  "top10": 4,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha controle de cambio": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário procura uma planilha interativa, mas já existem várias opções no top‑10, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 3,
+  "top10": 5,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha controle de cartão de crédito grátis": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca indica necessidade de baixar uma planilha, não de usar uma calculadora interativa; portanto não justifica construir nova ferramenta.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha controle de combustível": {
+  "veredito": "CONSTRUIR",
+  "motivo": "O usuário busca uma planilha de controle de combustível, que requer dados pessoais; nenhuma IA pode responder sem esses dados.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha controle de combustível excel": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Busca por planilha de controle de combustível, nenhum dos três primeiros resultados é ferramenta interativa e a IA não fornece a planilha completa.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 1,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha controle de combustível simples": {
+  "veredito": "DESCARTAR",
+  "motivo": "Existe ferramenta interativa no top‑3, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 1,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha controle de criptomoedas": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Nenhuma das três primeiras páginas oferece uma planilha interativa; a busca indica necessidade de ferramenta própria.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 1,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha controle de divida": {
+  "veredito": "DESCARTAR",
+  "motivo": "O usuário busca uma planilha interativa, mas já existem ferramentas nos top‑3 resultados, então não há necessidade de construir uma nova.",
+  "quer_ferramenta": true,
+  "top3": 1,
+  "top10": 3,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha controle de dívidas": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Usuário busca uma planilha interativa para controlar dívidas e não há ferramenta online nos primeiros resultados nem resposta completa por IA.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha controle de energia eletrica": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Nenhuma das três primeiras posições oferece uma ferramenta interativa e a IA não pode responder sem dados do usuário.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha controle de nota fiscal": {
+  "veredito": "DESCARTAR",
+  "motivo": "A busca visa baixar uma planilha, não usar uma calculadora interativa; não há ferramenta que devolva cálculo nem resposta completa por IA.",
+  "quer_ferramenta": false,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
+ },
+ "planilha controle de nota fiscal excel": {
+  "veredito": "CONSTRUIR",
+  "motivo": "Usuário procura planilha interativa, nenhuma disponível nos top 3, IA não responde.",
+  "quer_ferramenta": true,
+  "top3": 0,
+  "top10": 0,
+  "ia_overview": false,
+  "regex": "REPROVA",
+  "v": 4
  }
 }

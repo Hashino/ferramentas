@@ -1,0 +1,65 @@
+{
+ "intro": "Esta calculadora ajuda motoristas a entender quanto seu carro consome de combustível e quanto gastam por quilômetro rodado, facilitando o planejamento de viagens e o controle de despesas. É útil para quem quer comparar custos entre veículos ou avaliar o impacto de variações no preço do combustível.",
+ "formula": "Consumo = km rodados / litros abastecidos (km/L); Custo total = litros × preço por litro (R$); Custo por km = Custo total / km rodados (R$/km)",
+ "como": [
+  "Primeiro, informe quantos quilômetros foram percorridos e quantos litros foram abastecidos. O script divide a distância pelos litros para obter o consumo médio em km/L. Se o preço do litro for preenchido, ele multiplica o volume pelo preço para achar o gasto total e divide esse valor pela distância, gerando o custo por quilômetro.",
+  "Os números inseridos vêm diretamente do usuário: \"km\" representa a quilometragem percorrida desde o último abastecimento, \"litros\" é a quantidade de combustível colocada no tanque, e \"preço\" corresponde ao valor pago por litro naquele abastecimento. Todos os campos aceitam decimais para maior precisão."
+ ],
+ "exemplo": {
+  "cenario": "Um carro percorre 480 km e foi abastecido com 40 litros, pagando R$ 6,20 por litro.",
+  "passos": [
+   "Consumo = 480 ÷ 40 = 12 km/L",
+   "Custo total = 40 × 6,20 = R$ 248,00",
+   "Custo por km = 248 ÷ 480 ≈ R$ 0,52 por km"
+  ],
+  "resultado": "O consumo médio foi de 12 km/L, o abastecimento custou R$ 248,00 e cada quilômetro rodado saiu a aproximadamente R$ 0,52."
+ },
+ "tabela": {
+  "titulo": "Valores típicos de consumo e custo",
+  "colunas": [
+   "Consumo (km/L)",
+   "Custo por km (R$)"
+  ],
+  "linhas": [
+   [
+    "8",
+    "0,70-0,90"
+   ],
+   [
+    "10",
+    "0,60-0,80"
+   ],
+   [
+    "12",
+    "0,50-0,70"
+   ],
+   [
+    "15",
+    "0,40-0,55"
+   ]
+  ]
+ },
+ "cuidados": [
+  "Não use a ferramenta para estimar consumo em condições extremas, como tráfego intenso ou carga excessiva, pois o resultado pode divergir do real.",
+  "O cálculo assume que todo o combustível abastecido foi consumido; reabastecimentos parciais antes de terminar o tanque distorcem o consumo médio.",
+  "Os valores de preço são locais e variam; use sempre o preço efetivamente pago no abastecimento que está analisando."
+ ],
+ "faq": [
+  {
+   "p": "Como saber se meu consumo está bom?",
+   "r": "Compare o km/L obtido com a média indicada pelo fabricante e com valores típicos de veículos semelhantes; diferenças podem indicar manutenção ou hábitos de condução diferentes."
+  },
+  {
+   "p": "Por que o consumo calculado pode ser diferente do exibido no painel do carro?",
+   "r": "O painel usa estimativas baseadas em sensores e pode ser menos preciso que o cálculo real de km percorridos dividido pelos litros efetivamente abastecidos."
+  },
+  {
+   "p": "O que fazer se o custo por km ficar muito alto?",
+   "r": "Verifique a pressão dos pneus, faça a manutenção do motor e considere ajustar o estilo de condução, como evitar acelerações bruscas e excesso de velocidade."
+  },
+  {
+   "p": "Posso usar a calculadora para comparar diferentes tipos de combustível?",
+   "r": "Sim, basta inserir o preço pago por litro de cada combustível e comparar o custo por km resultante, mantendo a mesma quilometragem e volume abastecido."
+  }
+ ]
+}

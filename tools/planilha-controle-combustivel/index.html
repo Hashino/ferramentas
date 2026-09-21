@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de Consumo de Combustível (km/L) | Ferramentas</title>
+<meta name="description" content="Calcule o consumo médio do seu carro em km/L, o custo do abastecimento e o custo por quilômetro rodado. Grátis, sem cadastro.">
+<link rel="canonical" href="https://hashino.xyz/tools/planilha-controle-combustivel/">
+<meta property="og:title" content="Calculadora de Consumo de Combustível (km/L) | Ferramentas">
+<meta property="og:description" content="Calcule o consumo médio do seu carro em km/L, o custo do abastecimento e o custo por quilômetro rodado. Grátis, sem cadastro.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/planilha-controle-combustivel/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Consumo de Combustível","url":"https://hashino.xyz/tools/planilha-controle-combustivel/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcule o consumo médio do seu carro em km/L, o custo do abastecimento e o custo por quilômetro rodado. Grátis, sem cadastro."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Consumo de Combustível","item":"https://hashino.xyz/tools/planilha-controle-combustivel/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como saber se meu consumo está bom?", "acceptedAnswer": {"@type": "Answer", "text": "Compare o km/L obtido com a média indicada pelo fabricante e com valores típicos de veículos semelhantes; diferenças podem indicar manutenção ou hábitos de condução diferentes."}}, {"@type": "Question", "name": "Por que o consumo calculado pode ser diferente do exibido no painel do carro?", "acceptedAnswer": {"@type": "Answer", "text": "O painel usa estimativas baseadas em sensores e pode ser menos preciso que o cálculo real de km percorridos dividido pelos litros efetivamente abastecidos."}}, {"@type": "Question", "name": "O que fazer se o custo por km ficar muito alto?", "acceptedAnswer": {"@type": "Answer", "text": "Verifique a pressão dos pneus, faça a manutenção do motor e considere ajustar o estilo de condução, como evitar acelerações bruscas e excesso de velocidade."}}, {"@type": "Question", "name": "Posso usar a calculadora para comparar diferentes tipos de combustível?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, basta inserir o preço pago por litro de cada combustível e comparar o custo por km resultante, mantendo a mesma quilometragem e volume abastecido."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Calculadora de Consumo de Combustível</h1>
+  <section class="app">
+  <form id="calc" autocomplete="off">
+    <label for="km">Quilômetros rodados</label>
+    <input id="km" type="number" inputmode="decimal" min="0" step="0.1" placeholder="Ex: 420">
+
+    <label for="litros">Litros abastecidos</label>
+    <input id="litros" type="number" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 35">
+
+    <label for="preco">Preço pago por litro (R$)</label>
+    <input id="preco" type="number" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 6.09">
+  </form>
+  <div id="resultado" class="resultado"></div>
+
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">Esta calculadora ajuda motoristas a entender quanto seu carro consome de combustível e quanto gastam por quilômetro rodado, facilitando o planejamento de viagens e o controle de despesas. É útil para quem quer comparar custos entre veículos ou avaliar o impacto de variações no preço do combustível.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>Consumo = km rodados / litros abastecidos (km/L); Custo total = litros × preço por litro (R$); Custo por km = Custo total / km rodados (R$/km)</code></p>
+  <p>Primeiro, informe quantos quilômetros foram percorridos e quantos litros foram abastecidos. O script divide a distância pelos litros para obter o consumo médio em km/L. Se o preço do litro for preenchido, ele multiplica o volume pelo preço para achar o gasto total e divide esse valor pela distância, gerando o custo por quilômetro.</p>
+  <p>Os números inseridos vêm diretamente do usuário: "km" representa a quilometragem percorrida desde o último abastecimento, "litros" é a quantidade de combustível colocada no tanque, e "preço" corresponde ao valor pago por litro naquele abastecimento. Todos os campos aceitam decimais para maior precisão.</p>
+  <h2>Exemplo</h2>
+  <p>Um carro percorre 480 km e foi abastecido com 40 litros, pagando R$ 6,20 por litro.</p>
+  <ol>
+    <li>Consumo = 480 ÷ 40 = 12 km/L</li>
+    <li>Custo total = 40 × 6,20 = R$ 248,00</li>
+    <li>Custo por km = 248 ÷ 480 ≈ R$ 0,52 por km</li>
+  </ol>
+  <p><strong>O consumo médio foi de 12 km/L, o abastecimento custou R$ 248,00 e cada quilômetro rodado saiu a aproximadamente R$ 0,52.</strong></p>
+  <h2>Valores típicos de consumo e custo</h2>
+  <table>
+    <thead><tr><th>Consumo (km/L)</th><th>Custo por km (R$)</th></tr></thead>
+    <tbody>
+      <tr><td>8</td><td>0,70-0,90</td></tr>
+      <tr><td>10</td><td>0,60-0,80</td></tr>
+      <tr><td>12</td><td>0,50-0,70</td></tr>
+      <tr><td>15</td><td>0,40-0,55</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>Não use a ferramenta para estimar consumo em condições extremas, como tráfego intenso ou carga excessiva, pois o resultado pode divergir do real.</li>
+    <li>O cálculo assume que todo o combustível abastecido foi consumido; reabastecimentos parciais antes de terminar o tanque distorcem o consumo médio.</li>
+    <li>Os valores de preço são locais e variam; use sempre o preço efetivamente pago no abastecimento que está analisando.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Como saber se meu consumo está bom?</h3>
+  <p>Compare o km/L obtido com a média indicada pelo fabricante e com valores típicos de veículos semelhantes; diferenças podem indicar manutenção ou hábitos de condução diferentes.</p>
+  <h3>Por que o consumo calculado pode ser diferente do exibido no painel do carro?</h3>
+  <p>O painel usa estimativas baseadas em sensores e pode ser menos preciso que o cálculo real de km percorridos dividido pelos litros efetivamente abastecidos.</p>
+  <h3>O que fazer se o custo por km ficar muito alto?</h3>
+  <p>Verifique a pressão dos pneus, faça a manutenção do motor e considere ajustar o estilo de condução, como evitar acelerações bruscas e excesso de velocidade.</p>
+  <h3>Posso usar a calculadora para comparar diferentes tipos de combustível?</h3>
+  <p>Sim, basta inserir o preço pago por litro de cada combustível e comparar o custo por km resultante, mantendo a mesma quilometragem e volume abastecido.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../planilha-ferias-funcionarios/">Calculadora de Férias de Funcionários (CLT)</a> · <a href="../planilha-controle-energia-eletrica/">Calculadora de Consumo de Energia Elétrica</a> · <a href="../agua/">Quanta água sua casa gasta por mês</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+(function () {
+  var kmEl = document.getElementById("km");
+  var litrosEl = document.getElementById("litros");
+  var precoEl = document.getElementById("preco");
+  var out = document.getElementById("resultado");
+
+  function calcular() {
+    var km = parseFloat(kmEl.value);
+    var litros = parseFloat(litrosEl.value);
+    var preco = parseFloat(precoEl.value);
+
+    if (isNaN(km) || km <= 0 || isNaN(litros) || litros <= 0) {
+      out.innerHTML = "";
+      return;
+    }
+
+    var consumo = km / litros;
+    var custoTotal = isNaN(preco) ? null : litros * preco;
+    var custoPorKm = custoTotal !== null ? custoTotal / km : null;
+
+    var html = "<table class=\"tabela-resultado\">";
+    html += "<tr><td>Consumo médio</td><td>" + consumo.toLocaleString("pt-BR", { maximumFractionDigits: 2 }) + " km/L</td></tr>";
+    if (custoTotal !== null) {
+      html += "<tr><td>Custo total do abastecimento</td><td>" + custoTotal.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) + "</td></tr>";
+      html += "<tr><td><strong>Custo por km rodado</strong></td><td><strong>" + custoPorKm.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) + "</strong></td></tr>";
+    }
+    html += "</table>";
+    out.innerHTML = html;
+  }
+
+  [kmEl, litrosEl, precoEl].forEach(function (el) { el.addEventListener("input", calcular); });
+  calcular();
+})();
+
+</script>
+</body>
+</html>
