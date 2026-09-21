@@ -1,0 +1,65 @@
+{
+  "intro": "Esta calculadora mostra quanto de experiência (XP) ainda falta para você alcançar o próximo nível no PokeXGames e indica a redução de XP/loot no Nightmare World quando está acima do nível 450. É útil para jogadores que querem planejar sessões de treino ou saber o impacto do nível no ganho de recompensas.",
+  "formula": "XP faltante = XP[nível alvo] - XP[nível atual]; Redução NW = (nível - 450) × 1 % (aplicado ao ganho de XP/loot em hunts fracas)",
+  "como": [
+    "Primeiro informe seu nível atual e o nível que deseja alcançar. O script busca os valores acumulados de XP na tabela interna e subtrai o XP do nível atual do XP do nível alvo, exibindo o total que ainda falta ganhar. O resultado aparece em uma tabela simples com os três valores.",
+    "Para a redução do Nightmare World, basta digitar seu nível atual. O cálculo considera que, a partir do nível 451, cada ponto de nível acima de 450 reduz em 1 % a quantidade de XP e loot obtidos em hunts fracas, refletindo a penalidade progressiva do conteúdo de alto nível."
+  ],
+  "exemplo": {
+    "cenario": "Você está no nível 50 e quer chegar ao nível 60.",
+    "passos": [
+      "XP no nível 50 = 1 846 450",
+      "XP no nível 60 = 3 256 780",
+      "XP faltante = 3 256 780 - 1 846 450 = 1 410 330"
+    ],
+    "resultado": "Faltam 1 410 330 de XP para alcançar o nível 60."
+  },
+  "tabela": {
+    "titulo": "Redução de ganho no Nightmare World",
+    "colunas": [
+      "Nível",
+      "Redução de XP/loot"
+    ],
+    "linhas": [
+      [
+        "451",
+        "1 %"
+      ],
+      [
+        "460",
+        "10 %"
+      ],
+      [
+        "475",
+        "25 %"
+      ],
+      [
+        "500",
+        "50 %"
+      ]
+    ]
+  },
+  "cuidados": [
+    "A tabela de XP cobre apenas níveis de 1 a 200; níveis superiores não são suportados.",
+    "A redução do Nightmare World só começa a valer a partir do nível 451; níveis menores não sofrem penalidade.",
+    "Os valores de XP são estimativas baseadas na tabela oficial do jogo e podem mudar em atualizações futuras."
+  ],
+  "faq": [
+    {
+      "p": "Como descubro quanto tempo falta para subir de nível?",
+      "r": "Divida o XP faltante pelo ganho médio por hora que você costuma ter. O resultado dá uma estimativa de horas necessárias."
+    },
+    {
+      "p": "A redução de XP no Nightmare World afeta também itens raros?",
+      "r": "Sim, a penalidade de 1 % por nível acima de 450 se aplica ao ganho de XP e ao loot em hunts fracas, incluindo itens raros (Angry, Shinies, Mega Evoluções e Nightmare Crystals)."
+    },
+    {
+      "p": "Posso usar a calculadora para níveis acima de 200?",
+      "r": "Não. A planilha de XP termina no nível 200; para níveis maiores consulte a wiki oficial do PXG."
+    },
+    {
+      "p": "O cálculo considera bônus de eventos temporários?",
+      "r": "Não. A ferramenta usa apenas os valores base de XP; bônus de eventos devem ser adicionados manualmente ao resultado."
+    }
+  ]
+}

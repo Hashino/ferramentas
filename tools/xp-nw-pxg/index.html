@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de XP e Nightmare World PXG | Ferramentas</title>
+<meta name="description" content="Calcule quanto XP falta para o próximo nível no PokeXGames e a redução de EXP/loot do Nightmare World acima do nível 450.">
+<link rel="canonical" href="https://hashino.xyz/tools/xp-nw-pxg/">
+<meta property="og:title" content="Calculadora de XP e Nightmare World PXG | Ferramentas">
+<meta property="og:description" content="Calcule quanto XP falta para o próximo nível no PokeXGames e a redução de EXP/loot do Nightmare World acima do nível 450.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/xp-nw-pxg/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de XP e NW do PXG","url":"https://hashino.xyz/tools/xp-nw-pxg/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcule quanto XP falta para o próximo nível no PokeXGames e a redução de EXP/loot do Nightmare World acima do nível 450."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de XP e NW do PXG","item":"https://hashino.xyz/tools/xp-nw-pxg/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como descubro quanto tempo falta para subir de nível?", "acceptedAnswer": {"@type": "Answer", "text": "Divida o XP faltante pelo ganho médio por hora que você costuma ter. O resultado dá uma estimativa de horas necessárias."}}, {"@type": "Question", "name": "A redução de XP no Nightmare World afeta também itens raros?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, a penalidade de 1 % por nível acima de 450 se aplica ao ganho de XP e ao loot, incluindo itens raros."}}, {"@type": "Question", "name": "Posso usar a calculadora para níveis acima de 200?", "acceptedAnswer": {"@type": "Answer", "text": "Não. A planilha de XP termina no nível 200; para níveis maiores consulte a wiki oficial do PXG."}}, {"@type": "Question", "name": "O cálculo considera bônus de eventos temporários?", "acceptedAnswer": {"@type": "Answer", "text": "Não. A ferramenta usa apenas os valores base de XP; bônus de eventos devem ser adicionados manualmente ao resultado."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Calculadora de XP e Nightmare World (PXG)</h1>
+  <section class="app">
+  <form id="calc-xp" autocomplete="off">
+    <label for="nivelAtual">Seu nível atual (1 a 200)</label>
+    <input id="nivelAtual" type="number" inputmode="numeric" min="1" max="200" step="1" placeholder="Ex: 50">
+
+    <label for="nivelAlvo">Nível que você quer chegar (1 a 200)</label>
+    <input id="nivelAlvo" type="number" inputmode="numeric" min="1" max="200" step="1" placeholder="Ex: 60">
+  </form>
+  <div id="resultado-xp" class="resultado"></div>
+
+  <form id="calc-nw" autocomplete="off">
+    <label for="nivelNw">Seu nível, para calcular a redução do Nightmare World (qualquer nível)</label>
+    <input id="nivelNw" type="number" inputmode="numeric" min="1" step="1" placeholder="Ex: 475">
+  </form>
+  <div id="resultado-nw" class="resultado"></div>
+
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">Esta calculadora mostra quanto de experiência (XP) ainda falta para você alcançar o próximo nível no PokeXGames e indica a redução de XP/loot no Nightmare World quando está acima do nível 450. É útil para jogadores que querem planejar sessões de treino ou saber o impacto do nível no ganho de recompensas.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>XP faltante = XP[nível alvo] - XP[nível atual]; Redução NW = (nível - 450) × 1 % (aplicado ao ganho de XP/loot)</code></p>
+  <p>Primeiro informe seu nível atual e o nível que deseja alcançar. O script busca os valores acumulados de XP na tabela interna e subtrai o XP do nível atual do XP do nível alvo, exibindo o total que ainda falta ganhar. O resultado aparece em uma tabela simples com os três valores.</p>
+  <p>Para a redução do Nightmare World, basta digitar seu nível atual. O cálculo considera que, a partir do nível 451, cada ponto de nível reduz em 1 % a quantidade de XP e loot obtidos, refletindo a penalidade progressiva do conteúdo de alto nível.</p>
+  <h2>Exemplo</h2>
+  <p>Você está no nível 50 e quer chegar ao nível 60.</p>
+  <ol>
+    <li>XP no nível 50 = 1 846 450</li>
+    <li>XP no nível 60 = 3 256 780</li>
+    <li>XP faltante = 3 256 780 - 1 846 450 = 1 410 330</li>
+  </ol>
+  <p><strong>Faltam 1 410 330 de XP para alcançar o nível 60.</strong></p>
+  <h2>Redução de ganho no Nightmare World</h2>
+  <table>
+    <thead><tr><th>Nível</th><th>Redução de XP/loot</th></tr></thead>
+    <tbody>
+      <tr><td>451</td><td>1 %</td></tr>
+      <tr><td>460</td><td>10 %</td></tr>
+      <tr><td>475</td><td>25 %</td></tr>
+      <tr><td>500</td><td>50 %</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>A tabela de XP cobre apenas níveis de 1 a 200; níveis superiores não são suportados.</li>
+    <li>A redução do Nightmare World só começa a valer a partir do nível 451; níveis menores não sofrem penalidade.</li>
+    <li>Os valores de XP são estimativas baseadas na tabela oficial do jogo e podem mudar em atualizações futuras.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Como descubro quanto tempo falta para subir de nível?</h3>
+  <p>Divida o XP faltante pelo ganho médio por hora que você costuma ter. O resultado dá uma estimativa de horas necessárias.</p>
+  <h3>A redução de XP no Nightmare World afeta também itens raros?</h3>
+  <p>Sim, a penalidade de 1 % por nível acima de 450 se aplica ao ganho de XP e ao loot, incluindo itens raros.</p>
+  <h3>Posso usar a calculadora para níveis acima de 200?</h3>
+  <p>Não. A planilha de XP termina no nível 200; para níveis maiores consulte a wiki oficial do PXG.</p>
+  <h3>O cálculo considera bônus de eventos temporários?</h3>
+  <p>Não. A ferramenta usa apenas os valores base de XP; bônus de eventos devem ser adicionados manualmente ao resultado.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../rende-grafiato-metro-quadrado/">Quanto rende o grafiato por metro quadrado</a> · <a href="../rende-textura-metro-quadrado/">Quanto rende a textura por metro quadrado</a> · <a href="../libras-pneu-bicicleta/">Quantas libras no pneu de bicicleta</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+(function () {
+  var XP = [0,0,98,199,388,790,1498,2565,4176,6397,9230,12956,17596,23083,29830,37795,46824,57489,69694,83153,96660,115993,134770,156016,179392,204375,232266,262591,294668,330110,368290,408349,452248,499189,548118,601380,657988,716675,780206,847387,916720,991426,1070086,1150953,1237740,1328785,1422074,1521848,1626184,1732783,1846450,1964983,2085780,2214246,2347882,2483765,2627936,2777581,2929438,3090220,3256780,3425499,3603798,3788179,3974648,4171370,4374478,4579585,4795636,5018377,5243010,5479296,5722576,5967623,6225050,6489775,6756124,7035598,7322674,7611213,7913640,8223973,8535590,8861876,9196372,9531955,9883006,10242571,10603008,10979730,11365270,11751449,12154748,12567169,12979978,13410760,13850968,14291295,14750466,15219367,15688100,16176566,16675066,17173093,17691760,18220765,18748974,19298748,19859164,20418443,21000230,21592963,22184200,22798906,23424862,24048945,24697476,25357561,26015378,26698640,27393760,28086199,28805098,29536159,30264108,31019550,31787458,32551805,33344696,34150357,34951990,35783236,36627556,37467363,38337870,39221755,40100624,41011298,41935654,42854473,43806220,44471953,45731610,46725336,47733352,48734735,49771346,50822551,51866548,52946950,54042250,55129749,56254848,57395149,58527038,59697740,60883948,62061115,63278326,64511347,65734680,66999306,68280046,69550433,70863380,72192745,73511074,74873248,76252144,77619303,79031610,80460943,81877820,83341166,84821842,86289325,87804616,89337541,90856518,92424660,94010740,95582099,97203998,98844139,100468768,102145330,103840438,105519225,107251356,109002337,110736170,112524776,114332536,116122303,117968290,119833735,121680324,123584598,125508634,127412933,129376400];
+
+  var atualEl = document.getElementById("nivelAtual");
+  var alvoEl = document.getElementById("nivelAlvo");
+  var outXp = document.getElementById("resultado-xp");
+
+  function calcXp() {
+    var atual = parseInt(atualEl.value, 10);
+    var alvo = parseInt(alvoEl.value, 10);
+    if (isNaN(atual) || isNaN(alvo)) { outXp.innerHTML = ""; return; }
+    if (atual < 1 || atual > 200 || alvo < 1 || alvo > 200) {
+      outXp.innerHTML = "<p><strong>Esta tabela cobre os níveis 1 a 200.</strong> Para níveis maiores, use a wiki oficial do PXG.</p>";
+      return;
+    }
+    if (alvo <= atual) {
+      outXp.innerHTML = "<p>O nível alvo precisa ser maior que o nível atual.</p>";
+      return;
+    }
+    var faltam = XP[alvo] - XP[atual];
+    outXp.innerHTML =
+      "<table class=\"tabela-resultado\">" +
+      "<tr><td>XP total no nível " + atual + "</td><td>" + XP[atual].toLocaleString("pt-BR") + "</td></tr>" +
+      "<tr><td>XP total no nível " + alvo + "</td><td>" + XP[alvo].toLocaleString("pt-BR") + "</td></tr>" +
+      "<tr><td><strong>XP que falta ganhar</strong></td><td><strong>" + faltam.toLocaleString("pt-BR") + "</strong></td></tr>" +
+      "</table>";
+  }
+  [atualEl, alvoEl].forEach(function (el) { el.addEventListener("input", calcXp); });
+  calcXp();
+
+  var nwEl = document.getElementById("nivelNw");
+  var outNw = document.getElementById("resultado-nw");
+
+  function calcNw() {
+    var nivel = parseInt(nwEl.value, 10);
+    if (isNaN(nivel) || nivel < 1) { outNw.innerHTML = ""; return; }
+    if (nivel <= 450) {
+      outNw.innerHTML = "<p>Nível " + nivel + ": <strong>sem redução</strong> — a penalidade do Nightmare World só começa acima do nível 450.</p>";
+      return;
+    }
+    var reducao = (nivel - 450) * 1;
+    outNw.innerHTML =
+      "<p>Nível " + nivel + ": <strong>" + reducao + "% de redução</strong> de Loot e EXP em hunts fracas no Nightmare World.</p>" +
+      "<p class=\"nota\">Afeta drops de Pokémon Angry, Shinies, Mega Evoluções e Nightmare Crystals. 1% de redução para cada nível acima de 450.</p>";
+  }
+  nwEl.addEventListener("input", calcNw);
+  calcNw();
+})();
+
+</script>
+</body>
+</html>
