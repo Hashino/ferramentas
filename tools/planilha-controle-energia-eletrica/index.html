@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de Consumo e Custo de Energia Elétrica | Ferramentas</title>
+<meta name="description" content="Calcule quantos kWh um aparelho consome e quanto isso custa na conta de luz, a partir da potência, das horas de uso e da sua tarifa.">
+<link rel="canonical" href="https://hashino.xyz/tools/planilha-controle-energia-eletrica/">
+<meta property="og:title" content="Calculadora de Consumo e Custo de Energia Elétrica | Ferramentas">
+<meta property="og:description" content="Calcule quantos kWh um aparelho consome e quanto isso custa na conta de luz, a partir da potência, das horas de uso e da sua tarifa.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hashino.xyz/tools/planilha-controle-energia-eletrica/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Consumo de Energia Elétrica","url":"https://hashino.xyz/tools/planilha-controle-energia-eletrica/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"description":"Calcule quantos kWh um aparelho consome e quanto isso custa na conta de luz, a partir da potência, das horas de uso e da sua tarifa."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://hashino.xyz/"},{"@type":"ListItem","position":2,"name":"Calculadora de Consumo de Energia Elétrica","item":"https://hashino.xyz/tools/planilha-controle-energia-eletrica/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Como descubro a potência do meu aparelho?", "acceptedAnswer": {"@type": "Answer", "text": "A potência costuma estar na etiqueta de especificação, no manual ou na própria unidade, expressa em watts (W)."}}, {"@type": "Question", "name": "Por que o consumo diário pode ser diferente do que eu calculo manualmente?", "acceptedAnswer": {"@type": "Answer", "text": "O cálculo assume uso contínuo durante as horas informadas; variações de carga, modos de economia ou ciclos de partida podem reduzir ou aumentar o consumo real."}}, {"@type": "Question", "name": "A tarifa da conta de luz inclui impostos?", "acceptedAnswer": {"@type": "Answer", "text": "A tarifa exibida na conta já traz os impostos e encargos médios; se você usar a tarifa base, o valor final será uma estimativa."}}, {"@type": "Question", "name": "Posso usar a calculadora para comparar diferentes aparelhos?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, basta inserir a potência e o tempo de uso de cada equipamento; a ferramenta mostrará o consumo e o custo estimado, facilitando a comparação."}}]}
+</script>
+<meta name="google-adsense-account" content="ca-pub-1801908225638213">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1801908225638213" crossorigin="anonymous"></script>
+<script>document.documentElement.setAttribute("data-theme",function(){try{return localStorage.getItem("theme")||"light"}catch(e){return"light"}}());</script>
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body data-footer>
+<main>
+  <h1>Calculadora de Consumo de Energia Elétrica</h1>
+  <section class="app">
+  <form id="calc" autocomplete="off">
+    <label for="potencia">Potência do aparelho (W)</label>
+    <input id="potencia" type="number" inputmode="decimal" min="0" step="1" placeholder="Ex: 1500">
+
+    <label for="horas">Horas de uso por dia</label>
+    <input id="horas" type="number" inputmode="decimal" min="0" step="0.1" placeholder="Ex: 3">
+
+    <label for="dias">Dias de uso no período</label>
+    <input id="dias" type="number" inputmode="numeric" min="1" step="1" placeholder="Ex: 30">
+
+    <label for="tarifa">Tarifa da sua conta de luz (R$ por kWh)</label>
+    <input id="tarifa" type="number" inputmode="decimal" min="0" step="0.01" placeholder="Ex: 0.92">
+  </form>
+  <div id="resultado" class="resultado"></div>
+
+  </section>
+  <div class="ad-slot"></div>
+<!-- conteudo:v2 -->
+<details class="conteudo">
+  <summary>Como a conta funciona, exemplo e perguntas frequentes</summary>
+  <div class="conteudo-corpo">
+  <p class="intro">Esta calculadora ajuda quem quer saber quanto de energia um eletrodoméstico ou equipamento consome e quanto isso pesa na conta de luz, usando a potência do aparelho, o tempo de uso diário, o número de dias e a tarifa vigente. É útil para quem planeja gastos ou compara alternativas.</p>
+  <h2>Como o cálculo é feito</h2>
+  <p class="formula"><code>Consumo (kWh) = Potência (W) × Horas de uso por dia ÷ 1000 × Dias de uso</code></p>
+  <p>Primeiro, informe a potência nominal do aparelho em watts, quantas horas ele funciona por dia e por quantos dias você pretende analisar. O script converte a potência para kilowatts, multiplica pelas horas diárias e depois pelos dias, gerando o consumo total em kWh. Se você também preencher a tarifa, o valor será multiplicado pelo consumo para obter o custo estimado.</p>
+  <p>Os números inseridos vêm do próprio usuário: a potência (W) costuma estar na etiqueta do produto; as horas de uso são a média diária de operação; os dias correspondem ao período que você quer analisar, como um mês; a tarifa (R$/kWh) está na sua conta de luz ou no site da distribuidora.</p>
+  <h2>Exemplo</h2>
+  <p>Um ar-condicionado de 1500 W usado 5 h por dia durante 30 dias, com tarifa de R$ 0,92/kWh.</p>
+  <ol>
+    <li>Consumo diário = 1500 W × 5 h ÷ 1000 = 7,5 kWh</li>
+    <li>Consumo no período = 7,5 kWh × 30 dias = 225 kWh</li>
+    <li>Custo = 225 kWh × R$ 0,92 = R$ 207,00</li>
+  </ol>
+  <p><strong>O ar-condicionado consumirá cerca de 225 kWh no mês, custando aproximadamente R$ 207,00.</strong></p>
+  <h2>Consumo aproximado de aparelhos comuns</h2>
+  <table>
+    <thead><tr><th>Aparelho</th><th>Consumo diário (kWh)</th></tr></thead>
+    <tbody>
+      <tr><td>Lâmpada LED 10 W (8 h)</td><td>0,08</td></tr>
+      <tr><td>TV LED 100 W (4 h)</td><td>0,40</td></tr>
+      <tr><td>Geladeira 150 W (24 h)</td><td>3,60</td></tr>
+      <tr><td>Chuveiro elétrico 5500 W (30 min)</td><td>2,75</td></tr>
+    </tbody>
+  </table>
+  <h2>O que essa conta não considera</h2>
+  <ul>
+    <li>A potência informada deve ser a nominal, sem considerar variações de carga ou eficiência real do equipamento.</li>
+    <li>O cálculo assume uso constante durante as horas declaradas; picos ou ciclos intermitentes podem alterar o consumo real.</li>
+    <li>A tarifa usada é a média por kWh; impostos, bandeiras ou tarifas diferenciadas (horário de ponta/off-peak) não são considerados.</li>
+  </ul>
+  <h2>Perguntas frequentes</h2>
+  <h3>Como descubro a potência do meu aparelho?</h3>
+  <p>A potência costuma estar na etiqueta de especificação, no manual ou na própria unidade, expressa em watts (W).</p>
+  <h3>Por que o consumo diário pode ser diferente do que eu calculo manualmente?</h3>
+  <p>O cálculo assume uso contínuo durante as horas informadas; variações de carga, modos de economia ou ciclos de partida podem reduzir ou aumentar o consumo real.</p>
+  <h3>A tarifa da conta de luz inclui impostos?</h3>
+  <p>A tarifa exibida na conta já traz os impostos e encargos médios; se você usar a tarifa base, o valor final será uma estimativa.</p>
+  <h3>Posso usar a calculadora para comparar diferentes aparelhos?</h3>
+  <p>Sim, basta inserir a potência e o tempo de uso de cada equipamento; a ferramenta mostrará o consumo e o custo estimado, facilitando a comparação.</p>
+  </div>
+</details>
+<!-- /conteudo -->
+
+  <nav class="explicacao">
+    <p class="relacionadas">Veja também: <a href="../planilha-ferias-funcionarios/">Calculadora de Férias de Funcionários (CLT)</a> · <a href="../planilha-controle-combustivel/">Calculadora de Consumo de Combustível</a> · <a href="../trelicas-metro-quadrado/">Quantas treliças por metro quadrado</a></p>
+  </nav>
+</main>
+<script src="../../config.js"></script>
+<script src="../../chrome.js"></script>
+<script>
+(function () {
+  var potEl = document.getElementById("potencia");
+  var horasEl = document.getElementById("horas");
+  var diasEl = document.getElementById("dias");
+  var tarifaEl = document.getElementById("tarifa");
+  var out = document.getElementById("resultado");
+
+  function calcular() {
+    var potencia = parseFloat(potEl.value);
+    var horas = parseFloat(horasEl.value);
+    var dias = parseFloat(diasEl.value);
+    var tarifa = parseFloat(tarifaEl.value);
+
+    if (isNaN(potencia) || potencia <= 0 || isNaN(horas) || horas <= 0 || isNaN(dias) || dias <= 0) {
+      out.innerHTML = "";
+      return;
+    }
+
+    var consumoDiario = (potencia * horas) / 1000;
+    var consumoPeriodo = consumoDiario * dias;
+    var custo = isNaN(tarifa) ? null : consumoPeriodo * tarifa;
+
+    var html = "<table class=\"tabela-resultado\">";
+    html += "<tr><td>Consumo por dia</td><td>" + consumoDiario.toLocaleString("pt-BR", { maximumFractionDigits: 3 }) + " kWh</td></tr>";
+    html += "<tr><td>Consumo no período (" + dias + " dias)</td><td>" + consumoPeriodo.toLocaleString("pt-BR", { maximumFractionDigits: 2 }) + " kWh</td></tr>";
+    if (custo !== null) {
+      html += "<tr><td><strong>Custo estimado no período</strong></td><td><strong>" + custo.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) + "</strong></td></tr>";
+    }
+    html += "</table>";
+    out.innerHTML = html;
+  }
+
+  [potEl, horasEl, diasEl, tarifaEl].forEach(function (el) { el.addEventListener("input", calcular); });
+  calcular();
+})();
+
+</script>
+</body>
+</html>

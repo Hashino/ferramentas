@@ -1,0 +1,65 @@
+{
+ "intro": "Esta calculadora ajuda quem quer saber quanto de energia um eletrodoméstico ou equipamento consome e quanto isso pesa na conta de luz, usando a potência do aparelho, o tempo de uso diário, o número de dias e a tarifa vigente. É útil para quem planeja gastos ou compara alternativas.",
+ "formula": "Consumo (kWh) = Potência (W) × Horas de uso por dia ÷ 1000 × Dias de uso",
+ "como": [
+  "Primeiro, informe a potência nominal do aparelho em watts, quantas horas ele funciona por dia e por quantos dias você pretende analisar. O script converte a potência para kilowatts, multiplica pelas horas diárias e depois pelos dias, gerando o consumo total em kWh. Se você também preencher a tarifa, o valor será multiplicado pelo consumo para obter o custo estimado.",
+  "Os números inseridos vêm do próprio usuário: a potência (W) costuma estar na etiqueta do produto; as horas de uso são a média diária de operação; os dias correspondem ao período que você quer analisar, como um mês; a tarifa (R$/kWh) está na sua conta de luz ou no site da distribuidora."
+ ],
+ "exemplo": {
+  "cenario": "Um ar-condicionado de 1500 W usado 5 h por dia durante 30 dias, com tarifa de R$ 0,92/kWh.",
+  "passos": [
+   "Consumo diário = 1500 W × 5 h ÷ 1000 = 7,5 kWh",
+   "Consumo no período = 7,5 kWh × 30 dias = 225 kWh",
+   "Custo = 225 kWh × R$ 0,92 = R$ 207,00"
+  ],
+  "resultado": "O ar-condicionado consumirá cerca de 225 kWh no mês, custando aproximadamente R$ 207,00."
+ },
+ "tabela": {
+  "titulo": "Consumo aproximado de aparelhos comuns",
+  "colunas": [
+   "Aparelho",
+   "Consumo diário (kWh)"
+  ],
+  "linhas": [
+   [
+    "Lâmpada LED 10 W (8 h)",
+    "0,08"
+   ],
+   [
+    "TV LED 100 W (4 h)",
+    "0,40"
+   ],
+   [
+    "Geladeira 150 W (24 h)",
+    "3,60"
+   ],
+   [
+    "Chuveiro elétrico 5500 W (30 min)",
+    "2,75"
+   ]
+  ]
+ },
+ "cuidados": [
+  "A potência informada deve ser a nominal, sem considerar variações de carga ou eficiência real do equipamento.",
+  "O cálculo assume uso constante durante as horas declaradas; picos ou ciclos intermitentes podem alterar o consumo real.",
+  "A tarifa usada é a média por kWh; impostos, bandeiras ou tarifas diferenciadas (horário de ponta/off-peak) não são considerados."
+ ],
+ "faq": [
+  {
+   "p": "Como descubro a potência do meu aparelho?",
+   "r": "A potência costuma estar na etiqueta de especificação, no manual ou na própria unidade, expressa em watts (W)."
+  },
+  {
+   "p": "Por que o consumo diário pode ser diferente do que eu calculo manualmente?",
+   "r": "O cálculo assume uso contínuo durante as horas informadas; variações de carga, modos de economia ou ciclos de partida podem reduzir ou aumentar o consumo real."
+  },
+  {
+   "p": "A tarifa da conta de luz inclui impostos?",
+   "r": "A tarifa exibida na conta já traz os impostos e encargos médios; se você usar a tarifa base, o valor final será uma estimativa."
+  },
+  {
+   "p": "Posso usar a calculadora para comparar diferentes aparelhos?",
+   "r": "Sim, basta inserir a potência e o tempo de uso de cada equipamento; a ferramenta mostrará o consumo e o custo estimado, facilitando a comparação."
+  }
+ ]
+}
